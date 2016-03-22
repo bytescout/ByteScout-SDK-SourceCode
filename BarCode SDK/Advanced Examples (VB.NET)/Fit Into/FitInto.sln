@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FitInto", "FitInto.vbproj", "{6A4198E3-ABC9-4BA9-825E-1DC6CD871106}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A4198E3-ABC9-4BA9-825E-1DC6CD871106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4198E3-ABC9-4BA9-825E-1DC6CD871106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4198E3-ABC9-4BA9-825E-1DC6CD871106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4198E3-ABC9-4BA9-825E-1DC6CD871106}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

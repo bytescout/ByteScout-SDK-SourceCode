@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Change cell width and height VB.NET","Change cell width and height VB.NET\Change cell width and height VB.NET.VS2008.vbproj", "{63C18B6F-5FDA-4B84-9636-C8E6533BB9EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C18B6F-5FDA-4B84-9636-C8E6533BB9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C18B6F-5FDA-4B84-9636-C8E6533BB9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C18B6F-5FDA-4B84-9636-C8E6533BB9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C18B6F-5FDA-4B84-9636-C8E6533BB9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+obal

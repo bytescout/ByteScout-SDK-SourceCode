@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swap cells and their values CSharp","Swap cells and their values CSharp\Swap cells and their values CSharp.VS2010.csproj", "{727C9FC5-B516-46CC-AA92-4992A027E80B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{727C9FC5-B516-46CC-AA92-4992A027E80B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{727C9FC5-B516-46CC-AA92-4992A027E80B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{727C9FC5-B516-46CC-AA92-4992A027E80B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{727C9FC5-B516-46CC-AA92-4992A027E80B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BarcodeReader JQuery sample</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+  <form id='form' enctype="multipart/form-data">
+    <p>
+      <label>Copy-paste your API Key for Bytescout.IO here</label>
+      <input type='text' id='apikey' placeholder='ApiKey'/>
+    </p>
+    <p>
+      <label>InputFile</label>
+      <input type="file" name='file' id='inputFile' placeholder='InputFile'>
+    </p>    
+    <p>
+      <label>Barcode Types to read</label>
+      <select multiple="multiple" size="10" id='barcodeTypesToFind'>
+      <option>EAN8</option>
+      <option>GTIN8</option>
+      <option>EAN13</option>
+      <option>GTIN13</option>
+      <option>UPCE</option>
+      <option>UPCA</option>
+      <option>GTIN12</option>
+      <option>Interleaved2of5</option>
+      <option>CircularI2of5</option>
+      <option>ITF14</option>
+      <option>GTIN14</option>
+      <option>Code39</option>
+      <option>Code39Extended</option>
+      <option>Code39Mod43</option>
+      <option>Code39Mod43Extended</option>
+      <option>PZN</option>
+      <option>UPU</option>
+      <option>Code128</option>
+      <option>EAN2</option>
+      <option>EAN5</option>
+      <option>GS1</option>
+      <option>Codabar</option>
+      <option>Trioptic</option>
+      <option>PatchCode</option>
+      <option>GS1DataBarOmnidirectional</option>
+      <option>GS1DataBarExpanded</option>
+      <option>GS1DataBarLimited</option>
+      <option>GS1DataBarStacked</option>
+      <option>GS1DataBarExpandedStacked</option>
+      <option>PDF417</option>
+      <option>DataMatrix</option>
+      <option>QRCode</option>
+      <option>Aztec</option>
+      <option>MaxiCode</option>
+      <option>MICR</option>
+      <option>IntelligentMail</option>
+      <option>RoyalMail</option>
+      <option>RoyalMailKIX</option>
+      <option>AustralianPostCode</option>
+      <option>CodablockF</option>
+      <option>Code16K</option>
+      <option>PostNet</option>
+      <option>MicroPDF</option>
+      <option>Code93</option>
+      <option>MSI</option>
+      <option>Pharmacode</option>
+      <option>Segment</option>
+      <option>Circle</option>
+      <option>Oval</option>
+      <option>Checkbox</option>
+      <option>HorizontalLine</option>
+      <option>VerticalLine</option>
+      <option>UnderlinedField</option>
+      <option>All1D</option>
+      <option>All2D</option>
+      <option>AllOMRElements</option>
+      <option selected="selected">All</option>
+      </select>
+    </p>
+    <button type='button' id='submit'>Read</button>
+  </form>
+
+  <div id='errorBlock'>
+    <h2>Error:</h2>
+    <h4>Code: <span id='statusCode'></span></h4>
+    <ul id="errors"></ul>
+  </div>
+
+  <div id='resultBlock'>
+    <h2>Result:</h2>
+    <pre id='result'></pre>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $('#resultBlock').hide();
+      $('#errorBlock').hide();
+    });
+
+    $(document).on('click', '#submit',function(){
+      $('#resultBlock').hide();
+      $('#errorBlock').hide();
+
+    var apikey = $('#apikey').val().trim(); //Get your API key by registering at http://www.bytescout.com/
+
+    var urlUploadFile = 'https://bytescout.io/api/v1/file/upload';
+
+    var formData = new FormData($('#form')[0]);
+
+    $.ajax({
+      url: urlUploadFile,
+      type: "POST",
+      data: formData,
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: function(xhr){
+        xhr.setRequestHeader('apikey', apikey);
+      },
+      success: function(fileId){
+        ReadBarcodes(apikey, fileId);
+      },
+      error: function(response){
+        $('#errorBlock').show();
+        $('#statusCode').html(response.status);
+        $('#errors').html('');
+        $.each(response.responseJSON.Errors, function(){
+          $('#errors').append($('<li></li>').html(this));
+        })
+      },
+    });
+  });
+
+
+    function ReadBarcodes(apikey, fileId){
+      var url = 'https://bytescout.io/api/v1/barcodereader/read';
+
+      var options = {
+        "Options": {
+          "StartPageIndex": 0,
+          "EndPageIndex": 0,
+          "BarcodeTypesToFind": { },
+        },
+        "InputFileId": fileId,
+      };
+
+      var barcodeTypesToFind = {};
+      $.each($('#barcodeTypesToFind').val(), function(){ 
+      	barcodeTypesToFind[this] = true; 
+      });
+      options["Options"]["BarcodeTypesToFind"] = barcodeTypesToFind;
+		
+      $.ajax({
+        url: url,
+        type: 'POST',
+        data: JSON.stringify(options), 
+        contentType: 'application/json',
+        beforeSend: function(xhr){
+          xhr.setRequestHeader('apikey', apikey);
+        },
+        success: function(response){
+          $('#resultBlock').show();
+          $('#result').html(response);
+        },
+        error: function(response){
+          $('#errorBlock').show();
+          $('#statusCode').html(response.status);
+          $('#errors').html('');
+          $.each(response.responseJSON.Errors, function(){
+            $('#errors').append($('<li></li>').html(this));
+          })
+        },
+      });
+    }
+  </script>
+</body>
+</html>

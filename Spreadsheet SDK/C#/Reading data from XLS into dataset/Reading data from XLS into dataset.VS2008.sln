@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reading data from XLS into dataset","Reading data from XLS into dataset\Reading data from XLS into dataset.VS2008.csproj", "{8561A3F6-3342-44F6-A7C0-7AA53B308F8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8561A3F6-3342-44F6-A7C0-7AA53B308F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8561A3F6-3342-44F6-A7C0-7AA53B308F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8561A3F6-3342-44F6-A7C0-7AA53B308F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8561A3F6-3342-44F6-A7C0-7AA53B308F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

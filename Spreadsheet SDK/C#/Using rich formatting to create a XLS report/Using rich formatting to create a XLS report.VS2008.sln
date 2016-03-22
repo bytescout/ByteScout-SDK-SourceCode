@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using rich formatting","Using rich formatting to create a XLS report\Using rich formatting.VS2008.csproj", "{070AB522-345E-49A5-B2B1-DBA4D08C512C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{070AB522-345E-49A5-B2B1-DBA4D08C512C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070AB522-345E-49A5-B2B1-DBA4D08C512C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070AB522-345E-49A5-B2B1-DBA4D08C512C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070AB522-345E-49A5-B2B1-DBA4D08C512C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

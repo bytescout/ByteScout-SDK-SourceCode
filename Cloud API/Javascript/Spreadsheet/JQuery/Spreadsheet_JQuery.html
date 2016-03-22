@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Spreadsheet JQuery sample</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+  <form id='form' enctype="multipart/form-data">
+    <p>
+      <label>Copy-paste your API Key for Bytescout.IO here</label>
+      <input type='text' id='apikey' placeholder='ApiKey'/>
+    </p>
+    <p>
+      <label>InputFile</label>
+      <input type="file" name='file' id='inputFile' placeholder='InputFile'>
+    </p>  
+    <p>
+      <label>Convert To</label>
+      <select id="convertType">
+        <option value="CSV"> CSV  </option>
+        <option value="HTML"> HTML  </option>
+        <option value="TXT"> TXT  </option>
+        <option value="XLS"> XLS  </option>
+        <option value="XLSX"> XLSX  </option>
+        <option value="XML"> XML  </option>
+        <option value="PDF"> PDF  </option>
+      </select>
+    </p>
+    <button type='button' id='submit'>Convert</button>
+  </form>
+
+  <div id='errorBlock'>
+    <h2>Error:</h2>
+    <h4>Code: <span id='statusCode'></span></h4>
+    <ul id="errors"></ul>
+  </div>
+
+  <div id='resultBlock'>
+    <h2>Result:</h2>
+    <pre id='result'></pre> 
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $('#resultBlock').hide();
+      $('#errorBlock').hide();
+    });
+
+    $(document).on('click', '#submit',function(){
+      $('#resultBlock').hide();
+      $('#errorBlock').hide();
+
+    var apikey = $('#apikey').val().trim(); //Get your API key by registering at http://www.bytescout.com/
+
+    var urlUploadFile = 'https://bytescout.io/api/v1/file/upload';
+
+    var formData = new FormData($('#form')[0]);
+
+    $.ajax({
+      url: urlUploadFile,
+      type: "POST",
+      data: formData,
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: function(xhr){
+        xhr.setRequestHeader('apikey', apikey);
+      },
+      success: function(fileId){
+        PDFRenderer(apikey, fileId);
+      },
+      error: function(response){
+        $('#errorBlock').show();
+        $('#statusCode').html(response.status);
+        $('#errors').html('');
+        $.each(response.responseJSON.Errors, function(){
+          $('#errors').append($('<li></li>').html(this));
+        })
+      },
+    });
+  });
+
+
+    function PDFRenderer(apikey, fileId){
+      var url = 'https://bytescout.io/api/v1/spreadsheet/convert';
+
+      var options = {
+        "Options": {
+          "UserName": "Bytescout",
+          "ConvertType": $('#convertType').val(),
+          "CreateNavigationLinks": true,
+        },
+        "InputFileId": fileId,
+        "OutputType": "link",
+      };
+
+
+      $.ajax({
+        url: url,
+        type: 'POST',
+        data: JSON.stringify(options), 
+        contentType: 'application/json',
+        beforeSend: function(xhr){
+          xhr.setRequestHeader('apikey', apikey);
+        },
+        success: function(link){
+          $('#resultBlock').show();
+          $('#result').html(link);
+          window.open(link);
+        },
+        error: function(response){
+          $('#errorBlock').show();
+          $('#statusCode').html(response.status);
+          $('#errors').html('');
+          $.each(response.responseJSON.Errors, function(){
+            $('#errors').append($('<li></li>').html(this));
+          })
+        },
+      });
+    }
+  </script>
+
+</body>
+</html>

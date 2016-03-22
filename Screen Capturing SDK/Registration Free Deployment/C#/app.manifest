@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity name="SimpleCaptureCSharp.exe" version="1.0.0.0" type="win32" />
+ 
+ 
+<!-- REFERENCES TO BYTESCOUT SCREEN CAPTURING SDK - BEGIN -->
+
+<file name="BytescoutScreenCapturing.dll">
+
+    <comClass
+        description="Capturer Class"
+        clsid="{48967118-C4C9-435C-94D8-001247B9A52A}"
+        threadingModel="Apartment"
+        progid="BytescoutScreenCapturing.Capturer"
+        tlbid="{8EDAD3BB-AE5F-43B4-A2F1-B04F4130F2E0}" />
+
+    <comClass
+        description="C:\Documents and Settings\Administrator\My Documents\Capture From Entire Screen\bin\Debug\BytescoutScreenCapturing.dll"
+        clsid="{DCAFCA37-546E-4D0A-9C02-D3221E65FCA9}"
+        threadingModel="Both" />
+
+    <typelib tlbid="{8EDAD3BB-AE5F-43B4-A2F1-B04F4130F2E0}"
+        version="1.0"
+        helpdir="C:\Documents and Settings\Administrator\My Documents\Capture From Entire Screen\bin\Debug\" />
+
+
+</file>
+
+
+<comInterfaceExternalProxyStub
+    name="ICapturer"
+    iid="{DCAFCA37-546E-4D0A-9C02-D3221E65FCA9}"
+    proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"
+    baseInterface="{00000000-0000-0000-C000-000000000046}"
+    tlbid="{8EDAD3BB-AE5F-43B4-A2F1-B04F4130F2E0}" />
+
+
+<comInterfaceExternalProxyStub
+    name="IVideoWMVSettings"
+    iid="{1A814EC2-55A9-4FA2-99E2-2C20A897C2E7}"
+    proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"
+    baseInterface="{00000000-0000-0000-C000-000000000046}"
+    tlbid="{8EDAD3BB-AE5F-43B4-A2F1-B04F4130F2E0}" />
+
+
+<file name="BytescoutScreenCapturingFilter.dll">
+
+    <comClass
+        description="Bytescout Screen Capturing Filter"
+        clsid="{0F5D4CE4-2166-4FF7-9AA1-91330D35978A}"
+        threadingModel="Both" />
+
+    <comClass
+        description="Screen Capturing Property Page"
+        clsid="{22DD33B0-30C4-420D-A955-844E2B85A1F3}"
+        threadingModel="Both" />
+
+    <comClass
+        description="Screen Capturing Property Page"
+        clsid="{9D153AAA-0477-4C2E-B827-211F10561B44}"
+        threadingModel="Both" />
+
+    <comClass
+        description="Screen Capturing Property Page"
+        clsid="{26882CF7-F62F-47DB-9A3C-D1191591BD04}"
+        threadingModel="Both" />
+
+</file>
+
+<file name="BytescoutVideoMixerFilter.dll">
+
+    <comClass
+        description="Bytescout Video Mixer Filter"
+        clsid="{4407F28D-97C2-41C5-A23F-2FAE465CE7BB}"
+        threadingModel="Both" />
+
+</file>
+
+<!-- REFERENCES TO BYTESCOUT SCREEN CAPTURING SDK - END-->
+
+
+</assembly>

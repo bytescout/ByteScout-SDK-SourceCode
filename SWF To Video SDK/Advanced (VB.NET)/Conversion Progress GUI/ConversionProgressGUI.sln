@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConversionProgressGUI", "ConversionProgressGUI.vbproj", "{FDE10E87-2A10-4FD9-8961-1E859D5D0B73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDE10E87-2A10-4FD9-8961-1E859D5D0B73}.Debug|x86.ActiveCfg = Debug|x86
+		{FDE10E87-2A10-4FD9-8961-1E859D5D0B73}.Debug|x86.Build.0 = Debug|x86
+		{FDE10E87-2A10-4FD9-8961-1E859D5D0B73}.Release|x86.ActiveCfg = Release|x86
+		{FDE10E87-2A10-4FD9-8961-1E859D5D0B73}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

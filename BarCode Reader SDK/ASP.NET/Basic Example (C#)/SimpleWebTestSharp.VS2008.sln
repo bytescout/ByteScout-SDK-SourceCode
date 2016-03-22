@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebTestSharp","SimpleWebTestSharp.VS2008.csproj", "{B7976605-FA2F-4BD9-9F06-0F3766506386}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release (full)|Any CPU = Release (full)|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7976605-FA2F-4BD9-9F06-0F3766506386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7976605-FA2F-4BD9-9F06-0F3766506386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7976605-FA2F-4BD9-9F06-0F3766506386}.Release (full)|Any CPU.ActiveCfg = Release (full)|Any CPU
+		{B7976605-FA2F-4BD9-9F06-0F3766506386}.Release (full)|Any CPU.Build.0 = Release (full)|Any CPU
+		{B7976605-FA2F-4BD9-9F06-0F3766506386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7976605-FA2F-4BD9-9F06-0F3766506386}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

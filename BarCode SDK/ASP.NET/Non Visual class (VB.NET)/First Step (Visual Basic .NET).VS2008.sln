@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "First Step (Visual Basic .NET)\", "First Step (Visual Basic .NET)\", "{E802531C-AA0A-4702-8814-28A2BCB460CF}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/First Step (Visual Basic .NET)"
+		Debug.AspNetCompiler.PhysicalPath = "First Step (Visual Basic .NET)\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\First Step (Visual Basic .NET)\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/First Step (Visual Basic .NET)"
+		Release.AspNetCompiler.PhysicalPath = "First Step (Visual Basic .NET)\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\First Step (Visual Basic .NET)\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1174"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E802531C-AA0A-4702-8814-28A2BCB460CF}.Debug|.NET.ActiveCfg = Debug|.NET
+		{E802531C-AA0A-4702-8814-28A2BCB460CF}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

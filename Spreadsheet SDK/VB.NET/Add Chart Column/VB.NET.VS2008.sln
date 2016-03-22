@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB.NET","VB.NET\VB.NET.VS2008.vbproj", "{AB476B60-8D61-4EA7-BC85-B749AE285871}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB476B60-8D61-4EA7-BC85-B749AE285871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB476B60-8D61-4EA7-BC85-B749AE285871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB476B60-8D61-4EA7-BC85-B749AE285871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB476B60-8D61-4EA7-BC85-B749AE285871}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+obal

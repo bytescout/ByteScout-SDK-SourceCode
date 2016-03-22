@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUITest.PPC", "GUITest.PPC.csproj", "{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Lite|Any CPU = Lite|Any CPU
+		Release_full|Any CPU = Release_full|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Lite|Any CPU.ActiveCfg = Lite|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Lite|Any CPU.Build.0 = Lite|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Lite|Any CPU.Deploy.0 = Lite|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Release_full|Any CPU.ActiveCfg = Release_full|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Release_full|Any CPU.Build.0 = Release_full|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Release_full|Any CPU.Deploy.0 = Release_full|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FAA4662-097E-48A6-81CB-4A626DDF3D8C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

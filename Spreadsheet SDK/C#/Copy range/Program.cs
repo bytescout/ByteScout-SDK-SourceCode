@@ -1,0 +1,48 @@
+﻿//*******************************************************************
+//       ByteScout Spreadsheet SDK		                                     
+//                                                                   
+//       Copyright © 2016 ByteScout - http://www.bytescout.com       
+//       ALL RIGHTS RESERVED                                         
+//                                                                   
+//*******************************************************************
+
+using System.Diagnostics;
+using System.IO;
+using Bytescout.Spreadsheet;
+
+namespace CopyRange
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Open spreadsheet from file
+            Spreadsheet document = new Spreadsheet();
+            document.LoadFromFile("example.xls");
+
+            // Get first worksheet
+            Worksheet worksheet = document.Workbook.Worksheets[0];
+
+            // Select cell range
+            Range range = worksheet.Range("A2:B8");
+
+            // Copy range to C10 cell
+            range.CopyInto("C10");
+
+            // Delete output file if exists
+            if (File.Exists("changed.xls"))
+            {
+                File.Delete("changed.xls");
+            }
+
+            // Save document
+            document.SaveAs("changed.xls");
+
+            // Close spreadsheet
+            document.Close();
+
+            // Open generated XLS document in default program
+            Process.Start("changed.xls");
+        }
+    }
+}

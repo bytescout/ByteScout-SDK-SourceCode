@@ -1,0 +1,175 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (d133c31b).
+//
+// stdole2.tlh
+//
+// C++ source equivalent of Win32 type library c:\windows\system32\stdole2.tlb
+// compiler-generated file created 10/24/10 at 19:34:35 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace BytescoutSpreadsheet {
+
+//
+// Forward references and typedefs
+//
+
+typedef BSTR FONTNAME;
+typedef VARIANT_BOOL FONTBOLD;
+typedef VARIANT_BOOL FONTITALIC;
+typedef VARIANT_BOOL FONTUNDERSCORE;
+typedef VARIANT_BOOL FONTSTRIKETHROUGH;
+struct __declspec(uuid("bef6e003-a874-101a-8bba-00aa00300cab"))
+/* dispinterface */ Font;
+typedef struct Font IFontDisp;
+struct /* coclass */ StdFont;
+struct __declspec(uuid("7bf80981-bf32-101a-8bbb-00aa00300cab"))
+/* dispinterface */ Picture;
+typedef struct Picture IPictureDisp;
+struct /* coclass */ StdPicture;
+struct __declspec(uuid("4ef6100a-af88-11d0-9846-00c04fc29993"))
+/* dispinterface */ FontEvents;
+typedef struct FontEvents IFontEventsDisp;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(Font, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Picture, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(FontEvents, __uuidof(IDispatch));
+
+//
+// Type library items
+//
+
+enum OLE_TRISTATE
+{
+    Unchecked = 0,
+    Checked = 1,
+    Gray = 2
+};
+
+struct __declspec(uuid("bef6e003-a874-101a-8bba-00aa00300cab"))
+Font : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetSize,put=PutSize))
+    CURRENCY Size;
+    __declspec(property(get=GetBold,put=PutBold))
+    VARIANT_BOOL Bold;
+    __declspec(property(get=GetItalic,put=PutItalic))
+    VARIANT_BOOL Italic;
+    __declspec(property(get=GetUnderline,put=PutUnderline))
+    VARIANT_BOOL Underline;
+    __declspec(property(get=GetStrikethrough,put=PutStrikethrough))
+    VARIANT_BOOL Strikethrough;
+    __declspec(property(get=GetWeight,put=PutWeight))
+    short Weight;
+    __declspec(property(get=GetCharset,put=PutCharset))
+    short Charset;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Properties:
+    _bstr_t GetName ( );
+    void PutName ( _bstr_t _val );
+    CURRENCY GetSize ( );
+    void PutSize ( const CURRENCY & _val );
+    VARIANT_BOOL GetBold ( );
+    void PutBold ( VARIANT_BOOL _val );
+    VARIANT_BOOL GetItalic ( );
+    void PutItalic ( VARIANT_BOOL _val );
+    VARIANT_BOOL GetUnderline ( );
+    void PutUnderline ( VARIANT_BOOL _val );
+    VARIANT_BOOL GetStrikethrough ( );
+    void PutStrikethrough ( VARIANT_BOOL _val );
+    short GetWeight ( );
+    void PutWeight ( short _val );
+    short GetCharset ( );
+    void PutCharset ( short _val );
+};
+
+struct __declspec(uuid("0be35203-8f91-11ce-9de3-00aa004bb851"))
+StdFont;
+    // [ default ] dispinterface Font
+    // [ default, source ] dispinterface FontEvents
+    // interface IFont
+
+struct __declspec(uuid("7bf80981-bf32-101a-8bbb-00aa00300cab"))
+Picture : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetHandle))
+    OLE_HANDLE Handle;
+    __declspec(property(get=GethPal,put=PuthPal))
+    OLE_HANDLE hPal;
+    __declspec(property(get=GetType))
+    short Type;
+    __declspec(property(get=GetWidth))
+    OLE_XSIZE_HIMETRIC Width;
+    __declspec(property(get=GetHeight))
+    OLE_YSIZE_HIMETRIC Height;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    // Method 'Render' not emitted because argument 'prcWBounds' has invalid type: void *
+
+    // Properties:
+    OLE_HANDLE GetHandle ( );
+    OLE_HANDLE GethPal ( );
+    void PuthPal ( OLE_HANDLE _val );
+    short GetType ( );
+    OLE_XSIZE_HIMETRIC GetWidth ( );
+    OLE_YSIZE_HIMETRIC GetHeight ( );
+};
+
+struct __declspec(uuid("0be35204-8f91-11ce-9de3-00aa004bb851"))
+StdPicture;
+    // [ default ] dispinterface Picture
+    // interface IPicture
+
+enum LoadPictureConstants
+{
+    Default = 0,
+    Monochrome = 1,
+    VgaColor = 2,
+    Color = 4
+};
+
+struct __declspec(uuid("4ef6100a-af88-11d0-9846-00c04fc29993"))
+FontEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT FontChanged (
+        _bstr_t PropertyName );
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "stdole2.tli"
+
+} // namespace BytescoutSpreadsheet
+
+#pragma pack(pop)

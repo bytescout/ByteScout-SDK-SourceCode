@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixels resize","Pixels resize\Pixels resize.VS2010.csproj", "{C1CB7367-5573-4E4C-BE7F-0C1F4A7130CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1CB7367-5573-4E4C-BE7F-0C1F4A7130CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1CB7367-5573-4E4C-BE7F-0C1F4A7130CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1CB7367-5573-4E4C-BE7F-0C1F4A7130CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1CB7367-5573-4E4C-BE7F-0C1F4A7130CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

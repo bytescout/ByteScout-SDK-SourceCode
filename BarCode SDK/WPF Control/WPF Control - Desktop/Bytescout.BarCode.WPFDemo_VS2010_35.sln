@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bytescout.BarCode.WPFDemo_VS2010_35", "Bytescout.BarCode.WPFDemo_VS2010_35.csproj", "{B7C8FF33-A8B1-4004-B73D-5C6F952CA181}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_DEMO|Any CPU = Debug_DEMO|Any CPU
+		Release_DEMO|Any CPU = Release_DEMO|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7C8FF33-A8B1-4004-B73D-5C6F952CA181}.Debug_DEMO|Any CPU.ActiveCfg = Debug_DEMO|Any CPU
+		{B7C8FF33-A8B1-4004-B73D-5C6F952CA181}.Debug_DEMO|Any CPU.Build.0 = Debug_DEMO|Any CPU
+		{B7C8FF33-A8B1-4004-B73D-5C6F952CA181}.Release_DEMO|Any CPU.ActiveCfg = Release_DEMO|Any CPU
+		{B7C8FF33-A8B1-4004-B73D-5C6F952CA181}.Release_DEMO|Any CPU.Build.0 = Release_DEMO|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

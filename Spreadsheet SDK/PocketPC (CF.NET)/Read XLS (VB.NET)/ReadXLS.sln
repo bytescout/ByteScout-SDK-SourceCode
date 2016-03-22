@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ReadXLS", "ReadXLS.vbproj", "{AF8A3256-A87D-41FC-AAD7-539AA53E2AA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF8A3256-A87D-41FC-AAD7-539AA53E2AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8A3256-A87D-41FC-AAD7-539AA53E2AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8A3256-A87D-41FC-AAD7-539AA53E2AA2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AF8A3256-A87D-41FC-AAD7-539AA53E2AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8A3256-A87D-41FC-AAD7-539AA53E2AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8A3256-A87D-41FC-AAD7-539AA53E2AA2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

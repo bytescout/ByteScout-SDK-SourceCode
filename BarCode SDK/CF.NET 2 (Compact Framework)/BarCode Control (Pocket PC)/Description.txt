@@ -1,0 +1,2 @@
+Click EXPLORE to open the folder and open the solution in Visual Studio 2005
+Then you can run the sample in an emulator or on the device
