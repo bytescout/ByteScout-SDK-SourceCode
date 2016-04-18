@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PDF To HTML Cloud API Example</title>
+    <script src="pdf_to_html.js" type="text/javascript" encoding="UTF-8"></script>
+</head>
+<body>
+
+    <form id="form1" enctype="multipart/form-data">
+        <p>
+            <label>Copy-paste your API Key for Bytescout.IO here</label>
+            <input type="text" id="apiKey" placeholder="API Key"/>
+        </p>
+        <p>
+            <label>InputFile</label>
+            <input type="file" name="file" id="inputFile"/>
+        </p>
+        <button type="button" id="submit" onclick="return onSubmit()">Convert</button>
+    </form>
+
+    <div id="errorBlock" style="visibility: hidden">
+        <h2>Error:</h2>
+        <h4>Code: <span id="statusCode"></span></h4>
+        <div id="errors"></div>
+    </div>
+
+    <div id="resultBlock" style="visibility: hidden">
+        <h2>Result:</h2>
+        <a id="result" href=""></a>
+    </div>
+
+</body>
+</html>

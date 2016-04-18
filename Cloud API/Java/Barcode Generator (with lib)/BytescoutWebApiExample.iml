@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.7.3" level="project" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.7.3" level="project" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-annotations:2.7.3" level="project" />
+    <orderEntry type="library" name="io.swagger:swagger-annotations:1.5.8" level="project" />
+    <orderEntry type="library" name="com.sun.jersey:jersey-client:1.19.1" level="project" />
+    <orderEntry type="library" name="com.fasterxml.jackson.datatype:jackson-datatype-joda:2.7.3" level="project" />
+    <orderEntry type="library" name="com.sun.jersey.contribs:jersey-multipart:1.19.1" level="project" />
+    <orderEntry type="library" name="com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.7.3" level="project" />
+    <orderEntry type="library" name="com.brsanthu:migbase64:2.2" level="project" />
+  </component>
+</module>

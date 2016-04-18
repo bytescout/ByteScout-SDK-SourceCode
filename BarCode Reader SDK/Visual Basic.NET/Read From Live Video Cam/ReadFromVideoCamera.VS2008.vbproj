@@ -1,7 +1,7 @@
 ﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2709B33C-231F-4007-9FCA-A5F1A93F5F8A}</ProjectGuid>
@@ -69,7 +69,6 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="TouchlessLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>bin\Debug\TouchlessLib.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Compile Include="Program.vb" />
@@ -81,7 +80,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Content Include="TouchlessLib.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="WebCamLib.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Spreadsheet JQuery sample</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="spreadsheet.js" type="text/javascript" encoding="UTF-8"></script>
+</head>
+<body>
+
+    <form id="form" enctype="multipart/form-data">
+        <p>
+            <label>Copy-paste your API Key for Bytescout.IO here</label>
+            <input type="text" id="apiKey" placeholder="API Key" />
+        </p>
+        <p>
+            <label>InputFile</label>
+            <input type="file" name="file" id="inputFile" />
+        </p>
+        <p>
+            <label>Convert To</label>
+            <select id="convertType">
+                <option value="CSV"> CSV  </option>
+                <option value="HTML"> HTML  </option>
+                <option value="TXT"> TXT  </option>
+                <option value="XLS"> XLS  </option>
+                <option value="XLSX"> XLSX  </option>
+                <option value="XML"> XML  </option>
+                <option value="PDF"> PDF  </option>
+            </select>
+        </p>
+        <button type="button" id="submit">Convert</button>
+    </form>
+
+    <div id="errorBlock">
+        <h2>Error:</h2>
+        <h4>Code: <span id="statusCode"></span></h4>
+        <ul id="errors"></ul>
+    </div>
+
+    <div id="resultBlock">
+        <h2>Result:</h2>
+        <a id="result" href=""></a>
+    </div>
+
+</body>
+</html>

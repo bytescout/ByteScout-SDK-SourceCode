@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML To PDF Cloud API Example</title>
+</head>
+
+<body>
+
+    <form name="form1" enctype="multipart/form-data" method="post" action="html_to_pdf.php">
+        <p>
+            <label>Copy-paste your API Key for Bytescout.IO here</label>
+            <input type="text" name="apiKey" placeholder="API Key"/>
+        </p>
+        <p>
+            <label>Input URL</label>
+            <input type="text" name="inputUrl" placeholder="http://www.google.com/" />
+        </p>
+        <p>
+            <label>or HTML code</label>
+            <textarea name="inputHtmlCode"></textarea>
+        </p>
+        <p>
+            <label>Orientation</label>
+            <select name="orientation">
+                <option>Portrait</option>
+                <option selected="selected">Landscape</option>
+            </select>
+        </p>
+        <p>
+            <label>Margins:</label>
+            <label>Left</label>
+            <input type="number" name="marginLeft">
+            <label>Top</label>
+            <input type="number" name="marginTop">
+            <label>Right</label>
+            <input type="number" name="marginRight">
+            <label>Bottom</label>
+            <input type="number" name="marginBottom">
+        </p>
+        <input type="submit" name="submit" value="Proceed" />
+    </form>
+
+</body>
+</html>

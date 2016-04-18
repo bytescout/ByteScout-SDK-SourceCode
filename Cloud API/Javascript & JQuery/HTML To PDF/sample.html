@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTMLToPDF JQuery sample</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="html_to_pdf.js" type="text/javascript" encoding="UTF-8"></script>
+</head>
+<body>
+
+    <form id="form">
+        <p>
+            <label>Copy-paste your API Key for Bytescout.IO here</label>
+            <input type="text" id="apiKey" placeholder="API Key" />
+        </p>
+        <p>
+            <label>InputLink</label>
+            <input type="text" name="link" id="inputLink" placeholder="https://www.google.com/">
+        </p>
+        <p>
+            <label>or InputValue (HTML code)</label>
+            <textarea id="inputValue"></textarea>
+        </p>
+        <p>
+            <label>Margins:</label>
+            <label>Left</label>
+            <input type="number" id="marginLeft">
+            <label>Top</label>
+            <input type="number" id="marginTop">
+            <label>Right</label>
+            <input type="number" id="marginRight">
+            <label>Bottom</label>
+            <input type="number" id="marginBottom">
+        </p>
+        <button type="button" id="submit">Convert</button>
+    </form>
+
+    <div id="errorBlock">
+        <h2>Error:</h2>
+        <h4>Code: <span id="statusCode"></span></h4>
+        <ul id="errors"></ul>
+    </div>
+
+    <div id="resultBlock">
+        <h2>Result:</h2>
+        <a id="result" href="" target="_blank"></a>
+    </div>
+
+</body>
+</html>
