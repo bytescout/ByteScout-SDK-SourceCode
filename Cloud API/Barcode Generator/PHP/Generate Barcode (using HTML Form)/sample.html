@@ -9,15 +9,18 @@
 
     <form name="form1" method="post" action="generate_barcode.php">
         <p>
-            <label>Copy-paste your API Key for Bytescout.IO here</label>
+            <label>Authentication key (API Key). Get your own by registering at <a href="https://secure.bytescout.com/users/sign_up">https://secure.bytescout.com/users/sign_up</a>.</label>
+            <br/>
             <input type="text" name="apiKey" placeholder="API Key"/>
         </p>
         <p>
             <label>Barcode Value</label>
+            <br/>
             <input type="text" name="inputValue" placeholder="Input Value"/>
         </p>
         <p>
             <label>Barcode type</label>
+            <br/>
             <select name="barcodeType">
                 <option value="Aztec"> Aztec  </option>
                 <option value="Bookland"> Bookland  </option>

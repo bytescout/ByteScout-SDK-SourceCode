@@ -27,12 +27,18 @@ $(document).on("click", "#submit", function () {
                     ExtractText(apiKey, fileId, pageIndex);
                     break;
                 case "1":
-                    ExtractXML(apiKey, fileId, pageIndex);
-                    break;
-                case "2":
                     ExtractCSV(apiKey, fileId, pageIndex);
                     break;
+                case "2":
+                    ExtractXLS(apiKey, fileId, pageIndex);
+                    break;
                 case "3":
+                    ExtractXML(apiKey, fileId, pageIndex);
+                    break;
+                case "4":
+                    ExtractJSON(apiKey, fileId, pageIndex);
+                    break;
+                case "5":
                     ExtractInfo(apiKey, fileId);
                     break;
             }
@@ -48,42 +54,8 @@ $(document).on("click", "#submit", function () {
     });
 });
 
-
-function ExtractXML(apiKey, fileId, pageIndex) {
-    var url = "https://bytescout.io/api/v1/pdfextractor/xmlextractor/extract?apiKey=" + apiKey;
-
-    var options = {
-        "properties": {
-            "startPageIndex": pageIndex,
-            "endPageIndex": pageIndex,
-            "extractInvisibleText": false
-        },
-        "inputType": "fileId",
-        "input": fileId
-    };
-
-
-    $.ajax({
-        url: url,
-        type: "POST",
-        data: JSON.stringify(options),
-        contentType: "application/json",
-        success: function (response) {
-            $("#resultBlock").show();
-            $("#result").text(xmlToString(response));
-        },
-        error: function (response) {
-            $("#errorBlock").show();
-            $("#statusCode").html(response.status);
-            $("#errors").html("");
-            $.each(response.responseJSON.Errors, function () {
-                $("#errors").append($("<li></li>").html(this));
-            });
-        }
-    });
-}
-
-function ExtractText(apiKey, fileId, pageIndex) {
+function ExtractText(apiKey, fileId, pageIndex) 
+{
     var url = "https://bytescout.io/api/v1/pdfextractor/textextractor/extract?apiKey=" + apiKey;
 
     var options = {
@@ -117,7 +89,8 @@ function ExtractText(apiKey, fileId, pageIndex) {
     });
 }
 
-function ExtractCSV(apiKey, fileId, pageIndex) {
+function ExtractCSV(apiKey, fileId, pageIndex) 
+{
     var url = "https://bytescout.io/api/v1/pdfextractor/csvextractor/extract?apiKey=" + apiKey;
 
     var options = {
@@ -139,6 +112,111 @@ function ExtractCSV(apiKey, fileId, pageIndex) {
         success: function (response) {
             $("#resultBlock").show();
             $("#result").html(response);
+        },
+        error: function (response) {
+            $("#errorBlock").show();
+            $("#statusCode").html(response.status);
+            $("#errors").html("");
+            $.each(response.responseJSON.Errors, function () {
+                $("#errors").append($("<li></li>").html(this));
+            });
+        }
+    });
+}
+
+function ExtractXLS(apiKey, fileId, pageIndex) 
+{
+    var url = "https://bytescout.io/api/v1/pdfextractor/xlsextractor/extract?apiKey=" + apiKey;
+
+    var options = {
+        "properties": {
+            "startPageIndex": pageIndex,
+            "endPageIndex": pageIndex,
+            "columnDetectionMode": "contentGroups",
+            "extractInvisibleText": false,
+            "outputFormat": "xlsx"
+        },
+        "inputType": "fileId",
+        "input": fileId,
+        "outputType": "link"
+    };
+    
+    $.ajax({
+        url: url,
+        type: "POST",
+        data: JSON.stringify(options),
+        contentType: "application/json",
+        success: function (response) {
+            $("#resultBlock").show();
+            $("#result").html("<div><a href='" + response + "' target='_blank'>" + response + "</a></div>");
+        },
+        error: function (response) {
+            $("#errorBlock").show();
+            $("#statusCode").html(response.status);
+            $("#errors").html("");
+            $.each(response.responseJSON.Errors, function () {
+                $("#errors").append($("<li></li>").html(this));
+            });
+        }
+    });
+}
+
+function ExtractXML(apiKey, fileId, pageIndex) 
+{
+    var url = "https://bytescout.io/api/v1/pdfextractor/xmlextractor/extract?apiKey=" + apiKey;
+
+    var options = {
+        "properties": {
+            "startPageIndex": pageIndex,
+            "endPageIndex": pageIndex,
+            "extractInvisibleText": false
+        },
+        "inputType": "fileId",
+        "input": fileId
+    };
+
+    $.ajax({
+        url: url,
+        type: "POST",
+        data: JSON.stringify(options),
+        contentType: "application/json",
+        success: function (response) {
+            $("#resultBlock").show();
+            $("#result").text(xmlToString(response));
+        },
+        error: function (response) {
+            $("#errorBlock").show();
+            $("#statusCode").html(response.status);
+            $("#errors").html("");
+            $.each(response.responseJSON.Errors, function () {
+                $("#errors").append($("<li></li>").html(this));
+            });
+        }
+    });
+}
+
+function ExtractJSON(apiKey, fileId, pageIndex) 
+{
+    var url = "https://bytescout.io/api/v1/pdfextractor/jsonextractor/extract?apiKey=" + apiKey;
+
+    var options = {
+        "properties": {
+            "startPageIndex": pageIndex,
+            "endPageIndex": pageIndex,
+            "extractInvisibleText": false
+        },
+        "inputType": "fileId",
+        "input": fileId
+    };
+
+    $.ajax({
+        url: url,
+        type: "POST",
+        data: JSON.stringify(options),
+        contentType: "application/json",
+        success: function (response) {
+            $("#resultBlock").show();
+            $("#result").text(response);
         },
         error: function (response) {
             $("#errorBlock").show();

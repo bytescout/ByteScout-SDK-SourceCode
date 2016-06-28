@@ -50,7 +50,7 @@ namespace BytescoutWebApiExample
                     string fileName = Path.GetFileName(resultFileLink);
                     webClient.DownloadFile(resultFileLink, fileName);
 
-                    Console.WriteLine("Generated image is saved to \"{0}\" file", fileName);
+                    Console.WriteLine("Generated document is saved to \"{0}\" file", fileName);
                 }
             }
             catch (Exception exception)

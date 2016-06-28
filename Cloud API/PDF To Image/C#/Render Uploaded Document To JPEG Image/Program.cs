@@ -36,10 +36,10 @@ namespace BytescoutWebApiExample
                     // Prepare URL for PDF Renderer API: /api/v1/pdfrenderer/render
                     String url = "https://bytescout.io/api/v1/pdfrenderer/render" +
                                  "?apiKey=" + API_KEY +
-                                 "&properties.pageIndex=0" + // set page index to convert (optional)
+                                 "&properties.pageIndex=0" + // set page index to convert
                                  "&properties.resolution=300" + // set rendering resolution
-                                 "&properties.JPEGQuality=85" + // set JPEG quality
                                  "&properties.rasterOutputFormat=jpeg" + // set JPEG output format
+                                 "&properties.JPEGQuality=85" + // set JPEG quality
                                  "&inputType=fileId" + // set input type
                                  "&input=" + uploadedFileId + // set "input" parameter to the file ID we've got on the previous step
                                  "&outputType=link"; // result is download link to generated file

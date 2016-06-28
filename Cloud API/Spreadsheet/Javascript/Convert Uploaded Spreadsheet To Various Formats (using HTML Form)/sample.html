@@ -9,22 +9,24 @@
 
     <form id="form1" enctype="multipart/form-data">
         <p>
-            <label>Copy-paste your API Key for Bytescout.IO here</label>
+            <label>Authentication key (API Key). Get your own by registering at <a href="https://secure.bytescout.com/users/sign_up">https://secure.bytescout.com/users/sign_up</a>.</label>
+            <br/>
             <input type="text" id="apiKey" placeholder="API Key"/>
         </p>
         <p>
-            <label>InputFile</label>
+            <label>Input File (*.xls, *.xlsx, *.ods, *.csv, *.json)</label>
             <input type="file" name="file" id="inputFile"/>
         </p>
         <p>
             <label>Convert To</label>
             <select id="targetFormat">
-                <option value="CSV">CSV</option>
-                <option value="HTML">HTML</option>
-                <option value="TXT">TXT</option>
                 <option value="XLS">XLS</option>
                 <option value="XLSX">XLSX</option>
+                <option value="CSV">CSV</option>
+                <option value="TXT">TXT</option>
+                <option value="HTML">HTML</option>
                 <option value="XML">XML</option>
+                <option value="JSON">JSON</option>
                 <option value="PDF">PDF</option>
             </select>
         </p>

@@ -8,7 +8,8 @@
 
 <?php 
 
-// Get your API key by registering at https://secure.bytescout.com/users/sign_up
+// The authentication key (API Key). 
+// Get your own by registering at https://secure.bytescout.com/users/sign_up
 $apiKey = "********************************";
 
 // Load template and data from files

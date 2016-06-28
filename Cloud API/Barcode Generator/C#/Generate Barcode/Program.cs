@@ -14,7 +14,6 @@ namespace BytescoutWebApiExample
 
         static void Main(string[] args)
         {
-            String resultFileURL = null;
             String outputFile = "barcode.png";
 
             WebClient webClient = new WebClient();

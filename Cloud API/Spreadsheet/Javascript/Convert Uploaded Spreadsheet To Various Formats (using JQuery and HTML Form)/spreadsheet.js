@@ -45,7 +45,7 @@ function ConvertSpreadsheet(apiKey, fileId) {
         },
         "inputType": "FileId",
         "input": fileId,
-        "iutputType": "link"
+        "outputType": "link"
     };
 
     $.ajax({

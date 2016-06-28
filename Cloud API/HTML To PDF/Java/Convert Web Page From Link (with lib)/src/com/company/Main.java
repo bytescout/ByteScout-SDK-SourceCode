@@ -14,7 +14,8 @@ import java.net.URISyntaxException;
 
 public class Main
 {
-	// Your authentication key (sign up at http://bytescout.io to get your own)
+	// The authentication key (API Key). 
+    // Get your own by registering at https://secure.bytescout.com/users/sign_up
     final static String API_KEY = "#####################################";
 
     public static void main(String[] args) throws IOException, URISyntaxException

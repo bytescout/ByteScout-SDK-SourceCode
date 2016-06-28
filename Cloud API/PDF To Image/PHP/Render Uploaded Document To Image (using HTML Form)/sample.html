@@ -9,11 +9,12 @@
 
     <form name="form1" enctype="multipart/form-data" method="post" action="render_pdf.php">
         <p>
-            <label>Copy-paste your API Key for Bytescout.IO here</label>
+            <label>Authentication key (API Key). Get your own by registering at <a href="https://secure.bytescout.com/users/sign_up">https://secure.bytescout.com/users/sign_up</a>.</label>
+            <br/>
             <input type="text" name="apiKey" placeholder="API Key"/>
         </p>
         <p>
-            <label>Input File</label>
+            <label>Input File (*.pdf)</label>
             <input type="hidden" name="MAX_FILE_SIZE" value="8000000"/>
             <input type="file" name="file"/>
         </p>

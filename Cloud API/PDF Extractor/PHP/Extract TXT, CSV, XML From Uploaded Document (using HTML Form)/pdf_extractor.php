@@ -43,16 +43,22 @@ else // Display request results
         // 2. Extraction
         switch ($extractionType) {
             case '0':
-                ExtractText($apiKey, $result);
+                ExtractText($apiKey, $result, $pageIndex);
                 break;
             case '1':
-                ExtractXML($apiKey, $result);
+                ExtractCSV($apiKey, $result, $pageIndex);
                 break;
             case '2':
-                ExtractCSV($apiKey, $result);
+                ExtractXLS($apiKey, $result, $pageIndex);
                 break;
             case '3':
-                ExtractInfo($apiKey, $result);
+                ExtractXML($apiKey, $result, $pageIndex);
+                break;
+            case '4':
+                ExtractJSON($apiKey, $result, $pageIndex);
+                break;
+            case '5':
+                ExtractInfo($apiKey, $result, $pageIndex);
                 break;
         }
     }
@@ -68,7 +74,7 @@ else // Display request results
 curl_close($curl);
 
 
-function ExtractText($apiKey, $uploadedFileId) 
+function ExtractText($apiKey, $uploadedFileId, $pageIndex) 
 {
     // Create Text Extractor API URL
     $url = "https://bytescout.io/api/v1/pdfextractor/textextractor/extract?apiKey=" . $apiKey;
@@ -76,8 +82,8 @@ function ExtractText($apiKey, $uploadedFileId)
     // Create Text Extractor options
     $options = array(
         "properties" => array(
-            "startPageIndex" => 0,
-            "endPageIndex" => 0,
+            "startPageIndex" => $pageIndex, 
+            "endPageIndex" => $pageIndex,
             "extractInvisibleText" => false
             ),
         "inputType" => "fileId",
@@ -119,7 +125,111 @@ function ExtractText($apiKey, $uploadedFileId)
     curl_close($curl);
 }
 
-function ExtractXML($apiKey, $uploadedFileId) 
+function ExtractCSV($apiKey, $uploadedFileId, $pageIndex) 
+{
+    // Create CSV Extractor API URL
+    $url = "https://bytescout.io/api/v1/pdfextractor/csvextractor/extract?apiKey=" . $apiKey;
+    
+    // Create CSV Extractor options
+    $options = array(
+        "properties" => array(
+            "startPageIndex" => $pageIndex,
+            "endPageIndex" => $pageIndex,
+            "extractInvisibleText" => false
+            ),
+        "inputType" => "fileId",
+        "input" => $uploadedFileId,
+        );
+
+    // Create request
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array("Content-type: application/json"));
+    curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($options));
+    // Execute request
+    $result = curl_exec($curl);
+    
+    if (curl_errno($curl))
+    {
+        // Display request error
+        echo "Error: " . curl_error($curl);
+    }
+    else // Display request results
+    {
+        $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        if ($status_code == 200)
+        {
+            // Display extraction results
+            echo "<div><h2>Extraction Results:</h2><pre>" . $result . "</pre></div>";
+        }
+        else
+        {
+            // Display service reported errors
+            echo "<p>Status code: " . $status_code . "</p>"; 
+            echo "<p>" . $result . "</p>"; 
+        }
+    }
+    
+    // Cleanup
+    curl_close($curl);
+}
+
+function ExtractXLS($apiKey, $uploadedFileId, $pageIndex) 
+{
+    // Create XLS Extractor API URL
+    $url = "https://bytescout.io/api/v1/pdfextractor/xlsextractor/extract?apiKey=" . $apiKey;
+    
+    // Create XLS Extractor options
+    $options = array(
+        "properties" => array(
+            "startPageIndex" => $pageIndex,
+            "endPageIndex" => $pageIndex,
+            "extractInvisibleText" => false,
+            "outputFormat" => "xlsx"
+            ),
+        "inputType" => "fileId",
+        "input" => $uploadedFileId,
+        "outputType" => "link"
+        );
+
+    // Create request
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array("Content-type: application/json"));
+    curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($options));
+    // Execute request
+    $result = curl_exec($curl);
+    
+    if (curl_errno($curl))
+    {
+        // Display request error
+        echo "Error: " . curl_error($curl);
+    }
+    else // Display request results
+    {
+        $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        if ($status_code == 200)
+        {
+            // Display extraction results
+            echo "<div><h2>Conversion Result:</h2><a href='" . $result . "' target='_blank'>" . $result . "</a></div>";
+        }
+        else
+        {
+            // Display service reported errors
+            echo "<p>Status code: " . $status_code . "</p>"; 
+            echo "<p>" . $result . "</p>"; 
+        }
+    }
+    
+    // Cleanup
+    curl_close($curl);
+}
+
+function ExtractXML($apiKey, $uploadedFileId, $pageIndex) 
 {
     // Create XML Extractor API URL
     $url = "https://bytescout.io/api/v1/pdfextractor/xmlextractor/extract?apiKey=" . $apiKey;
@@ -127,8 +237,8 @@ function ExtractXML($apiKey, $uploadedFileId)
     // Create XML Extractor options
     $options = array(
         "properties" => array(
-            "startPageIndex" => 0,
-            "endPageIndex" => 0,
+            "startPageIndex" => $pageIndex,
+            "endPageIndex" => $pageIndex,
             "extractInvisibleText" => false
             ),
         "inputType" => "fileId",
@@ -170,16 +280,16 @@ function ExtractXML($apiKey, $uploadedFileId)
     curl_close($curl);
 }
 
-function ExtractCSV($apiKey, $uploadedFileId) 
+function ExtractJSON($apiKey, $uploadedFileId, $pageIndex) 
 {
-    // Create CSV Extractor API URL
-    $url = "https://bytescout.io/api/v1/pdfextractor/csvextractor/extract?apiKey=" . $apiKey;
+    // Create JSON Extractor API URL
+    $url = "https://bytescout.io/api/v1/pdfextractor/jsonextractor/extract?apiKey=" . $apiKey;
     
-    // Create CSV Extractor options
+    // Create JSON Extractor options
     $options = array(
         "properties" => array(
-            "startPageIndex" => 0,
-            "endPageIndex" => 0,
+            "startPageIndex" => $pageIndex,
+            "endPageIndex" => $pageIndex,
             "extractInvisibleText" => false
             ),
         "inputType" => "fileId",

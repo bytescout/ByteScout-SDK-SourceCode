@@ -9,27 +9,30 @@
 
     <form id="form1" enctype="multipart/form-data">
         <p>
-            <label>Copy-paste your API Key for Bytescout.IO here</label>
+            <label>Authentication key (API Key). Get your own by registering at <a href="https://secure.bytescout.com/users/sign_up">https://secure.bytescout.com/users/sign_up</a>.</label>
+            <br/>
             <input type="text" id="apiKey" placeholder="API Key" />
         </p>
         <p>
-            <label>InputFile</label>
+            <label>Input File (*.pdf)</label>
             <input type="file" name="file" id="inputFile" />
         </p>
         <p>
             <label>Extract</label>
             <select id="extractionType">
                 <option value="0" selected="selected">to Text</option>
-                <option value="1">to XML</option>
-                <option value="2">to CSV</option>
-                <option value="3">get Info</option>
+                <option value="1">to CSV</option>
+                <option value="2">to XLS</option>
+                <option value="3">to XML</option>
+                <option value="4">to JSON</option>
+                <option value="5">get Info</option>
             </select>
         </p>
         <p>
             <label>Page Index (zero-based)</label>
             <input type="number" id="pageIndex" value="0">
         </p>
-        <button type="button" id="submit" onclick="return onSubmit()">Extract</button>
+        <button type="button" id="submit" onclick="return onSubmit()">Proceed</button>
     </form>
 
     <div id="errorBlock" style="display: none">
