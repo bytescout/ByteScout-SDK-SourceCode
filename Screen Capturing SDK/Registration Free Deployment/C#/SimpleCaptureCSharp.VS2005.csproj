@@ -29,7 +29,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
 
@@ -65,6 +65,12 @@
   <ItemGroup>
     <None Include="app.manifest" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="README-FIRST.txt" />
+  </ItemGroup>
+
 
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
