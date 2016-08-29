@@ -30,7 +30,7 @@ Module Module1
 		Dim worksheet = spreadsheet.Worksheets.Add()
 
 		' Add column headers
-		For c = 0 To columns.Count - 1
+		For c As Integer = 0 To columns.Count - 1
 			worksheet(0, c).Value = columns(c)
 			worksheet(0, c).FillPattern = PatternStyle.Solid
 			worksheet(0, c).FillPatternForeColor = Color.LightGray
@@ -53,7 +53,7 @@ Module Module1
 				' Set cell text
 				Cell.Value = cellValue
 				' Set cell text alignment
-				cell.AlignmentHorizontal = If(columnIndex = 0, AlignmentHorizontal.Left, AlignmentHorizontal.Right)
+				cell.AlignmentHorizontal = IIf(columnIndex = 0, AlignmentHorizontal.Left, AlignmentHorizontal.Right)
 			Next
 
 			' Add the row to the table
@@ -61,7 +61,7 @@ Module Module1
 		Next
 
 		' Fit columns width to cell data
-		For c = 0 To columns.Count - 1
+		For c As Integer = 0 To columns.Count - 1
 			worksheet.Columns(c).AutoFit()
 		Next
 
