@@ -15,6 +15,9 @@ namespace ConvertHtmlToPdf
 				converter.Footer = "<p style=\"color: blue;\">FOOTER TEXT</p>";
 				
 				converter.ConvertHtmlToPdf("sample.html", "result.pdf");
+				
+				// You can also pass a link instead of the input file:  
+				//converter.ConvertHtmlToPdf("http://google.com", "result.pdf");
 			}
 
 			// Open result file in default PDF viewer

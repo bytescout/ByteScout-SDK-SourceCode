@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bytescout.BarCodeReader">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Bytescout BarCode Reader SDK\net4.00\Bytescout.BarCodeReader.dll</HintPath>
     </Reference>
     <Reference Include="System" />
