@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PrintLabels")]
+[assembly: AssemblyTitle("ConvertHtmlToDocx")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PrintLabels")]
-[assembly: AssemblyCopyright("Copyright ©  ByteScout 2016")]
+[assembly: AssemblyProduct("ConvertHtmlToDocx")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9632f69d-b2c4-4216-8581-60f4a71cf392")]
+[assembly: Guid("d4ef4467-0b44-4182-a9b6-50fd6c689008")]
 
 // Version information for an assembly consists of the following four values:
 //

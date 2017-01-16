@@ -1,0 +1,20 @@
+﻿{
+    "profiles": [
+        {
+            "distorted-pdf": {
+                "PDFRenderingResolution": "300",
+				"RemoveNoize": "true",
+                "NoiseRemovalFilterType": "Median",
+                "NoiseRemovalFilterSize": "2"
+            }
+        },
+        {
+            "negative-distorted-datamatrix": {
+                "BarcodeTypesToFind.DataMatrix": "true",
+                "SearchNegative": "true",
+				"HeuristicMode": "true"
+            }
+        }
+    ]
+}
+
