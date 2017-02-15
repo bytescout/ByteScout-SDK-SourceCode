@@ -3,9 +3,7 @@
         {
             "distorted-pdf": {
                 "PDFRenderingResolution": "300",
-				"RemoveNoize": "true",
-                "NoiseRemovalFilterType": "Median",
-                "NoiseRemovalFilterSize": "2"
+				"ImagePreprocessingFilters": "AddMedian()"
             }
         },
         {

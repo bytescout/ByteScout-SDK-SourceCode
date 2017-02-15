@@ -3,7 +3,6 @@
     string scr = ViewBag.Img;
     FoundBarcode[] barcodes = ViewBag.Barcodes;
 }
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>
@@ -18,20 +17,21 @@
             <input type="file" name="file" />
             <input type="submit" value="Upload file" />
         </form>
-        @if (barcodes != null) {
+        @if (barcodes != null)
+        {
             <select multiple>
-                @foreach (FoundBarcode item in barcodes) {
+                @foreach (FoundBarcode item in barcodes)
+                {
                     <option>@String.Format("{0} : {1}", item.Type, item.Value)</option>
                 }
             </select>
         }
-        @if (scr != null) {
+        @if (scr != null)
+        {
             <img src="/@scr" />
         }
     </div>
-
     <div class="line"></div>
-
     <div class="upload_camera">
         <h3>Barcodes From Camera</h3>
         <div id="userMedia" style="display:none; height: 575px; width: 1182px">
@@ -81,12 +81,10 @@
                         <video id="video" width="640" height="480"></video>
                         <!-- canvas with the output -->
                         <canvas id="canvasU" width="640" height="480" style="display:none"></canvas>
-
                     </td>
                 </tr>
             </table>
         </div>
-
         <!-- Flash (SWF) camera based capturing section -->
         <!-- this div block will be shown when browser does not support user media so the only way is to capture with flash (swf) camera -->
         <div id="flashDiv" style=" display:none; ">
@@ -123,7 +121,6 @@
                         <br />
                         <span style=" font-size:20px; ">Output barcode values read appears below: </span>
                         <br />
-
                         <!-- decoding results appears in this listbox -->
                         <select style="width:500px; height:100px;" size="8" id="OutListBoxFlash"> </select>
                         <br />
@@ -131,7 +128,6 @@
                         <br />
                         <input type="button" style="color:black; font-weight:bold; font-size:large;" value="STOP" onclick="stopScanning()" />
                         <br />
-
                         <div id="upload_results" style="background-color:#eee;"></div>
                     </td>
                     <td>
@@ -140,12 +136,10 @@
                 </tr>
             </table>
         </div>
-
     </div>
 
-
-    <script type="text/javascript" src="~/Script/jquery-1.4.2.js"></script>
-    <script type="text/javascript"  src="~/Script/webcam.js"></script>
-    <script type="text/javascript"  src="~/Script/index.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="~/Scripts/webcam.js"></script>
+    <script type="text/javascript" src="~/Scripts/index.js"></script>
 </body>
 </html>
