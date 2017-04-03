@@ -39,6 +39,7 @@ Partial Class MainForm
 		Me.btnStart = New System.Windows.Forms.Button()
 		Me.pictureBoxPreview = New System.Windows.Forms.PictureBox()
 		Me.lblFoundBarcodes = New System.Windows.Forms.Label()
+		Me.Button1 = New System.Windows.Forms.Button()
 		CType(Me.pictureBoxPreview,System.ComponentModel.ISupportInitialize).BeginInit
 		Me.SuspendLayout
 		'
@@ -214,11 +215,21 @@ Partial Class MainForm
 		Me.lblFoundBarcodes.TabIndex = 38
 		Me.lblFoundBarcodes.Text = "Found 0 barcodes"
 		'
+		'Button1
+		'
+		Me.Button1.Location = New System.Drawing.Point(416, 38)
+		Me.Button1.Name = "Button1"
+		Me.Button1.Size = New System.Drawing.Size(129, 23)
+		Me.Button1.TabIndex = 47
+		Me.Button1.Text = "Camera Properties"
+		Me.Button1.UseVisualStyleBackColor = true
+		'
 		'MainForm
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(664, 728)
+		Me.Controls.Add(Me.Button1)
 		Me.Controls.Add(Me.btnUpdateCameraImageDimensions)
 		Me.Controls.Add(Me.cbStopOnFirstBarcode)
 		Me.Controls.Add(Me.label4)
@@ -263,4 +274,5 @@ End Sub
 	Private WithEvents btnStart As Windows.Forms.Button
 	Private WithEvents pictureBoxPreview As Windows.Forms.PictureBox
 	Private WithEvents lblFoundBarcodes As Windows.Forms.Label
+	Friend WithEvents Button1 As Windows.Forms.Button
 End Class

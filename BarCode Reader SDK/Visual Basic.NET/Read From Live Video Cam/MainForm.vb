@@ -335,4 +335,15 @@ Public Class MainForm
 
 	End Sub
 
+	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+		Try
+			if _touchlessLibManager.CurrentCamera IsNot Nothing
+				_touchlessLibManager.CurrentCamera.ShowPropertiesDialog(Handle)
+			End If
+		Catch ex As Exception
+			MessageBox.Show(ex.Message)
+		End Try
+		
+	End Sub
 End Class
