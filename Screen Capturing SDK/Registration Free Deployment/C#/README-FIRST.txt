@@ -1,24 +1,20 @@
-1. Copy app.manifest into the project folder 
+** How to setup the registration free deployment in your project **
 
-2. Then in Visual Studio click on the project name
-- select Application tab
-- Find "Resources" section
-- click on "Manifest" combobox and select "app.manifest"
-- Save project
+1. Right-click your project in the solution tree, select 'Add'->'Existing Items...' menu item and add "app.manifest" file.
 
-Now when you are building the project the Visual Studio will embed app.manifest into the EXE file's resources.
+2. Open the project properties. On the Application tab select "app.manifest" in "Manifest" combo-box. 
+   Now when you build the project the manifest will embedded into the assembly resources.
 
-2. (Alternative)
-- copy "app.manifest" into "YourProjectName.exe.manfest" file
-- copy this "YourProjectName.exe.manfest" into bin\debug and bin\release folders
+   * Alternative way *
+   Rename the added "app.manifest" into "YourAssemblyName.exe.manifest".
+   In the file's properties set "Copy to Output Directory" to "Copy always".
+   Now the file will be copied to the output folder automatically and the manifest will be loaded from 
+   the file instead of resources.
 
-This way YourProjectName.exe will load manifest from YourProjectName.exe.manifest file instead of resources
+3. Right-click your project in the solution tree, select 'Add'->'Existing Items...' menu item and add 
+   "ByteScoutScreenCapturing.dll", "ByteScoutScreenCapturingFilter.dll" and "ByteScoutVideoMixerFilter.dll" files.
+   Set "Copy to Output Directory" property to "Copy always" for the each file.
+   * You can find these files in "Redistributable" folder of the SDK installation directory.
+   (Default location: "c:\Program Files\ByteScout Screen Capturing SDK\Redistributable").
 
-3. Build you project in Visual Studio
-4. Now you need to put DLL files into the same folder with your EXE and manifest so DLLs will be loaded from files directly
-- Copy ByteScoutScreenCapturing.dll into \bin\Debug and \bin\Release folders
-- Copy ByteScoutScreenCapturingFilter.dll into \bin\Debug and \bin\Release folders
-- Copy ByteScoutVideoMixerFilter.dll into \bin\Debug and \bin\Release folders
-
-You may find these files in \Redistributable\ folder of the SDK installed (c:\program files\ByteScout Screen Capturing SDK\Redistributable
-)
+4. Clean and rebuild your project.
