@@ -1,3 +1,0 @@
-The example uses Apache HttpComponents for web requests and JSON.simple for JSON processing. If you open the example in IntelliJ IDEA, it will download all dependencies automatically.
-If you use other Java IDE, add dependency "org.apache.httpcomponents:httpclient-osgi:4.5.2" and "com.google.json-simple" in Maven or over build manager you use.
-Or download libraries from https://hc.apache.org/ and http://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1 and add them manually.
