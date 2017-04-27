@@ -15,6 +15,7 @@ $pageIndex = $_POST["pageIndex"];
 
 
 // 1. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
+// * If you alredy have a direct PDF file link, go to the step 3.
 
 // Create URL
 $url = "https://bytescout.io/v1/file/upload/get-presigned-url" . 
@@ -65,12 +66,13 @@ else
             // Display request error
             echo "Error: " . curl_error($curl);
         }
-        else // Display conversion results
+        else
         {
             $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
             if ($status_code == 200)
             {
-                // 2. Extraction
+                // 3. CONVERT THE FILE TO SELECTED FORMAT
+                
                 switch ($extractionType) {
                     case '0':
                         ExtractText($apiKey, $accessFileUrl, $pageIndex);

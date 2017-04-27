@@ -55,9 +55,12 @@
             <Button Grid.Row="4" Content="Generate" Name="btnGenerate" Padding="1,1,1,0" Margin="2" VerticalAlignment="Center" Click="btnGenerate_Click" Grid.ColumnSpan="2" />
             <Button Grid.Row="5" Content="Save to file" Name="btnSaveToFile" Margin="2" IsEnabled="True" VerticalAlignment="Center" Click="btnSaveToFile_Click" Grid.ColumnSpan="2" />
 
-            <CheckBox Grid.Row="4" Grid.Column="2" Content="Draw caption for 2D barcodes" Name="chkDrawCaptionFor2D" Margin="4,0,0,0" VerticalAlignment="Center" Click="chkDrawCaptionFor2D_Checked" />
-            <CheckBox Grid.Row="5" Grid.Column="2" Content="Auto-fit barcode to container size" Name="chkAutoFitToContainer" Margin="4,0,0,0" VerticalAlignment="Center" Click="chkAutoFitToContainer_Checked" />
-            <CheckBox Grid.Row="4" Grid.Column="3" Content="Cut unused space" Name="chkCutUnusedSpace" VerticalAlignment="Center" Margin="4,0,0,0" Click="chkCutUnusedSpace_Checked" IsChecked="True" />
+            <CheckBox Grid.Row="4" Grid.Column="2" Content="Draw caption for 2D barcodes" Name="chkDrawCaptionFor2D" Margin="4,0,0,0" VerticalAlignment="Center" 
+                      IsChecked="{Binding DrawCaptionFor2DBarcodes, ElementName=ctrlBarcodeControl}" />
+            <CheckBox Grid.Row="5" Grid.Column="2" Content="Auto-fit barcode to container size" Name="chkAutoFitToContainer" Margin="4,0,0,0" VerticalAlignment="Center" 
+                      IsChecked="{Binding AutoFitToControlSize, ElementName=ctrlBarcodeControl}" />
+            <CheckBox Grid.Row="4" Grid.Column="3" Content="Cut unused space" Name="chkCutUnusedSpace" VerticalAlignment="Center" Margin="4,0,0,0" 
+                      IsChecked="{Binding CutUnusedSpace, ElementName=ctrlBarcodeControl}" />
         </Grid>
         <Bytescout:BarcodeControl Name="ctrlBarcodeControl" />
     </DockPanel>
