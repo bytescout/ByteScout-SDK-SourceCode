@@ -100,7 +100,7 @@ function RenderPDF($apiKey, $fileUrl, $outputFormat, $pages)
     // Create URL
     $url = "https://bytescout.io/v1/pdf/convert/to/" . $format .
         "?url=" . urlencode($fileUrl) .
-        "&pages=" . $pages;
+        "&pages=" . urlencode($pages);
         
     // Create request
     $curl = curl_init();
