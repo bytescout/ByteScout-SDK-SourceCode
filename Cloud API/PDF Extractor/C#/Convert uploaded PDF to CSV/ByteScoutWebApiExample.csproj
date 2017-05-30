@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{843DFCA3-752B-41B6-8048-5DBE4609D0A8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ByteScoutWebApiExample</RootNamespace>
+    <AssemblyName>ByteScoutWebApiExample</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.10.0.2\lib\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\RestSharp.105.2.3\lib\net35\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bytescout.API\ApiClient.cs" />
+    <Compile Include="Bytescout.API\ApiException.cs" />
+    <Compile Include="Bytescout.API\Api\DefaultApi.cs" />
+    <Compile Include="Bytescout.API\Configuration.cs" />
+    <Compile Include="Bytescout.API\Model\BarcodeReaderResponseModel.cs" />
+    <Compile Include="Bytescout.API\Model\BarcodeReaderResponseModelBarcodes.cs" />
+    <Compile Include="Bytescout.API\Model\Empty.cs" />
+    <Compile Include="Bytescout.API\Model\FileUploadBase64RequestModel.cs" />
+    <Compile Include="Bytescout.API\Model\JobSingleResponseModel.cs" />
+    <Compile Include="Bytescout.API\Model\MultiResponseModel.cs" />
+    <Compile Include="Bytescout.API\Model\PdfInfoResponseModel.cs" />
+    <Compile Include="Bytescout.API\Model\PdfInfoResponseModelInfo.cs" />
+    <Compile Include="Bytescout.API\Model\PdfSignRequestModel.cs" />
+    <Compile Include="Bytescout.API\Model\PdfSignRequestModelAnnotations.cs" />
+    <Compile Include="Bytescout.API\Model\PdfSignRequestModelImages.cs" />
+    <Compile Include="Bytescout.API\Model\PresignedUrlResponseModel.cs" />
+    <Compile Include="Bytescout.API\Model\SingleResponseModel.cs" />
+    <Compile Include="Bytescout.API\Model\Text.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sample.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

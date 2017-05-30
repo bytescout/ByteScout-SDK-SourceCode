@@ -48,7 +48,7 @@ public class Main
 
             if (!uploadResponse.getError())
             {
-                // Convert uploaded PDF to CSV
+                // Convert uploaded PDF file to CSV
                 String uploadedFileAccessUrl = uploadResponse.getUrl();
                 String fileName = outputFilePath.getFileName().toString();
                 String pages = ""; // Comma-separated list of pages in form "1,3,4" (leave empty for all pages)

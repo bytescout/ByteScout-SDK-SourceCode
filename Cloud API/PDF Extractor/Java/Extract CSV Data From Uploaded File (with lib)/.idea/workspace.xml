@@ -17,8 +17,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="54" column="80" lean-forward="false" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
+            <state relative-caret-position="211">
+              <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,80 +29,50 @@
       <file leaf-file-name="DefaultApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/api/DefaultApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="100" column="32" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
+            <state relative-caret-position="272">
+              <caret line="980" column="29" lean-forward="false" selection-start-line="980" selection-start-column="29" selection-end-line="980" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/ApiClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="966" column="30" lean-forward="false" selection-start-line="966" selection-start-column="30" selection-end-line="966" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleResponseModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/SingleResponseModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2314#2320#0" expanded="true" />
-                <element signature="e#2714#2730#0" expanded="true" />
-                <element signature="e#2795#2811#0" expanded="true" />
-                <element signature="e#8109#8115#0" expanded="true" />
-                <element signature="e#8182#8198#0" expanded="true" />
-                <element signature="e#8263#8279#0" expanded="true" />
-                <element signature="e#13032#13038#0" expanded="true" />
-                <element signature="e#13432#13448#0" expanded="true" />
-                <element signature="e#13513#13529#0" expanded="true" />
-                <element signature="e#18879#18885#0" expanded="true" />
-                <element signature="e#19279#19295#0" expanded="true" />
-                <element signature="e#19360#19376#0" expanded="true" />
-                <element signature="e#24765#24771#0" expanded="true" />
-                <element signature="e#24838#24854#0" expanded="true" />
-                <element signature="e#24919#24935#0" expanded="true" />
-                <element signature="e#29723#29729#0" expanded="true" />
-                <element signature="e#30123#30139#0" expanded="true" />
-                <element signature="e#30204#30220#0" expanded="true" />
-                <element signature="e#35611#35617#0" expanded="true" />
-                <element signature="e#35684#35700#0" expanded="true" />
-                <element signature="e#35765#35781#0" expanded="true" />
-                <element signature="e#40602#40608#0" expanded="true" />
-                <element signature="e#40783#40799#0" expanded="true" />
-                <element signature="e#40864#40880#0" expanded="true" />
-                <marker date="1493171558000" expanded="false" signature="48536:48565" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="54075:54104" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="59269:59298" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="64583:64612" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="69716:69745" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="75041:75070" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="80068:80097" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="85463:85492" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="90823:90852" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="95978:96007" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="101436:101465" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="106581:106610" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="111714:111743" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="117372:117401" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="122844:122873" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="128080:128109" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="134042:134071" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="139738:139767" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="145122:145151" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="151165:151194" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="156629:156658" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="161865:161894" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="167682:167711" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="173165:173194" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="178412:178441" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="184242:184271" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="189706:189735" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="194942:194971" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="200759:200788" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="206242:206271" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="211489:211518" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="217322:217351" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="222805:222834" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="228052:228081" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="233610:233639" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="238651:238680" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="243551:243580" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="248820:248849" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="254033:254062" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="259065:259094" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="265234:265263" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="271472:271501" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="277227:277256" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="283818:283847" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="289203:289232" ph="/rawtypes/" />
-                <marker date="1493171558000" expanded="false" signature="294360:294389" ph="/rawtypes/" />
+                <element signature="e#0#3773#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1323#1324#0" expanded="false" />
+                <element signature="e#1345#1346#0" expanded="false" />
+                <element signature="e#1386#1387#0" expanded="false" />
+                <element signature="e#1414#1415#0" expanded="false" />
+                <element signature="e#1659#1660#0" expanded="false" />
+                <element signature="e#1682#1683#0" expanded="false" />
+                <element signature="e#1725#1726#0" expanded="false" />
+                <element signature="e#1755#1756#0" expanded="false" />
+                <element signature="e#1982#1983#0" expanded="false" />
+                <element signature="e#2003#2004#0" expanded="false" />
+                <element signature="e#2041#2042#0" expanded="false" />
+                <element signature="e#2067#2068#0" expanded="false" />
+                <element signature="e#2314#2315#0" expanded="false" />
+                <element signature="e#2334#2335#0" expanded="false" />
+                <element signature="e#2370#2371#0" expanded="false" />
+                <element signature="e#2394#2395#0" expanded="false" />
+                <element signature="e#2948#2949#0" expanded="false" />
+                <element signature="e#3003#3004#0" expanded="false" />
+                <marker date="1494496176000" expanded="true" signature="812:815" ph="@{...}" />
               </folding>
             </state>
           </provider>
@@ -117,6 +87,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>file</find>
+    </findStrings>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -125,6 +100,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/com/bytescout/client/model/SingleResponseModel.java" />
+        <option value="$PROJECT_DIR$/src/com/bytescout/client/model/BarcodeReaderResponseModelBarcodes.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
@@ -150,6 +127,65 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Extract CSV Data From Uploaded File (with lib)">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Extract CSV Data From Uploaded File (with lib)">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="company">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Extract CSV Data From Uploaded File (with lib)">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="bytescout/client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -235,61 +271,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Extract CSV Data From Uploaded File (with lib)">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Extract CSV Data From Uploaded File (with lib)">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="com">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="company">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Extract CSV Data From Uploaded File (with lib)">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="com">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,32 +551,32 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22101842" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14498934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997833" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22101842" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15618336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -603,7 +584,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -612,6 +593,270 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/SingleResponseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#3773#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1323#1324#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
+            <element signature="e#1659#1660#0" expanded="false" />
+            <element signature="e#1682#1683#0" expanded="false" />
+            <element signature="e#1725#1726#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1982#1983#0" expanded="false" />
+            <element signature="e#2003#2004#0" expanded="false" />
+            <element signature="e#2041#2042#0" expanded="false" />
+            <element signature="e#2067#2068#0" expanded="false" />
+            <element signature="e#2314#2315#0" expanded="false" />
+            <element signature="e#2334#2335#0" expanded="false" />
+            <element signature="e#2370#2371#0" expanded="false" />
+            <element signature="e#2394#2395#0" expanded="false" />
+            <element signature="e#2948#2949#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
+            <marker date="1494496176000" expanded="true" signature="812:815" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/SingleResponseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#3773#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1323#1324#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
+            <element signature="e#1659#1660#0" expanded="false" />
+            <element signature="e#1682#1683#0" expanded="false" />
+            <element signature="e#1725#1726#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1982#1983#0" expanded="false" />
+            <element signature="e#2003#2004#0" expanded="false" />
+            <element signature="e#2041#2042#0" expanded="false" />
+            <element signature="e#2067#2068#0" expanded="false" />
+            <element signature="e#2314#2315#0" expanded="false" />
+            <element signature="e#2334#2335#0" expanded="false" />
+            <element signature="e#2370#2371#0" expanded="false" />
+            <element signature="e#2394#2395#0" expanded="false" />
+            <element signature="e#2948#2949#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
+            <marker date="1494496176000" expanded="true" signature="812:815" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/PdfSignRequestModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/SingleResponseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#3773#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1323#1324#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
+            <element signature="e#1659#1660#0" expanded="false" />
+            <element signature="e#1682#1683#0" expanded="false" />
+            <element signature="e#1725#1726#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1982#1983#0" expanded="false" />
+            <element signature="e#2003#2004#0" expanded="false" />
+            <element signature="e#2041#2042#0" expanded="false" />
+            <element signature="e#2067#2068#0" expanded="false" />
+            <element signature="e#2314#2315#0" expanded="false" />
+            <element signature="e#2334#2335#0" expanded="false" />
+            <element signature="e#2370#2371#0" expanded="false" />
+            <element signature="e#2394#2395#0" expanded="false" />
+            <element signature="e#2948#2949#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
+            <marker date="1494496176000" expanded="true" signature="812:815" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/PdfSignRequestModelAnnotations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/ApiCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/PdfSignRequestModelImages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/PdfSignRequestModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/SingleResponseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#3773#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1323#1324#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
+            <element signature="e#1659#1660#0" expanded="false" />
+            <element signature="e#1682#1683#0" expanded="false" />
+            <element signature="e#1725#1726#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1982#1983#0" expanded="false" />
+            <element signature="e#2003#2004#0" expanded="false" />
+            <element signature="e#2041#2042#0" expanded="false" />
+            <element signature="e#2067#2068#0" expanded="false" />
+            <element signature="e#2314#2315#0" expanded="false" />
+            <element signature="e#2334#2335#0" expanded="false" />
+            <element signature="e#2370#2371#0" expanded="false" />
+            <element signature="e#2394#2395#0" expanded="false" />
+            <element signature="e#2948#2949#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
+            <marker date="1494496176000" expanded="true" signature="812:815" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/PdfSignRequestModelAnnotations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/PdfSignRequestModelImages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/ApiCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/api/DefaultApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="100" column="32" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/api/DefaultApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="100" column="32" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -633,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,7 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,7 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -657,18 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2652">
           <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/ApiClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="193" column="17" lean-forward="false" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
-          <folding>
-            <element signature="e#5992#5993#0" expanded="false" />
-            <element signature="e#6025#6026#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -676,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="48" column="43" lean-forward="false" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,94 +913,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/PdfSignRequestModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/BarcodeReaderResponseModelBarcodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="218" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/BarcodeReaderResponseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-574">
+          <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/PdfSignRequestModelImages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/ApiCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/PdfSignRequestModelAnnotations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/model/SingleResponseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#3773#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1323#1324#0" expanded="false" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
+            <element signature="e#1659#1660#0" expanded="false" />
+            <element signature="e#1682#1683#0" expanded="false" />
+            <element signature="e#1725#1726#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1982#1983#0" expanded="false" />
+            <element signature="e#2003#2004#0" expanded="false" />
+            <element signature="e#2041#2042#0" expanded="false" />
+            <element signature="e#2067#2068#0" expanded="false" />
+            <element signature="e#2314#2315#0" expanded="false" />
+            <element signature="e#2334#2335#0" expanded="false" />
+            <element signature="e#2370#2371#0" expanded="false" />
+            <element signature="e#2394#2395#0" expanded="false" />
+            <element signature="e#2948#2949#0" expanded="false" />
+            <element signature="e#3003#3004#0" expanded="false" />
+            <marker date="1494496176000" expanded="true" signature="812:815" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result.csv" />
     <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/api/DefaultApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="100" column="32" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2314#2320#0" expanded="true" />
-            <element signature="e#2714#2730#0" expanded="true" />
-            <element signature="e#2795#2811#0" expanded="true" />
-            <element signature="e#8109#8115#0" expanded="true" />
-            <element signature="e#8182#8198#0" expanded="true" />
-            <element signature="e#8263#8279#0" expanded="true" />
-            <element signature="e#13032#13038#0" expanded="true" />
-            <element signature="e#13432#13448#0" expanded="true" />
-            <element signature="e#13513#13529#0" expanded="true" />
-            <element signature="e#18879#18885#0" expanded="true" />
-            <element signature="e#19279#19295#0" expanded="true" />
-            <element signature="e#19360#19376#0" expanded="true" />
-            <element signature="e#24765#24771#0" expanded="true" />
-            <element signature="e#24838#24854#0" expanded="true" />
-            <element signature="e#24919#24935#0" expanded="true" />
-            <element signature="e#29723#29729#0" expanded="true" />
-            <element signature="e#30123#30139#0" expanded="true" />
-            <element signature="e#30204#30220#0" expanded="true" />
-            <element signature="e#35611#35617#0" expanded="true" />
-            <element signature="e#35684#35700#0" expanded="true" />
-            <element signature="e#35765#35781#0" expanded="true" />
-            <element signature="e#40602#40608#0" expanded="true" />
-            <element signature="e#40783#40799#0" expanded="true" />
-            <element signature="e#40864#40880#0" expanded="true" />
-            <marker date="1493171558000" expanded="false" signature="48536:48565" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="54075:54104" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="59269:59298" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="64583:64612" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="69716:69745" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="75041:75070" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="80068:80097" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="85463:85492" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="90823:90852" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="95978:96007" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="101436:101465" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="106581:106610" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="111714:111743" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="117372:117401" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="122844:122873" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="128080:128109" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="134042:134071" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="139738:139767" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="145122:145151" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="151165:151194" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="156629:156658" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="161865:161894" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="167682:167711" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="173165:173194" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="178412:178441" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="184242:184271" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="189706:189735" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="194942:194971" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="200759:200788" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="206242:206271" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="211489:211518" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="217322:217351" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="222805:222834" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="228052:228081" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="233610:233639" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="238651:238680" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="243551:243580" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="248820:248849" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="254033:254062" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="259065:259094" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="265234:265263" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="271472:271501" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="277227:277256" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="283818:283847" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="289203:289232" ph="/rawtypes/" />
-            <marker date="1493171558000" expanded="false" signature="294360:294389" ph="/rawtypes/" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="980" column="29" lean-forward="false" selection-start-line="980" selection-start-column="29" selection-end-line="980" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bytescout/client/ApiClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="966" column="30" lean-forward="false" selection-start-line="966" selection-start-column="30" selection-end-line="966" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="54" column="80" lean-forward="false" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
+        <state relative-caret-position="211">
+          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
