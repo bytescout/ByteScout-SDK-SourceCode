@@ -27,15 +27,15 @@ $bc->ReadFromFile("BarcodePhoto.jpg");
 
 For(i = 0; i< $bc->FoundCount-1; i++)
 {
-     echo "Found barcode on page #" . $bc->GetFoundBarcodePage(i)) . " with type " . $bc->GetFoundBarcodeType(i) . " and value " & bc.GetFoundBarcodeValue(i) & vbCRLF & " and confidence=" . $bc->GetFoundBarcodeConfidence(i)
+    echo "Found barcode on page #" . $bc->GetFoundBarcodePage(i)) . " with type " . $bc->GetFoundBarcodeType(i) . " and value " & bc.GetFoundBarcodeValue(i) & vbCRLF & " and confidence=" . $bc->GetFoundBarcodeConfidence(i)
 }
 
 
 }
 catch(Exception $err) // catch exception if any
 {
-header("Content-Type: text/plain"); // switch to plain text output type
-echo($err->getMessage()); // write error message to the output
+    header("Content-Type: text/plain"); // switch to plain text output type
+    echo($err->getMessage()); // write error message to the output
 }
 
 
