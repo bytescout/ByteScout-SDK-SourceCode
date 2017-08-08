@@ -1,4 +1,0 @@
-﻿sample.txt
-
-1234567890
-abcdefghijklmnopqrstuvwxyz
