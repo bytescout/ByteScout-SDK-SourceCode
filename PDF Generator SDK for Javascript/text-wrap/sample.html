@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>BytescoutPDF source code example</title>
+	<!-- simple css styling for body -->
+	<style type="text/css">
+		html, body
+		{
+			background-color: #eee;
+			font-family: Arial, Helvetica, sans-serif;
+			width: 800px;
+		}
+		h2
+		{
+		    color: Maroon;
+		    border-bottom-style:dotted;
+		}
+	</style>
+
+<!-- helper script from google code to init HTML5 support in Internet Explorer if needed -->
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js" type="text/javascript"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/ie7-squish.js" type="text/javascript"></script>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+	<!-- REQUIRED TO USE $(window).onload() event ESPECIALLY WHEN YOU USE IMAGES WITH PDF FOR FIREFOX and IE: JQuery script is required to use $(window).onload() function event. We use JQuery from free Google hosted site -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+
+	<!-- Downloadify (https://github.com/dcneiner/Downloadify#readme) script (Downloadify helps to download javascript-generated file even in old browsers which do not supports Data URI scheme for data streaming) -->
+	<script type="text/javascript" src="downloadify.min.js"></script>
+	<!-- helper file for Downloadify-->
+	<script type="text/javascript" src="swfobject.js"></script>
+	<!-- bytescoutpdf.js script containing BytescoutPDF class to generate PDF file -->
+	<script type="text/javascript" src="bytescoutpdf.js"></script>
+	<!-- Helper script with CheckDataURISupport() function to determine if current browser supports Data URI scheme -->
+	<script type="text/javascript" src="checkdatauri.js"></script>
+</head>
+
+<body>
+
+<!-- hidden images for pdf generation - BEGIN -->
+<div id="pdfreportimages" style="display: none;">
+    <!-- put images you plan to use in PDF below -->
+    <!-- 
+    
+    <img src="pdfreportimages/logo.jpg" id="pdflogoimage"> 
+    
+    -->
+</div>
+<!-- hidden images for pdf generation - END -->
+
+	<h2>
+		DESCRIPTION:
+	</h2>
+	<h3>
+		The example demonstrating text wrapping.
+	</h3>
+	</br>
+	<h2>
+		VIEW GENERATED PDF FILE:
+	</h2>
+	<h3>
+		<a title="Click to view generated PDF file" href="sample.pdf">Click here to view generated SAMPLE.PDF (to try generation see below)</a>
+	</h3>
+	</br>
+		TRY TO GENERATE AT RUNTIME:
+	</h2>
+	<!-- runtime notice -->
+	<p>
+		<strong style="color: #FF0000">LEGAL NOTICE:</strong> BytescoutPDF.js is free for non-commercial purposes. 
+		If you want to use in commercial product/web-site/service, please <a href="http://bytescout.com/buy/pdfgeneratorsdkjs.html">purchase a license</a>.
+	</p>
+
+	<ul style="list-style-type:square">
+		<li>
+			<strong>1st method. Stream into a browser via <i>Data URI scheme</i> (works in Chrome, Firefox, Opera 7.2, Safari but not in Internet Explorer since it supports datauri: for inline images and css styles only):</strong>
+			<!-- this DIV will be used to insert links to view and download PDF file generated -->
+			<div id="getpdf">
+				<i>Generating PDF file, please wait..</i>
+ <!-- important info about local server - begin -->
+<div align="left" style="margin:10">
+ <font color="red">Please make sure you are viewing BytescoutPDF.js samples through a local server, not just by opening the html file from folder<br/>
+To run a local server:<br/>
+- if you don't know how to run local server then download free Mangoose server for Windows from <a href="http://code.google.com/p/mongoose/">http://code.google.com/p/mongoose/</a><br/>
+- copy <i>mongoose.exe</i> into the sample folder and run it by double-clicking. This will make this folder available as <a href="http://localhost:8080/">http://localhost:8080/</a><br/>
+- then open <a href="http://localhost:8080/">http://localhost:8080/</a> in the browser and browse samples<br/>
+</font>
+</div>
+ <!-- important info about local server - end -->
+
+			</div>
+			</br>
+			<script type="text/javascript">
+				// 1st method implementation:
+				// this function creates "a href" link to stream PDF via "Data URI scheme" feature supported in almost all modern browsers 	
+				// uses div with "getpdf" id to place links
+				// PDFContentBase64 parameter = pdf file content encoded with base64 encoding
+				function CreatePDFDownloadLink(PDFContentBase64) 
+				{
+					// find "getpdf" DIV element that we use to show the link to view or download PDF 
+					var pdfdiv = document.getElementById("getpdf");
+
+					// check if we have Data URI enabled (using CheckDataURISupport() function from checkdatauri.js)
+					if (CheckDataURISupport()) {
+					
+					    var warningNotice = "";
+					    // added on May 5, 2015:
+					    // check if we should show the message about Mac OS X Chrome/Chromium limitation:
+					    // check if generated PDF size exceeds 128KB security limit used in Mac OS X version of Google Chrome
+					    if (PDFContentBase64.length>128*1024)
+					    {
+					        warningNotice = "<font color=red><b>IMPORTANT:</b> this generated PDF may be displayed as blank in Mac OS X Chrome v42+ browser as it limits the inline data (to display on url click) size to 128 kb, and the generated pdf size exceeds by " + Math.round(PDFContentBase64.length/1024-128)+  " kb </font><br/>";
+					    }
+						// we have Data URI enabled so we call CreatePDF() to generate PDF and supply with base64 encoding			    
+						// add a link to view PDF right in the browser (via <a href..></a> link WITHOUT download="filename.pdf" parameter)                
+						pdfdiv.innerHTML = warningNotice + '<h3><a title=\"Generate and view PDF file\" href=\"data:application/pdf;base64,' + PDFContentBase64 + '\">Click here to generate and VIEW Sample.PDF right in the browser.<\/a></h3>';
+						// add a link to download PDF as attachment (via <a href..></a> link with download="filename.pdf" parameter)                
+						pdfdiv.innerHTML = pdfdiv.innerHTML + '<h3><a title=\"generate and Download PDF file as attachment\" download=\"Sample.PDF\" href=\"data:application/pdf;base64,' + PDFContentBase64 + '\">Click here to generate and DOWNLOAD Sample.PDF as attachment.<\/a></h3>';
+
+						// create the button code
+						var buttonCode = '<button onclick=\"' + 'location.href = \'data:application\/pdf;base64,' + PDFContentBase64 + '\'";' + 
+						'id=\"showPDFButton\" class=\"buttonClass\">Show PDF on Button click</button>';
+                        
+			                        // add the button code to the pdfdiv element existing code
+                        			pdfdiv.innerHTML += buttonCode;
+
+					}
+					else {
+						// Data URI is not supported so we should display the notice
+						pdfdiv.innerHTML = "<h3><font color=\"red\">data URI scheme is not supported in current browser (seems like you are on IE8 or lower, you should use the 2nd method instead)</font><h3>";
+					}
+				};
+			</script>
+		</li>
+	    <!-- 2nd method: Downloading file using free Downloadify script (https://github.com/dcneiner/Downloadify#readme)  -->
+		<li>
+			<strong>2nd method. Save as PDF file (uses free Downloadify script, works in IE8+ and all flash player enabled browsers)</strong>
+			</br>
+			<!-- downloadify element to show Download button made with Downloadify (works in almost all browsers including old ones) -->
+			<div id="downloadify">
+				You must have Flash 10 installed to download this file.
+
+<!-- important info about local server - begin -->
+<div align="left" style="margin:10">
+ <font color="red">Please make sure you are viewing BytescoutPDF.js samples through a local server, not just by opening the html file from folder<br/>
+To run a local server:<br/>
+- if you don't know how to run local server then download free Mangoose server for Windows from <a href="http://code.google.com/p/mongoose/">http://code.google.com/p/mongoose/</a><br/>
+- copy <i>mongoose.exe</i> into the sample folder and run it by double-clicking. This will make this folder available as <a href="http://localhost:8080/">http://localhost:8080/</a><br/>
+- then open <a href="http://localhost:8080/">http://localhost:8080/</a> in the browser and browse samples<br/>
+</font>
+</div>
+ <!-- important info about local server - end -->
+
+			</div>
+			</br>
+			<script type="text/javascript">
+				// [2] method implementation:
+				// this function uses free "Downloadify" plugin that makes possible to download files generated by javascript
+				// in almost all browsers (even in old versions)
+				// this function places "download" button in div with "downloadify" id
+				// PDFContentBase64 parameter = pdf file content encoded with base64 encoding 
+				function CreatePDFDownloadifyButton(PDFContentBase64, WeHaveInternetExplorer8OrLower ) {
+
+					// we use base64 encoding by default
+					var dataTypeParam = 'base64';
+
+
+						if (WeHaveInternetExplorer8OrLower )
+						{
+							dataTypeParam = 'string';					
+						}
+
+					Downloadify.create('downloadify', { // parameter to tell that we should place "Download" button in DIV element with "Downloadify" id
+						filename: 'Sample.pdf', // filename to use when user want to save PDF file
+						data: PDFContentBase64, // pass data encoded with base64
+						onComplete: function () { alert('Sample.pdf has been saved!'); }, // message to show once saving local file has been completed
+						onCancel: function () { alert('You have cancelled saving Sample.pdf'); }, // message to show if user canceled saving file (canceled Save File dialog)
+						onError: function () { alert('Error occured while generating PDF file, please contact support@bytescout.com'); }, // message to show on error if something goes wrong
+						transparent: false, // enable transparency for the button or not
+						swf: 'downloadify.swf', // filename of SWF button (required for some old browsers)
+						downloadImage: 'download.png', // image to use as a surface for download button
+						width: 100, // width of the button
+						height: 30, // height of the button
+						append: false, // replace button to the current content of "Downloadify" div element or replace (we replace)
+						dataType: dataTypeParam // set data type encoding
+					});
+				};                     
+			</script>
+		</li>
+	</ul>
+	<!-- main part initializing and generating PDF - begin -->
+	<!-- Source code sample with CreatePDF() function that uses bytescoutpdf.js API to generate PDF file and returns BytescoutPDF object instance -->
+	<script type="text/javascript" src="createpdf.js"></script>
+	<!-- main script to generate PDF and once PDF is generated then create links to download and/or view PDF -->
+	<script type="text/javascript">
+
+
+function getInternetExplorerVersion()
+// Returns the version of Internet Explorer or a -1
+// (indicating the use of another browser).
+{
+  var rv = -1; // Return value assumes failure.
+  if (navigator.appName == 'Microsoft Internet Explorer')
+  {
+    var ua = navigator.userAgent;
+    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+    if (re.exec(ua) != null)
+      rv = parseFloat( RegExp.$1 );
+  }
+  return rv;
+}
+
+	// checking if we are on IE, if IE then checking version
+	ieversion = getInternetExplorerVersion(); // returns version for IE or -1 for non-IE browser
+
+	var WeHaveInternetExplorer8OrLower = false;
+
+					// if we are on IE 8 or earlier we can not use images and base64
+					if (ieversion > -1)
+					{ 
+						if (ieversion < 9)
+						{
+							WeHaveInternetExplorer8OrLower = true;							
+						}
+					}
+
+		if (WeHaveInternetExplorer8OrLower)
+		{
+			alert('You using on Internet Explorer 8 or lower so BytescoutPDF.js works in limited mode.\n\nThe limitation for IE8 (and lower):\nImages and Canvas drawings are not supported while generating PDF due to limitations of IE8 (and lower versions) and lack of HTML5 canvas\n\nMost modern desktop and mobile browsers should work fine.');
+		}
+
+    // define global variable "pdf" to store pdf generating object
+    var pdf;
+		
+		
+    // set pdf generation call to execute only after the whole window document is loaded		
+    // REQUIRED WHEN YOU USE IMAGES WITH PDF FOR FIREFOX and IE: we use JQuery script to use $(window).onload() function event
+    // so PDF generation runs only AFTER the whole page and all of its elements are loaded into the browser
+    // if you use images in your PDF - see <!-- hidden images for pdf generation --> block above and put your images into this hidden block to preload them before pdf generation starts
+	$(window).load(function(){
+
+	    // calls CreatePDF() from createpdf.js to generate PDF file and return BytescoutPDF object instance		    	
+        pdf = CreatePDF(WeHaveInternetExplorer8OrLower);		
+		
+		// now we set "onload" event for our PDF object into a custom function which will create links to view and download PDF once the generation is done
+		// this is neccessary as PDF generation may take some time especially if you use images (so images should be downloaded and encoded)
+		// so this function below will be called in "onload" event which is fired once PDF file generation has been completed
+		pdf.onload(function() {
+
+            // get generated PDF file in a form of encoded string
+            var PDFContentBase64 = "";
+
+	    // if we are on IE 8 or earlier we can not use base64. Browser variable is declared in getbrowserversion.js
+ 	    if (WeHaveInternetExplorer8OrLower )
+	    {
+		// we get the content as a string (non encoded as IE8 and Downloadify not working with base64)
+		PDFContentBase64 = pdf.getText();
+	    }
+	    else{
+	    // else we are using base64 encoded pdf
+		PDFContentBase64 = pdf.getBase64Text();
+	    }
+
+            // now we create links to view or download PDF file generated (using method [1] - via "Data URI" supported in latest versions of most major browsers)
+            CreatePDFDownloadLink(PDFContentBase64);
+            // now we create "Download" button using "Downloadify" script which is aimed to provide a way to download generated file in almost all browsers (including old ones)
+            CreatePDFDownloadifyButton(PDFContentBase64, WeHaveInternetExplorer8OrLower );
+        });    
+        
+    }); // window.onload() end
+  
+
+
+
+	</script>
+	<!-- main part initializing and generating PDF - end -->
+	<!-- source code -->
+	<h2>
+		VIEW THE SOURCE CODE:
+	</h2>
+	<ul style="list-style-type:square">
+		<li>
+			<strong>
+				<a href="createpdf.js" title="Click to view the source code of createpdf.js" target="_blank">createpdf.js</a> 
+				- this file contains CreatePDF() function which calls bytescoutpdf.js to generate Sample.PDF file.
+			</strong>
+		</li>
+		<li>
+			<strong>
+				<a href="bytescoutpdf1.03.77.js" title="Click to view the source code of bytescoutpdf.js" target="_blank">bytescoutpdf.js</a> 
+				- contains BytescoutPDF javascript class for client side generation of PDF file.
+			</strong>
+		</li> 
+		<li>
+			<strong>
+				<a href="checkdatauri.js" title="Click to view the source code of checkdatauri.js" target="_blank">checkdatauri.js</a> 
+				(OPTIONAL) - contains CheckDataURISupport() function to check if current browser supports inline data streaming via <i>Data URI scheme</i>.
+			</strong>
+		</li>
+	</ul>
+</body>
+</html>

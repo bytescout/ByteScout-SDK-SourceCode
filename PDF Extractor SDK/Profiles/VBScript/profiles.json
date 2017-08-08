@@ -1,0 +1,16 @@
+﻿{
+    "profiles": [
+        {
+            "keep-formatting": {
+                "PreserveFormattingOnTextExtraction": "true"
+            }
+        },
+        {
+            "ocr-forced-200dpi": {
+                "OCRMode": "TextFromImagesAndVectorsAndFonts",
+				"OCRResolution": "200"
+            }
+        }
+    ]
+}
+

@@ -1,0 +1,75 @@
+%PDF-1.4
+1 0 obj
+<</Title (Sample document title)
+/Subject (Sample subject)
+/Keywords (keyword1, keyword 2, keyword3)
+/Author (Document Author Name)
+/Creator (Document Creator Name)
+/CreationDate (D:20141104201248+00'00')
+/ModDate (D:20141104201248+00'00')
+/Producer (BytescoutPDF.js 1.11.110)
+>>
+endobj
+2 0 obj
+<</Type /Catalog
+/Markings  <</Marked true >>
+/Pages 3 0 R
+/Outlines 4 0 R
+>>
+endobj
+3 0 obj
+<</Type /Pages
+/Kids [5 0 R ]
+/Count 1
+>>
+endobj
+4 0 obj
+<</Type /Outlines
+/Count 0
+>>
+endobj
+5 0 obj
+<</Type /Page
+/Parent 3 0 R
+/MediaBox [0 0 594 846]
+/Group <</S/Transparency /CS/DeviceRGB /I true>>
+/Contents 6 0 R
+/Resources <</Font <</F7 7 0 R>>/ProcSet [/PDF /Text]>>
+>>
+endobj
+6 0 obj
+<</Length 845
+>>
+stream
+1 w 0 0 0 RG 50 796 m 250 796 l 250 496 l 50 496 l 50 796 l S q BT 0 0 0 rg /F7 12 Tf 7.486000000000004 Tw 1 0 0 1 55 779 cm (Some words with umlauts and )Tj ET Q q BT 0 0 0 rg /F7 12 Tf 70.63600000000001 Tw 1 0 0 1 55 765 cm (JUSTIFIED alignment: )Tj ET Q q BT 0 0 0 rg /F7 12 Tf 70.60000000000005 Tw 1 0 0 1 55 751 cm (Fußgängerübergänge, )Tj ET Q q BT 0 0 0 rg /F7 12 Tf 92.63200000000003 Tw 1 0 0 1 55 737 cm (Größenmaßstäbe, )Tj ET Q q BT 0 0 0 rg /F7 12 Tf 35.932000000000016 Tw 1 0 0 1 55 723 cm (größenordnungsmäßig, café, )Tj ET Q q BT 0 0 0 rg /F7 12 Tf 2.1933333333333374 Tw 1 0 0 1 55 709 cm (communiqué, fête, fiancée, mêlée, )Tj ET Q q BT 0 0 0 rg /F7 12 Tf 5.143000000000008 Tw 1 0 0 1 55 695 cm (émigré, pâté, protégé; also note )Tj ET Q q BT 0 0 0 rg /F7 12 Tf 103.31200000000001 Tw 1 0 0 1 55 681 cm (vis-à-vis, façade)Tj ET Q 
+endstream
+endobj
+7 0 obj
+<</Type /Font
+/Subtype /Type1
+/Name /F7
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/FirstChar 0
+/LastChar 255
+/Widths [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 278 278 355 556 556 889 667 191 333 333 389 584 278 333 278 278 556 556 556 556 556 556 556 556 556 556 278 278 584 584 584 556 1015 667 667 722 722 667 611 778 722 278 500 667 556 833 722 778 667 778 722 667 611 722 667 944 667 667 611 278 278 278 469 556 333 556 556 500 556 556 278 556 556 222 222 500 222 833 556 556 556 556 333 500 278 556 500 722 500 500 500 334 260 334 584 0 556 0 222 556 333 1000 556 556 333 1000 667 333 1000 0 611 0 0 222 222 333 333 350 556 1000 333 1000 500 333 944 0 500 667 278 333 556 556 556 556 260 556 333 737 370 556 584 0 737 333 400 584 0 0 333 556 537 278 333 0 365 556 834 834 834 611 667 667 667 667 667 667 1000 722 667 667 667 667 278 278 278 278 722 722 778 778 778 778 778 584 778 722 722 722 722 667 667 611 556 556 556 556 556 556 889 500 556 556 556 556 278 278 278 278 556 556 556 556 556 556 556 584 611 556 556 556 556 500 556 500]
+>>
+endobj
+xref
+0 8
+0000000000 65535 f
+0000000010 00000 n
+0000000316 00000 n
+0000000416 00000 n
+0000000479 00000 n
+0000000529 00000 n
+0000000729 00000 n
+0000001631 00000 n
+trailer
+<< /Size 8
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+2732
+%%EOF

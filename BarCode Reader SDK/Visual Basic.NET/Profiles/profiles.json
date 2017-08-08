@@ -1,0 +1,18 @@
+﻿{
+    "profiles": [
+        {
+            "distorted-pdf": {
+                "PDFRenderingResolution": "300",
+				"ImagePreprocessingFilters": "AddMedian()"
+            }
+        },
+        {
+            "negative-distorted-datamatrix": {
+                "BarcodeTypesToFind.DataMatrix": "true",
+                "SearchNegative": "true",
+				"HeuristicMode": "true"
+            }
+        }
+    ]
+}
+

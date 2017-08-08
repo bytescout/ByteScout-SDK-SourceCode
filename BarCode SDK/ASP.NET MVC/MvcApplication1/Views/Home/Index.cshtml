@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@if (!String.IsNullOrEmpty(ViewBag.Error))
+{
+    <div class="alert alert-danger">
+        <br />
+        <h3>Sorry, the error occurred while generating barcode image: </h3>
+        <p>
+            @ViewBag.Error
+        </p>
+    </div>
+}
+
+
+<h2>Generate a barcode</h2>
+
+<form method="post" enctype="multipart/form-data" role="form">
+    <div class="form-group">
+        <label for="theValue">Enter value to encode:</label>
+        <input name="theValue" class="form-control" value="12345"/>
+        <p class="help-block" id="textboxBarcodeTypeInfo"></p>
+    </div>
+    <input type="submit" value="Generate" class="btn btn-default" id="btnGenerate" />
+</form>
+
+
+@if (!String.IsNullOrEmpty(ViewBag.Image))
+{
+    <h2>BarCode Generated:</h2>
+    <div class="row">
+        @Html.Raw(ViewBag.Image)
+    </div>
+}

@@ -1,0 +1,23 @@
+﻿<Window x:Class="ReadBarcodeFromImage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Read Barcode From Image" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="400" Width="661">
+    <Grid>
+        <Grid HorizontalAlignment="Stretch" Name="grid1" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="204*" />
+                <RowDefinition Height="85" />
+            </Grid.RowDefinitions>
+            <TextBox Height="25" Margin="118,0,7,0" Name="tbFileName" Grid.Row="1" VerticalContentAlignment="Center" VerticalAlignment="Top" IsReadOnly="True" Padding="2,0,0,2" />
+            <Button Content="Select Image..." Height="25" Name="btnBrowse" VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Left" Width="106" Click="btnBrowse_Click" Margin="6,0,0,0" />
+            <Border Grid.Row="2" Margin="118,6,6,0" BorderBrush="Silver" BorderThickness="1" Name="border1">
+                <Image Name="imageContainer" Stretch="Uniform" />
+            </Border>
+            <Button Content="Decode" Grid.Row="2" Height="46" HorizontalAlignment="Left" Margin="6,7,0,0" Name="btnDecode" VerticalAlignment="Top" Width="106" Click="btnDecode_Click" />
+            <Label Content="Found Barcodes" Grid.Row="3" Height="25" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="106" />
+            <TextBox Grid.Row="3" Margin="118,6,6,6" Name="tbFoundBarcodes" />
+        </Grid>
+    </Grid>
+</Window>

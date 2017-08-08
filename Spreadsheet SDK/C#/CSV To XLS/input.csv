@@ -1,0 +1,5 @@
+"testing CSV import with numbers"
+Column 1, Column 2, Column 3, Column 4, Column 5
+"100,000", 99.99, 99.999, .99, "100,500", "100,000,000.99"
+1,2,3,
+"Sum of A4+B4+C4=",=A4+B4+C4,
