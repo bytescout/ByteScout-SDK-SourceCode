@@ -7,6 +7,8 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
+		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
+
 		// The authentication key (API Key).
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
@@ -31,8 +33,9 @@ namespace ByteScoutWebApiExample
 			// * If you alredy have a direct file URL, skip to the step 3.
 			
 			// Prepare URL for `Get Presigned URL` API call
-			string query = string.Format("https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=binary/octet-stream&name={0}", 
-				Uri.EscapeUriString(Path.GetFileName(SourceFile)));
+			string query = Uri.EscapeUriString(string.Format(
+				"https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=binary/octet-stream&name={0}", 
+				Path.GetFileName(SourceFile)));
 
 			try
 			{
@@ -57,10 +60,11 @@ namespace ByteScoutWebApiExample
 					// 3. READ BARCODES FROM UPLOADED FILE
 
 					// Prepare URL for `Barcode Reader` API call
-					query = string.Format("https://bytescout.io/v1/barcode/read/from/url?types={0}&pages={1}&url={2}",
+					query = Uri.EscapeUriString(string.Format(
+						"https://bytescout.io/v1/barcode/read/from/url?types={0}&pages={1}&url={2}",
 						BarcodeTypes,
 						Pages,
-						Uri.EscapeUriString(uploadedFileUrl));
+						uploadedFileUrl));
 
 					// Execute request
 					response = webClient.DownloadString(query);

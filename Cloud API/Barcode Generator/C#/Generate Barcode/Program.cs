@@ -7,6 +7,8 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
+		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
+
 		// The authentication key (API Key).
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
@@ -28,10 +30,10 @@ namespace ByteScoutWebApiExample
 			webClient.Headers.Add("x-api-key", API_KEY);
 
 			// Prepare URL for `Barcode Generator` API call
-			string query = string.Format("https://bytescout.io/v1/barcode/generate?name={0}&type={1}&value={2}", 
-				Uri.EscapeUriString(Path.GetFileName(ResultFileName)), 
+			string query = Uri.EscapeUriString(string.Format("https://bytescout.io/v1/barcode/generate?name={0}&type={1}&value={2}", 
+				Path.GetFileName(ResultFileName), 
 				BarcodeType, 
-				Uri.EscapeUriString(BarcodeValue));
+				BarcodeValue));
 
 			try
 			{
@@ -43,10 +45,10 @@ namespace ByteScoutWebApiExample
 
 				if (json["error"].ToObject<bool>() == false)
 				{
-					// Get URL of generated barcode image
+					// Get URL of generated barcode image file
 					string resultFileURI = json["url"].ToString();
 					
-					// Download the image to file
+					// Download the image file
 					webClient.DownloadFile(resultFileURI, ResultFileName);
 
 					Console.WriteLine("Generated barcode saved to \"{0}\" file.", ResultFileName);

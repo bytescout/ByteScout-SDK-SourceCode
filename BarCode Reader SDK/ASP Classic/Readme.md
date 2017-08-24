@@ -33,6 +33,14 @@
 <td><a href="https://github.com/bytescout/pdf-extractor-sdk-samples-asp-classic">PDF Extractor SDK</a></td>
 <td>These samples will demonstrate how to work with ByteScout PDF Extractor SDK</td>
 </tr>
+tr>
+<td><a href="https://github.com/bytescout/spreadsheet-sdk-samples-asp-classic">Spreadsheet SDK</a></td>
+<td>These samples will demonstrate how to work with spreadsheets using this tool</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bytescout/watermarking-sdk-samples-asp-classic">Watermarking SDK</a></td>
+<td>These samples will demonstrate how to ass watermarks on your images</td>
+</tr>
 </tbody></table>
 </article>
   </div>

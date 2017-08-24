@@ -7,6 +7,8 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
+		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
+		
 		// The authentication key (API Key).
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
@@ -35,13 +37,14 @@ namespace ByteScoutWebApiExample
 			try
 			{
 				// Prepare URL for `PDF To HTML` API call
-				String query = string.Format("https://bytescout.io/v1/pdf/convert/to/html?name={0}&password={1}&pages={2}&simple={3}&columns={4}&url={5}",
-					Uri.EscapeUriString(Path.GetFileName(DestinationFile)),
+				String query = Uri.EscapeUriString(string.Format(
+					"https://bytescout.io/v1/pdf/convert/to/html?name={0}&password={1}&pages={2}&simple={3}&columns={4}&url={5}",
+					Path.GetFileName(DestinationFile),
 					Password,
 					Pages,
 					PlainHtml,
 					ColumnLayout,
-					Uri.EscapeUriString(SourceFileUrl));
+					SourceFileUrl));
 
 				// Execute request
 				String response = webClient.DownloadString(query);

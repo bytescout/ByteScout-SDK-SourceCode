@@ -7,6 +7,8 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
+		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
+		
 		// The authentication key (API Key).
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
@@ -32,8 +34,9 @@ namespace ByteScoutWebApiExample
 			// * If you alredy have a direct file URL, skip to the step 3.
 			
 			// Prepare URL for `Get Presigned URL` API call
-			string query = string.Format("https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=binary/octet-stream&name={0}", 
-				Uri.EscapeUriString(Path.GetFileName(SourceFile)));
+			string query = Uri.EscapeUriString(string.Format(
+				"https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=binary/octet-stream&name={0}", 
+				Path.GetFileName(SourceFile)));
 
 			try
 			{
@@ -58,11 +61,12 @@ namespace ByteScoutWebApiExample
 					// 3. CONVERT UPLOADED PDF FILE TO XLS
 
 					// Prepare URL for `PDF To XLS` API call
-					query = string.Format("https://bytescout.io/v1/pdf/convert/to/xls?name={0}&password={1}&pages={2}&url={3}",
-						Uri.EscapeUriString(Path.GetFileName(DestinationFile)),
+					query = Uri.EscapeUriString(string.Format(
+						"https://bytescout.io/v1/pdf/convert/to/xls?name={0}&password={1}&pages={2}&url={3}",
+						Path.GetFileName(DestinationFile),
 						Password,
 						Pages,
-						Uri.EscapeUriString(uploadedFileUrl));
+						uploadedFileUrl));
 
 					// Execute request
 					response = webClient.DownloadString(query);

@@ -7,6 +7,8 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
+		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
+		
 		// The authentication key (API Key).
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
@@ -28,10 +30,10 @@ namespace ByteScoutWebApiExample
 			webClient.Headers.Add("x-api-key", API_KEY);
 
 			// Prepare URL for `Barcode Reader` API call
-			string query = string.Format("https://bytescout.io/v1/barcode/read/from/url?types={0}&pages={1}&url={2}", 
+			string query = Uri.EscapeUriString(string.Format("https://bytescout.io/v1/barcode/read/from/url?types={0}&pages={1}&url={2}", 
 				BarcodeTypes,
 				pages,
-				Uri.EscapeUriString(SourceFileURL));
+				SourceFileURL));
 
 			try
 			{
