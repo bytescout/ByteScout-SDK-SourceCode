@@ -13,17 +13,12 @@ namespace ByteScoutWebApiExample
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
 		
-		// Source PDF file
+		// Source PDF file to split
 		const string SourceFile = @".\sample.pdf";
-		// Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
-		const string Pages = "";
-		// PDF document password. Leave empty for unportected documents.
-		const string Password = "";
-		// OCR language. "eng", "fra", "deu", "spa"  supported currently. Ley us know if you need more.
-		const string Language = "eng";
-		// Destination PDF file name
-		const string DestinationFile = @".\result.pdf";
-
+		// Comma-separated list of page numbers (or ranges) to process. Leave empty for all pages. Example: '1,3-5,7-'.
+		const string Pages = "1-2,3-";
+		
+		
 		static void Main(string[] args)
 		{
 			// Create standard .NET web client instance
@@ -60,16 +55,13 @@ namespace ByteScoutWebApiExample
 					webClient.UploadFile(uploadUrl, "PUT", SourceFile); // You can use UploadData() instead if your file is byte[] or Stream
 					webClient.Headers.Remove("content-type");
 
-					// 3. CONVERT UPLOADED CSV FILE TO PDF
+					// 3. CONVERT UPLOADED PDF FILE TO JPEG
 
-					// Prepare URL for `Make Searchable PDF` API call
-					query = Uri.EscapeUriString(Uri.EscapeUriString(string.Format(
-						"https://bytescout.io/v1/pdf/makesearchable?name={0}&password={1}&pages={2}&lang={3}&url={4}",
-						Path.GetFileName(DestinationFile),
-						Password,
+					// Prepare URL for `PDF To JPEG` API call
+					query = Uri.EscapeUriString(string.Format(
+						"https://bytescout.io/v1/pdf/split?pages={0}&url={1}",
 						Pages,
-						Language,
-						uploadedFileUrl)));
+						uploadedFileUrl));
 
 					// Execute request
 					response = webClient.DownloadString(query);
@@ -79,13 +71,18 @@ namespace ByteScoutWebApiExample
 
 					if (json["error"].ToObject<bool>() == false)
 					{
-						// Get URL of generated PDF file
-						string resultFileUrl = json["url"].ToString();
+						// Download generated PDF files
+						int part = 1;
+						foreach (JToken token in json["urls"])
+						{
+							string resultFileUrl = token.ToString();
+							string localFileName = String.Format(@".\part{0}.pdf", part);
 
-						// Download PDF file
-						webClient.DownloadFile(resultFileUrl, DestinationFile);
+							webClient.DownloadFile(resultFileUrl, localFileName);
 
-						Console.WriteLine("Generated PDF file saved as \"{0}\" file.", DestinationFile);
+							Console.WriteLine("Downloaded \"{0}\".", localFileName);
+							part++;
+						}
 					}
 					else
 					{

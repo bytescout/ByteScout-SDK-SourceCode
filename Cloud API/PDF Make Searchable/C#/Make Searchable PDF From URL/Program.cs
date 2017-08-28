@@ -15,6 +15,11 @@ namespace ByteScoutWebApiExample
 		
 		// Direct URL of source PDF file.
 		const string SourceFileUrl = "https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/PDF%20Extractor%20SDK/sample_ocr.pdf";
+		const string Pages = "";
+		// PDF document password. Leave empty for unportected documents.
+		const string Password = "";
+		// OCR language. "eng", "fra", "deu", "spa"  supported currently. Ley us know if you need more.
+		const string Language = "eng";
 		// Destination PDF file name
 		const string DestinationFile = @".\result.pdf";
 
@@ -28,8 +33,11 @@ namespace ByteScoutWebApiExample
 
 			// Prepare URL for `Make Searchable PDF` API call
 			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/pdf/makesearchable?name={0}&url={1}",
+				"https://bytescout.io/v1/pdf/makesearchable?name={0}&password={1}&pages={2}&lang={3}&url={4}",
 				Path.GetFileName(DestinationFile),
+				Password,
+				Pages,
+				Language,
 				SourceFileUrl));
 
 			try

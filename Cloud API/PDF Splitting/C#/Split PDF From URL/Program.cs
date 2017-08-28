@@ -8,19 +8,16 @@ namespace ByteScoutWebApiExample
 	class Program
 	{
 		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
+		
 		// The authentication key (API Key).
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
+
+		// Source PDF file to split
+		const string SourceFileUrl = @"https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/PDF%20Extractor%20SDK/sample2.pdf";
+		// Comma-separated list of page numbers (or ranges) to process. Leave empty for all pages. Example: '1,3-5,7-'.
+		const string Pages = "1-2,3-";
 		
-		// Result file name
-		const string ResultFileName = @".\barcode.png";
-		// Barcode type. See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeGenerateGet
-		const string BarcodeType = "Code128";
-		// Barcode value
-		const string BarcodeValue = "qweasd123456";
-
-
 		static void Main(string[] args)
 		{
 			// Create standard .NET web client instance
@@ -29,15 +26,14 @@ namespace ByteScoutWebApiExample
 			// Set API Key
 			webClient.Headers.Add("x-api-key", API_KEY);
 
-			// Prepare URL for `Barcode Generator` API call
-			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/barcode/generate?name={0}&type={1}&value={2}", 
-				Path.GetFileName(ResultFileName), 
-				BarcodeType, 
-				BarcodeValue));
-
 			try
 			{
+				// Prepare URL for `PDF To JPEG` API call
+				string query = Uri.EscapeUriString(string.Format(
+					"https://bytescout.io/v1/pdf/split?pages={0}&url={1}",
+					Pages,
+					SourceFileUrl));
+
 				// Execute request
 				string response = webClient.DownloadString(query);
 
@@ -46,13 +42,18 @@ namespace ByteScoutWebApiExample
 
 				if (json["error"].ToObject<bool>() == false)
 				{
-					// Get URL of generated barcode image file
-					string resultFileURI = json["url"].ToString();
-					
-					// Download the image file
-					webClient.DownloadFile(resultFileURI, ResultFileName);
+					// Download generated PDF files
+					int part = 1;
+					foreach (JToken token in json["urls"])
+					{
+						string resultFileUrl = token.ToString();
+						string localFileName = String.Format(@".\part{0}.pdf", part);
 
-					Console.WriteLine("Generated barcode saved to \"{0}\" file.", ResultFileName);
+						webClient.DownloadFile(resultFileUrl, localFileName);
+
+						Console.WriteLine("Downloaded \"{0}\".", localFileName);
+						part++;
+					}
 				}
 				else
 				{
