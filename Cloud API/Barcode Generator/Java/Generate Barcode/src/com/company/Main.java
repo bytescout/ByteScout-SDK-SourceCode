@@ -16,7 +16,7 @@ public class Main
 
     // The authentication key (API Key).
     // Get your own by registering at https://secure.bytescout.com/users/sign_up
-    final static String API_KEY = "pdfco_fn4gg4niugnsdfnungjkfomopacirbgga";
+    final static String API_KEY = "***********************************";
 
     public static void main(String[] args) throws IOException
     {

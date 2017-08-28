@@ -19,7 +19,7 @@ namespace ByteScoutWebApiExample
 		// See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeReadFromUrlGet
 		const string BarcodeTypes = "Code128,Code39,Interleaved2of5,EAN13";
 		// Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
-		const string pages = "";
+		const string Pages = "";
 
 		static void Main(string[] args)
 		{
@@ -32,7 +32,7 @@ namespace ByteScoutWebApiExample
 			// Prepare URL for `Barcode Reader` API call
 			string query = Uri.EscapeUriString(string.Format("https://bytescout.io/v1/barcode/read/from/url?types={0}&pages={1}&url={2}", 
 				BarcodeTypes,
-				pages,
+				Pages,
 				SourceFileURL));
 
 			try
