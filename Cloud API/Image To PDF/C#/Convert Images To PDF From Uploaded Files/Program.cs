@@ -52,6 +52,7 @@ namespace ByteScoutWebApiExample
 					{
 						// Get URL to use for the file upload
 						string uploadUrl = json["presignedUrl"].ToString();
+						// Get URL of uploaded file to use with later API calls
 						string uploadedFileUrl = json["url"].ToString();
 
 						// 1b. UPLOAD THE FILE TO CLOUD.
@@ -73,7 +74,7 @@ namespace ByteScoutWebApiExample
 
 					// 2. CREATE PDF DOCUMENT FROM UPLOADED IMAGE FILES
 
-					// Prepare URL for `CSV To PDF` API call
+					// Prepare URL for `Image To PDF` API call
 					string query = Uri.EscapeUriString(string.Format(
 						"https://bytescout.io/v1/pdf/convert/from/image?name={0}&url={1}",
 						Path.GetFileName(DestinationFile),

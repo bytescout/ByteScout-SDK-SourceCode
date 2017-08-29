@@ -30,7 +30,7 @@ namespace ByteScoutWebApiExample
 			webClient.Headers.Add("x-api-key", API_KEY);
 
 			// 1. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
-			// * If you alredy have a direct file URL, skip to the step 3.
+			// * If you already have a direct file URL, skip to the step 3.
 			
 			// Prepare URL for `Get Presigned URL` API call
 			string query = Uri.EscapeUriString(string.Format(
@@ -49,6 +49,7 @@ namespace ByteScoutWebApiExample
 				{
 					// Get URL to use for the file upload
 					string uploadUrl = json["presignedUrl"].ToString();
+					// Get URL of uploaded file to use with later API calls
 					string uploadedFileUrl = json["url"].ToString();
 
 					// 2. UPLOAD THE FILE TO CLOUD.

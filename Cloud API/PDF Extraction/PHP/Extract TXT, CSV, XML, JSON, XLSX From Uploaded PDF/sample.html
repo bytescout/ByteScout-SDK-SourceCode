@@ -23,14 +23,16 @@
             <select name="extractionType">
                 <option value="0" selected="selected">to Text</option>
                 <option value="1">to CSV</option>
-                <option value="2">to JSON</option>
-                <option value="3">to XLSX</option>
-                <option value="4">get Info</option>
+                <option value="2">to XML</option>
+                <option value="3">to JSON</option>
+                <option value="4">to XLSX</option>
+                <option value="5">get Info</option>
             </select>
         </p>
         <p>
-            <label>Page Index (zero-based)</label>
-            <input type="number" name="pageIndex" value="0">
+            <label>Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.</label>
+            <br/>
+            <input type="number" name="pages" value="0">
         </p>
         <input type="submit" name="submit" value="Proceed" />
     </form>

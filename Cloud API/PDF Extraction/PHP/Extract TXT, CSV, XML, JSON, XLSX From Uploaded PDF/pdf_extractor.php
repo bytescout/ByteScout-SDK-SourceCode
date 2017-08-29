@@ -11,7 +11,7 @@
 // Get submitted form data
 $apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://secure.bytescout.com/users/sign_up
 $extractionType = $_POST["extractionType"];
-$pageIndex = $_POST["pageIndex"];
+$pages = $_POST["pages"];
 
 
 // 1. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
@@ -30,20 +30,18 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 // Execute request
 $result = curl_exec($curl);
 
-if (curl_errno($curl))
-{
-    // Display request error
-    echo "Error: " . curl_error($curl);
-}
-else
+if (curl_errno($curl) == 0)
 {
     $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     
     if ($status_code == 200)
     {
         $json = json_decode($result, true);
+        
+        // Get URL to use for the file upload
         $uploadFileUrl = $json["presignedUrl"];
-        $accessFileUrl = $json["url"];
+        // Get URL of uploaded file to use with later API calls
+        $uploadedFileUrl = $json["url"];
         
         // 2. UPLOAD THE FILE TO CLOUD.
         
@@ -61,43 +59,48 @@ else
         
         fclose($fileHandle);
         
-        if (curl_errno($curl))
-        {
-            // Display request error
-            echo "Error: " . curl_error($curl);
-        }
-        else
+        if (curl_errno($curl) == 0)
         {
             $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+            
             if ($status_code == 200)
             {
                 // 3. CONVERT THE FILE TO SELECTED FORMAT
                 
                 switch ($extractionType) {
                     case '0':
-                        ExtractText($apiKey, $accessFileUrl, $pageIndex);
+                        ExtractText($apiKey, $uploadedFileUrl, $pages);
                         break;
                     case '1':
-                        ExtractCSV($apiKey, $accessFileUrl, $pageIndex);
+                        ExtractCSV($apiKey, $uploadedFileUrl, $pages);
                         break;
                     case '2':
-                        ExtractJSON($apiKey, $accessFileUrl, $pageIndex);
+                        ExtractXML($apiKey, $uploadedFileUrl, $pages);
                         break;
                     case '3':
-                        ExtractXLSX($apiKey, $accessFileUrl, $pageIndex);
+                        ExtractJSON($apiKey, $uploadedFileUrl, $pages);
                         break;
                     case '4':
-                        ExtractInfo($apiKey, $accessFileUrl, $pageIndex);
+                        ExtractXLSX($apiKey, $uploadedFileUrl, $pages);
+                        break;
+                    case '5':
+                        ExtractInfo($apiKey, $uploadedFileUrl, $pages);
                         break;
                 }
             }
             else
             {
-                // Display service reported error
+                // Display request error
                 echo "<p>Status code: " . $status_code . "</p>"; 
                 echo "<p>" . $result . "</p>"; 
             }
         }
+        else
+        {
+            // Display CURL error
+            echo "Error: " . curl_error($curl);
+        }
+        
     }
     else
     {
@@ -108,13 +111,18 @@ else
     
     curl_close($curl);
 }
+else
+{
+    // Display CURL error
+    echo "Error: " . curl_error($curl);
+}
 
-function ExtractText($apiKey, $uploadedFileUrl, $pageIndex) 
+function ExtractText($apiKey, $uploadedFileUrl, $pages) 
 {
     // Create URL
     $url = "https://bytescout.io/v1/pdf/convert/to/text" . 
         "?url=" . $uploadedFileUrl .
-        "&pages=" . $pageIndex;
+        "&pages=" . $pages;
     
     // Create request
     $curl = curl_init();
@@ -126,14 +134,10 @@ function ExtractText($apiKey, $uploadedFileUrl, $pageIndex)
     // Execute request
     $result = curl_exec($curl);
     
-    if (curl_errno($curl))
-    {
-        // Display request error
-        echo "Error: " . curl_error($curl);
-    }
-    else // Display request results
+    if (curl_errno($curl) == 0)
     {
         $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        
         if ($status_code == 200)
         {
             $json = json_decode($result, true);
@@ -144,22 +148,27 @@ function ExtractText($apiKey, $uploadedFileUrl, $pageIndex)
         }
         else
         {
-            // Display service reported errors
+            // Display request error
             echo "<p>Status code: " . $status_code . "</p>"; 
             echo "<p>" . $result . "</p>"; 
         }
     }
-    
+    else
+    {
+        // Display CURL error
+        echo "Error: " . curl_error($curl);
+    }
+
     // Cleanup
     curl_close($curl);
 }
 
-function ExtractCSV($apiKey, $uploadedFileUrl, $pageIndex) 
+function ExtractCSV($apiKey, $uploadedFileUrl, $pages) 
 {
     // Create URL
     $url = "https://bytescout.io/v1/pdf/convert/to/csv" . 
         "?url=" . $uploadedFileUrl .
-        "&pages=" . $pageIndex;
+        "&pages=" . $pages;
     
     // Create request
     $curl = curl_init();
@@ -171,14 +180,10 @@ function ExtractCSV($apiKey, $uploadedFileUrl, $pageIndex)
     // Execute request
     $result = curl_exec($curl);
     
-    if (curl_errno($curl))
-    {
-        // Display request error
-        echo "Error: " . curl_error($curl);
-    }
-    else // Display request results
+    if (curl_errno($curl) == 0)
     {
         $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        
         if ($status_code == 200)
         {
             $json = json_decode($result, true);
@@ -189,22 +194,73 @@ function ExtractCSV($apiKey, $uploadedFileUrl, $pageIndex)
         }
         else
         {
-            // Display service reported errors
+            // Display request error
             echo "<p>Status code: " . $status_code . "</p>"; 
             echo "<p>" . $result . "</p>"; 
         }
+    }
+    else
+    {
+        // Display CURL error
+        echo "Error: " . curl_error($curl);
     }
     
     // Cleanup
     curl_close($curl);
 }
 
-function ExtractJSON($apiKey, $uploadedFileUrl, $pageIndex) 
+function ExtractXML($apiKey, $uploadedFileUrl, $pages) 
+{
+    // Create URL
+    $url = "https://bytescout.io/v1/pdf/convert/to/xml" . 
+        "?url=" . $uploadedFileUrl .
+        "&pages=" . $pages;
+    
+    // Create request
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array("x-api-key: " . $apiKey));
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
+    // Execute request
+    $result = curl_exec($curl);
+    
+    if (curl_errno($curl) == 0)
+    {
+        $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        
+        if ($status_code == 200)
+        {
+            $json = json_decode($result, true);
+            $resultFileUrl = $json["url"];
+            
+            // Display link to the file with conversion results
+            echo "<div><h2>Conversion Result:</h2><a href='" . $resultFileUrl . "' target='_blank'>" . $resultFileUrl . "</a></div>";
+        }
+        else
+        {
+            // Display request error
+            echo "<p>Status code: " . $status_code . "</p>"; 
+            echo "<p>" . $result . "</p>"; 
+        }
+    }
+    else
+    {
+        // Display CURL error
+        echo "Error: " . curl_error($curl);
+    }
+    
+    // Cleanup
+    curl_close($curl);
+}
+
+function ExtractJSON($apiKey, $uploadedFileUrl, $pages) 
 {
     // Create URL
     $url = "https://bytescout.io/v1/pdf/convert/to/json" . 
         "?url=" . $uploadedFileUrl .
-        "&pages=" . $pageIndex;
+        "&pages=" . $pages;
     
     // Create request
     $curl = curl_init();
@@ -216,14 +272,10 @@ function ExtractJSON($apiKey, $uploadedFileUrl, $pageIndex)
     // Execute request
     $result = curl_exec($curl);
     
-    if (curl_errno($curl))
-    {
-        // Display request error
-        echo "Error: " . curl_error($curl);
-    }
-    else // Display request results
+    if (curl_errno($curl) == 0)
     {
         $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        
         if ($status_code == 200)
         {
             $json = json_decode($result, true);
@@ -234,22 +286,27 @@ function ExtractJSON($apiKey, $uploadedFileUrl, $pageIndex)
         }
         else
         {
-            // Display service reported errors
+            // Display request error
             echo "<p>Status code: " . $status_code . "</p>"; 
             echo "<p>" . $result . "</p>"; 
         }
+    }
+    else
+    {
+        // Display CURL error
+        echo "Error: " . curl_error($curl);
     }
     
     // Cleanup
     curl_close($curl);
 }
 
-function ExtractXLSX($apiKey, $uploadedFileUrl, $pageIndex) 
+function ExtractXLSX($apiKey, $uploadedFileUrl, $pages) 
 {
     // Create URL
     $url = "https://bytescout.io/v1/pdf/convert/to/xlsx" . 
         "?url=" . $uploadedFileUrl .
-        "&pages=" . $pageIndex;
+        "&pages=" . $pages;
     
     // Create request
     $curl = curl_init();
@@ -261,14 +318,10 @@ function ExtractXLSX($apiKey, $uploadedFileUrl, $pageIndex)
     // Execute request
     $result = curl_exec($curl);
     
-    if (curl_errno($curl))
-    {
-        // Display request error
-        echo "Error: " . curl_error($curl);
-    }
-    else // Display request results
+    if (curl_errno($curl) == 0)
     {
         $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        
         if ($status_code == 200)
         {
             $json = json_decode($result, true);
@@ -279,10 +332,15 @@ function ExtractXLSX($apiKey, $uploadedFileUrl, $pageIndex)
         }
         else
         {
-            // Display service reported errors
+            // Display request error
             echo "<p>Status code: " . $status_code . "</p>"; 
             echo "<p>" . $result . "</p>"; 
         }
+    }
+    else
+    {
+        // Display CURL error
+        echo "Error: " . curl_error($curl);
     }
     
     // Cleanup
@@ -304,14 +362,10 @@ function ExtractInfo($apiKey, $uploadedFileUrl)
     // Execute request
     $result = curl_exec($curl);
     
-    if (curl_errno($curl))
-    {
-        // Display request error
-        echo "Error: " . curl_error($curl);
-    }
-    else // Display request results
+    if (curl_errno($curl) == 0)
     {
         $status_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        
         if ($status_code == 200)
         {
             $json = json_decode($result, true);
@@ -326,10 +380,15 @@ function ExtractInfo($apiKey, $uploadedFileUrl)
         }
         else
         {
-            // Display service reported errors
+            // Display request error
             echo "<p>Status code: " . $status_code . "</p>"; 
             echo "<p>" . $result . "</p>"; 
         }
+    }
+    else
+    {
+        // Display CURL error
+        echo "Error: " . curl_error($curl);
     }
 }
 

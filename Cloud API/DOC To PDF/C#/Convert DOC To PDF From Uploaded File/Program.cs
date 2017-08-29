@@ -46,6 +46,7 @@ namespace ByteScoutWebApiExample
 				{
 					// Get URL to use for the file upload
 					string uploadUrl = json["presignedUrl"].ToString();
+					// Get URL of uploaded file to use with later API calls
 					string uploadedFileUrl = json["url"].ToString();
 
 					// 2. UPLOAD THE FILE TO CLOUD.

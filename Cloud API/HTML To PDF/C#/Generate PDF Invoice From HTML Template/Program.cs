@@ -16,11 +16,11 @@ namespace ByteScoutWebApiExample
 		static void Main(string[] args)
 		{
 			// HTML template
-			String template = File.ReadAllText(@".\invoice_template.html");
+			string template = File.ReadAllText(@".\invoice_template.html");
 			// Data to fill the template
-			String templateData = File.ReadAllText(@".\invoice_data.json");
+			string templateData = File.ReadAllText(@".\invoice_data.json");
 			// Destination PDF file name
-			String destinationFile = @".\result.pdf";
+			string destinationFile = @".\result.pdf";
 
 			// Create standard .NET web client instance
 			WebClient webClient = new WebClient();
@@ -31,7 +31,7 @@ namespace ByteScoutWebApiExample
             try
             {
                 // Prepare URL for HTML to PDF API call
-				String request = Uri.EscapeUriString(string.Format(
+				string request = Uri.EscapeUriString(string.Format(
 					"https://bytescout.io/v1/pdf/convert/from/html?name={0}", 
 					Path.GetFileName(destinationFile)));
 
