@@ -11,7 +11,7 @@
 </ul>
 <p><a href="https://bytescout.com/products/developer/pdfrenderersdk/index.html">PDF Renderer SDK for C#</a> is an efficient program that can render PDF file and convert PDF to TIFF, PDF to BMP, PDF to EMF and PDF to PNG images and image elements with the possibilty to print the file after. The layout is preserved, the program works in .NET, ASP.NET and Visual Basic.</p>
 <p>Check <a href="https://github.com/bytescout/bytescout-showcases">ByteScout Showcases</a> to find out how the program works for different cases.
-</p><p>This repository contains <a href="https://github.com/bytescout/pdf-renderer-sdk-samples">PDF Renderer SDK Samples for C#</a> to show how to render PDF files using this tool.</p>
+</p><p>This repository contains <a href="https://github.com/bytescout/pdf-renderer-sdk-samples-c-sharp">PDF Renderer SDK Samples for C#</a> to show how to render PDF files using this tool.</p>
 <p align="center">
   <a title="Download PDF Renderer SDK free trial" href="https://bytescout.com/download/web-installer">
   <strong>FREE TRIAL</strong></a>

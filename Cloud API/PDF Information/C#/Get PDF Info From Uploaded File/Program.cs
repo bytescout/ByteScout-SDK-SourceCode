@@ -25,7 +25,7 @@ namespace ByteScoutWebApiExample
 			webClient.Headers.Add("x-api-key", API_KEY);
 
 			// 1. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
-			// * If you alredy have a direct file URL, skip to the step 3.
+			// * If you already have a direct file URL, skip to the step 3.
 			
 			// Prepare URL for `Get Presigned URL` API call
 			string query = Uri.EscapeUriString(string.Format(
@@ -50,8 +50,7 @@ namespace ByteScoutWebApiExample
 
 					webClient.Headers.Add("content-type", "binary/octet-stream");
 					webClient.UploadFile(uploadUrl, "PUT", SourceFile); // You can use UploadData() instead if your file is byte[] or Stream
-					webClient.Headers.Remove("content-type");
-
+					
 					// 3. GET INFORMATION FROM UPLOADED FILE
 
 					// Prepare URL for `PDF Info` API call

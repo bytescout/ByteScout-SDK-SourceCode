@@ -17,7 +17,7 @@ namespace ByteScoutWebApiExample
 		const string SourceFileUrl = "https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/PDF%20Extractor%20SDK/sample1.pdf";
 		// Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 		const string Pages = "";
-		// PDF document password. Leave empty for unportected documents.
+		// PDF document password. Leave empty for unprotected documents.
 		const string Password = "";
 		// Destination TIFF file name
 		const string DestinationFile = @".\result.tif";

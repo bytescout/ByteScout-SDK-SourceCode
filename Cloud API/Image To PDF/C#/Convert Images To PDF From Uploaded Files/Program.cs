@@ -70,8 +70,6 @@ namespace ByteScoutWebApiExample
 
 				if (uploadedFiles.Count > 0)
 				{
-					webClient.Headers.Remove("content-type"); // remove the header required for the file uploading only
-
 					// 2. CREATE PDF DOCUMENT FROM UPLOADED IMAGE FILES
 
 					// Prepare URL for `Image To PDF` API call

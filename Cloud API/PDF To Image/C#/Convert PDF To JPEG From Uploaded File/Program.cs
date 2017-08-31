@@ -17,7 +17,7 @@ namespace ByteScoutWebApiExample
 		const string SourceFile = @".\sample.pdf";
 		// Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 		const string Pages = "";
-		// PDF document password. Leave empty for unportected documents.
+		// PDF document password. Leave empty for unprotected documents.
 		const string Password = "";
 		
 		static void Main(string[] args)
@@ -29,7 +29,7 @@ namespace ByteScoutWebApiExample
 			webClient.Headers.Add("x-api-key", API_KEY);
 
 			// 1. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
-			// * If you alredy have a direct file URL, skip to the step 3.
+			// * If you already have the direct file URL, skip to the step 3.
 			
 			// Prepare URL for `Get Presigned URL` API call
 			string query = Uri.EscapeUriString(string.Format(
@@ -48,14 +48,14 @@ namespace ByteScoutWebApiExample
 				{
 					// Get URL to use for the file upload
 					string uploadUrl = json["presignedUrl"].ToString();
+					// Get URL of uploaded file to use with later API calls
 					string uploadedFileUrl = json["url"].ToString();
 
 					// 2. UPLOAD THE FILE TO CLOUD.
 
 					webClient.Headers.Add("content-type", "binary/octet-stream");
 					webClient.UploadFile(uploadUrl, "PUT", SourceFile); // You can use UploadData() instead if your file is byte[] or Stream
-					webClient.Headers.Remove("content-type");
-
+					
 					// 3. CONVERT UPLOADED PDF FILE TO JPEG
 
 					// Prepare URL for `PDF To JPEG` API call

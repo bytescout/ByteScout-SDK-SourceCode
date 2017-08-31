@@ -11,7 +11,7 @@
 </ul>
 <p><a href="https://bytescout.com/products/developer/pdfsdk/index.html">PDF SDK for VB.NET</a> is a developer tool that easily generates PDF documents, modifies them and works as a complete API supporting font embedding, multimedia, watermarking and more. It allows HTML to PDF conversion, works smoothly in C# and VB.NET.</p>
 <p>Check <a href="https://github.com/bytescout/bytescout-showcases">ByteScout Showcases</a> to find out how the program works for different cases.
-</p><p>This repository contains <a href="https://github.com/bytescout/pdf-sdk-samples">PDF SDK Samples for VB.NET</a> to showcase how to generate and work with PDF files using this tool.</p>
+</p><p>This repository contains <a href="https://github.com/bytescout/pdf-sdk-samples-vb-net">PDF SDK Samples for VB.NET</a> to showcase how to generate and work with PDF files using this tool.</p>
 <p align="center">
   <a title="Download PDF SDK free trial" href="https://bytescout.com/download/web-installer">
   <strong>FREE TRIAL</strong></a>

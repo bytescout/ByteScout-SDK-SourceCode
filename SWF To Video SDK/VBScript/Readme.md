@@ -11,7 +11,7 @@
 </ul>
 <p><a href="https://bytescout.com/products/developer/swftovideosdk/swftovideosdk.html">SWF to Video SDK for VBScript</a> is a good developer tool that helps work with FLV and SWF formats, supports .NET and ActiveX interfaces. It is completely Mono .NET framework compatible. You can convert SWF to different video formats and also supports conversion to image.</p>
 <p>Check <a href="https://github.com/bytescout/bytescout-showcases">ByteScout Showcases</a> to find out how the program works for different cases.
-</p><p>This repository contains <a href="https://github.com/bytescout/swf-to-video-sdk-samples">SWF to Video SDK Samples for VBScript</a> to help you convert SWF format into video files.</p>
+</p><p>This repository contains <a href="https://github.com/bytescout/swf-to-video-sdk-samples-vbscript">SWF to Video SDK Samples for VBScript</a> to help you convert SWF format into video files.</p>
 <p align="center">
   <a title="Download SWF to Video SDK free trial" href="https://bytescout.com/download/web-installer">
   <strong>FREE TRIAL</strong></a>

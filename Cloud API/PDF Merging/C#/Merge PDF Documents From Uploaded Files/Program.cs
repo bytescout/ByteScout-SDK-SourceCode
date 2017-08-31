@@ -52,6 +52,7 @@ namespace ByteScoutWebApiExample
 					{
 						// Get URL to use for the file upload
 						string uploadUrl = json["presignedUrl"].ToString();
+						// Get URL of uploaded file to use with later API calls
 						string uploadedFileUrl = json["url"].ToString();
 
 						// 1b. UPLOAD THE FILE TO CLOUD.
@@ -69,8 +70,6 @@ namespace ByteScoutWebApiExample
 
 				if (uploadedFiles.Count > 0)
 				{
-					webClient.Headers.Remove("content-type"); // remove the header required for the file uploading only
-
 					// 2. MERGE UPLOADED PDF DOCUMENTS
 
 					// Prepare URL for `CSV To PDF` API call

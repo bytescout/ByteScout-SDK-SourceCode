@@ -30,9 +30,6 @@ var reqOptions = {
 };
 
 https.get(reqOptions, function(response) {
-    console.log("statusCode:", response.statusCode);
-    console.log("statusMessage:", response.statusMessage);
-
     response.on("data", function(d) {
         // Parse JSON response
         var data = JSON.parse(d)

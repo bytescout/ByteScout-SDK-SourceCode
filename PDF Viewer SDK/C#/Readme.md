@@ -11,7 +11,7 @@
 </ul>
 <p><a href="https://bytescout.com/products/developer/pdfviewersdk/index.html">PDF Viewer SDK for C#</a> is a developer tool that allows viewing PDF docs in C# library, it supports text searching and copying, multiple pages and works smoothly with the frameworks Microsoft .NET, Mono .NET.</p>
 <p>Check <a href="https://github.com/bytescout/bytescout-showcases">ByteScout Showcases</a> to find out how the program works for different cases.
-</p><p>This repository contains <a href="https://github.com/bytescout/pdf-viewer-sdk-samples">PDF Viewer SDK Samples for C#</a> to help create different barcode types using this tool.</p>
+</p><p>This repository contains <a href="https://github.com/bytescout/pdf-viewer-sdk-samples-c-sharp">PDF Viewer SDK Samples for C#</a> to help create different barcode types using this tool.</p>
 <p align="center">
   <a title="Download PDF Viewer SDK free trial" href="https://bytescout.com/download/web-installer">
   <strong>FREE TRIAL</strong></a>

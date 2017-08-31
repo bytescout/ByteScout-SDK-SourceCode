@@ -11,7 +11,7 @@
 </ul>
 <p><a href="https://bytescout.com/products/developer/pdftohtmlsdk/pdftohtmlsdk.html">PDF to HTML SDK for C#</a> is a well-performing tool that easily converts PDF files into HTML in C#. The layout, images and tables are preserved. The tool works in .NET, ASP.NET, ActiveX, operates fast and smoothly and is easy-to-use.</p>
 <p>Check <a href="https://github.com/bytescout/bytescout-showcases">ByteScout Showcases</a> to find out how the program works for different cases.
-</p><p>This repository contains <a href="https://github.com/bytescout/pdf-to-html-sdk-samples">PDF to HTML Samples for C#</a> show how to convert PDF to HTML with the help of this tool.</p>
+</p><p>This repository contains <a href="https://github.com/bytescout/pdf-to-html-sdk-samples-c-sharp">PDF to HTML Samples for C#</a> show how to convert PDF to HTML with the help of this tool.</p>
 <p align="center">
   <a title="Download PDF to HTML SDK free trial" href="https://bytescout.com/download/web-installer">
   <strong>FREE TRIAL</strong></a>

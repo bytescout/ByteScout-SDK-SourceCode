@@ -16,7 +16,7 @@ namespace ByteScoutWebApiExample
 		// Direct URL of source PDF file.
 		const string SourceFileUrl = "https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/PDF%20Extractor%20SDK/sample_ocr.pdf";
 		const string Pages = "";
-		// PDF document password. Leave empty for unportected documents.
+		// PDF document password. Leave empty for unprotected documents.
 		const string Password = "";
 		// OCR language. "eng", "fra", "deu", "spa"  supported currently. Ley us know if you need more.
 		const string Language = "eng";

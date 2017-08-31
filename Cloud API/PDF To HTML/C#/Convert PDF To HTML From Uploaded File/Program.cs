@@ -17,13 +17,13 @@ namespace ByteScoutWebApiExample
 		const string SourceFile = @".\sample.pdf";
 		// Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 		const string Pages = "";
-		// PDF document password. Leave empty for unportected documents.
+		// PDF document password. Leave empty for unprotected documents.
 		const string Password = "";
 		// Destination HTML file name
 		const string DestinationFile = @".\result.html";
 		// Set to `true` to get simplified HTML without CSS. Default is the rich HTML keeping the document design.
 		const bool PlainHtml = false;
-		// Set to `true` if your document has the column layout like a newpaper.
+		// Set to `true` if your document has the column layout like a newspaper.
 		const bool ColumnLayout = false;
 
 		static void Main(string[] args)
@@ -35,7 +35,7 @@ namespace ByteScoutWebApiExample
 			webClient.Headers.Add("x-api-key", API_KEY);
 
 			// 1. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
-			// * If you alredy have a direct file URL, skip to the step 3.
+			// * If you already have the direct file URL, skip to the step 3.
 			
 			// Prepare URL for `Get Presigned URL` API call
 			string query = Uri.EscapeUriString(string.Format(

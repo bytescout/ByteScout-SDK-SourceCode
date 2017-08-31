@@ -28,7 +28,7 @@ namespace ByteScoutWebApiExample
 			webClient.Headers.Add("x-api-key", API_KEY);
 
 			// 1. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
-			// * If you alredy have a direct file URL, skip to the step 3.
+			// * If you already have a direct file URL, skip to the step 3.
 			
 			// Prepare URL for `Get Presigned URL` API call
 			string query = Uri.EscapeUriString(string.Format(
@@ -55,9 +55,9 @@ namespace ByteScoutWebApiExample
 					webClient.UploadFile(uploadUrl, "PUT", SourceFile); // You can use UploadData() instead if your file is byte[] or Stream
 					webClient.Headers.Remove("content-type");
 
-					// 3. CONVERT UPLOADED PDF FILE TO JPEG
+					// 3. SPLIT UPLOADED PDF
 
-					// Prepare URL for `PDF To JPEG` API call
+					// Prepare URL for `Split PDF` API call
 					query = Uri.EscapeUriString(string.Format(
 						"https://bytescout.io/v1/pdf/split?pages={0}&url={1}",
 						Pages,

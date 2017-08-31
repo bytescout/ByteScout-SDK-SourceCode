@@ -64,8 +64,6 @@ Module Module1
 
 			If uploadedFiles.Count > 0 Then
 
-				webClient.Headers.Remove("content-type") ' remove the header required for the file uploading only
-
 				' 2. CREATE PDF DOCUMENT FROM UPLOADED IMAGE FILES
 
 				' Prepare URL for `Image To PDF` API call

@@ -28,7 +28,7 @@ namespace ByteScoutWebApiExample
 
 			try
 			{
-				// Prepare URL for `PDF To JPEG` API call
+				// Prepare URL for `Split PDF` API call
 				string query = Uri.EscapeUriString(string.Format(
 					"https://bytescout.io/v1/pdf/split?pages={0}&url={1}",
 					Pages,

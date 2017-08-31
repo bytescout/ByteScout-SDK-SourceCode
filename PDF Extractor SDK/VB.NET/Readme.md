@@ -11,7 +11,7 @@
 </ul>
 <p><a href="https://bytescout.com/products/developer/pdfextractorsdk/index.html">PDF Extractor SDK for VB.NET</a> is a useful program that enables extracting any kind of information from your PDF files - tables, metadata, plain text and more. It can also convert PDF to CSV, Excel and XML, merge and split documents, deal with noisy images and has other features.</p>
 <p>Check <a href="https://github.com/bytescout/bytescout-showcases">ByteScout Showcases</a> to find out how the program works for different cases.
-</p><p>This repository contains <a href="https://github.com/bytescout/pdf-extractor-sdk-samples">PDF Extractor Samples for VB.NET</a> to help extract text, metadata and more from PDF files using this tool.</p>
+</p><p>This repository contains <a href="https://github.com/bytescout/pdf-extractor-sdk-samples-vb-net">PDF Extractor Samples for VB.NET</a> to help extract text, metadata and more from PDF files using this tool.</p>
 <p align="center">
   <a title="Download PDF Extractor SDK free trial" href="https://bytescout.com/download/web-installer">
   <strong>FREE TRIAL</strong></a>

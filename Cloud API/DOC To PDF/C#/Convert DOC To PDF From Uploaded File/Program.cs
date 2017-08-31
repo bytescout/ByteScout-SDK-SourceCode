@@ -53,7 +53,6 @@ namespace ByteScoutWebApiExample
 
 					webClient.Headers.Add("content-type", "binary/octet-stream");
 					webClient.UploadFile(uploadUrl, "PUT", SourceFile); // You can use UploadData() instead if your file is byte[] or Stream
-					webClient.Headers.Remove("content-type");
 
 					// 3. CONVERT UPLOADED DOC (DOCX) FILE TO PDF
 
