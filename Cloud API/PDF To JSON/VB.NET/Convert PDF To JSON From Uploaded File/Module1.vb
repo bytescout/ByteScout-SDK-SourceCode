@@ -16,12 +16,8 @@ Module Module1
 	const Pages as String = ""
 	' PDF document password. Leave empty for unprotected documents.
 	const Password As String = ""
-	' Destination HTML file name
-	const DestinationFile as String = ".\result.html"
-	' Set to `true` to get simplified HTML without CSS. Default is the rich HTML keeping the document design.
-	const PlainHtml as Boolean = False
-	' Set to `true` if your document has the column layout like a newspaper.
-	const ColumnLayout as Boolean = False
+	' Destination JSON file name
+	const DestinationFile as String = ".\result.json"
 
 	Sub Main()
 
@@ -32,7 +28,7 @@ Module Module1
 		webClient.Headers.Add("x-api-key", API_KEY)
 
 		' 1. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
-		' * If you already have the direct file URL, skip to the step 3.
+		' * If you already have a direct file URL, skip to the step 3.
 
 		' Prepare URL for `Get Presigned URL` API call
 		Dim query As string = Uri.EscapeUriString(string.Format(
@@ -57,16 +53,14 @@ Module Module1
 				webClient.Headers.Add("content-type", "binary/octet-stream")
 				webClient.UploadFile(uploadUrl, "PUT", SourceFile) ' You can use UploadData() instead if your file is byte array or Stream
 				
-				' 3. CONVERT UPLOADED PDF FILE TO HTML
+				' 3. CONVERT UPLOADED PDF FILE TO JSON
 
-				' Prepare URL for `PDF To HTML` API call
+				' Prepare URL for `PDF To JSON` API call
 				query = Uri.EscapeUriString(String.Format(
-					"https://bytescout.io/v1/pdf/convert/to/html?name={0}&password={1}&pages={2}&simple={3}&columns={4}&url={5}",
+					"https://bytescout.io/v1/pdf/convert/to/json?name={0}&password={1}&pages={2}&url={3}",
 					Path.GetFileName(DestinationFile),
 					Password,
 					Pages,
-					PlainHtml,
-					ColumnLayout,
 					uploadedFileUrl))
 
 				' Execute request
@@ -77,13 +71,13 @@ Module Module1
 
 				If json("error").ToObject(Of Boolean) = False Then
 				
-					' Get URL of generated HTML file
+					' Get URL of generated JSON file
 					Dim resultFileUrl As string = json("url").ToString()
 
-					' Download HTML file
+					' Download JSON file
 					webClient.DownloadFile(resultFileUrl, DestinationFile)
 
-					Console.WriteLine("Generated HTML file saved as ""{0}"" file.", DestinationFile)
+					Console.WriteLine("Generated JSON file saved as ""{0}"" file.", DestinationFile)
 
 				Else 
 					Console.WriteLine(json("message").ToString())
