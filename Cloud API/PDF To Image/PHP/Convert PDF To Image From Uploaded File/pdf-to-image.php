@@ -150,14 +150,14 @@ function RenderPDF($apiKey, $fileUrl, $outputFormat, $pages)
         }
         else
         {
-            // Display service reported errors
+            // Display request error
             echo "<p>Status code: " . $status_code . "</p>"; 
             echo "<p>" . $result . "</p>"; 
         }
     }
     else
     {
-        // Display request error
+        // Display CURL error
         echo "Error: " . curl_error($curl);
     }
     

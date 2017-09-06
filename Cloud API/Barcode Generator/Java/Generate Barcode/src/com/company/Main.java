@@ -18,24 +18,27 @@ public class Main
     // Get your own by registering at https://secure.bytescout.com/users/sign_up
     final static String API_KEY = "***********************************";
 
+    // Result file name
+    final static Path ResultFile = Paths.get(".\\barcode.png");
+    // Barcode type. See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeGenerateGet
+    final static String BarcodeType = "Code128";
+    // Barcode value
+    final static String BarcodeValue = "qweasd123456";
+
+        
     public static void main(String[] args) throws IOException
     {
-        // Result file name
-		final Path ResultFile = Paths.get(".\\barcode.png");
-        // Barcode type. See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeGenerateGet
-		final String BarcodeType = "Code128";
-        // Barcode value
-		final String BarcodeValue = "qweasd123456";
-
+        // Create HTTP client instance
+        OkHttpClient webClient = new OkHttpClient();
+        
         // Prepare URL for `Barcode Generator` API call
         String query = String.format(
-                "https://bytescout.io/v1/barcode/generate?name=%1s&type=%2s&value=%3s",
+                "https://bytescout.io/v1/barcode/generate?name=%s&type=%s&value=%s",
                 ResultFile.getFileName(),
                 BarcodeType,
                 BarcodeValue);
-
-        // Create standard HTTP client instance
-        OkHttpClient webClient = new OkHttpClient();
+        
+        // Prepare request
         Request request = new Request.Builder()
                 .url(query)
                 .addHeader("x-api-key", API_KEY) // (!) Set API Key
@@ -58,37 +61,38 @@ public class Main
                 // Download the image file
                 downloadFile(webClient, resultFileUrl, ResultFile.toFile());
 
-                System.out.printf("Generated barcode saved to \"%1s\" file.", ResultFile.toString());
+                System.out.printf("Generated barcode saved to \"%s\" file.", ResultFile.toString());
             }
             else
             {
+                // Display service reported error
                 System.out.println(json.get("message").getAsString());
             }
         }
         else
         {
+            // Display request error
             System.out.println(response.code() + " " + response.message());
         }
     }
 
     public static void downloadFile(OkHttpClient webClient, String url, File destinationFile) throws IOException
     {
+        // Prepare request
         Request request = new Request.Builder()
                 .url(url)
                 .build();
-
+        // Execute request
         Response response = webClient.newCall(request).execute();
-        InputStream inputStream = response.body().byteStream();
-        BufferedInputStream input = new BufferedInputStream(inputStream);
-        OutputStream output = new FileOutputStream(destinationFile);
 
-        byte[] data = new byte[1024];
-        int count;
-        while ((count = input.read(data)) != -1)
-            output.write(data, 0, count);
+        byte[] fileBytes = response.body().bytes();
+
+        // Save downloaded bytes to file
+        OutputStream output = new FileOutputStream(destinationFile);
+        output.write(fileBytes);
         output.flush();
         output.close();
-        input.close();
+
         response.close();
     }
 }

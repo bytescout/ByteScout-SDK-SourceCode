@@ -14,7 +14,7 @@ namespace ByteScoutWebApiExample
 		const String API_KEY = "***********************************";
 
 		// Source PDF file to split
-		const string SourceFileUrl = @"https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/PDF%20Extractor%20SDK/sample2.pdf";
+		const string SourceFileUrl = @"https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-split/sample.pdf";
 		// Comma-separated list of page numbers (or ranges) to process. Leave empty for all pages. Example: '1,3-5,7-'.
 		const string Pages = "1-2,3-";
 		

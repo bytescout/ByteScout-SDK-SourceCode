@@ -14,7 +14,7 @@ namespace ByteScoutWebApiExample
 		const String API_KEY = "***********************************";
 		
 		// Direct URL of source file to search barcodes in.
-		const string SourceFileURL = "https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/BarCode%20Reader%20SDK/C%23/Export%20Results%20to%20XML%2C%20CSV%2C%20TXT/barcodes.pdf";
+		const string SourceFileURL = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/barcode-reader/sample.pdf";
 		// Comma-separated list of barcode types to search. 
 		// See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeReadFromUrlGet
 		const string BarcodeTypes = "Code128,Code39,Interleaved2of5,EAN13";

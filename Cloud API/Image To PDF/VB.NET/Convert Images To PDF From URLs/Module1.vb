@@ -12,8 +12,8 @@ Module Module1
 
 	' Direct URLs of image files to convert to PDF document
 	Dim SourceFiles As String() = { 
-		"https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/Cloud%20API/Image%20To%20PDF/C%23/Convert%20Images%20To%20PDF%20From%20Uploaded%20Files/image1.png",
-		"https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/Cloud%20API/Image%20To%20PDF/C%23/Convert%20Images%20To%20PDF%20From%20Uploaded%20Files/image2.jpg" }
+		"https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/image-to-pdf/image1.png",
+		"https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/image-to-pdf/image2.jpg" }
 	' Destination PDF file name
 	Const DestinationFile As String = ".\result.pdf"
 

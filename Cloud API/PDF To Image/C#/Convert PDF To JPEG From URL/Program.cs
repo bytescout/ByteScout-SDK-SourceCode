@@ -14,7 +14,7 @@ namespace ByteScoutWebApiExample
 		const String API_KEY = "***********************************";
 		
 		// Source PDF file
-		const string SourceFileUrl = @"https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/PDF%20Extractor%20SDK/sample1.pdf";
+		const string SourceFileUrl = @"https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-to-image/sample.pdf";
 		// Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 		const string Pages = "";
 		// PDF document password. Leave empty for unprotected documents.

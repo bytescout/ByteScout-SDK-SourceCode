@@ -11,7 +11,7 @@ Module Module1
 	Const API_KEY As String = "***********************************"
 
 	' Source PDF file to split
-	Const SourceFileUrl As String = "https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/PDF%20Extractor%20SDK/sample2.pdf"
+	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-split/sample.pdf"
 	' Comma-separated list of page numbers (or ranges) to process. Leave empty for all pages. Example: '1,3-5,7-'.
 	const Pages as String = "1-2,3-"
 	

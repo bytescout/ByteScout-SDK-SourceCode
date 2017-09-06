@@ -11,7 +11,7 @@ Module Module1
 	Const API_KEY As String = "***********************************"
 
 	' Direct URL of source PDF file.
-	Const SourceFileUrl As String = "https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/PDF%20Extractor%20SDK/Invoice.pdf"
+	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-to-image/sample.pdf"
 	' Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 	const Pages as String = ""
 	' PDF document password. Leave empty for unprotected documents.

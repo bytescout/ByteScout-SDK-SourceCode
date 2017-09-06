@@ -11,7 +11,7 @@ Module Module1
 	Const API_KEY As String = "***********************************"
 
 	' Direct URL of source DOC or DOCX file.
-	Const SourceFileUrl As String = "https://github.com/bytescout/ByteScout-SDK-SourceCode/raw/master/Cloud%20API/DOC%20To%20PDF/C%23/Convert%20DOC%20To%20PDF%20From%20Uploaded%20File/sample.docx"
+	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/doc-to-pdf/sample.docx"
 	' Destination PDF file name
 	Const DestinationFile As String = ".\result.pdf"
 
