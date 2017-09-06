@@ -11,16 +11,14 @@ $BarcodeType = "Code128"
 # Barcode value
 $BarcodeValue = "qweasd123456"
 
-$requestHeaders = @{
-    "x-api-key" = $API_KEY
-}
 
 $resultFileName = [System.IO.Path]::GetFileName($ResultFile)
-$uri = "https://bytescout.io/v1/barcode/generate?name=$($resultFileName)&type=$($BarcodeType)&value=$($BarcodeValue)"
-$uri = [System.Uri]::EscapeUriString($uri)
+$query = "https://bytescout.io/v1/barcode/generate?name=$($resultFileName)&type=$($BarcodeType)&value=$($BarcodeValue)"
+$query = [System.Uri]::EscapeUriString($query)
 
 try {
-    $jsonResponse = Invoke-RestMethod -Method Get -Headers $requestHeaders -Uri $uri
+    # Execute request
+    $jsonResponse = Invoke-RestMethod -Method Get -Headers @{ "x-api-key" = $API_KEY } -Uri $query
 
     if ($jsonResponse.error -eq $false) {
         # Get URL of generated barcode image file
@@ -32,9 +30,11 @@ try {
         Write-Host "Generated barcode saved to '$($ResultFile)' file."
     }
     else {
+        # Display service reported error
         Write-Host $jsonResponse.message
     }
 }
 catch {
+    # Display request error
     Write-Host $_.Exception
 }

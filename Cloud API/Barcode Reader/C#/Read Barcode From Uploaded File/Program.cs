@@ -88,16 +88,19 @@ namespace ByteScoutWebApiExample
 					}
 					else
 					{
+						// Display service reported error
 						Console.WriteLine(json["message"].ToString());
 					}
 				}
 				else
 				{
+					// Display service reported error
 					Console.WriteLine(json["message"].ToString());
 				}
 			}
 			catch (WebException e)
 			{
+				// Display request error
 				Console.WriteLine(e.ToString());
 			}
 
