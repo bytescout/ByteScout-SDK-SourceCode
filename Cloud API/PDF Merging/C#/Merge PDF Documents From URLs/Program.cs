@@ -28,7 +28,7 @@ namespace ByteScoutWebApiExample
 			// Set API Key
 			webClient.Headers.Add("x-api-key", API_KEY);
 
-			// Prepare URL for `Megrge PDF` API call
+			// Prepare URL for `Merge PDF` API call
 			string query = Uri.EscapeUriString(string.Format(
 				"https://bytescout.io/v1/pdf/merge?name={0}&url={1}",
 				Path.GetFileName(DestinationFile),

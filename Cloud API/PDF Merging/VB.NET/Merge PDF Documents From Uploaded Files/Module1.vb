@@ -68,7 +68,7 @@ Module Module1
 
 				' 2. MERGE UPLOADED PDF DOCUMENTS
 
-				' Prepare URL for `CSV To PDF` API call
+				' Prepare URL for `Merge PDF` API call
 				Dim query As String = Uri.EscapeUriString(String.Format(
 					"https://bytescout.io/v1/pdf/merge?name={0}&url={1}",
 					Path.GetFileName(DestinationFile),
