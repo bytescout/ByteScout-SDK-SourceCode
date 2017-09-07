@@ -59,7 +59,7 @@ public class Main
                 String resultFileUrl = json.get("url").getAsString();
 
                 // Download the image file
-                downloadFile(webClient, resultFileUrl, ResultFile.toFile());
+                downloadFile(webClient, resultFileUrl, ResultFile);
 
                 System.out.printf("Generated barcode saved to \"%s\" file.", ResultFile.toString());
             }
@@ -76,7 +76,7 @@ public class Main
         }
     }
 
-    public static void downloadFile(OkHttpClient webClient, String url, File destinationFile) throws IOException
+    public static void downloadFile(OkHttpClient webClient, String url, Path destinationFile) throws IOException
     {
         // Prepare request
         Request request = new Request.Builder()
@@ -88,7 +88,7 @@ public class Main
         byte[] fileBytes = response.body().bytes();
 
         // Save downloaded bytes to file
-        OutputStream output = new FileOutputStream(destinationFile);
+        OutputStream output = new FileOutputStream(destinationFile.toFile());
         output.write(fileBytes);
         output.flush();
         output.close();

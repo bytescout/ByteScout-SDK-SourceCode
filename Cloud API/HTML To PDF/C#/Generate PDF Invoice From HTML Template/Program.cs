@@ -30,7 +30,7 @@ namespace ByteScoutWebApiExample
 
             try
             {
-                // Prepare URL for HTML to PDF API call
+                // Prepare URL for `HTML to PDF` API call
 				string request = Uri.EscapeUriString(string.Format(
 					"https://bytescout.io/v1/pdf/convert/from/html?name={0}", 
 					Path.GetFileName(destinationFile)));
