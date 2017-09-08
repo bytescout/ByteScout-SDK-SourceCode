@@ -6,7 +6,7 @@ $API_KEY = "***********************************"
 
 # Source PDF file to split
 $SourceFile = ".\sample.pdf"
-# Comma-separated list of page numbers (or ranges) to process. Leave empty for all pages. Example: '1,3-5,7-'.
+# Comma-separated list of page numbers (or ranges) to process. Example: '1,3-5,7-'.
 $Pages = "1-2,3-"
 
 
