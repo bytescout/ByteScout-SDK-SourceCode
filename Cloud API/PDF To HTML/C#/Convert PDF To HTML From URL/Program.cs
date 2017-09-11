@@ -23,7 +23,7 @@ namespace ByteScoutWebApiExample
 		const string DestinationFile = @".\result.html";
 		// Set to `true` to get simplified HTML without CSS. Default is the rich HTML keeping the document design.
 		const bool PlainHtml = false;
-		// Set to `true` if your document has the column layout like a newpaper.
+		// Set to `true` if your document has the column layout like a newspaper.
 		const bool ColumnLayout = false;
 
 		static void Main(string[] args)

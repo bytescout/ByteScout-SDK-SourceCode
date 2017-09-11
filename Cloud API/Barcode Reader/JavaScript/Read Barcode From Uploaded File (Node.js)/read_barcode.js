@@ -30,7 +30,6 @@ var queryPath = `/v1/file/upload/get-presigned-url?contenttype=binary/octet-stre
 var reqOptions = {
     host: "bytescout.io",
     path: encodeURI(queryPath),
-    method: "GET",
     headers: { "x-api-key": API_KEY }
 };
 // Send request
