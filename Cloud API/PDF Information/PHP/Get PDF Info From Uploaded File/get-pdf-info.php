@@ -18,7 +18,7 @@ $apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by
 // Create URL
 $url = "https://bytescout.io/v1/file/upload/get-presigned-url" . 
     "?name=" . $_FILES["file"]["name"] .
-    "&contenttype=binary/octet-stream";
+    "&contenttype=application/octet-stream";
     
 // Create request
 $curl = curl_init();
@@ -47,7 +47,7 @@ if (curl_errno($curl) == 0)
         $fileHandle = fopen($localFile, "r");
         
         curl_setopt($curl, CURLOPT_URL, $uploadFileUrl);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, array("content-type: binary/octet-stream"));
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array("content-type: application/octet-stream"));
         curl_setopt($curl, CURLOPT_PUT, true);
         curl_setopt($curl, CURLOPT_INFILE, $fileHandle);
         curl_setopt($curl, CURLOPT_INFILESIZE, filesize($localFile));

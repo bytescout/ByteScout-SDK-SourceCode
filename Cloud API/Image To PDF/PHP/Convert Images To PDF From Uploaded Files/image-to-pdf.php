@@ -28,7 +28,7 @@ for($i = 0; $i < $fileCount; $i++)
     // Create URL
     $url = "https://bytescout.io/v1/file/upload/get-presigned-url" . 
         "?name=" . $_FILES["files"]["name"][$i] .
-        "&contenttype=binary/octet-stream";
+        "&contenttype=application/octet-stream";
         
     // Create request
     $curl = curl_init();
@@ -60,7 +60,7 @@ for($i = 0; $i < $fileCount; $i++)
             $fileHandle = fopen($localFile, "r");
             
             curl_setopt($curl, CURLOPT_URL, $uploadFileUrl);
-            curl_setopt($curl, CURLOPT_HTTPHEADER, array("content-type: binary/octet-stream"));
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array("content-type: application/octet-stream"));
             curl_setopt($curl, CURLOPT_PUT, true);
             curl_setopt($curl, CURLOPT_INFILE, $fileHandle);
             curl_setopt($curl, CURLOPT_INFILESIZE, filesize($localFile));

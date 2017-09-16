@@ -42,10 +42,6 @@
     <Reference Include="System.Xml" />
     <Compile Include="Program.vb" />
     <Compile Include="Properties\AssemblyInfo.vb" />
-    <Content Include="..\..\sample1.pdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Link>sample1.pdf</Link>
-    </Content>
     <Content Include="..\..\sample2.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <Link>sample2.pdf</Link>

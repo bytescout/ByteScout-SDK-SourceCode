@@ -1,4 +1,16 @@
-﻿Imports System
+'****************************************************************************'
+'                                                                            '
+' Download evaluation version: https://bytescout.com/download/web-installer  '
+'                                                                            '
+' Signup Cloud API free trial: https://secure.bytescout.com/users/sign_up    '
+'                                                                            '
+' Copyright © 2017 ByteScout Inc. All rights reserved.                       '
+' http://www.bytescout.com                                                   '
+'                                                                            '
+'****************************************************************************'
+
+
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -12,7 +24,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("MultithreadProcessing")> 
-<Assembly: AssemblyCopyright("Copyright ©  2017")> 
+<Assembly: AssemblyCopyright("Copyright �  2017")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

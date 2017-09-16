@@ -1,4 +1,16 @@
-﻿using System.Windows.Forms;
+//****************************************************************************//
+//                                                                            //
+// Download evaluation version: https://bytescout.com/download/web-installer  //
+//                                                                            //
+// Signup Cloud API free trial: https://secure.bytescout.com/users/sign_up    //
+//                                                                            //
+// Copyright © 2017 ByteScout Inc. All rights reserved.                       //
+// http://www.bytescout.com                                                   //
+//                                                                            //
+//****************************************************************************//
+
+
+using System.Windows.Forms;
 using BytescoutScreenCapturingLib;
 
 // NOTE: if you are getting error like "invalid image" related to loading the SDK's dll then 

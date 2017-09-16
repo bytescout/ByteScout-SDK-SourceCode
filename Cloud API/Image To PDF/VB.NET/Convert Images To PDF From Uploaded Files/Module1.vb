@@ -1,4 +1,16 @@
-﻿Imports System.IO
+'****************************************************************************'
+'                                                                            '
+' Download evaluation version: https://bytescout.com/download/web-installer  '
+'                                                                            '
+' Signup Cloud API free trial: https://secure.bytescout.com/users/sign_up    '
+'                                                                            '
+' Copyright © 2017 ByteScout Inc. All rights reserved.                       '
+' http://www.bytescout.com                                                   '
+'                                                                            '
+'****************************************************************************'
+
+
+Imports System.IO
 Imports System.Net
 Imports Newtonsoft.Json.Linq
 
@@ -34,7 +46,7 @@ Module Module1
 
 				' Prepare URL for `Get Presigned URL` API call
 				Dim query As String = Uri.EscapeUriString(String.Format(
-					"https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=binary/octet-stream&name={0}",
+					"https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name={0}",
 					Path.GetFileName(imageFile)))
 
 				' Execute request
@@ -52,7 +64,7 @@ Module Module1
 
 					' 1b. UPLOAD THE FILE TO CLOUD.
 
-					webClient.Headers.Add("content-type", "binary/octet-stream")
+					webClient.Headers.Add("content-type", "application/octet-stream")
 					webClient.UploadFile(uploadUrl, "PUT", imageFile) ' You can use UploadData() instead if your file is byte[] or Stream
 
 					uploadedFiles.Add(uploadedFileUrl)

@@ -18,7 +18,7 @@ $DestinationFile = ".\result.xls"
 # * If you already have a direct file URL, skip to the step 3.
 
 # Prepare URL for `Get Presigned URL` API call
-$query = "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=binary/octet-stream&name=" + `
+$query = "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
     [System.IO.Path]::GetFileName($SourceFile)
 $query = [System.Uri]::EscapeUriString($query)
 
@@ -34,7 +34,7 @@ try {
 
         # 2. UPLOAD THE FILE TO CLOUD.
 
-        $r = Invoke-WebRequest -Method Put -Headers @{ "x-api-key" = $API_KEY; "content-type" = "binary/octet-stream" } -InFile $SourceFile -Uri $uploadUrl
+        $r = Invoke-WebRequest -Method Put -Headers @{ "x-api-key" = $API_KEY; "content-type" = "application/octet-stream" } -InFile $SourceFile -Uri $uploadUrl
         
         if ($r.StatusCode -eq 200) {
             

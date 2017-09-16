@@ -1,4 +1,16 @@
-﻿using System.Reflection;
+//****************************************************************************//
+//                                                                            //
+// Download evaluation version: https://bytescout.com/download/web-installer  //
+//                                                                            //
+// Signup Cloud API free trial: https://secure.bytescout.com/users/sign_up    //
+//                                                                            //
+// Copyright © 2017 ByteScout Inc. All rights reserved.                       //
+// http://www.bytescout.com                                                   //
+//                                                                            //
+//****************************************************************************//
+
+
+using System.Reflection;
 using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -12,7 +24,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PdfViewerInWpf")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright �  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

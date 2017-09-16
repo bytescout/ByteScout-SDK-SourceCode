@@ -16,7 +16,7 @@ try {
         # 1a. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
         
         # Prepare URL for `Get Presigned URL` API call
-        $query = "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=binary/octet-stream&name=" + `
+        $query = "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
             [IO.Path]::GetFileName($imageFile)
         $query = [System.Uri]::EscapeUriString($query)
 
@@ -31,7 +31,7 @@ try {
     
             # 1b. UPLOAD THE FILE TO CLOUD.
     
-            $r = Invoke-WebRequest -Method Put -Headers @{ "x-api-key" = $API_KEY; "content-type" = "binary/octet-stream" } -InFile $imageFile -Uri $uploadUrl
+            $r = Invoke-WebRequest -Method Put -Headers @{ "x-api-key" = $API_KEY; "content-type" = "application/octet-stream" } -InFile $imageFile -Uri $uploadUrl
             
             if ($r.StatusCode -eq 200) {
                 # Keep uploaded file URL

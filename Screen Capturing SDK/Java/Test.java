@@ -1,3 +1,15 @@
+//****************************************************************************//
+//                                                                            //
+// Download evaluation version: https://bytescout.com/download/web-installer  //
+//                                                                            //
+// Signup Cloud API free trial: https://secure.bytescout.com/users/sign_up    //
+//                                                                            //
+// Copyright © 2017 ByteScout Inc. All rights reserved.                       //
+// http://www.bytescout.com                                                   //
+//                                                                            //
+//****************************************************************************//
+
+
 /*
 If you are running your Java application on Windows then you may use Screen Capturing SDK from Java using the Jacob library ( you may get it from http://danadler.com/jacob/ )
 

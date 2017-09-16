@@ -1,4 +1,16 @@
-﻿using System;
+//****************************************************************************//
+//                                                                            //
+// Download evaluation version: https://bytescout.com/download/web-installer  //
+//                                                                            //
+// Signup Cloud API free trial: https://secure.bytescout.com/users/sign_up    //
+//                                                                            //
+// Copyright © 2017 ByteScout Inc. All rights reserved.                       //
+// http://www.bytescout.com                                                   //
+//                                                                            //
+//****************************************************************************//
+
+
+using System;
 using System.IO;
 using System.Net;
 using Newtonsoft.Json.Linq;
@@ -29,7 +41,7 @@ namespace ByteScoutWebApiExample
 			
 			// Prepare URL for `Get Presigned URL` API call
 			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=binary/octet-stream&name={0}", 
+				"https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name={0}", 
 				Path.GetFileName(SourceFile)));
 
 			try
@@ -48,7 +60,7 @@ namespace ByteScoutWebApiExample
 
 					// 2. UPLOAD THE FILE TO CLOUD.
 
-					webClient.Headers.Add("content-type", "binary/octet-stream");
+					webClient.Headers.Add("content-type", "application/octet-stream");
 					webClient.UploadFile(uploadUrl, "PUT", SourceFile); // You can use UploadData() instead if your file is byte[] or Stream
 					
 					// 3. GET INFORMATION FROM UPLOADED FILE

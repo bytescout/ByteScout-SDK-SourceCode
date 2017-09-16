@@ -1,3 +1,15 @@
+//****************************************************************************//
+//                                                                            //
+// Download evaluation version: https://bytescout.com/download/web-installer  //
+//                                                                            //
+// Signup Cloud API free trial: https://secure.bytescout.com/users/sign_up    //
+//                                                                            //
+// Copyright © 2017 ByteScout Inc. All rights reserved.                       //
+// http://www.bytescout.com                                                   //
+//                                                                            //
+//****************************************************************************//
+
+
 package com.company;
 
 import com.google.gson.JsonObject;
@@ -42,7 +54,7 @@ public class Main
 
             // Prepare URL for `Get Presigned URL` API call
             String query = String.format(
-                    "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=binary/octet-stream&name=%s",
+                    "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=%s",
                     imageFile.getFileName());
 
             // Prepare request
@@ -143,13 +155,13 @@ public class Main
     public static boolean uploadFile(OkHttpClient webClient, String apiKey, String url, Path sourceFile) throws IOException
     {
         // Prepare request body
-        RequestBody body = RequestBody.create(MediaType.parse("binary/octet-stream"), sourceFile.toFile());
+        RequestBody body = RequestBody.create(MediaType.parse("application/octet-stream"), sourceFile.toFile());
 
         // Prepare request
         Request request = new Request.Builder()
                 .url(url)
                 .addHeader("x-api-key", apiKey) // (!) Set API Key
-                .addHeader("content-type", "binary/octet-stream")
+                .addHeader("content-type", "application/octet-stream")
                 .put(body)
                 .build();
 
