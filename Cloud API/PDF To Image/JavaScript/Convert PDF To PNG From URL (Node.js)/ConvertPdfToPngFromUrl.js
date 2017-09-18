@@ -49,12 +49,12 @@ https.get(reqOptions, (response) => {
             // Download generated PNG files
             var page = 1;
             data.urls.forEach((url) => {
-                var localFileName = `./part${page}.jpg`;
+                var localFileName = `./page${page}.jpg`;
                 var file = fs.createWriteStream(localFileName);
                 https.get(url, (response2) => {
                     response2.pipe(file)
                     .on("close", () => {
-                        console.log(`Generated PDF file saved as "${localFileName}" file.`);
+                        console.log(`Generated JPEG file saved as "${localFileName}" file.`);
                     });
                 });
                 page++;

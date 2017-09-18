@@ -37,7 +37,8 @@ const ColumnLayout = false;
 
 
 // Prepare request to `PDF To HTML` API endpoint
-var queryPath = `/v1/pdf/convert/to/html?name=${path.basename(DestinationFile)}&password=${Password}&pages=${Pages}&url=${SourceFileUrl}`;
+var queryPath = `/v1/pdf/convert/to/html?name=${path.basename(DestinationFile)}&password=${Password}&pages=${Pages}` + 
+    `&simple=${PlainHtml}&columns=${ColumnLayout}&url=${SourceFileUrl}`;
 var reqOptions = {
     host: "bytescout.io",
     path: encodeURI(queryPath),
@@ -57,7 +58,7 @@ https.get(reqOptions, (response) => {
             https.get(data.url, (response2) => {
                 response2.pipe(file)
                 .on("close", () => {
-                    console.log(`Generated PDF file saved as "${DestinationFile}" file.`);
+                    console.log(`Generated HTML file saved as "${DestinationFile}" file.`);
                 });
             });
         }

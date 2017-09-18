@@ -53,7 +53,7 @@ https.get(reqOptions, (response) => {
             https.get(data.url, (response2) => {
                 response2.pipe(file)
                 .on("close", () => {
-                    console.log(`Generated PDF file saved as "${DestinationFile}" file.`);
+                    console.log(`Generated CSV file saved as "${DestinationFile}" file.`);
                 });
             });
         }
