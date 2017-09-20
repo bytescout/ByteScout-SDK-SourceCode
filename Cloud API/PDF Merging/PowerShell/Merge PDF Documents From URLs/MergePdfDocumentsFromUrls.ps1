@@ -4,7 +4,7 @@
 # Get your own by registering at https://secure.bytescout.com/users/sign_up
 $API_KEY = "***********************************"
 
-# Direct URLs of image files to convert to PDF document
+# Direct URLs of PDF documents to merge
 $SourceFiles = @(
     "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-merge/sample1.pdf",
     "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-merge/sample2.pdf"

@@ -14,35 +14,35 @@ using Bytescout.PDFExtractor;
 
 namespace ExtractVideo
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             // Create Bytescout.PDFExtractor.MultimediaExtractor instance
             MultimediaExtractor extractor = new MultimediaExtractor();
-			extractor.RegistrationName = "demo";
-			extractor.RegistrationKey = "demo";
-			
-			// Load PDF document
-			extractor.LoadDocumentFromFile(@"sample.pdf");
+            extractor.RegistrationName = "demo";
+            extractor.RegistrationKey = "demo";
+            
+            // Load PDF document
+            extractor.LoadDocumentFromFile(@"sample.pdf");
 
-			int i = 0;
+            int i = 0;
 
-			// Initialize movies enumeration
-			if (extractor.GetFirstVideo())
-			{
-				do
-				{
+            // Initialize movies enumeration
+            if (extractor.GetFirstVideo())
+            {
+                do
+                {
                     string outputFileName = "movie" + i + extractor.GetCurrentVideoExtension();
 
-					// Save movie to file
-					extractor.SaveCurrentVideoToFile(outputFileName);
+                    // Save movie to file
+                    extractor.SaveCurrentVideoToFile(outputFileName);
 
-					i++;
+                    i++;
 
-				} 
+                } 
                 while (extractor.GetNextVideo()); // Advance movies enumeration
-			}
-		}
-	}
+            }
+        }
+    }
 }

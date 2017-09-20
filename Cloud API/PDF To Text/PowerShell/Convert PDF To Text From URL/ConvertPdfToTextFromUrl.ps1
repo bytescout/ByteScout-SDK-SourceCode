@@ -14,7 +14,7 @@ $Password = ""
 $DestinationFile = ".\result.txt"
 
 
-# Prepare URL for `PDF To TXT` API call
+# Prepare URL for `PDF To Text` API call
 $query = "https://bytescout.io/v1/pdf/convert/to/text?name={0}&password={1}&pages={2}&url={3}" -f `
     $(Split-Path $DestinationFile -Leaf), $Password, $Pages, $SourceFileUrl
 $query = [System.Uri]::EscapeUriString($query)

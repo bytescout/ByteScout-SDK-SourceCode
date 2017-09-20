@@ -23,7 +23,7 @@ Namespace FindText
 			extractor.RegistrationKey = "demo"
 
 			' Load sample PDF document
-			extractor.LoadDocumentFromFile("sample2.pdf")
+			extractor.LoadDocumentFromFile(".\sample2.pdf")
 
 			Dim pageCount As Integer = extractor.GetPageCount()
 

@@ -10,60 +10,60 @@
 //****************************************************************************//
 
 
-using System;
 using Bytescout.PDFExtractor;
 
-namespace ExtractTextByPages
+namespace FindTableAndExtractAsXml
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			// Create Bytescout.PDFExtractor.XMLExtractor instance
-			XMLExtractor extractor = new XMLExtractor();
-			extractor.RegistrationName = "demo";
-			extractor.RegistrationKey = "demo";
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create Bytescout.PDFExtractor.XMLExtractor instance
+            XMLExtractor xmlExtractor = new XMLExtractor();
+            xmlExtractor.RegistrationName = "demo";
+            xmlExtractor.RegistrationKey = "demo";
 
-            TableDetector tdetector = new TableDetector();
-            tdetector.RegistrationKey = "demo";
-            tdetector.RegistrationName = "demo";
+            // Create Bytescout.PDFExtractor.TableDetector instance
+            TableDetector tableDetector = new TableDetector();
+            tableDetector.RegistrationKey = "demo";
+            tableDetector.RegistrationName = "demo";
 
-		// we should define what kind of tables we should detect
-		// so we set min required number of columns to 3
-		tdetector.DetectionMinNumberOfColumns = 3;
+            // We should define what kind of tables we should detect.
+            // So we set min required number of columns to 3 ...
+            tableDetector.DetectionMinNumberOfColumns = 3;
+            // ... and we set min required number of columns to 3
+            tableDetector.DetectionMinNumberOfRows = 3;
 
-		// and we set min required number of columns to 3
-		tdetector.DetectionMinNumberOfRows = 3;
+            // Load sample PDF document
+            xmlExtractor.LoadDocumentFromFile(@".\sample3.pdf");
+            tableDetector.LoadDocumentFromFile(@".\sample3.pdf");
 
-			// Load sample PDF document
-			extractor.LoadDocumentFromFile("sample3.pdf");
-            tdetector.LoadDocumentFromFile("sample3.pdf");
+            // Get page count
+            int pageCount = tableDetector.GetPageCount();
 
-			// Get page count
-			int pageCount = tdetector.GetPageCount();
-
-			for (int i = 0; i < pageCount; i++)
-			{
-                int j = 1;
-                // find first table and continue if found
-                if (tdetector.FindTable(i))
+            for (int i = 0; i < pageCount; i++)
+            {
+                int t = 1;
+                // Find first table and continue if found
+                if (tableDetector.FindTable(i))
+                {
                     do
                     {
-                        // set extraction area for XML extractor to rectangle given by table detector
-                        extractor.SetExtractionArea(tdetector.GetFoundTableRectangle_Left(),
-                            tdetector.GetFoundTableRectangle_Top(),
-                            tdetector.GetFoundTableRectangle_Width(),
-                            tdetector.GetFoundTableRectangle_Height()
-                        );
+                        // Set extraction area for XML extractor to rectangle received from the table detector
+                        xmlExtractor.SetExtractionArea(tableDetector.FoundTableLocation);
+                        // Export the table to XML file
+                        xmlExtractor.SavePageXMLToFile(i, "page-" + i + "-table-" + t + ".xml");
+                        t++;
+                    } 
+                    while (tableDetector.FindNextTable()); // search next table
+                }
+            }
 
-                        // and finally save the table into XML file
-                        extractor.SavePageXMLToFile(i, "page-" + i + "-table-" + j + ".XML");
-                        j++;
-                    } while (tdetector.FindNextTable()); // search next table
-			}
+            xmlExtractor.Dispose();
+            tableDetector.Dispose();
 
-			// Open first output file in default associated application
-			System.Diagnostics.Process.Start("page-0-table-1.XML");
-		}
-	}
+            // Open first output file in default associated application (for demo purposes)
+            System.Diagnostics.Process.Start("page-0-table-1.xml");
+        }
+    }
 }

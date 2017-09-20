@@ -26,7 +26,7 @@ namespace FindText
 			extractor.RegistrationKey = "demo";
 
 			// Load sample PDF document
-			extractor.LoadDocumentFromFile("sample2.pdf");
+			extractor.LoadDocumentFromFile(@".\sample2.pdf");
 			
 			int pageCount = extractor.GetPageCount();
 

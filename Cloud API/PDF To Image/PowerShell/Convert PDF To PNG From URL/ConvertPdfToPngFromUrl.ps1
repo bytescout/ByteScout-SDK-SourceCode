@@ -4,7 +4,7 @@
 # Get your own by registering at https://secure.bytescout.com/users/sign_up
 $API_KEY = "***********************************"
 
-# Source PDF file to split
+# Direct URL of source PDF file
 $SourceFileUrl = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-to-image/sample.pdf"
 # Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 $Pages = ""

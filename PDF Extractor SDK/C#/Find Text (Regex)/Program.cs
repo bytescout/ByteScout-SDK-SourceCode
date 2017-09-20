@@ -11,64 +11,62 @@
 
 
 using System;
-using System.Drawing;
 using Bytescout.PDFExtractor;
 
 namespace FindText
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			 	// Create Bytescout.PDFExtractor.TextExtractor instance
- 	TextExtractor extractor = new TextExtractor();
- 	extractor.RegistrationName = "demo";
- 	extractor.RegistrationKey = "demo";
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create Bytescout.PDFExtractor.TextExtractor instance
+            TextExtractor extractor = new TextExtractor();
+            extractor.RegistrationName = "demo";
+            extractor.RegistrationKey = "demo";
 
- 	// Load sample PDF document
-	extractor.LoadDocumentFromFile("sample1.pdf");
+            // Load sample PDF document
+            extractor.LoadDocumentFromFile(@".\Invoice.pdf");
 
- 	
- 	int pageCount = extractor.GetPageCount();
+            extractor.RegexSearch = true; // Enable the regular expressions
+            
+            int pageCount = extractor.GetPageCount();
 
-         extractor.RegexSearch = true; //  ' turn on the regular expression search
+            // Search through pages
+            for (int i = 0; i < pageCount; i++)
+            {
+                // Search dates in format 12/31/1999
+                string regexPattern = "[0-9]{2}/[0-9]{2}/[0-9]{4}";
+                // See the complete regular expressions reference at https://msdn.microsoft.com/en-us/library/az24scfc(v=vs.110).aspx
 
-                       // search through pages
- 	for (int i = 0; i < pageCount; i++)
- 	{
-                                // searches for the text starting from LABORIS and ending with VELIT words
-                                string regexPattern = "LABORIS.*VELIT";
-                                // see the complete regular expressions reference at https://msdn.microsoft.com/en-us/library/az24scfc(v=vs.110).aspx
+                // Search each page for the pattern
+                if (extractor.Find(i, regexPattern, false))
+                {
+                    do
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("Found on page " + i + " at location " + extractor.FoundText.Bounds);
+                        Console.WriteLine("");
 
-   // Search each page for the pattern
-   if (extractor.Find(i, regexPattern, false))
-   {
-   	do
-   	{
-                       Console.WriteLine("");
-     Console.WriteLine("Found on page " + i + " at location " + extractor.FoundText.Bounds.ToString());
-                       Console.WriteLine("");
-                       // iterate through each element in the found text
-                       foreach (SearchResultElement element in extractor.FoundText.Elements)
-                       {
-                     Console.WriteLine ("Element #" + element.Index + " at left=" + element.Left + "; top=" + element.Top + "; width=" + element.Width + "; height=" + element.Height);
-                     Console.WriteLine ("Text: " + element.Text);
-                     Console.WriteLine ("Font is bold: " + element.FontIsBold); 
-                     Console.WriteLine ("Font is italic:" + element.FontIsItalic);
-                     Console.WriteLine ( "Font name: " + element.FontName);
-                     Console.WriteLine ( "Font size:" + element.FontSize);
-                     Console.WriteLine ( "Font color:" + element.FontColor);
-                       }
+                        // Iterate through each element in the found text
+                        foreach (ISearchResultElement element in extractor.FoundText.Elements)
+                        {
+                            Console.WriteLine("   Text: " + element.Text);
+                            Console.WriteLine("   Font is bold: " + element.FontIsBold);
+                            Console.WriteLine("   Font is italic: " + element.FontIsItalic);
+                            Console.WriteLine("   Font name: " + element.FontName);
+                            Console.WriteLine("   Font size: " + element.FontSize);
+                            Console.WriteLine("   Font color: " + element.FontColor);
+                            Console.WriteLine();
+                        }
+                    }
+                    while (extractor.FindNext());
+                }
+            }
 
 
-   	}
-   	while (extractor.FindNext());
-   }
- 	}
-			
-			Console.WriteLine();
-			Console.WriteLine("Press any key to continue...");
-			Console.ReadLine();
-		}
-	}
+            Console.WriteLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadLine();
+        }
+    }
 }
