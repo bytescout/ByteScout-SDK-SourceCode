@@ -17,6 +17,7 @@ Imports Bytescout.PDFExtractor
 ' predefined profiles or create you own in JSON format like in this example.
 
 Class Program
+
     Friend Shared Sub Main(args As String())
 
         ' Create Bytescout.PDFExtractor.TextExtractor instance
@@ -45,6 +46,9 @@ Class Program
         extractor.Profiles = "keep-formatting, ocr-forced-200dpi"
         ' Extract text to file
         extractor.SaveTextToFile("result2.txt")
+
+
+        extractor.Dispose()
 
 
     End Sub

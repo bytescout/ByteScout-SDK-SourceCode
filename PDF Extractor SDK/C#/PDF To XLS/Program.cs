@@ -14,7 +14,7 @@ using System.IO;
 using Bytescout.PDFExtractor;
 using System.Diagnostics;
 
-namespace PDF2CSV2XLS
+namespace PDF2XLS
 {
 
     class Program
@@ -26,15 +26,17 @@ namespace PDF2CSV2XLS
             extractor.RegistrationName = "demo";
             extractor.RegistrationKey = "demo";
 
-			File.Delete("output.xls");
+            File.Delete("output.xls");
 
             // Load sample PDF document
             extractor.LoadDocumentFromFile("sample3.pdf");
-			
-			// Save the spreadsheet to file
-			extractor.SaveToXLSFile("output.xls");
+            
+            // Save the spreadsheet to file
+            extractor.SaveToXLSFile("output.xls");
 
-			// Open the spreadsheet in default associated application
+            extractor.Dispose();
+
+            // Open the spreadsheet in default associated application
             Process.Start("output.xls");
         }
     }

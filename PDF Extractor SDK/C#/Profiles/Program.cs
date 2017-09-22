@@ -50,6 +50,9 @@ namespace Profiles
             extractor.Profiles = "keep-formatting, ocr-forced-200dpi";
             // Extract text to file
             extractor.SaveTextToFile("result2.txt");
+
+
+            extractor.Dispose();
 		}
 	}
 }

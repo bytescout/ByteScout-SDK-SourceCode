@@ -40,11 +40,15 @@ Class Program
             Console.WriteLine("Text (2 lines): ")
 
             textExtractor.LoadDocumentFromFile(file)
-            Dim stringReader As New StringReader(textExtractor.GetTextFromPage(0))
-            Console.WriteLine(stringReader.ReadLine())
-            Console.WriteLine(stringReader.ReadLine())
+            Using stringReader As New StringReader(textExtractor.GetTextFromPage(0))
+                Console.WriteLine(stringReader.ReadLine())
+                Console.WriteLine(stringReader.ReadLine())
+            End Using
             Console.WriteLine()
         Next
+
+        infoExtractor.Dispose()
+        textExtractor.Dispose()
 
         Console.WriteLine()
         Console.WriteLine("Press any key to continue...")

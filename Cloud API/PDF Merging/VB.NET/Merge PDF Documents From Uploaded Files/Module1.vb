@@ -112,6 +112,8 @@ Module Module1
 			Console.WriteLine(ex.ToString())
 		End Try
 
+		webClient.Dispose()
+
 
 		Console.WriteLine()
 		Console.WriteLine("Press any key...")

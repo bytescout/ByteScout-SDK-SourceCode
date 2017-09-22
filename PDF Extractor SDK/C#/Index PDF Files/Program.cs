@@ -41,13 +41,18 @@ namespace IndexPDFFiles
 				Console.WriteLine("Producer:       " + infoExtractor.Producer);
 				Console.WriteLine("Subject:        " + infoExtractor.Subject);
 				Console.WriteLine("CreationDate:   " + infoExtractor.CreationDate);
-				Console.WriteLine("Text (2 lines): ");
+				Console.WriteLine("Text (first 2 lines): ");
 
 				textExtractor.LoadDocumentFromFile(file);
-				StringReader stringReader = new StringReader(textExtractor.GetTextFromPage(0));
-				Console.WriteLine(stringReader.ReadLine());
-				Console.WriteLine(stringReader.ReadLine());
+				using (StringReader stringReader = new StringReader(textExtractor.GetTextFromPage(0)))
+				{
+				    Console.WriteLine(stringReader.ReadLine());
+				    Console.WriteLine(stringReader.ReadLine());
+				}
 				Console.WriteLine();
+			    
+                infoExtractor.Dispose();
+                textExtractor.Dispose();
 			}
 			
 			Console.WriteLine();

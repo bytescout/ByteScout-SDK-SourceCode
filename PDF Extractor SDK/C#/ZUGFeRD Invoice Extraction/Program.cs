@@ -13,42 +13,36 @@
 using System;
 using Bytescout.PDFExtractor;
 
-namespace ExtractInfo
+namespace ExtractZUGFeRD
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			// Create Bytescout.PDFExtractor.AttachmentExtractor instance
-			AttachmentExtractor extractor = new AttachmentExtractor();
-			extractor.RegistrationName = "demo";
-			extractor.RegistrationKey = "demo";
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create Bytescout.PDFExtractor.AttachmentExtractor instance
+            AttachmentExtractor extractor = new AttachmentExtractor();
+            extractor.RegistrationName = "demo";
+            extractor.RegistrationKey = "demo";
 
-			// Load sample PDF document
-			extractor.LoadDocumentFromFile("Beispielrechnung_ZUGFeRD_RC_COMFORT_neu.pdf");
+            // Load sample PDF document
+            extractor.LoadDocumentFromFile(@".\ZUGFeRD-invoice.pdf");
 
-			// extracting XML invoice which is stored as an attachment
-			for (int i = 0; i < extractor.Count; i++)
-			{
-				Console.WriteLine("Saving XML invoice attachment:\t" + extractor.GetFileName(i));
-				
-				// save file into the current folder
-				extractor.Save(i, extractor.GetFileName(i));
+            // Extract the XML invoice that is stored as an attachment
+            for (int i = 0; i < extractor.Count; i++)
+            {
+                Console.WriteLine("Saving XML invoice attachment: " + extractor.GetFileName(i));
+                
+                // Save file to current folder
+                extractor.Save(i, extractor.GetFileName(i));
 
-				Console.WriteLine("Done.");
-			}
+                Console.WriteLine("Done.");
+            }
 
-			
-			Console.WriteLine();
-			Console.WriteLine("Press any key to open the XML invoice extracted...");
-			Console.ReadLine();
-
-
-		        // Open the invoice in default XML viewer
-		        System.Diagnostics.Process.Start("ZUGFeRD-invoice.xml");
-
-
-
-		}
-	}
+            extractor.Dispose();
+            
+            Console.WriteLine();
+            Console.WriteLine("Press any key...");
+            Console.ReadLine();
+        }
+    }
 }

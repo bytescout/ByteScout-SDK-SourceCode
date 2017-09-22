@@ -34,6 +34,8 @@ namespace ConsoleApplication1
 
             extractor.SaveCSVToFile("output.csv");
 
+            extractor.Dispose();
+
             Console.WriteLine();
             Console.WriteLine("Data has been extracted to 'output.csv' file.");
             Console.WriteLine();

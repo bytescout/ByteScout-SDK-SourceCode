@@ -65,6 +65,8 @@ namespace OCRExample
 			// Save extracted text to file
 			extractor.SaveTextToFile("output.txt");
 
+			extractor.Dispose();
+
 			// Open output file in default associated application
 			System.Diagnostics.Process.Start("output.txt");
 		}

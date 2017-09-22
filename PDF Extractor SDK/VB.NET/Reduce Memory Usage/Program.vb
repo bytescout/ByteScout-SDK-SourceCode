@@ -14,6 +14,7 @@ Imports Bytescout.PDFExtractor
 Imports System.IO
 
 Class Program
+
 	Friend Shared Sub Main(args As String())
 
         ' When processing huge PDF documents you may run into OutOfMemoryException.
@@ -42,4 +43,5 @@ Class Program
         System.Diagnostics.Process.Start("output.txt")
 
     End Sub
+
 End Class

@@ -15,18 +15,18 @@ using Bytescout.PDFExtractor;
 
 namespace RotateDocument
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			string inputFile = "sample1.pdf";
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string inputFile = "sample1.pdf";
 
-			using (DocumentRotator rotator = new DocumentRotator("demo", "demo"))
+            using (DocumentRotator rotator = new DocumentRotator("demo", "demo"))
             {
                 rotator.Rotate(inputFile, "result.pdf", RotationAngle.Deg90);
             }
 
-			Process.Start("result.pdf");
-		}
-	}
+            Process.Start("result.pdf");
+        }
+    }
 }

@@ -12,8 +12,10 @@
 
 Imports Bytescout.PDFExtractor
 
-Namespace ConsoleApplication1
+Namespace PDF2XML
+
     Class Program
+
         Shared Sub Main(ByVal args As String())
 
             ' Create Bytescout.PDFExtractor.XMLExtractor instance
@@ -39,7 +41,11 @@ Namespace ConsoleApplication1
             extractor.SaveImages = ImageHandling.Embed
             extractor.SaveXMLToFile("result_with_embedded_images.xml")
 
+            extractor.Dispose()
+
         End Sub
+
     End Class
+
 End Namespace
 

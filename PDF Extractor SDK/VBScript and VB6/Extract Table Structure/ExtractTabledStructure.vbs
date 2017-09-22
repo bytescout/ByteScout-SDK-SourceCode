@@ -19,22 +19,20 @@ extractor.RegistrationKey = "demo"
 ' Load sample PDF document
 extractor.LoadDocumentFromFile "../../sample3.pdf"
            
+For ipage = 0 To extractor.GetPageCount() - 1 
 
-For ipage = 0 to extractor.GetPageCount()-1 
+    ' starting extraction from page #"
+    extractor.PrepareStructure ipage
 
-	' starting extraction from page #"
-	extractor.PrepareStructure ipage
+    rowCount = extractor.GetRowCount(ipage)
+    
+    For row = 0 To rowCount - 1 
+        columnCount = extractor.GetColumnCount(ipage, row)
 
-	rowCount = extractor.GetRowCount(ipage)
-	CellsAlreadyScanned = 0
-
-	FOR row = 0 to rowCount-1 
-		columnCount = extractor.GetColumnCount(ipage, row)
-
-		For col = 0 To columnCount-1
-                    MsgBox "Cell at page #" +CStr(ipage) + ", row=" & CStr(row) & ", column=" & CStr(col) & vbCRLF & extractor.GetCellValue(ipage, row, col)
-                Next
-	CellsAlreadyScanned = CellsAlreadyScanned + columnCount
+        For col = 0 To columnCount-1
+            WScript.Echo "Cell at page #" +CStr(ipage) + ", row=" & CStr(row) & ", column=" & _
+                CStr(col) & vbCRLF & extractor.GetCellValue(ipage, row, col)
         Next
+    Next
 Next
 

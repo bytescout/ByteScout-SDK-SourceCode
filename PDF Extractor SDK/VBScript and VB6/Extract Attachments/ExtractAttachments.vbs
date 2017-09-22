@@ -20,7 +20,8 @@ extractor.LoadDocumentFromFile("..\..\attachments.pdf")
 
 ' Iterate through attachments and save them
 For i = 0 To extractor.Count - 1
- extractor.Save i, extractor.GetFileName(i) ' save in the current folder with original filename
+    ' Save file to current folder with original name
+    extractor.Save i, extractor.GetFileName(i)
 Next
 
 MsgBox "Done: " & CStr(extractor.Count) & " attachments extracted"

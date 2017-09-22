@@ -32,6 +32,8 @@ Module Module1
         ' Process the document
         unsearchablePDFMaker.MakePDFUnsearchable("result.pdf")
 
+        unsearchablePDFMaker.Dispose()
+
         ' Open the result PDF file in default associated application
         System.Diagnostics.Process.Start("result.pdf")
 

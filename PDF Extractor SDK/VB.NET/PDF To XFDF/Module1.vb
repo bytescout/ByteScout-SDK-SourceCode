@@ -17,8 +17,11 @@ Imports Bytescout.PDFExtractor
 Imports System.Diagnostics
 
 Namespace ConsoleApplication1
+
     Class Program
+
         Shared Sub Main(ByVal args As String())
+
             ' Create Bytescout.PDFExtractor.XFDFExtractor instance
             Dim extractor As New XFDFExtractor()
             extractor.RegistrationName = "demo"
@@ -29,14 +32,17 @@ Namespace ConsoleApplication1
 
             extractor.SaveXFDFToFile("output.xml")
 
+            extractor.Dispose()
+
             Console.WriteLine()
-            Console.WriteLine("Data has been extracted to 'output.xml' file.")
+            Console.WriteLine("Extracted data saved to 'output.xml' file.")
             Console.WriteLine()
-            Console.WriteLine("Press any key to continue and open file in default associated application...")
+            Console.WriteLine("Press any key...")
             Console.ReadKey()
 
-            Process.Start("output.xml")
         End Sub
+
     End Class
+    
 End Namespace
 

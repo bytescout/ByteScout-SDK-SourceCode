@@ -25,12 +25,20 @@ namespace PDFATest
 			validator.RegistrationKey = "demo";
 
 			// Load sample PDF document
-			validator.LoadDocumentFromFile("good0016.pdf");
-			
-			if (validator.IsPDFA)
-				Console.WriteLine("This file conforms to the PDF/A standard");
-			else
-				Console.WriteLine("This file doesn't conform to the PDF/A standard. Check .ValidationErros for the list of errors");
+            validator.LoadDocumentFromFile("sample1.pdf");
+
+		    if (validator.IsPDFA)
+		        Console.WriteLine("This file conforms to the PDF/A standard");
+		    else
+		    {
+		        Console.WriteLine("This file doesn't conform to the PDF/A standard.");
+		        Console.WriteLine("Issues:");
+
+		        foreach (string validationError in validator.ValidationErrors)
+		            Console.WriteLine(validationError);
+		    }
+
+		    validator.Dispose();
 
 			Console.WriteLine();
 			Console.WriteLine("Press any key to continue...");

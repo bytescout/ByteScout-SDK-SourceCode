@@ -17,11 +17,11 @@ Imports System.Runtime.InteropServices
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly: AssemblyTitle("ExtractInfo")> 
+<Assembly: AssemblyTitle("ExtractZUGFeRD")> 
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("ExtractInfo")> 
+<Assembly: AssemblyProduct("ExtractZUGFeRD")> 
 <Assembly: AssemblyCopyright("Copyright ©  2010")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>

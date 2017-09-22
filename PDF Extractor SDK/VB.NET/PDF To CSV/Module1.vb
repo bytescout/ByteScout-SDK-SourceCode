@@ -17,8 +17,11 @@ Imports Bytescout.PDFExtractor
 Imports System.Diagnostics
 
 Namespace ConsoleApplication1
+
     Class Program
+
         Shared Sub Main(ByVal args As String())
+
             ' Create Bytescout.PDFExtractor.CSVExtractor instance
             Dim extractor As New CSVExtractor()
             extractor.RegistrationName = "demo"
@@ -31,6 +34,8 @@ Namespace ConsoleApplication1
 
             extractor.SaveCSVToFile("output.csv")
 
+            extractor.Dispose()
+
             Console.WriteLine()
             Console.WriteLine("Data has been extracted to 'output.csv' file.")
             Console.WriteLine()
@@ -38,7 +43,9 @@ Namespace ConsoleApplication1
             Console.ReadKey()
 
             Process.Start("output.csv")
+
         End Sub
+        
     End Class
 End Namespace
 

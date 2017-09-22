@@ -20,24 +20,19 @@ extractor.LoadDocumentFromFile("..\..\sample1.pdf")
 
 ' Get page count
 pageCount = extractor.GetPageCount()
-		
+        
 ' Extract images from each page
 For i = 0 To pageCount - 1
-
-	j = 0
-	
-	' Initialize page images enumeration
-	If extractor.GetFirstPageImage(i) Then
-	    Do
-	        outputFileName = "page" & i & "image" & j & ".png"
-
-	        ' Save image to file
-	        extractor.SaveCurrentImageToFile outputFileName
-
-	        j = j + 1
-
-	    Loop While extractor.GetNextImage() ' Advance image enumeration
-	End If
+    j = 0
+    ' Initialize page images enumeration
+    If extractor.GetFirstPageImage(i) Then
+        Do
+            outputFileName = "page" & i & "image" & j & ".png"
+            ' Save image to file
+            extractor.SaveCurrentImageToFile outputFileName
+            j = j + 1
+        Loop While extractor.GetNextImage() ' Advance image enumeration
+    End If
 Next
 
 ' Open first output file in default associated application

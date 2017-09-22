@@ -17,7 +17,9 @@ Imports Bytescout.PDFExtractor
 Imports System.Diagnostics
 
 Namespace ConsoleApplication1
+
     Class Program
+
         Shared Sub Main(ByVal args As String())
 
             ' Create Bytescout.PDFExtractor.JSONExtractor instance
@@ -30,6 +32,8 @@ Namespace ConsoleApplication1
 
             extractor.SaveJSONToFile("output.json")
 
+            extractor.Dispose()
+
             Console.WriteLine()
             Console.WriteLine("Data has been extracted to 'output.json' file.")
             Console.WriteLine()
@@ -37,7 +41,10 @@ Namespace ConsoleApplication1
             Console.ReadKey()
 
             Process.Start("output.json")
+
         End Sub
+
     End Class
+    
 End Namespace
 

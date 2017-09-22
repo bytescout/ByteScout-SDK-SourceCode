@@ -32,26 +32,24 @@ namespace ConsoleApplication1
 
             //extractor.CSVSeparatorSymbol = ","; // you can change CSV separator symbol (if needed) from "," symbol to another if needed for non-US locales
 
-    		// Get page count
-		int pageCount = extractor.GetPageCount();
+            // Get page count
+            int pageCount = extractor.GetPageCount();
 
-		for (int i = 0; i < pageCount; i++)
-		{
-		    string fileName = "page" + i + ".csv";				
+            for (int i = 0; i < pageCount; i++)
+            {
+                string fileName = "page" + i + ".csv";				
 
-      		    // Save extracted page text to file
-	      	    extractor.SavePageCSVToFile(i, fileName);
-		}
+                // Save extracted page text to file
+                extractor.SavePageCSVToFile(i, fileName);
+            }
 
-
+            extractor.Dispose();
 
             Console.WriteLine();
             Console.WriteLine("Data has been extracted to separate files for pages.");
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
-
-            //Process.Start("page0.csv");
         }
     }
 }

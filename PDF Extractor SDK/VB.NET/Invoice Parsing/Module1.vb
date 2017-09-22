@@ -95,6 +95,11 @@ Module Module1
         Console.WriteLine("Table Data: ")
         Console.WriteLine(tableData)
 
+        textExtractor.Dispose()
+        xmlExtractor.Dispose()
+
+
+        Console.WriteLine()
         Console.WriteLine("Press any key...")
         Console.ReadKey()
 

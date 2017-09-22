@@ -81,6 +81,8 @@ namespace ByteScoutWebApiExample
 				Console.WriteLine(e.ToString());
 			}
 
+			webClient.Dispose();
+
 
 			Console.WriteLine();
 			Console.WriteLine("Press any key...");

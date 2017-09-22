@@ -40,6 +40,8 @@ namespace MakeSearchablePDF
             // Save extracted text to file
             searchablePDFMaker.MakePDFSearchable("output.pdf");
 
+            searchablePDFMaker.Dispose();
+
             // Open output file in default associated application
             System.Diagnostics.Process.Start("output.pdf");
         }

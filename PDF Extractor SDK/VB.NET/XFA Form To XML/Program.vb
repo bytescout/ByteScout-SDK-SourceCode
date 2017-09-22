@@ -13,14 +13,15 @@
 Imports Bytescout.PDFExtractor
 
 Class Program
-	Friend Shared Sub Main(args As String())
+
+    Friend Shared Sub Main(args As String())
 
         ' Create Bytescout.PDFExtractor.XFAFormExtractor instance
         Dim extractor As New XFAFormExtractor()
-		extractor.RegistrationName = "demo"
-		extractor.RegistrationKey = "demo"
+        extractor.RegistrationName = "demo"
+        extractor.RegistrationKey = "demo"
 
-		' Load sample PDF document
+        ' Load sample PDF document
         extractor.LoadDocumentFromFile("samplexfa.pdf")
 
         ' Enumerate XFA form content part types
@@ -38,9 +39,12 @@ Class Program
 
         Next
 
+        extractor.Dispose()
+
         Console.WriteLine()
         Console.WriteLine("Press any key to continue...")
         Console.ReadLine()
 
-	End Sub
+    End Sub
+
 End Class

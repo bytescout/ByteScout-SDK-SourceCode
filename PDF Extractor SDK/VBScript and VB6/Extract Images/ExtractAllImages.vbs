@@ -24,12 +24,9 @@ i = 0
 If extractor.GetFirstImage() Then
     Do
         outputFileName = "image" & i & ".png"
-
         ' Save image to file
         extractor.SaveCurrentImageToFile outputFileName
-
         i = i + 1
-
     Loop While extractor.GetNextImage() ' Advance image enumeration
 End If
 

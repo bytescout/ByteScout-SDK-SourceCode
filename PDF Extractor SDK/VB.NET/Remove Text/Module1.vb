@@ -14,6 +14,7 @@ Imports System.Drawing
 Imports Bytescout.PDFExtractor
 
 Class Program
+
     Shared Sub Main(ByVal args As String())
 
         ' Create Bytescout.PDFExtractor.Remover instance
@@ -49,4 +50,5 @@ Class Program
         Process.Start("result3.pdf")
 
     End Sub
+
 End Class

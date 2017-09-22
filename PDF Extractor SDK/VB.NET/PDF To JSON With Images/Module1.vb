@@ -13,7 +13,9 @@
 Imports Bytescout.PDFExtractor
 
 Namespace ConsoleApplication1
+
     Class Program
+
         Shared Sub Main(ByVal args As String())
 
             ' Create Bytescout.PDFExtractor.JSONExtractor instance
@@ -40,6 +42,8 @@ Namespace ConsoleApplication1
             extractor.SaveJSONToFile("result_with_embedded_images.json")
 
         End Sub
+
     End Class
+    
 End Namespace
 

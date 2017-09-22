@@ -21,11 +21,11 @@ using Bytescout.PDFExtractor;
 
 namespace SplittingExample
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			string inputFile = "sample.pdf";
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string inputFile = "sample.pdf";
 
             using (DocumentSplitter splitter = new DocumentSplitter("demo", "demo"))
             {
@@ -57,9 +57,9 @@ namespace SplittingExample
                     Console.WriteLine("    " + Path.GetFileName(file));
             }
 
-			Console.WriteLine();
-			Console.WriteLine("Press any key...");
-			Console.ReadKey();			
-		}
-	}
+            Console.WriteLine();
+            Console.WriteLine("Press any key...");
+            Console.ReadKey();			
+        }
+    }
 }

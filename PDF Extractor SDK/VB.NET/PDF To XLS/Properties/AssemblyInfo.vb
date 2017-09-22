@@ -17,12 +17,12 @@ Imports System.Runtime.InteropServices
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly: AssemblyTitle("PDF2CSV2XLS")>
+<Assembly: AssemblyTitle("PDF2XLS")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("PDF2CSV2XLS")>
-<Assembly: AssemblyCopyright("Copyright ©  2011")>
+<Assembly: AssemblyProduct("PDF2XLS")>
+<Assembly: AssemblyCopyright("Copyright ï¿½  2011")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
 

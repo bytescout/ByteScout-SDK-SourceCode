@@ -19,41 +19,47 @@ Imports System.IO
 Imports Bytescout.PDFExtractor
 
 Class Program
-	Friend Shared Sub Main(args As String())
-		Dim inputFile As String = "sample.pdf"
 
-		Using splitter As New DocumentSplitter("demo", "demo")
-			splitter.OptimizeSplittedDocuments = True
+    Friend Shared Sub Main(args As String())
 
-			' Extracting specific page:
-			' =========================
+        Dim inputFile As String = "sample.pdf"
 
-			splitter.ExtractPage(inputFile, "page3.pdf", 3)
-			' (!) Note: page number is 1-based.
-			Console.WriteLine("Extracted page 3 to file ""page3.pdf""")
-			Console.WriteLine()
+        Using splitter As New DocumentSplitter("demo", "demo")
 
-			' Split in two parts:
-			' ===================
+            splitter.OptimizeSplittedDocuments = True
 
-			splitter.Split(inputFile, "part1.pdf", "part2.pdf", 3)
-			' (!) Note: page number is 1-based.
-			Console.WriteLine("Splitted at page 3 to files ""part1.pdf"" and ""part2.pdf""")
-			Console.WriteLine()
+            ' Extracting specific page:
+            ' =========================
 
-			' Split by ranges:
-			' ================
+            splitter.ExtractPage(inputFile, "page3.pdf", 3)
+            ' (!) Note: page number is 1-based.
+            Console.WriteLine("Extracted page 3 to file ""page3.pdf""")
+            Console.WriteLine()
 
-			Dim files As String() = splitter.Split(inputFile, "1-3,4-6,7,8-")
-			' (!) Note: page numbers are 1-based; ending "-" means "to the end".
-			Console.WriteLine("Splitted by ranges: ")
-			For Each file As String In files
-				Console.WriteLine("    " & Path.GetFileName(file))
-			Next
-		End Using
+            ' Split in two parts:
+            ' ===================
 
-		Console.WriteLine()
-		Console.WriteLine("Press any key...")
-		Console.ReadKey()
-	End Sub
+            splitter.Split(inputFile, "part1.pdf", "part2.pdf", 3)
+            ' (!) Note: page number is 1-based.
+            Console.WriteLine("Splitted at page 3 to files ""part1.pdf"" and ""part2.pdf""")
+            Console.WriteLine()
+
+            ' Split by ranges:
+            ' ================
+
+            Dim files As String() = splitter.Split(inputFile, "1-3,4-6,7,8-")
+            ' (!) Note: page numbers are 1-based; ending "-" means "to the end".
+            Console.WriteLine("Splitted by ranges: ")
+            For Each file As String In files
+                Console.WriteLine("    " & Path.GetFileName(file))
+            Next
+            
+        End Using
+
+        Console.WriteLine()
+        Console.WriteLine("Press any key...")
+        Console.ReadKey()
+
+    End Sub
+
 End Class

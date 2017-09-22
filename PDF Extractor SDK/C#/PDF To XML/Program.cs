@@ -16,7 +16,7 @@ using System.Text;
 using Bytescout.PDFExtractor;
 using System.Diagnostics;
 
-namespace ConsoleApplication1
+namespace PDF2XML
 {
     class Program
     {
@@ -32,13 +32,13 @@ namespace ConsoleApplication1
 
             extractor.SaveXMLToFile("output.XML");
 
+            extractor.Dispose();
+
             Console.WriteLine();
             Console.WriteLine("Data has been extracted to 'output.XML' file.");
             Console.WriteLine();
-            Console.WriteLine("Press any key to continue and open XML in default XML viewer...");
+            Console.WriteLine("Press any key...");
             Console.ReadKey();
-
-            Process.Start("output.XML");
         }
     }
 }

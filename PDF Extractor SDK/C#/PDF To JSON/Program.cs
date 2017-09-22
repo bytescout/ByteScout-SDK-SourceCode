@@ -32,6 +32,8 @@ namespace ConsoleApplication1
 
             extractor.SaveJSONToFile("output.json");
 
+            extractor.Dispose();
+
             Console.WriteLine();
             Console.WriteLine("Data has been extracted to 'output.json' file.");
             Console.WriteLine();

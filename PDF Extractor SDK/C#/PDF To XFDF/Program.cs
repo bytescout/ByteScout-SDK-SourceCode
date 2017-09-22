@@ -32,12 +32,13 @@ namespace ConsoleApplication1
 
             extractor.SaveXFDFToFile("output.xml");
 
+            extractor.Dispose();
+
             Console.WriteLine();
-            Console.WriteLine("Data has been extracted to 'output.xml' file.");
+            Console.WriteLine("Extracted data saved to 'output.xml' file.");
             Console.WriteLine();
-            Console.WriteLine("Press any key to continue and open file in default associated application...");
+            Console.WriteLine("Press any key...");
             Console.ReadKey();
-            Process.Start("output.xml");
         }
     }
 }

@@ -11,14 +11,14 @@
 
 
 Imports System
-Imports System.Collections.Generic
-Imports System.Text
 Imports Bytescout.PDFExtractor
-Imports System.Diagnostics
 
-Namespace ConsoleApplication1
+Namespace PDF2XML
+
     Class Program
+
         Shared Sub Main(ByVal args As String())
+
             ' Create Bytescout.PDFExtractor.XMLExtractor instance
             Dim extractor As New XMLExtractor()
             extractor.RegistrationName = "demo"
@@ -29,14 +29,17 @@ Namespace ConsoleApplication1
 
             extractor.SaveXMLToFile("output.XML")
 
+            extractor.Dispose()
+
             Console.WriteLine()
             Console.WriteLine("Data has been extracted to 'output.XML' file.")
             Console.WriteLine()
-            Console.WriteLine("Press any key to continue and open XML in default XML viewer...")
+            Console.WriteLine("Press any key...")
             Console.ReadKey()
 
-            Process.Start("output.XML")
         End Sub
+
     End Class
+
 End Namespace
 
