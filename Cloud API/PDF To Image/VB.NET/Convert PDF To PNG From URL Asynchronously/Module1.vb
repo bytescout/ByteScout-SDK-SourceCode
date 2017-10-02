@@ -16,7 +16,7 @@ Imports System.Threading
 Imports Newtonsoft.Json.Linq
 
 
-' Cloud API asynchronous "CSV To PDF" job example.
+' Cloud API asynchronous "PDF To PNG" job example.
 ' Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 Module Module1
@@ -27,10 +27,12 @@ Module Module1
 	' Get your own by registering at https://secure.bytescout.com/users/sign_up
 	Const API_KEY As String = "***********************************"
 
-	' Direct URL of source CSV file.
-	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/csv-to-pdf/sample.csv"
-	' Destination PDF file name
-	Const DestinationFile As String = ".\result.pdf"
+	' Source PDF file
+	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-to-image/sample.pdf"
+	' Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
+	Const Pages As String = ""
+	' PDF document password. Leave empty for unprotected documents.
+	Const Password As String = ""
 	' (!) Make asynchronous job
 	Const Async As Boolean = True
 
@@ -43,10 +45,11 @@ Module Module1
 		' Set API Key
 		webClient.Headers.Add("x-api-key", API_KEY)
 
-		' Prepare URL for `CSV To PDF` API call
+		' Prepare URL for `PDF To PNG` API call
 		Dim query As String = Uri.EscapeUriString(String.Format(
-			"https://bytescout.io/v1/pdf/convert/from/csv?name={0}&url={1}&async={2}",
-			Path.GetFileName(DestinationFile),
+			"https://bytescout.io/v1/pdf/convert/to/png?password={0}&pages={1}&url={2}&async={3}",
+			Password,
+			Pages,
 			SourceFileUrl,
 			Async))
 
@@ -61,8 +64,8 @@ Module Module1
 
 				' Asynchronous job ID
 				Dim jobId As String = json("jobId").ToString()
-				' URL of generated PDF file that will available after the job completion
-				Dim resultFileUrl As String = json("url").ToString()
+				' URL of generated JSON file available after the job completion; it will contain URLs of result PNG files.
+				Dim resultJsonFileUrl As String = json("url").ToString()
 
 				' Check the job status in a loop. 
 				' If you don't want to pause the main thread you can rework the code 
@@ -74,11 +77,26 @@ Module Module1
 					Console.WriteLine(DateTime.Now.ToLongTimeString() + ": " + status)
 
 					If status = "Finished" Then
-						
-						' Download PDF file
-						webClient.DownloadFile(resultFileUrl, DestinationFile)
 
-						Console.WriteLine("Generated PDF file saved as ""{0}"" file.", DestinationFile)
+						' Download JSON file as string
+						Dim jsonFileString As String = webClient.DownloadString(resultJsonFileUrl)
+
+						Dim resultFilesUrls As JArray = JArray.Parse(jsonFileString)
+
+						' Download generated PNG files
+						Dim page As Integer = 1
+						For Each token As JToken In resultFilesUrls
+
+							Dim resultFileUrl As String = token.ToString()
+							Dim localFileName As String = String.Format(".\page{0}.png", page)
+
+							webClient.DownloadFile(resultFileUrl, localFileName)
+
+							Console.WriteLine("Downloaded ""{0}"".", localFileName)
+							page = page + 1
+
+						Next
+
 						Exit Do
 
 					ElseIf status = "InProgress" Then
@@ -94,7 +112,7 @@ Module Module1
 					End If
 
 				Loop
-				
+
 			Else
 				Console.WriteLine(json("message").ToString())
 			End If
@@ -121,7 +139,7 @@ Module Module1
 			Dim response As String = webClient.DownloadString(url)
 			Dim json As JObject = JObject.Parse(response)
 
-			return Convert.ToString(json("Status"))
+			Return Convert.ToString(json("Status"))
 
 		End Using
 

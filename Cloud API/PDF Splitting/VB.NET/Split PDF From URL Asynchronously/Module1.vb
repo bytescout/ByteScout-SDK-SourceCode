@@ -16,7 +16,7 @@ Imports System.Threading
 Imports Newtonsoft.Json.Linq
 
 
-' Cloud API asynchronous "CSV To PDF" job example.
+' Cloud API asynchronous "Split PDF" job example.
 ' Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 Module Module1
@@ -27,10 +27,10 @@ Module Module1
 	' Get your own by registering at https://secure.bytescout.com/users/sign_up
 	Const API_KEY As String = "***********************************"
 
-	' Direct URL of source CSV file.
-	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/csv-to-pdf/sample.csv"
-	' Destination PDF file name
-	Const DestinationFile As String = ".\result.pdf"
+	' Source PDF file to split
+	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-split/sample.pdf"
+	' Comma-separated list of page numbers (or ranges) to process. Example: '1,3-5,7-'.
+	Const Pages As String = "1-2,3-"
 	' (!) Make asynchronous job
 	Const Async As Boolean = True
 
@@ -43,10 +43,10 @@ Module Module1
 		' Set API Key
 		webClient.Headers.Add("x-api-key", API_KEY)
 
-		' Prepare URL for `CSV To PDF` API call
+		' Prepare URL for `Split PDF` API call
 		Dim query As String = Uri.EscapeUriString(String.Format(
-			"https://bytescout.io/v1/pdf/convert/from/csv?name={0}&url={1}&async={2}",
-			Path.GetFileName(DestinationFile),
+			"https://bytescout.io/v1/pdf/split?pages={0}&url={1}&async={2}",
+			Pages,
 			SourceFileUrl,
 			Async))
 
@@ -61,8 +61,8 @@ Module Module1
 
 				' Asynchronous job ID
 				Dim jobId As String = json("jobId").ToString()
-				' URL of generated PDF file that will available after the job completion
-				Dim resultFileUrl As String = json("url").ToString()
+				' URL of generated JSON file available after the job completion; it will contain URLs of result PDF files.
+				Dim resultJsonFileUrl As String = json("url").ToString()
 
 				' Check the job status in a loop. 
 				' If you don't want to pause the main thread you can rework the code 
@@ -74,11 +74,26 @@ Module Module1
 					Console.WriteLine(DateTime.Now.ToLongTimeString() + ": " + status)
 
 					If status = "Finished" Then
-						
-						' Download PDF file
-						webClient.DownloadFile(resultFileUrl, DestinationFile)
 
-						Console.WriteLine("Generated PDF file saved as ""{0}"" file.", DestinationFile)
+						' Download JSON file as string
+						Dim jsonFileString As String = webClient.DownloadString(resultJsonFileUrl)
+
+						Dim resultFilesUrls As JArray = JArray.Parse(jsonFileString)
+
+						' Download generated PDF files
+						Dim part As Integer = 1
+						For Each token As JToken In resultFilesUrls
+
+							Dim resultFileUrl As String = token.ToString()
+							Dim localFileName As String = String.Format(".\part{0}.pdf", part)
+
+							webClient.DownloadFile(resultFileUrl, localFileName)
+
+							Console.WriteLine("Downloaded ""{0}"".", localFileName)
+							part = part + 1
+
+						Next
+
 						Exit Do
 
 					ElseIf status = "InProgress" Then
@@ -121,7 +136,7 @@ Module Module1
 			Dim response As String = webClient.DownloadString(url)
 			Dim json As JObject = JObject.Parse(response)
 
-			return Convert.ToString(json("Status"))
+			Return Convert.ToString(json("Status"))
 
 		End Using
 

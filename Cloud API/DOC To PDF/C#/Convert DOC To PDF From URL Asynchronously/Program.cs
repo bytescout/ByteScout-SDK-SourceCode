@@ -10,14 +10,13 @@
 //****************************************************************************//
 
 
-using System;
+	using System;
 using System.IO;
 using System.Net;
 using System.Threading;
 using Newtonsoft.Json.Linq;
 
-
-// Cloud API asynchronous "CSV To PDF" job example.
+// Cloud API asynchronous "DOC To PDF" job example.
 // Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 namespace ByteScoutWebApiExample
@@ -29,9 +28,9 @@ namespace ByteScoutWebApiExample
 		// The authentication key (API Key).
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
-		
-		// Direct URL of source CSV file.
-		const string SourceFileUrl = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/csv-to-pdf/sample.csv";
+
+		// Direct URL of source DOC or DOCX file.
+		const string SourceFileUrl = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/doc-to-pdf/sample.docx";
 		// Destination PDF file name
 		const string DestinationFile = @".\result.pdf";
 		// (!) Make asynchronous job
@@ -46,9 +45,9 @@ namespace ByteScoutWebApiExample
 			// Set API Key
 			webClient.Headers.Add("x-api-key", API_KEY);
 
-			// Prepare URL for `CSV To PDF` API call
+			// Prepare URL for `DOC To PDF` API call
 			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/pdf/convert/from/csv?name={0}&url={1}&async={2}",
+				"https://bytescout.io/v1/pdf/convert/from/doc?name={0}&url={1}&async={2}",
 				Path.GetFileName(DestinationFile),
 				SourceFileUrl,
 				Async));

@@ -15,8 +15,7 @@ Imports System.Net
 Imports System.Threading
 Imports Newtonsoft.Json.Linq
 
-
-' Cloud API asynchronous "CSV To PDF" job example.
+' Cloud API asynchronous "DOC To PDF" job example.
 ' Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 Module Module1
@@ -27,13 +26,12 @@ Module Module1
 	' Get your own by registering at https://secure.bytescout.com/users/sign_up
 	Const API_KEY As String = "***********************************"
 
-	' Direct URL of source CSV file.
-	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/csv-to-pdf/sample.csv"
+	' Direct URL of source DOC or DOCX file.
+	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/doc-to-pdf/sample.docx"
 	' Destination PDF file name
 	Const DestinationFile As String = ".\result.pdf"
 	' (!) Make asynchronous job
 	Const Async As Boolean = True
-
 
 	Sub Main()
 
@@ -43,9 +41,9 @@ Module Module1
 		' Set API Key
 		webClient.Headers.Add("x-api-key", API_KEY)
 
-		' Prepare URL for `CSV To PDF` API call
+		' Prepare URL for `DOC To PDF` API call
 		Dim query As String = Uri.EscapeUriString(String.Format(
-			"https://bytescout.io/v1/pdf/convert/from/csv?name={0}&url={1}&async={2}",
+			"https://bytescout.io/v1/pdf/convert/from/doc?name={0}&url={1}&async={2}",
 			Path.GetFileName(DestinationFile),
 			SourceFileUrl,
 			Async))

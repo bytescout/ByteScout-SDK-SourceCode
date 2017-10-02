@@ -16,8 +16,7 @@ using System.Net;
 using System.Threading;
 using Newtonsoft.Json.Linq;
 
-
-// Cloud API asynchronous "CSV To PDF" job example.
+// Cloud API asynchronous "PDF To Text" job example.
 // Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 namespace ByteScoutWebApiExample
@@ -30,10 +29,14 @@ namespace ByteScoutWebApiExample
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
 		
-		// Direct URL of source CSV file.
-		const string SourceFileUrl = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/csv-to-pdf/sample.csv";
-		// Destination PDF file name
-		const string DestinationFile = @".\result.pdf";
+		// Direct URL of source PDF file.
+		const string SourceFileUrl = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-to-text/long-processed-document.pdf";
+		// Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
+		const string Pages = "";
+		// PDF document password. Leave empty for unprotected documents.
+		const string Password = "";
+		// Destination TXT file name
+		const string DestinationFile = @".\result.txt";
 		// (!) Make asynchronous job
 		const bool Async = true;
 
@@ -46,10 +49,12 @@ namespace ByteScoutWebApiExample
 			// Set API Key
 			webClient.Headers.Add("x-api-key", API_KEY);
 
-			// Prepare URL for `CSV To PDF` API call
+			// Prepare URL for `PDF To Text` API call
 			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/pdf/convert/from/csv?name={0}&url={1}&async={2}",
+				"https://bytescout.io/v1/pdf/convert/to/text?name={0}&password={1}&pages={2}&url={3}&async={4}",
 				Path.GetFileName(DestinationFile),
+				Password,
+				Pages,
 				SourceFileUrl,
 				Async));
 
@@ -65,7 +70,7 @@ namespace ByteScoutWebApiExample
 				{
 					// Asynchronous job ID
 					string jobId = json["jobId"].ToString();
-					// URL of generated PDF file that will available after the job completion
+					// URL of generated TXT file that will be available after the job completion
 					string resultFileUrl = json["url"].ToString();
 
 					// Check the job status in a loop. 
@@ -80,10 +85,10 @@ namespace ByteScoutWebApiExample
 
 						if (status == "Finished")
 						{
-							// Download PDF file
+							// Download TXT file
 							webClient.DownloadFile(resultFileUrl, DestinationFile);
 
-							Console.WriteLine("Generated PDF file saved as \"{0}\" file.", DestinationFile);
+							Console.WriteLine("Generated TXT file saved as \"{0}\" file.", DestinationFile);
 							break;
 						}
 						else if (status == "InProgress")
@@ -91,7 +96,7 @@ namespace ByteScoutWebApiExample
 							// Pause for a few seconds
 							Thread.Sleep(3000);
 						}
-						else
+						else 
 						{
 							Console.WriteLine(status);
 							break;

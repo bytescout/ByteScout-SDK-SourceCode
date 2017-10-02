@@ -13,11 +13,11 @@
 using System;
 using System.IO;
 using System.Net;
-using System.Threading;
 using Newtonsoft.Json.Linq;
+using System.Threading;
 
 
-// Cloud API asynchronous "CSV To PDF" job example.
+// Cloud API asynchronous "PDF To PNG" job example.
 // Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 namespace ByteScoutWebApiExample
@@ -30,10 +30,12 @@ namespace ByteScoutWebApiExample
 		// Get your own by registering at https://secure.bytescout.com/users/sign_up
 		const String API_KEY = "***********************************";
 		
-		// Direct URL of source CSV file.
-		const string SourceFileUrl = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/csv-to-pdf/sample.csv";
-		// Destination PDF file name
-		const string DestinationFile = @".\result.pdf";
+		// Source PDF file
+		const string SourceFileUrl = @"https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-to-image/sample.pdf";
+		// Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
+		const string Pages = "";
+		// PDF document password. Leave empty for unprotected documents.
+		const string Password = "";
 		// (!) Make asynchronous job
 		const bool Async = true;
 
@@ -46,15 +48,16 @@ namespace ByteScoutWebApiExample
 			// Set API Key
 			webClient.Headers.Add("x-api-key", API_KEY);
 
-			// Prepare URL for `CSV To PDF` API call
-			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/pdf/convert/from/csv?name={0}&url={1}&async={2}",
-				Path.GetFileName(DestinationFile),
-				SourceFileUrl,
-				Async));
-
 			try
 			{
+				// Prepare URL for `PDF To PNG` API call
+				string query = Uri.EscapeUriString(string.Format(
+					"https://bytescout.io/v1/pdf/convert/to/png?password={0}&pages={1}&url={2}&async={3}",
+					Password,
+					Pages,
+					SourceFileUrl,
+					Async));
+
 				// Execute request
 				string response = webClient.DownloadString(query);
 
@@ -65,8 +68,8 @@ namespace ByteScoutWebApiExample
 				{
 					// Asynchronous job ID
 					string jobId = json["jobId"].ToString();
-					// URL of generated PDF file that will available after the job completion
-					string resultFileUrl = json["url"].ToString();
+					// URL of generated JSON file available after the job completion; it will contain URLs of result PNG files.
+					string resultJsonFileUrl = json["url"].ToString();
 
 					// Check the job status in a loop. 
 					// If you don't want to pause the main thread you can rework the code 
@@ -80,10 +83,23 @@ namespace ByteScoutWebApiExample
 
 						if (status == "Finished")
 						{
-							// Download PDF file
-							webClient.DownloadFile(resultFileUrl, DestinationFile);
+							// Download JSON file as string
+							string jsonFileString = webClient.DownloadString(resultJsonFileUrl);
 
-							Console.WriteLine("Generated PDF file saved as \"{0}\" file.", DestinationFile);
+							JArray resultFilesUrls = JArray.Parse(jsonFileString);
+
+							// Download generated PNG files
+							int page = 1;
+							foreach (JToken token in resultFilesUrls)
+							{
+								string resultFileUrl = token.ToString();
+								string localFileName = String.Format(@".\page{0}.png", page);
+
+								webClient.DownloadFile(resultFileUrl, localFileName);
+
+								Console.WriteLine("Downloaded \"{0}\".", localFileName);
+								page++;
+							}
 							break;
 						}
 						else if (status == "InProgress")

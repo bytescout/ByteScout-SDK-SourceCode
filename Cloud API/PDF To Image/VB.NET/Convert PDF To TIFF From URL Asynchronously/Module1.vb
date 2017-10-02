@@ -16,7 +16,7 @@ Imports System.Threading
 Imports Newtonsoft.Json.Linq
 
 
-' Cloud API asynchronous "CSV To PDF" job example.
+' Cloud API asynchronous "PDF To TIFF" job example.
 ' Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 Module Module1
@@ -27,10 +27,14 @@ Module Module1
 	' Get your own by registering at https://secure.bytescout.com/users/sign_up
 	Const API_KEY As String = "***********************************"
 
-	' Direct URL of source CSV file.
-	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/csv-to-pdf/sample.csv"
-	' Destination PDF file name
-	Const DestinationFile As String = ".\result.pdf"
+	' Direct URL of source PDF file.
+	Const SourceFileUrl As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-to-image/sample.pdf"
+	' Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
+	Const Pages As String = ""
+	' PDF document password. Leave empty for unprotected documents.
+	Const Password As String = ""
+	' Destination TIFF file name
+	Const DestinationFile As String = ".\result.tif"
 	' (!) Make asynchronous job
 	Const Async As Boolean = True
 
@@ -43,10 +47,12 @@ Module Module1
 		' Set API Key
 		webClient.Headers.Add("x-api-key", API_KEY)
 
-		' Prepare URL for `CSV To PDF` API call
+		' Prepare URL for `PDF To TIFF` API call
 		Dim query As String = Uri.EscapeUriString(String.Format(
-			"https://bytescout.io/v1/pdf/convert/from/csv?name={0}&url={1}&async={2}",
+			"https://bytescout.io/v1/pdf/convert/to/tiff?name={0}&password={1}&pages={2}&url={3}&async={4}",
 			Path.GetFileName(DestinationFile),
+			Password,
+			Pages,
 			SourceFileUrl,
 			Async))
 
@@ -61,7 +67,7 @@ Module Module1
 
 				' Asynchronous job ID
 				Dim jobId As String = json("jobId").ToString()
-				' URL of generated PDF file that will available after the job completion
+				' URL of generated TIFF file that will available after the job completion
 				Dim resultFileUrl As String = json("url").ToString()
 
 				' Check the job status in a loop. 
@@ -74,11 +80,11 @@ Module Module1
 					Console.WriteLine(DateTime.Now.ToLongTimeString() + ": " + status)
 
 					If status = "Finished" Then
-						
-						' Download PDF file
+
+						' Download TIFF file
 						webClient.DownloadFile(resultFileUrl, DestinationFile)
 
-						Console.WriteLine("Generated PDF file saved as ""{0}"" file.", DestinationFile)
+						Console.WriteLine("Generated TIFF file saved as ""{0}"" file.", DestinationFile)
 						Exit Do
 
 					ElseIf status = "InProgress" Then
@@ -94,7 +100,7 @@ Module Module1
 					End If
 
 				Loop
-				
+
 			Else
 				Console.WriteLine(json("message").ToString())
 			End If
