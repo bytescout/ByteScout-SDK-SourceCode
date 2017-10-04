@@ -43,7 +43,7 @@ try {
             Write-Host "$(Get-date): $($jsonStatus.Status)"
 
             if ($jsonStatus.Status -eq "Finished") {
-
+                # Download JSON file with decoded barcodes
                 $jsonFoundBarcodes = Invoke-RestMethod -Method Get -Uri $resultFileUrl
                 
                 # Display found barcodes in console
@@ -64,7 +64,7 @@ try {
                 Start-Sleep -Seconds 3
             }
             else {
-                Write-Host status
+                Write-Host $jsonStatus.Status
                 break
             }
         }

@@ -52,9 +52,12 @@ if (curl_errno($curl) == 0)
         
         if ($json["error"] == false)
         {
+            // URL of generated CSV file that will available after the job completion
             $resultFileUrl = $json["url"];
+            // Asynchronous job ID
             $jobId = $json["jobId"];
             
+            // Check the job status in a loop
             do
             {
                 $status = CheckJobStatus($jobId); // Possible statuses: "InProgress", "Failed", "Aborted", "Finished".

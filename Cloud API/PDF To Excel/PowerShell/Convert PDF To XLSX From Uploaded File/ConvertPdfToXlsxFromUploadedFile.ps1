@@ -49,13 +49,13 @@ try {
             $jsonResponse = Invoke-RestMethod -Method Get -Headers @{ "x-api-key" = $API_KEY } -Uri $query
 
             if ($jsonResponse.error -eq $false) {
-                # Get URL of generated PDF file
+                # Get URL of generated XLSX file
                 $resultFileUrl = $jsonResponse.url;
                 
-                # Download PDF file
+                # Download XLSX file
                 Invoke-WebRequest -Headers @{ "x-api-key" = $API_KEY } -OutFile $DestinationFile -Uri $resultFileUrl
 
-                Write-Host "Generated PDF file saved as `"$($DestinationFile)`" file."
+                Write-Host "Generated XLSX file saved as `"$($DestinationFile)`" file."
             }
             else {
                 # Display service reported error

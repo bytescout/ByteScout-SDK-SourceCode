@@ -49,9 +49,12 @@ if (curl_errno($curl) == 0)
         
         if ($json["error"] == false)
         {
+            // URL of generated JSON file available after the job completion; it will contain URLs of result PDF files.
             $resultFileUrl = $json["url"];
+            // Asynchronous job ID
             $jobId = $json["jobId"];
             
+            // Check the job status in a loop
             do
             {
                 $status = CheckJobStatus($jobId); // Possible statuses: "InProgress", "Failed", "Aborted", "Finished".

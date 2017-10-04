@@ -59,7 +59,7 @@ try {
                 # Download HTML file
                 Invoke-WebRequest -Headers @{ "x-api-key" = $API_KEY } -OutFile $DestinationFile -Uri $resultFileUrl
 
-                Write-Host "Generated PDF file saved as `"$($DestinationFile)`" file."
+                Write-Host "Generated HTML file saved as `"$($DestinationFile)`" file."
             }
             else {
                 # Display service reported error
