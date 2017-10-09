@@ -34,3 +34,4 @@ extractor.SaveJSONToFile "result_with_external_images.json"
 extractor.SaveImages = 2 ' 2 = ImageHandling.Embed
 extractor.SaveJSONToFile "result_with_embedded_images.json"
 
+WScript.Echo "Done."

@@ -10,16 +10,24 @@
 '****************************************************************************'
 
 
-' Create Bytescout.PDFExtractor.JSONExtractor object
-Set extractor = CreateObject("Bytescout.PDFExtractor.JSONExtractor")
-
+' Create Bytescout.PDFExtractor.TextExtractor object
+Set extractor = CreateObject("Bytescout.PDFExtractor.TextExtractor")
 extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile "../../sample3.pdf"
+extractor.LoadDocumentFromFile("..\..\columns.pdf")
 
-extractor.SaveJSONToFile "output.json"
+' Set the column layout mode
+extractor.ExtractColumnByColumn = true
 
-MsgBox "Data has been extracted to 'output.json' file."
+' Save extracted text to file
+extractor.SaveTextToFile("result.txt")
+
+' Open output file in default associated application
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.txt", 1, false
+Set shell = Nothing
+
+Set extractor = Nothing
 

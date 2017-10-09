@@ -16,13 +16,13 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample1.pdf")
+extractor.LoadDocumentFromFile("..\..\words-with-hyphens.pdf")
 
 ' Set the matching mode:
 ' 0 = WordMatchingMode.None - treats the search string as substring;
 ' 1 = WordMatchingMode.SmartMatch - will find the word in various forms (like Adobe Reader);
 ' 2 = WordMatchingMode.ExactMatch - treats the search string as separate word.
-extractor.WordMatchingMode = 2
+extractor.WordMatchingMode = 1
 
 ' Get page count
 
@@ -30,9 +30,9 @@ pageCount = extractor.GetPageCount()
 
 For i = 0 To PageCount - 1 
  
-    If extractor.Find(i, "ipsum", false) Then ' parameters are: page index, string to find, case sensitivity.
+    If extractor.Find(i, "hyphen", false) Then ' parameters are: page index, string to find, case sensitivity.
         Do
-            foundMessage = "Found word 'ipsum' on page #" & CStr(i) & " at { " & _
+            foundMessage = "Found substring 'hyphen' on page #" & CStr(i) & " at { " & _
                 "x = " & CStr(extractor.FoundText.Left) & "; " & _
                 "y = " & CStr(extractor.FoundText.Top) & "; " & _
                 "width = " & CStr(extractor.FoundText.Width) & "; " & _

@@ -10,23 +10,28 @@
 '****************************************************************************'
 
 
-if Wscript.Arguments.Length < 2 Then
- WScript.Echo "Usage: PDFToXLS.vbs ""input.PDF"" ""output.XLS"""
- WScript.Quit
-End If
-
-' Create Bytescout.PDFExtractor.XLSExtractor object
-Set extractor = CreateObject("Bytescout.PDFExtractor.XLSExtractor")
+' Create Bytescout.PDFExtractor.XMLExtractor object
+Set extractor = CreateObject("Bytescout.PDFExtractor.XMLExtractor")
 
 extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
-WScript.Echo "Loading file from " & WScript.Arguments.Item(0)
 ' Load sample PDF document
-extractor.LoadDocumentFromFile WScript.Arguments.Item(0)
+extractor.LoadDocumentFromFile "../../sample1.pdf"
 
-WScript.Echo "Saving file to " & WScript.Arguments.Item(1)
-extractor.SaveToXLSFile WScript.Arguments.Item(1)
+' Uncomment this line to get rid of empty nodes in XML
+'extractor.PreserveFormattingOnTextExtraction = False
 
-WScript.Echo "Success: Data has been extracted to '" & WScript.Arguments.Item(1) & "' file."
+' Set output image format
+extractor.ImageFormat = 0 ' 0 = PNG; 1 = JPEG; 2 = GIF; 3 = BMP
 
+' Save images to external files
+extractor.SaveImages = 1 ' 1 = ImageHandling.OuterFile
+extractor.ImageFolder = "images" ' Folder for external images
+extractor.SaveXMLToFile "result_with_external_images.xml"
+
+' Embed images into XML as Base64 encoded string
+extractor.SaveImages = 2 ' 2 = ImageHandling.Embed
+extractor.SaveXMLToFile "result_with_embedded_images.xml"
+
+WScript.Echo "Done."

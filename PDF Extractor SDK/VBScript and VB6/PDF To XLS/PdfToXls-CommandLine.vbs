@@ -10,30 +10,23 @@
 '****************************************************************************'
 
 
-' Create Bytescout.PDFExtractor.TextExtractor object
-Set extractor = CreateObject("Bytescout.PDFExtractor.TextExtractor")
+if Wscript.Arguments.Length < 2 Then
+    WScript.Echo "Usage: PdfToXls.vbs ""input.pdf"" ""output.xlsx"""
+    WScript.Quit
+End If
+
+' Create Bytescout.PDFExtractor.XLSExtractor object
+Set extractor = CreateObject("Bytescout.PDFExtractor.XLSExtractor")
 extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
+' Set Excel format
+extractor.OutputFormat = 1 ' 0 - XLS format; 1 - XLSX format.
+
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\Invoice.pdf")
+extractor.LoadDocumentFromFile WScript.Arguments.Item(0)
 
-extractor.RegexSearch = True ' Turn on the regex search
-pattern = "[0-9]{2}/[0-9]{2}/[0-9]{4}" ' Search dates in format 12/31/1999
+' Extract data to Excel format
+extractor.SaveToXLSFile WScript.Arguments.Item(1)
 
-' Get page count
-pageCount = extractor.GetPageCount()
-
-For i = 0 to PageCount - 1 
-	If extractor.Find(i, pattern, false) Then ' Parameters are: page index, string to find, case sensitivity
-		Do
-			extractedString = extractor.FoundText.Text
-			MsgBox "Found match on page #" & CStr(i) & ": " & extractedString
-			extractor.ResetExtractionArea()
-		Loop While extractor.FindNext
-	End If
-Next
-
-MsgBox "Done"
-
-Set extractor = Nothing
+WScript.Echo "Extracted data saved to '" & WScript.Arguments.Item(1) & "' file."

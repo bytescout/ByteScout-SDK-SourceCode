@@ -34,8 +34,8 @@ extractor.OCRLanguage = "eng"
 extractor.OCRResolution = 300
 
 
-' You can also apply various preprocessing filters
-' to improve the recognition on low-quality scans.
+' You can also apply various preprocessing filters to improve the recognition on low-quality scans.
+' But they significantly hit the performance, so do not enable them by default.
 
 ' Automatically deskew skewed scans
 'extractor.OCRImagePreprocessingFilters.AddDeskew()
@@ -57,7 +57,7 @@ extractor.OCRResolution = 300
 ' Save extracted text to file
 extractor.SaveTextToFile("output.txt")
 
-MsgBox "Text was extracted to output.txt"
+WScript.Echo "Extracted text saved as 'output.txt'."
 
 Set extractor = Nothing
 

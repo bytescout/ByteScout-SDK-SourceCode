@@ -29,37 +29,39 @@ Set objFolder = FSO.GetFolder("..\..")
 Set files = objFolder.Files
 
 ' Create output file
-Set TS = FSO.CreateTextFile("output.txt")
+Set textFile = FSO.CreateTextFile("output.txt", True, True)
 
 For Each file in files
-	
-	ext = UCase(FSO.GetExtensionName(file))	
-	If ext = "PDF" Then
-		
+    
+    ext = UCase(FSO.GetExtensionName(file))	
+    If ext = "PDF" Then
+        
         infoExtractor.LoadDocumentFromFile(file)    
-        TS.WriteLine("File Name:    " & FSO.GetFileName(file))
-        TS.WriteLine("Page Count:   " & infoExtractor.GetPageCount())
-        TS.WriteLine("Author:       " & infoExtractor.Author)
-        TS.WriteLine("Title:        " & infoExtractor.Title)
-        TS.WriteLine("Producer:     " & infoExtractor.Producer)
-        TS.WriteLine("Subject:      " & infoExtractor.Subject)
-        TS.WriteLine("CreationDate: " & infoExtractor.CreationDate)
-        		
-		textExtractor.LoadDocumentFromFile(file)
-		text = textExtractor.GetTextFromPage(0)
-		
-		If len(text) > 0 Then
-			TS.WriteLine("Text (a bit): ")
-			TS.WriteLine(Mid(text, 1, 200))
-		End If
-		
-		TS.WriteBlankLines(2)
-	End If 
-	
+        textFile.WriteLine("File Name:    " & FSO.GetFileName(file))
+        textFile.WriteLine("Page Count:   " & infoExtractor.GetPageCount())
+        textFile.WriteLine("Author:       " & infoExtractor.Author)
+        textFile.WriteLine("Title:        " & infoExtractor.Title)
+        textFile.WriteLine("Producer:     " & infoExtractor.Producer)
+        textFile.WriteLine("Subject:      " & infoExtractor.Subject)
+        textFile.WriteLine("CreationDate: " & infoExtractor.CreationDate)
+                
+        textExtractor.LoadDocumentFromFile(file)
+        text = textExtractor.GetTextFromPage(0)
+        
+        If len(text) > 0 Then
+            textFile.WriteLine("Text (first 200 chars): ")
+            textFile.WriteLine(Mid(text, 1, 200))
+        End If
+        
+        textFile.WriteBlankLines(2)
+    End If 
+    
 Next
 
-TS.Close
+textFile.Close
 
 Set infoExtractor = Nothing
 Set textExtractor = Nothing
 Set FSO = Nothing
+
+WScript.Echo "Done."

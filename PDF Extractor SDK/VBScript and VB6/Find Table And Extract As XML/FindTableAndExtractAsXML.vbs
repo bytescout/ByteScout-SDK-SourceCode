@@ -11,62 +11,51 @@
 
 
 ' Create Bytescout.PDFExtractor.TextExtractor object
-Set tdetector= CreateObject("Bytescout.PDFExtractor.TableDetector")
-tdetector.RegistrationName = "demo"
-tdetector.RegistrationKey = "demo"
+Set tableDetector= CreateObject("Bytescout.PDFExtractor.TableDetector")
+tableDetector.RegistrationName = "demo"
+tableDetector.RegistrationKey = "demo"
 
-' Create Bytescout.PDFExtractor.XMLExtractor object
-Set extractor = CreateObject("Bytescout.PDFExtractor.XMLExtractor")
-extractor.RegistrationName = "demo"
-extractor.RegistrationKey = "demo"
+' Create Bytescout.PDFExtractor.xmlExtractor object
+Set xmlExtractor = CreateObject("Bytescout.PDFExtractor.XMLExtractor")
+xmlExtractor.RegistrationName = "demo"
+xmlExtractor.RegistrationKey = "demo"
 
-' we should define what kind of tables we should detect
-' so we set min required number of columns to 3
-tdetector.DetectionMinNumberOfColumns = 3
+' We should define what kind of tables we should detect.
+' So we set min required number of columns to 3 ...
+tableDetector.DetectionMinNumberOfColumns = 3
+' ... and we set min required number of columns to 3
+tableDetector.DetectionMinNumberOfRows = 3
 
-' and we set min required number of columns to 3
-tdetector.DetectionMinNumberOfRows = 3
-
-
-
-' Load sample PDF document into table detector
-tdetector.LoadDocumentFromFile("..\..\sample3.pdf")
-
-' Load sample PDF document into XML extractor
-extractor.LoadDocumentFromFile "..\..\sample3.pdf"
+' Load sample PDF document
+tableDetector.LoadDocumentFromFile("..\..\sample3.pdf")
+xmlExtractor.LoadDocumentFromFile "..\..\sample3.pdf"
 
 ' Get page count
+pageCount = tableDetector.GetPageCount()
 
-pageCount = tdetector.GetPageCount()
-
-For i=0 to PageCount-1 
+' Iterate through pages
+For i = 0 to pageCount - 1 
  
- If tdetector.FindTable(i) Then ' parameters are: page index, string to find, case sensitivity
- 	Do
- 		MsgBox "Found a table on page #" & CStr(i) & " at left=" & CStr(tdetector.GetFoundTableRectangle_Left) & "; top=" & CStr(tdetector.GetFoundTableRectangle_Top) & "; width=" & CStr(tdetector.GetFoundTableRectangle_Width) & "; height=" & CStr(tdetector.GetFoundTableRectangle_Height)
+	t = 0
+	' Find first table and continue if found
+	If (tableDetector.FindTable(i)) Then
 
-	
-	' set extraction area to extract table data as XML
-	extractor.SetExtractionArea tdetector.GetFoundTableRectangle_Left, tdetector.GetFoundTableRectangle_Top, tdetector.GetFoundTableRectangle_Width, tdetector.GetFoundTableRectangle_Height
-
-	' define filename to save XML
- 	XMLFileName = "page-" & CStr(i) & "-table-at-" & CStr(tdetector.GetFoundTableRectangle_Top) & ".xml"
-
-	' save XML from this page (bounded by extraction area) into file
-	extractor.SavePageXMLToFile i, XMLFileName
-
-	MsgBox "Table saved into XML as " & XMLFileName
-
-	' reset extraction area on the page
-	extractor.ResetExtractionArea
-
-
-  	Loop While tdetector.FindNextTable
- End If
+		Do
+			' Set extraction area for CSV extractor to rectangle received from the table detector
+			xmlExtractor.SetExtractionArea _
+				tableDetector.GetFoundTableRectangle_Left(), _
+				tableDetector.GetFoundTableRectangle_Top(), _
+				tableDetector.GetFoundTableRectangle_Width(), _
+				tableDetector.GetFoundTableRectangle_Height()
+			' Export the table to CSV file
+			xmlExtractor.SavePageXMLToFile i, "page-" & CStr(i) & "-table-" & CStr(t) & ".xml"
+			t = t + 1
+		Loop While tableDetector.FindNextTable()
+		
+	End If
 
 Next
 
-MsgBox "Done"
-
-Set tdetector= Nothing
+Set xmlExtractor = Nothing
+Set tableDetector = Nothing
 

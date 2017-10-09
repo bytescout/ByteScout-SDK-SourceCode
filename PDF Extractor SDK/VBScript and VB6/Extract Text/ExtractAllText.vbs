@@ -19,11 +19,11 @@ extractor.RegistrationKey = "demo"
 extractor.LoadDocumentFromFile("..\..\sample1.pdf")
 
 ' Save extracted text to file
-extractor.SaveTextToFile("output.txt")
+extractor.SaveTextToFile("result.txt")
 
-' Open output file in default associated application
+' Open the output file in default associated application
 Set shell = CreateObject("WScript.Shell")
-shell.Run "output.txt", 1, false
+shell.Run "result.txt", 1, false
 Set shell = Nothing
 
 Set extractor = Nothing

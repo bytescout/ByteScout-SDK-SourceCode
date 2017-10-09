@@ -24,7 +24,7 @@ For i = 0 To AttachmentExtractor.Count - 1
     AttachmentExtractor.Save i, AttachmentExtractor.GetFileName(i) 
 Next
 
-MsgBox "Done! Click OK to open the XML invoice"
+WScript.Echo "Done! Click OK to open the XML invoice"
 
 Set extractor = Nothing
 

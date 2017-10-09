@@ -15,9 +15,8 @@ Set merger = CreateObject("Bytescout.PDFExtractor.DocumentMerger")
 merger.RegistrationName = "demo"
 merger.RegistrationKey = "demo"
 
-Dim inputFiles 
-inputFiles = Array("..\..\sample1.pdf", "..\..\sample2.pdf", "..\..\sample3.pdf")
-
-merger.Merge inputFiles, "result.pdf"
+merger.Merge2 "..\..\sample1.pdf", "..\..\sample2.pdf", "result.pdf"
                 
 Set merger = Nothing
+
+WScript.Echo "Merged document saved as 'result.pdf'."

@@ -12,7 +12,6 @@
 
 ' Create Bytescout.PDFExtractor.XFDFExtractor object
 Set extractor = CreateObject("Bytescout.PDFExtractor.XFDFExtractor")
-
 extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
@@ -21,5 +20,4 @@ extractor.LoadDocumentFromFile "../../sample3.pdf"
 
 extractor.SaveXFDFToFile "output.xml"
 
-MsgBox "Data has been extracted to 'output.xml' file."
-
+WScript.Echo "Extracted data saved to 'output.xml' file."

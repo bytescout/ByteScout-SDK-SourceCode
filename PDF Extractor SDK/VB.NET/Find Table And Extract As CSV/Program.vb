@@ -38,6 +38,7 @@ Class Program
 		' Get page count
         Dim pageCount As Integer = tableDetector.GetPageCount()
 
+        ' Iterate through pages
 		For i As Integer = 0 To pageCount - 1
             Dim t As Integer = 1
             ' Find first table and continue if found

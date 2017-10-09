@@ -10,24 +10,14 @@
 '****************************************************************************'
 
 
-' Create Bytescout.PDFExtractor.TextExtractor object
-Set extractor = CreateObject("Bytescout.PDFExtractor.TextExtractor")
+' Create Bytescout.PDFExtractor.XMLExtractor object
+Set extractor = CreateObject("Bytescout.PDFExtractor.XMLExtractor")
 extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\columns.pdf")
+extractor.LoadDocumentFromFile "../../sample3.pdf"
 
-' set to extract text column by column
-extractor.ExtractColumnByColumn = true
+extractor.SaveXMLToFile "output.xml"
 
-' Save extracted text to file
-extractor.SaveTextToFile("output.txt")
-
-' Open output file in default associated application
-Set shell = CreateObject("WScript.Shell")
-shell.Run "output.txt", 1, false
-Set shell = Nothing
-
-Set extractor = Nothing
-
+WScript.Echo "Extracted data saved to 'output.xml' file."

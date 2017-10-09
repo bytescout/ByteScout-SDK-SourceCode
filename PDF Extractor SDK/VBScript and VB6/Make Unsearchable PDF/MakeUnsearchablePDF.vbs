@@ -21,7 +21,12 @@ unsearchablePDFMaker.LoadDocumentFromFile("..\..\sample1.pdf")
 ' Set PDF rendering resolution to 150 DPI. Higher value - better quality, but larger output file.
 unsearchablePDFMaker.RenderingResolution = 150
 ' Set embedded images format
-unsearchablePDFMaker.ImageFormat = 1 ' JPEG = 0; PNG = 1
+unsearchablePDFMaker.ImageFormat = 0 ' JPEG = 0; PNG = 1
+' Set quality factor for JPEG format; from 0 to 100; default is 90.
+' Lower quality - smaller the result file.
+unsearchablePDFMaker.JPEGQuality = 60
 
 ' Process the document
 unsearchablePDFMaker.MakePDFUnsearchable("result.pdf")
+
+WScript.Echo "Unsearchable document saved as 'result.pdf'."

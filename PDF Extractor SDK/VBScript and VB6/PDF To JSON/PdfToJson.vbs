@@ -10,29 +10,14 @@
 '****************************************************************************'
 
 
-' Create Bytescout.PDFExtractor.TextExtractor object
-Set extractor = CreateObject("Bytescout.PDFExtractor.TextExtractor")
+' Create Bytescout.PDFExtractor.JSONExtractor object
+Set extractor = CreateObject("Bytescout.PDFExtractor.JSONExtractor")
 extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\words-with-hyphens.pdf")
+extractor.LoadDocumentFromFile "../../sample3.pdf"
 
-' Get page count
+extractor.SaveJSONToFile "output.json"
 
-pageCount = extractor.GetPageCount()
-
-For i=0 to PageCount-1 
- 
- If extractor.Find(i, "hyphen", false) Then ' parameters are: page index, string to find, case sensitivity
- 	Do
- 		MsgBox "Found word 'hyphen' on page #" & CStr(i) & " at left=" & CStr(extractor.FoundText.Left) & "; top=" & CStr(extractor.FoundText.Top) & "; width=" & CStr(extractor.FoundText.Width) & "; height=" & CStr(extractor.FoundText.Height)
-  	Loop While extractor.FindNext
- End If
-
-Next
-
-MsgBox "Done"
-
-Set extractor = Nothing
-
+WScript.Echo "Extracted data saved to 'output.json' file."

@@ -22,15 +22,11 @@ extractor.RegistrationKey = "demo"
 extractor.LoadDocumentFromFile("..\..\sample2.pdf")
 
 ' Disable page data caching, so processed pages wiil be disposed automatically
-extractor.PageDataCaching = PageDataCaching.None
+extractor.PageDataCaching = 0 ' 0 - no caching; 1 - cache all pages.
 
 ' Save extracted text to file
 extractor.SaveTextToFile("output.txt")
 
-' Open first output file in default associated application
-Set shell = CreateObject("WScript.Shell")
-shell.Run "output.txt", 1, false
-Set shell = Nothing
-
 Set extractor = Nothing
 
+WScript.Echo "Extracted data saved to 'output.txt' file."

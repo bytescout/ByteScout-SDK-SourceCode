@@ -16,34 +16,24 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\columns.pdf")
+extractor.LoadDocumentFromFile("..\..\Invoice.pdf")
 
-' read width of the very first page (zero index)
-pageWidth = extractor.GetPageRect_Width (0)
-pageHeight = extractor.GetPageRect_Height (0)
+extractor.RegexSearch = True ' Turn on the regex search
+pattern = "[0-9]{2}/[0-9]{2}/[0-9]{4}" ' Search dates in format 'mm/dd/yyyy'
 
-' now we are extracting content assuming we have 3 columns 
-' equally distributed on pages
+' Get page count
+pageCount = extractor.GetPageCount()
 
-' first calculate the width of the one column by dividing page width by number of columns (3)
-columnWidth = pageWidth / 3
-
-' iterate through 3 columns
-For i=0 to 2
-
-' set the extraction area to the #i column 
-extractor.SetExtractionArea i * columnWidth, 0, columnWidth , pageHeight
-
-outFileName = "columns-column"& CStr(i) & ".txt"
-extractor.SavePageTextToFile 0, outFileName
-
-' Open output file in default associated application
-Set shell = CreateObject("WScript.Shell")
-shell.Run outFileName, 1, false
-Set shell = Nothing
-
+For i = 0 to PageCount - 1 
+    If extractor.Find(i, pattern, false) Then ' Parameters are: page index, string to find, case sensitivity
+        Do
+            extractedString = extractor.FoundText.Text
+            MsgBox "Found match on page #" & CStr(i) & ": " & extractedString
+            extractor.ResetExtractionArea()
+        Loop While extractor.FindNext
+    End If
 Next
 
-Set extractor = Nothing
-
 MsgBox "Done"
+
+Set extractor = Nothing

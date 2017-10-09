@@ -31,3 +31,5 @@ searchablePDFMaker.OCRResolution = 300
 
 ' Process the document
 searchablePDFMaker.MakePDFSearchable("result.pdf")
+
+WScript.Echo "Searchable document saved as 'result.pdf'."
