@@ -11,8 +11,6 @@
 
 
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Diagnostics;
 using System.IO;
 using Bytescout.Spreadsheet;
@@ -24,57 +22,46 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
-            try
+            // Create new Spreadsheet object
+            Spreadsheet spreadsheet = new Spreadsheet();
+            spreadsheet.RegistrationName = "demo";
+            spreadsheet.RegistrationKey = "demo";
+
+            // Add new worksheet
+            Worksheet sheet = spreadsheet.Workbook.Worksheets.Add("Sample");
+
+            // Add few random numbers
+            int length = 10;
+            Random rnd = new Random();
+            for (int i = 0; i < length; i++)
             {
-			    // create new Spreadsheet object
-                Spreadsheet spreadsheet = new Spreadsheet();
+                sheet.Cell(i, 0).Value = rnd.Next(10);
+                sheet.Cell(i, 1).Value = rnd.Next(10);
+                sheet.Cell(i, 2).Value = rnd.Next(1, 3);
+            }
 
-                // add new worksheet
-                Worksheet sheet = spreadsheet.Workbook.Worksheets.Add("Sample");
+            // add charts to worksheet
+            Chart bubbleChart = sheet.Charts.AddChartAndFitInto(1, 4, 19, 11, ChartType.Bubble);
+            bubbleChart.SeriesCollection.Add(new Series(sheet.Range(0, 1, length - 1, 1),
+                                                        sheet.Range(0, 0, length - 1, 0),
+                                                        sheet.Range(0, 2, length - 1, 2)));
 
-                // add a random numbers
-                int length = 10;
-                Random rnd = new Random();
-                for (int i = 0; i < length; i++)
-                {
-                    sheet.Cell(i, 0).Value = rnd.Next(10);
-                    sheet.Cell(i, 1).Value = rnd.Next(10);
-                    sheet.Cell(i, 2).Value = rnd.Next(1, 3);
-                }
-
-                // add charts to worksheet
-                Chart bubbleChart = sheet.Charts.AddChartAndFitInto(1, 4, 19, 11, ChartType.Bubble);
-                bubbleChart.SeriesCollection.Add(new Series(sheet.Range(0, 1, length - 1, 1),
-                                                            sheet.Range(0, 0, length - 1, 0),
-                                                            sheet.Range(0, 2, length - 1, 2)));
-
-                bubbleChart = sheet.Charts.AddChartAndFitInto(1, 12, 19, 19, ChartType.Bubble3DEffect);
-                bubbleChart.SeriesCollection.Add(new Series(sheet.Range(0, 1, length - 1, 1),
-                                                            sheet.Range(0, 0, length - 1, 0),
-                                                            sheet.Range(0, 2, length - 1, 2)));
-
-                if (File.Exists("Output.xls"))
-                {
-                    File.Delete("Output.xls");
-                }
+            bubbleChart = sheet.Charts.AddChartAndFitInto(1, 12, 19, 19, ChartType.Bubble3DEffect);
+            bubbleChart.SeriesCollection.Add(new Series(sheet.Range(0, 1, length - 1, 1),
+                                                        sheet.Range(0, 0, length - 1, 0),
+                                                        sheet.Range(0, 2, length - 1, 2)));
                 
-                // Save it as XLS
-                spreadsheet.SaveAs("Output.xls");
+            // Save it as XLS
+            spreadsheet.SaveAs("Output.xls");
 
-                // close the document
-                spreadsheet.Close();
+            // Close the document
+            spreadsheet.Close();
 
-                // open output XLS
-                Process.Start("Output.xls");
+            // Cleanup
+            spreadsheet.Dispose();
 
-
-            }
-            catch(Exception e){
-                Console.WriteLine("CAN NOT EXECUTE: " + e.ToString());
-                Console.WriteLine("\nPress any key to exit");
-                Console.ReadKey();
-            }
-
+            // Open generated XLS file in default associated application
+            Process.Start("Output.xls");
         }
     }
 }

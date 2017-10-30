@@ -16,98 +16,96 @@ using BytescoutImageToVideo;
 
 namespace MultipleInstances
 {
-	class Program
-	{
-		private static int numBusy;
-		private static ManualResetEvent doneEvent;
+    class Program
+    {
+        private static int numBusy;
+        private static ManualResetEvent doneEvent;
 
-		static void Main(string[] args)
-		{
-			doneEvent = new ManualResetEvent(false);
-			
-			Console.WriteLine("Converting JPG slides to video in multiple threads, please wait...");
+        static void Main(string[] args)
+        {
+            doneEvent = new ManualResetEvent(false);
 
-			numBusy = 10; // 10 threads to start
+            Console.WriteLine("Converting JPG slides to video in multiple threads, please wait...");
 
-			// start threads
-	                for (int i = 1; i <= numBusy; i++)
-        	        {
-                	 	ThreadPool.QueueUserWorkItem(DoWork, i);
-            	    	}
+            numBusy = 10; // 10 threads to start
 
-			// wait for all threads finished
-			doneEvent.WaitOne();
+            // Start threads
+            for (int i = 1; i <= numBusy; i++)
+            {
+                ThreadPool.QueueUserWorkItem(DoWork, i);
+            }
 
-			Console.WriteLine("All threads are finished. Press any key to continue..");
-			Console.ReadKey();
-		}
+            // wait for all threads finished
+            doneEvent.WaitOne();
 
-
+            Console.WriteLine("All threads are finished. Press any key to continue..");
+            Console.ReadKey();
+        }
+        
         static TransitionEffectType GetRandomEffect()
         {
             Random rr = new Random();
             return (TransitionEffectType)(rr.Next((int)TransitionEffectType.teZoomOut, (int)TransitionEffectType.teBlinds3DHorz));
         }
 
-		static void DoWork(object data)
-		{
-			int index = (int) data;
+        static void DoWork(object data)
+        {
+            int index = (int)data;
 
-			try
-			{
-				Console.WriteLine("Thread {0} started...", index);
+            try
+            {
+                Console.WriteLine("Thread {0} started...", index);
 
 				// Create BytescoutImageToVideo.ImageToVideo object instance
 				ImageToVideo converter = new ImageToVideo();
 
-				// Activate the component
-				converter.RegistrationName = "demo";
-				converter.RegistrationKey = "demo";
+                // Activate the component
+                converter.RegistrationName = "demo";
+                converter.RegistrationKey = "demo";
 
-				// Add images and set the duration for every slide
-				Slide slide;
-				slide = converter.AddImageFromFileName("..\\..\\..\\..\\slide1.jpg");
-				slide.Duration = 3000; // 3000ms = 3s
-		                slide.InEffect = GetRandomEffect();
-                		slide.OutEffect = GetRandomEffect();
-
-
-				slide = converter.AddImageFromFileName("..\\..\\..\\..\\slide2.jpg");
-				slide.Duration = 3000;
-		                slide.InEffect = GetRandomEffect();
-                		slide.OutEffect = GetRandomEffect();
-
-				slide = converter.AddImageFromFileName("..\\..\\..\\..\\slide3.jpg");
-				slide.Duration = 3000;
-		                slide.InEffect = GetRandomEffect();
-                		slide.OutEffect = GetRandomEffect();
+                // Add images and set the duration for every slide
+                Slide slide;
+                slide = converter.AddImageFromFileName("..\\..\\..\\..\\slide1.jpg");
+                slide.Duration = 3000; // 3000ms = 3s
+                slide.InEffect = GetRandomEffect();
+                slide.OutEffect = GetRandomEffect();
 
 
-				// Set output video size
-				converter.OutputWidth = 640;
-				converter.OutputHeight = 480;
+                slide = converter.AddImageFromFileName("..\\..\\..\\..\\slide2.jpg");
+                slide.Duration = 3000;
+                slide.InEffect = GetRandomEffect();
+                slide.OutEffect = GetRandomEffect();
 
-				// Set output video file name
-				converter.OutputVideoFileName = String.Format("result_{0}.wmv", index);
+                slide = converter.AddImageFromFileName("..\\..\\..\\..\\slide3.jpg");
+                slide.Duration = 3000;
+                slide.InEffect = GetRandomEffect();
+                slide.OutEffect = GetRandomEffect();
+                
+                // Set output video size
+                converter.OutputWidth = 640;
+                converter.OutputHeight = 480;
 
-				// Run the conversion
-				converter.RunAndWait();
+                // Set output video file name
+                converter.OutputVideoFileName = String.Format("result_{0}.wmv", index);
 
-				// Release resources
-				System.Runtime.InteropServices.Marshal.ReleaseComObject(converter);
+                // Run the conversion
+                converter.RunAndWait();
 
-				Console.WriteLine("Thread {0} finished.", index);
-			}
-			catch (Exception ex)
-			{
-				Console.WriteLine("Thread {0} failed: {1}", index, ex.Message);
-			}
+                // Release resources
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(converter);
 
-		        // check until numBusy is equal to 0 (as it we use it as a counter to count finished threads)
-			if (Interlocked.Decrement(ref numBusy) == 0)
-			{
-				doneEvent.Set();
-			}
-		}
-	}
+                Console.WriteLine("Thread {0} finished.", index);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Thread {0} failed: {1}", index, ex.Message);
+            }
+
+            // check until numBusy is equal to 0 (as it we use it as a counter to count finished threads)
+            if (Interlocked.Decrement(ref numBusy) == 0)
+            {
+                doneEvent.Set();
+            }
+        }
+    }
 }

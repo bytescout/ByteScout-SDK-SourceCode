@@ -16,30 +16,31 @@ Imports System.IO
 Imports Bytescout.Spreadsheet
 
 Class Program
-	Friend Shared Sub Main(args As String())
-		' Create new spreadsheet (or open existing)
-		Dim doc As New Spreadsheet()
-		' Add worksheet
-		Dim worksheet As Worksheet = doc.Worksheets.Add()
+    
+    Friend Shared Sub Main(args As String())
 
-		' Put background image on the worksheet
-		worksheet.BackgroundPicture = Image.FromFile("image1.jpg")
+        ' Create new spreadsheet (or open existing)
+        Dim doc As New Spreadsheet()
+        doc.RegistrationName = "demo"
+        doc.RegistrationKey = "demo"
 
+        ' Add worksheet
+        Dim worksheet As Worksheet = doc.Worksheets.Add()
 
-		' Delete output file if exists
-		If File.Exists("output.xls") Then
-			File.Delete("output.xls")
-		End If
+        ' Put background image on the worksheet
+        worksheet.BackgroundPicture = Image.FromFile("image1.jpg")
 
-		' Save document
-		doc.SaveAs("output.xls")
+        ' Save document
+        doc.SaveAs("output.xls")
 
-		' Close spreadsheet
-		doc.Close()
+        ' Close spreadsheet
+        doc.Close()
 
-		' Open generated XLS document in default application
-		Process.Start("output.xls")
+        ' Open generated XLS document in default application
+        Process.Start("output.xls")
 
-		doc.Dispose()
-	End Sub
+        doc.Dispose()
+
+    End Sub
+    
 End Class

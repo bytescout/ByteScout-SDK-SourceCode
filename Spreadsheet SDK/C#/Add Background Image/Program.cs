@@ -12,7 +12,6 @@
 
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using Bytescout.Spreadsheet;
 
 namespace AddBackgroundImage
@@ -23,19 +22,15 @@ namespace AddBackgroundImage
 		{
 			// Create new spreadsheet (or open existing)
 			Spreadsheet doc = new Spreadsheet();
+			doc.RegistrationName = "demo";
+            doc.RegistrationKey = "demo";
+
 			// Add worksheet
 			Worksheet worksheet = doc.Worksheets.Add();
 
 			// Put background image on the worksheet
 			worksheet.BackgroundPicture = Image.FromFile("image1.jpg");
-
-
-			// Delete output file if exists
-			if (File.Exists("output.xls"))
-			{
-				File.Delete("output.xls");
-			}
-
+            
 			// Save document
 			doc.SaveAs("output.xls");
 

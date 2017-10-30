@@ -26,29 +26,28 @@ Set document = Server.CreateObject("Bytescout.Spreadsheet.Spreadsheet")
  ' Add new worksheet
 Set worksheet = document.Workbook.Worksheets.Add("HelloWorld")
 
-' get cell value
-Set cell = worksheet.Item(0,0) ' you can also use worksheet.Cell("A1") as well
+' Get cell value
+Set cell = worksheet.Item(0,0) ' You can also use worksheet.Cell("A1") as well
 
-' set cell value
+' Set cell value
 cell.Value = "Hello, World!"
 
-' generate and get xls document as an array of bytes
- XLSDocumentArray = document.GetAsBytesArrayXLS
+' Generate and get XLS document as an array of bytes
+XLSDocumentArray = document.GetAsBytesArrayXLS
 
- response.ContentType = "vnd.ms-excel"
+response.ContentType = "vnd.ms-excel"
 
- ' add content type header 
- response.AddHeader "Content-Type", "application/vnd.ms-excel"
+' Add content type header 
+response.AddHeader "Content-Type", "application/vnd.ms-excel"
 
- ' set the content disposition
- response.AddHeader "Content-Disposition", "inline;filename=HelloWorld.xls" 
+' Set the content disposition
+response.AddHeader "Content-Disposition", "inline;filename=HelloWorld.xls" 
 
- ' write the binary image to the Response output stream 
- response.BinaryWrite XLSDocumentArray
- response.End
+' Write the binary image to the Response output stream 
+response.BinaryWrite XLSDocumentArray
+response.End
 
-' disconnect from libraries
+' Release library
 Set document = Nothing
-
 
 %>

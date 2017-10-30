@@ -12,57 +12,45 @@
 
 Imports Bytescout.Spreadsheet
 Imports Bytescout.Spreadsheet.Charts
-Imports System.IO
-
 
 Module Module1
 
     Sub Main()
 
+        ' Create new Spreadsheet object
+        Dim spreadsheet As New Spreadsheet()
+        spreadsheet.RegistrationName = "demo"
+        spreadsheet.RegistrationKey = "demo"
 
-			Try
-				' create new Spreadsheet object
-				Dim spreadsheet As New Spreadsheet()
+        ' Add new worksheet
+        Dim sheet As Worksheet = spreadsheet.Workbook.Worksheets.Add("Sample")
 
-				' add new worksheet
-				Dim sheet As Worksheet = spreadsheet.Workbook.Worksheets.Add("Sample")
+        ' Add few random numbers
+        Dim length As Integer = 10
+        Dim rnd As New Random()
+        For i As Integer = 0 To length - 1
+            sheet.Cell(i, 0).Value = rnd.[Next](10)
+            sheet.Cell(i, 1).Value = rnd.[Next](10)
+        Next
 
-				' add a random numbers
-				Dim length As Integer = 10
-				Dim rnd As New Random()
-				For i As Integer = 0 To length - 1
-					sheet.Cell(i, 0).Value = rnd.[Next](10)
-					sheet.Cell(i, 1).Value = rnd.[Next](10)
-				Next
+        ' Add charts to worksheet
+        Dim columnChart As Chart = sheet.Charts.AddChart(5, 4, ChartType.ColumnClustered)
+        columnChart.SeriesCollection.Add(New Series(sheet.Range(0, 0, 9, 0)))
+        Dim series As New Series(sheet.Range(0, 1, 9, 1))
+        series.ChartType = ChartType.Line
+        columnChart.SeriesCollection.Add(series)
 
-				' add charts to worksheet
-				Dim columnChart As Chart = sheet.Charts.AddChart(5, 4, ChartType.ColumnClustered)
-				columnChart.SeriesCollection.Add(New Series(sheet.Range(0, 0, 9, 0)))
-				Dim series As New Series(sheet.Range(0, 1, 9, 1))
-				series.ChartType = ChartType.Line
-				columnChart.SeriesCollection.Add(series)
+        ' Save it as XLS
+        spreadsheet.SaveAs("Output.xls")
 
-				' Delete output file if exists
-				If File.Exists("output.xls") Then
-					File.Delete("output.xls")
-				End If
+        ' Close the document
+        spreadsheet.Close()
 
-				' Save it as XLS
-				spreadsheet.SaveAs("Output.xls")
+        ' Cleanup
+        spreadsheet.Dispose()
 
-				' close the document
-				spreadsheet.Close()
-
-				' open output XLS
-
-
-				Process.Start("Output.xls")
-			Catch e As Exception
-				Console.WriteLine("CAN NOT EXECUTE: " & e.ToString())
-				Console.WriteLine("" & Chr(10) & "Press any key to exit")
-				Console.ReadKey()
-			End Try
-
+        ' Open generated XLS file in default associated application
+        Process.Start("Output.xls")
 
     End Sub
 
