@@ -36,8 +36,8 @@ namespace ImageToVideoDemo
 		{
 			InitializeComponent();
 
-			_imageToVideo.RegistrationName = "support@bytescout.com";
-			_imageToVideo.RegistrationKey = "EC19-39EC-4361-66B4-372";
+			_imageToVideo.RegistrationName = "demo";
+			_imageToVideo.RegistrationKey = "demo";
 
 			Application.Idle += Application_Idle;
 		}

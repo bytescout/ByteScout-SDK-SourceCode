@@ -27,8 +27,8 @@ public partial class _Default : System.Web.UI.Page
 		ta.Fill(dt);
 
 		Barcode bc = new Barcode(SymbologyType.Code128);
-		bc.RegistrationName = "support@bytescout.com";
-		bc.RegistrationKey = "BE75-6B80-111C-E8B1-11E";
+		bc.RegistrationName = "demo";
+		bc.RegistrationKey = "demo";
     	bc.DrawCaption = false;
 
 		// Update DataTable with barcode image

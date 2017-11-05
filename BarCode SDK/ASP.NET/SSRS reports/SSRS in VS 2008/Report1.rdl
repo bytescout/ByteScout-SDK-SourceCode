@@ -243,11 +243,11 @@ FROM            Production.Product</CommandText>
                         </CustomProperty>
                         <CustomProperty>
                           <Name>barcode:regname</Name>
-                          <Value>support@bytescout.com</Value>
+                          <Value>demo</Value>
                         </CustomProperty>
                         <CustomProperty>
                           <Name>barcode:regkey</Name>
-                          <Value>A1FB-740E-0E92-F730-E90</Value>
+                          <Value>demo</Value>
                         </CustomProperty>
                         <CustomProperty>
                           <Name>barcode:resolution_x</Name>

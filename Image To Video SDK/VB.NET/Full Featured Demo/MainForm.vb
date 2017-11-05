@@ -31,8 +31,8 @@ Public Partial Class MainForm
 	Public Sub New()
 		InitializeComponent()
 
-		_imageToVideo.RegistrationName = "support@bytescout.com"
-		_imageToVideo.RegistrationKey = "EC19-39EC-4361-66B4-372"
+		_imageToVideo.RegistrationName = "demo"
+		_imageToVideo.RegistrationKey = "demo"
 
 		AddHandler Application.Idle, AddressOf Application_Idle
 	End Sub

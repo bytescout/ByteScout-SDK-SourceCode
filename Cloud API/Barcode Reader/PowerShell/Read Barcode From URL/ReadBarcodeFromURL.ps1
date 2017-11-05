@@ -26,11 +26,11 @@ try {
         foreach ($barcode in $jsonResponse.barcodes)
         {
             Write-Host "Found barcode:"
-            Write-Host "  Type: " + $barcode.TypeName
-            Write-Host "  Value: " + $barcode."Value"
-            Write-Host "  Document Page Index: " + $barcode."Page"
-            Write-Host "  Rectangle: " + $barcode."Rect"
-            Write-Host "  Confidence: " + $barcode."Confidence"
+            Write-Host "  Type: " $barcode.TypeName
+            Write-Host "  Value: " $barcode."Value"
+            Write-Host "  Document Page Index: " $barcode."Page"
+            Write-Host "  Rectangle: " $barcode."Rect"
+            Write-Host "  Confidence: " $barcode."Confidence"
             Write-Host ""
         }
     }
