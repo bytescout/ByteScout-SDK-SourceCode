@@ -25,10 +25,11 @@ namespace XLS2PDF
             document.LoadFromFile("SimpleReport.xls");
 
             // add image
-            document.Workbook.Worksheets[0].Pictures.Add(10, 2, "image.jpg");
+            document.Workbook.Worksheets[0].Pictures.Add(5, 1, "image.jpg");
 
             // save as PDF
-            document.SaveAsPDF("Output.pdf", false);
+            bool autosize = false;
+            document.SaveAsPDF("Output.pdf", autosize);
 
             // close the document 
             document.Close();

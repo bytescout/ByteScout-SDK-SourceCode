@@ -10,34 +10,16 @@
 '****************************************************************************'
 
 
-Imports Bytescout.Spreadsheet
-Imports System.IO
+Set document = CreateObject("Bytescout.Spreadsheet.Spreadsheet")
 
-Module Module1
+document.RegistrationName = "demo"
+document.RegistrationKey = "demo"
 
-    Sub Main()
-        ' Open Spreadsheet
-        Dim document As New Spreadsheet()
-		document.LoadFromFile("SimpleReport.xls")
+document.LoadFromFile("TestForHtmlExport.xls")
 
-		' add image
-    	document.Workbook.Worksheets(0).Pictures.Add(5, 1, "image.jpg")
+' Export whole document to set of HTML files
+document.SaveAsHTML "Document.html"
 
-        ' remove output file if already exists
-        If File.Exists("Output.pdf") Then
-            File.Delete("Output.pdf")
-        End If
+' Export single worksheet
+document.Worksheets.Item(0).SaveAsHTML "Worksheet1.html"
 
-        ' Export to PDF
-        Dim autosize = False
-		document.SaveAsPDF("Output.pdf", autosize)
-
-        ' Close Spreadsheet
-        document.Close()
-
-        ' open in default spreadsheets viewer/editor
-        Process.Start("Output.pdf")
-
-    End Sub
-
-End Module

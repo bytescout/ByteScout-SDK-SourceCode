@@ -45,16 +45,18 @@ int _tmain(int argc, _TCHAR* argv[])
 	::GetFullPathName(L"GS1DataBarExpanded.png", MAX_PATH, file, NULL);
 
 	// Load file content to byte array (for demonstration purpose)
-	HANDLE hFile = CreateFile(L"GS1DataBarExpanded.png", GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	HANDLE hFile = CreateFile(file, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
 	DWORD fileSize = GetFileSize(hFile, NULL);
 	byte* pBuffer = new byte[fileSize];
-	ReadFile(hFile, pBuffer, fileSize, NULL, NULL);
+	DWORD numberOfBytesRead;
+	ReadFile(hFile, pBuffer, fileSize, &numberOfBytesRead, NULL);
 	CloseHandle(hFile);
 
 	// Read barcode from memory
 	IStream* stream = SHCreateMemStream(pBuffer, fileSize);
 	hr = pIReader->ReadFromStream(stream);
 
+	stream->Release();
 	delete[] pBuffer;
 
 	// Get found barcode count

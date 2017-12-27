@@ -34,7 +34,7 @@ Set redPen = comHelpers.CreateSolidPen(comHelpers.CreateColorRGB(255, 0, 0), 1)
 
 ' Add autosized watermark to every page of the document
 Set watermark1 = comHelpers.CreateTextWatermark("Center Watermark")
-watermark1.WatermarkLocation = 7 ' TextWatermarkLocation.DiagonalFromBottomLeftToTopRight
+watermark1.WatermarkLocation = comHelpers.TEXTWATERMARKLOCATION_DIAGONALFROMBOTTOMLEFTTOTOPRIGHT
 watermark1.Font = font1
 watermark1.Brush = semitransparentRedBrush
 watermark1.Pen = redPen
