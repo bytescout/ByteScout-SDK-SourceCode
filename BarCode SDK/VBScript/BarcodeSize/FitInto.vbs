@@ -12,19 +12,19 @@
 
 Set bc = CreateObject("Bytescout.BarCode.Barcode")
 
-' display information about Code39 symbology
+' Display information about Code39 symbology
 
 msgbox "Easiest way to specify barcode size is to use FitInto_3(width, height, unitOfMeasure) method." & vbCRLF & "Let's generate barcode of 500x300 pixels."
 
-' set symbology to Code39
+' Set symbology to Code39
 bc.Symbology = 1 ' 1 = Code39 symbology type
 
-' set barcode value to encode
+' Set barcode value to encode
 bc.Value = "012345"
 
-' set barcode size by specifying a square the barcode will be fitted into size in pixels
-' 3rd parameter is the unit of measure: 0 - Pixel, 1 - point (1/72 inch), 2 - Inch, 3 - document unit (1/300 inch), 4 - Millimeter, 5 - Centimeter, 6 - Twip(1/20 inch)
-' we use 3rd parameter as 0 (Pixel)
+' Set barcode size by specifying dimensions the barcode will be fit into.
+' 3rd parameter is the unit of measure: 0 - Pixel, 1 - Point (1/72 inch), 2 - Inch, 3 - document unit (1/300 inch), 4 - Millimeter, 5 - Centimeter, 6 - Twip(1/20 inch).
+' We use 3rd parameter as 0 (Pixel).
 bc.FitInto_3 500, 300, 0
 
 msgbox "Generated barcode is saved into 'result.png' file"

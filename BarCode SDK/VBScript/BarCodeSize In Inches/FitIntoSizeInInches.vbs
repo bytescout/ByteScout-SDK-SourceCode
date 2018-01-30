@@ -12,14 +12,14 @@
 
 Set bc = CreateObject("Bytescout.BarCode.Barcode")
 
-' set symbology to PDF417
+' Set symbology to PDF417
 bc.Symbology = 13 ' 13 = PDF417 barcode type
 
-' set barcode value to encode
+' Set barcode value to encode
 bc.Value = "012345"
 
-' set barcode size by specifying a square the barcode will be fitted into 5x2 inches square
-' last parameter is the Measure Unit: Inch (2) Specifies the inch as the unit of measure. 
+' Set barcode size by specifying a square the barcode will be fitted into 5x2 inches square
+' Last parameter is the Measure Unit: Inch (2) Specifies the inch as the unit of measure. 
 bc.FitInto_3 5, 2, 2
 
 bc.CutUnusedSpace = False ' you can set it to True to cut unused space
