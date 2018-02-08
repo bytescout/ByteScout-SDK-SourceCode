@@ -11,11 +11,8 @@
 
 
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using Bytescout.PDFExtractor;
 
@@ -23,7 +20,11 @@ namespace MultithreadProcessing
 {
 	class Program
 	{
-		static void Main(string[] args)
+	    // Limit to 4 threads in queue.
+	    // Set this value to number of your processor cores for max performance.
+	    private static readonly Semaphore ThreadLimiter = new Semaphore(4, 4);
+
+        static void Main(string[] args)
 		{
 			const string inputFile = "sample.pdf";
 			const string resultFile = "result.pdf";
@@ -50,7 +51,10 @@ namespace MultithreadProcessing
 
 			for (int i = 0; i < numberOfThreads; i++)
 			{
-				doneEvents[i] = new ManualResetEvent(false);
+			    // Wait for the queue
+			    ThreadLimiter.WaitOne();
+
+                doneEvents[i] = new ManualResetEvent(false);
 				startPage = i * 10;
 				endPage = Math.Min(pageCount - 1, (i + 1) * 10 - 1);
 
@@ -80,40 +84,49 @@ namespace MultithreadProcessing
 		private static void ThreadProc(object stateInfo)
 		{
 			int threadIndex = (int) ((object[]) stateInfo)[0];
-			ManualResetEvent waitEvent = (ManualResetEvent) ((object[]) stateInfo)[1];
+			ManualResetEvent doneEvent = (ManualResetEvent) ((object[]) stateInfo)[1];
 			string inputFile = (string) ((object[]) stateInfo)[2];
 			string outputFile = (string)((object[])stateInfo)[3];
 			int startPage = (int)((object[])stateInfo)[4];
 			int endPage = (int)((object[])stateInfo)[5];
 
-			Console.WriteLine("Thread #{0} started with the page range from {1} to {2}.", threadIndex, startPage, endPage);
+            try
+		    {
+		        Console.WriteLine("Thread #{0} started with the page range from {1} to {2}.", threadIndex, startPage, endPage);
 
-			Stopwatch stopwatch = Stopwatch.StartNew();
+		        Stopwatch stopwatch = Stopwatch.StartNew();
 
-			// Extract a piece of document
-			string chunk = string.Format("temp-{0}-{1}", startPage, endPage);
-			using (DocumentSplitter splitter = new DocumentSplitter("demo", "demo"))
-				splitter.ExtractPageRange(inputFile, chunk, startPage + 1, endPage + 1);
+		        // Extract a piece of document
+		        string chunk = string.Format("temp-{0}-{1}", startPage, endPage);
+		        using (DocumentSplitter splitter = new DocumentSplitter("demo", "demo"))
+		            splitter.ExtractPageRange(inputFile, chunk, startPage + 1, endPage + 1);
 
-			// Process the piece
-			using (SearchablePDFMaker searchablePdfMaker = new SearchablePDFMaker("demo", "demo"))
-			{
-				searchablePdfMaker.OCRDetectPageRotation = true;
-				searchablePdfMaker.OCRLanguageDataFolder = @"C:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata";
-				searchablePdfMaker.LoadDocumentFromFile(chunk);
+		        // Process the piece
+		        using (SearchablePDFMaker searchablePdfMaker = new SearchablePDFMaker("demo", "demo"))
+		        {
+		            searchablePdfMaker.OCRDetectPageRotation = true;
+		            searchablePdfMaker.OCRLanguageDataFolder = @"C:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata";
+		            searchablePdfMaker.LoadDocumentFromFile(chunk);
 
-				// 300 DPI resolution is recommended. 
-				// Using of higher values will slow down the processing but does not guarantee the higher quality.
-				searchablePdfMaker.OCRResolution = 300;
+		            // 300 DPI resolution is recommended. 
+		            // Using of higher values will slow down the processing but does not guarantee the higher quality.
+		            searchablePdfMaker.OCRResolution = 300;
 
-				searchablePdfMaker.MakePDFSearchable(outputFile);
-			}
+		            searchablePdfMaker.MakePDFSearchable(outputFile);
+		        }
 
-			File.Delete(chunk);
+		        File.Delete(chunk);
 
-			Console.WriteLine("Thread #{0} finished in {1}.", threadIndex, stopwatch.Elapsed);
+		        Console.WriteLine("Thread #{0} finished in {1}.", threadIndex, stopwatch.Elapsed);
+		    }
+            finally
+            {
+                // Signal the thread is finished
+                doneEvent.Set();
 
-			waitEvent.Set();
-		}
+                // Release semaphore
+                ThreadLimiter.Release();
+            }
+        }
 	}
 }

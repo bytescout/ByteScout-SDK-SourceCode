@@ -16,6 +16,10 @@ Imports Bytescout.PDFExtractor
 
 Module Module1
 
+    ' Limit to 4 threads in queue.
+    ' Set this value to number of your processor cores for max performance.
+    Dim ThreadLimiter as Semaphore = New Semaphore(4, 4)
+
 	<MTAThread>
 	Sub Main()
 
@@ -42,6 +46,9 @@ Module Module1
 
 		' Run threads
 		For i As Integer = 0 To numberOfThreads - 1
+
+            ' Wait for the queue
+		    ThreadLimiter.WaitOne()
 
 			doneEvents(i) = New ManualResetEvent(False)
 			startPage = i * 10
@@ -86,37 +93,48 @@ Module Module1
 		Dim startPage As Integer = stateInfo(4)
 		Dim endPage As Integer = stateInfo(5)
 
-		Console.WriteLine("Thread #{0} started with the page range from {1} to {2}.", threadIndex, startPage, endPage)
+	    Try
 
-		Dim stopwatch As Stopwatch = Stopwatch.StartNew()
+	        Console.WriteLine("Thread #{0} started with the page range from {1} to {2}.", threadIndex, startPage, endPage)
 
-		' Extract a piece of document
-		Dim chunk As String = String.Format("temp-{0}-{1}", startPage, endPage)
-		Using splitter = New DocumentSplitter
-			splitter.ExtractPageRange(inputFile, chunk, startPage + 1, endPage + 1)
-		End Using
+		    Dim stopwatch As Stopwatch = Stopwatch.StartNew()
 
-		' Process the piece
-		Using searchablePdfMaker As New SearchablePDFMaker("demo", "demo")
+		    ' Extract a piece of document
+		    Dim chunk As String = String.Format("temp-{0}-{1}", startPage, endPage)
+		    Using splitter = New DocumentSplitter
+			    splitter.ExtractPageRange(inputFile, chunk, startPage + 1, endPage + 1)
+		    End Using
 
-			searchablePdfMaker.OCRDetectPageRotation = True
-			searchablePdfMaker.OCRLanguageDataFolder = "C:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata"
-			searchablePdfMaker.LoadDocumentFromFile(chunk)
+		    ' Process the piece
+		    Using searchablePdfMaker As New SearchablePDFMaker("demo", "demo")
 
-			' 300 DPI resolution is recommended. 
-			' Using of higher values will slow down the processing but does not guarantee the higher quality.
-			searchablePdfMaker.OCRResolution = 300
+			    searchablePdfMaker.OCRDetectPageRotation = True
+			    searchablePdfMaker.OCRLanguageDataFolder = "C:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata"
+			    searchablePdfMaker.LoadDocumentFromFile(chunk)
 
-			searchablePdfMaker.MakePDFSearchable(outputFile)
+			    ' 300 DPI resolution is recommended. 
+			    ' Using of higher values will slow down the processing but does not guarantee the higher quality.
+			    searchablePdfMaker.OCRResolution = 300
 
-		End Using
+			    searchablePdfMaker.MakePDFSearchable(outputFile)
 
-		File.Delete(chunk)
+		    End Using
 
-		Console.WriteLine("Thread #{0} finished in {1}.", threadIndex, stopwatch.Elapsed)
+		    File.Delete(chunk)
 
-		waitEvent.Set()
+		    Console.WriteLine("Thread #{0} finished in {1}.", threadIndex, stopwatch.Elapsed)
 
+	    Finally
+
+            ' Signal the thread is finished
+	        waitEvent.Set()
+
+            ' Release semaphore
+	        ThreadLimiter.Release()
+
+	    End Try
+
+		
 	End Sub
 
 End Module
