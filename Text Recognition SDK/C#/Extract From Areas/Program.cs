@@ -34,7 +34,7 @@ namespace TextRecognitionExample
                     textRecognizer.LoadDocument(inputDocument);
 
                     // Set location of "tessdata" folder containing language data files
-                    textRecognizer.OCRLanguageDataFolder = @"c:\Program Files\ByteScout Text Recognition SDK\net4.00\tessdata\";
+                    textRecognizer.OCRLanguageDataFolder = @"c:\Program Files\ByteScout Text Recognition SDK\tessdata\";
 
                     // Set OCR language
                     textRecognizer.OCRLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
@@ -42,7 +42,7 @@ namespace TextRecognitionExample
 
                     
                     // Get page size (in pixels). Size of PDF document is computed from PDF Points 
-                    // and the rendering resoultion specified by `textRecognizer.PDFRenderingResolution` (default 300 DPI)
+                    // and the rendering resolution specified by `textRecognizer.PDFRenderingResolution` (default 300 DPI)
                     Size pageSize = textRecognizer.GetPageSize(pageIndex);
                     
                     // Add area of interest as a rectangle at the top-right corner of the page
