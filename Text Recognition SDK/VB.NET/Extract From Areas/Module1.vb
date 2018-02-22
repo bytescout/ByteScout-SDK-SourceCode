@@ -31,11 +31,11 @@ Module Module1
                 ' Set location of "tessdata" folder containing language data files
                 textRecognizer.OCRLanguageDataFolder = "c:\Program Files\ByteScout Text Recognition SDK\tessdata\"
 
-                ' Set OCR language
-                textRecognizer.OCRLanguage = "eng" ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
+                ' Set OCR language.
+                ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "tessdata" folder
                 ' Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
-
-
+                textRecognizer.OCRLanguage = "eng" 
+                
                 ' Get page size (in pixels). Size of PDF document is computed from PDF Points 
                 ' and the rendering resoultion specified by `textRecognizer.PDFRenderingResolution` (default 300 DPI)
                 Dim pageSize As Size = textRecognizer.GetPageSize(pageIndex)
@@ -53,7 +53,7 @@ Module Module1
                     Console.WriteLine(ocrObject.ToString())
                 Next
 
-                ' ... or you can save extracted text pieces to file
+                ' ... or you can save recognized text pieces to file
                 textRecognizer.KeepTextFormatting = False ' save without formatting
                 textRecognizer.SaveText(outputDocument, pageIndex, pageIndex)
 

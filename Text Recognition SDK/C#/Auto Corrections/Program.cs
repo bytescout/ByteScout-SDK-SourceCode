@@ -12,6 +12,7 @@
 
 using System;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 using ByteScout.TextRecognition;
 
 namespace TextRecognitionExample
@@ -20,7 +21,7 @@ namespace TextRecognitionExample
     {
         static void Main(string[] args)
         {
-            string inputDocument = @".\invoice-sample.png";
+            string inputDocument = @".\bad-quality.png";
             string outputDocument = @".\result.txt";
 
             // Create and activate TextRecognizer instance
@@ -37,8 +38,14 @@ namespace TextRecognitionExample
                     // Set OCR language.
                     // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "tessdata" folder
                     // Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
-                    textRecognizer.OCRLanguage = "eng"; 
-                                    
+                    textRecognizer.OCRLanguage = "eng";
+
+
+                    // Add error corrections that will be applied after the recognition.
+                    textRecognizer.Corrections.Add("Tut ", "Test ");
+                    textRecognizer.Corrections.Add("Recog\\w{1,}on", "Recognition", true);
+
+
                     // Recognize text from all pages and save it to file
                     textRecognizer.SaveText(outputDocument);
 

@@ -16,7 +16,7 @@ Module Module1
 
     Sub Main()
 
-        Dim inputDocument As String = ".\invoice-sample.png"
+        Dim inputDocument As String = ".\bad-quality.png"
         Dim outputDocument As String = ".\result.txt"
 
         ' Create and activate TextRecognizer instance
@@ -33,6 +33,12 @@ Module Module1
                 ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "tessdata" folder
                 ' Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
                 textRecognizer.OCRLanguage = "eng"
+
+
+                ' Add error corrections that will be applied after the recognition.
+                textRecognizer.Corrections.Add("Tut ", "Test ")
+                textRecognizer.Corrections.Add("Recog\w{1,}on", "Recognition", True)
+
                 
                 ' Recognize text from all pages and save it to file
                 textRecognizer.SaveText(outputDocument)
