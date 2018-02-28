@@ -19,40 +19,58 @@ namespace ParallelDecoding
 {
     class Program
     {
-        const string InputFile = "example.pdf";
+        const string InputFile = @".\example.pdf";
+
+        // Limit to 4 threads in queue.
+        // Set this value to number of your processor cores for max performance.
+        private static readonly Semaphore ThreadLimiter = new Semaphore(4, 4);
+
 
         static void Main()
         {
-            ThreadPool.SetMaxThreads(8, 8);
-
             const int numberOfRuns = 10;
             ManualResetEvent[] doneEvents = new ManualResetEvent[numberOfRuns];
 
 
             for (int i = 0; i < numberOfRuns; i++)
             {
+                // Wait for the queue
+                ThreadLimiter.WaitOne();
+
                 doneEvents[i] = new ManualResetEvent(false);
 
                 ThreadPool.QueueUserWorkItem(new WaitCallback(delegate(object state)
                 {
                     int threadIndex = (int) state;
 
-                    Reader reader = new Reader();
-                    reader.RegistrationName = "demo";
-                    reader.RegistrationKey = "demo";
+                    Console.WriteLine("Thread #" + threadIndex + " started...");
 
-                    // Set barcode type to find
-                    reader.BarcodeTypesToFind.Code128 = true;
-
-                    // Read barcodes
-                    FoundBarcode[] barcodes = reader.ReadFrom(InputFile);
-
-                    foreach (FoundBarcode barcode in barcodes)
+                    try
                     {
-                        Console.WriteLine("Thread #{0}\r\n  Found barcode with type '{1}' and value '{2}'", threadIndex, barcode.Type, barcode.Value);
-                    }
+                        Reader reader = new Reader();
+                        reader.RegistrationName = "demo";
+                        reader.RegistrationKey = "demo";
 
-                    doneEvents[threadIndex].Set();
+                        // Set barcode type to find
+                        reader.BarcodeTypesToFind.Code128 = true;
+
+                        // Read barcodes
+                        FoundBarcode[] barcodes = reader.ReadFrom(InputFile);
+
+                        Console.WriteLine("Thread #" + threadIndex + " finished with " + barcodes.Length + " barcodes found.");
+                    }
+                    catch (Exception exception)
+                    {
+                        Console.WriteLine("Thread #" + threadIndex + " failed with exception:\r\n" + exception.Message);
+                    }
+                    finally
+                    {
+                        // Signal the thread is finished
+                        doneEvents[threadIndex].Set();
+
+                        // Release semaphore
+                        ThreadLimiter.Release();
+                    }
                 }), i);
             }
 
