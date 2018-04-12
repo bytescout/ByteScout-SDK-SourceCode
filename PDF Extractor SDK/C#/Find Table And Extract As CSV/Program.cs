@@ -31,7 +31,7 @@ namespace FindTableAndExtractAsCsv
             // We should define what kind of tables we should detect.
             // So we set min required number of columns to 3 ...
             tableDetector.DetectionMinNumberOfColumns = 3;
-            // ... and we set min required number of columns to 3
+            // ... and we set min required number of rows to 3
             tableDetector.DetectionMinNumberOfRows = 3;
 
             // Load sample PDF document

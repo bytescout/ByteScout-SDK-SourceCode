@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity name="Sample.exe" version="1.0.0.0" type="win32" />
+ 
+<!-- REFERENCES TO BYTESCOUT IMAGE TO VIDEO SDK - BEGIN -->
+
+<file name="BytescoutImageToVideo.dll">
+
+    <comClass
+        description="Slides Class"
+        clsid="{38389BED-CFA3-4618-B0F7-E5CFADC264E7}"
+        threadingModel="Both"
+        progid="BytescoutImageToVideo.Slides"
+        tlbid="{5212739C-A95B-4CDA-B116-F540A549B648}" />
+
+    <comClass
+        description="ImageToVideo Class"
+        clsid="{40D02BB3-80B5-4EAF-A264-61B9EF30BBE2}"
+        threadingModel="Both"
+        progid="BytescoutImageToVideo.ImageToVideo"
+        tlbid="{5212739C-A95B-4CDA-B116-F540A549B648}" />
+
+    <comClass
+        description="Slide Class"
+        clsid="{73E651CD-DF80-40BF-ACE0-7A921FC3BBBE}"
+        threadingModel="Both"
+        progid="BytescoutImageToVideo.Slide"
+        tlbid="{5212739C-A95B-4CDA-B116-F540A549B648}" />
+
+</file>
+
+<file name="BytescoutImageToVideoFilter.dll">
+
+    <comClass
+        description="Bytescout Image to Video Filter"
+        clsid="{008033AE-2C32-4826-A0E1-AD41B6B82322}"
+        threadingModel="Both" />
+
+</file>
+
+<file name="BytescoutAudioLoopFilter.dll">
+
+    <comClass
+        description="BytescoutAudioLoopFilter"
+        clsid="{FA1F3C54-7046-4BBE-967A-A0412B0F90BB}"
+        threadingModel="Both" />
+
+</file>
+
+<!-- REFERENCES TO BYTESCOUT IMAGE TO VIDEO SDK - END-->
+
+</assembly>

@@ -42,8 +42,8 @@ Sub ProcessFolder(folder)
     
     For Each objFile in colFiles
 
-    ' Check the file type
-    If inStr(inputImagesExtensions, UCase(objFSO.GetExtensionName(objFile.Name))) > 0 Then
+        ' Check the file type
+        If inStr(inputImagesExtensions, UCase(objFSO.GetExtensionName(objFile.Name))) > 0 Then
 
         ' Read barcode from file
         WScript.Echo "Reading from: " & objFile.Path
