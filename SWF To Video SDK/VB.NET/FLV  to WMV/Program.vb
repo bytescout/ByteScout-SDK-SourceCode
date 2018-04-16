@@ -1,13 +1,13 @@
-'****************************************************************************'
-'                                                                            '
-' Download evaluation version: https://bytescout.com/download/web-installer  '
-'                                                                            '
-' Signup Cloud API free trial: https://secure.bytescout.com/users/sign_up    '
-'                                                                            '
-' Copyright © 2017 ByteScout Inc. All rights reserved.                       '
-' http://www.bytescout.com                                                   '
-'                                                                            '
-'****************************************************************************'
+'*****************************************************************************************'
+'                                                                                         '
+' Download offline evaluation version (DLL): https://bytescout.com/download/web-installer '
+'                                                                                         '
+' Signup Web API free trial: https://secure.bytescout.com/users/sign_up                   '
+'                                                                                         '
+' Copyright © 2017-2018 ByteScout Inc. All rights reserved.                               '
+' http://www.bytescout.com                                                                '
+'                                                                                         '
+'*****************************************************************************************'
 
 
 ' x64 IMPORTANT NOTE: set CPU to x86 to build in x86 mode. WHY? Because flash is not supported on x64 platform currently at all

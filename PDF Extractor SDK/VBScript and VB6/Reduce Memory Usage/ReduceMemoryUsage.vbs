@@ -1,13 +1,13 @@
-'****************************************************************************'
-'                                                                            '
-' Download evaluation version: https://bytescout.com/download/web-installer  '
-'                                                                            '
-' Signup Cloud API free trial: https://secure.bytescout.com/users/sign_up    '
-'                                                                            '
-' Copyright © 2017 ByteScout Inc. All rights reserved.                       '
-' http://www.bytescout.com                                                   '
-'                                                                            '
-'****************************************************************************'
+'*****************************************************************************************'
+'                                                                                         '
+' Download offline evaluation version (DLL): https://bytescout.com/download/web-installer '
+'                                                                                         '
+' Signup Web API free trial: https://secure.bytescout.com/users/sign_up                   '
+'                                                                                         '
+' Copyright © 2017-2018 ByteScout Inc. All rights reserved.                               '
+' http://www.bytescout.com                                                                '
+'                                                                                         '
+'*****************************************************************************************'
 
 
 ' When processing huge PDF documents you may run into OutOfMemoryException.
