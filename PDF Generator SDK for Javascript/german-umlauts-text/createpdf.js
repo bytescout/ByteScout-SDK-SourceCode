@@ -44,7 +44,7 @@ function CreatePDF(IsInternetExplorer8OrLower) {
     pdf.textSetAlign(BytescoutPDF.JUSTIFIED);
 
     // add text with default alignment
-    pdf.textAddToBox('Some words with umlauts and JUSTIFIED alignment: Fu?gangerubergange, Gro?enma?stabe, gro?enordnungsma?ig, cafe, communique, fete, fiancee, melee, emigre, pate, protege; also note vis-a-vis, facade', false);
+    pdf.textAddToBox('Some words with umlauts and JUSTIFIED alignment: Fußgängerübergänge, Größenmaßstäbe, größenordnungsmäßig, café, communiqué, fête, fiancée, mêlée, émigré, pâté, protégé; also note vis-à-vis, façade', false);
     
     // return BytescoutPDF object instance
     return pdf;

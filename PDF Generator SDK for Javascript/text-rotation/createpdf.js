@@ -37,7 +37,7 @@ function CreatePDF(IsInternetExplorer8OrLower) {
     pdf.fontSetSize(14);
 
     // draw rotated text
-    pdf.textAdd(100, 100, 'Rotated 0 cafe', 0);
+    pdf.textAdd(100, 100, 'Rotated 0 café', 0);
     pdf.textAdd(100, 100, 'Rotated 45', 45);
     pdf.textAdd(100, 100, 'Rotated 90', 90);
 

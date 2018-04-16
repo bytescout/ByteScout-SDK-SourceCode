@@ -41,7 +41,7 @@ function CreatePDF(IsInternetExplorer8OrLower) {
     pdf.graphicsDrawRectangle(50, 50, 500, 100);
 
     // add text with default alignment
-    pdf.textAddToBox('cafe, communique, fete, fiancee, melee, emigre, pate, protege; Left aligned text Left aligned text Left aligned text Left aligned text Left aligned text Left aligned text Left aligned text', true);
+    pdf.textAddToBox('café, communiqué, fête, fiancée, mêlée, émigré, pâté, protégé; Left aligned text Left aligned text Left aligned text Left aligned text Left aligned text Left aligned text Left aligned text', true);
 
     // set another text box
     pdf.textSetBox(50, 200, 500, 100);
@@ -50,7 +50,7 @@ function CreatePDF(IsInternetExplorer8OrLower) {
 
     // add justified text
     pdf.textSetAlign(BytescoutPDF.JUSTIFIED);
-    pdf.textAddToBox('cafe, communique, fete, fiancee, melee, emigre, pate, protege; Justfied text Justfied text Justfied text Justfied text Justfied text Justfied text Justfied text Justfied text Justfied text', true);
+    pdf.textAddToBox('café, communiqué, fête, fiancée, mêlée, émigré, pâté, protégé; Justfied text Justfied text Justfied text Justfied text Justfied text Justfied text Justfied text Justfied text Justfied text', true);
 
     // return BytescoutPDF object instance
     return pdf;

@@ -43,7 +43,7 @@ function CreatePDF(IsInternetExplorer8OrLower) {
     // add aligned text:
 
     pdf.textSetAlign(BytescoutPDF.LEFT);
-    pdf.textAddToBox('Left aligned text: cafe, communique, fete, fiancee, melee, emigre, pate, protege; ', true);
+    pdf.textAddToBox('Left aligned text: café, communiqué, fête, fiancée, mêlée, émigré, pâté, protégé; ', true);
 
     pdf.textSetAlign(BytescoutPDF.CENTER);
     pdf.textAddToBox('Center aligned text', true);

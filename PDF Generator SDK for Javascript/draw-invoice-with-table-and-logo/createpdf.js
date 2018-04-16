@@ -57,7 +57,7 @@ function CreatePDF(IsInternetExplorer8OrLower) {
     pdf.textAdd(450, 55, 'INVOICE');
 
     pdf.fontSetSize(16);
-    pdf.textAdd(200, 20, '(keine Ruckerstattung)');
+    pdf.textAdd(200, 20, '(keine Rückerstattung)');
  
 
     pdf.fontSetSize(12);

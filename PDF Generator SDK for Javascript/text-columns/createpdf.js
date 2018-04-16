@@ -40,7 +40,7 @@ function CreatePDF(IsInternetExplorer8OrLower) {
     // draw a rectangle around it
     pdf.graphicsDrawRectangle(50, 50, 200, 200);
     // add text:
-    pdf.textAddToBox('cafe, communique, fete, fiancee, melee, emigre, pate, protege; First column', true);
+    pdf.textAddToBox('café, communiqué, fête, fiancée, mêlée, émigré, pâté, protégé; First column', true);
     pdf.textAddToBox('First column', true);
     pdf.textAddToBox('First column', true);
 
