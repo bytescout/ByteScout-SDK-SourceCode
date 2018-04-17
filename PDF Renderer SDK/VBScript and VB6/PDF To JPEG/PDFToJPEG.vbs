@@ -30,7 +30,7 @@ outputImageFormat = 1
 
 ' Iterate through pages
 For pageIndex = 0 To renderer.GetPageCount() - 1
-	' Render document page to PNG image file
+	' Render document page to JPEG image file
 	renderer.Save "page" & CStr(pageIndex) & ".jpg", outputImageFormat, pageIndex, renderingResolution
 Next
 
