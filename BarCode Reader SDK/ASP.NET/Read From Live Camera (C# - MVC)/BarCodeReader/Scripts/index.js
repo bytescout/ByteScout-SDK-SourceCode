@@ -123,7 +123,7 @@ function stopCall() {
 }
 
 // (flash based camera only) sets the handler for callback completition to output the result
-webcam.set_hook('onComplete', 'my_completion_handler');
+Webcam.on('onComplete', 'my_completion_handler');
 
 // (flash based camera only) this function will start flash to capture image and send the image to the server for further processing (for IE)
 function take_snapshot() {

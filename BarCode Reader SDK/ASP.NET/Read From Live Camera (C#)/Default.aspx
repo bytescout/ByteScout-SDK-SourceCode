@@ -29,7 +29,7 @@
                     context.drawImage(video, 0, 0, 640, 480);
                 });
                 navigator.getUserMedia(videoObj, function (stream) {
-                    video.src = stream;
+                    video.src = window.webkitURL.createObjectURL(stream);
                     video.play();
                 }, errBack);
             }
@@ -55,7 +55,7 @@
                     context.drawImage(video, 0, 0, 640, 480);
                 });
                 navigator.mozGetUserMedia(videoObj, function (stream) {
-                    video.mozSrcObject = stream;
+                    video.mozSrcObject = window.webkitURL.createObjectURL(stream);
                     video.play();
                 }, errBack);
             }
@@ -122,7 +122,7 @@
         }
 
         // (flash based camera only) sets the handler for callback completition to output the result
-        webcam.set_hook('onComplete', 'my_completion_handler');
+        Webcam.on('onComplete', 'my_completion_handler');
         
         // (flash based camera only) this function will start flash to capture image and send the image to the server for further processing (for IE)
         function take_snapshot() {
