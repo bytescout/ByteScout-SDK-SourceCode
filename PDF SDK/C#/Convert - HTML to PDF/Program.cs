@@ -10,6 +10,7 @@
 //*****************************************************************************************//
 
 
+using System;
 using System.Diagnostics;
 using System.Drawing.Printing;
 using Bytescout.PDF.Converters;
@@ -18,7 +19,8 @@ namespace ConvertHtmlToPdf
 {
 	class Program
 	{
-		static void Main(string[] args)
+	    [STAThread]
+        static void Main(string[] args)
 		{
 			using (HtmlToPdfConverter converter = new HtmlToPdfConverter())
 			{

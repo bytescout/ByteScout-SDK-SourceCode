@@ -10,6 +10,10 @@
 '*****************************************************************************************'
 
 
+' This example demonstrates the use of Optical Character Recognition (OCR) to extract text 
+' from scanned PDF documents and raster images.
+
+
 ' Create TextExtractor object
 Set extractor = CreateObject("Bytescout.PDFExtractor.TextExtractor")
 extractor.RegistrationName = "demo"

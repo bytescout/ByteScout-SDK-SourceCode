@@ -15,6 +15,7 @@ Imports Bytescout.PDF.Converters
 
 Module Module1
 
+    <STAThread>
     Sub Main()
 
 		Using converter As New HtmlToPdfConverter()

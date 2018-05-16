@@ -12,7 +12,11 @@
 
 Imports Bytescout.PDFExtractor
 
-' To make OCR work you should add to your project references to Bytescout.PDFExtractor.dll and Bytescout.PDFExtractor.OCRExtension.dll 
+' This example demonstrates the use of Optical Character Recognition (OCR) to extract text 
+' from scanned PDF documents and raster images.
+
+' To make OCR work you should add the following references to your project:
+' "Bytescout.PDFExtractor.dll", "Bytescout.PDFExtractor.OCRExtension.dll".
 
 Class Program
 
