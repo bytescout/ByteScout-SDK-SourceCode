@@ -4,7 +4,7 @@
 <ul>
 <li><strong>Website:</strong> <a href="https://bytescout.com/">Bytescout.com</a></li>
 <li><strong>Product Home:</strong> <a href="https://bytescout.com/products/developer/cloudapi/index.html">Cloud API</a></li>
-<li><strong>Download:</strong> <a href="https://bytescout.com/download/web-installer">Download Free Trial</a></li>
+<li><strong>Free Trial:</strong> <a href="https://secure.bytescout.com/users/sign_up">Sign Up Now</a></li>
 <li><strong>Documentation:</strong> <a href="https://secure.bytescout.com/cloudapi.html">Cloud API Documentation</a></li>
 <li><strong>Support</strong> <a href="https://bytescout.zendesk.com/hc/en-us/requests/new">ByteScout Support</a></li>
 <li><strong>Blog:</strong> <a href="https://bytescout.com/blog">ByteScout Blog</a></li>
