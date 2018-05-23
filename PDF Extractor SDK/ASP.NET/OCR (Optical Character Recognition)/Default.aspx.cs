@@ -13,7 +13,7 @@
 using System;
 using Bytescout.PDFExtractor;
 
-// Befor running the example copy missing .traineddata files from REDISTRIBUTABLE folder to "tessdata" project folder.
+// Before running the example copy missing .traineddata files from "Redistributable" folder to "tessdata" project folder.
 // or download from https://github.com/tesseract-ocr/tessdata/tree/3.04.00
 // Make sure "Copy to Output Directory" property of each added language file is set to "Copy always".
 // Note: Do not rename the "tessdata" folder - its name is hardcoded in OCR engine.
@@ -52,18 +52,26 @@ namespace OpticalCharacterRecognition
 		        // Automatically deskew skewed scans
 		        //extractor.OCRImagePreprocessingFilters.AddDeskew();
 
-		        // Repair broken letters
-		        //extractor.OCRImagePreprocessingFilters.AddDilate();
-
-		        // Remove vertical or horizontal lines (sometimes helps to avoid OCR engine's page segmentations errors)
+		        // Remove vertical or horizontal lines (sometimes helps to avoid OCR engine's page segmentation errors)
 		        //extractor.OCRImagePreprocessingFilters.AddVerticalLinesRemover();
 		        //extractor.OCRImagePreprocessingFilters.AddHorizontalLinesRemover();
+
+		        // Repair broken letters
+		        //extractor.OCRImagePreprocessingFilters.AddDilate();
 
 		        // Remove noise
 		        //extractor.OCRImagePreprocessingFilters.AddMedian();
 
 		        // Apply Gamma Correction
 		        //extractor.OCRImagePreprocessingFilters.AddGammaCorrection();
+
+				// Add Contrast
+				//extractor.OCRImagePreprocessingFilters.AddContrast(20);
+
+
+				// (!) You can use new OCRAnalyser class to find an optimal set of image preprocessing 
+				// filters for your specific document.
+				// See "OCR Analyser" example.
 
 
 		        // Load PDF document

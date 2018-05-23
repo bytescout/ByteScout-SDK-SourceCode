@@ -51,19 +51,27 @@ Class Program
         ' Automatically deskew skewed scans
         'extractor.OCRImagePreprocessingFilters.AddDeskew()
 
-        ' Repair broken letters
-        'extractor.OCRImagePreprocessingFilters.AddDilate()
-
-        ' Remove vertical or horizontal lines (sometimes helps to avoid OCR engine's page segmentations errors)
+        ' Remove vertical or horizontal lines (sometimes helps to avoid OCR engine's page segmentation errors)
         'extractor.OCRImagePreprocessingFilters.AddVerticalLinesRemover()
         'extractor.OCRImagePreprocessingFilters.AddHorizontalLinesRemover()
         
+        ' Repair broken letters
+        'extractor.OCRImagePreprocessingFilters.AddDilate()
+
         ' Remove noise
         'extractor.OCRImagePreprocessingFilters.AddMedian()
         
         ' Apply Gamma Correction
         'extractor.OCRImagePreprocessingFilters.AddGammaCorrection()
-            
+        
+        ' Add Contrast
+		' extractor.OCRImagePreprocessingFilters.AddContrast(20)
+
+
+        ' (!) You can use new OCRAnalyzer class to find an optimal set of image preprocessing 
+		' filters for your specific document.
+		' See "OCR Analyser" example.
+
 
         ' Save extracted text to file
         extractor.SaveTextToFile("output.txt")
