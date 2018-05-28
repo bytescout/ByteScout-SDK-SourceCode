@@ -36,6 +36,9 @@ namespace SearchAndHighlightExample
 				// Load document with PDF SDK
 				using (Document pdfDocument = new Document(inputFile))
 				{
+					pdfDocument.RegistrationName = "demo";
+                	pdfDocument.RegistrationKey = "demo";
+
 					Page pdfDocumentPage = pdfDocument.Pages[pageIndex];
 					Canvas canvas = pdfDocumentPage.Canvas;
 
@@ -60,6 +63,7 @@ namespace SearchAndHighlightExample
 					// Save as new PDF document
 					pdfDocument.Save("result.pdf");
 
+					// Open result document in default associated application (for demo purposes)
 					Process.Start("result.pdf");
 				}
 			}
