@@ -32,7 +32,8 @@ Namespace ConsoleApplication1
 
             extractor.SaveXFDFToFile("output.xml")
 
-            extractor.Dispose()
+            ' Cleanup
+		    extractor.Dispose()
 
             Console.WriteLine()
             Console.WriteLine("Extracted data saved to 'output.xml' file.")

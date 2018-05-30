@@ -50,6 +50,8 @@ namespace ExtractTextFromPageArea
                 Console.WriteLine();
             }
 
+            // Cleanup
+			extractor.Dispose();
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();

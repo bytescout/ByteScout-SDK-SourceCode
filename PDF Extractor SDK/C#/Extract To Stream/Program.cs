@@ -43,7 +43,8 @@ namespace ExtractToStream
                 stream.Dispose();
             }
 
-            extractor.Dispose();
+            // Cleanup
+			extractor.Dispose();
 
             // Open first output file in default associated application
             System.Diagnostics.Process.Start(@".\page1.txt");

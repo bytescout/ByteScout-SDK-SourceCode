@@ -52,6 +52,10 @@ Class Program
             End If
         Next
 
+        ' Cleanup
+		xmlExtractor.Dispose()
+		tableDetector.Dispose()
+
         ' Open first output file in default associated application (for demo purposes)
         System.Diagnostics.Process.Start("page-0-table-1.xml")
 

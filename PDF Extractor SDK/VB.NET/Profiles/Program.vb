@@ -48,7 +48,8 @@ Class Program
         extractor.SaveTextToFile("result2.txt")
 
 
-        extractor.Dispose()
+        ' Cleanup
+		extractor.Dispose()
 
 
     End Sub

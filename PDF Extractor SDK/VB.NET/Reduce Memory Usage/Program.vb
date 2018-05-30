@@ -39,7 +39,7 @@ Class Program
 
         End Using
 
-        ' Open the output file in default associated application
+        ' Open result file in default associated application (for demo purposes)
         System.Diagnostics.Process.Start("output.txt")
 
     End Sub

@@ -38,6 +38,9 @@ namespace BatchProcessing
                 // Reset the extractor before load another file
                 extractor.Reset();
             }
+
+            // Cleanup
+			extractor.Dispose();
         }
     }
 }

@@ -38,7 +38,8 @@ namespace ExtractZUGFeRD
                 Console.WriteLine("Done.");
             }
 
-            extractor.Dispose();
+            // Cleanup
+			extractor.Dispose();
             
             Console.WriteLine();
             Console.WriteLine("Press any key...");

@@ -48,6 +48,9 @@ namespace TableStructure
                 }
             }
 
+            // Cleanup
+			extractor.Dispose();
+
             Console.WriteLine();
             Console.WriteLine("Press any key..");
             Console.ReadKey();

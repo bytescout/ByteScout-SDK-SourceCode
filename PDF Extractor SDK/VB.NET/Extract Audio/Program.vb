@@ -38,5 +38,8 @@ Class Program
             Loop While extractor.GetNextAudio() ' Advance sounds enumeration
         End If
 
+        ' Cleanup
+		extractor.Dispose()
+
     End Sub
 End Class

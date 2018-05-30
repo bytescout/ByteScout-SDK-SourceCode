@@ -33,6 +33,9 @@ Class Program
         Console.WriteLine("Bookmarks:    " + extractor.Bookmarks)
         Console.WriteLine("Encrypted:    " + extractor.Encrypted.ToString)
 
+        ' Cleanup
+		extractor.Dispose()
+
         Console.WriteLine()
         Console.WriteLine("Press any key to continue...")
         Console.ReadLine()

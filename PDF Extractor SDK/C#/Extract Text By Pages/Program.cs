@@ -38,6 +38,9 @@ namespace ExtractTextByPages
 				extractor.SavePageTextToFile(i, fileName);
 			}
 
+			// Cleanup
+			extractor.Dispose();
+
 			// Open first output file in default associated application
 			System.Diagnostics.Process.Start(@".\page1.txt");
 		}

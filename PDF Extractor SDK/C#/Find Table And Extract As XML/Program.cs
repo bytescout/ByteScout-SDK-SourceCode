@@ -59,6 +59,7 @@ namespace FindTableAndExtractAsXml
                 }
             }
 
+            // Cleanup
             xmlExtractor.Dispose();
             tableDetector.Dispose();
 

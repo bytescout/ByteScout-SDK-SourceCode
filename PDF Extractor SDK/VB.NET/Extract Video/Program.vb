@@ -38,5 +38,8 @@ Class Program
             Loop While extractor.GetNextVideo() ' Advance movies enumeration
         End If
 
+        ' Cleanup
+		extractor.Dispose()
+
     End Sub
 End Class

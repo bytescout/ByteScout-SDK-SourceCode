@@ -45,6 +45,9 @@ Class Program
             Next
         Next
 
+        ' Cleanup
+		extractor.Dispose()
+
         Console.WriteLine()
         Console.WriteLine("Press any key to continue...")
         Console.ReadLine()

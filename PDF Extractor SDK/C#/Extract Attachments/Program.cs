@@ -35,7 +35,8 @@ namespace ExtractAttachments
                 Console.WriteLine("File size: " + extractor.GetSize(i));
             }
 
-            extractor.Dispose();
+            // Cleanup
+			extractor.Dispose();
         }
     }
 }

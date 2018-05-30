@@ -41,6 +41,9 @@ namespace ConsoleApplication1
             // Embed images into JSON as Base64 encoded string
             extractor.SaveImages = ImageHandling.Embed;
             extractor.SaveJSONToFile("result_with_embedded_images.json");
+
+            // Cleanup
+			extractor.Dispose();
         }
     }
 }

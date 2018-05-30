@@ -51,6 +51,9 @@ namespace SplittingExample
                     }
 				}
 			}
+
+			// Cleanup
+			extractor.Dispose();
 			
 			Console.WriteLine();
 			Console.WriteLine("Press any key...");

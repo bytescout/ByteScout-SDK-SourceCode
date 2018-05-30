@@ -43,7 +43,8 @@ namespace ConsoleApplication1
                 extractor.SavePageCSVToFile(i, fileName);
             }
 
-            extractor.Dispose();
+            // Cleanup
+			extractor.Dispose();
 
             Console.WriteLine();
             Console.WriteLine("Data has been extracted to separate files for pages.");

@@ -32,7 +32,8 @@ Namespace ConsoleApplication1
 
             extractor.SaveJSONToFile("output.json")
 
-            extractor.Dispose()
+            ' Cleanup
+		    extractor.Dispose()
 
             Console.WriteLine()
             Console.WriteLine("Data has been extracted to 'output.json' file.")
@@ -40,6 +41,7 @@ Namespace ConsoleApplication1
             Console.WriteLine("Press any key to continue and open JSON file in default viewer...")
             Console.ReadKey()
 
+            ' Open result file in default associated application (for demo purposes)
             Process.Start("output.json")
 
         End Sub

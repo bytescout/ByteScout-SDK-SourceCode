@@ -95,6 +95,7 @@ Module Module1
         Console.WriteLine("Table Data: ")
         Console.WriteLine(tableData)
 
+        ' Cleanup
         textExtractor.Dispose()
         xmlExtractor.Dispose()
 

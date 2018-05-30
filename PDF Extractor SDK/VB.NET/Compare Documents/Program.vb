@@ -13,7 +13,7 @@
 Imports Bytescout.PDFExtractor
 
 Class Program
-	Friend Shared Sub Main(args As String())
+        Friend Shared Sub Main(args As String())
 
         ' Load first document
         Dim document1 As TextExtractor = New TextExtractor()
@@ -36,11 +36,12 @@ Class Program
         ' Generate report
         comparer.GenerateHtmlReport(".\report.html")
 
+        ' Cleanup
         document1.Dispose()
         document2.Dispose()
 
         ' Open the report in default browser
         System.Diagnostics.Process.Start(".\report.html")
 
-	End Sub
+        End Sub
 End Class

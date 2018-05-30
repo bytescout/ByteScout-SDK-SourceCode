@@ -47,6 +47,7 @@ Class Program
             Console.WriteLine()
         Next
 
+        ' Cleanup
         infoExtractor.Dispose()
         textExtractor.Dispose()
 

@@ -42,6 +42,9 @@ namespace ExtractAudio
 				}
 				while (extractor.GetNextAudio()); // Advance sounds enumeration
 			}
+
+			// Cleanup
+			extractor.Dispose();
 		}
 	}
 }

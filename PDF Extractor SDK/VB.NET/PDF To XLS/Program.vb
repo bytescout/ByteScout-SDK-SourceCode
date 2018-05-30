@@ -32,9 +32,10 @@ Class Program
         ' Save the spreadsheet to file
         extractor.SaveToXLSFile("output.xls")
 
-        extractor.Dispose()
+        ' Cleanup
+		extractor.Dispose()
 
-        ' Open the spreadsheet in default associated application
+        ' Open result file in default associated application (for demo purposes)
         Process.Start("output.xls")
 
     End Sub

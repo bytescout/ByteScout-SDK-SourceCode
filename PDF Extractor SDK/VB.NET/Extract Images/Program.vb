@@ -39,7 +39,10 @@ Class Program
             Loop While extractor.GetNextImage() ' Advance image enumeration
         End If
 
-        ' Open first output file in default associated application
+        ' Cleanup
+		extractor.Dispose()
+
+        ' Open result file in default associated application (for demo purposes)
         System.Diagnostics.Process.Start("image0.png")
 
     End Sub

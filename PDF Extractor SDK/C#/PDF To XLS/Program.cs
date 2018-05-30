@@ -34,7 +34,8 @@ namespace PDF2XLS
             // Save the spreadsheet to file
             extractor.SaveToXLSFile("output.xls");
 
-            extractor.Dispose();
+            // Cleanup
+			extractor.Dispose();
 
             // Open the spreadsheet in default associated application
             Process.Start("output.xls");

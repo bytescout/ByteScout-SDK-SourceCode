@@ -33,6 +33,9 @@ namespace ExtractTextByColumns
 			// Save extracted text to file
 			extractor.SaveTextToFile(@".\result.txt");
 
+			// Cleanup
+			extractor.Dispose();
+
 			// Open result file in default associated application
 			System.Diagnostics.Process.Start(@".\result.txt");
 		}

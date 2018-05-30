@@ -41,9 +41,10 @@ Class Program
 
         Next
 
-        extractor.Dispose()
+        ' Cleanup
+		extractor.Dispose()
 
-        ' Open first output file in default associated application
+        ' Open result file in default associated application (for demo purposes)
         System.Diagnostics.Process.Start(".\page1.txt")
 
     End Sub

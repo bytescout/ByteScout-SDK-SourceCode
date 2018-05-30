@@ -105,6 +105,7 @@ namespace InvoiceParsing
 			Console.WriteLine("Table Data: ");
 			Console.WriteLine(tableData);
 
+			// Cleanup
 		    textExtractor.Dispose();
             xmlExtractor.Dispose();            
             

@@ -29,7 +29,8 @@ Namespace PDF2XML
 
             extractor.SaveXMLToFile("output.XML")
 
-            extractor.Dispose()
+            ' Cleanup
+		    extractor.Dispose()
 
             Console.WriteLine()
             Console.WriteLine("Data has been extracted to 'output.XML' file.")

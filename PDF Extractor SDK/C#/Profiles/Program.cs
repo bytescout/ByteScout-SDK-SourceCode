@@ -52,7 +52,8 @@ namespace Profiles
             extractor.SaveTextToFile("result2.txt");
 
 
-            extractor.Dispose();
+            // Cleanup
+			extractor.Dispose();
 		}
 	}
 }

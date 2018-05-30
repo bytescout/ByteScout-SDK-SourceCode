@@ -43,6 +43,9 @@ namespace ExtractVideo
                 } 
                 while (extractor.GetNextVideo()); // Advance movies enumeration
             }
+
+            // Cleanup
+			extractor.Dispose();
         }
     }
 }

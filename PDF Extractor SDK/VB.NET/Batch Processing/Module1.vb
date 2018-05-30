@@ -38,6 +38,9 @@ Module Module1
 
         Next
 
+        ' Cleanup
+		extractor.Dispose()
+
     End Sub
 
 End Module

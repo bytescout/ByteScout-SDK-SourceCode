@@ -36,7 +36,11 @@ namespace ExtractInfo
 			Console.WriteLine("Keywords:     " + extractor.Keywords);
 			Console.WriteLine("Bookmarks:    " + extractor.Bookmarks);
 			Console.WriteLine("Encrypted:    " + extractor.Encrypted);
-			
+
+
+			// Cleanup
+			extractor.Dispose();
+
 			Console.WriteLine();
 			Console.WriteLine("Press any key to continue...");
 			Console.ReadLine();

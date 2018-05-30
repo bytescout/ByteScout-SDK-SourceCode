@@ -43,6 +43,7 @@ namespace IndexPDFFiles
 				Console.WriteLine("CreationDate:   " + infoExtractor.CreationDate);
 				Console.WriteLine("Text (first 2 lines): ");
 
+				// Load a couple of lines from each document
 				textExtractor.LoadDocumentFromFile(file);
 				using (StringReader stringReader = new StringReader(textExtractor.GetTextFromPage(0)))
 				{
@@ -50,10 +51,11 @@ namespace IndexPDFFiles
 				    Console.WriteLine(stringReader.ReadLine());
 				}
 				Console.WriteLine();
-			    
-                infoExtractor.Dispose();
-                textExtractor.Dispose();
 			}
+
+			// Cleanup
+			infoExtractor.Dispose();
+        	textExtractor.Dispose();
 			
 			Console.WriteLine();
 			Console.WriteLine("Press any key to continue...");

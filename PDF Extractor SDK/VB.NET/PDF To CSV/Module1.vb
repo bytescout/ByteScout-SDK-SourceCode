@@ -30,11 +30,14 @@ Namespace ConsoleApplication1
             ' Load sample PDF document
             extractor.LoadDocumentFromFile("sample3.pdf")
 
-            'extractor.CSVSeparatorSymbol = "," // you can change CSV separator symbol (if needed) from "," symbol to another if needed for non-US locales
+            ' You can change CSV separator symbol (if needed) from "," symbol to another if needed for non-US locales
+            'extractor.CSVSeparatorSymbol = "," 
 
+            ' Save extracted CSV data to file
             extractor.SaveCSVToFile("output.csv")
 
-            extractor.Dispose()
+            ' Cleanup
+		    extractor.Dispose()
 
             Console.WriteLine()
             Console.WriteLine("Data has been extracted to 'output.csv' file.")
@@ -42,6 +45,7 @@ Namespace ConsoleApplication1
             Console.WriteLine("Press any key to continue and open CSV in default CSV viewer (or Excel)...")
             Console.ReadKey()
 
+            ' Open result file in default associated application (for demo purposes)
             Process.Start("output.csv")
 
         End Sub

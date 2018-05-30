@@ -33,7 +33,11 @@ Class Program
 			extractor.SavePageTextToFile(i, fileName)
 		Next
 
-		' Open first output file in default associated application
+		' Cleanup
+		extractor.Dispose()
+
+		' Open result file in default associated application (for demo purposes)
 		System.Diagnostics.Process.Start(".\page1.txt")
+		
 	End Sub
 End Class

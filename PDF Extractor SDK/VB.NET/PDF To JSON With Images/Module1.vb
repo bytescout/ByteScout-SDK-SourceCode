@@ -41,6 +41,9 @@ Namespace ConsoleApplication1
             extractor.SaveImages = ImageHandling.Embed
             extractor.SaveJSONToFile("result_with_embedded_images.json")
 
+            ' Cleanup
+		    extractor.Dispose()
+
         End Sub
 
     End Class

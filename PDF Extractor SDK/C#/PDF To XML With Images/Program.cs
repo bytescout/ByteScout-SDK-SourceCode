@@ -42,7 +42,8 @@ namespace PDF2XML
             extractor.SaveImages = ImageHandling.Embed;
             extractor.SaveXMLToFile("result_with_embedded_images.xml");
 
-            extractor.Dispose();
+            // Cleanup
+			extractor.Dispose();
         }
     }
 }

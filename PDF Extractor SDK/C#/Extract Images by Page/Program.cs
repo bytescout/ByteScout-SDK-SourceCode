@@ -51,6 +51,9 @@ namespace ExtractImagesByPages
 					} while (extractor.GetNextImage()); // Advance image enumeration
 				}
 			}
+
+			// Cleanup
+			extractor.Dispose();
 			
 			// Open first output file in default associated application
 			System.Diagnostics.Process.Start("page0image0.png");

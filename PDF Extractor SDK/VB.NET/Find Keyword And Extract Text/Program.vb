@@ -14,7 +14,9 @@ Imports System.Drawing
 Imports Bytescout.PDFExtractor
 
 Namespace FindText
+
 	Class Program
+
 		Friend Shared Sub Main(args As String())
 
             ' Create Bytescout.PDFExtractor.TextExtractor instance
@@ -38,9 +40,15 @@ Namespace FindText
 				End If
 			Next
 
+			' Cleanup
+			extractor.Dispose()
+
 			Console.WriteLine()
 			Console.WriteLine("Press any key to continue...")
 			Console.ReadLine()
+
 		End Sub
+		
 	End Class
+
 End Namespace

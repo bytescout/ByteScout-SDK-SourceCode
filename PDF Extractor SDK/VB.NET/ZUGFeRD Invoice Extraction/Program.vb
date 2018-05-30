@@ -37,7 +37,8 @@ Class Program
             Console.WriteLine("Done.")
         Next
 
-        extractor.Dispose()
+        ' Cleanup
+		extractor.Dispose()
 
         Console.WriteLine()
         Console.WriteLine("Press any key...")

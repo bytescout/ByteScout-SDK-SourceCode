@@ -42,12 +42,14 @@ Namespace ConsoleApplication1
                 extractor.SavePageCSVToFile(i, fileName)
             Next
 
-            extractor.Dispose()
+            ' Cleanup
+		    extractor.Dispose()
 
             Console.WriteLine()
             Console.WriteLine("Press any key to continue and open CSV in default CSV viewer (or Excel)...")
             Console.ReadKey()
 
+            ' Open result file in default associated application (for demo purposes)
             Process.Start("page0.csv")
 
         End Sub

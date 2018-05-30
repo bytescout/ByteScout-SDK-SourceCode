@@ -31,7 +31,8 @@ Module Module1
             Console.WriteLine("File size: " + extractor.GetSize(i).ToString())
         Next
 
-        extractor.Dispose()
+        ' Cleanup
+		extractor.Dispose()
 
     End Sub
 

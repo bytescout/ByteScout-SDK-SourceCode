@@ -78,6 +78,7 @@ namespace OCRExample
 			// Save extracted text to file
 			extractor.SaveTextToFile("output.txt");
 
+			// Cleanup
 			extractor.Dispose();
 
 			// Open output file in default associated application

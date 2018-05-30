@@ -36,6 +36,7 @@ Module Module1
         ' Save extracted text to file
         searchablePdfMaker.MakePDFSearchable("output.pdf")
 
+        ' Cleanup
         searchablePDFMaker.Dispose()
 
         ' Open output file in default associated application

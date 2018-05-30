@@ -62,6 +62,8 @@ namespace FindText
                 }
             }
 
+            // Cleanup
+			extractor.Dispose();
 
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");

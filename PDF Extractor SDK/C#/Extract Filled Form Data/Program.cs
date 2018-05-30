@@ -59,6 +59,9 @@ namespace ExtractFilledFormData
 					}
 				}
 			}
+
+			// Cleanup
+			extractor.Dispose();
 		}
 	}
 }

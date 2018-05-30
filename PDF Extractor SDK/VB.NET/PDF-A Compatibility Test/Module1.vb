@@ -37,7 +37,8 @@ Namespace PDFATest
                     Console.WriteLine(validationError)
                 Next
             End If
-            
+
+            ' Cleanup
             validator.Dispose()
 
             Console.WriteLine()

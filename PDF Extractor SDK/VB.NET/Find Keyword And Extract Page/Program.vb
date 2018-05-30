@@ -51,8 +51,12 @@ Class Program
             End If
         Next
 
+        ' Cleanup
+		extractor.Dispose()
+
         Console.WriteLine()
         Console.WriteLine("Press any key...")
         Console.ReadKey()
+        
     End Sub
 End Class

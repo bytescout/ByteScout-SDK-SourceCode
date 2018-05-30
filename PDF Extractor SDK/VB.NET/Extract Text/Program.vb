@@ -26,7 +26,10 @@ Class Program
 		' Save extracted text to file
 		extractor.SaveTextToFile(".\result.txt")
 
-		' Open result file in default associated application
+		' Cleanup
+		extractor.Dispose()
+
+		' Open result file in default associated application (for demo purposes)
 		System.Diagnostics.Process.Start(".\result.txt")
 	End Sub
 End Class

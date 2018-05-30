@@ -38,7 +38,8 @@ namespace PDFATest
 		            Console.WriteLine(validationError);
 		    }
 
-		    validator.Dispose();
+			// Cleanup
+			validator.Dispose();
 
 			Console.WriteLine();
 			Console.WriteLine("Press any key to continue...");

@@ -56,6 +56,9 @@ Module Module1
 
         End If
 
+        ' Cleanup
+		extractor.Dispose()
+
     End Sub
 
 End Module

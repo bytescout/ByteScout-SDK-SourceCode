@@ -59,7 +59,8 @@ namespace FindTableAndExtractAsCsv
                 }
             }
 
-            csvExtractor.Dispose();
+            // Cleanup
+			csvExtractor.Dispose();
             tableDetector.Dispose();
 
             // Open first output file in default associated application (for demo purposes)

@@ -34,6 +34,7 @@ namespace MakeUnsearchablePDF
             // Process the document 
             unsearchablePDFMaker.MakePDFUnsearchable("result.pdf");
 
+            // Cleanup
             unsearchablePDFMaker.Dispose();
 
             // Open the result PDF file in default associated application
