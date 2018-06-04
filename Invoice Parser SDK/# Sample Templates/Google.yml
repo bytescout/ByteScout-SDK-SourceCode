@@ -1,0 +1,53 @@
+---
+templateVersion: 1
+templatePriority: 1
+sourceId: Google
+detectionRules:
+  keywords:
+  - Google
+  - 77-0493581
+  - Invoice
+fields:
+  invoiceId:
+    regex: Invoice Number:\s+(\w+)
+  dateIssued:
+    regex: Issue date:\s+([a-zA-Z]{3} \d+, \d{4})
+    type: dateTime
+    dateFormat: MMM d, yyyy
+  total:
+    regex: Amount due in USD:\s+(\d+\.\d\d)
+    type: decimal
+  subTotal:
+    regex: Subtotal in USD:\s+(\d+\.\d\d)
+    type: decimal
+  taxRate:
+    regex: '[Tt]ax.+\((\d+)%\):'
+    type: integer
+  tax:
+    regex: '[Tt]ax.+\(\d+%\):\s+(\d+.\d\d)'
+    type: decimal
+  sourceName:
+    regex: (Google Inc\.|Google LLC)
+  billTo:
+    rect:
+    - 0
+    - 152
+    - 280
+    - 72
+  billingId:
+    regex: 'Billing ID:\s+(\S+)'
+  currency:
+    static: USD
+lines:
+  start:
+    regex: Description\s+Interval\s+Quantity\s+Amount \(\$\)
+  end:
+    regex: Subtotal in USD
+  line:
+    regex: ^\s+(?<description>\w+.*)(?<interval>[a-zA-Z]{3} \d+ - [a-zA-Z]{3} \d+)\s+(?<quantity>\d+)\s+(?<amount>\d+\.\d\d)
+  types:
+      quantity: integer
+      amount: decimal
+options:
+  removeWhitespaces: false
+  decimalSeparator: .

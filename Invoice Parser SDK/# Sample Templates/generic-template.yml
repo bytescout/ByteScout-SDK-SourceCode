@@ -1,0 +1,23 @@
+---
+templateVersion: 1
+# set lowest priority (highest priority is 0)
+templatePriority: 999
+sourceId: Generic
+detectionRules:
+  keywords:
+  # match any document
+  - .+
+fields:
+  invoiceId:
+    regex: '(?i)(?:Invoice Number|Invoice #|Number):?\s+(\S+)'
+  dateIssued:
+    regex: '(?i)(?:Invoice Date|Issue Date):?\s+(.+)'
+  total:
+    regex: '(?i)(?:Total|Amount):?.+(?:USD|\$)?\s?(\d+\.\d\d)'
+    type: decimal
+  subTotal:
+    regex: (?i)(?:Subtotal):?.+(\d+\.\d\d)
+    type: decimal
+options:
+  removeWhitespaces: false
+  decimalSeparator: .

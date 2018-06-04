@@ -1,0 +1,35 @@
+---
+templateVersion: 1
+templatePriority: 1
+sourceId: JetBrains
+detectionRules:
+  keywords:
+  - JetBrains
+  - www.jetbrains.com
+  - Invoice
+fields:
+  invoiceId:
+    regex: Invoice (INV\S+)\s*$
+  dateIssued:
+    regex: 'Issue date: (\d{4}-\d\d-\d\d)'
+    type: dateTime
+    dateFormat: yyyy-MM-dd
+  total:
+    regex: Total:\s+(\d+\.\d\d) USD
+    type: decimal
+  subTotal:
+    regex: Subtotal:\s+(\d+\.\d\d) USD
+    type: decimal
+  taxRate:
+    regex: 'Tax Rate:\s+(\d+)%'
+    type: integer
+  tax:
+    regex: 'Tax amount:\s+(\d+.\d\d) USD'
+    type: decimal
+  sourceName:
+    regex: JetBrains.+$
+  currency:
+    static: USD
+options:
+  removeWhitespaces: false
+  decimalSeparator: .
