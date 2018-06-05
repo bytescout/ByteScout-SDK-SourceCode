@@ -29,6 +29,3 @@ lines:
   types:
     hours: integer
     unitPrice: decimal
-options:
-  removeWhitespaces: false
-  decimalSeparator: .

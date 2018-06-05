@@ -28,6 +28,3 @@ fields:
     static: support@github.com
   currency:
     static: USD
-options:
-  removeWhitespaces: false
-  decimalSeparator: .

@@ -33,6 +33,3 @@ lines:
     quantity: decimal
     unitPrice: decimal
     extendedPrice: decimal
-options:
-  removeWhitespaces: false
-  decimalSeparator: .

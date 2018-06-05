@@ -45,6 +45,3 @@ lines:
     regex: (VAT \*\*)|(Estimated US sales tax to be collected)
   types:
       unitPrice: decimal
-options:
-  removeWhitespaces: false
-  decimalSeparator: .

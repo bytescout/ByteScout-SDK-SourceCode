@@ -30,6 +30,3 @@ fields:
     regex: JetBrains.+$
   currency:
     static: USD
-options:
-  removeWhitespaces: false
-  decimalSeparator: .

@@ -9,15 +9,14 @@ detectionRules:
   - .+
 fields:
   invoiceId:
-    regex: '(?i)(?:Invoice Number|Invoice #|Number):?\s+(\S+)'
+    regex: '(?i)(?:Invoice Number|Invoice #|Invoice No|Number):?\s+(\S+)'
   dateIssued:
-    regex: '(?i)(?:Invoice Date|Issue Date):?\s+(.+)'
+    regex: '(?i)(?:Invoice Date|Issue Date|Billed On):?\s+(.+)'
+  dateDue:
+    regex: '(?i)(?:Due Date|Due On):?\s+(.+)'
   total:
     regex: '(?i)(?:Total|Amount):?.+(?:USD|\$)?\s?(\d+\.\d\d)'
     type: decimal
   subTotal:
     regex: (?i)(?:Subtotal):?.+(\d+\.\d\d)
     type: decimal
-options:
-  removeWhitespaces: false
-  decimalSeparator: .

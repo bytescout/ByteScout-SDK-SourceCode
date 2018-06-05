@@ -1,0 +1,40 @@
+---
+templateVersion: 1
+templatePriority: 1
+sourceId: ExpressVPN
+detectionRules:
+  keywords:
+  - ExpressVPN
+  - Invoice
+  - Grand Total
+fields:
+  invoiceId:
+    regex: 'Invoice No. #(\d+)'
+  dateIssued:
+    regex: (?s)Date.*\s+([a-zA-Z]{3} \d+, \d{4})
+    type: dateTime
+    dateFormat: MMM d, yyyy
+  total:
+    regex: Grand Total:\s+\$ (\d+\.\d\d)
+    type: decimal
+  subTotal:
+    regex: Subtotal:\s+\$ (\d+\.\d\d)
+    type: decimal
+  tax:
+    regex: Sales Tax:\s+\$ (\d+.\d\d)
+    type: decimal
+  sourceName:
+    static: ExpressVPN
+  currency:
+    static: USD
+lines:
+  start:
+    regex: Qty\s+Item\s+Cost\s+Total
+  end:
+    regex: Subtotal
+  line:
+    regex: ^\s+(?<quantity>\d+)\s+(?<description>\w+.*)\s+\$ (?<unitPrice>\d+\.\d\d)\s+\$ (?<amount>\d+\.\d\d)
+  types:
+    quantity: integer
+    unitPrice: decimal
+    amount: decimal
