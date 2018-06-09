@@ -31,6 +31,9 @@ Class Program
         ' ... and we set min required number of rows to 3
         tableDetector.DetectionMinNumberOfRows = 3
 
+        ' Set table detection mode to "bordered tables" - best for tables with closed solid borders.
+        tableDetector.ColumnDetectionMode = ColumnDetectionMode.BorderedTables
+
 		' Load sample PDF document
         csvExtractor.LoadDocumentFromFile(".\sample3.pdf")
         tableDetector.LoadDocumentFromFile(".\sample3.pdf")

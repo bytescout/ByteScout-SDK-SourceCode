@@ -28,6 +28,9 @@ namespace FindTableAndExtractAsCsv
             tableDetector.RegistrationKey = "demo";
             tableDetector.RegistrationName = "demo";
 
+            // Set table detection mode to "bordered tables" - best for tables with closed solid borders.
+            tableDetector.ColumnDetectionMode = ColumnDetectionMode.BorderedTables;
+
             // We should define what kind of tables we should detect.
             // So we set min required number of columns to 3 ...
             tableDetector.DetectionMinNumberOfColumns = 3;
