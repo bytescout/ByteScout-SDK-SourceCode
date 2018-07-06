@@ -11,42 +11,44 @@
 
 
 using System;
-using ByteScout.InvoiceParser;
+using ByteScout.DocumentParser;
 
-// This example demonstrates invoice data parsing to JSON and YAML formats.
+// This example demonstrates the use of Optical Character Recognition (OCR) to parse document 
+// from scanned PDF documents and raster images.
 
-namespace GeneralExample
+namespace ParseWithOCR
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string inputDocument1 = @".\DigitalOcean.pdf";
-            string inputDocument2 = @".\AmazonAWS.pdf";
+            string inputDocument1 = @".\DigitalOcean-scanned.jpg";
 
-            // Create InvoiceParser instance
-            using (InvoiceParser invoiceParser = new InvoiceParser("demo", "demo"))
+            // Create DocumentParser instance
+            using (DocumentParser documentParser = new DocumentParser("demo", "demo"))
             {
+                // Enable Optical Character Recognition (OCR)
+                // in .Auto mode (SDK automatically checks if needs to use OCR or not)
+                documentParser.OCRMode = OCRMode.Auto;
+
+                // Set the location of "tessdata" folder containing language data files
+                documentParser.OCRLanguageDataFolder = @".\tessdata\";
+
+                // Set OCR language
+                documentParser.OCRLanguage = "eng";
+                // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
+                // Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
+
+
                 Console.WriteLine($"Parsing \"{inputDocument1}\"...");
                 Console.WriteLine();
 
-                // Parse invoice data in JSON format
-                string jsonString = invoiceParser.ParseDocument(inputDocument1, OutputFormat.JSON);
+                // Parse document data in JSON format
+                string jsonString = documentParser.ParseDocument(inputDocument1, OutputFormat.JSON);
                 // Display parsed data in console
                 Console.WriteLine("Parsing results in JSON format:");
                 Console.WriteLine();
                 Console.WriteLine(jsonString);
-
-                Console.WriteLine();
-                Console.WriteLine($"Parsing \"{inputDocument2}\"...");
-                Console.WriteLine();
-
-                // Parse invoice data in YAML format
-                string yamlString = invoiceParser.ParseDocument(inputDocument2, OutputFormat.YAML);
-                // Display parsed data in console
-                Console.WriteLine("Parsing results in YAML format:");
-                Console.WriteLine();
-                Console.WriteLine(yamlString);
             }
 
             Console.WriteLine();
