@@ -25,7 +25,7 @@ documentParser.RegistrationKey = "demo"
 documentParser.OCRMode = 1 ' OCRMode.Auto = 1
 
 ' Set the location of "tessdata" folder containing language data files
-documentParser.OCRLanguageDataFolder = "C:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata"
+documentParser.OCRLanguageDataFolder = "c:\Program Files\ByteScout Document Parser SDK\net40\tessdata"
 			
 ' Set OCR language
 documentParser.OCRLanguage = "eng"

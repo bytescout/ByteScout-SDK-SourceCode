@@ -48,7 +48,7 @@
   <ItemGroup>
     <Reference Include="ByteScout.DocumentParser, Version=1.0.0.100, Culture=neutral, PublicKeyToken=f7dd1bd9d40a50eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\net40\ByteScout.DocumentParser.dll</HintPath>
+      <HintPath>c:\Program Files\ByteScout Document Parser SDK\net40\ByteScout.DocumentParser.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -93,19 +93,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\tessdata\deu.traineddata">
+    <Content Include="c:\Program Files\ByteScout Document Parser SDK\tessdata\deu.traineddata">
       <Link>tessdata\deu.traineddata</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\..\tessdata\eng.traineddata">
+    <Content Include="c:\Program Files\ByteScout Document Parser SDK\tessdata\eng.traineddata">
       <Link>tessdata\eng.traineddata</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\..\tessdata\fra.traineddata">
+    <Content Include="c:\Program Files\ByteScout Document Parser SDK\tessdata\fra.traineddata">
       <Link>tessdata\fra.traineddata</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\..\tessdata\spa.traineddata">
+    <Content Include="c:\Program Files\ByteScout Document Parser SDK\tessdata\spa.traineddata">
       <Link>tessdata\spa.traineddata</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
