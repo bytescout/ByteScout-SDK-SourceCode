@@ -1,0 +1,24 @@
+--- 
+# Generic template that parses common fields like Invoice Number, Invoice Date, Total from any document.
+# It is embedded into DocumentParser and used by default, but can be disabled.
+templateVersion: 1
+# set lowest priority (highest priority is 0)
+templatePriority: 999999
+sourceId: Generic Invoice
+detectionRules:
+  keywords:
+  # match any document
+  - .+
+fields:
+  invoiceId:
+    expression: '(?i)(?:Invoice Number|Invoice #|Invoice No|Number):?\s+(\S+)'
+  dateIssued:
+    expression: '(?i)(?:Invoice Date|Issue Date|Billed On|Date):?\s+(.*?)(?=  |$)'
+  dateDue:
+    expression: '(?i)(?:Due Date|Due On):?\s+(.*?)(?=  |$)'
+  total:
+    expression: '(?i)(?:Total Due|\bTotal|Amount):?\s+(?:USD|\$)?\s?(?<value>(\d+,?)+\.\d\d)'
+    type: decimal
+  subTotal:
+    expression: '(?i)(?:Subtotal):?\s+(?:USD|\$)?\s?(?<value>(\d+,?)+\.\d\d)'
+    type: decimal

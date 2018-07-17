@@ -1,0 +1,48 @@
+---
+templateVersion: 1
+templatePriority: 1
+sourceId: MyCommerce Invoice
+detectionRules:
+  keywords:
+  - MyCommerce
+  - Invoice
+  - 21-1234123
+fields:
+  invoiceId:
+    expression: Invoice Number\s+(\d+)
+  dateIssued:
+    expression: Invoice Date\s+(\d\d\/\d\d\/\d{4})
+    type: dateTime
+    dateFormat: MM/dd/yyyy
+  dateDue:
+    expression: Due Date\s+(\d\d\/\d\d\/\d{4})
+    type: dateTime
+    dateFormat: MM/dd/yyyy
+  orderNumber:
+    expression: Order Number\s+(\S+)
+  total:
+    expression: Total \(USD\)\s+(\d+\.\d\d)
+    type: decimal
+  subTotal:
+    expression: Product Total\s+(\d+\.\d\d)
+    type: decimal
+  tax:
+    expression: Tax Total\s+(\d+\.\d\d)
+    type: decimal
+  sourceName:
+    expression: DR MyCommerce, Inc.
+    static: true
+  currency:
+    expression: USD
+    static: true
+lines:
+  start:
+    expression: Product Description\s+Quantity\s+Unit Price\s+Product Amount
+  end:
+    expression: Product Total
+  line:
+    expression: ^\s+(?<description>\w+.*)(?<quantity>\d+)\s+(?<unitPrice>\d+\.\d\d)\s+(?<amount>\d+\.\d\d)
+  types:
+      quantity: integer
+      unitPrice: decimal
+      amount: decimal

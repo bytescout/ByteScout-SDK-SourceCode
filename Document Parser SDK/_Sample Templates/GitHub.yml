@@ -1,0 +1,34 @@
+---
+templateVersion: 1
+templatePriority: 1
+sourceId: GitHub Invoice
+detectionRules:
+  keywords:
+  - GitHub, Inc.
+  - support@github.com
+fields:
+  dateIssued:
+    expression: 'Date\s+(\d{4}-\d\d-\d\d \d\d:\d\d[APM]+)'
+    type: dateTime
+    dateFormat: 'yyyy-MM-dd hh:mmtt'
+  invoiceId:
+    expression: Transaction ID\s+(\w+)
+  total: 
+    expression: Total\s+\$(\d+\.\d+) USD
+    type: decimal
+  billTo:
+    expression: Account billed\s+(.+)$
+  description:
+    expression: GitHub Plan(.+)$
+  sourceName:
+    expression: GitHub, Inc.
+    static: true
+  sourceWebsite:
+    expression: github.com
+    static: true
+  sourceEmail:
+    expression: support@github.com
+    static: true
+  currency:
+    expression: USD
+    static: true

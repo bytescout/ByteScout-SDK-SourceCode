@@ -1,0 +1,33 @@
+---
+templateVersion: 1
+templatePriority: 1
+sourceId: JetBrains Invoice
+detectionRules:
+  keywords:
+  - JetBrains
+  - www.jetbrains.com
+  - Invoice
+fields:
+  invoiceId:
+    expression: Invoice (INV\S+)\s*$
+  dateIssued:
+    expression: 'Issue date: (\d{4}-\d\d-\d\d)'
+    type: dateTime
+    dateFormat: yyyy-MM-dd
+  total:
+    expression: Total:\s+(\d+\.\d\d) USD
+    type: decimal
+  subTotal:
+    expression: Subtotal:\s+(\d+\.\d\d) USD
+    type: decimal
+  taxRate:
+    expression: 'Tax Rate:\s+(\d+)%'
+    type: integer
+  tax:
+    expression: 'Tax amount:\s+(\d+.\d\d) USD'
+    type: decimal
+  sourceName:
+    expression: JetBrains.+$
+  currency:
+    expression: USD
+    static: true

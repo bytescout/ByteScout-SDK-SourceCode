@@ -1,0 +1,51 @@
+---
+templateVersion: 1
+templatePriority: 1
+sourceId: Amazon Web Services Invoice
+detectionRules:
+  keywords:
+  - Amazon Web Services
+  - ATTN
+  - Invoice
+fields:
+  total:
+    expression: TOTAL AMOUNT DUE ON.*\$(\d+\.\d+)
+    type: decimal
+  subTotal:
+    expression: TOTAL AMOUNT DUE ON.*\$(\d+\.\d+)
+    type: decimal
+  dateIssued:
+    expression: Invoice Date:\s+([a-zA-Z]+ \d+ , \d+)
+    type: dateTime
+    dateFormat: MMMM d , yyyy
+  invoiceId:
+    expression: Invoice Number:\s+(\d+)
+  sourceName:
+    expression: Amazon Web Services, Inc.
+    static: true
+  sourceWebsite:
+    expression: aws.amazon.com
+    static: true
+  billTo:
+    rect:
+    - 33
+    - 137
+    - 214
+    - 51
+    pageIndex: 0
+  currency:
+    expression: USD
+    static: true
+lines:
+  start:
+    expression: Detail
+  end:
+    expression: \* May include estimated US sales tax
+  itemStart:
+    expression: ^\s+(?<description>\w+.*)\$(?<unitPrice>\d+\.\d+)
+  line:
+    expression: (.*)\$(\d+\.\d+)
+  itemEnd:
+    expression: (VAT \*\*)|(Estimated US sales tax to be collected)
+  types:
+    unitPrice: decimal
