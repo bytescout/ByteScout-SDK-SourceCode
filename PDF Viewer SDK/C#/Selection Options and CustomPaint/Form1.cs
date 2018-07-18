@@ -14,6 +14,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using Bytescout.PDFViewer;
 
 namespace Example
 {
@@ -77,7 +78,7 @@ namespace Example
 
 		List<String> _labels = new List<string>();
 
-		private void pdfViewerControl1_SelectionChanged(object sender, EventArgs e)
+		private void pdfViewerControl1_SelectionChanged(object sender, SelectionChange selectionChange, int selectionIndex)
 		{
 			if (pdfViewerControl1.Selection.Length > _labels.Count)
 			{

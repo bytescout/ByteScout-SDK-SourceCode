@@ -43,9 +43,6 @@ namespace ReduceMemoryUsage
                 }
             }
 
-            // Cleanup
-			extractor.Dispose();
-
             // Open the output file in default associated application
             System.Diagnostics.Process.Start("output.txt");
         }

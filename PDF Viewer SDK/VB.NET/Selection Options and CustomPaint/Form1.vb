@@ -13,6 +13,7 @@
 Imports System.Collections.Generic
 Imports System.Drawing
 Imports System.Windows.Forms
+Imports Bytescout.PDFViewer
 
 Public Partial Class Form1
 	Inherits Form
@@ -61,7 +62,7 @@ Public Partial Class Form1
 
 	Private _labels As List(Of [String]) = New List(Of String)()
 
-    Private Sub pdfViewerControl1_SelectionChanged(sender As Object, e As EventArgs) Handles pdfViewerControl1.SelectionChanged
+    Private Sub pdfViewerControl1_SelectionChanged(ByVal sender As Object, ByVal selectionChange As SelectionChange, ByVal selectionIndex As Integer) Handles pdfViewerControl1.SelectionChanged
         If pdfViewerControl1.Selection.Length > _labels.Count Then
             For i As Integer = _labels.Count To pdfViewerControl1.Selection.Length - 1
                 _labels.Add(New Random().[Next]().ToString())
