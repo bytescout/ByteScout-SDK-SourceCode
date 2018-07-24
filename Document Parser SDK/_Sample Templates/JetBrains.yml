@@ -1,6 +1,6 @@
 ---
 templateVersion: 1
-templatePriority: 1
+templatePriority: 10000
 sourceId: JetBrains Invoice
 detectionRules:
   keywords:
@@ -9,7 +9,7 @@ detectionRules:
   - Invoice
 fields:
   invoiceId:
-    expression: Invoice (INV\S+)\s*$
+    expression: Invoice (INV\S+)\s*\r?$
   dateIssued:
     expression: 'Issue date: (\d{4}-\d\d-\d\d)'
     type: dateTime
@@ -27,7 +27,7 @@ fields:
     expression: 'Tax amount:\s+(\d+.\d\d) USD'
     type: decimal
   sourceName:
-    expression: JetBrains.+$
+    expression: JetBrains.+\r?$
   currency:
     expression: USD
     static: true

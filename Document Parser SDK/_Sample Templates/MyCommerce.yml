@@ -1,6 +1,6 @@
 ---
 templateVersion: 1
-templatePriority: 1
+templatePriority: 10000
 sourceId: MyCommerce Invoice
 detectionRules:
   keywords:
@@ -35,12 +35,13 @@ fields:
   currency:
     expression: USD
     static: true
-lines:
+tables:
+- name: table1
   start:
     expression: Product Description\s+Quantity\s+Unit Price\s+Product Amount
   end:
     expression: Product Total
-  line:
+  row:
     expression: ^\s+(?<description>\w+.*)(?<quantity>\d+)\s+(?<unitPrice>\d+\.\d\d)\s+(?<amount>\d+\.\d\d)
   types:
       quantity: integer

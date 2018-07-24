@@ -1,6 +1,6 @@
 ---
 templateVersion: 1
-templatePriority: 1
+templatePriority: 10000
 sourceId: DigitalOcean Invoice
 detectionRules:
   keywords:
@@ -20,13 +20,14 @@ fields:
   currency:
     expression: USD
     static: true
-lines:
+tables:
+- name: table1
   start: 
     expression: Description
   end: 
     expression: 'Total:'
-  line: 
-    expression: '^\s*(?<description>\w+.*\))\s+(?<hours>\d{1,3})\s+(?<start>\d\d-\d\d\ \d\d:\d\d)\s+(?<end>\d\d-\d\d \d\d:\d\d)\s+\$(?<unitPrice>\d+\.\d\d)$'
+  row: 
+    expression: '^\s*(?<description>\w+.*\))\s+(?<hours>\d{1,3})\s+(?<start>\d\d-\d\d\ \d\d:\d\d)\s+(?<end>\d\d-\d\d \d\d:\d\d)\s+\$(?<unitPrice>\d+\.\d\d)'
   types:
     hours: integer
     unitPrice: decimal

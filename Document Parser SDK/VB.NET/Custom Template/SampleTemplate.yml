@@ -18,12 +18,12 @@ fields:
   dateIssued:
     expression: Invoice Date (\d{2}/\d{2}/\d{4})
     # If type is dateTime and dateFormat property is specified
-    # the date will be converted to universal time by the format.
+    # the date will be converted to universal time by the specified format.
     type: dateTime
     dateFormat: MM/dd/yyyy
   invoiceId:
     expression: Invoice No. (\d+)
-  # Static field that will be passed to result without change.
+  # Static field that will be passed to result unchanged.
   sourceName:
     expression: Vendor Company
     static: true
@@ -46,15 +46,16 @@ fields:
     pageIndex: 0
 
 # Table data extraction.
-lines:
+tables:
+- name: table1
   start:
     # Table start after header row "Item  Quantity  Price  Total".
     expression: Item\s+Quantity\s+Price\s+Total
   end:
     # Table rows last until "TOTAL" keyword.
     expression: TOTAL
-  line:
-    # Regex for table lines extraction.
+  row:
+    # Regex for table rows extraction.
     expression: ^\s*(?<description>\w+.*)(?<quantity>\d+)\s+(?<unitPrice>\d+\.\d{2})\s+(?<itemTotal>\d+\.\d{2})\s*$
   types:
     # Column datatypes. Names correspond to regex matching groups.
@@ -62,5 +63,5 @@ lines:
     itemTotal: decimal
 
 options:
-  # multipage - set 'true' if table data continues on following pages.
+  # multipage - set 'true' if table data can continue on following pages.
   multipage: false

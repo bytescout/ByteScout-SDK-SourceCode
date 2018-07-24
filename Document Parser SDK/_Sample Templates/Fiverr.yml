@@ -1,6 +1,6 @@
 ---
 templateVersion: 1
-templatePriority: 1
+templatePriority: 10000
 sourceId: Fiverr Invoice
 detectionRules:
   keywords:
@@ -25,13 +25,14 @@ fields:
   currency:
     expression: USD
     static: true
-lines:
+tables:
+- name: table1
   start:
     expression: Part Description\s+Quantity\s+Unit Price\s+Extended Price
   end:
     expression: TOTAL\s+USD
-  line:
-    expression: ^\s*(?<description>\w+.*)\s+(?<quantity>\d+\.\d{2}).+\s+USD (?<unitPrice>\d+\.\d{2})\s+(?<extendedPrice>\d+\.\d{2})\s*$
+  row:
+    expression: ^\s*(?<description>\w+.*)\s+(?<quantity>\d+\.\d{2}).+\s+USD (?<unitPrice>\d+\.\d{2})\s+(?<extendedPrice>\d+\.\d{2})\s*\r?$
   types:
     quantity: decimal
     unitPrice: decimal

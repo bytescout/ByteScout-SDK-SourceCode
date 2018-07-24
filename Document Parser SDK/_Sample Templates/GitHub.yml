@@ -1,6 +1,6 @@
 ---
 templateVersion: 1
-templatePriority: 1
+templatePriority: 10000
 sourceId: GitHub Invoice
 detectionRules:
   keywords:
@@ -17,9 +17,9 @@ fields:
     expression: Total\s+\$(\d+\.\d+) USD
     type: decimal
   billTo:
-    expression: Account billed\s+(.+)$
+    expression: Account billed\s+(.+)\r?$
   description:
-    expression: GitHub Plan(.+)$
+    expression: GitHub Plan(.+)\r?$
   sourceName:
     expression: GitHub, Inc.
     static: true

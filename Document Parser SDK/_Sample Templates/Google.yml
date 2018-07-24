@@ -1,6 +1,6 @@
 ---
 templateVersion: 1
-templatePriority: 1
+templatePriority: 10000
 sourceId: Google Invoice
 detectionRules:
   keywords:
@@ -39,12 +39,13 @@ fields:
   currency:
     expression: USD
     static: true
-lines:
+tables:
+- name: table1
   start:
     expression: Description\s+Interval\s+Quantity\s+Amount \(\$\)
   end:
     expression: Subtotal in USD
-  line:
+  row:
     expression: ^\s+(?<description>\w+.*)(?<interval>[a-zA-Z]{3} \d+ - [a-zA-Z]{3} \d+)\s+(?<quantity>\d+)\s+(?<amount>\d+\.\d\d)
   types:
     quantity: integer
