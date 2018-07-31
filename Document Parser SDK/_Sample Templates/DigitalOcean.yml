@@ -1,6 +1,6 @@
 ---
 templateVersion: 1
-templatePriority: 10000
+templatePriority: 0
 sourceId: DigitalOcean Invoice
 detectionRules:
   keywords:
