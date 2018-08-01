@@ -22,11 +22,17 @@ namespace ParseWithOCR
     {
         static void Main(string[] args)
         {
-            string inputDocument1 = @".\DigitalOcean-scanned.jpg";
+            string template = @".\DigitalOcean.yml";
+            string inputDocument = @".\DigitalOcean-scanned.jpg";
 
             // Create DocumentParser instance
             using (DocumentParser documentParser = new DocumentParser("demo", "demo"))
             {
+                Console.WriteLine("Loading template...");
+
+                documentParser.AddTemplate(template);
+
+
                 // Enable Optical Character Recognition (OCR)
                 // in .Auto mode (SDK automatically checks if needs to use OCR or not)
                 documentParser.OCRMode = OCRMode.Auto;
@@ -40,11 +46,11 @@ namespace ParseWithOCR
                 // Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
 
 
-                Console.WriteLine($"Parsing \"{inputDocument1}\"...");
+                Console.WriteLine($"Parsing \"{inputDocument}\"...");
                 Console.WriteLine();
 
                 // Parse document data in JSON format
-                string jsonString = documentParser.ParseDocument(inputDocument1, OutputFormat.JSON);
+                string jsonString = documentParser.ParseDocument(inputDocument, OutputFormat.JSON);
                 // Display parsed data in console
                 Console.WriteLine("Parsing results in JSON format:");
                 Console.WriteLine();

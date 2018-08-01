@@ -13,12 +13,17 @@
 ' This example demonstrates the use of Optical Character Recognition (OCR) to parse document 
 ' from scanned PDF documents and raster images.
 
+template = "..\..\_Sample Templates\DigitalOcean.yml"
 inputDocument = "..\..\DigitalOcean-scanned.jpg"
 
 ' Create DocumentParser object
 Set documentParser = CreateObject("Bytescout.DocumentParser.DocumentParser")
 documentParser.RegistrationName = "demo"
 documentParser.RegistrationKey = "demo"
+
+' Load template
+documentParser.AddTemplate(template)
+
 
 ' Enable Optical Character Recognition (OCR)
 ' in .Auto mode (SDK automatically checks if needs to use OCR or not)

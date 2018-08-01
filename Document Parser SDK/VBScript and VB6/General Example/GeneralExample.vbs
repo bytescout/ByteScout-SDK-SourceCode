@@ -12,19 +12,24 @@
 
 ' This example demonstrates document data parsing to JSON and YAML formats.
 
+templatesFolder = "..\..\_Sample Templates"
 inputDocument1 = "..\..\DigitalOcean.pdf"
 inputDocument2 = "..\..\AmazonAWS.pdf"
+
 
 ' Create DocumentParser object
 Set documentParser = CreateObject("Bytescout.DocumentParser.DocumentParser")
 documentParser.RegistrationName = "demo"
 documentParser.RegistrationKey = "demo"
 
+' Loading templates...
+documentParser.AddTemplates(templatesFolder)
+
 ' Parse document data in JSON format
 documentParser.ParseDocument inputDocument1, "output1.json", 0 ' 0 = OutputFormat.JSON
 
 ' Parse document data in YAML format
-documentParser.ParseDocument inputDocument1, "output2.yaml", 1 ' 1 = OutputFormat.YAML
+documentParser.ParseDocument inputDocument2, "output2.yaml", 1 ' 1 = OutputFormat.YAML
 
 WScript.Echo "Parsed data saved as 'output1.json' and 'output2.yaml'."
 

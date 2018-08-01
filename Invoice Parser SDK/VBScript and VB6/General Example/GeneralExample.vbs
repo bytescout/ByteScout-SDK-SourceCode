@@ -24,7 +24,7 @@ invoiceParser.RegistrationKey = "demo"
 invoiceParser.ParseDocument inputDocument1, "output1.json", 0 ' 0 = OutputFormat.JSON
 
 ' Parse invoice data in YAML format
-invoiceParser.ParseDocument inputDocument1, "output2.yaml", 1 ' 1 = OutputFormat.YAML
+invoiceParser.ParseDocument inputDocument2, "output2.yaml", 1 ' 1 = OutputFormat.YAML
 
 WScript.Echo "Parsed data saved as 'output1.json' and 'output2.yaml'."
 

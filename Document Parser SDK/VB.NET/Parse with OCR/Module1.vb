@@ -19,10 +19,16 @@ Module Module1
 
     Sub Main()
 
-        Dim inputDocument1 As String = ".\DigitalOcean-scanned.jpg"
+        Dim template As String = ".\DigitalOcean.yml"
+        Dim inputDocument As String = ".\DigitalOcean-scanned.jpg"
 
         ' Create DocumentParser instance
         Using documentParser As New DocumentParser("demo", "demo")
+
+            Console.WriteLine("Loading template...")
+
+            documentParser.AddTemplate(template)
+
 
             ' Enable Optical Character Recognition (OCR)
             ' in .Auto mode (SDK automatically checks if needs to use OCR or not)
@@ -36,11 +42,11 @@ Module Module1
             ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
             ' Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
 
-            Console.WriteLine($"Parsing ""{inputDocument1}""...")
+            Console.WriteLine($"Parsing ""{inputDocument}""...")
             Console.WriteLine()
 
             ' Parse document data in JSON format
-            Dim jsonString As String = documentParser.ParseDocument(inputDocument1, OutputFormat.JSON)
+            Dim jsonString As String = documentParser.ParseDocument(inputDocument, OutputFormat.JSON)
             ' Display parsed data in console
             Console.WriteLine("Parsing results in JSON format:")
             Console.WriteLine()

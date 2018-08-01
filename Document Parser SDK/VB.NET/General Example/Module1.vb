@@ -18,11 +18,20 @@ Module Module1
 
     Sub Main()
 
+        Dim templatesFolder As String = ".\Templates"
         Dim inputDocument1 As String = ".\DigitalOcean.pdf"
         Dim inputDocument2 As String = ".\AmazonAWS.pdf"
 
         ' Create DocumentParser instance
         Using documentParser As New DocumentParser("demo", "demo")
+
+            Console.WriteLine("Loading templates...")
+                
+            Dim count = documentParser.AddTemplates(templatesFolder)
+
+            Console.WriteLine($"{count} templates loaded.")
+            Console.WriteLine()
+
 
             Console.WriteLine($"Parsing ""{inputDocument1}""...")
             Console.WriteLine()

@@ -101,6 +101,14 @@
       <Link>DigitalOcean.pdf</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="..\..\_Sample Templates\AmazonAWS.yml">
+      <Link>Templates\AmazonAWS.yml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\_Sample Templates\DigitalOcean.yml">
+      <Link>Templates\DigitalOcean.yml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

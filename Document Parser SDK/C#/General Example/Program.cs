@@ -21,12 +21,20 @@ namespace GeneralExample
     {
         static void Main(string[] args)
         {
+            string templatesFolder = @".\Templates";
             string inputDocument1 = @".\DigitalOcean.pdf";
             string inputDocument2 = @".\AmazonAWS.pdf";
 
             // Create DocumentParser instance
             using (DocumentParser documentParser = new DocumentParser("demo", "demo"))
             {
+                Console.WriteLine($"Loading templates...");
+                
+                int count = documentParser.AddTemplates(templatesFolder);
+
+                Console.WriteLine($"{count} templates loaded.");
+                Console.WriteLine();
+
                 Console.WriteLine($"Parsing \"{inputDocument1}\"...");
                 Console.WriteLine();
 
