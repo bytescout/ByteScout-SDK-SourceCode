@@ -35,6 +35,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>c:\Program Files\ByteScout Invoice Parser SDK\net40\ByteScout.InvoiceParser.dll</HintPath>
     </Reference>
+    <Reference Include="ByteScout.InvoiceParser.Templates, Version=1.0.0.100, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>c:\Program Files\ByteScout Invoice Parser SDK\net40\ByteScout.InvoiceParser.Templates.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
