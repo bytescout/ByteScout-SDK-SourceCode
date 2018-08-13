@@ -15,15 +15,15 @@ $(document).ready(function () {
     $("#errorBlock").hide();
     $("#result").attr("href", '').html('');
 });
- 
+
 $(document).on("click", "#submit", function () {
     $("#resultBlock").hide();
     $("#errorBlock").hide();
     $("#inlineOutput").text(''); // inline output div
     $("#status").text(''); // status div
- 
+
     var apiKey = $("#apiKey").val().trim(); //Get your API key at https://secure.bytescout.com/cloudapi.html
- 
+
     var formData = $("#form input[type=file]")[0].files[0]; // file to upload
     var toType = $("#convertType").val(); // output type
     var isInline = $("#outputType").val() == "inline"; // if we need output as inline content or link to output file
@@ -33,8 +33,8 @@ $(document).on("click", "#submit", function () {
     $.ajax({
         url: 'https://bytescout.io/v1/file/upload/get-presigned-url?name=test.pdf&contenttype=application/pdf&encrypt=true',
         type: 'GET',
-        headers: {'x-api-key': apiKey}, // passing our api key
-        success: function (result) {    
+        headers: { 'x-api-key': apiKey }, // passing our api key
+        success: function (result) {
 
             if (result['error'] === false) {
                 var presignedUrl = result['presignedUrl']; // reading provided presigned url to put our content into
@@ -45,46 +45,45 @@ $(document).on("click", "#submit", function () {
                 $.ajax({
                     url: presignedUrl, // no api key is required to upload file
                     type: 'PUT',
-                    headers: {'content-type': 'application/pdf'}, // setting to pdf type as we are uploading pdf file
+                    headers: { 'content-type': 'application/pdf' }, // setting to pdf type as we are uploading pdf file
                     data: formData,
                     processData: false,
-                    success: function (result) {                               
-                        
+                    success: function (result) {
+
                         $("#status").text('converting...');
 
                         $.ajax({
-                            url: 'https://bytescout.io/v1/pdf/convert/to/'+toType+'?url='+ presignedUrl + '&encrypt=true&inline=' + isInline,
+                            url: 'https://bytescout.io/v1/xls/convert/to/' + toType + '?url=' + presignedUrl + '&encrypt=true&inline=' + isInline,
                             type: 'POST',
-                            headers: {'x-api-key': apiKey},
-                            success: function (result) { 
+                            headers: { 'x-api-key': apiKey },
+                            success: function (result) {
 
                                 $("#status").text('done converting.');
 
                                 // console.log(JSON.stringify(result));
-                                
+
                                 $("#resultBlock").show();
 
-                                if (isInline)
-                                {                                    
+                                if (isInline) {
                                     $("#inlineOutput").text(result['body']);
                                 }
                                 else {
                                     $("#result").attr("href", result['url']).html(result['url']);
                                 }
-                                
+
                             }
                         });
-                
+
 
                     },
                     error: function () {
                         $("#status").text('error');
                     }
-                  });                
-        
+                });
 
-                }
+
             }
-        });
+        }
+    });
 });
- 
+

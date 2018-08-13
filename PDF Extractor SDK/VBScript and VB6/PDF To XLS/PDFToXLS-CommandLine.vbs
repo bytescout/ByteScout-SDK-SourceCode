@@ -23,6 +23,9 @@ extractor.RegistrationKey = "demo"
 ' Set Excel format
 extractor.OutputFormat = 1 ' 0 - XLS format; 1 - XLSX format.
 
+' Uncomment this line if you need all pages converted into a single worksheet:
+'extractor.PageToWorksheet = False
+
 ' Load sample PDF document
 extractor.LoadDocumentFromFile WScript.Arguments.Item(0)
 

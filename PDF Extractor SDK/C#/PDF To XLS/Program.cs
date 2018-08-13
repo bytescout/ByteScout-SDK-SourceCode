@@ -30,6 +30,9 @@ namespace PDF2XLS
 
             // Load sample PDF document
             extractor.LoadDocumentFromFile("sample3.pdf");
+
+            // Uncomment this line if you need all pages converted into a single worksheet:
+            //extractor.PageToWorksheet = false;
             
             // Save the spreadsheet to file
             extractor.SaveToXLSFile("output.xls");

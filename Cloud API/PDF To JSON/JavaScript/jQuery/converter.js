@@ -24,7 +24,7 @@ $(document).on("click", "#submit", function () {
  
     var apiKey = $("#apiKey").val().trim(); //Get your API key at https://secure.bytescout.com/cloudapi.html
  
-    var formData = new FormData($("#form")[0]); // file to upload
+    var formData = $("#form input[type=file]")[0].files[0]; // file to upload
     var toType = $("#convertType").val(); // output type
     var isInline = $("#outputType").val() == "inline"; // if we need output as inline content or link to output file
 

@@ -29,11 +29,14 @@ Class Program
         ' Load sample PDF document
         extractor.LoadDocumentFromFile("sample3.pdf")
 
+        ' Uncomment this line if you need all pages converted into a single worksheet:
+        'extractor.PageToWorksheet = False
+
         ' Save the spreadsheet to file
         extractor.SaveToXLSFile("output.xls")
 
         ' Cleanup
-		extractor.Dispose()
+        extractor.Dispose()
 
         ' Open result file in default associated application (for demo purposes)
         Process.Start("output.xls")
