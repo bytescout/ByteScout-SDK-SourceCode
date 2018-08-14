@@ -24,7 +24,7 @@ var request = require("request");
 
 // The authentication key (API Key).
 // Get your own by registering at https://secure.bytescout.com/users/sign_up
-const API_KEY = "***********************************";
+const API_KEY = "pdfco_fn4gg4niugnsdfnungjkfomopacirbgga";
 
 
 // Source PDF file
@@ -58,7 +58,7 @@ getPresignedUrl(API_KEY, SourceFile)
 function getPresignedUrl(apiKey, localFile) {
     return new Promise(resolve => {
         // Prepare request to `Get Presigned URL` API endpoint
-        let queryPath = `/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=${path.basename(SourceFile)}`;
+        let queryPath = `/v1/file/upload/get-presigned-url?name=${path.basename(SourceFile)}`;
         let reqOptions = {
             host: "bytescout.io",
             path: encodeURI(queryPath),
@@ -92,9 +92,6 @@ function uploadFile(apiKey, localFile, uploadUrl) {
                 method: "PUT",
                 url: uploadUrl,
                 body: data,
-                headers: {
-                    "Content-Type": "application/octet-stream"
-                }
             }, (err, res, body) => {
                 if (!err) {
                     resolve();
@@ -134,13 +131,13 @@ function convertPdfToCsv(apiKey, uploadedFileUrl, password, pages, destinationFi
             }
             else {
                 // Service reported error
-                console.log("readBarcodes(): " + data.message);
+                console.log("convertPdfToCsv(): " + data.message);
             }
         });
     })
     .on("error", (e) => {
         // Request error
-        console.log("readBarcodes(): " + e);
+        console.log("convertPdfToCsv(): " + e);
     });
 }
 
