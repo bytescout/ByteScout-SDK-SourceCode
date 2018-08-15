@@ -31,7 +31,7 @@ $(document).on("click", "#submit", function () {
     $("#status").text('requesting presigned url for upload...');
 
     $.ajax({
-        url: 'https://bytescout.io/v1/file/upload/get-presigned-url?name=test.pdf&contenttype=application/pdf&encrypt=true',
+        url: 'https://bytescout.io/v1/file/upload/get-presigned-url?name=test.pdf&encrypt=true',
         type: 'GET',
         headers: { 'x-api-key': apiKey }, // passing our api key
         success: function (result) {
@@ -45,7 +45,6 @@ $(document).on("click", "#submit", function () {
                 $.ajax({
                     url: presignedUrl, // no api key is required to upload file
                     type: 'PUT',
-                    headers: { 'content-type': 'application/pdf' }, // setting to pdf type as we are uploading pdf file
                     data: formData,
                     processData: false,
                     success: function (result) {
