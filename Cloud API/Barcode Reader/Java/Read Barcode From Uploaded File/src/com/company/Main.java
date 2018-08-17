@@ -101,12 +101,24 @@ public class Main
                 barcodeTypes,
                 pages,
                 uploadedFileUrl);
+        
+        // Make correctly escaped (encoded) URL
+        URL url = null;
+        try
+        {
+            url = new URI(null, query, null).toURL();
+        }
+        catch (URISyntaxException e)
+        {
+            e.printStackTrace();
+        }
 
         // Prepare request
         Request request = new Request.Builder()
-                .url(query)
+                .url(url)
                 .addHeader("x-api-key", API_KEY) // (!) Set API Key
                 .build();
+
         // Execute request
         Response response = webClient.newCall(request).execute();
 

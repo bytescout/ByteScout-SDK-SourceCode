@@ -48,6 +48,17 @@ public class Main
                 "https://bytescout.io/v1/pdf/convert/from/html?name=%s",
                 destinationFile.getFileName());
 
+        // Make correctly escaped (encoded) URL
+        URL url = null;
+        try
+        {
+            url = new URI(null, query, null).toURL();
+        }
+        catch (URISyntaxException e)
+        {
+            e.printStackTrace();
+        }
+
         // Prepare request body in JSON format
         JsonObject jsonBody = new JsonObject();
         jsonBody.add("html", new JsonPrimitive(template));
@@ -57,7 +68,7 @@ public class Main
 
         // Prepare request
         Request request = new Request.Builder()
-                .url(query)
+                .url(url)
                 .addHeader("x-api-key", API_KEY) // (!) Set API Key
                 .addHeader("Content-Type", "application/json")
                 .post(body)
