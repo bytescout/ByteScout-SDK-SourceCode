@@ -1,5 +1,4 @@
-## Index of source code examples
-
+## Index of source code examples:
 
 \BarCode Reader SDK
 \BarCode SDK
