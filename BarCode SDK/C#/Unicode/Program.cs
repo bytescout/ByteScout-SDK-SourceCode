@@ -24,7 +24,7 @@ namespace Sample
         static void Main(string[] args)
         {
             // Create new barcode
-            Barcode barcode = new Barcode();
+            Barcode barcode = new Barcode("demo", "demo");
 
             // Set symbology
             barcode.Symbology = SymbologyType.QRCode;
@@ -32,8 +32,8 @@ namespace Sample
             // set QR code encoding to UTF8 so will be able to encode Unicode 
             barcode.Options.Encoding = Encoding.UTF8;
 
-            // Set barcode value to ?           
-            barcode.Value = "?";
+            // Set Unicode barcode value string 日本
+            barcode.Value = "日本";
 
             // show caption for 2d barcodes
             barcode.DrawCaptionFor2DBarcodes = true;

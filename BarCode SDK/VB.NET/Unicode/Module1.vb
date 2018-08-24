@@ -25,8 +25,8 @@ Module Module1
         ' set QR code encoding to UTF8 so will be able to encode Unicode 
         barcode.Options.Encoding = System.Text.Encoding.UTF8()
 
-        ' Set barcode value to ?           
-        barcode.Value = "?"
+        ' Set Unicode barcode value
+        barcode.Value = "日本"
 
         ' show caption for 2d barcodes
         barcode.DrawCaptionFor2DBarcodes = True

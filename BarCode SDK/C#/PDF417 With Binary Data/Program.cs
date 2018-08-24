@@ -35,7 +35,7 @@ namespace PDF417WithBinaryData
 				byte[] byteArray = new byte[] { 0, 10, 11, 12, 13, 14, 15, 0xFF };
 
 				// Set value by converting byte array to string  
-				barcode.Value = Encoding.Default.GetString(byteArray);
+				barcode.Value = Encoding.ASCII.GetString(byteArray);
 
 				// Save barcode image
 				barcode.SaveImage("result.png");
