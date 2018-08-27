@@ -40,44 +40,41 @@ public partial class Camera : System.Web.UI.Page
     [WebMethod]
     public static string Upload(string image, string type)
     {
-
         try
         {
             StringBuilder send = new StringBuilder();
+
             // lock by send variable 
             lock (send)
             {            
-                // convert base64 string from the client side into byte array
+                // Convert base64 string from the client side into byte array
                 byte[] bitmapArrayOfBytes = Convert.FromBase64String(image);
-                // convert the byte array into the bitmap 
-                Bitmap bp = (Bitmap)Bitmap.FromStream(new MemoryStream(bitmapArrayOfBytes));
-                // new bytescout barcode reader sdk object
+                // Create Bytescout.BarCodeReader.Reader object
                 Reader reader = new Reader();
-                // get the type to find from user's selection in the combobox
+                // Get the barcode type from user's selection in the combobox
                 reader.BarcodeTypesToFind = GetBarcodeTypeToFindFromCombobox(type);
-                // read image to get barcodes
-                reader.ReadFrom(bp);
-                // check if we have got barcodes from the image
+                // Read barcodes from image bytes
+                reader.ReadFromMemory(bitmapArrayOfBytes);
+                // Check whether the barcode is decoded
                 if (reader.FoundBarcodes != null)
                 {
-                    // add each barcode into the string 
+                    // Add each decoded barcode into the string 
                     foreach (FoundBarcode barcode in reader.FoundBarcodes)
                     {
-                        // add barcodes as text into the output string
+                        // Add barcodes as text into the output string
                         send.AppendLine(String.Format("{0} : {1}", barcode.Type, barcode.Value));
                     }
                 }
-                // return the output string
+
+                // Return the output string as JSON
 				return send.ToString();
-            } // end of lock
+            }
         }
         catch (Exception ex)
         {
             // return the exception instead
             return (ex.Message + "\r\n" + ex.StackTrace);
         }
-
-
     }
     /// <summary>
     /// Get symbology filter for the SDK from the combobox selection text
