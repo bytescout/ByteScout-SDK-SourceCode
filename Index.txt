@@ -56,6 +56,10 @@
 \BarCode Reader SDK\C#\Decode Code 16K
 \BarCode Reader SDK\C#\Decode Code 39
 \BarCode Reader SDK\C#\Decode Code 93
+\BarCode Reader SDK\C#\Decode Damaged Code 128
+\BarCode Reader SDK\C#\Decode Damaged Code 39
+\BarCode Reader SDK\C#\Decode Damaged Datamatrix
+\BarCode Reader SDK\C#\Decode Damaged QR Code
 \BarCode Reader SDK\C#\Decode Datamatrix
 \BarCode Reader SDK\C#\Decode Deutsche Post Identcode
 \BarCode Reader SDK\C#\Decode Deutsche Post Leitcode
@@ -85,6 +89,7 @@
 \BarCode Reader SDK\C#\Decode PDF417
 \BarCode Reader SDK\C#\Decode PZN
 \BarCode Reader SDK\C#\Decode QR Code
+\BarCode Reader SDK\C#\Decode QR Code With JSON
 \BarCode Reader SDK\C#\Decode Royal Mail
 \BarCode Reader SDK\C#\Decode Royal Mail KIX
 \BarCode Reader SDK\C#\Decode Swiss Post Parcel
@@ -128,6 +133,10 @@
 \BarCode Reader SDK\VB.NET\Decode Code 16K
 \BarCode Reader SDK\VB.NET\Decode Code 39
 \BarCode Reader SDK\VB.NET\Decode Code 93
+\BarCode Reader SDK\VB.NET\Decode Damaged Code 128
+\BarCode Reader SDK\VB.NET\Decode Damaged Code 39
+\BarCode Reader SDK\VB.NET\Decode Damaged Datamatrix
+\BarCode Reader SDK\VB.NET\Decode Damaged QR Code
 \BarCode Reader SDK\VB.NET\Decode Datamatrix
 \BarCode Reader SDK\VB.NET\Decode Deutsche Post Identcode
 \BarCode Reader SDK\VB.NET\Decode Deutsche Post Leitcode
@@ -157,6 +166,7 @@
 \BarCode Reader SDK\VB.NET\Decode PDF417
 \BarCode Reader SDK\VB.NET\Decode PZN
 \BarCode Reader SDK\VB.NET\Decode QR Code
+\BarCode Reader SDK\VB.NET\Decode QR Code With JSON
 \BarCode Reader SDK\VB.NET\Decode Royal Mail
 \BarCode Reader SDK\VB.NET\Decode Royal Mail KIX
 \BarCode Reader SDK\VB.NET\Decode Swiss Post Parcel
@@ -262,6 +272,7 @@
 \BarCode SDK\C#\GS1 DataBar Stacked Omnidirectional
 \BarCode SDK\C#\GS1 DataBar Truncated
 \BarCode SDK\C#\GS1 Datamatrix (2D)
+\BarCode SDK\C#\GS1 QR Code
 \BarCode SDK\C#\I2of5
 \BarCode SDK\C#\ISBN
 \BarCode SDK\C#\JAN13
@@ -288,6 +299,7 @@
 \BarCode SDK\C#\QR Code (2D)
 \BarCode SDK\C#\QR Code With Binary Data
 \BarCode SDK\C#\QR Code With Image
+\BarCode SDK\C#\QR Code with JSON
 \BarCode SDK\C#\RenderingOptions
 \BarCode SDK\C#\Royal Mail
 \BarCode SDK\C#\Singapore Postal Code
@@ -365,6 +377,7 @@
 \BarCode SDK\VB.NET\Generate vCard QR Code
 \BarCode SDK\VB.NET\GenerateWordDocumentWithBarcodes
 \BarCode SDK\VB.NET\GS1 Datamatrix
+\BarCode SDK\VB.NET\GS1 QR Code
 \BarCode SDK\VB.NET\I2of5
 \BarCode SDK\VB.NET\ISBN
 \BarCode SDK\VB.NET\JAN13
@@ -391,6 +404,7 @@
 \BarCode SDK\VB.NET\QR Code (2D)
 \BarCode SDK\VB.NET\QR Code With Binary Data
 \BarCode SDK\VB.NET\QR Code With Image
+\BarCode SDK\VB.NET\QR Code With JSON
 \BarCode SDK\VB.NET\RenderingOptions
 \BarCode SDK\VB.NET\Royal Mail
 \BarCode SDK\VB.NET\Singapore Postal Code
@@ -1017,6 +1031,7 @@
 \PDF Extractor SDK\ASP.NET\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\C#\Batch Processing
 \PDF Extractor SDK\C#\Compare Documents
+\PDF Extractor SDK\C#\Detect Lines
 \PDF Extractor SDK\C#\Extract Attachments
 \PDF Extractor SDK\C#\Extract Audio
 \PDF Extractor SDK\C#\Extract Filled Form Data
@@ -1046,6 +1061,7 @@
 \PDF Extractor SDK\C#\Merge Documents
 \PDF Extractor SDK\C#\OCR (Optical Character Recognition)
 \PDF Extractor SDK\C#\OCR Analyser
+\PDF Extractor SDK\C#\Optimize PDF
 \PDF Extractor SDK\C#\Parallel Processing
 \PDF Extractor SDK\C#\PDF To CSV
 \PDF Extractor SDK\C#\PDF To CSV By Pages
