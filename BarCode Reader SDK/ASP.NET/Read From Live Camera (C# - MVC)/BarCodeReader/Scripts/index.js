@@ -11,30 +11,37 @@
 
 
 var canvas, context, timer;
+
+var constraints = window.constraints = {
+    audio: false,
+    video: { facingMode: "environment" }
+};
+
 //  (HTML5 based camera only) this portion of code will be used when browser supports navigator.getUserMedia  *********     */
 window.addEventListener("DOMContentLoaded", function () {
     canvas = document.getElementById("canvasU"),
-    context = canvas.getContext("2d"),
-    video = document.getElementById("video"),
-    videoObj = { "video": true },
-    errBack = function (error) {
-        console.log("Video capture error: ", error.code);
-    };
+        context = canvas.getContext("2d"),
+        video = document.getElementById("video"),
+        videoObj = { "video": true },
+        errBack = function (error) {
+            console.log("Video capture error: ", error.code);
+        };
 
-    // check if we can use HTML5 based camera (through .getUserMedia() function)
-    if (navigator.getUserMedia) { // Standard browser (Opera)
+    // check if we can use HTML5 based camera (through mediaDevices.getUserMedia() function)
+    if (navigator.mediaDevices.getUserMedia) { // Standard browser
         // display HTML5 camera
         document.getElementById("userMedia").style.display = '';
         // adding click event to take photo from webcam
         document.getElementById("snap").addEventListener("click", function () {
             context.drawImage(video, 0, 0, 640, 480);
         });
-        navigator.getUserMedia(videoObj, function (stream) {
-            video.src = window.URL.createObjectURL(stream);
-            video.play();
-        }, errBack);
+
+        navigator.mediaDevices
+            .getUserMedia(constraints)
+            .then(handleSuccess)
+            .catch(handleError);
     }
-        // check if we can use HTML5 based camera (through .getUserMedia() function in Webkit based browser)
+    // check if we can use HTML5 based camera (through .getUserMedia() function in Webkit based browser)
     else if (navigator.webkitGetUserMedia) { // WebKit-prefixed for Google Chrome
         // display HTML5 camera
         document.getElementById("userMedia").style.display = '';
@@ -47,7 +54,7 @@ window.addEventListener("DOMContentLoaded", function () {
             video.play();
         }, errBack);
     }
-        // check if we can use HTML5 based camera (through .getUserMedia() function in Firefox based browser)
+    // check if we can use HTML5 based camera (through .getUserMedia() function in Firefox based browser)
     else if (navigator.mozGetUserMedia) { // moz-prefixed for Firefox 
         // display HTML5 camera
         document.getElementById("userMedia").style.display = '';
@@ -61,7 +68,7 @@ window.addEventListener("DOMContentLoaded", function () {
         }, errBack);
     }
     else
-        // if we can not use any of HTML5 based camera ways then we use Flash based camera
+    // if we can not use any of HTML5 based camera ways then we use Flash based camera
     {
         // display Flash camera
         document.getElementById("flashDiv").style.display = '';
@@ -77,6 +84,36 @@ var selection = "All barcodes (slow)";
 function selectType(type) {
     selection = type.options[type.selectedIndex].text;
 }
+
+function handleSuccess(stream) {
+    var video = document.querySelector('video');
+    var videoTracks = stream.getVideoTracks();
+    console.log('Got stream with constraints:', constraints);
+    console.log(`Using video device: ${videoTracks[0].label}`);
+    window.stream = stream; // make variable available to browser console
+    video.srcObject = stream;
+}
+
+function handleError(error) {
+    if (error.name === 'ConstraintNotSatisfiedError') {
+        var v = constraints.video;
+        errorMsg(`The resolution ${v.width.exact}x${v.height.exact} px is not supported by your device.`);
+    } else if (error.name === 'PermissionDeniedError') {
+        errorMsg('Permissions have not been granted to use your camera and ' +
+            'microphone, you need to allow the page access to your devices in ' +
+            'order for the demo to work.');
+    }
+    errorMsg(`getUserMedia error: ${error.name}`, error);
+}
+
+function errorMsg(msg, error) {
+    var errorElement = document.querySelector('#errorMsg');
+    errorElement.innerHTML += `<p>${msg}</p>`;
+    if (typeof error !== 'undefined') {
+        console.error(error);
+    }
+}
+
 
 // (HTML5 based camera only)
 // uploads the image to the server 

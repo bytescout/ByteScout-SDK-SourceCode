@@ -10,6 +10,10 @@
       <!-- this javascript plugin uses the webcam.swf file to capture image and send the image to server for further processing -->
     <script type="text/javascript">
         var canvas, context, timer;
+        var constraints = window.constraints = {
+            audio: false,
+            video: { facingMode: "environment" }
+        };
         //  (HTML5 based camera only) this portion of code will be used when browser supports navigator.getUserMedia  *********     */
         window.addEventListener("DOMContentLoaded", function () {
             canvas = document.getElementById("canvasU"),
@@ -20,18 +24,19 @@
                 console.log("Video capture error: ", error.code);
             };
 
-            // check if we can use HTML5 based camera (through .getUserMedia() function)
-            if (navigator.getUserMedia) { // Standard browser (Opera)
+            // check if we can use HTML5 based camera (through mediaDevices.getUserMedia() function)
+            if (navigator.mediaDevices.getUserMedia) { // Standard browser
                 // display HTML5 camera
                 document.getElementById("userMedia").style.display = '';
                 // adding click event to take photo from webcam
                 document.getElementById("snap").addEventListener("click", function () {
                     context.drawImage(video, 0, 0, 640, 480);
                 });
-                navigator.getUserMedia(videoObj, function (stream) {
-                    video.src = window.webkitURL.createObjectURL(stream);
-                    video.play();
-                }, errBack);
+
+                navigator.mediaDevices
+                    .getUserMedia(constraints)
+                    .then(handleSuccess)
+                    .catch(handleError);
             }
             // check if we can use HTML5 based camera (through .getUserMedia() function in Webkit based browser)
             else if (navigator.webkitGetUserMedia) { // WebKit-prefixed for Google Chrome
@@ -75,6 +80,35 @@
         // (all type of camera) gets the selection text of "barcode type to scan" combobox
         function selectType(type) {
             selection = type.options[type.selectedIndex].text;
+        }
+
+        function handleSuccess(stream) {
+            var video = document.querySelector('video');
+            var videoTracks = stream.getVideoTracks();
+            console.log('Got stream with constraints:', constraints);
+            console.log(`Using video device: ${videoTracks[0].label}`);
+            window.stream = stream; // make variable available to browser console
+            video.srcObject = stream;
+        }
+
+        function handleError(error) {
+            if (error.name === 'ConstraintNotSatisfiedError') {
+                var v = constraints.video;
+                errorMsg(`The resolution ${v.width.exact}x${v.height.exact} px is not supported by your device.`);
+            } else if (error.name === 'PermissionDeniedError') {
+                errorMsg('Permissions have not been granted to use your camera and ' +
+                    'microphone, you need to allow the page access to your devices in ' +
+                    'order for the demo to work.');
+            }
+            errorMsg(`getUserMedia error: ${error.name}`, error);
+        }
+
+        function errorMsg(msg, error) {
+            var errorElement = document.querySelector('#errorMsg');
+            errorElement.innerHTML += `<p>${msg}</p>`;
+            if (typeof error !== 'undefined') {
+                console.error(error);
+            }
         }
 
         // (HTML5 based camera only)
@@ -218,7 +252,7 @@
          </td>
          <td valign="top">   
             <span>Webcam preview shows below:</span>
-            <video id="video" width="640" height="480"></video> 
+            <video id="video" width="640" height="480" autoplay playsinline muted></video> 
          <!-- canvas with the output -->
        <canvas id="canvasU" width="640" height="480" style="display:none" ></canvas>     
                    
