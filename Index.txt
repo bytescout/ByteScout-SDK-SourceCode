@@ -1073,6 +1073,8 @@
 \PDF Extractor SDK\C#\PDF To XML With Images
 \PDF Extractor SDK\C#\PDF-A Compatibility Test
 \PDF Extractor SDK\C#\Profiles
+\PDF Extractor SDK\C#\Read Hindi Text
+\PDF Extractor SDK\C#\Read Values from Form Fields
 \PDF Extractor SDK\C#\Reduce Memory Usage
 \PDF Extractor SDK\C#\Remove Empty Pages
 \PDF Extractor SDK\C#\Remove Text
@@ -1131,6 +1133,8 @@
 \PDF Extractor SDK\VB.NET\PDF To XML With Images
 \PDF Extractor SDK\VB.NET\PDF-A Compatibility Test
 \PDF Extractor SDK\VB.NET\Profiles
+\PDF Extractor SDK\VB.NET\Read Hindi Text
+\PDF Extractor SDK\VB.NET\Read Values from Form Fields
 \PDF Extractor SDK\VB.NET\Reduce Memory Usage
 \PDF Extractor SDK\VB.NET\Remove Empty Pages
 \PDF Extractor SDK\VB.NET\Remove Text
@@ -1289,6 +1293,7 @@
 \PDF SDK\C#\Forms - Flatten Form
 \PDF SDK\C#\Forms - ListBox
 \PDF SDK\C#\Forms - RadioButton
+\PDF SDK\C#\Forms - Read Form Values
 \PDF SDK\C#\Forms - TextField
 \PDF SDK\C#\Invisible Text Over Image
 \PDF SDK\C#\Layers
@@ -1296,6 +1301,7 @@
 \PDF SDK\C#\Navigation - Link To Page
 \PDF SDK\C#\Navigation - Page Numbers
 \PDF SDK\C#\Security - Passwords And Permissions
+\PDF SDK\C#\Security - Remove Protection
 \PDF SDK\C#\Security - Signing
 \PDF SDK\C#\Text - Draw String
 \PDF SDK\C#\Text - Fonts
@@ -1347,6 +1353,7 @@
 \PDF SDK\VB.NET\Forms - Flatten Form
 \PDF SDK\VB.NET\Forms - ListBox
 \PDF SDK\VB.NET\Forms - RadioButton
+\PDF SDK\VB.NET\Forms - Read Form Values
 \PDF SDK\VB.NET\Forms - TextField
 \PDF SDK\VB.NET\Invisible Text Over Image
 \PDF SDK\VB.NET\Layers
@@ -1354,6 +1361,7 @@
 \PDF SDK\VB.NET\Navigation - Link To Page
 \PDF SDK\VB.NET\Navigation - Page Numbers
 \PDF SDK\VB.NET\Security - Passwords and Permissions
+\PDF SDK\VB.NET\Security - Remove Protection
 \PDF SDK\VB.NET\Security - Signing
 \PDF SDK\VB.NET\Text - Draw String
 \PDF SDK\VB.NET\Text - Fonts
@@ -2044,6 +2052,8 @@
 \_Showcases\Invoice Parsing (VB.NET)
 \_Showcases\Make Large PDF Searchable in Parallel Processing (C#)
 \_Showcases\Make Large PDF Searchable in Parallel Processing (VB.NET)
+\_Showcases\Read PDF with Image Hindi Text (C#)
+\_Showcases\Read PDF with Image Hindi Text (VB.NET)
 \_Showcases\Regex Search And Highlight In PDF Document (C#)
 \_Showcases\Regex Search And Highlight In PDF Document (VB.NET)
 \_Showcases\Regex Search In PDF And Highlight On Rendered Page (C#)
