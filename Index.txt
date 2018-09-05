@@ -1003,8 +1003,10 @@
 \Invoice Parser SDK\VB.NET
 \Invoice Parser SDK\VBScript and VB6
 \Invoice Parser SDK\C#\General Example
+\Invoice Parser SDK\C#\Parse Folder To CSV
 \Invoice Parser SDK\C#\Parse with OCR
 \Invoice Parser SDK\VB.NET\General Example
+\Invoice Parser SDK\VB.NET\Parse Folder To CSV
 \Invoice Parser SDK\VB.NET\Parse with OCR
 \Invoice Parser SDK\VBScript and VB6\General Example
 \Invoice Parser SDK\VBScript and VB6\Parse with OCR
