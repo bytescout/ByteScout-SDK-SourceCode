@@ -121,7 +121,7 @@ function convertPdfToXlsx(apiKey, uploadedFileUrl, password, pages, destinationF
         response.on("data", (d) => {
             response.setEncoding("utf8");
             // Parse JSON response
-            let data = JSON.parse(d)
+            let data = JSON.parse(d);
             if (data.error == false) {
                 // Download XLSX file
                 var file = fs.createWriteStream(destinationFile);

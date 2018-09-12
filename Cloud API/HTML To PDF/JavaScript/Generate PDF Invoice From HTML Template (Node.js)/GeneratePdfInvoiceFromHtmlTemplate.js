@@ -49,8 +49,7 @@ var requestBody = JSON.stringify({
 var postRequest = https.request(reqOptions, (response) => {
     response.on("data", (d) => {
         // Parse JSON response
-        var data = JSON.parse(d)
-        
+        var data = JSON.parse(d);        
         if (data.error == false) {
             // Download PDF file
             var file = fs.createWriteStream(DestinationFile);

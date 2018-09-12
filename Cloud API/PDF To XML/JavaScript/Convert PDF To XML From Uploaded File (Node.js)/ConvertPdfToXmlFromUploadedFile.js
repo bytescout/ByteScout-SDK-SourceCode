@@ -121,7 +121,7 @@ function convertPdfToXml(apiKey, uploadedFileUrl, password, pages, destinationFi
         response.on("data", (d) => {
             response.setEncoding("utf8");
             // Parse JSON response
-            let data = JSON.parse(d)
+            let data = JSON.parse(d);
             if (data.error == false) {
                 // Download XML file
                 var file = fs.createWriteStream(destinationFile);

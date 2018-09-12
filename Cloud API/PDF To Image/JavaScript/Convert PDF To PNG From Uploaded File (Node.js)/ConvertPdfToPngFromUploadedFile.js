@@ -119,7 +119,7 @@ function convertPdfToPng(apiKey, uploadedFileUrl, password, pages) {
         response.on("data", (d) => {
             response.setEncoding("utf8");
             // Parse JSON response
-            let data = JSON.parse(d)
+            let data = JSON.parse(d);
             if (data.error == false) {
                 // Download generated PNG files
                 var page = 1;

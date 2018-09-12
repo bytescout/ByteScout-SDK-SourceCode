@@ -44,7 +44,7 @@ var reqOptions = {
 https.get(reqOptions, (response) => {
     response.on("data", (d) => {
         // Parse JSON response
-        var data = JSON.parse(d)
+        var data = JSON.parse(d);
         
         if (data.error == false) {
             // Display found barcodes in console

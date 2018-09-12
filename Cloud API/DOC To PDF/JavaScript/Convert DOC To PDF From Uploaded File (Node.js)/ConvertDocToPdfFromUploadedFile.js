@@ -117,7 +117,7 @@ function convertDocToPdf(apiKey, uploadedFileUrl, destinationFile) {
         response.on("data", (d) => {
             response.setEncoding("utf8");
             // Parse JSON response
-            let data = JSON.parse(d)
+            let data = JSON.parse(d);
             if (data.error == false) {
                 // Download PDF file
                 var file = fs.createWriteStream(destinationFile);

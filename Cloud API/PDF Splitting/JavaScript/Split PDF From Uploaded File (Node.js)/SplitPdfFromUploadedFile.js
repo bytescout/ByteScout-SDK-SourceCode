@@ -117,7 +117,7 @@ function splitPdf(apiKey, uploadedFileUrl, pages) {
         response.on("data", (d) => {
             response.setEncoding("utf8");
             // Parse JSON response
-            let data = JSON.parse(d)
+            let data = JSON.parse(d);
             if (data.error == false) {
                 // Download generated PDF files
                 var part = 1;
