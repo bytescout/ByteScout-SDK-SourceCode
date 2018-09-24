@@ -1056,6 +1056,7 @@
 \PDF Extractor SDK\C#\Find Text (Regex)
 \PDF Extractor SDK\C#\Find Text - Smart Match
 \PDF Extractor SDK\C#\Find Text With Hyphens
+\PDF Extractor SDK\C#\Index Documents In Folder
 \PDF Extractor SDK\C#\Index PDF Files
 \PDF Extractor SDK\C#\Invoice Parsing
 \PDF Extractor SDK\C#\Make Searchable PDF
@@ -1080,10 +1081,12 @@
 \PDF Extractor SDK\C#\Reduce Memory Usage
 \PDF Extractor SDK\C#\Remove Empty Pages
 \PDF Extractor SDK\C#\Remove Text
+\PDF Extractor SDK\C#\Repair Text
 \PDF Extractor SDK\C#\Rotate Document
 \PDF Extractor SDK\C#\Split Document
 \PDF Extractor SDK\C#\XFA Form To XML
 \PDF Extractor SDK\C#\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\C#\Index Documents In Folder\Files
 \PDF Extractor SDK\C++\Compare Documents
 \PDF Extractor SDK\C++\Extract Pages
 \PDF Extractor SDK\C++\Extract Text
@@ -1095,6 +1098,7 @@
 \PDF Extractor SDK\Microsoft Excel\Extract Text From Coordinates
 \PDF Extractor SDK\VB.NET\Batch Processing
 \PDF Extractor SDK\VB.NET\Compare Documents
+\PDF Extractor SDK\VB.NET\Detect Lines
 \PDF Extractor SDK\VB.NET\Extract Attachments
 \PDF Extractor SDK\VB.NET\Extract Audio
 \PDF Extractor SDK\VB.NET\Extract Filled Form Data
@@ -1117,6 +1121,7 @@
 \PDF Extractor SDK\VB.NET\Find Text (Regex)
 \PDF Extractor SDK\VB.NET\Find Text - Smart Match
 \PDF Extractor SDK\VB.NET\Find Text With Hyphens
+\PDF Extractor SDK\VB.NET\Index Documents In Folder
 \PDF Extractor SDK\VB.NET\Index PDF Files
 \PDF Extractor SDK\VB.NET\Invoice Parsing
 \PDF Extractor SDK\VB.NET\Make Searchable PDF
@@ -1124,6 +1129,7 @@
 \PDF Extractor SDK\VB.NET\Merge Documents
 \PDF Extractor SDK\VB.NET\OCR (Optical Character Recognition)
 \PDF Extractor SDK\VB.NET\OCR Analyser
+\PDF Extractor SDK\VB.NET\Optimize PDF
 \PDF Extractor SDK\VB.NET\Parallel Processing
 \PDF Extractor SDK\VB.NET\PDF To CSV
 \PDF Extractor SDK\VB.NET\PDF To CSV By Pages
@@ -1140,10 +1146,12 @@
 \PDF Extractor SDK\VB.NET\Reduce Memory Usage
 \PDF Extractor SDK\VB.NET\Remove Empty Pages
 \PDF Extractor SDK\VB.NET\Remove Text
+\PDF Extractor SDK\VB.NET\Repair Text
 \PDF Extractor SDK\VB.NET\Rotate Document
 \PDF Extractor SDK\VB.NET\Split Document
 \PDF Extractor SDK\VB.NET\XFA Form To XML
 \PDF Extractor SDK\VB.NET\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\VB.NET\Index Documents In Folder\Files
 \PDF Extractor SDK\VBScript and VB6\Batch Processing
 \PDF Extractor SDK\VBScript and VB6\Compare Documents
 \PDF Extractor SDK\VBScript and VB6\Extract Attachments
@@ -1302,6 +1310,7 @@
 \PDF SDK\C#\Navigation - Bookmarks
 \PDF SDK\C#\Navigation - Link To Page
 \PDF SDK\C#\Navigation - Page Numbers
+\PDF SDK\C#\Reorder Pages
 \PDF SDK\C#\Security - Passwords And Permissions
 \PDF SDK\C#\Security - Remove Protection
 \PDF SDK\C#\Security - Signing
@@ -1362,6 +1371,7 @@
 \PDF SDK\VB.NET\Navigation - Bookmarks
 \PDF SDK\VB.NET\Navigation - Link To Page
 \PDF SDK\VB.NET\Navigation - Page Numbers
+\PDF SDK\VB.NET\Reorder Pages
 \PDF SDK\VB.NET\Security - Passwords and Permissions
 \PDF SDK\VB.NET\Security - Remove Protection
 \PDF SDK\VB.NET\Security - Signing
