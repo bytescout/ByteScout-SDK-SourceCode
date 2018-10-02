@@ -1016,6 +1016,7 @@
 \PDF Extractor SDK\C++
 \PDF Extractor SDK\Delphi
 \PDF Extractor SDK\Microsoft Excel
+\PDF Extractor SDK\Powershell
 \PDF Extractor SDK\VB.NET
 \PDF Extractor SDK\VBScript and VB6
 \PDF Extractor SDK\ASP Classic\Extract Text
@@ -1096,6 +1097,7 @@
 \PDF Extractor SDK\Delphi\Batch Processing
 \PDF Extractor SDK\Delphi\PDF To CSV
 \PDF Extractor SDK\Microsoft Excel\Extract Text From Coordinates
+\PDF Extractor SDK\Powershell\PDF To JSON
 \PDF Extractor SDK\VB.NET\Batch Processing
 \PDF Extractor SDK\VB.NET\Compare Documents
 \PDF Extractor SDK\VB.NET\Detect Lines
