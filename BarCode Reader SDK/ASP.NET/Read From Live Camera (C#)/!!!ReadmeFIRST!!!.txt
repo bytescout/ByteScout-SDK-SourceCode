@@ -1,9 +1,12 @@
 ﻿Readme for live web cam barcode scanning ASP.NET demo 
 
 Supports all browsers by using 2 modes: 
+
 (required mode is automatically detected by the javascript)
-- HTML5 based web camera capture (supported by Google Chrome, Firefox, Safari browsers)
+- HTML5 based web camera capture (supported by Google Chrome, Firefox, Safari, Safari on iOS browsers)
 - Flash based web camera capture (supported by Internet Explorer 9+ and any browser with flash support)
+
+IMPORTANT about HTML5 webcamera support (Chrome, Firefox, Safari on desktop and iOS): it is required to run your website (even test website) via SSL connection. Otherwise, web camera won't initialize at all as it requies SSL connection. 
 
 Visual Studio 2008/2010 or higher is required for this sample to run!
 
