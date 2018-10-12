@@ -12,7 +12,7 @@
         var canvas, context, timer;
         var constraints = window.constraints = {
             audio: false,
-            video: { facingMode: "environment" }
+            video: { facingMode: "environment" } // change to "user" for front camera, see https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints/facingMode
         };
         //  (HTML5 based camera only) this portion of code will be used when browser supports navigator.getUserMedia  *********     */
         window.addEventListener("DOMContentLoaded", function () {
