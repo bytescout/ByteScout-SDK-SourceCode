@@ -132,10 +132,12 @@
                     $("#upload").attr("value", "Upload");
                     if (data.d.length != 0) {
                         var htmlSelect = document.getElementById('OutListBoxHTML5');
-                        var selectBoxOption = document.createElement("option");
-                        selectBoxOption.text = data.d;
-                        selectBoxOption.id = "child";
-                        htmlSelect.insertBefore(selectBoxOption, htmlSelect.childNodes[0]);
+			    
+			//var selectBoxOption = document.createElement("option");
+	                //selectBoxOption.text = data.d;
+        	        //selectBoxOption.id = "child";
+                	//htmlSelect.insertBefore(selectBoxOption, htmlSelect.childNodes[0]);
+	                htmlSelect.value = data.d + "\r\n" + htmlSelect.value;			    			    
                     }
                 },
                 // on error just show the message that no barcodes were found
@@ -182,10 +184,12 @@
             });
             // add new result into the listbox 
             var htmlSelect = document.getElementById('OutListBoxFlash');
-            var selectBoxOption = document.createElement("option");
-            selectBoxOption.text = result;
-            selectBoxOption.id = "child";
-            htmlSelect.insertBefore(selectBoxOption, htmlSelect.childNodes[0]);
+            //var selectBoxOption = document.createElement("option");
+            //selectBoxOption.text = result;
+            //selectBoxOption.id = "child";
+            //htmlSelect.insertBefore(selectBoxOption, htmlSelect.childNodes[0]);		
+	    htmlSelect.value = result + "\r\n" + htmlSelect.value;	
+		
             // reset webcam and flash to capture new image. this reset process flickers a little
             webcam.reset();         
         }
@@ -245,8 +249,8 @@
         <span style=" font-size:20px; ">Output barcode values read appears below: </span>
         <br />
             <!-- decoding results appears in this listbox -->
-            <select style="width:500px; height:100px;" size="8" id="OutListBoxHTML5"> 
-            </select>
+            <textarea style="width:500px; height:100px;" size="8" id="OutListBoxHTML5"> 
+            </textarea>
         <br />
             <input id="snap"  style="color:black; font-weight:bold; font-size:x-large;" type="button" onclick="UploadToCloud();" value="START READING BARCODES..." />
             <input id="pause" style="color:black;" type="button" onclick="stopCall();" value="STOP" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <h4 id="report" >
@@ -300,7 +304,7 @@
         <br />
 
             <!-- decoding results appears in this listbox -->
-          <select style="width:500px; height:100px;" size="8" id="OutListBoxFlash"> </select>
+          <textarea style="width:500px; height:100px;" size="8" id="OutListBoxFlash"> </textarea>
     <br />
 		<input type="button"  style="color:black; font-weight:bold; font-size:x-large;" value="START READING BARCODES.." onclick="take_snapshot()"/> &nbsp;&nbsp;&nbsp;
         <br />

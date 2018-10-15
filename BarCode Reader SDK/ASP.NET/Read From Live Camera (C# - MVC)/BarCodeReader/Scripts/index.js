@@ -187,10 +187,11 @@ function my_completion_handler(msg) {
     });
     // add new result into the listbox 
     var htmlSelect = document.getElementById('OutListBoxFlash');
-    var selectBoxOption = document.createElement("option");
-    selectBoxOption.text = result;
-    selectBoxOption.id = "child";
-    htmlSelect.insertBefore(selectBoxOption, htmlSelect.childNodes[0]);
+    //var selectBoxOption = document.createElement("option");
+    //selectBoxOption.text = result;
+    //selectBoxOption.id = "child";
+    //htmlSelect.insertBefore(selectBoxOption, htmlSelect.childNodes[0]);
+    htmlSelect.value = result + "\r\n" + htmlSelect.value;	
     // reset webcam and flash to capture new image. this reset process flickers a little
     webcam.reset();
 }
