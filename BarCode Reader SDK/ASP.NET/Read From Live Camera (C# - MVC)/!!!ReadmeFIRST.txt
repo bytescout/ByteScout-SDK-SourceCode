@@ -1,6 +1,4 @@
-﻿Readme for live web cam barcode scanning ASP.NET demo 
-
-Supports all browsers by using 2 modes: 
+This sample supports all browsers by using 2 modes: 
 
 (required mode is automatically detected by the javascript)
 - HTML5 based web camera capture (supported by Google Chrome, Firefox, Safari, Safari on iOS browsers)
