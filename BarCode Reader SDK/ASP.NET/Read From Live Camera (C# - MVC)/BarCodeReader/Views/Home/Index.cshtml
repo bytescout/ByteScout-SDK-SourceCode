@@ -1,4 +1,4 @@
-﻿@using Bytescout.BarCodeReader
+@using Bytescout.BarCodeReader
 @{
     string scr = ViewBag.Img;
     FoundBarcode[] barcodes = ViewBag.Barcodes;
@@ -72,7 +72,7 @@
                         <span style=" font-size:20px; ">Output barcode values read appears below: </span>
                         <br />
                         <!-- decoding results appears in this listbox -->
-                        <select style="width:500px; height:100px;" size="8" id="OutListBoxHTML5"></select>
+                        <textarea style="width:500px; height:100px;" size="8" id="OutListBoxHTML5"></textarea>
                         <br />
                         <input id="snap" style="color:black; font-weight:bold; font-size:large;" type="button" onclick="UploadToCloud();" value="START READING BARCODES..." />
                         <input id="pause" style="color:black;" type="button" onclick="stopCall();" value="STOP" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <h4 id="report"></h4>

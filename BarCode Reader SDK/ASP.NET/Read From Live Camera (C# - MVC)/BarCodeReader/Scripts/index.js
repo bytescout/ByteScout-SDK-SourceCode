@@ -136,10 +136,11 @@ function UploadToCloud() {
             $("#upload").attr("value", "Upload");
             if (data.d.length != 0) {
                 var htmlSelect = document.getElementById('OutListBoxHTML5');
-                var selectBoxOption = document.createElement("option");
-                selectBoxOption.text = data.d;
-                selectBoxOption.id = "child";
-                htmlSelect.insertBefore(selectBoxOption, htmlSelect.childNodes[0]);
+                //var selectBoxOption = document.createElement("option");
+                //selectBoxOption.text = data.d;
+                //selectBoxOption.id = "child";
+                //htmlSelect.insertBefore(selectBoxOption, htmlSelect.childNodes[0]);
+                htmlSelect.value = data.d + "\r\n" + htmlSelect.value;
             }
         },
         // on error just show the message that no barcodes were found
