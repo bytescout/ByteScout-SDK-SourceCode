@@ -19,9 +19,9 @@ converter.RegistrationKey = "demo"
 
 MsgBox "The script will now convert 3 slides into Result.wmv video file"
 
-' set default in effect for slides (you can also set effects for each single slide)
-converter.Slides.DefaultSlideInEffect = 1 ' teFadeIn (1) - fades in effect for slides transition
-converter.Slides.DefaultSlideInEffectDuration = 500 ' 500 msec for in effect
+' Set default "in" effect for slides (you can also set effects for each slide separately)
+converter.Slides.DefaultSlideInEffect = 1 ' teFadeIn (1) - "fade-in" slides transition effect
+converter.Slides.DefaultSlideInEffectDuration = 500 ' "in" effect duration
 
 ' Add images and set the duration for every slide
 Set slide = converter.AddImageFromFileName("..\..\slide1.jpg")

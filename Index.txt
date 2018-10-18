@@ -935,12 +935,14 @@
 \Document Parser SDK\VBScript and VB6\Custom Template
 \Document Parser SDK\VBScript and VB6\General Example
 \Document Parser SDK\VBScript and VB6\Parse with OCR
+\Image To Video SDK\.NET Core
 \Image To Video SDK\ASP.NET
 \Image To Video SDK\C#
 \Image To Video SDK\C++
 \Image To Video SDK\VB.NET
 \Image To Video SDK\VB6
 \Image To Video SDK\VBScript
+\Image To Video SDK\.NET Core\NetCoreExample
 \Image To Video SDK\ASP.NET\Make Slideshow From Files In Folder (VB)
 \Image To Video SDK\ASP.NET\Make Slideshow From Uploaded Files (VB)
 \Image To Video SDK\ASP.NET\Simple Slideshow (C#)
@@ -1283,11 +1285,11 @@
 \PDF SDK\C#\Convert - HTML to DOCX
 \PDF SDK\C#\Convert - HTML to PDF
 \PDF SDK\C#\Convert - XML to PDF
-\PDF SDK\C#\Copy Pages From One Document To Another
 \PDF SDK\C#\Display Options
 \PDF SDK\C#\Document - Create New
 \PDF SDK\C#\Document - Information
 \PDF SDK\C#\Document - Load Existing
+\PDF SDK\C#\Document - Merge Two Documents
 \PDF SDK\C#\Drawing - Blend Mode
 \PDF SDK\C#\Drawing - Clipping
 \PDF SDK\C#\Drawing - Color Profiles
@@ -1344,11 +1346,11 @@
 \PDF SDK\VB.NET\Convert - HTML to DOCX
 \PDF SDK\VB.NET\Convert - HTML to PDF
 \PDF SDK\VB.NET\Convert - XML to PDF
-\PDF SDK\VB.NET\Copy Pages From One Document To Another
 \PDF SDK\VB.NET\Display Options
 \PDF SDK\VB.NET\Document - Create New
 \PDF SDK\VB.NET\Document - Information
 \PDF SDK\VB.NET\Document - Load Existing
+\PDF SDK\VB.NET\Document - Merge Two Documents
 \PDF SDK\VB.NET\Drawing - Blend Mode
 \PDF SDK\VB.NET\Drawing - Clipping
 \PDF SDK\VB.NET\Drawing - Color Profiles
