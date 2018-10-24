@@ -2060,6 +2060,7 @@
 \Watermarking SDK\VBScript\AnnotationWithMacros
 \Watermarking SDK\VBScript\SimpleText
 \_Showcases\Display PDF in browser and select area using PDF.js
+\_Showcases\Extract Text From Large PDF Document in Parallel Processing (C#)
 \_Showcases\Generate And Check QRCode With Image (C#)
 \_Showcases\Generate And Check QRCode With Image (VB.NET)
 \_Showcases\Generate Barcodes From Spreadsheet (VBScript)
