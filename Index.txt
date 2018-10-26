@@ -958,6 +958,7 @@
 \Image To Video SDK\C#\Conversion Progress GUI
 \Image To Video SDK\C#\Full Featured Demo
 \Image To Video SDK\C#\Multiple Videos At Once
+\Image To Video SDK\C#\Parallel Processing
 \Image To Video SDK\C#\Registration Free Deployment
 \Image To Video SDK\C#\Replace Audio
 \Image To Video SDK\C#\Set MP3 Audiotrack
@@ -965,6 +966,7 @@
 \Image To Video SDK\C#\Slide Effects
 \Image To Video SDK\C#\Transition Effects
 \Image To Video SDK\C#\WEBM Transition Effects
+\Image To Video SDK\C#\Parallel Processing\images
 \Image To Video SDK\C++\Slideshow-VS2005
 \Image To Video SDK\C++\Slideshow-VS2010
 \Image To Video SDK\C++\WebM Slideshow-VS2005
@@ -979,11 +981,13 @@
 \Image To Video SDK\VB.NET\Conversion Progress GUI
 \Image To Video SDK\VB.NET\Full Featured Demo
 \Image To Video SDK\VB.NET\Multiple Videos At Once
+\Image To Video SDK\VB.NET\Parallel Processing
 \Image To Video SDK\VB.NET\Set MP3 Audiotrack
 \Image To Video SDK\VB.NET\Simple Slideshow
 \Image To Video SDK\VB.NET\Slide Effects
 \Image To Video SDK\VB.NET\Transition Effects
 \Image To Video SDK\VB.NET\WEBM output
+\Image To Video SDK\VB.NET\Parallel Processing\images
 \Image To Video SDK\VB6\Simple
 \Image To Video SDK\VB6\WebM output
 \Image To Video SDK\VBScript\67 standard transition effects
@@ -1036,9 +1040,11 @@
 \PDF Extractor SDK\ASP.NET\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\C#\Batch Processing
 \PDF Extractor SDK\C#\Compare Documents
+\PDF Extractor SDK\C#\Data Masking
 \PDF Extractor SDK\C#\Detect Lines
 \PDF Extractor SDK\C#\Extract Attachments
 \PDF Extractor SDK\C#\Extract Audio
+\PDF Extractor SDK\C#\Extract CSV and Fill Database (SQL Server)
 \PDF Extractor SDK\C#\Extract Filled Form Data
 \PDF Extractor SDK\C#\Extract Images
 \PDF Extractor SDK\C#\Extract Images by Page
@@ -1086,7 +1092,9 @@
 \PDF Extractor SDK\C#\Remove Text
 \PDF Extractor SDK\C#\Repair Text
 \PDF Extractor SDK\C#\Rotate Document
+\PDF Extractor SDK\C#\SearchablePDFMaker Progress Indication
 \PDF Extractor SDK\C#\Split Document
+\PDF Extractor SDK\C#\TextExtractor Progress Indication
 \PDF Extractor SDK\C#\XFA Form To XML
 \PDF Extractor SDK\C#\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\C#\Index Documents In Folder\Files
@@ -1102,9 +1110,11 @@
 \PDF Extractor SDK\Powershell\PDF To JSON
 \PDF Extractor SDK\VB.NET\Batch Processing
 \PDF Extractor SDK\VB.NET\Compare Documents
+\PDF Extractor SDK\VB.NET\Data Masking
 \PDF Extractor SDK\VB.NET\Detect Lines
 \PDF Extractor SDK\VB.NET\Extract Attachments
 \PDF Extractor SDK\VB.NET\Extract Audio
+\PDF Extractor SDK\VB.NET\Extract CSV and Fill Database (SQL Server)
 \PDF Extractor SDK\VB.NET\Extract Filled Form Data
 \PDF Extractor SDK\VB.NET\Extract Images
 \PDF Extractor SDK\VB.NET\Extract Images by Page
@@ -1152,7 +1162,9 @@
 \PDF Extractor SDK\VB.NET\Remove Text
 \PDF Extractor SDK\VB.NET\Repair Text
 \PDF Extractor SDK\VB.NET\Rotate Document
+\PDF Extractor SDK\VB.NET\SearchablePDFMaker Progress Indication
 \PDF Extractor SDK\VB.NET\Split Document
+\PDF Extractor SDK\VB.NET\TextExtractor Progress Indication
 \PDF Extractor SDK\VB.NET\XFA Form To XML
 \PDF Extractor SDK\VB.NET\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\VB.NET\Index Documents In Folder\Files
@@ -1274,6 +1286,8 @@
 \PDF SDK\C#\Actions - Show-Hide Widget
 \PDF SDK\C#\Actions - Submit Form
 \PDF SDK\C#\Actions - URI (Link)
+\PDF SDK\C#\Add Header And Footer
+\PDF SDK\C#\Add Page Numbers
 \PDF SDK\C#\Annotations - 3D
 \PDF SDK\C#\Annotations - File Attachment
 \PDF SDK\C#\Annotations - Markup
@@ -1335,6 +1349,8 @@
 \PDF SDK\VB.NET\Actions - Show-Hide Widget
 \PDF SDK\VB.NET\Actions - Submit Form
 \PDF SDK\VB.NET\Actions - URI (Link)
+\PDF SDK\VB.NET\Add Header And Footer
+\PDF SDK\VB.NET\Add Page Numbers
 \PDF SDK\VB.NET\Annotations - 3D
 \PDF SDK\VB.NET\Annotations - File Attachment
 \PDF SDK\VB.NET\Annotations - Markup
@@ -1518,6 +1534,7 @@
 \Screen Capturing SDK\C#\Registration Free Deployment
 \Screen Capturing SDK\C#\Take Screenshots During Recording
 \Screen Capturing SDK\C#\Video Audio Settings
+\Screen Capturing SDK\C#\Video Quality Profiles
 \Screen Capturing SDK\C#\WEBM - Capture From Entire Screen
 \Screen Capturing SDK\C++ (managed)\Capture and Add Time Stamp
 \Screen Capturing SDK\C++ (managed)\Capture From Entire Screen
@@ -1550,6 +1567,7 @@
 \Screen Capturing SDK\VB.NET\Pause And Resume
 \Screen Capturing SDK\VB.NET\Take Screenshots During Recording
 \Screen Capturing SDK\VB.NET\Video Audio Settings
+\Screen Capturing SDK\VB.NET\Video Quality Profiles
 \Screen Capturing SDK\VB.NET\WEBM output - Capture From Entire Screen
 \Screen Capturing SDK\VBScript and VB6\Blackout Sensitive Info
 \Screen Capturing SDK\VBScript and VB6\Capture and Add Red Text
@@ -1678,6 +1696,7 @@
 \Spreadsheet SDK\C#\Read ODS (Open Office Calc) Files
 \Spreadsheet SDK\C#\Read TXT (tab delimited)
 \Spreadsheet SDK\C#\Read XLSX (Office 2007) Files
+\Spreadsheet SDK\C#\Read XML Spreadsheet (SpreadsheetML format)
 \Spreadsheet SDK\C#\Remove Columns from Existing Spreadsheet
 \Spreadsheet SDK\C#\Remove Rows from Existing Spreadsheet
 \Spreadsheet SDK\C#\Rename Worksheet
@@ -1797,6 +1816,7 @@
 \Spreadsheet SDK\VB.NET\Read Number Format In Cell
 \Spreadsheet SDK\VB.NET\Read ODS (Open Office Calc) Files
 \Spreadsheet SDK\VB.NET\Read XLSX (Office 2007) Files
+\Spreadsheet SDK\VB.NET\Read XML Spreadsheet (SpreadsheetML format)
 \Spreadsheet SDK\VB.NET\Remove Columns from Existing Spreadsheet
 \Spreadsheet SDK\VB.NET\Remove Rows from Existing Spreadsheet
 \Spreadsheet SDK\VB.NET\Rename Worksheet
