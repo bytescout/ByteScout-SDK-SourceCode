@@ -26,7 +26,7 @@ extractor.OutputPageWidth = 200
 extractor.LoadDocumentFromFile("..\..\sample2.pdf")
 
 ' Save extracted HTML to file
-extractor.SaveHtmlToFile("output.html")
+extractor.SaveHtmlToFile_2 "output.html"
 
 ' Open output file in default associated application
 Set shell = CreateObject("WScript.Shell")

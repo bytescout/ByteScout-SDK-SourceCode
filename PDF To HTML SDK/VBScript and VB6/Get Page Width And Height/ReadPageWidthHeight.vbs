@@ -26,7 +26,7 @@ extractor.LoadDocumentFromFile("..\..\sample2.pdf")
 MsgBox "Page #0" & vbCRLF & "Page height = " & CStr(extractor.GetPageHeight(0)) & vbCRLF & "Page width = " & CStr(extractor.GetPageWidth(0)) & vbCRLF & "Output width =" & CStr(extractor.OutputPageWidth) & vbCRLF & "Output Page Height = " & CStr(extractor.GetOutputHTMLPageHeight(0))
 
 ' uncomment to Convert pdf to HTML to file 
-' extractor.SaveHtmlToFile("output.html")
+' extractor.SaveHtmlToFile_2 "output.html"
 
 Set extractor = Nothing
 
