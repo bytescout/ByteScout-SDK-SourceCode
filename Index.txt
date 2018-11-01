@@ -744,6 +744,7 @@
 \Cloud API\PDF To Excel\PHP
 \Cloud API\PDF To Excel\PowerShell
 \Cloud API\PDF To Excel\VB.NET
+\Cloud API\PDF To Excel\C#\Advanced Conversion Options
 \Cloud API\PDF To Excel\C#\Convert PDF To XLS From Uploaded File
 \Cloud API\PDF To Excel\C#\Convert PDF To XLS From URL
 \Cloud API\PDF To Excel\C#\Convert PDF To XLS From URL Asynchronously
