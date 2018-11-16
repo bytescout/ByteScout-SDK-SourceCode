@@ -48,15 +48,18 @@ namespace ExportResults
             // 3a. Export found barcodes to plain text file in default character encoding
             reader.ExportFoundBarcodesToTXT("barcodes.txt");
 
-            // 3b. Export found barcodes to plain text file in custom character encoding
-            reader.ExportFoundBarcodesToTXT("barcodes2.txt", Encoding.UTF8);
+            // 3b. Export only values of found barcodes to plain text file in custom character encoding
+            reader.ExportFoundBarcodesToTXT("barcodes2.txt", true, Encoding.ASCII);
 
 
             // Get formatted result to a variable for further processing
             // =========================================================
 
-            // 1. Get found barcodes as XmlDocument
-            XmlDocument xmlDocument = reader.ExportFoundBarcodesToXML();
+            // 1a. Get found barcodes as XmlDocument
+            XmlDocument xmlDocument = reader.ExportFoundBarcodesToXMLDocument();
+
+            // 1b. Get found barcodes as XML string
+            string xmlString = reader.ExportFoundBarcodesToXML();
 
             // 2a. Get found barcodes as string in CSV format with default delimiter and quotation
             string csv = reader.ExportFoundBarcodesToCSV();
@@ -66,6 +69,9 @@ namespace ExportResults
 
             // 3. Get found barcodes as string in plain text format
             string txt = reader.ExportFoundBarcodesToTXT();
+            
+            // 4. Get found barcodes as string in JSON format
+            string jsonString = reader.ExportFoundBarcodesToJSON();
         }
     }
 }

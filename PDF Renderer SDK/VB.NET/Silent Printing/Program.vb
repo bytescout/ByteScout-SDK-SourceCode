@@ -15,16 +15,16 @@ Imports Bytescout.PDFRenderer
 
 
 Class Program
-	Friend Shared Sub Main(args As String())
+    Friend Shared Sub Main(args As String())
 
         Const PrinterName As String = "Microsoft Print to PDF"
 
         ' Create an instance of Bytescout.PDFRenderer.DocumentPrinter object and register it.
         Dim documentPrinter As New DocumentPrinter()
-		documentPrinter.RegistrationName = "demo"
-		documentPrinter.RegistrationKey = "demo"
+        documentPrinter.RegistrationName = "demo"
+        documentPrinter.RegistrationKey = "demo"
 
-		' Load PDF document.
+        ' Load PDF document.
         documentPrinter.LoadDocumentFromFile("multipage.pdf")
 
         ' Change some printing options for demo purposes 
@@ -49,5 +49,5 @@ Class Program
 
         documentPrinter.Dispose()
 
-	End Sub
+    End Sub
 End Class

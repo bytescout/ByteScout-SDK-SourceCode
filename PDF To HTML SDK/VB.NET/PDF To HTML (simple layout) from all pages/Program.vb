@@ -13,14 +13,14 @@
 Imports Bytescout.PDF2HTML
 
 Class Program
-	Friend Shared Sub Main(args As String())
+    Friend Shared Sub Main(args As String())
 
         ' Create Bytescout.PDF2HTML.HTMLExtractor instance
         Dim extractor As New HTMLExtractor()
-		extractor.RegistrationName = "demo"
-		extractor.RegistrationKey = "demo"
+        extractor.RegistrationName = "demo"
+        extractor.RegistrationKey = "demo"
 
-		' Load sample PDF document
+        ' Load sample PDF document
         extractor.LoadDocumentFromFile("sample2.pdf")
 
         ' Set plain HTML extraction mode
@@ -29,7 +29,10 @@ Class Program
         ' Save extracted HTML to file
         extractor.SaveHtmlToFile("output.html")
 
-		' Open output file in default associated application
+        ' Cleanup
+        extractor.Dispose();
+
+        ' Open output file in default associated application
         System.Diagnostics.Process.Start("output.html")
-	End Sub
+    End Sub
 End Class

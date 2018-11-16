@@ -25,25 +25,28 @@ Module Module1
         ' Load PDF document
         renderer.LoadDocumentFromFile("multipage.pdf")
 
-		' Get size of the page in Points (standard PDF document units; 1 Point = 1/72")
-		Dim rectangle As RectangleF = renderer.GetPageRectangle(0)
+        ' Get size of the page in Points (standard PDF document units; 1 Point = 1/72")
+        Dim rectangle As RectangleF = renderer.GetPageRectangle(0)
 
-		Dim width, height As Integer
+        Dim width, height As Integer
 
         If rectangle.Width < rectangle.Height Then ' portrait page orientation
 
-			width = -1 ' width will be calculated from height keeping the aspect ratio
-			height = 100
+            width = -1 ' width will be calculated from height keeping the aspect ratio
+            height = 100
 
         Else ' landscape page orientation
 
-			width = 100
-			height = -1	' height will be calculated from width keeping the aspect ratio
+            width = 100
+            height = -1	' height will be calculated from width keeping the aspect ratio
 
         End If
 
         ' Render first page of the document to JPEG image file
-		renderer.Save("thumbnail.jpg", RasterImageFormat.JPEG, 0, width, height)
+        renderer.Save("thumbnail.jpg", RasterImageFormat.JPEG, 0, width, height)
+
+        ' Cleanup
+        renderer.Dispose()
 
         ' Open the output image file in default image viewer
         System.Diagnostics.Process.Start("thumbnail.jpg")

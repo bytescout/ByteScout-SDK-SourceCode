@@ -28,7 +28,7 @@ namespace ConsoleApplication1
             extractor.RegistrationKey = "demo";
 
             // Load sample PDF document
-            extractor.LoadDocumentFromFile("sample3.pdf");
+            extractor.LoadDocumentFromFile("xfdf-form.pdf");
 
             extractor.SaveXFDFToFile("output.xml");
 

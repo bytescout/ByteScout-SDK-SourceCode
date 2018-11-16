@@ -15,26 +15,29 @@ using Bytescout.PDF2HTML;
 
 namespace ExtractHTMLFromPage
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			// Create Bytescout.PDF2HTML.HTMLExtractor instance
-			HTMLExtractor extractor = new HTMLExtractor();
-			extractor.RegistrationName = "demo";
-			extractor.RegistrationKey = "demo";
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create Bytescout.PDF2HTML.HTMLExtractor instance
+            HTMLExtractor extractor = new HTMLExtractor();
+            extractor.RegistrationName = "demo";
+            extractor.RegistrationKey = "demo";
 
-			// Set HTML with CSS extraction mode
-			extractor.ExtractionMode = HTMLExtractionMode.HTMLWithCSS;
+            // Set HTML with CSS extraction mode
+            extractor.ExtractionMode = HTMLExtractionMode.HTMLWithCSS;
 
-			// Load sample PDF document
-			extractor.LoadDocumentFromFile("sample2.pdf");
+            // Load sample PDF document
+            extractor.LoadDocumentFromFile("sample2.pdf");
 
-			// Convert 2-nd page to HTML and save it to file
-			extractor.SaveHtmlPageToFile(1, "output.html");
+            // Convert 2-nd page to HTML and save it to file
+            extractor.SaveHtmlPageToFile(1, "output.html");
 
-			// Open output file in default associated application
-			System.Diagnostics.Process.Start("output.html");
-		}
-	}
+            // Cleanup
+            extractor.Dispose();
+
+            // Open output file in default associated application
+            System.Diagnostics.Process.Start("output.html");
+        }
+    }
 }

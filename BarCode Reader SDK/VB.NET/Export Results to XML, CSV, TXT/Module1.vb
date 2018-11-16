@@ -46,15 +46,18 @@ Module Module1
         ' 3a. Export found barcodes to plain text file in default character encoding
         reader.ExportFoundBarcodesToTXT("barcodes.txt")
 
-        ' 3b. Export found barcodes to plain text file in custom character encoding
-        reader.ExportFoundBarcodesToTXT("barcodes2.txt", Encoding.UTF8)
+        ' 3b. Export only values of found barcodes to plain text file in custom character encoding
+        reader.ExportFoundBarcodesToTXT("barcodes2.txt", True, Encoding.ASCII)
 
 
         ' Get formatted result to a variable for further processing
         ' =========================================================
 
-        ' 1. Get found barcodes as XmlDocument
-        Dim xmlDocument As XmlDocument = reader.ExportFoundBarcodesToXML()
+        ' 1a. Get found barcodes as XmlDocument
+        Dim xmlDocument As XmlDocument = reader.ExportFoundBarcodesToXMLDocument()
+
+        ' 1b. Get found barcodes as XML string
+        Dim xmlString = reader.ExportFoundBarcodesToXML()
 
         ' 2a. Get found barcodes as string in CSV format with default delimiter and quotation
         Dim csv As String = reader.ExportFoundBarcodesToCSV()
@@ -64,6 +67,9 @@ Module Module1
 
         ' 3. Get found barcodes as string in plain text format
         Dim txt As String = reader.ExportFoundBarcodesToTXT()
+
+        ' 4. Get found barcodes as string in JSON format
+        Dim jsonString = reader.ExportFoundBarcodesToJSON()
 
     End Sub
 

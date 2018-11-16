@@ -18,21 +18,21 @@ using Bytescout.PDFRenderer;
 
 namespace PDF2PNG
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			// Create an instance of Bytescout.PDFRenderer.RasterRenderer object and register it.
-			RasterRenderer renderer = new RasterRenderer();
-			renderer.RegistrationName = "demo";
-			renderer.RegistrationKey = "demo";
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create an instance of Bytescout.PDFRenderer.RasterRenderer object and register it.
+            RasterRenderer renderer = new RasterRenderer();
+            renderer.RegistrationName = "demo";
+            renderer.RegistrationKey = "demo";
 
-			// Load PDF document.
-			renderer.LoadDocumentFromFile("multipage.pdf");
+            // Load PDF document.
+            renderer.LoadDocumentFromFile("multipage.pdf");
 
             // Iterate through pages
-			for (int i = 0; i < renderer.GetPageCount(); i++)
-			{
+            for (int i = 0; i < renderer.GetPageCount(); i++)
+            {
                 using (MemoryStream memoryStream = new MemoryStream())
                 {
                     // Render document page and save to memory stream
@@ -43,11 +43,14 @@ namespace PDF2PNG
                     // Save image to file
                     pngImg.Save(i + ".png");
                 }
-			}
+            }
 
-			// Open the first output file in default image viewer.
+            // Cleanup
+            renderer.Dispose();
+
+            // Open the first output file in default image viewer.
             // open the very first page
-			System.Diagnostics.Process.Start("0.png");
-		}
-	}
+            System.Diagnostics.Process.Start("0.png");
+        }
+    }
 }

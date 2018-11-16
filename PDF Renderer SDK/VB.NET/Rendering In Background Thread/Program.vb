@@ -41,7 +41,7 @@ Class Program
         Console.ReadKey()
     End Sub
 
-	' Rendering thread function
+    ' Rendering thread function
     Private Shared Sub BackgroundThreadProc(data As Object)
 
         Dim fileName As String = DirectCast(data, String)
@@ -52,14 +52,14 @@ Class Program
                 renderer.LoadDocumentFromFile(fileName)
 
                 ' Setup rendering
-				Dim renderingOptions As New RenderingOptions()
-				renderingOptions.JPEGQuality = 90
+                Dim renderingOptions As New RenderingOptions()
+                renderingOptions.JPEGQuality = 90
 
-				Dim renderingResolution As Single = 300
+                Dim renderingResolution As Single = 300
 
                 ' Render document pages
                 For i As Integer = 0 To renderer.GetPageCount() - 1
-					renderer.Save(fileName & ".page" & i & ".jpg", RasterImageFormat.JPEG, i, renderingResolution, renderingOptions)
+                    renderer.Save(fileName & ".page" & i & ".jpg", RasterImageFormat.JPEG, i, renderingResolution, renderingOptions)
                 Next
             End Using
 

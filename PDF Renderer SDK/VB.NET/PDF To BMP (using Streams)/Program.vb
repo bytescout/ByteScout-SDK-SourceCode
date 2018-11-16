@@ -16,7 +16,7 @@ Imports System.IO
 
 
 Class Program
-	Friend Shared Sub Main(args As String())
+    Friend Shared Sub Main(args As String())
 
         Dim srcStream = New FileStream("multipage.pdf", FileMode.Open)
 

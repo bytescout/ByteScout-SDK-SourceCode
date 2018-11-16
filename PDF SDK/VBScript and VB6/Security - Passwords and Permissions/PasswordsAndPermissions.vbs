@@ -22,9 +22,12 @@ pdfDocument.RegistrationKey = "demo"
 
 Set comHelpers = pdfDocument.ComHelpers
 
-' Add page
+' Create document
 Set page1 = comHelpers.CreatePage(comHelpers.PAPERFORMAT_A4)
 pdfDocument.Pages.Add(page1)
+' or load existing one:
+'pdfDocument.Load "c:\test\some-document.pdf"
+
 
 ' Set document encryption algorythm
 pdfDocument.Security.EncryptionAlgorithm = comHelpers.ENCRYPTIONALGORITHM_RC4_40BIT
@@ -40,7 +43,7 @@ pdfDocument.Security.OwnerPassword = "ownerpassword"
 ' Set user password
 pdfDocument.Security.UserPassword = "userpassword"
 
-' Save document to file
+' Save protected document to file
 pdfDocument.Save("result.pdf")
 
 ' Open document in default PDF viewer app

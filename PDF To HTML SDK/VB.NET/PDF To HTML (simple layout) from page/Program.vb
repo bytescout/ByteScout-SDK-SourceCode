@@ -13,12 +13,12 @@
 Imports Bytescout.PDF2HTML
 
 Class Program
-	Friend Shared Sub Main(args As String())
+    Friend Shared Sub Main(args As String())
 
         ' Create Bytescout.PDF2HTML.HTMLExtractor instance
         Dim extractor As New HTMLExtractor()
-		extractor.RegistrationName = "demo"
-		extractor.RegistrationKey = "demo"
+        extractor.RegistrationName = "demo"
+        extractor.RegistrationKey = "demo"
 
         ' Set plain HTML extraction mode
         extractor.ExtractionMode = HTMLExtractionMode.PlainHTML
@@ -29,8 +29,11 @@ Class Program
         ' Convert 2-nd page to HTML and save it to file
         extractor.SaveHtmlPageToFile(1, "output.html")
 
+        ' Cleanup
+        extractor.Dispose();
+
         ' Open output file in default associated application
         System.Diagnostics.Process.Start("output.html")
 
-	End Sub
+    End Sub
 End Class

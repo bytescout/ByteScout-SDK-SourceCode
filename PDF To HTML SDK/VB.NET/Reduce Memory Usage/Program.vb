@@ -13,7 +13,7 @@
 Imports Bytescout.PDF2HTML
 
 Class Program
-	Friend Shared Sub Main(args As String())
+    Friend Shared Sub Main(args As String())
 
         ' When processing huge PDF documents you may run into OutOfMemoryException.
         ' This example demonstrates a way to spare the memory by disabling page data caching.
