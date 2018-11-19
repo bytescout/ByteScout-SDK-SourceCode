@@ -262,6 +262,7 @@
 \BarCode SDK\C#\Generate Barcode from Service
 \BarCode SDK\C#\Generate Barcodes from Database
 \BarCode SDK\C#\Generate Barcodes from Excel
+\BarCode SDK\C#\Generate PharmaCode
 \BarCode SDK\C#\Generate vCard QR Code
 \BarCode SDK\C#\GenerateWordDocumentWithBarcodes
 \BarCode SDK\C#\GS1 DataBar Expanded
@@ -374,6 +375,7 @@
 \BarCode SDK\VB.NET\Generate Barcode from Service
 \BarCode SDK\VB.NET\Generate Barcodes from Database
 \BarCode SDK\VB.NET\Generate Barcodes from Excel
+\BarCode SDK\VB.NET\Generate PharmaCode
 \BarCode SDK\VB.NET\Generate vCard QR Code
 \BarCode SDK\VB.NET\GenerateWordDocumentWithBarcodes
 \BarCode SDK\VB.NET\GS1 Datamatrix
@@ -1059,14 +1061,18 @@
 \PDF Extractor SDK\C#\Extract Text From Page Area
 \PDF Extractor SDK\C#\Extract To Stream
 \PDF Extractor SDK\C#\Extract Video
+\PDF Extractor SDK\C#\Find Email Addresses (with Regex)
 \PDF Extractor SDK\C#\Find Keyword And Extract Page
 \PDF Extractor SDK\C#\Find Keyword And Extract Text
+\PDF Extractor SDK\C#\Find Phone Number (with Regex)
+\PDF Extractor SDK\C#\Find SSN Number (with Regex)
 \PDF Extractor SDK\C#\Find Table And Extract As CSV
 \PDF Extractor SDK\C#\Find Table And Extract As XML
 \PDF Extractor SDK\C#\Find Text
 \PDF Extractor SDK\C#\Find Text (Regex)
 \PDF Extractor SDK\C#\Find Text - Smart Match
 \PDF Extractor SDK\C#\Find Text With Hyphens
+\PDF Extractor SDK\C#\Find US Address (with Regex)
 \PDF Extractor SDK\C#\Index Documents In Folder
 \PDF Extractor SDK\C#\Index PDF Files
 \PDF Extractor SDK\C#\Invoice Parsing
@@ -1131,14 +1137,18 @@
 \PDF Extractor SDK\VB.NET\Extract Text From Page Area
 \PDF Extractor SDK\VB.NET\Extract To Stream
 \PDF Extractor SDK\VB.NET\Extract Video
+\PDF Extractor SDK\VB.NET\Find Email Addresses (with Regex)
 \PDF Extractor SDK\VB.NET\Find Keyword And Extract Page
 \PDF Extractor SDK\VB.NET\Find Keyword And Extract Text
+\PDF Extractor SDK\VB.NET\Find Phone Number (with Regex)
+\PDF Extractor SDK\VB.NET\Find SSN Number (with Regex)
 \PDF Extractor SDK\VB.NET\Find Table And Extract As CSV
 \PDF Extractor SDK\VB.NET\Find Table And Extract As XML
 \PDF Extractor SDK\VB.NET\Find Text
 \PDF Extractor SDK\VB.NET\Find Text (Regex)
 \PDF Extractor SDK\VB.NET\Find Text - Smart Match
 \PDF Extractor SDK\VB.NET\Find Text With Hyphens
+\PDF Extractor SDK\VB.NET\Find US Address (with Regex)
 \PDF Extractor SDK\VB.NET\Index Documents In Folder
 \PDF Extractor SDK\VB.NET\Index PDF Files
 \PDF Extractor SDK\VB.NET\Invoice Parsing
@@ -1322,6 +1332,13 @@
 \PDF SDK\C#\Drawing - Tiling Patterns
 \PDF SDK\C#\Drawing - Transformations
 \PDF SDK\C#\Drawing - Transparency
+\PDF SDK\C#\Email to PDF (EmailWithAttachment)
+\PDF SDK\C#\Email to PDF (HTML Email With Attachments)
+\PDF SDK\C#\Email to PDF (HTML Email)
+\PDF SDK\C#\Email to PDF (RTF Email With Attachments)
+\PDF SDK\C#\Email to PDF (RTF Email)
+\PDF SDK\C#\Email to PDF (Text Email With Attachments)
+\PDF SDK\C#\Email to PDF (Text Email)
 \PDF SDK\C#\Forms - Button
 \PDF SDK\C#\Forms - CheckBox
 \PDF SDK\C#\Forms - ComboBox
@@ -1385,6 +1402,13 @@
 \PDF SDK\VB.NET\Drawing - Tiling Patterns
 \PDF SDK\VB.NET\Drawing - Transformations
 \PDF SDK\VB.NET\Drawing - Transparency
+\PDF SDK\VB.NET\Email to PDF (EmailWithAttachment)
+\PDF SDK\VB.NET\Email to PDF (HTML Email With Attachments)
+\PDF SDK\VB.NET\Email to PDF (HTML Email)
+\PDF SDK\VB.NET\Email to PDF (RTF Email With Attachments)
+\PDF SDK\VB.NET\Email to PDF (RTF Email)
+\PDF SDK\VB.NET\Email to PDF (Text Email With Attachments)
+\PDF SDK\VB.NET\Email to PDF (Text Email)
 \PDF SDK\VB.NET\Forms - Button
 \PDF SDK\VB.NET\Forms - CheckBox
 \PDF SDK\VB.NET\Forms - ComboBox
@@ -1678,6 +1702,7 @@
 \Spreadsheet SDK\C#\Font Style In Cell
 \Spreadsheet SDK\C#\Fonts Available For Cells
 \Spreadsheet SDK\C#\Freeze Rows And Columns
+\Spreadsheet SDK\C#\Generate Invoice
 \Spreadsheet SDK\C#\Get Cell Color
 \Spreadsheet SDK\C#\Hello World
 \Spreadsheet SDK\C#\Hidden Formula
@@ -1800,6 +1825,7 @@
 \Spreadsheet SDK\VB.NET\Font Style In Cell
 \Spreadsheet SDK\VB.NET\Fonts Available For Cells
 \Spreadsheet SDK\VB.NET\Freeze Rows And Columns
+\Spreadsheet SDK\VB.NET\Generate Invoice
 \Spreadsheet SDK\VB.NET\Get Cell Color
 \Spreadsheet SDK\VB.NET\Hello World
 \Spreadsheet SDK\VB.NET\Hidden Formula
