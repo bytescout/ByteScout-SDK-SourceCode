@@ -10,6 +10,7 @@
 //*******************************************************************************************//
 
 
+using System.Diagnostics;
 using Bytescout.PDFExtractor;
 
 // To make OCR work you should add to your project references to Bytescout.PDFExtractor.dll and Bytescout.PDFExtractor.OCRExtension.dll 
@@ -44,7 +45,9 @@ namespace MakeSearchablePDF
             searchablePDFMaker.Dispose();
 
             // Open output file in default associated application
-            System.Diagnostics.Process.Start("output.pdf");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("output.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

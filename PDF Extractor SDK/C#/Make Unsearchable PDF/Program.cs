@@ -10,6 +10,7 @@
 //*******************************************************************************************//
 
 
+using System.Diagnostics;
 using Bytescout.PDFExtractor;
 
 namespace MakeUnsearchablePDF
@@ -38,7 +39,9 @@ namespace MakeUnsearchablePDF
             unsearchablePDFMaker.Dispose();
 
             // Open the result PDF file in default associated application
-            System.Diagnostics.Process.Start("result.pdf");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

@@ -15,34 +15,36 @@ using Bytescout.PDF;
 
 namespace AudioAnnotation
 {
-	/// <summary>
-	/// This example demonstrates how to add an audio annotaion.
-	/// </summary>
-	class Program
-	{
-		static void Main()
-		{
-			// Create new document
-			Document pdfDocument = new Document();
-			pdfDocument.RegistrationName = "demo";
-			pdfDocument.RegistrationKey = "demo";
-			// Add page
-			Page page = new Page(PaperFormat.A4);
-			pdfDocument.Pages.Add(page);
+    /// <summary>
+    /// This example demonstrates how to add an audio annotaion.
+    /// </summary>
+    class Program
+    {
+        static void Main()
+        {
+            // Create new document
+            Document pdfDocument = new Document();
+            pdfDocument.RegistrationName = "demo";
+            pdfDocument.RegistrationKey = "demo";
+            // Add page
+            Page page = new Page(PaperFormat.A4);
+            pdfDocument.Pages.Add(page);
 
-			// Add sound annotation
-			Sound sound = new Sound("sample.wav");
-			SoundAnnotation soundAnnotation = new SoundAnnotation(sound, 20, 20, 20, 20);
-			page.Annotations.Add(soundAnnotation);
-			
-			// Save document to file
-			pdfDocument.Save("result.pdf");
+            // Add sound annotation
+            Sound sound = new Sound("sample.wav");
+            SoundAnnotation soundAnnotation = new SoundAnnotation(sound, 20, 20, 20, 20);
+            page.Annotations.Add(soundAnnotation);
+            
+            // Save document to file
+            pdfDocument.Save("result.pdf");
 
-			// Cleanup 
-			pdfDocument.Dispose();
+            // Cleanup 
+            pdfDocument.Dispose();
 
-			// Open document in default PDF viewer app
-			Process.Start("result.pdf");
-		}
-	}
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
+        }
+    }
 }

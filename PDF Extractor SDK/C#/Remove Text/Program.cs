@@ -11,7 +11,6 @@
 
 
 using System;
-using System.Diagnostics;
 using System.Drawing;
 using Bytescout.PDFExtractor;
 
@@ -44,14 +43,6 @@ namespace RemoveText
             
             // Clean up.
             remover.Dispose();
-
-            Console.WriteLine();
-            Console.WriteLine("Press any key to continue and open result PDF files in default PDF viewer...");
-            Console.ReadKey();
-
-            Process.Start("result1.pdf");
-            Process.Start("result2.pdf");
-            Process.Start("result3.pdf");
         }
     }
 }

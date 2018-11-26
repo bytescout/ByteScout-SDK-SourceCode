@@ -10,6 +10,7 @@
 //*******************************************************************************************//
 
 
+using System.Diagnostics;
 using Bytescout.PDFExtractor;
 
 namespace FindTableAndExtractAsXml
@@ -64,7 +65,9 @@ namespace FindTableAndExtractAsXml
             tableDetector.Dispose();
 
             // Open first output file in default associated application (for demo purposes)
-            System.Diagnostics.Process.Start("page-0-table-1.xml");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("page-0-table-1.xml");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

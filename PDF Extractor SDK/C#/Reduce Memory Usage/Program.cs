@@ -12,6 +12,7 @@
 
 using System;
 using System.IO;
+using System.Diagnostics;
 using Bytescout.PDFExtractor;
 
 namespace ReduceMemoryUsage
@@ -43,8 +44,10 @@ namespace ReduceMemoryUsage
                 }
             }
 
-            // Open the output file in default associated application
-            System.Diagnostics.Process.Start("output.txt");
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("output.txt");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

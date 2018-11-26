@@ -13,8 +13,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Bytescout.PDFExtractor;
 using System.Diagnostics;
+using Bytescout.PDFExtractor;
 
 namespace ConsoleApplication1
 {
@@ -37,7 +37,7 @@ namespace ConsoleApplication1
             extractor.SaveCSVToFile("output.csv");
 
             // Cleanup
-			extractor.Dispose();
+            extractor.Dispose();
 
             Console.WriteLine();
             Console.WriteLine("Data has been extracted to 'output.csv' file.");
@@ -45,8 +45,10 @@ namespace ConsoleApplication1
             Console.WriteLine("Press any key to continue and open CSV in default CSV viewer (or Excel)...");
             Console.ReadKey();
 
-            // Open result file in default associated application (for demo purposes)
-            Process.Start("output.csv");
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("output.csv");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

@@ -12,7 +12,7 @@ fields:
     expression: Invoice Number:\s+(\w+)
   dateIssued:
     expression: Issue date:\s+([a-zA-Z]{3} \d+, \d{4})
-    type: dateTime
+    type: date
     dateFormat: MMM d, yyyy
   total:
     expression: Amount due in USD:\s+(\d+\.\d\d)

@@ -10,6 +10,7 @@
 //*******************************************************************************************//
 
 
+using System.Diagnostics;
 using Bytescout.PDFRenderer;
 
 namespace PDF2TIFF
@@ -37,8 +38,10 @@ namespace PDF2TIFF
             // Cleanup
             renderer.Dispose();
 
-            // Open the first output file in default image viewer.
-            System.Diagnostics.Process.Start("multipage.tiff");
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("multipage.tiff");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

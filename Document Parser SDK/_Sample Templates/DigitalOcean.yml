@@ -13,7 +13,7 @@ fields:
     type: decimal
   dateIssued: 
     expression: 'Date Issued: (\w+ \d{1,2}, \d{4})'
-    type: dateTime
+    type: date
     dateFormat: MMMM d, yyyy
   invoiceId: 
     expression: 'Invoice Number: (\d+)'

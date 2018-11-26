@@ -38,8 +38,10 @@ namespace PDF2JPEG
             // Cleanup
             renderer.Dispose();
 
-            // Open the first output file in default image viewer.
-            Process.Start("image0.jpg");
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("image0.jpg");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

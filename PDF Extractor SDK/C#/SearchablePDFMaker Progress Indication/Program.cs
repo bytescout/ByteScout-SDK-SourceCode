@@ -10,8 +10,9 @@
 //*******************************************************************************************//
 
 
-using Bytescout.PDFExtractor;
 using System;
+using System.Diagnostics;
+using Bytescout.PDFExtractor;
 
 namespace SearchablePDFMakerProgressChangedEvent
 {
@@ -42,8 +43,10 @@ namespace SearchablePDFMakerProgressChangedEvent
                     // Save extracted text to file
                     searchablePDFMaker.MakePDFSearchable("output.pdf");
 
-                    // Open output file in default associated application
-                    System.Diagnostics.Process.Start("output.pdf");
+                    // Open result document in default associated application (for demo purpose)
+                    ProcessStartInfo processStartInfo = new ProcessStartInfo("output.pdf");
+                    processStartInfo.UseShellExecute = true;
+                    Process.Start(processStartInfo);
                 }
 
             }
@@ -52,7 +55,7 @@ namespace SearchablePDFMakerProgressChangedEvent
                 Console.WriteLine(ex.Message);
             }
 
-			Console.WriteLine("\n\n Press enter key to exit...");
+            Console.WriteLine("\n\n Press enter key to exit...");
             Console.ReadLine();
         }
 

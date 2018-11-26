@@ -15,31 +15,31 @@ using Bytescout.PDF;
 
 namespace InvisibleTextOverImage
 {
-	/// <summary>
-	/// This example demonstrates how to create PDF document from scanned document image and add invisible text over it. 
-	/// </summary>
-	class Program
-	{
-		static void Main()
-		{
-			// Create new PDF document
-			Document pdfDocument = new Document();
-			pdfDocument.RegistrationName = "demo";
-			pdfDocument.RegistrationKey = "demo";
+    /// <summary>
+    /// This example demonstrates how to create PDF document from scanned document image and add invisible text over it. 
+    /// </summary>
+    class Program
+    {
+        static void Main()
+        {
+            // Create new PDF document
+            Document pdfDocument = new Document();
+            pdfDocument.RegistrationName = "demo";
+            pdfDocument.RegistrationKey = "demo";
 
 
             // Load image from file to System.Drawing.Image object (we need it to get the image resolution)
             System.Drawing.Image sysImage = System.Drawing.Image.FromFile(@".\scanned-invoice.png");
             // Compute image size in PDF units (Points)
-		    float widthInPoints = sysImage.Width / sysImage.HorizontalResolution * 72f;
-		    float heightInPoints = sysImage.Height / sysImage.VerticalResolution * 72f;
+            float widthInPoints = sysImage.Width / sysImage.HorizontalResolution * 72f;
+            float heightInPoints = sysImage.Height / sysImage.VerticalResolution * 72f;
 
             // Create page of computed size
             Page page = new Page(widthInPoints, heightInPoints);
             // Add page to the document
-		    pdfDocument.Pages.Add(page);
+            pdfDocument.Pages.Add(page);
 
-		    Canvas canvas = page.Canvas;
+            Canvas canvas = page.Canvas;
 
             // Create Bytescout.PDF.Image object from loaded image
             Image pdfImage = new Image(sysImage);
@@ -52,24 +52,26 @@ namespace InvisibleTextOverImage
             // Create brush
             SolidBrush transparentBrush = new SolidBrush(new ColorGray(0));
             // ... and make it transparent
-		    transparentBrush.Opacity = 0;
+            transparentBrush.Opacity = 0;
 
             // Draw text with transparent brush
             Font font16 = new Font(StandardFonts.Helvetica, 16);
             canvas.DrawString("Your Company Name", font16, transparentBrush, 40, 40);
             // Draw another text
-		    Font font10 = new Font(StandardFonts.Helvetica, 10);
-		    canvas.DrawString("Your Address", font10, transparentBrush, 40, 80);
+            Font font10 = new Font(StandardFonts.Helvetica, 10);
+            canvas.DrawString("Your Address", font10, transparentBrush, 40, 80);
 
             
-		    // Save document to file
+            // Save document to file
             pdfDocument.Save("result.pdf");
 
-			// Cleanup 
-			pdfDocument.Dispose();
+            // Cleanup 
+            pdfDocument.Dispose();
 
-			// Open document in default PDF viewer app
-			Process.Start("result.pdf");
-		}
-	}
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
+        }
+    }
 }

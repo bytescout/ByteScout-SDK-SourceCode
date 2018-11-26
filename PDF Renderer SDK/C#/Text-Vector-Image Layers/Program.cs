@@ -11,7 +11,7 @@
 
 
 using System;
-
+using System.Diagnostics;
 using Bytescout.PDFRenderer;
 
 
@@ -47,8 +47,10 @@ namespace PDF2PNG
             // Cleanup
             renderer.Dispose();
 
-            // Open the first output file in default image viewer.
-            System.Diagnostics.Process.Start("image0.png");
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("image0.png");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

@@ -33,7 +33,7 @@ namespace ConsoleApplication1
             extractor.SaveJSONToFile("output.json");
 
             // Cleanup
-			extractor.Dispose();
+            extractor.Dispose();
 
             Console.WriteLine();
             Console.WriteLine("Data has been extracted to 'output.json' file.");
@@ -41,7 +41,9 @@ namespace ConsoleApplication1
             Console.WriteLine("Press any key to continue and open JSON in default viewer...");
             Console.ReadKey();
 
-            Process.Start("output.json");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("output.json");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

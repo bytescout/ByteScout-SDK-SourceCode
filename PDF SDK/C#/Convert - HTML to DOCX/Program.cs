@@ -15,17 +15,19 @@ using Bytescout.PDF.Converters;
 
 namespace ConvertHtmlToDocx
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			using (HtmlToDocxConverter converter = new HtmlToDocxConverter())
-			{
-				converter.ConvertHtmlToDocx("sample.html", "result.docx");
-			}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            using (HtmlToDocxConverter converter = new HtmlToDocxConverter())
+            {
+                converter.ConvertHtmlToDocx("sample.html", "result.docx");
+            }
 
-			// Open result file in default DOCX associated application
-			Process.Start("result.docx");
-		}
-	}
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result.docx");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
+        }
+    }
 }

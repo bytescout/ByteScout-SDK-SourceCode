@@ -79,8 +79,10 @@ namespace RemoveEmptyPagesExample
             Directory.Delete(TempFolder, true);
 
 
-            // Open the result file in default PDF viewer (for demo purposes)
-            Process.Start(OutputFile);
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo(OutputFile);
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

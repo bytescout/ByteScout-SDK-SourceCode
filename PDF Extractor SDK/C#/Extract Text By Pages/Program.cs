@@ -12,6 +12,7 @@
 
 using System;
 using Bytescout.PDFExtractor;
+using System.Diagnostics;
 
 namespace ExtractTextByPages
 {
@@ -42,7 +43,9 @@ namespace ExtractTextByPages
 			extractor.Dispose();
 
 			// Open first output file in default associated application
-			System.Diagnostics.Process.Start(@".\page1.txt");
+			ProcessStartInfo processStartInfo = new ProcessStartInfo(@".\page1.txt");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
 		}
 	}
 }

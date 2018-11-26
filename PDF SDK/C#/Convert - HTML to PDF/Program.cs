@@ -17,25 +17,27 @@ using Bytescout.PDF.Converters;
 
 namespace ConvertHtmlToPdf
 {
-	class Program
-	{
-	    [STAThread]
+    class Program
+    {
+        [STAThread]
         static void Main(string[] args)
-		{
-			using (HtmlToPdfConverter converter = new HtmlToPdfConverter())
-			{
-				converter.PageSize = PaperKind.A4;
-				converter.Orientation = PaperOrientation.Portrait;
-				converter.Footer = "<p style=\"color: blue;\">FOOTER TEXT</p>";
-				
-				converter.ConvertHtmlToPdf("sample.html", "result.pdf");
-				
-				// You can also pass a link instead of the input file:  
-				//converter.ConvertHtmlToPdf("http://google.com", "result.pdf");
-			}
+        {
+            using (HtmlToPdfConverter converter = new HtmlToPdfConverter())
+            {
+                converter.PageSize = PaperKind.A4;
+                converter.Orientation = PaperOrientation.Portrait;
+                converter.Footer = "<p style=\"color: blue;\">FOOTER TEXT</p>";
+                
+                converter.ConvertHtmlToPdf("sample.html", "result.pdf");
+                
+                // You can also pass a link instead of the input file:  
+                //converter.ConvertHtmlToPdf("http://google.com", "result.pdf");
+            }
 
-			// Open result file in default PDF viewer
-			Process.Start("result.pdf");
-		}
-	}
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
+        }
+    }
 }

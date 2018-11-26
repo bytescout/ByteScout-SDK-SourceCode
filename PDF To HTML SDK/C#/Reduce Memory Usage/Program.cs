@@ -11,6 +11,7 @@
 
 
 using System;
+using System.Diagnostics;
 using Bytescout.PDF2HTML;
 
 namespace ReduceMemoryUsage
@@ -42,8 +43,10 @@ namespace ReduceMemoryUsage
                 }
             }
 
-            // Open the output file in default associated application
-            System.Diagnostics.Process.Start("output.html");
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("output.html");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

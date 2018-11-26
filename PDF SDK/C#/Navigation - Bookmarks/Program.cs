@@ -16,55 +16,57 @@ using Bytescout.PDF;
 
 namespace Bookmarks
 {
-	/// <summary>
-	/// This example demonstrates how to create document outlines (bookmarks).
-	/// </summary>
-	class Program
-	{
-		static void Main()
-		{
-			// Create new document
-			Document pdfDocument = new Document();
-			pdfDocument.RegistrationName = "demo";
-			pdfDocument.RegistrationKey = "demo";
-			
-			Font font = new Font(StandardFonts.Times, 18);
-			Brush brush = new SolidBrush();
+    /// <summary>
+    /// This example demonstrates how to create document outlines (bookmarks).
+    /// </summary>
+    class Program
+    {
+        static void Main()
+        {
+            // Create new document
+            Document pdfDocument = new Document();
+            pdfDocument.RegistrationName = "demo";
+            pdfDocument.RegistrationKey = "demo";
+            
+            Font font = new Font(StandardFonts.Times, 18);
+            Brush brush = new SolidBrush();
 
-			// Create pages
-			for (int i = 0; i < 3; i++)
-			{
-				Page page = new Page(PaperFormat.A4);
-				page.Canvas.DrawString(string.Format("Page {0}", i + 1), font, brush, 20, 20);
-				pdfDocument.Pages.Add(page);
-			}
+            // Create pages
+            for (int i = 0; i < 3; i++)
+            {
+                Page page = new Page(PaperFormat.A4);
+                page.Canvas.DrawString(string.Format("Page {0}", i + 1), font, brush, 20, 20);
+                pdfDocument.Pages.Add(page);
+            }
 
-			// Create outlines:
+            // Create outlines:
 
-			Destination destination1 = new Destination(pdfDocument.Pages[0]);
-			Outline outline1 = new Outline("Page 1", destination1);
-			pdfDocument.Outlines.Add(outline1);
+            Destination destination1 = new Destination(pdfDocument.Pages[0]);
+            Outline outline1 = new Outline("Page 1", destination1);
+            pdfDocument.Outlines.Add(outline1);
 
-			// Example of sub-bookmark
-			Destination destination2 = new Destination(pdfDocument.Pages[1]);
-			Outline outline2 = new Outline("Page 2", destination2);
-			pdfDocument.Outlines[0].Kids.Add(outline2);
+            // Example of sub-bookmark
+            Destination destination2 = new Destination(pdfDocument.Pages[1]);
+            Outline outline2 = new Outline("Page 2", destination2);
+            pdfDocument.Outlines[0].Kids.Add(outline2);
 
-			Destination destination3 = new Destination(pdfDocument.Pages[2]);
-			Outline outline3 = new Outline("Page 3", destination3);
-			pdfDocument.Outlines.Add(outline3);
+            Destination destination3 = new Destination(pdfDocument.Pages[2]);
+            Outline outline3 = new Outline("Page 3", destination3);
+            pdfDocument.Outlines.Add(outline3);
 
-			// Force PDF viewer to show Bookmarks panel at start up.
-			pdfDocument.PageMode = PageMode.Outlines;
-			
-			// Save document to file
-			pdfDocument.Save("result.pdf");
+            // Force PDF viewer to show Bookmarks panel at start up.
+            pdfDocument.PageMode = PageMode.Outlines;
+            
+            // Save document to file
+            pdfDocument.Save("result.pdf");
 
-			// Cleanup 
-			pdfDocument.Dispose();
+            // Cleanup 
+            pdfDocument.Dispose();
 
-			// Open document in default PDF viewer app
-			Process.Start("result.pdf");
-		}
-	}
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
+        }
+    }
 }

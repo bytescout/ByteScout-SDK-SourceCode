@@ -1022,7 +1022,6 @@
 \PDF Extractor SDK\ASP Classic
 \PDF Extractor SDK\ASP.NET
 \PDF Extractor SDK\C#
-\PDF Extractor SDK\C# - .NET Core 2.0
 \PDF Extractor SDK\C++
 \PDF Extractor SDK\Delphi
 \PDF Extractor SDK\Microsoft Excel
@@ -1106,8 +1105,6 @@
 \PDF Extractor SDK\C#\XFA Form To XML
 \PDF Extractor SDK\C#\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\C#\Index Documents In Folder\Files
-\PDF Extractor SDK\C# - .NET Core 2.0\OCR (Optical Character Recognition)
-\PDF Extractor SDK\C# - .NET Core 2.0\Parallel Processing
 \PDF Extractor SDK\C++\Compare Documents
 \PDF Extractor SDK\C++\Extract Pages
 \PDF Extractor SDK\C++\Extract Text
@@ -1248,7 +1245,6 @@
 \PDF Generator SDK for Javascript\text-wrap
 \PDF Renderer SDK\ASP.NET
 \PDF Renderer SDK\C#
-\PDF Renderer SDK\C# - .NET Core 2.0
 \PDF Renderer SDK\Delphi
 \PDF Renderer SDK\VB.NET
 \PDF Renderer SDK\VBScript and VB6
@@ -1267,9 +1263,6 @@
 \PDF Renderer SDK\C#\Rendering In Background Thread
 \PDF Renderer SDK\C#\Silent Printing
 \PDF Renderer SDK\C#\Text-Vector-Image Layers
-\PDF Renderer SDK\C# - .NET Core 2.0\PDF to 1-bit BMP
-\PDF Renderer SDK\C# - .NET Core 2.0\PDF To JPEG
-\PDF Renderer SDK\C# - .NET Core 2.0\PDF to Multi-page TIFF
 \PDF Renderer SDK\Delphi\PDF To JPEG
 \PDF Renderer SDK\VB.NET\Make Thumbnail
 \PDF Renderer SDK\VB.NET\PDF to 1-bit BMP
@@ -1295,7 +1288,6 @@
 \PDF Renderer SDK\VBScript and VB6\Silent Printing
 \PDF Renderer SDK\VBScript and VB6\Text-Vector-Image Layers
 \PDF SDK\C#
-\PDF SDK\C# - .NET Core 2.0
 \PDF SDK\VB.NET
 \PDF SDK\VBScript and VB6
 \PDF SDK\C#\Actions - GoTo
@@ -1367,7 +1359,6 @@
 \PDF SDK\C#\Text - Tables
 \PDF SDK\C#\Text - Watermarks
 \PDF SDK\C#\Text - Word Spacing
-\PDF SDK\C# - .NET Core 2.0\Document - Create New
 \PDF SDK\VB.NET\Actions - GoTo
 \PDF SDK\VB.NET\Actions - JavaScript
 \PDF SDK\VB.NET\Actions - Launch
@@ -1490,7 +1481,6 @@
 \PDF SDK\VBScript and VB6\Text - Word Spacing
 \PDF To HTML SDK\ASP.NET
 \PDF To HTML SDK\C#
-\PDF To HTML SDK\C# - .NET Core 2.0
 \PDF To HTML SDK\VB.NET
 \PDF To HTML SDK\VBScript and VB6
 \PDF To HTML SDK\ASP.NET\PDF To HTML (simple layout)
@@ -1501,7 +1491,6 @@
 \PDF To HTML SDK\C#\PDF To HTML (with layout) from all pages
 \PDF To HTML SDK\C#\PDF To HTML (with layout) from page
 \PDF To HTML SDK\C#\Reduce Memory Usage
-\PDF To HTML SDK\C# - .NET Core 2.0\PDF To HTML
 \PDF To HTML SDK\VB.NET\PDF To HTML (simple layout) from all pages
 \PDF To HTML SDK\VB.NET\PDF To HTML (simple layout) from page
 \PDF To HTML SDK\VB.NET\PDF To HTML (with layout) from all pages

@@ -16,29 +16,31 @@ using Bytescout.PDF;
 
 namespace FlattenFormExample
 {
-	/// <summary>
-	/// This example demonstrates how to flatten a filled PDF form (make it uneditable).
-	/// </summary>
-	class Program
-	{
-		static void Main()
-		{
-			// Load filled PDF form
-			Document pdfDocument = new Document(@"filled_form.pdf");
-			pdfDocument.RegistrationName = "demo";
-			pdfDocument.RegistrationKey = "demo";
-			
-			// Flatten the form
-			pdfDocument.FlattenDocument();
+    /// <summary>
+    /// This example demonstrates how to flatten a filled PDF form (make it uneditable).
+    /// </summary>
+    class Program
+    {
+        static void Main()
+        {
+            // Load filled PDF form
+            Document pdfDocument = new Document(@"filled_form.pdf");
+            pdfDocument.RegistrationName = "demo";
+            pdfDocument.RegistrationKey = "demo";
+            
+            // Flatten the form
+            pdfDocument.FlattenDocument();
 
-			// Save modified document
-			pdfDocument.Save("result.pdf");
+            // Save modified document
+            pdfDocument.Save("result.pdf");
 
-			// Cleanup 
-			pdfDocument.Dispose();
+            // Cleanup 
+            pdfDocument.Dispose();
 
-			// Open document in default PDF viewer app
-			Process.Start("result.pdf");
-		}
-	}
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
+        }
+    }
 }

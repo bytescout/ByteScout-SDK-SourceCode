@@ -48,7 +48,9 @@ namespace RepairText
                     File.WriteAllText("output.csv", allData);
 
                     // Open file
-                    Process.Start("output.csv");
+                    ProcessStartInfo processStartInfo = new ProcessStartInfo("output.csv");
+                    processStartInfo.UseShellExecute = true;
+                    Process.Start(processStartInfo);
                 }
             }
             catch (Exception ex)

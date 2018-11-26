@@ -12,6 +12,7 @@
 
 using System;
 using System.Drawing;
+using System.Diagnostics;
 using Bytescout.PDFExtractor;
 
 // This example demonstrates the use of OCR Analyser - a tooling class for analysis of scanned documents
@@ -23,79 +24,81 @@ using Bytescout.PDFExtractor;
 
 namespace OCRAnalyser
 {
-	class Program
-	{
+    class Program
+    {
         static void Main(string[] args)
-		{
+        {
             // Input document
-	        string inputDocument = @".\sample_ocr.pdf";
+            string inputDocument = @".\sample_ocr.pdf";
             
-	        // Document page index
-		    int pageIndex = 0;
+            // Document page index
+            int pageIndex = 0;
             
-		    // Area of the document page to perform the analysis (optional).
+            // Area of the document page to perform the analysis (optional).
             // RectangleF.Empty means the full page.
-		    RectangleF rectangle = RectangleF.Empty; // new RectangleF(100, 50, 350, 250);
+            RectangleF rectangle = RectangleF.Empty; // new RectangleF(100, 50, 350, 250);
 
-		    // Location of "tessdata" folder containing language data files
-		    string ocrLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\Redistributable\net2.00\tessdata\";
+            // Location of "tessdata" folder containing language data files
+            string ocrLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\Redistributable\net2.00\tessdata\";
 
-		    // OCR language
-		    string ocrLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
-		    // Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
+            // OCR language
+            string ocrLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
+            // Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
 
 
             // Create OCRAnalyzer instance and activate it with your registration information
-		    using (OCRAnalyzer ocrAnalyzer = new OCRAnalyzer("demo", "demo"))
-		    {
-		        // Display analysis progress
-		        ocrAnalyzer.ProgressChanged += (object sender, string message, double progress, ref bool cancel) =>
-		        {
-		            Console.WriteLine(message);
-		        };
+            using (OCRAnalyzer ocrAnalyzer = new OCRAnalyzer("demo", "demo"))
+            {
+                // Display analysis progress
+                ocrAnalyzer.ProgressChanged += (object sender, string message, double progress, ref bool cancel) =>
+                {
+                    Console.WriteLine(message);
+                };
 
                 // Load document to OCRAnalyzer
-		        ocrAnalyzer.LoadDocumentFromFile(inputDocument);
+                ocrAnalyzer.LoadDocumentFromFile(inputDocument);
 
                 // Setup OCRAnalyzer
-		        ocrAnalyzer.OCRLanguage = ocrLanguage;
-		        ocrAnalyzer.OCRLanguageDataFolder = ocrLanguageDataFolder;
+                ocrAnalyzer.OCRLanguage = ocrLanguage;
+                ocrAnalyzer.OCRLanguageDataFolder = ocrLanguageDataFolder;
                 
                 // Set page area for analysis (optional)
-		        ocrAnalyzer.SetExtractionArea(rectangle);
+                ocrAnalyzer.SetExtractionArea(rectangle);
                 
                 // Perform analysis and get results
-		        OCRAnalysisResults analysisResults = ocrAnalyzer.AnalyzeByOCRConfidence(pageIndex);
+                OCRAnalysisResults analysisResults = ocrAnalyzer.AnalyzeByOCRConfidence(pageIndex);
 
 
-		        // Now extract the text using detected OCR parameters
+                // Now extract the text using detected OCR parameters
 
-		        string outputDocument = @".\result.txt";
+                string outputDocument = @".\result.txt";
                 
-		        // Create TextExtractor instance
-		        using (TextExtractor textExtractor = new TextExtractor("demo", "demo"))
-		        {
+                // Create TextExtractor instance
+                using (TextExtractor textExtractor = new TextExtractor("demo", "demo"))
+                {
                     // Load document to TextExtractor
-		            textExtractor.LoadDocumentFromFile(inputDocument);
+                    textExtractor.LoadDocumentFromFile(inputDocument);
 
-		            // Setup TextExtractor
-		            textExtractor.OCRMode = OCRMode.Auto;
+                    // Setup TextExtractor
+                    textExtractor.OCRMode = OCRMode.Auto;
                     textExtractor.OCRLanguageDataFolder = ocrLanguageDataFolder;
                     textExtractor.OCRLanguage = ocrLanguage;
 
-                    // Apply analysys results to TextExtractor instance
-		            ocrAnalyzer.ApplyResults(analysisResults, textExtractor);
+                    // Apply analysis results to TextExtractor instance
+                    ocrAnalyzer.ApplyResults(analysisResults, textExtractor);
 
-		            // Set extraction area (optional)
-		            textExtractor.SetExtractionArea(rectangle);
+                    // Set extraction area (optional)
+                    textExtractor.SetExtractionArea(rectangle);
 
-		            // Save extracted text to file
-		            textExtractor.SaveTextToFile(outputDocument);
+                    // Save extracted text to file
+                    textExtractor.SaveTextToFile(outputDocument);
 
-		            // Open output file in default associated application (for demonstration purposes)
-		            System.Diagnostics.Process.Start(outputDocument);
-		        }
-		    }
-		}
-	}
+                    // Open result document in default associated application (for demo purpose)
+                    ProcessStartInfo processStartInfo = new ProcessStartInfo(outputDocument);
+                    processStartInfo.UseShellExecute = true;
+                    Process.Start(processStartInfo);
+                }
+            }
+        }
+    }
 }

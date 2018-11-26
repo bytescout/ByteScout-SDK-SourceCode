@@ -12,6 +12,7 @@
 
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Diagnostics;
 using Bytescout.PDFRenderer;
 
 
@@ -42,8 +43,10 @@ namespace PDF2BMP
             // Cleanup
             renderer.Dispose();
 
-            // Open the first output image in default image viewer.
-            System.Diagnostics.Process.Start("image0.bmp");
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("image0.bmp");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

@@ -111,8 +111,10 @@ namespace EmailToPDF_HTMLEmail
                             }
                         }
 
-                        // Open output file
-                        Process.Start("result.pdf");
+                        // Open result document in default associated application (for demo purpose)
+                        ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
+                        processStartInfo.UseShellExecute = true;
+                        Process.Start(processStartInfo);
                     }
                 }
             }

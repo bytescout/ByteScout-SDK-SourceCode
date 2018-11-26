@@ -10,6 +10,7 @@
 //*******************************************************************************************//
 
 
+using System.Diagnostics;
 using Bytescout.PDFExtractor;
 
 namespace FindTableAndExtractAsCsv
@@ -63,11 +64,13 @@ namespace FindTableAndExtractAsCsv
             }
 
             // Cleanup
-			csvExtractor.Dispose();
+            csvExtractor.Dispose();
             tableDetector.Dispose();
 
             // Open first output file in default associated application (for demo purposes)
-            System.Diagnostics.Process.Start("page-0-table-1.csv");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("page-0-table-1.csv");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

@@ -38,10 +38,12 @@ namespace PDF2XLS
             extractor.SaveToXLSFile("output.xls");
 
             // Cleanup
-			extractor.Dispose();
+            extractor.Dispose();
 
-            // Open the spreadsheet in default associated application
-            Process.Start("output.xls");
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("output.xls");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

@@ -11,6 +11,7 @@
 
 
 using System;
+using System.Diagnostics;
 using Bytescout.PDFExtractor;
 
 namespace CompareDocuments
@@ -44,7 +45,9 @@ namespace CompareDocuments
             document2.Dispose();
 
             // Open the report in default browser
-            System.Diagnostics.Process.Start(@".\report.html");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo(@".\report.html");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

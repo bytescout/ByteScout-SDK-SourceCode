@@ -11,6 +11,7 @@
 
 
 using System.Drawing;
+using System.Diagnostics;
 using Bytescout.PDFRenderer;
 
 namespace MakeThumbnail
@@ -49,8 +50,10 @@ namespace MakeThumbnail
             // Cleanup
             renderer.Dispose();
             
-            // Open the output image file in default image viewer
-            System.Diagnostics.Process.Start("thumbnail.jpg");
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("thumbnail.jpg");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }
