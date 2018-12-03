@@ -38,14 +38,17 @@
 \BarCode Reader SDK\ASP.NET\Barcodes From Image (VB.NET)
 \BarCode Reader SDK\ASP.NET\Barcodes From PDF (C#)
 \BarCode Reader SDK\ASP.NET\Barcodes From PDF (VB.NET)
+\BarCode Reader SDK\ASP.NET\Batch Read Barcodes To CSV
 \BarCode Reader SDK\ASP.NET\General Example (C#)
 \BarCode Reader SDK\ASP.NET\General Example (VB.NET)
 \BarCode Reader SDK\ASP.NET\Read From Live Camera (C# - MVC)
 \BarCode Reader SDK\ASP.NET\Read From Live Camera (C#)
 \BarCode Reader SDK\ASP.NET\Split PDF by Barcode (C#)
+\BarCode Reader SDK\ASP.NET\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\C#\Acquire From Scanner And Decode
 \BarCode Reader SDK\C#\Barcodes From PDF
 \BarCode Reader SDK\C#\Barcodes From TIFF
+\BarCode Reader SDK\C#\Batch Read Barcodes To CSV
 \BarCode Reader SDK\C#\Batch Read From Files
 \BarCode Reader SDK\C#\Decode Australian Post Code
 \BarCode Reader SDK\C#\Decode Aztec
@@ -111,6 +114,7 @@
 \BarCode Reader SDK\C#\Read vCard from QR Code
 \BarCode Reader SDK\C#\Split Document By Found Barcode
 \BarCode Reader SDK\C#\WPF UI Example
+\BarCode Reader SDK\C#\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\C++ (Managed)\General Example
 \BarCode Reader SDK\C++ (Unmanaged)\General Example
 \BarCode Reader SDK\C++ (Unmanaged)\Read From Memory
@@ -122,6 +126,7 @@
 \BarCode Reader SDK\VB.NET\Acquire From Scanner And Decode
 \BarCode Reader SDK\VB.NET\Barcodes From PDF
 \BarCode Reader SDK\VB.NET\Barcodes From TIFF
+\BarCode Reader SDK\VB.NET\Batch Read Barcodes To CSV
 \BarCode Reader SDK\VB.NET\Batch Read From Files
 \BarCode Reader SDK\VB.NET\Decode Australian Post Code
 \BarCode Reader SDK\VB.NET\Decode Aztec
@@ -189,15 +194,20 @@
 \BarCode Reader SDK\VB.NET\Read vCard from QR Code
 \BarCode Reader SDK\VB.NET\Split Document By Found Barcode
 \BarCode Reader SDK\VB.NET\WPF UI Example
+\BarCode Reader SDK\VB.NET\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\VB6\Simple
 \BarCode Reader SDK\VBScript\Batch Read From Files
+\BarCode Reader SDK\VBScript\Code 39 To Excel
 \BarCode Reader SDK\VBScript\From PDF
 \BarCode Reader SDK\VBScript\From Webcam or Scanner
 \BarCode Reader SDK\VBScript\Image Preprocessing Filters
 \BarCode Reader SDK\VBScript\Profiles
+\BarCode Reader SDK\VBScript\QR Code To Excel
 \BarCode Reader SDK\VBScript\Rename Files To Barcode Values
 \BarCode Reader SDK\VBScript\Search Barcodes In Documents And Write Results To File
 \BarCode Reader SDK\VBScript\Simple
+\BarCode Reader SDK\VBScript\Code 39 To Excel\InputFiles
+\BarCode Reader SDK\VBScript\QR Code To Excel\InputFiles
 \BarCode SDK\ASP Classic
 \BarCode SDK\ASP.NET
 \BarCode SDK\C#
@@ -299,6 +309,7 @@
 \BarCode SDK\C#\PZN
 \BarCode SDK\C#\QR Code (2D)
 \BarCode SDK\C#\QR Code With Binary Data
+\BarCode SDK\C#\QR Code With CalenderEntry
 \BarCode SDK\C#\QR Code With Image
 \BarCode SDK\C#\QR Code with JSON
 \BarCode SDK\C#\RenderingOptions
@@ -405,6 +416,7 @@
 \BarCode SDK\VB.NET\PZN
 \BarCode SDK\VB.NET\QR Code (2D)
 \BarCode SDK\VB.NET\QR Code With Binary Data
+\BarCode SDK\VB.NET\QR Code With CalenderEntry
 \BarCode SDK\VB.NET\QR Code With Image
 \BarCode SDK\VB.NET\QR Code With JSON
 \BarCode SDK\VB.NET\RenderingOptions
@@ -748,6 +760,7 @@
 \Cloud API\PDF To Excel\VB.NET
 \Cloud API\PDF To Excel\C#\Advanced Conversion Options
 \Cloud API\PDF To Excel\C#\Convert PDF To XLS From Uploaded File
+\Cloud API\PDF To Excel\C#\Convert PDF To XLS From Uploaded File (WinForms)
 \Cloud API\PDF To Excel\C#\Convert PDF To XLS From URL
 \Cloud API\PDF To Excel\C#\Convert PDF To XLS From URL Asynchronously
 \Cloud API\PDF To Excel\C#\Convert PDF To XLSX From Uploaded File
@@ -773,6 +786,7 @@
 \Cloud API\PDF To Excel\PowerShell\Convert PDF To XLSX From URL
 \Cloud API\PDF To Excel\PowerShell\Convert PDF To XLSX From URL Asynchronously
 \Cloud API\PDF To Excel\VB.NET\Convert PDF To XLS From Uploaded File
+\Cloud API\PDF To Excel\VB.NET\Convert PDF To XLS From Uploaded File (WinForms)
 \Cloud API\PDF To Excel\VB.NET\Convert PDF To XLS From URL
 \Cloud API\PDF To Excel\VB.NET\Convert PDF To XLS From URL Asynchronously
 \Cloud API\PDF To Excel\VB.NET\Convert PDF To XLSX From Uploaded File
@@ -1027,7 +1041,8 @@
 \PDF Extractor SDK\Microsoft Excel
 \PDF Extractor SDK\Powershell
 \PDF Extractor SDK\VB.NET
-\PDF Extractor SDK\VBScript and VB6
+\PDF Extractor SDK\VB6
+\PDF Extractor SDK\VBScript
 \PDF Extractor SDK\ASP Classic\Extract Text
 \PDF Extractor SDK\ASP.NET\Batch Processing
 \PDF Extractor SDK\ASP.NET\Extract Attachments
@@ -1042,6 +1057,7 @@
 \PDF Extractor SDK\ASP.NET\OCR (Optical Character Recognition)
 \PDF Extractor SDK\ASP.NET\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\C#\Batch Processing
+\PDF Extractor SDK\C#\Check If OCR Is Required
 \PDF Extractor SDK\C#\Compare Documents
 \PDF Extractor SDK\C#\Data Masking
 \PDF Extractor SDK\C#\Detect Lines
@@ -1104,6 +1120,7 @@
 \PDF Extractor SDK\C#\TextExtractor Progress Indication
 \PDF Extractor SDK\C#\XFA Form To XML
 \PDF Extractor SDK\C#\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\C#\Check If OCR Is Required\InputFiles
 \PDF Extractor SDK\C#\Index Documents In Folder\Files
 \PDF Extractor SDK\C++\Compare Documents
 \PDF Extractor SDK\C++\Extract Pages
@@ -1116,6 +1133,7 @@
 \PDF Extractor SDK\Microsoft Excel\Extract Text From Coordinates
 \PDF Extractor SDK\Powershell\PDF To JSON
 \PDF Extractor SDK\VB.NET\Batch Processing
+\PDF Extractor SDK\VB.NET\Check If OCR Is Required
 \PDF Extractor SDK\VB.NET\Compare Documents
 \PDF Extractor SDK\VB.NET\Data Masking
 \PDF Extractor SDK\VB.NET\Detect Lines
@@ -1178,47 +1196,55 @@
 \PDF Extractor SDK\VB.NET\TextExtractor Progress Indication
 \PDF Extractor SDK\VB.NET\XFA Form To XML
 \PDF Extractor SDK\VB.NET\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\VB.NET\Check If OCR Is Required\InputFiles
 \PDF Extractor SDK\VB.NET\Index Documents In Folder\Files
-\PDF Extractor SDK\VBScript and VB6\Batch Processing
-\PDF Extractor SDK\VBScript and VB6\Compare Documents
-\PDF Extractor SDK\VBScript and VB6\Extract Attachments
-\PDF Extractor SDK\VBScript and VB6\Extract Image Coordinates By Page
-\PDF Extractor SDK\VBScript and VB6\Extract Images
-\PDF Extractor SDK\VBScript and VB6\Extract Images by Page
-\PDF Extractor SDK\VBScript and VB6\Extract Images Coordinates
-\PDF Extractor SDK\VBScript and VB6\Extract Info
-\PDF Extractor SDK\VBScript and VB6\Extract Pages
-\PDF Extractor SDK\VBScript and VB6\Extract Table Structure
-\PDF Extractor SDK\VBScript and VB6\Extract Text
-\PDF Extractor SDK\VBScript and VB6\Extract Text By Columns
-\PDF Extractor SDK\VBScript and VB6\Extract Text By Pages
-\PDF Extractor SDK\VBScript and VB6\Extract Text From Page Area
-\PDF Extractor SDK\VBScript and VB6\Find Hyphenated Text
-\PDF Extractor SDK\VBScript and VB6\Find Table And Extract As CSV
-\PDF Extractor SDK\VBScript and VB6\Find Table And Extract As XML
-\PDF Extractor SDK\VBScript and VB6\Find Text
-\PDF Extractor SDK\VBScript and VB6\Find Text Using Regex
-\PDF Extractor SDK\VBScript and VB6\Index PDF Files
-\PDF Extractor SDK\VBScript and VB6\Make Searchable PDF
-\PDF Extractor SDK\VBScript and VB6\Make Unsearchable PDF
-\PDF Extractor SDK\VBScript and VB6\Merge Documents
-\PDF Extractor SDK\VBScript and VB6\OCR (Optical Character Recognition)
-\PDF Extractor SDK\VBScript and VB6\OCR Analyser
-\PDF Extractor SDK\VBScript and VB6\PDF To CSV
-\PDF Extractor SDK\VBScript and VB6\PDF To CSV By Pages
-\PDF Extractor SDK\VBScript and VB6\PDF To JSON
-\PDF Extractor SDK\VBScript and VB6\PDF To JSON With Images
-\PDF Extractor SDK\VBScript and VB6\PDF To XFDF
-\PDF Extractor SDK\VBScript and VB6\PDF To XLS
-\PDF Extractor SDK\VBScript and VB6\PDF To XML
-\PDF Extractor SDK\VBScript and VB6\PDF To XML With Images
-\PDF Extractor SDK\VBScript and VB6\Profiles
-\PDF Extractor SDK\VBScript and VB6\Reduce Memory Usage
-\PDF Extractor SDK\VBScript and VB6\Remove Text
-\PDF Extractor SDK\VBScript and VB6\Rotate Document
-\PDF Extractor SDK\VBScript and VB6\Split Document
-\PDF Extractor SDK\VBScript and VB6\XFA Form To XML
-\PDF Extractor SDK\VBScript and VB6\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\VB6\Merge PDF
+\PDF Extractor SDK\VB6\PDF To CSV
+\PDF Extractor SDK\VB6\PDF To JSON
+\PDF Extractor SDK\VB6\PDF To Text
+\PDF Extractor SDK\VB6\PDF To XML
+\PDF Extractor SDK\VB6\Scanned PDF To Text
+\PDF Extractor SDK\VB6\Split PDF
+\PDF Extractor SDK\VBScript\Batch Processing
+\PDF Extractor SDK\VBScript\Compare Documents
+\PDF Extractor SDK\VBScript\Extract Attachments
+\PDF Extractor SDK\VBScript\Extract Image Coordinates By Page
+\PDF Extractor SDK\VBScript\Extract Images
+\PDF Extractor SDK\VBScript\Extract Images by Page
+\PDF Extractor SDK\VBScript\Extract Images Coordinates
+\PDF Extractor SDK\VBScript\Extract Info
+\PDF Extractor SDK\VBScript\Extract Pages
+\PDF Extractor SDK\VBScript\Extract Table Structure
+\PDF Extractor SDK\VBScript\Extract Text
+\PDF Extractor SDK\VBScript\Extract Text By Columns
+\PDF Extractor SDK\VBScript\Extract Text By Pages
+\PDF Extractor SDK\VBScript\Extract Text From Page Area
+\PDF Extractor SDK\VBScript\Find Hyphenated Text
+\PDF Extractor SDK\VBScript\Find Table And Extract As CSV
+\PDF Extractor SDK\VBScript\Find Table And Extract As XML
+\PDF Extractor SDK\VBScript\Find Text
+\PDF Extractor SDK\VBScript\Find Text Using Regex
+\PDF Extractor SDK\VBScript\Index PDF Files
+\PDF Extractor SDK\VBScript\Make Searchable PDF
+\PDF Extractor SDK\VBScript\Make Unsearchable PDF
+\PDF Extractor SDK\VBScript\Merge Documents
+\PDF Extractor SDK\VBScript\OCR (Optical Character Recognition)
+\PDF Extractor SDK\VBScript\OCR Analyser
+\PDF Extractor SDK\VBScript\PDF To CSV
+\PDF Extractor SDK\VBScript\PDF To CSV By Pages
+\PDF Extractor SDK\VBScript\PDF To JSON
+\PDF Extractor SDK\VBScript\PDF To JSON With Images
+\PDF Extractor SDK\VBScript\PDF To XFDF
+\PDF Extractor SDK\VBScript\PDF To XLS
+\PDF Extractor SDK\VBScript\PDF To XML
+\PDF Extractor SDK\VBScript\PDF To XML With Images
+\PDF Extractor SDK\VBScript\Profiles
+\PDF Extractor SDK\VBScript\Reduce Memory Usage
+\PDF Extractor SDK\VBScript\Remove Text
+\PDF Extractor SDK\VBScript\Rotate Document
+\PDF Extractor SDK\VBScript\Split Document
+\PDF Extractor SDK\VBScript\XFA Form To XML
+\PDF Extractor SDK\VBScript\ZUGFeRD Invoice Extraction
 \PDF Generator SDK for Javascript\add-image-from-base64
 \PDF Generator SDK for Javascript\add-image-from-canvas
 \PDF Generator SDK for Javascript\add-image-from-url
@@ -1482,7 +1508,8 @@
 \PDF To HTML SDK\ASP.NET
 \PDF To HTML SDK\C#
 \PDF To HTML SDK\VB.NET
-\PDF To HTML SDK\VBScript and VB6
+\PDF To HTML SDK\VB6
+\PDF To HTML SDK\VBScript
 \PDF To HTML SDK\ASP.NET\PDF To HTML (simple layout)
 \PDF To HTML SDK\ASP.NET\PDF To HTML (with layout)
 \PDF To HTML SDK\ASP.NET\PDF To HTML with Images
@@ -1496,10 +1523,14 @@
 \PDF To HTML SDK\VB.NET\PDF To HTML (with layout) from all pages
 \PDF To HTML SDK\VB.NET\PDF To HTML (with layout) from page
 \PDF To HTML SDK\VB.NET\Reduce Memory Usage
-\PDF To HTML SDK\VBScript and VB6\Change Output Page Width
-\PDF To HTML SDK\VBScript and VB6\Get Page Width And Height
-\PDF To HTML SDK\VBScript and VB6\PDF To HTML (simple layout)
-\PDF To HTML SDK\VBScript and VB6\PDF To HTML (with layout)
+\PDF To HTML SDK\VB6\Change Output Page Width
+\PDF To HTML SDK\VB6\Get Page Width And Height
+\PDF To HTML SDK\VB6\PDF To HTML (simple layout)
+\PDF To HTML SDK\VB6\PDF To HTML (with layout)
+\PDF To HTML SDK\VBScript\Change Output Page Width
+\PDF To HTML SDK\VBScript\Get Page Width And Height
+\PDF To HTML SDK\VBScript\PDF To HTML (simple layout)
+\PDF To HTML SDK\VBScript\PDF To HTML (with layout)
 \PDF Viewer SDK\C#
 \PDF Viewer SDK\VB.NET
 \PDF Viewer SDK\C#\Sample UI Application
