@@ -14,6 +14,7 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using BytescoutScreenCapturingLib;
 
@@ -45,12 +46,28 @@ namespace ScreenCapturing
 			_tempCapturer.RegistrationKey = "demo";
 
 			cmbFPS.Items.AddRange(new object[] { 5f, 7.5f, 10f, 12f, 14.985f, 15f, 19.98f, 20f, 23.976f, 24f, 25f, 29.97f, 30f, 50f, 59.94f, 60 });
+			
+			if (_tempCapturer.AudioDeviceCount == 0)
+	        {
+		        cbEnableAudio.Checked = false;
+		        cbEnableAudio.Enabled = false;
 
-			for (int i = 0; i < _tempCapturer.AudioDeviceCount; i++)
-			{
-				string line = _tempCapturer.GetAudioDeviceName(i);
-				cmbAudioDevices.Items.Add(line);
-			}
+				cmbAudioDevices.Items.Add("No audio devices found.");
+		        cmbAudioDevices.SelectedIndex = 0;
+		        cmbAudioDevices.Enabled = false;
+
+		        cmbAudioLines.Enabled = false;
+	        }
+	        else
+	        {
+		        cbEnableAudio.Checked = Program.Cfg.EnableAudio;
+
+				for (int i = 0; i < _tempCapturer.AudioDeviceCount; i++)
+		        {
+			        string device = _tempCapturer.GetAudioDeviceName(i);
+			        cmbAudioDevices.Items.Add(device);
+		        }
+	        }
 
 			for (int i = 0; i < cmbAudioDevices.Items.Count; i++)
 			{
@@ -184,7 +201,6 @@ namespace ScreenCapturing
 				Program.Cfg.WmvVideoCodec = _tempCapturer.CurrentWMVVideoCodecName;
 			}
 
-    	    cbEnableAudio.Checked = Program.Cfg.EnableAudio;
     	    cbResizeVideo.Checked = Program.Cfg.ResizeOutputVideo;
     	    tbWidth.Text = Program.Cfg.OutputWidth.ToString();
     	    tbHeight.Text = Program.Cfg.OutputHeight.ToString();
@@ -197,7 +213,7 @@ namespace ScreenCapturing
 			tbWebCameraWidth.Text = Program.Cfg.WebCameraWindowWidth.ToString();
 			tbWebCameraHeight.Text = Program.Cfg.WebCameraWindowHeight.ToString();
 
-            cmbAudioLines.Enabled = cbEnableAudio.Checked;
+            cmbAudioLines.Enabled = cbEnableAudio.Checked && _tempCapturer.AudioDeviceCount > 0;
             tbWidth.Enabled = cbResizeVideo.Checked;
     	    tbHeight.Enabled = cbResizeVideo.Checked;
     	    cbKeepAspectRatio.Enabled = cbResizeVideo.Checked;
@@ -225,7 +241,8 @@ namespace ScreenCapturing
 
 		private void cbEnableAudio_CheckedChanged(object sender, EventArgs e)
 		{
-			cmbAudioLines.Enabled = cbEnableAudio.Checked;
+		    cmbAudioDevices.Enabled = cbEnableAudio.Checked;
+		    cmbAudioLines.Enabled = cbEnableAudio.Checked && _tempCapturer.AudioDeviceCount > 0;
 		}
 
         private void cbResizeVideo_CheckedChanged(object sender, EventArgs e)
@@ -237,8 +254,14 @@ namespace ScreenCapturing
 
         private void btnOk_Click(object sender, EventArgs e)
 		{
+			if (cbEnableAudio.Checked && _tempCapturer.AudioDeviceCount > 0 && 
+			    _tempCapturer.CurrentAudioDeviceLineCount > 0 && cmbAudioLines.SelectedIndex == -1)
+			{
+                MessageBox.Show("Please select Audio Line", Application.ProductName);
+				return;
+			}
 
-			if (cmbWmvAudioFormats.SelectedIndex == -1)
+			if (_tempCapturer.WMVAudioCodecsCount > 0 && cmbWmvAudioFormats.SelectedIndex == -1)
 			{
 				MessageBox.Show("Please select WMV Audio Format", Application.ProductName);
 				return;
@@ -248,10 +271,7 @@ namespace ScreenCapturing
 			{
 				Program.Cfg.SelectedVideoCodecTab = tabControl2.SelectedIndex;
 				Program.Cfg.AudioDevice = cmbAudioDevices.SelectedItem.ToString();
-                if (cmbAudioLines.SelectedItem != null)
-                {
-                    Program.Cfg.AudioLine = cmbAudioLines.SelectedItem.ToString();
-                }
+                Program.Cfg.AudioLine = cmbAudioLines.SelectedItem != null ? cmbAudioLines.SelectedItem.ToString() : "";
                 Program.Cfg.EnableAudio = cbEnableAudio.Checked;
                 Program.Cfg.AviAudioCodec = cmbAviAudioCodecs.SelectedItem.ToString();
 				Program.Cfg.AviVideoCodec = cmbAviVideoCodecs.SelectedItem.ToString();
@@ -328,6 +348,10 @@ namespace ScreenCapturing
 			{
 				MessageBox.Show("Failed to open the codec properties dialog.\n" + exception.Message, Application.ProductName);
 			}
+            finally
+		    {
+		        Marshal.ReleaseComObject(tempCapturer);
+            }
 		}
 
 		private void linkViewLog_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -353,6 +377,9 @@ namespace ScreenCapturing
 
 		private void cmbAudioDevices_SelectedIndexChanged(object sender, EventArgs e)
 		{
+			if (_tempCapturer.AudioDeviceCount == 0)
+				return;
+
 			_tempCapturer.CurrentAudioDeviceName = cmbAudioDevices.SelectedItem.ToString();
 
 			cmbAudioLines.Items.Clear();

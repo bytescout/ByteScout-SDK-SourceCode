@@ -46,8 +46,8 @@ namespace ScreenCapturing
 		public string WmvVideoCodec { get { return Get<string>("WmvVideoCodec", "Windows Media Video 9"); } set { Options["WmvVideoCodec"] = value; } }
         public bool EnableAudio { get { return Get<bool>("EnableAudio", false); } set { Options["EnableAudio"] = value; } }
         public bool ResizeOutputVideo { get { return Get<bool>("ResizeOutputVideo", true); } set { Options["ResizeOutputVideo"] = value; } }
-        public int OutputWidth { get { return Get<int>("OutputWidth", 640); } set { Options["OutputWidth"] = value; } }
-        public int OutputHeight { get { return Get<int>("OutputHeight", 480); } set { Options["OutputHeight"] = value; } }
+        public int OutputWidth { get { return Get<int>("OutputWidth", 1024); } set { Options["OutputWidth"] = value; } }
+        public int OutputHeight { get { return Get<int>("OutputHeight", 600); } set { Options["OutputHeight"] = value; } }
         public bool KeepAspectRatio { get { return Get<bool>("KeepAspectRatio", true); } set { Options["KeepAspectRatio"] = value; } }
         public float FPS { get { return Get<float>("FPS", 14.985f); } set { Options["FPS"] = value; } }
         public bool WriteLog { get { return Get<bool>("WriteLog", false); } set { Options["WriteLog"] = value; } }

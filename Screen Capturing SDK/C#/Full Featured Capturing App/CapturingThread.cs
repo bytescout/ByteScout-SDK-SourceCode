@@ -153,6 +153,7 @@ namespace ScreenCapturing
             {
                 data.ErrorText = ex.Message;
                 data.Result = 1;
+                Marshal.ReleaseComObject(capturer);
                 return;
             }
 
@@ -169,6 +170,10 @@ namespace ScreenCapturing
             {
                 data.ErrorText = ex.Message;
                 data.Result = 1;
+            }
+            finally
+            {
+                Marshal.ReleaseComObject(capturer);
             }
         }
     }

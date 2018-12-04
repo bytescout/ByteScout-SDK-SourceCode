@@ -243,7 +243,10 @@ namespace ScreenCapturing
 					dlg.Filter = "AVI files (*.avi)|*.avi|All files (*.*)|*.*";
 				}
 
-                dlg.FileName = "Screencast" + DateTime.Now.Year.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Day.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
+				DateTime now = DateTime.Now;
+	            string fileName = string.Format("Screencast-{0}-{1:00}-{2:00}-{3:00}-{4:00}", now.Year, now.Month, now.Day, now.Hour, now.Minute);
+
+				dlg.FileName = fileName;
 			    dlg.Title = "Save captured video as";
 			    dlg.InitialDirectory = Program.Cfg.LastUsedFolder;
 

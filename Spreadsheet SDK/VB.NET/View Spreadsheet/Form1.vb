@@ -31,8 +31,6 @@ Public Partial Class Form1
 		End If
 
 		InitializeComponent()
-
-		Icon = Properties.Resources.xlsview
 	End Sub
 
 	Private Sub OpenFile(fileName As String)

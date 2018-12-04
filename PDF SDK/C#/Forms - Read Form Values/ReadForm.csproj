@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="Bytescout.PDF, Version=1.8.0.236, Culture=neutral, PublicKeyToken=f7dd1bd9d40a50eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>c:\Program Files\Bytescout PDF SDK\net2.0\Bytescout.PDF.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
