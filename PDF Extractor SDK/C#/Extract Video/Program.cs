@@ -24,7 +24,8 @@ namespace ExtractVideo
             extractor.RegistrationKey = "demo";
             
             // Load PDF document
-            extractor.LoadDocumentFromFile(@"sample.pdf");
+            // (!) We do not provide the sample document, please load your own.
+            extractor.LoadDocumentFromFile(@"sample-video.pdf");
 
             int i = 0;
 

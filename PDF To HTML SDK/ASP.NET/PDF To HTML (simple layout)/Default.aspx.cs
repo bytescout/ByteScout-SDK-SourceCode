@@ -20,7 +20,7 @@ namespace ExtractHTML
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			// This test file will be copied to the project directory on the pre-build event (see the project properties).
-			String inputFile = Server.MapPath("sample2.pdf");
+			String inputFile = Server.MapPath(@".\bin\sample2.pdf");
 
 			// Create Bytescout.PDFExtractor.HTMLExtractor instance
 			HTMLExtractor extractor = new HTMLExtractor();

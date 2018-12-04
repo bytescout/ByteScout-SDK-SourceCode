@@ -46,7 +46,7 @@
   <ItemGroup>
     <Content Include="..\..\columns.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Link>sample1.pdf</Link>
+      <Link>columns.pdf</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

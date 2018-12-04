@@ -11,11 +11,9 @@
 
 
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Diagnostics;
-
+using System.Runtime.InteropServices;
 using BytescoutScreenCapturingLib; // import bytescout screen capturing activex object 
 
 /*
@@ -31,7 +29,7 @@ using BytescoutScreenCapturingLib; // import bytescout screen capturing activex 
 */
 
 /*
- * REGISTRRATION FREE SCENARIO DEPLOYMENT: 
+ * REGISTRATION FREE SCENARIO DEPLOYMENT: 
 
 Please check README-FIRST.txt for more details!!
 
@@ -78,60 +76,41 @@ namespace SimpleCaptureCSharp
         {
             try
             {
+                // Create Capturer instance.
+                Capturer capturer = new Capturer();
 
-                Capturer capturer = new Capturer(); // create new screen capturer object
+                // Set capturing area type to catScreen to capture entire screen.
+                capturer.CapturingType = CaptureAreaType.catScreen;
 
-                capturer.CapturingType = CaptureAreaType.catScreen; // set capturing area type to catScreen to capture whole screen
+                // Set output video file name.
+                // (!) The file extension defines the output video format (.WVM or .AVI).
+                capturer.OutputFileName = "EntireScreenCaptured.wmv"; 
 
-                capturer.OutputFileName = "EntireScreenCaptured.wmv"; // set output video filename to .WVM or .AVI filename
+                // Set output video width and height
+                capturer.OutputWidth = 1024;
+                capturer.OutputHeight = 600;
 
-                // set output video width and height
-                capturer.OutputWidth = 640;
-                capturer.OutputHeight = 480;
+                // Start capturing .
+                capturer.Run(); 
 
-                // set border around captured area if we are not capturing entire screen
-                if (
-                    capturer.CapturingType != CaptureAreaType.catScreen &&
-                    capturer.CapturingType != CaptureAreaType.catWebcamFullScreen
-                    )
-                {
-                    // set border style
-                    capturer.CaptureAreaBorderType = CaptureAreaBorderType.cabtDashed;
-                }
+                Console.WriteLine("Capturing entire screen for 10 seconds...");
 
-                // uncomment to set Bytescout Lossless Video format output video compression method
-                //do not forget to set file to .avi format if you use Video Codec Name
-                //capturer.CurrentVideoCodecName = "Bytescout Lossless";             
+                // Wait for 10 seconds...
+                new ManualResetEvent(false).WaitOne(10000);
 
+                // Stop capturing.
+                capturer.Stop();
 
-                // uncomment to enable recording of semitransparent or layered windows (Warning: may cause mouse cursor flickering)
-                // capturer.CaptureTransparentControls = true;
-
-                capturer.Run(); // run screen video capturing 
-
-                // IMPORTANT: if you want to check for some code if need to stop the recording then make sure you are 
-                // using Thread.Sleep(1) inside the checking loop, so you have the loop like
-                // Do {
-                // Thread.Sleep(1) 
-                // }
-                // While(StopButtonNotClicked);
-
-                Console.WriteLine("Capturing entire screen for 15 seconds...");
-
-                Thread.Sleep(15000); // wait for 15 seconds
-
-                capturer.Stop(); // stop video capturing
-
-                // Release resources
-                System.Runtime.InteropServices.Marshal.ReleaseComObject(capturer);
-                capturer = null;
-
+                // Release objects
+                Marshal.ReleaseComObject(capturer);
+                
                 Console.WriteLine("Done");
 
                 Process.Start("EntireScreenCaptured.wmv");
             }
             finally
             {
+                Console.WriteLine();
                 Console.WriteLine("Press any key to exit");
                 Console.ReadKey();
             }

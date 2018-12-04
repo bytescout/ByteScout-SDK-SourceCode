@@ -38,7 +38,6 @@ namespace FindText
 					do
 					{
 						Console.WriteLine("Found on page " + i + " at location " + extractor.FoundText.Bounds.ToString());
-
 					}
 					while (extractor.FindNext());
 				}

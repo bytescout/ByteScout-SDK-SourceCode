@@ -82,6 +82,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\filled_form.pdf">
+      <Link>filled_form.pdf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

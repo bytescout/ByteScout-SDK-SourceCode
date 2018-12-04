@@ -34,7 +34,7 @@ namespace Profiles
             extractor.LoadDocumentFromFile("sample_ocr.pdf");
 
             // Apply predefined profiles
-		    extractor.Profiles = "scanned, no-layout";
+            extractor.Profiles = "ocr, newspaper-layout";
             // Extract text to file
 			extractor.SaveTextToFile("result1.txt");
 
@@ -50,10 +50,13 @@ namespace Profiles
             extractor.Profiles = "keep-formatting, ocr-forced-200dpi";
             // Extract text to file
             extractor.SaveTextToFile("result2.txt");
-
+            
 
             // Cleanup
 			extractor.Dispose();
+
+            
+            // See result files in "bin\Debug" folder
 		}
 	}
 }

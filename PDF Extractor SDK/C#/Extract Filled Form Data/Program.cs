@@ -27,7 +27,7 @@ namespace ExtractFilledFormData
 			extractor.RegistrationKey = "demo";
 
 			// Load sample PDF document
-			extractor.LoadDocumentFromFile(@".\interactiveform.pdf");
+			extractor.LoadDocumentFromFile(@".\filled_form.pdf");
 
 			// Get PDF document text as XML
 			string xmlText = extractor.GetXML();
@@ -44,24 +44,27 @@ namespace ExtractFilledFormData
 				{
 					XmlAttribute typeAttribute = formControl.Attributes["type"];
 
-					// Trace filled textboxes
+					// Show filled textboxes
 					if (typeAttribute.Value == "editbox")
 					{
 						if (!String.IsNullOrEmpty(formControl.InnerText))
-							Trace.WriteLine("EDITBOX " + formControl.Attributes["id"].Value + ": " + formControl.InnerText);
+							Console.WriteLine("EDITBOX " + formControl.Attributes["id"].Value + ": " + formControl.InnerText);
 					}
-					// Trace checked checkboxes
+					// Show checked checkboxes
 					else if (typeAttribute.Value == "checkbox")
 					{
 						if (formControl.Attributes["state"].Value == "1")
-							Trace.WriteLine("CHECKBOX " + formControl.Attributes["id"].Value + ": " + formControl.Attributes["state"].Value);
-
+						    Console.WriteLine("CHECKBOX " + formControl.Attributes["id"].Value + ": " + formControl.Attributes["state"].Value);
 					}
 				}
 			}
 
 			// Cleanup
 			extractor.Dispose();
+
+            Console.WriteLine();
+            Console.WriteLine("Press any key...");
+		    Console.ReadKey();
 		}
 	}
 }

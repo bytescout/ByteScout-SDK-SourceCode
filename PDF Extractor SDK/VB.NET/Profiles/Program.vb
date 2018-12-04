@@ -30,7 +30,7 @@ Class Program
         extractor.LoadDocumentFromFile("sample_ocr.pdf")
 
         ' Apply predefined profiles
-        extractor.Profiles = "scanned, no-layout"
+        extractor.Profiles = "ocr, newspaper-layout"
         ' Extract text to file
         extractor.SaveTextToFile("result1.txt")
 
@@ -49,8 +49,10 @@ Class Program
 
 
         ' Cleanup
-		extractor.Dispose()
+        extractor.Dispose()
 
+
+        ' See result files in "bin\Debug" folder
 
     End Sub
 End Class

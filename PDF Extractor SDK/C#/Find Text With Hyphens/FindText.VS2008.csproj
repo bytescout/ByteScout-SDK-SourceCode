@@ -47,7 +47,7 @@
   <ItemGroup>
     <Content Include="..\..\words-with-hyphens.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Link>sample1.pdf</Link>
+      <Link>words-with-hyphens.pdf</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -17,10 +17,11 @@ Class Program
 
         ' Create Bytescout.PDFExtractor.MultimediaExtractor instance
         Dim extractor As New MultimediaExtractor()
-		extractor.RegistrationName = "demo"
-		extractor.RegistrationKey = "demo"
+        extractor.RegistrationName = "demo"
+        extractor.RegistrationKey = "demo"
 
-        ' Load sample PDF document
+        ' Load PDF document
+        ' (!) We do not provide the sample document, please load your own.
         extractor.LoadDocumentFromFile(".\audio.pdf")
 
         Dim i As Integer = 0
@@ -39,7 +40,7 @@ Class Program
         End If
 
         ' Cleanup
-		extractor.Dispose()
+        extractor.Dispose()
 
     End Sub
 End Class

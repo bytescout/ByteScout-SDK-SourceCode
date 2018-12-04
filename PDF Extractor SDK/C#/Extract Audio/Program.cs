@@ -24,7 +24,8 @@ namespace ExtractAudio
 			extractor.RegistrationKey = "demo";
 			
 			// Load PDF document
-            extractor.LoadDocumentFromFile(@".\audio.pdf");
+            // (!) We do not provide the sample document, please load your own.
+            extractor.LoadDocumentFromFile(@"sample-audio.pdf");
 
 			int i = 0;
 

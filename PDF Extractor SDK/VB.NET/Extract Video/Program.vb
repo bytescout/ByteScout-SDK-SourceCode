@@ -20,7 +20,8 @@ Class Program
 		extractor.RegistrationName = "demo"
 		extractor.RegistrationKey = "demo"
 
-        ' Load sample PDF document
+        ' Load PDF document
+        ' (!) We do not provide the sample document, please load your own.
         extractor.LoadDocumentFromFile("sample.pdf")
 
         Dim i As Integer = 0

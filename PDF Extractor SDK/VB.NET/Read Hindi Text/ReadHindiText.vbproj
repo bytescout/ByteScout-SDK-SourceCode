@@ -66,5 +66,10 @@
   <ItemGroup>
     <Compile Include="Program.vb" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="hindiText.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

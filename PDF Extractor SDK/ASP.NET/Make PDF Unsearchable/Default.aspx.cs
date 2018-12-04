@@ -11,6 +11,8 @@
 
 
 using System;
+using System.IO;
+using System.Web.UI;
 using Bytescout.PDFExtractor;
 
 namespace MakePDFUnsearchable
@@ -38,8 +40,16 @@ namespace MakePDFUnsearchable
             Response.ContentType = "application/pdf";
             Response.AddHeader("Content-Disposition", "attachment;filename=result.pdf");
 
-            // Process the document and write the result to the output stream
-            unsearchablePDFMaker.MakePDFUnsearchable(Response.OutputStream);
+            // Process document and write result to temporary stream.
+            byte[] resultBytes;
+            using (MemoryStream tempStream = new MemoryStream())
+            {
+                unsearchablePDFMaker.MakePDFUnsearchable(tempStream);
+                resultBytes = tempStream.ToArray();
+            }
+
+            // Write result bytes to the output stream
+            Response.BinaryWrite(resultBytes);
 
             Response.End();
         }

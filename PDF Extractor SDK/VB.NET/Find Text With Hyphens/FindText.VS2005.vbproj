@@ -50,7 +50,7 @@
   <ItemGroup>
     <Content Include="..\..\words-with-hyphens.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Link>sample2.pdf</Link>
+      <Link>words-with-hyphens.pdf</Link>
     </Content>
 
   </ItemGroup>

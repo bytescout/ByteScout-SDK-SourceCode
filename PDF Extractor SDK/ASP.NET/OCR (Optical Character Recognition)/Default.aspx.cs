@@ -27,7 +27,7 @@ namespace OpticalCharacterRecognition
             String inputFile = Server.MapPath(@".\bin\sample_ocr.pdf");
 		    
             // Location of language files
-		    String ocrLanguageDataFolder = Server.MapPath(@".\tessdata");
+		    String ocrLanguageDataFolder = Server.MapPath(@".\bin\tessdata");
 
 		    // Create Bytescout.PDFExtractor.TextExtractor instance
 		    using (TextExtractor extractor = new TextExtractor())

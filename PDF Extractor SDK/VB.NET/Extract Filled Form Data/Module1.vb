@@ -23,7 +23,7 @@ Module Module1
         extractor.RegistrationKey = "demo"
 
         ' Load sample PDF document
-        extractor.LoadDocumentFromFile(".\interactiveform.pdf")
+        extractor.LoadDocumentFromFile(".\filled_form.pdf")
 
         ' Get PDF document text as XML
         Dim xmlText As String = extractor.GetXML()
@@ -41,14 +41,14 @@ Module Module1
                 Dim typeAttribute = formControl.Attributes("type")
 
                 If (typeAttribute.Value = "editbox") Then
-                    ' Trace filled textboxes
+                    ' Show filled textboxes
                     If (Not String.IsNullOrEmpty(formControl.InnerText)) Then
-                        Trace.WriteLine("EDITBOX " + formControl.Attributes("id").Value + ": " + formControl.InnerText)
+                        Console.WriteLine("EDITBOX " + formControl.Attributes("id").Value + ": " + formControl.InnerText)
                     End If
                 ElseIf (typeAttribute.Value = "checkbox") Then
-                    ' Trace checked checkboxes
+                    ' Show checked checkboxes
                     If (formControl.Attributes("state").Value = "1") Then
-                        Trace.WriteLine("CHECKBOX " + formControl.Attributes("id").Value + ": " + formControl.Attributes("state").Value)
+                        Console.WriteLine("CHECKBOX " + formControl.Attributes("id").Value + ": " + formControl.Attributes("state").Value)
                     End If
                 End If
 
@@ -57,7 +57,12 @@ Module Module1
         End If
 
         ' Cleanup
-		extractor.Dispose()
+        extractor.Dispose()
+
+
+        Console.WriteLine()
+        Console.WriteLine("Press any key...")
+        Console.ReadKey()
 
     End Sub
 

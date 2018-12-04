@@ -21,7 +21,7 @@ Class Program
 		extractor.RegistrationKey = "demo"
 
 		' Load sample PDF document
-		extractor.LoadDocumentFromFile(".\sample2.pdf")
+        extractor.LoadDocumentFromFile(".\columns.pdf")
 
 		' Extract text by columns (useful if PDF document is designed in column layout like a newspaper)
 		extractor.ExtractColumnByColumn = true

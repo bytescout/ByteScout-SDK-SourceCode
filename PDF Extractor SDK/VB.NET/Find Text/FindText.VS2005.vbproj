@@ -50,7 +50,7 @@
   <ItemGroup>
     <Content Include="..\..\sample1.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Link>sample2.pdf</Link>
+      <Link>sample1.pdf</Link>
     </Content>
 
   </ItemGroup>

@@ -27,8 +27,9 @@ Namespace ConsoleApplication1
             extractor.RegistrationName = "demo"
             extractor.RegistrationKey = "demo"
 
-            ' Load sample PDF document
-            extractor.LoadDocumentFromFile("sample3.pdf")
+            ' Load PDF document
+            ' (!) We do not provide the sample document, please load your own.
+            extractor.LoadDocumentFromFile("xfdf-form.pdf")
 
             extractor.SaveXFDFToFile("output.xml")
 
