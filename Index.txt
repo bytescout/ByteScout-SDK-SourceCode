@@ -1656,7 +1656,6 @@
 \Spreadsheet SDK\C#
 \Spreadsheet SDK\C++ (managed)
 \Spreadsheet SDK\C++ (unmanaged)
-\Spreadsheet SDK\Compact Framework
 \Spreadsheet SDK\Console Tool
 \Spreadsheet SDK\JavaScript
 \Spreadsheet SDK\PHP
@@ -1778,16 +1777,6 @@
 \Spreadsheet SDK\C#\XLSX to SQL Server
 \Spreadsheet SDK\C++ (managed)\HelloWorld
 \Spreadsheet SDK\C++ (unmanaged)\Hello World
-\Spreadsheet SDK\Compact Framework\PocketPC
-\Spreadsheet SDK\Compact Framework\WinCE
-\Spreadsheet SDK\Compact Framework\PocketPC\Read XLS (C#)
-\Spreadsheet SDK\Compact Framework\PocketPC\Read XLS (VB.NET)
-\Spreadsheet SDK\Compact Framework\PocketPC\Write XLS (C#)
-\Spreadsheet SDK\Compact Framework\PocketPC\Write XLS (VB.NET)
-\Spreadsheet SDK\Compact Framework\WinCE\Read XLS (C#)
-\Spreadsheet SDK\Compact Framework\WinCE\Read XLS (VB.NET)
-\Spreadsheet SDK\Compact Framework\WinCE\Write XLS (C#)
-\Spreadsheet SDK\Compact Framework\WinCE\Write XLS (VB.NET)
 \Spreadsheet SDK\Console Tool\Batch to XLS
 \Spreadsheet SDK\Console Tool\Batch XLS to CSV
 \Spreadsheet SDK\Console Tool\Batch to XLS\Input Files

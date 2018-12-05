@@ -20,7 +20,7 @@ namespace ReadForm
         static void Main(string[] args)
         {
             // Load PDF form
-            Document pdfDocument = new Document(@"result.pdf");
+            Document pdfDocument = new Document(@"form.pdf");
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
 

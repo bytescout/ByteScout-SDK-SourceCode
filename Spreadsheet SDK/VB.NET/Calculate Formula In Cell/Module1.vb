@@ -257,12 +257,6 @@ Module Module1
 
 			rowNumber += 2
 
-			' Example on WEEK() function in formula
-			sheet.Cell(rowNumber, 0).Value = "WEEK(NOW())"
-			sheet.Cell(rowNumber, 1).Value = "=WEEK(NOW())"
-
-			rowNumber += 2
-
 			' Example on YEAR() function in formula
 			sheet.Cell(rowNumber, 0).Value = "YEAR(NOW())"
 			sheet.Cell(rowNumber, 1).Value = "=YEAR(NOW())"
