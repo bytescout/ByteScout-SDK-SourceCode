@@ -1125,6 +1125,7 @@
 \PDF Extractor SDK\C++\Compare Documents
 \PDF Extractor SDK\C++\Extract Pages
 \PDF Extractor SDK\C++\Extract Text
+\PDF Extractor SDK\C++\Find Table And Extract As CSV
 \PDF Extractor SDK\C++\Merge Documents
 \PDF Extractor SDK\C++\OCR (Optical Character Recognition)
 \PDF Extractor SDK\C++\Split Document
