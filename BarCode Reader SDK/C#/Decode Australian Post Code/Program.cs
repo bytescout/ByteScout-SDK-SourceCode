@@ -19,7 +19,7 @@ namespace AustralianPostCode
 {
     class Program
     {
-        const string ImageFile = "australianpostcode.png";
+        const string ImageFile = @".\australianpostcode.png";
 
         static void Main()
         {

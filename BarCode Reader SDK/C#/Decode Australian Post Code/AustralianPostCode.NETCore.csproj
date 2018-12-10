@@ -29,4 +29,9 @@
       <HintPath>c:\Program Files\Bytescout BarCode Reader SDK\netcoreapp2.0\Bytescout.BarCodeReader.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <None Update="australianpostcode.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
