@@ -30,7 +30,7 @@ namespace ImagePreprocessingFilters
 
                 // WORKING WITH LOW CONTRAST BARCODE IMAGES
 
-                // Add the contrast adjustment for the low contrast image
+                // Add contrast adjustment for low-contrast image
                 reader.ImagePreprocessingFilters.AddContrast(40);
 
                 Console.WriteLine("Image {0}", "low-contrast-barcode.png");
@@ -69,7 +69,7 @@ namespace ImagePreprocessingFilters
                 // WORKING WITH DENSE AND ILLEGIBLE BARCODES
 
                 // Add the scale filter to enlarge the barcode to make gaps between bars more distinguishable
-                reader.ImagePreprocessingFilters.AddScale(2); // enlarge twice
+                reader.ImagePreprocessingFilters.AddScale(2d); // enlarge twice
 
                 Console.WriteLine("Image {0}", "too-dense-barcode.png");
 

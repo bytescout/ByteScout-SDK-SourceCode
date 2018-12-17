@@ -25,13 +25,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	IReaderPtr pIReader(__uuidof(Reader));
 
 	// set the registration name and key
-	BSTR regname = ::SysAllocString(L"DEMO");
-	pIReader->put_RegistrationName(regname);
-	::SysFreeString(regname);
+	_bstr_t registrationName(L"DEMO");
+	pIReader->put_RegistrationName(registrationName);
 
-	BSTR regkey = ::SysAllocString(L"DEMO");
-	pIReader->put_RegistrationKey(regkey);
-	::SysFreeString(regkey);
+	_bstr_t registrationKey(L"DEMO");
+	pIReader->put_RegistrationKey(registrationKey);
 
 	// Set barcode type to find
 	_BarcodeTypeSelectorPtr pBarcodeTypesToFind;
@@ -43,16 +41,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	::GetFullPathName(L"GS1DataBarExpanded.png", MAX_PATH, file, NULL);
 
 	// Read barcode from file
-	BSTR bstrFile = ::SysAllocString(file);
-	hr = pIReader->ReadFromFile(bstrFile);
-	::SysFreeString(bstrFile);
+	hr = pIReader->ReadFromFile(_bstr_t(file));
 
-	// check if files was not found
+	// check if file was not found
 	if (hr == E_FAIL)
 	{
-		wprintf(L"File was not found: %s\n", bstrFile);
+		wprintf(L"File was not found: %s\n", file);
 	}
-	else 
+	else
 	{
 		// Get found barcode count
 		long count;
@@ -68,7 +64,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			float confidence;
 			hr = pIReader->GetFoundBarcodeConfidence(i, &confidence);
 			wprintf(L"Barcode confidence: %f\n", confidence);
-			
+
 			BSTR bstrValue;
 			hr = pIReader->GetFoundBarcodeValue(i, &bstrValue);
 			wprintf(L"Barcode value: %s\n", bstrValue);
@@ -79,13 +75,14 @@ int _tmain(int argc, _TCHAR* argv[])
 
 		if (count == 0)
 		{
-			wprintf(L"no barcodes found");
+			wprintf(L"No barcodes found.");
 		}
 	}
 
 	// Uninitialize COM.
 	CoUninitialize();
-	// Wait until user presses any key
+
+	// Wait until user press any key
 	system("pause");
 
 	return 0;

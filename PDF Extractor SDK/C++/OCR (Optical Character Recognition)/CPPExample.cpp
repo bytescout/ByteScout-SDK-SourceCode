@@ -52,6 +52,38 @@
 		// Set PDF document rendering resolution
 		pITextExtractor->put_OCRResolution(300);
 
+
+		// You can also apply various preprocessing filters
+		// to improve the recognition on low-quality scans.
+
+		_ImagePreprocessingFiltersCollection* pIImagePreprocessingFilters;
+		pITextExtractor->get_OCRImagePreprocessingFilters(&pIImagePreprocessingFilters);
+
+		// Automatically deskew skewed scans
+		//pIImagePreprocessingFilters->AddDeskew();
+
+		// Remove vertical or horizontal lines (sometimes helps to avoid OCR engine's page segmentation errors)
+		//pIImagePreprocessingFilters->AddVerticalLinesRemover();
+		//pIImagePreprocessingFilters->AddHorizontalLinesRemover();
+
+		// Repair broken letters
+		//pIImagePreprocessingFilters->AddDilate();
+
+		// Remove noise
+		//pIImagePreprocessingFilters->AddMedian();
+
+		// Apply Gamma Correction
+		//pIImagePreprocessingFilters->AddGammaCorrection();
+
+		// Add Contrast
+		//pIImagePreprocessingFilters->AddContrast(20);
+
+
+		// (!) You can use new OCRAnalyser class to find an optimal set of image preprocessing 
+		// filters for your specific document.
+		// See "OCR Analyser" example.
+
+
 		// Save extracted text to file
 		_bstr_t bstrOutputFile(L"output.txt");
 		pITextExtractor->SaveTextToFile(bstrOutputFile);

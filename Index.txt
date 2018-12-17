@@ -117,6 +117,7 @@
 \BarCode Reader SDK\C#\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\C++ (Managed)\General Example
 \BarCode Reader SDK\C++ (Unmanaged)\General Example
+\BarCode Reader SDK\C++ (Unmanaged)\Image Preprocessing Filters
 \BarCode Reader SDK\C++ (Unmanaged)\Read From Memory
 \BarCode Reader SDK\Delphi\Console
 \BarCode Reader SDK\Delphi\Console Read From Subfolder
