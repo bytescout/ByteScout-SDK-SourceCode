@@ -26,7 +26,7 @@ namespace ConvertHtmlToPdf
             {
                 converter.PageSize = PaperKind.A4;
                 converter.Orientation = PaperOrientation.Portrait;
-                converter.Footer = "<p style=\"color: blue;\">FOOTER TEXT</p>";
+                converter.Footer = "FOOTER TEXT"; // optional footer text
                 
                 converter.ConvertHtmlToPdf("sample.html", "result.pdf");
                 
