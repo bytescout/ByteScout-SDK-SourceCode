@@ -1315,9 +1315,15 @@
 \PDF Renderer SDK\VBScript and VB6\PDF to TIFF multipaged
 \PDF Renderer SDK\VBScript and VB6\Silent Printing
 \PDF Renderer SDK\VBScript and VB6\Text-Vector-Image Layers
+\PDF SDK\ASP.NET
+\PDF SDK\ASP.NET MVC
 \PDF SDK\C#
 \PDF SDK\VB.NET
 \PDF SDK\VBScript and VB6
+\PDF SDK\ASP.NET\PDF SDK Samples
+\PDF SDK\ASP.NET\PDF SDK Samples\SampleFiles
+\PDF SDK\ASP.NET MVC\PDF SDK Samples
+\PDF SDK\ASP.NET MVC\PDF SDK Samples\SampleFiles
 \PDF SDK\C#\Actions - GoTo
 \PDF SDK\C#\Actions - JavaScript
 \PDF SDK\C#\Actions - Launch
