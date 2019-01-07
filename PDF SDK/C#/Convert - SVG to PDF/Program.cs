@@ -11,25 +11,32 @@
 
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Routing;
+using System.Diagnostics;
+using System.Drawing.Printing;
+using Bytescout.PDF.Converters;
 
-namespace PDFSDKSamples
+namespace ConvertSvgToPdf
 {
-    public class RouteConfig
+    class Program
     {
-        public static void RegisterRoutes(RouteCollection routes)
+        [STAThread]
+        static void Main(string[] args)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            // HtmlToPdfConverter can convert HTML files with SVG content, or SVG files directly.
+            using (HtmlToPdfConverter converter = new HtmlToPdfConverter())
+            {
+                converter.PageSize = PaperKind.A4;
+                
+                converter.ConvertHtmlToPdf("drawing.svg", "result.pdf");
+                
+                // You can also pass a link instead of the input file:  
+                //converter.ConvertHtmlToPdf("http://somesite.com/files/drawing.svg", "result.pdf");
+            }
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+            // Open result document in default associated application (for demo purpose)
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }
