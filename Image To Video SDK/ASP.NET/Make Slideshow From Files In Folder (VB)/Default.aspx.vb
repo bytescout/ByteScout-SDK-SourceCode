@@ -17,6 +17,9 @@ Partial Public Class _Default
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+    End Sub
+
+    Protected Sub ButtonPerformSlideShow_Click(sender As Object, e As EventArgs) Handles ButtonPerformSlideShow.Click
 
         ' Create BytescoutImageToVideoLib.ImageToVideo object instance
         Dim converter As New ImageToVideo()
@@ -35,9 +38,7 @@ Partial Public Class _Default
             ' Add images and set the duration for every slide
             Dim slide As Slide
             slide = converter.AddImageFromFileName(fileName)
-            slide.Duration = 1000 ' 1000ms = 1s
-            slide.InEffect = TransitionEffectType.teZoomIn
-            slide.InEffectDuration = 500 ' 0.5 ms
+            slide.Duration = 2000 ' 2000ms = 2s
 
         Next
 
@@ -54,12 +55,11 @@ Partial Public Class _Default
         ' Release resources
         System.Runtime.InteropServices.Marshal.ReleaseComObject(converter)
         converter = Nothing
-        
-        ' Show filename of generated file
 
+        ' Show filename of generated file
         Response.Clear()
         Response.ContentType = "text/html"
-        
+
         If File.Exists(outputVideoFile) Then
             Response.Write("Result video file:  <b>" + outputVideoFile + "</b>")
         Else
@@ -69,5 +69,4 @@ Partial Public Class _Default
         Response.End()
 
     End Sub
-
 End Class
