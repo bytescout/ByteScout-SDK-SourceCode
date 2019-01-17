@@ -10,7 +10,6 @@
     <ProjectGuid>{4598AFBA-6355-43D2-8522-74455EAC4D95}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SimpleSlideshow</RootNamespace>
     <AssemblyName>SimpleSlideshow</AssemblyName>
     <OldToolsVersion>4.0</OldToolsVersion>
@@ -74,7 +73,6 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="BytescoutImageToVideo">
