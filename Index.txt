@@ -1336,7 +1336,6 @@
 \PDF SDK\C#\Convert - DOCX to PDF
 \PDF SDK\C#\Convert - HTML to DOCX
 \PDF SDK\C#\Convert - HTML to PDF
-\PDF SDK\C#\Convert - SVG to PDF
 \PDF SDK\C#\Convert - XML to PDF
 \PDF SDK\C#\Display Options
 \PDF SDK\C#\Document - Create New
@@ -1406,7 +1405,6 @@
 \PDF SDK\VB.NET\Convert - DOCX to PDF
 \PDF SDK\VB.NET\Convert - HTML to DOCX
 \PDF SDK\VB.NET\Convert - HTML to PDF
-\PDF SDK\VB.NET\Convert - SVG to PDF
 \PDF SDK\VB.NET\Convert - XML to PDF
 \PDF SDK\VB.NET\Display Options
 \PDF SDK\VB.NET\Document - Create New
