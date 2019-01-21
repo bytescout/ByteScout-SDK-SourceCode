@@ -14,11 +14,11 @@
 \PDF Viewer SDK
 \QR Code SDK
 \Screen Capturing SDK
+\Solutions
 \Spreadsheet SDK
 \SWF To Video SDK
 \Text Recognition SDK
 \Watermarking SDK
-\_Showcases
 \BarCode Reader SDK\ASP Classic
 \BarCode Reader SDK\ASP.NET
 \BarCode Reader SDK\C#
@@ -1661,6 +1661,28 @@
 \Screen Capturing SDK\VBScript and VB6\Show Capturing Properties Dialog
 \Screen Capturing SDK\VBScript and VB6\WEBM Output
 \Screen Capturing SDK\VBScript and VB6\WMV Profile
+\Solutions\Display PDF in browser and select area using PDF.js
+\Solutions\Extract Text From Large PDF Document in Parallel Processing (C#)
+\Solutions\Generate And Check QRCode With Image (C#)
+\Solutions\Generate And Check QRCode With Image (VB.NET)
+\Solutions\Generate Barcodes From Spreadsheet (VBScript)
+\Solutions\Human Assisted Invoice Parsing (C#)
+\Solutions\Invoice Parsing (C#)
+\Solutions\Invoice Parsing (VB.NET)
+\Solutions\Make Large PDF Searchable in Parallel Processing (C#)
+\Solutions\Make Large PDF Searchable in Parallel Processing (VB.NET)
+\Solutions\Read PDF with Image Hindi Text (C#)
+\Solutions\Read PDF with Image Hindi Text (VB.NET)
+\Solutions\Regex Search And Highlight In PDF Document (C#)
+\Solutions\Regex Search And Highlight In PDF Document (VB.NET)
+\Solutions\Regex Search In PDF And Highlight On Rendered Page (C#)
+\Solutions\Scanned PDF to Excel (C#)
+\Solutions\Scanned PDF to Excel (VB.NET)
+\Solutions\Select Region And Perform OCR (C#)
+\Solutions\Slice PDF By Horizontal Lines  (C#)
+\Solutions\Slice PDF By Horizontal Lines  (VB.NET)
+\Solutions\Display PDF in browser and select area using PDF.js\For PDF.js v1.x
+\Solutions\Display PDF in browser and select area using PDF.js\For PDF.js v2.x
 \Spreadsheet SDK\ASP Classic
 \Spreadsheet SDK\ASP.NET
 \Spreadsheet SDK\C#
@@ -2134,25 +2156,3 @@
 \Watermarking SDK\VBScript\Adjustments
 \Watermarking SDK\VBScript\AnnotationWithMacros
 \Watermarking SDK\VBScript\SimpleText
-\_Showcases\Display PDF in browser and select area using PDF.js
-\_Showcases\Extract Text From Large PDF Document in Parallel Processing (C#)
-\_Showcases\Generate And Check QRCode With Image (C#)
-\_Showcases\Generate And Check QRCode With Image (VB.NET)
-\_Showcases\Generate Barcodes From Spreadsheet (VBScript)
-\_Showcases\Human Assisted Invoice Parsing (C#)
-\_Showcases\Invoice Parsing (C#)
-\_Showcases\Invoice Parsing (VB.NET)
-\_Showcases\Make Large PDF Searchable in Parallel Processing (C#)
-\_Showcases\Make Large PDF Searchable in Parallel Processing (VB.NET)
-\_Showcases\Read PDF with Image Hindi Text (C#)
-\_Showcases\Read PDF with Image Hindi Text (VB.NET)
-\_Showcases\Regex Search And Highlight In PDF Document (C#)
-\_Showcases\Regex Search And Highlight In PDF Document (VB.NET)
-\_Showcases\Regex Search In PDF And Highlight On Rendered Page (C#)
-\_Showcases\Scanned PDF to Excel (C#)
-\_Showcases\Scanned PDF to Excel (VB.NET)
-\_Showcases\Select Region And Perform OCR (C#)
-\_Showcases\Slice PDF By Horizontal Lines  (C#)
-\_Showcases\Slice PDF By Horizontal Lines  (VB.NET)
-\_Showcases\Display PDF in browser and select area using PDF.js\For PDF.js v1.x
-\_Showcases\Display PDF in browser and select area using PDF.js\For PDF.js v2.x
