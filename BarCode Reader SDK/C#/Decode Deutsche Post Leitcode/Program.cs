@@ -12,7 +12,6 @@
 
 using System;
 using System.IO;
-
 using Bytescout.BarCodeReader;
 
 namespace ReadDeutschePostLeitcode
@@ -25,20 +24,23 @@ namespace ReadDeutschePostLeitcode
         {
             Console.WriteLine("Reading barcode(s) from image {0}", Path.GetFullPath(ImageFile));
 
-            Reader bc = new Reader();
-            bc.RegistrationName = "demo";
-			bc.RegistrationKey = "demo";
+            Reader reader = new Reader();
+            reader.RegistrationName = "demo";
+			reader.RegistrationKey = "demo";
 
             // Set barcode type to find
-            bc.BarcodeTypesToFind.Interleaved2of5 = true; // "Deutsche Post Leitcode" is subset of "Interleaved 2 of 5" barcode
+            reader.BarcodeTypesToFind.Interleaved2of5 = true; // "Deutsche Post Leitcode" is subset of "Interleaved 2 of 5" barcode
 
             // Read barcodes
-            FoundBarcode[] barcodes = bc.ReadFrom(ImageFile);
+            FoundBarcode[] barcodes = reader.ReadFrom(ImageFile);
 
             foreach (FoundBarcode barcode in barcodes)
             {
                 Console.WriteLine("Found barcode with type '{0}' and value '{1}'", barcode.Type, barcode.Value);
             }
+			
+			// Cleanup
+			reader.Dispose();
 
             Console.WriteLine("Press any key to exit..");
             Console.ReadKey();
