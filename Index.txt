@@ -1316,15 +1316,12 @@
 \PDF Renderer SDK\VBScript and VB6\Hide Text or Vector or Image Layer in pdf
 \PDF Renderer SDK\VBScript and VB6\pdf to image in Command Line
 \PDF Renderer SDK\VBScript and VB6\Silent PDF Printing
-\PDF SDK\ASP.NET
 \PDF SDK\ASP.NET MVC C#
 \PDF SDK\C#
 \PDF SDK\VB.NET
 \PDF SDK\VBScript and VB6
-\PDF SDK\ASP.NET\PDF SDK Samples
-\PDF SDK\ASP.NET\PDF SDK Samples\SampleFiles
-\PDF SDK\ASP.NET MVC C#\PDF SDK Samples
-\PDF SDK\ASP.NET MVC C#\PDF SDK Samples\SampleFiles
+\PDF SDK\ASP.NET MVC C#\Create PDF
+\PDF SDK\ASP.NET MVC C#\Create PDF\SampleFiles
 \PDF SDK\C#\Add 3d Annotations in PDF
 \PDF SDK\C#\Add Annotation with Markup in PDF
 \PDF SDK\C#\Add File Attachment Annotation in PDF
