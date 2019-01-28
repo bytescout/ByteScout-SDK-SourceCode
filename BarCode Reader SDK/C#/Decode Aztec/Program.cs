@@ -25,23 +25,20 @@ namespace ReadAztec
         {
             Console.WriteLine("Reading barcode(s) from image {0}", Path.GetFullPath(ImageFile));
 
-            Reader reader = new Reader();
-            reader.RegistrationName = "demo";
-			reader.RegistrationKey = "demo";
+            Reader bc = new Reader();
+            bc.RegistrationName = "demo";
+			bc.RegistrationKey = "demo";
 
 	    	// Set barcode type to find
-            reader.BarcodeTypesToFind.Aztec = true;
+            bc.BarcodeTypesToFind.Aztec = true;
 
             // Read barcodes
-            FoundBarcode[] barcodes = reader.ReadFrom(ImageFile);
+            FoundBarcode[] barcodes = bc.ReadFrom(ImageFile);
 
             foreach (FoundBarcode barcode in barcodes)
             {
                 Console.WriteLine("Found barcode with type '{0}' and value '{1}'", barcode.Type, barcode.Value);
             }
-			
-			// Cleanup
-			reader.Dispose();
 
             Console.WriteLine("Press any key to exit..");
             Console.ReadKey();

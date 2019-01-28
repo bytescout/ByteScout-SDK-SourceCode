@@ -74,9 +74,6 @@ namespace BarcodeFromWebCam
             {
                 MessageBox.Show(wiaScanner.OutputFiles[0] + "\r\n\r\nCould not find any barcode.");
             }
-
-            // cleanup
-            reader.Dispose();
  		}
 	}
 }

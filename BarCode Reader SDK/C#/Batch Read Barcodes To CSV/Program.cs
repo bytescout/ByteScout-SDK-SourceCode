@@ -49,9 +49,6 @@ namespace ImagePDFBarcodeToCSV
 
                 Console.WriteLine("Total {0} barcode found in {1} file.", lstCSVOutput.Count, files.Length);
 
-                // cleanup
-                reader.Dispose();
-
                 // Export to CSV
                 ExportToCsv(lstCSVOutput);
             }
