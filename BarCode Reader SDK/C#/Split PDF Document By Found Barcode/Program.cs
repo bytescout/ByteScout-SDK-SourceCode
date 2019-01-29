@@ -94,6 +94,17 @@ namespace SplitDocumentByFoundBarcode
             // Split document 
             string[] splittedParts = reader.SplitDocument(@"barcodes.pdf", pageRanges.ToString());
             // The method returns array of file names. Rename files as desired.
+
+            foreach (var fileName in splittedParts)
+            {
+                Console.WriteLine(fileName);
+            }
+
+            // Cleanup
+            reader.Dispose();
+
+            Console.Read();
+            Console.WriteLine("Press enter key to exit...");
         }
     }
 }
