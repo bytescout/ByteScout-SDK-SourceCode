@@ -12,7 +12,6 @@
 
 using System;
 using System.IO;
-
 using Bytescout.BarCodeReader;
 
 namespace ReadPZN
@@ -40,6 +39,9 @@ namespace ReadPZN
                 Console.WriteLine("Found barcode with type '{0}' and value '{1}'", barcode.Type, barcode.Value);
             }
 
+			// Cleanup
+			reader.Dispose();
+			
             Console.WriteLine("Press any key to exit..");
             Console.ReadKey();
         }

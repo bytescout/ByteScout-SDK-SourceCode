@@ -82,6 +82,9 @@ namespace GuiExample
                 foreach (FoundBarcode barcode in foundBarcodes)
                     data.Add(String.Format("Type \"{0}\" and value \"{1}\"", barcode.Type, barcode.Value));
             }
+			
+			// Cleanup
+			reader.Dispose();
 
             textBoxResults.Lines = data.ToArray();
         }

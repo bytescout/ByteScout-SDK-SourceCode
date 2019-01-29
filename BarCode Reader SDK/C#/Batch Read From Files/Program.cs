@@ -52,6 +52,7 @@ namespace BatchProcessing
                 resultsCsvFile.Write(csv);
             }
 
+			// Cleanup
             reader.Dispose();
             resultsCsvFile.Dispose();
 

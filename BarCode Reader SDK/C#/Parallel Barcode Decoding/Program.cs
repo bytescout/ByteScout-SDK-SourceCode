@@ -56,9 +56,12 @@ namespace ParallelDecoding
 
                         // Read barcodes
                         FoundBarcode[] barcodes = reader.ReadFrom(InputFile);
-
+						
                         Console.WriteLine("Thread #" + threadIndex + " finished with " + barcodes.Length + " barcodes found.");
-                    }
+
+						// Cleanup
+						reader.Dispose();
+					}
                     catch (Exception exception)
                     {
                         Console.WriteLine("Thread #" + threadIndex + " failed with exception:\r\n" + exception.Message);

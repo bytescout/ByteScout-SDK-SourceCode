@@ -6,7 +6,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9EACD999-022B-495A-BCDF-BB82C2534522}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReadFromVideoCamera</RootNamespace>
     <AssemblyName>ReadFromVideoCamera</AssemblyName>
     <FileUpgradeFlags>
@@ -78,7 +77,6 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
