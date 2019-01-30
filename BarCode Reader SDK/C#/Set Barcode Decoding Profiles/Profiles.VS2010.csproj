@@ -8,7 +8,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{25E68A98-BA0D-428D-99F4-0ED8C42DD41C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Profiles</RootNamespace>
     <AssemblyName>Profiles</AssemblyName>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -43,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="profiles.json">

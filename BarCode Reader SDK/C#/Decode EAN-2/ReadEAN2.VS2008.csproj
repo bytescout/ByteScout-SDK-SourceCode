@@ -6,7 +6,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C664E764-C424-4CD5-AF69-F6B05FB17BA8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReadEAN2</RootNamespace>
     <AssemblyName>ReadEAN2</AssemblyName>
     <OldToolsVersion>2.0</OldToolsVersion>
@@ -41,7 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="EAN2.png">

@@ -51,6 +51,9 @@ Module Program
 
             ' Export to CSV
             ExportToCsv(lstCSVOutput)
+			
+			' Cleanup
+			reader.Dispose()
 
         Catch ex As Exception
             Console.WriteLine(ex.Message)

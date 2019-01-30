@@ -6,7 +6,6 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{97BF2F44-391D-4F37-874F-BC261590AB43}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReadVCardFromQRCode</RootNamespace>
     <AssemblyName>ReadVCardFromQRCode</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -47,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="sample_vcard.gif">
