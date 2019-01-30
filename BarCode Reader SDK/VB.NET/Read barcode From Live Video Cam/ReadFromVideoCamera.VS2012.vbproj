@@ -6,7 +6,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2709B33C-231F-4007-9FCA-A5F1A93F5F8A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReadFromVideoCamera</RootNamespace>
     <AssemblyName>ReadFromVideoCamera</AssemblyName>
     <FileUpgradeFlags>
@@ -81,7 +80,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.vb" />
-    <Compile Include="Properties\AssemblyInfo.vb" />
     <Content Include="TouchlessLib.dll">
     </Content>
     <Content Include="WebCamLib.dll">

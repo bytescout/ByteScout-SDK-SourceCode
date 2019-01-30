@@ -67,6 +67,9 @@ Module Module1
             ' Read barcodes
             Dim barcodes As FoundBarcode() = reader.ReadFrom(InputFile)
 
+            ' Cleanup
+            reader.Dispose()
+
             Console.WriteLine("Thread #" & threadIndex & " finished with " & barcodes.Length & " barcodes found.")
 
         Catch ex As Exception

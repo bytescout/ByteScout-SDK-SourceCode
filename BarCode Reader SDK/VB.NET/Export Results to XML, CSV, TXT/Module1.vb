@@ -11,7 +11,6 @@
 
 
 Imports System.IO
-
 Imports Bytescout.BarCodeReader
 Imports System.Text
 Imports System.Xml
@@ -70,6 +69,10 @@ Module Module1
 
         ' 4. Get found barcodes as string in JSON format
         Dim jsonString = reader.ExportFoundBarcodesToJSON()
+
+
+        'Cleanup
+        reader.Dispose()
 
     End Sub
 

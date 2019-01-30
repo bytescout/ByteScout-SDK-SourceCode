@@ -73,6 +73,9 @@ Public Partial Class Form1
 			Next
 		End If
 
-		textBoxResults.Lines = data.ToArray()
+        ' Cleanup
+        reader.Dispose()
+
+        textBoxResults.Lines = data.ToArray()
 	End Sub
 End Class

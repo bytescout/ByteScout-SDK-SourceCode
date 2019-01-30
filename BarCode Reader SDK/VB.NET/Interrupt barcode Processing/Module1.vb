@@ -11,7 +11,6 @@
 
 
 Imports System.IO
-
 Imports Bytescout.BarCodeReader
 
 Module Module1
@@ -33,6 +32,9 @@ Module Module1
 
         ' Read barcodes
         reader.ReadFrom(imageFile)
+
+        ' Cleanup
+        reader.Dispose()
 
         Console.WriteLine("Press any key to exit..")
         Console.ReadKey()
