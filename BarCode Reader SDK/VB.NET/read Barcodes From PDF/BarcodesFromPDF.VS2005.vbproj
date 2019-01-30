@@ -6,7 +6,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5F17DE51-EC94-4A5A-AF58-C4876D4BA652}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BarcodesFromPDF</RootNamespace>
     <AssemblyName>BarcodesFromPDF</AssemblyName>
   </PropertyGroup>
@@ -40,7 +39,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Compile Include="Program.vb" />
-    <Compile Include="Properties\AssemblyInfo.vb" />
     <Content Include="example.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

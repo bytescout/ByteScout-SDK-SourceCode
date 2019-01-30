@@ -6,7 +6,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2709B33C-231F-4007-9FCA-A5F1A93F5F8A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReadFromVideoCamera</RootNamespace>
     <AssemblyName>ReadFromVideoCamera</AssemblyName>
     <FileUpgradeFlags>
@@ -72,7 +71,6 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Compile Include="Program.vb" />
-    <Compile Include="Properties\AssemblyInfo.vb" />
     <Compile Include="WebCamBarcodeDecoder.Designer.vb">
       <DependentUpon>WebCamBarcodeDecoder.vb</DependentUpon>
     </Compile>

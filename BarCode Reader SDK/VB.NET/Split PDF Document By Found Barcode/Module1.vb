@@ -12,7 +12,6 @@
 
 Imports System.IO
 Imports System.Text
-
 Imports Bytescout.BarCodeReader
 
 Module Module1
@@ -86,6 +85,16 @@ Module Module1
         ' Split document 
         Dim splittedParts As String() = reader.SplitDocument("barcodes.pdf", pageRanges.ToString())
         ' The method returns array of file names. Rename files as desired.
+
+        ' Cleanup
+        reader.Dispose()
+
+        For Each fileName As String In splittedParts
+            Console.WriteLine(fileName)
+        Next
+
+        Console.WriteLine("Press enter key to exit...")
+        Console.ReadLine()
 
     End Sub
 

@@ -36,6 +36,9 @@ Module Module1
             Console.WriteLine("Found checkbox with type '{0}' and value '{1}'", barcode.Type, barcode.Value)
         Next
 
+        ' Cleanup
+        reader.Dispose()
+
         Console.WriteLine("Press any key to exit..")
         Console.ReadKey()
 
