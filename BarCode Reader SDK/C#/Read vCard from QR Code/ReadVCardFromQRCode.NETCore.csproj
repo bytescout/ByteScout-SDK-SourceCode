@@ -18,6 +18,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="sample_vcard.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

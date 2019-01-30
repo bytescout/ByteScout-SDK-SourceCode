@@ -69,12 +69,9 @@ namespace ExportResults
 
             // 3. Get found barcodes as string in plain text format
             string txt = reader.ExportFoundBarcodesToTXT();
-
+            
             // 4. Get found barcodes as string in JSON format
             string jsonString = reader.ExportFoundBarcodesToJSON();
-			
-			// Cleanup
-			reader.Dispose();
         }
     }
 }

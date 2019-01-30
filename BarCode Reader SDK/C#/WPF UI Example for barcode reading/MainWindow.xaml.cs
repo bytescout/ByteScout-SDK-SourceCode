@@ -88,11 +88,8 @@ namespace ReadBarcodeFromImage
                 FoundBarcode barcode = reader.FoundBarcodes[i];
                 stringBuilder.AppendFormat("{0}) Type: {1}; Value: {2}.\r\n", i + 1, barcode.Type, barcode.Value);
             }
-			
+
             tbFoundBarcodes.Text = stringBuilder.ToString();
-			
-			// Cleanup
-			reader.Dispose();
         }
     }
 }

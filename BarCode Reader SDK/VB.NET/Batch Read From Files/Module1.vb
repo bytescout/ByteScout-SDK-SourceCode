@@ -11,6 +11,7 @@
 
 
 Imports System.IO
+
 Imports Bytescout.BarCodeReader
 
 Module Module1

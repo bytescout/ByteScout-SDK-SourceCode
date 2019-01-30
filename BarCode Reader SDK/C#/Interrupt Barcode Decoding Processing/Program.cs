@@ -12,6 +12,7 @@
 
 using System;
 using System.IO;
+
 using Bytescout.BarCodeReader;
 
 namespace InterruptProcessing
@@ -36,9 +37,6 @@ namespace InterruptProcessing
             // Read barcodes
             reader.ReadFrom(ImageFile);
 
-			// Cleanup
-			reader.Dispose();
-			
             Console.WriteLine("Press any key to exit..");
             Console.ReadKey();
         }

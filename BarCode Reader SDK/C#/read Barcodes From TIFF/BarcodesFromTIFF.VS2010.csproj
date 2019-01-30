@@ -8,6 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{152D91ED-9533-49A6-9433-0037FA578D4F}</ProjectGuid>
     <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BarcodesFromTIFF</RootNamespace>
     <AssemblyName>BarcodesFromTIFF</AssemblyName>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -42,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="multipage.tif">

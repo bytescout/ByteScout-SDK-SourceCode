@@ -69,8 +69,5 @@ NotInheritable Class Program
             MessageBox.Show(wiaScanner.OutputFiles(0) & Environment.NewLine & "Could not find any barcode.")
         End If
 
-        ' Cleanup
-        barcodeReader.Dispose()
-
     End Sub
 End Class

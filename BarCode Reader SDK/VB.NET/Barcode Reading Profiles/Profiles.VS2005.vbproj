@@ -6,6 +6,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{34509168-5D95-4323-8808-2A10FDE4E9A9}</ProjectGuid>
     <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Profiles</RootNamespace>
     <AssemblyName>Profiles</AssemblyName>
   </PropertyGroup>
@@ -37,6 +38,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\sample_ocr.pdf">

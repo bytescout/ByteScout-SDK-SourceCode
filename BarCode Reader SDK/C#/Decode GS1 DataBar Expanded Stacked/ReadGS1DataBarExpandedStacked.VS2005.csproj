@@ -6,6 +6,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C664E764-C424-4CD5-AF69-F6B05FB17BA8}</ProjectGuid>
     <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReadGS1DataBarExpandedStacked</RootNamespace>
     <AssemblyName>ReadGS1DataBarExpandedStacked</AssemblyName>
   </PropertyGroup>
@@ -38,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GS1DataBarExpandedStacked.png">
