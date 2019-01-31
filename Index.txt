@@ -34,8 +34,8 @@
 \BarCode Reader SDK\VB.NET
 \BarCode Reader SDK\VBScript
 \BarCode Reader SDK\Visual Basic 6
-\BarCode Reader SDK\ASP Classic\read barcode from image
-\BarCode Reader SDK\ASP Classic\read Barcode From PDF
+\BarCode Reader SDK\ASP Classic\Read Barcode From Image
+\BarCode Reader SDK\ASP Classic\Read Barcode From PDF
 \BarCode Reader SDK\ASP.NET C#\Batch Read Barcodes To CSV
 \BarCode Reader SDK\ASP.NET C#\Read barcode
 \BarCode Reader SDK\ASP.NET C#\read Barcodes From Image
