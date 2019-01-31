@@ -207,6 +207,7 @@
 \BarCode Reader SDK\VB.NET\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\VBScript\Barcode Image Preprocessing Filters
 \BarCode Reader SDK\VBScript\Barcode Reading Profiles
+\BarCode Reader SDK\VBScript\Barcodes to Excel
 \BarCode Reader SDK\VBScript\Batch Read barcodes From Files
 \BarCode Reader SDK\VBScript\Read barcode From PDF
 \BarCode Reader SDK\VBScript\Read barcode From Webcam or Scanner
@@ -215,6 +216,7 @@
 \BarCode Reader SDK\VBScript\Rename Files To Barcode Values
 \BarCode Reader SDK\VBScript\Search Barcodes In Documents And Write Results To File
 \BarCode Reader SDK\VBScript\Simple barcode reading
+\BarCode Reader SDK\VBScript\Barcodes to Excel\InputFiles
 \BarCode Reader SDK\VBScript\read Code 39 To Excel\InputFiles
 \BarCode Reader SDK\VBScript\Read QR Code To Excel\InputFiles
 \BarCode Reader SDK\Visual Basic 6\Simple barcode reading
@@ -443,6 +445,7 @@
 \BarCode SDK\VB.NET\Generate Barcode from Service\WindowsService1
 \BarCode SDK\VB.NET\MaxiCode Mode 2-3 (Postal)\PostalMaxiCode
 \BarCode SDK\VBScript\Add Barcode to PDF
+\BarCode SDK\VBScript\Add barcodes To Image
 \BarCode SDK\VBScript\Add barcodes To New PDF
 \BarCode SDK\VBScript\Add barcodes To TIFF
 \BarCode SDK\VBScript\Batch barcode generation
@@ -1316,12 +1319,15 @@
 \PDF Renderer SDK\VBScript and VB6\Hide Text or Vector or Image Layer in pdf
 \PDF Renderer SDK\VBScript and VB6\pdf to image in Command Line
 \PDF Renderer SDK\VBScript and VB6\Silent PDF Printing
+\PDF SDK\ASP.NET
 \PDF SDK\ASP.NET MVC C#
 \PDF SDK\C#
 \PDF SDK\VB.NET
 \PDF SDK\VBScript and VB6
-\PDF SDK\ASP.NET MVC C#\Create PDF
-\PDF SDK\ASP.NET MVC C#\Create PDF\SampleFiles
+\PDF SDK\ASP.NET\PDF SDK Samples
+\PDF SDK\ASP.NET\PDF SDK Samples\SampleFiles
+\PDF SDK\ASP.NET MVC C#\PDF SDK Samples
+\PDF SDK\ASP.NET MVC C#\PDF SDK Samples\SampleFiles
 \PDF SDK\C#\Add 3d Annotations in PDF
 \PDF SDK\C#\Add Annotation with Markup in PDF
 \PDF SDK\C#\Add File Attachment Annotation in PDF
