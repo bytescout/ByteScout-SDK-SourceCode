@@ -44,18 +44,18 @@
 \BarCode Reader SDK\ASP.NET C#\Split PDF by Barcode
 \BarCode Reader SDK\ASP.NET C#\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\ASP.NET MVC C#\Batch Read Barcodes To CSV
-\BarCode Reader SDK\ASP.NET MVC C#\Read barcode
-\BarCode Reader SDK\ASP.NET MVC C#\read Barcodes From Image
-\BarCode Reader SDK\ASP.NET MVC C#\read Barcodes From PDF
+\BarCode Reader SDK\ASP.NET MVC C#\Read Barcode
+\BarCode Reader SDK\ASP.NET MVC C#\Read Barcodes From Image
+\BarCode Reader SDK\ASP.NET MVC C#\Read Barcodes From PDF
 \BarCode Reader SDK\ASP.NET MVC C#\Read From Live Camera
 \BarCode Reader SDK\ASP.NET MVC C#\Split PDF by Barcode
 \BarCode Reader SDK\ASP.NET MVC C#\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\ASP.NET VB\Batch Read Barcodes To CSV
-\BarCode Reader SDK\ASP.NET VB\Read barcode
-\BarCode Reader SDK\ASP.NET VB\read Barcodes From Image
-\BarCode Reader SDK\ASP.NET VB\read Barcodes From PDF
+\BarCode Reader SDK\ASP.NET VB\Read Barcode
+\BarCode Reader SDK\ASP.NET VB\Read Barcodes From Image
+\BarCode Reader SDK\ASP.NET VB\Read Barcodes From PDF
 \BarCode Reader SDK\ASP.NET VB\Batch Read Barcodes To CSV\BarcodeFiles
-\BarCode Reader SDK\C#\Acquire barcode From Scanner And Decode
+\BarCode Reader SDK\C#\Acquire Barcode From Scanner And Decode
 \BarCode Reader SDK\C#\Batch Read Barcodes To CSV
 \BarCode Reader SDK\C#\Batch Read From Files
 \BarCode Reader SDK\C#\Decode Australian Post Code
@@ -117,26 +117,26 @@
 \BarCode Reader SDK\C#\Parallel Barcode Decoding
 \BarCode Reader SDK\C#\Read barcode From Live Video Cam
 \BarCode Reader SDK\C#\Read barcodes From Live Video Cam (WPF)
-\BarCode Reader SDK\C#\read Barcodes From PDF
-\BarCode Reader SDK\C#\read Barcodes From TIFF
+\BarCode Reader SDK\C#\Read Barcodes From PDF
+\BarCode Reader SDK\C#\Read Barcodes From TIFF
 \BarCode Reader SDK\C#\Read Checkboxes
 \BarCode Reader SDK\C#\Read vCard from QR Code
 \BarCode Reader SDK\C#\Set Barcode Decoding Profiles
 \BarCode Reader SDK\C#\Split PDF Document By Found Barcode
 \BarCode Reader SDK\C#\WPF UI Example for barcode reading
 \BarCode Reader SDK\C#\Batch Read Barcodes To CSV\BarcodeFiles
-\BarCode Reader SDK\C++ (Managed)\read barcode from image
-\BarCode Reader SDK\C++ (Unmanaged)\General Example reading barcode
+\BarCode Reader SDK\C++ (Managed)\Read Barcode From Image
+\BarCode Reader SDK\C++ (Unmanaged)\General Example Reading Barcode
 \BarCode Reader SDK\C++ (Unmanaged)\Read barcode From Memory
 \BarCode Reader SDK\C++ (Unmanaged)\Set Image Preprocessing Filters
-\BarCode Reader SDK\Delphi\barcode reading in console
-\BarCode Reader SDK\Delphi\Read barcode From Subfolder
-\BarCode Reader SDK\M-Files\Read barcodes
-\BarCode Reader SDK\Microsoft Access\Read barcode from PDF file
-\BarCode Reader SDK\PHP\Read barcode from image
-\BarCode Reader SDK\SAP PowerBuilder\Read barcode from image
-\BarCode Reader SDK\VB.NET\Acquire image From Scanner And Decode
-\BarCode Reader SDK\VB.NET\barcode Image Preprocessing Filters
+\BarCode Reader SDK\Delphi\Barcode Reading In Console
+\BarCode Reader SDK\Delphi\Read Barcodes From Subfolder
+\BarCode Reader SDK\M-Files\Read Barcodes
+\BarCode Reader SDK\Microsoft Access\Read Barcode From PDF File
+\BarCode Reader SDK\PHP\Read Barcode From Image
+\BarCode Reader SDK\SAP PowerBuilder\Read Barcode From Image
+\BarCode Reader SDK\VB.NET\Acquire Image From Scanner And Decode
+\BarCode Reader SDK\VB.NET\Barcode Image Preprocessing Filters
 \BarCode Reader SDK\VB.NET\Barcode Reading Profiles
 \BarCode Reader SDK\VB.NET\Batch Read Barcodes To CSV
 \BarCode Reader SDK\VB.NET\Batch Read From Files
@@ -194,15 +194,15 @@
 \BarCode Reader SDK\VB.NET\Decode USPS Tray Label
 \BarCode Reader SDK\VB.NET\Export Results to XML, CSV, TXT
 \BarCode Reader SDK\VB.NET\General Barcode Reading Example
-\BarCode Reader SDK\VB.NET\GUI Example for barcode reading
-\BarCode Reader SDK\VB.NET\Interrupt barcode Processing
+\BarCode Reader SDK\VB.NET\GUI Example For Barcode Reading
+\BarCode Reader SDK\VB.NET\Interrupt Barcode Processing
 \BarCode Reader SDK\VB.NET\Parallel barcode Decoding
-\BarCode Reader SDK\VB.NET\Read barcode From Live Video Cam
-\BarCode Reader SDK\VB.NET\Read barcode From Live Video Cam (simplified)
-\BarCode Reader SDK\VB.NET\Read barcode From Live Video Cam (WPF)
-\BarCode Reader SDK\VB.NET\read Barcodes From PDF
-\BarCode Reader SDK\VB.NET\read Barcodes From TIFF
-\BarCode Reader SDK\VB.NET\Read Checkboxes from image
+\BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam
+\BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam (simplified)
+\BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam (WPF)
+\BarCode Reader SDK\VB.NET\Read Barcodes From PDF
+\BarCode Reader SDK\VB.NET\Read Barcodes From TIFF
+\BarCode Reader SDK\VB.NET\Read Checkboxes From Image
 \BarCode Reader SDK\VB.NET\Read vCard from QR Code
 \BarCode Reader SDK\VB.NET\Split PDF Document By Found Barcode
 \BarCode Reader SDK\VB.NET\WPF UI Barcode Reading Example
@@ -210,18 +210,18 @@
 \BarCode Reader SDK\VBScript\Barcode Image Preprocessing Filters
 \BarCode Reader SDK\VBScript\Barcode Reading Profiles
 \BarCode Reader SDK\VBScript\Barcodes to Excel
-\BarCode Reader SDK\VBScript\Batch Read barcodes From Files
-\BarCode Reader SDK\VBScript\Read barcode From PDF
-\BarCode Reader SDK\VBScript\Read barcode From Webcam or Scanner
-\BarCode Reader SDK\VBScript\read Code 39 To Excel
+\BarCode Reader SDK\VBScript\Batch Read Barcodes From Files
+\BarCode Reader SDK\VBScript\Read Barcode From PDF
+\BarCode Reader SDK\VBScript\Read Barcode From Webcam or Scanner
+\BarCode Reader SDK\VBScript\Read Code 39 To Excel
 \BarCode Reader SDK\VBScript\Read QR Code To Excel
 \BarCode Reader SDK\VBScript\Rename Files To Barcode Values
 \BarCode Reader SDK\VBScript\Search Barcodes In Documents And Write Results To File
 \BarCode Reader SDK\VBScript\Simple barcode reading
 \BarCode Reader SDK\VBScript\Barcodes to Excel\InputFiles
-\BarCode Reader SDK\VBScript\read Code 39 To Excel\InputFiles
+\BarCode Reader SDK\VBScript\Read Code 39 To Excel\InputFiles
 \BarCode Reader SDK\VBScript\Read QR Code To Excel\InputFiles
-\BarCode Reader SDK\Visual Basic 6\Simple barcode reading
+\BarCode Reader SDK\Visual Basic 6\Simple Barcode Reading
 \BarCode SDK\ASP Classic
 \BarCode SDK\ASP.NET
 \BarCode SDK\C#
