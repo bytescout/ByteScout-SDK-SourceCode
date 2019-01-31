@@ -193,6 +193,7 @@
 \BarCode Reader SDK\VB.NET\Decode USPS Sack Label
 \BarCode Reader SDK\VB.NET\Decode USPS Tray Label
 \BarCode Reader SDK\VB.NET\Export Results to XML, CSV, TXT
+\BarCode Reader SDK\VB.NET\General Barcode Reading Example
 \BarCode Reader SDK\VB.NET\GUI Example for barcode reading
 \BarCode Reader SDK\VB.NET\Interrupt barcode Processing
 \BarCode Reader SDK\VB.NET\Parallel barcode Decoding
@@ -204,6 +205,7 @@
 \BarCode Reader SDK\VB.NET\Read Checkboxes from image
 \BarCode Reader SDK\VB.NET\Read vCard from QR Code
 \BarCode Reader SDK\VB.NET\Split PDF Document By Found Barcode
+\BarCode Reader SDK\VB.NET\WPF UI Barcode Reading Example
 \BarCode Reader SDK\VB.NET\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\VBScript\Barcode Image Preprocessing Filters
 \BarCode Reader SDK\VBScript\Barcode Reading Profiles
@@ -1076,10 +1078,12 @@
 \PDF Extractor SDK\C#\Extract Images from PDF
 \PDF Extractor SDK\C#\Extract PDF document Info
 \PDF Extractor SDK\C#\Extract PDF Pages
+\PDF Extractor SDK\C#\Extract PDF Text From Page Area
 \PDF Extractor SDK\C#\Extract PDF text To Stream
 \PDF Extractor SDK\C#\Extract Table Structure from PDF
 \PDF Extractor SDK\C#\Extract Text By Columns from PDF
 \PDF Extractor SDK\C#\Extract Text from PDF
+\PDF Extractor SDK\C#\Extract Text From PDF By Pages
 \PDF Extractor SDK\C#\Extract Video from PDF
 \PDF Extractor SDK\C#\Find Email Addresses in PDF with Regex
 \PDF Extractor SDK\C#\Find Keyword And Extract Page in PDF
@@ -1101,6 +1105,7 @@
 \PDF Extractor SDK\C#\OCR Analyser
 \PDF Extractor SDK\C#\Optimize PDF
 \PDF Extractor SDK\C#\PDF and OCR (Optical Character Recognition)
+\PDF Extractor SDK\C#\PDF Batch Processing
 \PDF Extractor SDK\C#\PDF files Parallel Processing
 \PDF Extractor SDK\C#\PDF Invoice Parsing
 \PDF Extractor SDK\C#\PDF To CSV
@@ -1260,6 +1265,7 @@
 \PDF Extractor SDK\VBScript\Split PDF Document
 \PDF Extractor SDK\VBScript\ZUGFeRD Invoice Extraction
 \PDF Generator SDK for Javascript\Javascript
+\PDF Generator SDK for Javascript\Javascript\Add Image To PDF From Base64
 \PDF Generator SDK for Javascript\Javascript\add image to pdf from Canvas
 \PDF Generator SDK for Javascript\Javascript\add image to pdf from URL
 \PDF Generator SDK for Javascript\Javascript\add text in columns to pdf
@@ -1328,12 +1334,15 @@
 \PDF Renderer SDK\VBScript and VB6\pdf to image in Command Line
 \PDF Renderer SDK\VBScript and VB6\Silent PDF Printing
 \PDF SDK\ASP.NET
+\PDF SDK\ASP.NET C#
 \PDF SDK\ASP.NET MVC C#
 \PDF SDK\C#
 \PDF SDK\VB.NET
 \PDF SDK\VBScript and VB6
 \PDF SDK\ASP.NET\PDF SDK Samples
 \PDF SDK\ASP.NET\PDF SDK Samples\SampleFiles
+\PDF SDK\ASP.NET C#\Create PDF
+\PDF SDK\ASP.NET C#\Create PDF\SampleFiles
 \PDF SDK\ASP.NET MVC C#\PDF SDK Samples
 \PDF SDK\ASP.NET MVC C#\PDF SDK Samples\SampleFiles
 \PDF SDK\C#\Add 3d Annotations in PDF
@@ -1358,7 +1367,7 @@
 \PDF SDK\C#\Convert DOCX to PDF
 \PDF SDK\C#\Convert Email with attachments to PDF
 \PDF SDK\C#\Convert HTML Email to PDF
-\PDF SDK\C#\convert HTML Email with attachments to PDF
+\PDF SDK\C#\Convert HTML Email With Attachments To PDF
 \PDF SDK\C#\Convert HTML to DOCX
 \PDF SDK\C#\Convert HTML to PDF
 \PDF SDK\C#\Convert RTF Email to PDF
@@ -1394,6 +1403,7 @@
 \PDF SDK\C#\Set Graphics State for Drawing in PDF
 \PDF SDK\C#\Set Intercharacter Spacing for Text in PDF
 \PDF SDK\C#\Set Invisible Text Over Image in PDF
+\PDF SDK\C#\Set Link To Page in PDF
 \PDF SDK\C#\Set Navigation Bookmarks in PDF
 \PDF SDK\C#\Set Page Numbers in PDF
 \PDF SDK\C#\Set PDF document Display Options
@@ -1498,6 +1508,7 @@
 \PDF SDK\VBScript and VB6\Create Right To Left Text in pdf
 \PDF SDK\VBScript and VB6\Create Submit Form action in PDF
 \PDF SDK\VBScript and VB6\Create text annotation in pdf
+\PDF SDK\VBScript and VB6\Create Text Fields in PDF
 \PDF SDK\VBScript and VB6\Create Tiling Patterns drawings in pdf
 \PDF SDK\VBScript and VB6\Create URI (Link) action in pdf
 \PDF SDK\VBScript and VB6\Draw Lines and Curves in pdf
@@ -1570,6 +1581,7 @@
 \QR Code SDK\C#\create GS1 QR Code
 \QR Code SDK\C#\create qr code with Binary Data
 \QR Code SDK\C#\create qr code with Unicode Value
+\QR Code SDK\C#\Create Simple QR Code
 \QR Code SDK\C#\make QR Code With Image
 \QR Code SDK\VB.NET\convert vCard to QR Code barcode
 \QR Code SDK\VB.NET\create Colored QR Code barcode
@@ -1621,6 +1633,7 @@
 \Screen Capturing SDK\C++ (managed)\record screen video from Region Around Mouse
 \Screen Capturing SDK\C++ (managed)\record screen video With Webcamera Overlay
 \Screen Capturing SDK\C++ (unmanaged)\Capture From Entire Screen as WEBM video
+\Screen Capturing SDK\C++ (unmanaged)\Capture Video And Add Time Stamp
 \Screen Capturing SDK\C++ (unmanaged)\Capture video From Entire Screen
 \Screen Capturing SDK\C++ (unmanaged)\Capture video From Entire Screen in QT
 \Screen Capturing SDK\C++ (unmanaged)\Capture video From Given Region
@@ -1667,6 +1680,7 @@
 \Screen Capturing SDK\VBScript and VB6\Set Low FPS and Min WMV Size for video
 \Screen Capturing SDK\VBScript and VB6\Set Mouse Spot Size for screen video
 \Screen Capturing SDK\VBScript and VB6\Set Multiple Regions Recording for video
+\Screen Capturing SDK\VBScript and VB6\Set WMV Video Bitrate
 \Screen Capturing SDK\VBScript and VB6\Show Capturing Properties Dialog
 \Screen Capturing SDK\VBScript and VB6\Take manual Screenshots during video recording
 \Screen Capturing SDK\VBScript and VB6\Take Screenshots On Click
