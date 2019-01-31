@@ -1120,6 +1120,10 @@
 \PDF Extractor SDK\C#\Remove Text from PDF
 \PDF Extractor SDK\C#\Repair Text in PDF
 \PDF Extractor SDK\C#\Rotate PDF Document
+\PDF Extractor SDK\C#\Scanned PDF to CSV
+\PDF Extractor SDK\C#\Scanned PDF to JSON
+\PDF Extractor SDK\C#\Scanned PDF to Text
+\PDF Extractor SDK\C#\Scanned PDF to XML
 \PDF Extractor SDK\C#\SearchablePDFMaker Progress Indication
 \PDF Extractor SDK\C#\Set Configuration Profiles
 \PDF Extractor SDK\C#\Split PDF Document
@@ -1198,6 +1202,10 @@
 \PDF Extractor SDK\VB.NET\Remove Text
 \PDF Extractor SDK\VB.NET\Repair Text
 \PDF Extractor SDK\VB.NET\Rotate Document
+\PDF Extractor SDK\VB.NET\Scanned PDF To CSV
+\PDF Extractor SDK\VB.NET\Scanned PDF To JSON
+\PDF Extractor SDK\VB.NET\Scanned PDF To Text
+\PDF Extractor SDK\VB.NET\Scanned PDF To XML
 \PDF Extractor SDK\VB.NET\SearchablePDFMaker Progress Indication
 \PDF Extractor SDK\VB.NET\Split Document
 \PDF Extractor SDK\VB.NET\TextExtractor Progress Indication
