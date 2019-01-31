@@ -196,7 +196,7 @@
 \BarCode Reader SDK\VB.NET\General Barcode Reading Example
 \BarCode Reader SDK\VB.NET\GUI Example For Barcode Reading
 \BarCode Reader SDK\VB.NET\Interrupt Barcode Processing
-\BarCode Reader SDK\VB.NET\Parallel barcode Decoding
+\BarCode Reader SDK\VB.NET\Parallel Barcode Decoding
 \BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam
 \BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam (simplified)
 \BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam (WPF)
@@ -237,237 +237,237 @@
 \BarCode SDK\VB.NET
 \BarCode SDK\VBScript
 \BarCode SDK\Visual Basic 6
-\BarCode SDK\ASP Classic\Create PDF with Datamatrix barcode with PDFDoc Scout
-\BarCode SDK\ASP Classic\Generate barcode image
-\BarCode SDK\ASP.NET\Generate barcode in ASPNET MVC
+\BarCode SDK\ASP Classic\Create PDF With Datamatrix Barcode
+\BarCode SDK\ASP Classic\Generate Barcode Image
+\BarCode SDK\ASP.NET\Generate Barcode in ASP.NET MVC
 \BarCode SDK\ASP.NET\Generate Barcode In C# Backend
-\BarCode SDK\ASP.NET\Generate barcode in C# Local Reports (RDLC)
-\BarCode SDK\ASP.NET\Generate barcode in VB Non Visual class
-\BarCode SDK\ASP.NET\Generate barcode in VB.NET Local Reports (RDLC) copy
-\BarCode SDK\ASP.NET\Generate barcode in WebImage control in VB.NET
-\BarCode SDK\ASP.NET\Generate Barcode with WebImage control in C#
-\BarCode SDK\ASP.NET\Generate SSRS VS 2008 reports
-\BarCode SDK\ASP.NET\Generate barcode in ASPNET MVC\Generate barcode in aspnet mvc
-\BarCode SDK\ASP.NET\Generate barcode in ASPNET MVC\packages
-\BarCode SDK\ASP.NET\Generate barcode in ASPNET MVC\Generate barcode in aspnet mvc\Helpers
-\BarCode SDK\C#\Add barcode Checksum
-\BarCode SDK\C#\Add barcode Checksum To Caption
-\BarCode SDK\C#\Add barcode To Image
-\BarCode SDK\C#\Add barcode To Multi TIFF
-\BarCode SDK\C#\Add barcode To New PDF
+\BarCode SDK\ASP.NET\Generate Barcode in C# Local Reports (RDLC)
+\BarCode SDK\ASP.NET\Generate Barcode in VB Non-Visual class
+\BarCode SDK\ASP.NET\Generate Barcode in VB.NET Local Reports (RDLC)
+\BarCode SDK\ASP.NET\Generate Barcode in WebImage Control in VB.NET
+\BarCode SDK\ASP.NET\Generate Barcode With WebImage Control in C#
+\BarCode SDK\ASP.NET\Generate SSRS Reports VS 2008
+\BarCode SDK\ASP.NET\Generate Barcode in ASP.NET MVC\Generate barcode in aspnet mvc
+\BarCode SDK\ASP.NET\Generate Barcode in ASP.NET MVC\packages
+\BarCode SDK\ASP.NET\Generate Barcode in ASP.NET MVC\Generate barcode in aspnet mvc\Helpers
+\BarCode SDK\C#\Add Barcode Checksum
+\BarCode SDK\C#\Add Barcode Checksum To Caption
+\BarCode SDK\C#\Add Barcode To Image
+\BarCode SDK\C#\Add Barcode To Multi TIFF
+\BarCode SDK\C#\Add Barcode To New PDF
 \BarCode SDK\C#\Add Barcode To PDF
-\BarCode SDK\C#\Add custom images To Pdf Document
-\BarCode SDK\C#\Aztec barcode (2D)
-\BarCode SDK\C#\Aztec barcode With Binary Data
-\BarCode SDK\C#\Bookland barcode
-\BarCode SDK\C#\Change barcode color
-\BarCode SDK\C#\CodaBar barcode
-\BarCode SDK\C#\Code 128 barcode
-\BarCode SDK\C#\Code 39 barcode
-\BarCode SDK\C#\Code 93 barcode
-\BarCode SDK\C#\DataMatrix barcode
-\BarCode SDK\C#\DataMatrix barcode With Binary Data
-\BarCode SDK\C#\Deutsche Post Identcode barcode
-\BarCode SDK\C#\Deutsche Post Leitcode barcode
+\BarCode SDK\C#\Add Custom Images To PDF Document
+\BarCode SDK\C#\Aztec Barcode (2D)
+\BarCode SDK\C#\Aztec Barcode With Binary Data
+\BarCode SDK\C#\Bookland Barcode
+\BarCode SDK\C#\Change Barcode Color
+\BarCode SDK\C#\CodaBar Barcode
+\BarCode SDK\C#\Code 128 Barcode
+\BarCode SDK\C#\Code 39 Barcode
+\BarCode SDK\C#\Code 93 Barcode
+\BarCode SDK\C#\DataMatrix Barcode
+\BarCode SDK\C#\DataMatrix Barcode With Binary Data
+\BarCode SDK\C#\Deutsche Post Identcode Barcode
+\BarCode SDK\C#\Deutsche Post Leitcode Barcode
 \BarCode SDK\C#\Display Barcode On Form
-\BarCode SDK\C#\draw barcode caption
-\BarCode SDK\C#\Dutch Kix barcode
-\BarCode SDK\C#\EAN 128 barcode
-\BarCode SDK\C#\EAN 13 barcode
-\BarCode SDK\C#\EAN 8 barcode
-\BarCode SDK\C#\Fit barcode Into size
+\BarCode SDK\C#\Draw Barcode Caption
+\BarCode SDK\C#\Dutch Kix Barcode
+\BarCode SDK\C#\EAN-128 Barcode
+\BarCode SDK\C#\EAN-13 Barcode
+\BarCode SDK\C#\EAN-8 Barcode
+\BarCode SDK\C#\Fit Barcode Into Size
 \BarCode SDK\C#\Generate Barcode from Service
 \BarCode SDK\C#\Generate Barcodes from Database
 \BarCode SDK\C#\Generate Barcodes from Excel
 \BarCode SDK\C#\Generate PharmaCode
-\BarCode SDK\C#\generate simple barcode
+\BarCode SDK\C#\Generate Simple Barcode
 \BarCode SDK\C#\Generate vCard QR Code
-\BarCode SDK\C#\GenerateWordDocumentWithBarcodes
-\BarCode SDK\C#\GS1 DataBar Expanded barcode
-\BarCode SDK\C#\GS1 DataBar Expanded Stacked barcode
-\BarCode SDK\C#\GS1 DataBar Limited barcode
-\BarCode SDK\C#\GS1 DataBar Omnidirectional barcode
-\BarCode SDK\C#\GS1 DataBar Stacked barcode
-\BarCode SDK\C#\GS1 DataBar Stacked Omnidirectional barcode
-\BarCode SDK\C#\GS1 DataBar Truncated barcode
-\BarCode SDK\C#\GS1 Datamatrix barcode
-\BarCode SDK\C#\GS1 QR Code barcode
-\BarCode SDK\C#\I 2 of 5 barcode
-\BarCode SDK\C#\ISBN barcode
-\BarCode SDK\C#\JAN 13 barcode
-\BarCode SDK\C#\Macro PDF 417 barcode
-\BarCode SDK\C#\MaxiCode barcode
-\BarCode SDK\C#\MaxiCode Mode 2-3 Postal barcode
-\BarCode SDK\C#\MSI barcode
+\BarCode SDK\C#\Generate Word Document With Barcodes
+\BarCode SDK\C#\GS1 DataBar Expanded Barcode
+\BarCode SDK\C#\GS1 DataBar Expanded Stacked Barcode
+\BarCode SDK\C#\GS1 DataBar Limited Barcode
+\BarCode SDK\C#\GS1 DataBar Omnidirectional Barcode
+\BarCode SDK\C#\GS1 DataBar Stacked Barcode
+\BarCode SDK\C#\GS1 DataBar Stacked Omnidirectional Barcode
+\BarCode SDK\C#\GS1 DataBar Truncated Barcode
+\BarCode SDK\C#\GS1 Datamatrix Barcode
+\BarCode SDK\C#\GS1 QR Code Barcode
+\BarCode SDK\C#\Interleaved 2 of 5 Barcode
+\BarCode SDK\C#\ISBN Barcode
+\BarCode SDK\C#\JAN-13 Barcode
+\BarCode SDK\C#\Macro PDF417 Barcode
+\BarCode SDK\C#\MaxiCode Barcode
+\BarCode SDK\C#\MaxiCode Mode 2-3 Postal Barcode
+\BarCode SDK\C#\MSI Barcode
 \BarCode SDK\C#\Multiple Barcode Generation
-\BarCode SDK\C#\Numly barcode
-\BarCode SDK\C#\Optical Product barcode
-\BarCode SDK\C#\PDF417 barcode
-\BarCode SDK\C#\PDF417 barcode With Binary Data
-\BarCode SDK\C#\PDF417 truncated barcode
+\BarCode SDK\C#\Numly Barcode
+\BarCode SDK\C#\Optical Product Barcode
+\BarCode SDK\C#\PDF417 Barcode
+\BarCode SDK\C#\PDF417 Barcode With Binary Data
+\BarCode SDK\C#\PDF417 Truncated Barcode
 \BarCode SDK\C#\Planet barcode
-\BarCode SDK\C#\Plessey barcode
-\BarCode SDK\C#\Postnet barcode
-\BarCode SDK\C#\Print barcode
+\BarCode SDK\C#\Plessey Barcode
+\BarCode SDK\C#\Postnet Barcode
+\BarCode SDK\C#\Print Barcode
 \BarCode SDK\C#\Print Labels
-\BarCode SDK\C#\PZN barcode
-\BarCode SDK\C#\QR Code barcode
-\BarCode SDK\C#\QR Code barcode With Binary Data
-\BarCode SDK\C#\QR Code barcode With Calender Entry
-\BarCode SDK\C#\QR Code barcode With Image inside
-\BarCode SDK\C#\QR Code barcode with JSON inside
-\BarCode SDK\C#\Royal Mail barcode
-\BarCode SDK\C#\set Additional barcode Caption
-\BarCode SDK\C#\set barcode Angle
-\BarCode SDK\C#\set barcode bar heightBarHeight
-\BarCode SDK\C#\set barcode Margins
-\BarCode SDK\C#\set codabar barcode options
-\BarCode SDK\C#\set code 128 barcode options
-\BarCode SDK\C#\set custom barcode caption
-\BarCode SDK\C#\set Narrow Bar Width
+\BarCode SDK\C#\PZN Barcode
+\BarCode SDK\C#\QR Code Barcode
+\BarCode SDK\C#\QR Code Barcode With Binary Data
+\BarCode SDK\C#\QR Code Barcode With Calender Entry
+\BarCode SDK\C#\QR Code Barcode With Image inside
+\BarCode SDK\C#\QR Code Barcode With JSON Inside
+\BarCode SDK\C#\Royal Mail Barcode
+\BarCode SDK\C#\Set Additional Barcode Caption
+\BarCode SDK\C#\Set Barcode Angle
+\BarCode SDK\C#\Set Barcode Bar Height
+\BarCode SDK\C#\Set Barcode Margins
+\BarCode SDK\C#\Set Codabar Barcode Options
+\BarCode SDK\C#\Set Code 128 Barcode Options
+\BarCode SDK\C#\Set Custom Barcode Caption
+\BarCode SDK\C#\Set Narrow Bar Width
 \BarCode SDK\C#\Set Rendering Options
-\BarCode SDK\C#\set Unicode value for barcode
+\BarCode SDK\C#\Set Unicode Value For Barcode
 \BarCode SDK\C#\Set Wide To Narrow Ratio
-\BarCode SDK\C#\Singapore Postal Code barcode
-\BarCode SDK\C#\Swiss Post Parcel barcode
-\BarCode SDK\C#\UPCA barcode
-\BarCode SDK\C#\UPCE barcode
-\BarCode SDK\C#\USPS Sack Label barcode
-\BarCode SDK\C#\USPS Tray Label barcode
-\BarCode SDK\C#\WinForms barcode Control
-\BarCode SDK\C#\WPF barcode Control for Desktop
-\BarCode SDK\C#\WPF barcode Control for Web Demo
+\BarCode SDK\C#\Singapore Postal Code Barcode
+\BarCode SDK\C#\Swiss Post Parcel Barcode
+\BarCode SDK\C#\UPCA Barcode
+\BarCode SDK\C#\UPCE Barcode
+\BarCode SDK\C#\USPS Sack Label Barcode
+\BarCode SDK\C#\USPS Tray Label Barcode
+\BarCode SDK\C#\WinForms Barcode Control
+\BarCode SDK\C#\WPF Barcode Control for Desktop
+\BarCode SDK\C#\WPF barcode Control for Web
 \BarCode SDK\C#\Generate Barcode from Service\ServiceController
 \BarCode SDK\C#\Generate Barcode from Service\WindowsService1
-\BarCode SDK\C++\generate barcode
-\BarCode SDK\C++\generate barcode Monochrome Bitmap
+\BarCode SDK\C++\Generate Barcode
+\BarCode SDK\C++\Generate Barcode Monochrome Bitmap
 \BarCode SDK\C++\Get Barcode To Memory Buffer
-\BarCode SDK\Crystal Reports\create Report from SQL Server C# 2005
-\BarCode SDK\Crystal Reports\generate Barcode in Crystal Reports Application C# 2010
-\BarCode SDK\Crystal Reports\generate Barcode in Crystal Reports Application C# 2015
-\BarCode SDK\Crystal Reports\generate Barcode in CrystalReports Application VB.NET 2010
-\BarCode SDK\Crystal Reports\generate Barcode in CrystalReports Application VB.NET 2015
-\BarCode SDK\Crystal Reports\generate Report from SQL Server C# 2015
-\BarCode SDK\Crystal Reports\generate Report from SQL Server VB.NET 2005
-\BarCode SDK\Crystal Reports\generate Report from SQL Server VB.NET 2015
-\BarCode SDK\Delphi\generate barcode from console
-\BarCode SDK\Delphi\generate barcode on Forms
-\BarCode SDK\Delphi\print barcode
-\BarCode SDK\Delphi\Set barcode options and Code128 alphabet
+\BarCode SDK\Crystal Reports\Create Report from SQL Server C# 2005
+\BarCode SDK\Crystal Reports\Generate Barcode in Crystal Reports Application C# 2010
+\BarCode SDK\Crystal Reports\Generate Barcode in Crystal Reports Application C# 2015
+\BarCode SDK\Crystal Reports\Generate Barcode in CrystalReports Application VB.NET 2010
+\BarCode SDK\Crystal Reports\Generate Barcode in CrystalReports Application VB.NET 2015
+\BarCode SDK\Crystal Reports\Generate Report from SQL Server VB.NET 2005
+\BarCode SDK\Crystal Reports\Generate Report from SQL Server VB.NET 2015
+\BarCode SDK\Crystal Reports\Generate Report rom SQL Server C# 2015
+\BarCode SDK\Delphi\Generate Barcode From Console
+\BarCode SDK\Delphi\Generate Barcode on Forms
+\BarCode SDK\Delphi\Print Barcode
+\BarCode SDK\Delphi\Set Barcode Options and Code128 Alphabet
 \BarCode SDK\JavaScript\Generate Barcode
 \BarCode SDK\M-Files\Generate Barcode
-\BarCode SDK\Microsoft Access\add Barcode in Report
-\BarCode SDK\Microsoft Access\Insert barcode into PDF document
-\BarCode SDK\Microsoft Access\Save barcode as PNG image file
+\BarCode SDK\Microsoft Access\Add Barcode in Report
+\BarCode SDK\Microsoft Access\Insert Barcode Into PDF Document
+\BarCode SDK\Microsoft Access\Save Barcode as PNG Image File
 \BarCode SDK\Microsoft Excel\Batch Generate Barcodes In Cells with VBA
-\BarCode SDK\Microsoft Word\Add barcode to Word document in C#
-\BarCode SDK\Microsoft Word\Add barcode to Word document in VB.NET
+\BarCode SDK\Microsoft Word\Add Barcode to Word Document in C#
+\BarCode SDK\Microsoft Word\Add Barcode to Word Document in VB.NET
 \BarCode SDK\Microsoft Word\Generate Barcodes In Word with VBA
-\BarCode SDK\SSRS Reports\Generate barcodes in SSRS 2010
-\BarCode SDK\SSRS Reports\Generate barcodes in SSRS 2012
+\BarCode SDK\SSRS Reports\Generate Barcodes in SSRS 2010
+\BarCode SDK\SSRS Reports\Generate Barcodes in SSRS 2012
 \BarCode SDK\VB.NET\Add Barcode to PDF
+\BarCode SDK\VB.NET\Add Checksum
+\BarCode SDK\VB.NET\Add Checksum To Caption
+\BarCode SDK\VB.NET\Add Custom Images To PDF Document
 \BarCode SDK\VB.NET\Add To Image
 \BarCode SDK\VB.NET\Add To Multi TIFF
 \BarCode SDK\VB.NET\Add To New PDF
-\BarCode SDK\VB.NET\AddChecksum
-\BarCode SDK\VB.NET\AddChecksumToCaption
-\BarCode SDK\VB.NET\AddCustomImagesToPdfDocument
-\BarCode SDK\VB.NET\AdditionalCaption
-\BarCode SDK\VB.NET\Aztec (2D) barcode
-\BarCode SDK\VB.NET\Aztec barcode With Binary Data
-\BarCode SDK\VB.NET\Bookland barcode
-\BarCode SDK\VB.NET\Change barcode color
-\BarCode SDK\VB.NET\CodaBar barcode
-\BarCode SDK\VB.NET\Code 128 barcode
-\BarCode SDK\VB.NET\Code 39 barcode
-\BarCode SDK\VB.NET\Code 93 barcode
-\BarCode SDK\VB.NET\DataMatrix (2D) barcode
+\BarCode SDK\VB.NET\Additional Caption
+\BarCode SDK\VB.NET\Aztec (2D) Barcode
+\BarCode SDK\VB.NET\Aztec Barcode With Binary Data
+\BarCode SDK\VB.NET\Bookland Barcode
+\BarCode SDK\VB.NET\Change Barcode Color
+\BarCode SDK\VB.NET\Codabar Barcode
+\BarCode SDK\VB.NET\Code 128 Barcode
+\BarCode SDK\VB.NET\Code 39 Barcode
+\BarCode SDK\VB.NET\Code 93 Barcode
+\BarCode SDK\VB.NET\DataMatrix (2D) Barcode
 \BarCode SDK\VB.NET\DataMatrix With Binary Data
-\BarCode SDK\VB.NET\Deutsche Post Identcode barcode
-\BarCode SDK\VB.NET\Deutsche Post Leitcode barcode
-\BarCode SDK\VB.NET\DisplayBarcodeOnForm
-\BarCode SDK\VB.NET\DrawCaption
+\BarCode SDK\VB.NET\Deutsche Post Identcode Barcode
+\BarCode SDK\VB.NET\Deutsche Post Leitcode Barcode
+\BarCode SDK\VB.NET\Display Barcode On Form
+\BarCode SDK\VB.NET\Draw Caption
 \BarCode SDK\VB.NET\Dutch Kix
-\BarCode SDK\VB.NET\EAN128
-\BarCode SDK\VB.NET\EAN13
-\BarCode SDK\VB.NET\EAN8
-\BarCode SDK\VB.NET\Fit Into given size
-\BarCode SDK\VB.NET\generate barcode
+\BarCode SDK\VB.NET\EAN-128
+\BarCode SDK\VB.NET\EAN-13
+\BarCode SDK\VB.NET\EAN-8
+\BarCode SDK\VB.NET\Fit Into Given Size
+\BarCode SDK\VB.NET\Generate Barcode
 \BarCode SDK\VB.NET\Generate Barcode from Service
 \BarCode SDK\VB.NET\Generate Barcodes from Database
 \BarCode SDK\VB.NET\Generate Barcodes from Excel
 \BarCode SDK\VB.NET\Generate PharmaCode
 \BarCode SDK\VB.NET\Generate QR Code With Binary Data
 \BarCode SDK\VB.NET\Generate vCard QR Code
-\BarCode SDK\VB.NET\GenerateWordDocumentWithBarcodes
+\BarCode SDK\VB.NET\Generate Word Document With Barcodes
 \BarCode SDK\VB.NET\GS1 Datamatrix
 \BarCode SDK\VB.NET\GS1 QR Code
-\BarCode SDK\VB.NET\I2of5
-\BarCode SDK\VB.NET\ISBN
-\BarCode SDK\VB.NET\JAN13
-\BarCode SDK\VB.NET\Macro PDF 417 (multiple)
+\BarCode SDK\VB.NET\Interleaved 2 of 5 Barcode
+\BarCode SDK\VB.NET\ISBN Barcode
+\BarCode SDK\VB.NET\JAN-13 Barcode
+\BarCode SDK\VB.NET\Macro PDF417 (multiple)
 \BarCode SDK\VB.NET\Margins
 \BarCode SDK\VB.NET\MaxiCode
 \BarCode SDK\VB.NET\MaxiCode Mode 2-3 (Postal)
-\BarCode SDK\VB.NET\MSI
+\BarCode SDK\VB.NET\MSI Barcode
 \BarCode SDK\VB.NET\Multiple Barcode Generation
-\BarCode SDK\VB.NET\NarrowBarWidth
+\BarCode SDK\VB.NET\Narrow Bar Width
 \BarCode SDK\VB.NET\Numly
 \BarCode SDK\VB.NET\Optical Product
-\BarCode SDK\VB.NET\OptionsCodabar
-\BarCode SDK\VB.NET\OptionsCode128
+\BarCode SDK\VB.NET\Options Codabar
+\BarCode SDK\VB.NET\Options Code128
 \BarCode SDK\VB.NET\PDF417 (2D)
+\BarCode SDK\VB.NET\PDF417 Truncated (2D)
 \BarCode SDK\VB.NET\PDF417 With Binary Data
-\BarCode SDK\VB.NET\PDF417Truncated (2D)
 \BarCode SDK\VB.NET\Planet
 \BarCode SDK\VB.NET\Plessey
 \BarCode SDK\VB.NET\Postnet
-\BarCode SDK\VB.NET\Print barcode
+\BarCode SDK\VB.NET\Print Barcode
 \BarCode SDK\VB.NET\Print Labels
 \BarCode SDK\VB.NET\PZN
 \BarCode SDK\VB.NET\QR Code (2D)
 \BarCode SDK\VB.NET\QR Code With CalenderEntry
 \BarCode SDK\VB.NET\QR Code With Image
 \BarCode SDK\VB.NET\QR Code With JSON
-\BarCode SDK\VB.NET\RenderingOptions
+\BarCode SDK\VB.NET\Rendering Options
 \BarCode SDK\VB.NET\Royal Mail
 \BarCode SDK\VB.NET\Set Angle
-\BarCode SDK\VB.NET\Set barcode height
-\BarCode SDK\VB.NET\set Custom caption
-\BarCode SDK\VB.NET\Set Unicode text in barcode
+\BarCode SDK\VB.NET\Set Barcode Height
+\BarCode SDK\VB.NET\Set Custom Caption
+\BarCode SDK\VB.NET\Set Unicode Text in Barcode
+\BarCode SDK\VB.NET\Set Wide To Narrow Ratio
 \BarCode SDK\VB.NET\Singapore Postal Code
 \BarCode SDK\VB.NET\Swiss Post Parcel
 \BarCode SDK\VB.NET\UPCA
 \BarCode SDK\VB.NET\UPCE
 \BarCode SDK\VB.NET\USPS Sack Label
 \BarCode SDK\VB.NET\USPS Tray Label
-\BarCode SDK\VB.NET\WideToNarrowRatio
-\BarCode SDK\VB.NET\WinForms barcode Control
+\BarCode SDK\VB.NET\WinForms Barcode Control
 \BarCode SDK\VB.NET\Generate Barcode from Service\ServiceController
 \BarCode SDK\VB.NET\Generate Barcode from Service\WindowsService1
 \BarCode SDK\VB.NET\MaxiCode Mode 2-3 (Postal)\PostalMaxiCode
 \BarCode SDK\VBScript\Add Barcode to PDF
-\BarCode SDK\VBScript\Add barcodes To Image
-\BarCode SDK\VBScript\Add barcodes To New PDF
-\BarCode SDK\VBScript\Add barcodes To TIFF
-\BarCode SDK\VBScript\Batch barcode generation
+\BarCode SDK\VBScript\Add Barcodes To Image
+\BarCode SDK\VBScript\Add Barcodes To New PDF
+\BarCode SDK\VBScript\Add Barcodes To TIFF
+\BarCode SDK\VBScript\Batch Barcode Generation
 \BarCode SDK\VBScript\Caption Font
 \BarCode SDK\VBScript\Change Fore and Back Color
-\BarCode SDK\VBScript\create Barcode from Excel
-\BarCode SDK\VBScript\Custom PDF417 configuration
-\BarCode SDK\VBScript\Generate barcode
+\BarCode SDK\VBScript\Create Barcode from Excel
+\BarCode SDK\VBScript\Custom PDF417 Configuration
+\BarCode SDK\VBScript\Generate Barcode
 \BarCode SDK\VBScript\Generate Barcodes From Text File
 \BarCode SDK\VBScript\Monochrome Bitmap
-\BarCode SDK\VBScript\PDF417 barcode
-\BarCode SDK\VBScript\QR Code barcode With Image inside
+\BarCode SDK\VBScript\PDF417 Barcode
+\BarCode SDK\VBScript\QR Code Barcode With Image Inside
 \BarCode SDK\VBScript\Set 2 Captions for Barcode
 \BarCode SDK\VBScript\Set Bar Code Size In Inches
-\BarCode SDK\VBScript\Set Barcode size
-\BarCode SDK\Visual Basic 6\Draw to form hDC
+\BarCode SDK\VBScript\Set Barcode Size
+\BarCode SDK\Visual Basic 6\Draw Barcode to Form HDC
 \BarCode SDK\Visual Basic 6\Print With Crystal Reports
-\BarCode SDK\Visual Basic 6\Printing barcodes
-\BarCode SDK\Visual Basic 6\Save barcode to EMF images
-\BarCode SDK\Visual Basic 6\Save barcode to PNG images
+\BarCode SDK\Visual Basic 6\Printing Barcodes
+\BarCode SDK\Visual Basic 6\Save Barcode to EMF Images
+\BarCode SDK\Visual Basic 6\Save Barcode to PNG Images
 \BarCode SDK\Visual Basic 6\Set Barcode Size
 \Cloud API\Barcode Generator API
 \Cloud API\Barcode Reader API
@@ -975,8 +975,8 @@
 \Image To Video SDK\ASP.NET\Simple Slideshow (C#)
 \Image To Video SDK\ASP.NET\Simple Slideshow (VB)
 \Image To Video SDK\C#\2x Speed by Parallel Generation
-\Image To Video SDK\C#\60 standard 2D transition effects
-\Image To Video SDK\C#\70 advanced 3D transition effects
+\Image To Video SDK\C#\60 Standard 2D Transition Effects
+\Image To Video SDK\C#\70 Advanced 3D Transition Effects
 \Image To Video SDK\C#\Add Image From Buffer
 \Image To Video SDK\C#\Background Color
 \Image To Video SDK\C#\Background Picture
@@ -992,14 +992,14 @@
 \Image To Video SDK\C#\Simple Slideshow
 \Image To Video SDK\C#\Slide Effects
 \Image To Video SDK\C#\Transition Effects
-\Image To Video SDK\C#\WEBM Transition Effects
+\Image To Video SDK\C#\WEBM Output
 \Image To Video SDK\C#\Parallel Processing\images
 \Image To Video SDK\C++\Slideshow-VS2005
 \Image To Video SDK\C++\Slideshow-VS2010
 \Image To Video SDK\C++\WebM Slideshow-VS2005
 \Image To Video SDK\VB.NET\2x Speed by Parallel Generation
-\Image To Video SDK\VB.NET\60 standard 2D transition effects
-\Image To Video SDK\VB.NET\70 advanced 3D transition effects
+\Image To Video SDK\VB.NET\60 Standard 2D Transition Effects
+\Image To Video SDK\VB.NET\70 Advanced 3D Transition Effects
 \Image To Video SDK\VB.NET\Add Image From Buffer
 \Image To Video SDK\VB.NET\Background Color
 \Image To Video SDK\VB.NET\Background Picture
@@ -1013,36 +1013,36 @@
 \Image To Video SDK\VB.NET\Simple Slideshow
 \Image To Video SDK\VB.NET\Slide Effects
 \Image To Video SDK\VB.NET\Transition Effects
-\Image To Video SDK\VB.NET\WEBM output
+\Image To Video SDK\VB.NET\WEBM Output
 \Image To Video SDK\VB.NET\Parallel Processing\images
-\Image To Video SDK\VBScript\67 standard transition effects
-\Image To Video SDK\VBScript\70 advanced 3D effects
+\Image To Video SDK\VBScript\60 Standard Transition Effects
+\Image To Video SDK\VBScript\70 Advanced 3D Effects
 \Image To Video SDK\VBScript\All Transition Effects
-\Image To Video SDK\VBScript\Background picture
+\Image To Video SDK\VBScript\Background Picture
 \Image To Video SDK\VBScript\Convert WAV to WMV
 \Image To Video SDK\VBScript\Double Speed
 \Image To Video SDK\VBScript\Multiple Instances
 \Image To Video SDK\VBScript\Pan And Zoom Effects
-\Image To Video SDK\VBScript\Pan effects for slides
+\Image To Video SDK\VBScript\Pan Effects For Slides
 \Image To Video SDK\VBScript\Replace Audio In Existing Video
 \Image To Video SDK\VBScript\Set Background Music from file
 \Image To Video SDK\VBScript\Set WMV Audio Format
 \Image To Video SDK\VBScript\Simple
-\Image To Video SDK\VBScript\Slide effects (Ease In and Ease Out)
-\Image To Video SDK\VBScript\WebM output
-\Image To Video SDK\Visual Basic 6\Generate SlideShow
-\Image To Video SDK\Visual Basic 6\Generate WebM slideshow output
+\Image To Video SDK\VBScript\Slide Effects (Ease In and Ease Out)
+\Image To Video SDK\VBScript\WebM Output
+\Image To Video SDK\Visual Basic 6\Generate Slideshow
+\Image To Video SDK\Visual Basic 6\Generate WebM Slideshow Output
 \Invoice Parser SDK\C#
 \Invoice Parser SDK\VB.NET
 \Invoice Parser SDK\VBScript and VB6
-\Invoice Parser SDK\C#\Parse Folder with invoices To CSV
-\Invoice Parser SDK\C#\Parse invoice with OCR
-\Invoice Parser SDK\C#\Parse simple invoice
-\Invoice Parser SDK\VB.NET\Parse Folder with invoices To CSV
-\Invoice Parser SDK\VB.NET\Parse with OCR
-\Invoice Parser SDK\VB.NET\Read simple invoice
-\Invoice Parser SDK\VBScript and VB6\Parse invoice with OCR
-\Invoice Parser SDK\VBScript and VB6\Read invoice data
+\Invoice Parser SDK\C#\Parse Folder With Invoices To CSV
+\Invoice Parser SDK\C#\Parse Invoice With OCR
+\Invoice Parser SDK\C#\Parse Simple Invoice
+\Invoice Parser SDK\VB.NET\Parse Folder With Invoices To CSV
+\Invoice Parser SDK\VB.NET\Parse With OCR
+\Invoice Parser SDK\VB.NET\Read Simple Invoice
+\Invoice Parser SDK\VBScript and VB6\Parse Invoice With OCR
+\Invoice Parser SDK\VBScript and VB6\Read Invoice Data
 \PDF Extractor SDK\ASP Classic
 \PDF Extractor SDK\ASP.NET C#
 \PDF Extractor SDK\C#
@@ -1149,14 +1149,14 @@
 \PDF Extractor SDK\Powershell\PDF To JSON
 \PDF Extractor SDK\VB.NET\Check If OCR Is Required for PDF
 \PDF Extractor SDK\VB.NET\Compare PDF Documents
-\PDF Extractor SDK\VB.NET\convert PDF To CSV
+\PDF Extractor SDK\VB.NET\Convert PDF To CSV
 \PDF Extractor SDK\VB.NET\Convert PDF To CSV By Pages
-\PDF Extractor SDK\VB.NET\convert PDF To JSON
-\PDF Extractor SDK\VB.NET\convert PDF To JSON With Images
-\PDF Extractor SDK\VB.NET\convert PDF To XFDF
-\PDF Extractor SDK\VB.NET\convert PDF To XLS
-\PDF Extractor SDK\VB.NET\convert PDF To XML
-\PDF Extractor SDK\VB.NET\convert XFA Form To XML in PDF
+\PDF Extractor SDK\VB.NET\Convert PDF To JSON
+\PDF Extractor SDK\VB.NET\Convert PDF To JSON With Images
+\PDF Extractor SDK\VB.NET\Convert PDF To XFDF
+\PDF Extractor SDK\VB.NET\Convert PDF To XLS
+\PDF Extractor SDK\VB.NET\Convert PDF To XML
+\PDF Extractor SDK\VB.NET\Convert XFA Form To XML in PDF
 \PDF Extractor SDK\VB.NET\Data Masking in PDF
 \PDF Extractor SDK\VB.NET\Detect Lines in PDF
 \PDF Extractor SDK\VB.NET\Extract Attachments from PDF
@@ -1217,22 +1217,22 @@
 \PDF Extractor SDK\VB.NET\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\VB.NET\Check If OCR Is Required for PDF\InputFiles
 \PDF Extractor SDK\VB.NET\Index PDF Documents In Folder\Files
-\PDF Extractor SDK\VB6\convert PDF To CSV
-\PDF Extractor SDK\VB6\convert PDF To JSON
-\PDF Extractor SDK\VB6\convert PDF To Text
-\PDF Extractor SDK\VB6\convert PDF To XML
+\PDF Extractor SDK\VB6\Convert PDF To CSV
+\PDF Extractor SDK\VB6\Convert PDF To JSON
+\PDF Extractor SDK\VB6\Convert PDF To Text
+\PDF Extractor SDK\VB6\Convert PDF To XML
 \PDF Extractor SDK\VB6\Merge PDF
 \PDF Extractor SDK\VB6\Scanned PDF To Text
 \PDF Extractor SDK\VB6\Split PDF
 \PDF Extractor SDK\VBScript\Compare PDF Documents
-\PDF Extractor SDK\VBScript\convert PDF To CSV
-\PDF Extractor SDK\VBScript\convert PDF To CSV By Pages
-\PDF Extractor SDK\VBScript\convert PDF To JSON
-\PDF Extractor SDK\VBScript\convert PDF To JSON With Images
-\PDF Extractor SDK\VBScript\convert PDF To XFDF
-\PDF Extractor SDK\VBScript\convert PDF To XLS
-\PDF Extractor SDK\VBScript\convert PDF To XML
-\PDF Extractor SDK\VBScript\convert PDF To XML With Images
+\PDF Extractor SDK\VBScript\Convert PDF To CSV
+\PDF Extractor SDK\VBScript\Convert PDF To CSV By Pages
+\PDF Extractor SDK\VBScript\Convert PDF To JSON
+\PDF Extractor SDK\VBScript\Convert PDF To JSON With Images
+\PDF Extractor SDK\VBScript\Convert PDF To XFDF
+\PDF Extractor SDK\VBScript\Convert PDF To XLS
+\PDF Extractor SDK\VBScript\Convert PDF To XML
+\PDF Extractor SDK\VBScript\Convert PDF To XML With Images
 \PDF Extractor SDK\VBScript\Extract Attachments from PDF
 \PDF Extractor SDK\VBScript\Extract Image Coordinates By Page from PDF
 \PDF Extractor SDK\VBScript\Extract Images by Page from PDF
