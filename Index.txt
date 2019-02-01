@@ -1266,72 +1266,72 @@
 \PDF Extractor SDK\VBScript\ZUGFeRD Invoice Extraction
 \PDF Generator SDK for Javascript\Javascript
 \PDF Generator SDK for Javascript\Javascript\Add Image To PDF From Base64
-\PDF Generator SDK for Javascript\Javascript\add image to pdf from Canvas
-\PDF Generator SDK for Javascript\Javascript\add image to pdf from URL
-\PDF Generator SDK for Javascript\Javascript\add text in columns to pdf
-\PDF Generator SDK for Javascript\Javascript\draw invoice with logo and table
-\PDF Generator SDK for Javascript\Javascript\draw line in pdf
-\PDF Generator SDK for Javascript\Javascript\draw rectangle in pdf
-\PDF Generator SDK for Javascript\Javascript\draw symbols in pdf
-\PDF Generator SDK for Javascript\Javascript\draw text and images and lines in pdf
-\PDF Generator SDK for Javascript\Javascript\rotate image in pdf
-\PDF Generator SDK for Javascript\Javascript\rotate text in pdf
-\PDF Generator SDK for Javascript\Javascript\set pdf document properties
-\PDF Generator SDK for Javascript\Javascript\set pdf font name
-\PDF Generator SDK for Javascript\Javascript\set pdf font style
-\PDF Generator SDK for Javascript\Javascript\set pdf header and pdf footer
-\PDF Generator SDK for Javascript\Javascript\set pdf page orientation
-\PDF Generator SDK for Javascript\Javascript\set pdf page size
-\PDF Generator SDK for Javascript\Javascript\set pdf text align
-\PDF Generator SDK for Javascript\Javascript\use alpha channel with graphics for pdf
-\PDF Generator SDK for Javascript\Javascript\use german umlauts text in pdf
-\PDF Generator SDK for Javascript\Javascript\use html formatting and links for pdf
-\PDF Generator SDK for Javascript\Javascript\use outlines in pdf
-\PDF Generator SDK for Javascript\Javascript\use rich text formatting in pdf
-\PDF Generator SDK for Javascript\Javascript\wrap text in pdf
+\PDF Generator SDK for Javascript\Javascript\Add Image To PDF From Canvas
+\PDF Generator SDK for Javascript\Javascript\Add Image To PDF From URL
+\PDF Generator SDK for Javascript\Javascript\Add Text In Columns To PDF
+\PDF Generator SDK for Javascript\Javascript\Draw Invoice With Logo And Table
+\PDF Generator SDK for Javascript\Javascript\Draw Line In PDF
+\PDF Generator SDK for Javascript\Javascript\Draw Rectangle In PDF
+\PDF Generator SDK for Javascript\Javascript\Draw Symbols In PDF
+\PDF Generator SDK for Javascript\Javascript\Draw Text, Images And Lines In PDF
+\PDF Generator SDK for Javascript\Javascript\Rotate Image In PDF
+\PDF Generator SDK for Javascript\Javascript\Rotate Text In PDF
+\PDF Generator SDK for Javascript\Javascript\Set PDF Document Properties
+\PDF Generator SDK for Javascript\Javascript\Set PDF Font Name
+\PDF Generator SDK for Javascript\Javascript\Set PDF Font Style
+\PDF Generator SDK for Javascript\Javascript\Set PDF Header And PDF Footer
+\PDF Generator SDK for Javascript\Javascript\Set PDF Page Orientation
+\PDF Generator SDK for Javascript\Javascript\Set PDF Page Size
+\PDF Generator SDK for Javascript\Javascript\Set PDF Text Align
+\PDF Generator SDK for Javascript\Javascript\Use Alpha Channel With Graphics For PDF
+\PDF Generator SDK for Javascript\Javascript\Use German Umlauts Text In PDF
+\PDF Generator SDK for Javascript\Javascript\Use HTML Formatting And Links For PDF
+\PDF Generator SDK for Javascript\Javascript\Use Outlines In PDF
+\PDF Generator SDK for Javascript\Javascript\Use Rich Text Formatting In PDF
+\PDF Generator SDK for Javascript\Javascript\Wrap Text In PDF
 \PDF Renderer SDK\ASP.NET C#
 \PDF Renderer SDK\C#
 \PDF Renderer SDK\Delphi
 \PDF Renderer SDK\VB.NET
 \PDF Renderer SDK\VBScript and VB6
-\PDF Renderer SDK\ASP.NET C#\convert PDF To PNG
-\PDF Renderer SDK\ASP.NET C#\convert PDF to TIFF multipaged
-\PDF Renderer SDK\C#\Convert PDF to 1-bit BMP
+\PDF Renderer SDK\ASP.NET C#\Convert PDF to Multipage TIFF
+\PDF Renderer SDK\ASP.NET C#\Convert PDF To PNG
+\PDF Renderer SDK\C#\Convert PDF To 1-bit BMP
 \PDF Renderer SDK\C#\Convert PDF To BMP
 \PDF Renderer SDK\C#\Convert PDF To EMF
+\PDF Renderer SDK\C#\Convert PDF To High Quality PNG
 \PDF Renderer SDK\C#\Convert PDF To JPEG
 \PDF Renderer SDK\C#\Convert PDF To Memory Stream Image
+\PDF Renderer SDK\C#\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\C#\Convert PDF To PNG
-\PDF Renderer SDK\C#\Convert PDF To PNG high quality
-\PDF Renderer SDK\C#\Convert PDF to TIFF multipaged
 \PDF Renderer SDK\C#\Make Thumbnail from PDF
 \PDF Renderer SDK\C#\Print PDF
 \PDF Renderer SDK\C#\Render Text-Vector-Image Layers in PDF
 \PDF Renderer SDK\C#\Rendering PDF to image In Background Thread
 \PDF Renderer SDK\C#\Silent PDF Printing
 \PDF Renderer SDK\Delphi\Convert PDF To JPEG
-\PDF Renderer SDK\VB.NET\Convert PDF to 1-bit BMP
+\PDF Renderer SDK\VB.NET\Convert PDF To 1-bit BMP
 \PDF Renderer SDK\VB.NET\Convert PDF To BMP
 \PDF Renderer SDK\VB.NET\Convert PDF To BMP (using Streams)
 \PDF Renderer SDK\VB.NET\Convert PDF To EMF
-\PDF Renderer SDK\VB.NET\Convert PDF To high quality PNG
+\PDF Renderer SDK\VB.NET\Convert PDF To High Quality PNG
 \PDF Renderer SDK\VB.NET\Convert PDF To JPEG
+\PDF Renderer SDK\VB.NET\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VB.NET\Convert PDF To PNG
-\PDF Renderer SDK\VB.NET\convert PDF to TIFF multipaged
-\PDF Renderer SDK\VB.NET\Make Thumbnail image from PDF
-\PDF Renderer SDK\VB.NET\pdf to image rendering In Background Thread
+\PDF Renderer SDK\VB.NET\Make Thumbnail Image From PDF
+\PDF Renderer SDK\VB.NET\PDF To Image Rendering In Background Thread
 \PDF Renderer SDK\VB.NET\Print PDF
-\PDF Renderer SDK\VB.NET\Show or hide Text or Vector or Image Layers in pdf
-\PDF Renderer SDK\VB.NET\Silent PDF document Printing
-\PDF Renderer SDK\VBScript and VB6\Convert PDF to 1-bit BMP
+\PDF Renderer SDK\VB.NET\Show Or Hide Text Or Vector Or Image Layers In PDF
+\PDF Renderer SDK\VB.NET\Silent PDF Document Printing
+\PDF Renderer SDK\VBScript and VB6\Convert PDF To 1-bit BMP
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To BMP
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To EMF
+\PDF Renderer SDK\VBScript and VB6\Convert PDF To High Quality PNG
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To JPEG
+\PDF Renderer SDK\VBScript and VB6\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To PNG
-\PDF Renderer SDK\VBScript and VB6\Convert PDF To PNG high quality
-\PDF Renderer SDK\VBScript and VB6\Convert PDF to TIFF multipaged
-\PDF Renderer SDK\VBScript and VB6\Hide Text or Vector or Image Layer in pdf
-\PDF Renderer SDK\VBScript and VB6\pdf to image in Command Line
+\PDF Renderer SDK\VBScript and VB6\Hide Text or Vector or Image Layer In PDF
+\PDF Renderer SDK\VBScript and VB6\PDF To Image In Command Line
 \PDF Renderer SDK\VBScript and VB6\Silent PDF Printing
 \PDF SDK\ASP.NET
 \PDF SDK\ASP.NET C#
@@ -1351,54 +1351,54 @@
 \PDF SDK\C#\Add GoTo Action to PDF
 \PDF SDK\C#\Add Header And Footer
 \PDF SDK\C#\Add Images to PDF
-\PDF SDK\C#\Add JavaScript Action to pdf
-\PDF SDK\C#\Add Launch action to PDF
+\PDF SDK\C#\Add JavaScript Action to PDF
+\PDF SDK\C#\Add Launch Action to PDF
 \PDF SDK\C#\Add Page Numbers
 \PDF SDK\C#\Add Passwords And Permissions in PDF
 \PDF SDK\C#\Add Show Hide Action to PDF
 \PDF SDK\C#\Add Sound Annotation in PDF
 \PDF SDK\C#\Add Submit Form Action to PDF
-\PDF SDK\C#\Add text annotations in PDF
+\PDF SDK\C#\Add Text Annotations in PDF
 \PDF SDK\C#\Add TextField to PDF form
 \PDF SDK\C#\Add URI Link Action in PDF
-\PDF SDK\C#\Add video annotation in PDF
+\PDF SDK\C#\Add Video Annotation in PDF
 \PDF SDK\C#\Add Watermarks to PDF
 \PDF SDK\C#\Convert DOCX to HTML
 \PDF SDK\C#\Convert DOCX to PDF
-\PDF SDK\C#\Convert Email with attachments to PDF
+\PDF SDK\C#\Convert Email with Attachments to PDF
 \PDF SDK\C#\Convert HTML Email to PDF
 \PDF SDK\C#\Convert HTML Email With Attachments To PDF
 \PDF SDK\C#\Convert HTML to DOCX
 \PDF SDK\C#\Convert HTML to PDF
 \PDF SDK\C#\Convert RTF Email to PDF
-\PDF SDK\C#\Convert RTF Email with attachments to PDF
+\PDF SDK\C#\Convert RTF Email with Attachments to PDF
 \PDF SDK\C#\Convert SVG to PDF
-\PDF SDK\C#\Convert text Email to PDF
-\PDF SDK\C#\Convert text email with attachments to PDF
+\PDF SDK\C#\Convert Text Email to PDF
+\PDF SDK\C#\Convert Text Email with Attachments to PDF
 \PDF SDK\C#\Convert XML to PDF
-\PDF SDK\C#\Create and use template in PDF
-\PDF SDK\C#\Create button in PDF Form
-\PDF SDK\C#\Create checkbox in pdf form
+\PDF SDK\C#\Create And Use Template In PDF
+\PDF SDK\C#\Create Button in PDF Form
+\PDF SDK\C#\Create Checkbox In PDF Form
 \PDF SDK\C#\Create ComboBox in PDF form
 \PDF SDK\C#\Create ListBox in PDF form
-\PDF SDK\C#\Create New PDF document
+\PDF SDK\C#\Create New PDF Document
 \PDF SDK\C#\Create RadioButton in PDF form
 \PDF SDK\C#\Create Right To Left Text in PDF
 \PDF SDK\C#\Create Tables in PDF
 \PDF SDK\C#\Draw Lines and Curves in PDF
 \PDF SDK\C#\Draw Rectangles in PDF
-\PDF SDK\C#\Draw text String in PDF
+\PDF SDK\C#\Draw Text String in PDF
 \PDF SDK\C#\Draw with Transparency in PDF
-\PDF SDK\C#\Fill PDF form
+\PDF SDK\C#\Fill PDF Form
 \PDF SDK\C#\Flatten PDF Form
-\PDF SDK\C#\Load Existing PDF document
+\PDF SDK\C#\Load Existing PDF Document
 \PDF SDK\C#\Merge Two PDF Documents
 \PDF SDK\C#\Read Form Values from PDF form
-\PDF SDK\C#\Remove password and Protection from PDF
+\PDF SDK\C#\Remove Password and Protection From PDF
 \PDF SDK\C#\Reorder Pages in PDF
 \PDF SDK\C#\Set Blend Mode for Drawing in PDF
-\PDF SDK\C#\Set Clipping for drawing in PDF
-\PDF SDK\C#\Set Color Profiles for drawing in PDF
+\PDF SDK\C#\Set Clipping for Drawing in PDF
+\PDF SDK\C#\Set Color Profiles for Drawing in PDF
 \PDF SDK\C#\Set Fonts for text in PDF
 \PDF SDK\C#\Set Graphics State for Drawing in PDF
 \PDF SDK\C#\Set Intercharacter Spacing for Text in PDF
@@ -1406,195 +1406,195 @@
 \PDF SDK\C#\Set Link To Page in PDF
 \PDF SDK\C#\Set Navigation Bookmarks in PDF
 \PDF SDK\C#\Set Page Numbers in PDF
-\PDF SDK\C#\Set PDF document Display Options
-\PDF SDK\C#\Set PDF document Information
+\PDF SDK\C#\Set PDF Document Display Options
+\PDF SDK\C#\Set PDF Document Information
 \PDF SDK\C#\Set String Scaling in PDF
 \PDF SDK\C#\Set Superscript and Subscript
 \PDF SDK\C#\Set Text Rotation in PDF
-\PDF SDK\C#\Set Tiling Patterns for drawings in pdf
-\PDF SDK\C#\Set Transformations for drawings in pdf
-\PDF SDK\C#\Set Word Spacing for text in PDF
-\PDF SDK\C#\Signing PDF and set security
+\PDF SDK\C#\Set Tiling Patterns for Drawings in PDF
+\PDF SDK\C#\Set Transformations for Drawings in PDF
+\PDF SDK\C#\Set Word Spacing for Text in PDF
+\PDF SDK\C#\Sign PDF and Set Security
 \PDF SDK\C#\Use PDF Layers
-\PDF SDK\VB.NET\Add 3d Annotations to PDF
+\PDF SDK\VB.NET\Add 3D Annotations to PDF
 \PDF SDK\VB.NET\Add File Attachment to PDF
 \PDF SDK\VB.NET\Add GoTo Action in PDF
 \PDF SDK\VB.NET\Add Header And Footer
-\PDF SDK\VB.NET\Add JavaScript action in PDF
-\PDF SDK\VB.NET\Add Launch action in pdf
+\PDF SDK\VB.NET\Add JavaScript Action in PDF
+\PDF SDK\VB.NET\Add Launch Action in PDF
 \PDF SDK\VB.NET\Add Link To Page in PDF
 \PDF SDK\VB.NET\Add Page Numbers to PDF
-\PDF SDK\VB.NET\Add Show-Hide Widget action in pdf
-\PDF SDK\VB.NET\Add Sound annotation to pdf
-\PDF SDK\VB.NET\Add text annotation in PDF
-\PDF SDK\VB.NET\add text field to pdf form
-\PDF SDK\VB.NET\Add video annotation in pdf
+\PDF SDK\VB.NET\Add Show-Hide Widget Action in PDF
+\PDF SDK\VB.NET\Add Sound Annotation to PDF
+\PDF SDK\VB.NET\Add Text Annotation in PDF
+\PDF SDK\VB.NET\Add Text Field to PDF Form
+\PDF SDK\VB.NET\Add Video Annotation in PDF
 \PDF SDK\VB.NET\Add Watermarks to PDF
 \PDF SDK\VB.NET\Convert DOCX to HTML
 \PDF SDK\VB.NET\Convert DOCX to PDF
-\PDF SDK\VB.NET\convert Email with attachemnts to PDF
-\PDF SDK\VB.NET\convert Email with RTF and attachments to PDF
-\PDF SDK\VB.NET\convert HTML Email to PDF
-\PDF SDK\VB.NET\convert HTML Email with attachments to PDF
+\PDF SDK\VB.NET\Convert Email with Attachments to PDF
+\PDF SDK\VB.NET\Convert Email with RTF and Attachments to PDF
+\PDF SDK\VB.NET\Convert HTML Email to PDF
+\PDF SDK\VB.NET\Convert HTML Email with Attachments to PDF
 \PDF SDK\VB.NET\Convert HTML to DOCX
 \PDF SDK\VB.NET\Convert HTML to PDF
-\PDF SDK\VB.NET\convert RTF Email to PDF
+\PDF SDK\VB.NET\Convert RTF Email to PDF
 \PDF SDK\VB.NET\Convert SVG to PDF
-\PDF SDK\VB.NET\convert text Email to PDF
-\PDF SDK\VB.NET\convert text Email with attachments to PDF
+\PDF SDK\VB.NET\Convert Text Email to PDF
+\PDF SDK\VB.NET\Convert Text Email with Attachments to PDF
 \PDF SDK\VB.NET\Convert XML to PDF
-\PDF SDK\VB.NET\Create Bookmarks in pdf
-\PDF SDK\VB.NET\create Button in pdf form
-\PDF SDK\VB.NET\create CheckBox in pdf form
-\PDF SDK\VB.NET\create ComboBox in pdf form
-\PDF SDK\VB.NET\Create ListBox in pdf form
-\PDF SDK\VB.NET\Create new pdf document
-\PDF SDK\VB.NET\create Radio Button in pdf form
-\PDF SDK\VB.NET\Create Submit Form action in pdf
+\PDF SDK\VB.NET\Create And Use Template In PDF
+\PDF SDK\VB.NET\Create Bookmarks in PDF
+\PDF SDK\VB.NET\Create Button in PDF Form
+\PDF SDK\VB.NET\Create CheckBox in PDF Form
+\PDF SDK\VB.NET\Create ComboBox in PDF Form
+\PDF SDK\VB.NET\Create ListBox in PDF Form
+\PDF SDK\VB.NET\Create New PDF Document
+\PDF SDK\VB.NET\Create Radio Button in PDF Form
+\PDF SDK\VB.NET\Create Submit Form Action in PDF
 \PDF SDK\VB.NET\Create Tables in PDF
-\PDF SDK\VB.NET\Create URI Link action in PDF
-\PDF SDK\VB.NET\Draw Lines and Curves in pdf
-\PDF SDK\VB.NET\Draw Rectangles in pdf
-\PDF SDK\VB.NET\Draw text String in pdf
-\PDF SDK\VB.NET\Draw Tiling Patterns in pdf
-\PDF SDK\VB.NET\Draw with Blend Mode in pdf
-\PDF SDK\VB.NET\Draw with Clipping in pdf
-\PDF SDK\VB.NET\Draw with Color Profiles in pdf
-\PDF SDK\VB.NET\Draw with Graphics State in pdf
-\PDF SDK\VB.NET\Draw with Transparency in pdf
+\PDF SDK\VB.NET\Create URI Link Action in PDF
+\PDF SDK\VB.NET\Draw Lines and Curves in PDF
+\PDF SDK\VB.NET\Draw Rectangles in PDF
+\PDF SDK\VB.NET\Draw Text String in PDF
+\PDF SDK\VB.NET\Draw Tiling Patterns in PDF
+\PDF SDK\VB.NET\Draw with Blend Mode in PDF
+\PDF SDK\VB.NET\Draw with Clipping in PDF
+\PDF SDK\VB.NET\Draw with Color Profiles in PDF
+\PDF SDK\VB.NET\Draw with Graphics State in PDF
+\PDF SDK\VB.NET\Draw with Transparency in PDF
 \PDF SDK\VB.NET\Fill PDF Form
 \PDF SDK\VB.NET\Flatten PDF Form
-\PDF SDK\VB.NET\insert Images in pdf
-\PDF SDK\VB.NET\Load existing pdf document
-\PDF SDK\VB.NET\Merge 2 pdf Documents
-\PDF SDK\VB.NET\Read Form Values from PDF form
+\PDF SDK\VB.NET\Insert Images in PDF
+\PDF SDK\VB.NET\Load Existing PDF Document
+\PDF SDK\VB.NET\Merge Two PDF Documents
+\PDF SDK\VB.NET\Read Form Values from PDF Form
 \PDF SDK\VB.NET\Remove Protection from PDF
-\PDF SDK\VB.NET\Reorder Pages in pdf
-\PDF SDK\VB.NET\Rotate text in PDF
-\PDF SDK\VB.NET\Set Fonts for text in pdf
-\PDF SDK\VB.NET\Set Intercharacter Spacing for text in pdf
-\PDF SDK\VB.NET\set Invisible Text Over Image in pdf
+\PDF SDK\VB.NET\Reorder Pages in PDF
+\PDF SDK\VB.NET\Rotate Text in PDF
+\PDF SDK\VB.NET\Set Fonts for Text in PDF
+\PDF SDK\VB.NET\Set Intercharacter Spacing for Text in PDF
+\PDF SDK\VB.NET\Set Invisible Text Over Image in PDF
 \PDF SDK\VB.NET\Set Page Numbers in PDF
 \PDF SDK\VB.NET\Set Passwords and Permissions for PDF
-\PDF SDK\VB.NET\Set pdf document display Options
-\PDF SDK\VB.NET\Set pdf document information
-\PDF SDK\VB.NET\Set Superscript and Subscript for text in PDF
-\PDF SDK\VB.NET\Set Word Spacing for text in pdf
-\PDF SDK\VB.NET\Signing for PDF
-\PDF SDK\VB.NET\use Drawing Template for pdf
+\PDF SDK\VB.NET\Set PDF Document Display Options
+\PDF SDK\VB.NET\Set PDF Document Information
+\PDF SDK\VB.NET\Set Superscript and Subscript for Text in PDF
+\PDF SDK\VB.NET\Set Word Spacing for Text in PDF
+\PDF SDK\VB.NET\Sign PDF
 \PDF SDK\VB.NET\Use Drawing Transformations for PDF
-\PDF SDK\VB.NET\Use Markup for annotations in PDF
-\PDF SDK\VB.NET\use pdf Layers
+\PDF SDK\VB.NET\Use Markup for Annotations in PDF
+\PDF SDK\VB.NET\Use PDF Layers
 \PDF SDK\VB.NET\Use Right To Left Text in PDF
 \PDF SDK\VB.NET\Use String Scaling in PDF
-\PDF SDK\VBScript and VB6\Add 3d annotation in pdf
+\PDF SDK\VBScript and VB6\Add 3D Annotation in PDF
 \PDF SDK\VBScript and VB6\Add File Attachment to PDF
-\PDF SDK\VBScript and VB6\Add Goto action to pdf
-\PDF SDK\VBScript and VB6\add Images in pdf
-\PDF SDK\VBScript and VB6\Add JavaScript action in pdf
-\PDF SDK\VBScript and VB6\Add Link To a Page in pdf
+\PDF SDK\VBScript and VB6\Add GoTo Action to PDF
+\PDF SDK\VBScript and VB6\Add Images in PDF
+\PDF SDK\VBScript and VB6\Add JavaScript Action in PDF
+\PDF SDK\VBScript and VB6\Add Link To Page in PDF
 \PDF SDK\VBScript and VB6\Add Page Numbers in PDF
-\PDF SDK\VBScript and VB6\Add Sound as annotation in pdf
-\PDF SDK\VBScript and VB6\Add video annotation to pdf
-\PDF SDK\VBScript and VB6\Add watermarks in pdf
+\PDF SDK\VBScript and VB6\Add Sound Annotation in PDF
+\PDF SDK\VBScript and VB6\Add Video Annotation to PDF
+\PDF SDK\VBScript and VB6\Add Watermarks in PDF
 \PDF SDK\VBScript and VB6\Copy Pages From One PDF Document To Another
-\PDF SDK\VBScript and VB6\Create Bookmarks for navigation in pdf
-\PDF SDK\VBScript and VB6\create Drawing Template for pdf
-\PDF SDK\VBScript and VB6\Create List Box in pdf form
-\PDF SDK\VBScript and VB6\Create New pdf document
-\PDF SDK\VBScript and VB6\create pdf form with Button
-\PDF SDK\VBScript and VB6\create pdf Form with ComboBox
-\PDF SDK\VBScript and VB6\create pdf Forms with CheckBox
-\PDF SDK\VBScript and VB6\Create Right To Left Text in pdf
-\PDF SDK\VBScript and VB6\Create Submit Form action in PDF
-\PDF SDK\VBScript and VB6\Create text annotation in pdf
+\PDF SDK\VBScript and VB6\Create Bookmarks for Navigation in PDF
+\PDF SDK\VBScript and VB6\Create Drawing Template for PDF
+\PDF SDK\VBScript and VB6\Create List Box in PDF Form
+\PDF SDK\VBScript and VB6\Create New PDF Document
+\PDF SDK\VBScript and VB6\Create PDF Form with Button
+\PDF SDK\VBScript and VB6\Create PDF Form with CheckBox
+\PDF SDK\VBScript and VB6\Create PDF Form with ComboBox
+\PDF SDK\VBScript and VB6\Create Right-To-Left Text in PDF
+\PDF SDK\VBScript and VB6\Create Submit Form Action in PDF
+\PDF SDK\VBScript and VB6\Create Text Annotation in PDF
 \PDF SDK\VBScript and VB6\Create Text Fields in PDF
-\PDF SDK\VBScript and VB6\Create Tiling Patterns drawings in pdf
-\PDF SDK\VBScript and VB6\Create URI (Link) action in pdf
-\PDF SDK\VBScript and VB6\Draw Lines and Curves in pdf
-\PDF SDK\VBScript and VB6\Draw Rectangles in pdf
-\PDF SDK\VBScript and VB6\Draw String in pdf
-\PDF SDK\VBScript and VB6\Draw tables in pdf
-\PDF SDK\VBScript and VB6\Enable Superscript or Subscript for text in pdf
-\PDF SDK\VBScript and VB6\Fill fields in PDF Form
+\PDF SDK\VBScript and VB6\Create Tiling Patterns Drawings in PDF
+\PDF SDK\VBScript and VB6\Create URI (Link) Action in PDF
+\PDF SDK\VBScript and VB6\Draw Lines and Curves in PDF
+\PDF SDK\VBScript and VB6\Draw Rectangles in PDF
+\PDF SDK\VBScript and VB6\Draw String in PDF
+\PDF SDK\VBScript and VB6\Draw Tables in PDF
+\PDF SDK\VBScript and VB6\Enable Superscript or Subscript for Text in PDF
+\PDF SDK\VBScript and VB6\Fill Fields in PDF Form
 \PDF SDK\VBScript and VB6\Flatten PDF Form
-\PDF SDK\VBScript and VB6\Load existing pdf document
+\PDF SDK\VBScript and VB6\Load Existing PDF Document
 \PDF SDK\VBScript and VB6\Set Display Options for PDF
-\PDF SDK\VBScript and VB6\Set Font for text in pdf
+\PDF SDK\VBScript and VB6\Set Font for Text in PDF
 \PDF SDK\VBScript and VB6\Set Graphics State for PDF
-\PDF SDK\VBScript and VB6\Set Inter character Spacing for text in pdf
-\PDF SDK\VBScript and VB6\Set Launch action in pdf
-\PDF SDK\VBScript and VB6\Set Markup for annotation in pdf
+\PDF SDK\VBScript and VB6\Set Inter-Character Spacing for Text in PDF
+\PDF SDK\VBScript and VB6\Set Launch Action in PDF
+\PDF SDK\VBScript and VB6\Set Markup Aannotation in PDF
 \PDF SDK\VBScript and VB6\Set Passwords and Permissions of PDF file
 \PDF SDK\VBScript and VB6\Set Show and Hide Widget in PDF
 \PDF SDK\VBScript and VB6\Set Text Rotation
-\PDF SDK\VBScript and VB6\Set Text Scaling option in pdf
-\PDF SDK\VBScript and VB6\Set Transparency for drawing in pdf
-\PDF SDK\VBScript and VB6\Set word spacing for text in pdf
+\PDF SDK\VBScript and VB6\Set Text Scaling Option in PDF
+\PDF SDK\VBScript and VB6\Set Transparency for Drawing in PDF
+\PDF SDK\VBScript and VB6\Set Word Spacing for Text in PDF
 \PDF SDK\VBScript and VB6\Setup PDF Document Information
-\PDF SDK\VBScript and VB6\Sign PDF document
-\PDF SDK\VBScript and VB6\Transform Drawing in pdf
-\PDF SDK\VBScript and VB6\Use Blend Mode for drawing in pdf
-\PDF SDK\VBScript and VB6\Use clipping for drawing in pdf
-\PDF SDK\VBScript and VB6\Use Color Profiles in drawing in pdf
-\PDF SDK\VBScript and VB6\use Layers in pdf
+\PDF SDK\VBScript and VB6\Sign PDF Document
+\PDF SDK\VBScript and VB6\Transform Drawing in PDF
+\PDF SDK\VBScript and VB6\Use Blend Mode for Drawing in PDF
+\PDF SDK\VBScript and VB6\Use Clipping for Drawing in PDF
+\PDF SDK\VBScript and VB6\Use Color Profiles in Drawing in PDF
+\PDF SDK\VBScript and VB6\Use Layers in PDF
 \PDF SDK\VBScript and VB6\Use Radio Button in PDF form
 \PDF To HTML SDK\ASP.NET
 \PDF To HTML SDK\C#
 \PDF To HTML SDK\VB.NET
 \PDF To HTML SDK\VB6
 \PDF To HTML SDK\VBScript
-\PDF To HTML SDK\ASP.NET\convert PDF To HTML with complex layout
-\PDF To HTML SDK\ASP.NET\convert PDF To HTML with Images
-\PDF To HTML SDK\ASP.NET\convert PDF To HTML with simple layout
-\PDF To HTML SDK\C#\convert PDF To HTML (simple layout) from all pages
-\PDF To HTML SDK\C#\convert PDF To HTML (simple layout) from page
-\PDF To HTML SDK\C#\convert PDF To HTML (with complex layout) from all pages
-\PDF To HTML SDK\C#\convert PDF To HTML (with layout) from page
-\PDF To HTML SDK\C#\Reduce Memory Usage during pdf to html
-\PDF To HTML SDK\VB.NET\convert PDF To HTML (simple layout) from all pages
-\PDF To HTML SDK\VB.NET\convert PDF To HTML (simple layout) from page
-\PDF To HTML SDK\VB.NET\convert PDF To HTML (with layout) from all pages
-\PDF To HTML SDK\VB.NET\convert PDF To HTML (with layout) from page
-\PDF To HTML SDK\VB.NET\Reduce Memory Usage in pdf to html
-\PDF To HTML SDK\VB6\Change pdf to html Output Page Width
-\PDF To HTML SDK\VB6\convert PDF To HTML (simple layout)
-\PDF To HTML SDK\VB6\convert PDF To HTML (with layout)
-\PDF To HTML SDK\VB6\Get pdf Page Width And Height
-\PDF To HTML SDK\VBScript\Change pdf to html Output Page Width
-\PDF To HTML SDK\VBScript\convert PDF To HTML (simple layout)
-\PDF To HTML SDK\VBScript\convert PDF To HTML (with layout)
-\PDF To HTML SDK\VBScript\Get pdf Page Width And Height
+\PDF To HTML SDK\ASP.NET\Convert PDF To HTML With Complex Layout
+\PDF To HTML SDK\ASP.NET\Convert PDF To HTML With Images
+\PDF To HTML SDK\ASP.NET\Convert PDF To HTML With Simple Layout
+\PDF To HTML SDK\C#\Convert PDF To HTML (Simple Layout) From All Pages
+\PDF To HTML SDK\C#\Convert PDF To HTML (Simple Layout) From Page
+\PDF To HTML SDK\C#\Convert PDF To HTML (With Complex Layout) From All Pages
+\PDF To HTML SDK\C#\Convert PDF To HTML (With Complex Layout) From Page
+\PDF To HTML SDK\C#\Reduce Memory Usage During PDF to HTML Conversion
+\PDF To HTML SDK\VB.NET\Convert PDF To HTML (Complex Layout) From All Pages
+\PDF To HTML SDK\VB.NET\Convert PDF To HTML (Complex Layout) From Page
+\PDF To HTML SDK\VB.NET\Convert PDF To HTML (Simple Layout) From All Pages
+\PDF To HTML SDK\VB.NET\Convert PDF To HTML (Simple Layout) From Page
+\PDF To HTML SDK\VB.NET\Reduce Memory Usage During PDF to HTML Conversion
+\PDF To HTML SDK\VB6\Change PDF To HTML Output Page Width
+\PDF To HTML SDK\VB6\Convert PDF To HTML (Complex Layout)
+\PDF To HTML SDK\VB6\Convert PDF To HTML (Simple Layout)
+\PDF To HTML SDK\VB6\Get PDF Page Width And Height
+\PDF To HTML SDK\VBScript\Change PDF To HTML Output Page Width
+\PDF To HTML SDK\VBScript\Convert PDF To HTML (Complex Layout)
+\PDF To HTML SDK\VBScript\Convert PDF To HTML (Simple Layout)
+\PDF To HTML SDK\VBScript\Get PDF Page Width And Height
 \PDF Viewer SDK\C#
 \PDF Viewer SDK\VB.NET
-\PDF Viewer SDK\C#\Change PDF Selection Options and use CustomPaint
+\PDF Viewer SDK\C#\Change PDF Selection Options and Use CustomPaint
 \PDF Viewer SDK\C#\Create Sample PDF Viewer UI Application
 \PDF Viewer SDK\C#\PDF Viewer Control Hosted in WPF
 \PDF Viewer SDK\VB.NET\PDF Viewer Control Hosted in WPF
 \PDF Viewer SDK\VB.NET\Sample PDF Viewing UI Application
-\PDF Viewer SDK\VB.NET\Set PDF viewer Selection Options and use CustomPaint event
+\PDF Viewer SDK\VB.NET\Set PDF Viewer Selection Options and Use CustomPaint Event
 \QR Code SDK\C#
 \QR Code SDK\VB.NET
 \QR Code SDK\VBScript and VB6
-\QR Code SDK\C#\convert vCard to QR Code
-\QR Code SDK\C#\create Colored QR Code
-\QR Code SDK\C#\create GS1 QR Code
-\QR Code SDK\C#\create qr code with Binary Data
-\QR Code SDK\C#\create qr code with Unicode Value
+\QR Code SDK\C#\Convert vCard to QR Code
+\QR Code SDK\C#\Create Colored QR Code
+\QR Code SDK\C#\Create GS1 QR Code
+\QR Code SDK\C#\Create QR Code with Binary Data
+\QR Code SDK\C#\Create QR Code with Unicode Value
 \QR Code SDK\C#\Create Simple QR Code
-\QR Code SDK\C#\make QR Code With Image
-\QR Code SDK\VB.NET\convert vCard to QR Code barcode
-\QR Code SDK\VB.NET\create Colored QR Code barcode
-\QR Code SDK\VB.NET\encode Binary Data to qr code
-\QR Code SDK\VB.NET\generate GS1 QR Code
-\QR Code SDK\VB.NET\generate QR Code With Image inside
-\QR Code SDK\VB.NET\generate qr code with Unicode Value
-\QR Code SDK\VB.NET\generate simple qr code
-\QR Code SDK\VBScript and VB6\create Colored QR Code
-\QR Code SDK\VBScript and VB6\create GS1 QR Code
-\QR Code SDK\VBScript and VB6\create simple qr code barcode
-\QR Code SDK\VBScript and VB6\encode Unicode Value to qr code
-\QR Code SDK\VBScript and VB6\make QR Code With embedded Image
+\QR Code SDK\C#\Make QR Code With Image
+\QR Code SDK\VB.NET\Convert vCard to QR Code Barcode
+\QR Code SDK\VB.NET\Create Colored QR Code Barcode
+\QR Code SDK\VB.NET\Encode Binary Data to QR Code
+\QR Code SDK\VB.NET\Generate GS1 QR Code
+\QR Code SDK\VB.NET\Generate QR Code With Image Inside
+\QR Code SDK\VB.NET\Generate QR Code with Unicode Value
+\QR Code SDK\VB.NET\Generate Simple QR Code
+\QR Code SDK\VBScript and VB6\Create Colored QR Code
+\QR Code SDK\VBScript and VB6\Create GS1 QR Code
+\QR Code SDK\VBScript and VB6\Create Simple QR Code Barcode
+\QR Code SDK\VBScript and VB6\Encode Unicode Value to QR Code
+\QR Code SDK\VBScript and VB6\Make QR Code With Embedded Image
 \Screen Capturing SDK\ASP.NET
 \Screen Capturing SDK\C#
 \Screen Capturing SDK\C++ (managed)
@@ -1604,123 +1604,123 @@
 \Screen Capturing SDK\Registry
 \Screen Capturing SDK\VB.NET
 \Screen Capturing SDK\VBScript and VB6
-\Screen Capturing SDK\ASP.NET\Record screen
-\Screen Capturing SDK\C#\Add Text And Image Overlays to screen recording
-\Screen Capturing SDK\C#\Blackout Sensitive Info on screen video
-\Screen Capturing SDK\C#\Capture From Entire Screen as WEBM video
-\Screen Capturing SDK\C#\Capture screen and Add Time Stamp on video
-\Screen Capturing SDK\C#\Capture screen video with Webcamera Overlay
-\Screen Capturing SDK\C#\Capture video From Entire Screen
-\Screen Capturing SDK\C#\Capture video From Given Region
-\Screen Capturing SDK\C#\Capture video From Given Window
-\Screen Capturing SDK\C#\Capture video from Region Around Mouse
-\Screen Capturing SDK\C#\Capture video From Separate Thread
+\Screen Capturing SDK\ASP.NET\Record Screen
+\Screen Capturing SDK\C#\Add Text And Image Overlays to Screen Recording
+\Screen Capturing SDK\C#\Blackout Sensitive Info on Screen Video
+\Screen Capturing SDK\C#\Capture From Entire Screen as WEBM Video
+\Screen Capturing SDK\C#\Capture Screen and Add Time Stamp on Video
+\Screen Capturing SDK\C#\Capture Screen Video with Webcamera Overlay
+\Screen Capturing SDK\C#\Capture Video From Entire Screen
+\Screen Capturing SDK\C#\Capture Video From Given Region
+\Screen Capturing SDK\C#\Capture Video From Given Window
+\Screen Capturing SDK\C#\Capture Video from Region Around Mouse
+\Screen Capturing SDK\C#\Capture Video From Separate Thread
 \Screen Capturing SDK\C#\Capture WebCam Full Screen Only
 \Screen Capturing SDK\C#\Create Full Featured Screen Capturing App
 \Screen Capturing SDK\C#\Make Full Screen Recording Demo 2 with Text And Images Overlay
 \Screen Capturing SDK\C#\Pause And Resume
-\Screen Capturing SDK\C#\record screen from Command line console
+\Screen Capturing SDK\C#\Record Screen from Command Line Console
 \Screen Capturing SDK\C#\Set Video Audio Settings
-\Screen Capturing SDK\C#\Take Screenshots During video Recording
-\Screen Capturing SDK\C#\Use Low FPS and Min File Size for video
+\Screen Capturing SDK\C#\Take Screenshots During Video Recording
+\Screen Capturing SDK\C#\Use Low FPS and Min File Size for Video
 \Screen Capturing SDK\C#\Use Registration Free Deployment
 \Screen Capturing SDK\C#\Use Video Quality Profiles
-\Screen Capturing SDK\C++ (managed)\Capture video From Entire Screen as WEBM
-\Screen Capturing SDK\C++ (managed)\Record screen video and Add Time Stamp
-\Screen Capturing SDK\C++ (managed)\Record screen video From Entire Screen
-\Screen Capturing SDK\C++ (managed)\Record screen video From Given Region
-\Screen Capturing SDK\C++ (managed)\Record screen video From Given Window
-\Screen Capturing SDK\C++ (managed)\record screen video from Region Around Mouse
-\Screen Capturing SDK\C++ (managed)\record screen video With Webcamera Overlay
-\Screen Capturing SDK\C++ (unmanaged)\Capture From Entire Screen as WEBM video
+\Screen Capturing SDK\C++ (managed)\Capture Video From Entire Screen as WEBM
+\Screen Capturing SDK\C++ (managed)\Record Screen Video and Add Time Stamp
+\Screen Capturing SDK\C++ (managed)\Record Screen Video From Entire Screen
+\Screen Capturing SDK\C++ (managed)\Record Screen Video From Given Region
+\Screen Capturing SDK\C++ (managed)\Record Screen Video From Given Window
+\Screen Capturing SDK\C++ (managed)\Record Screen Video from Region Around Mouse
+\Screen Capturing SDK\C++ (managed)\Record Screen Video With Webcamera Overlay
+\Screen Capturing SDK\C++ (unmanaged)\Capture From Entire Screen as WEBM Video
 \Screen Capturing SDK\C++ (unmanaged)\Capture Video And Add Time Stamp
-\Screen Capturing SDK\C++ (unmanaged)\Capture video From Entire Screen
-\Screen Capturing SDK\C++ (unmanaged)\Capture video From Entire Screen in QT
-\Screen Capturing SDK\C++ (unmanaged)\Capture video From Given Region
-\Screen Capturing SDK\C++ (unmanaged)\Capture video From Given Window
-\Screen Capturing SDK\C++ (unmanaged)\Capture video from Region Around Mouse
-\Screen Capturing SDK\C++ (unmanaged)\Capture video from screen With Webcamera Overlay
+\Screen Capturing SDK\C++ (unmanaged)\Capture Video From Entire Screen
+\Screen Capturing SDK\C++ (unmanaged)\Capture Video From Entire Screen in QT
+\Screen Capturing SDK\C++ (unmanaged)\Capture Video From Given Region
+\Screen Capturing SDK\C++ (unmanaged)\Capture Video From Given Window
+\Screen Capturing SDK\C++ (unmanaged)\Capture Video From Region Around Mouse
+\Screen Capturing SDK\C++ (unmanaged)\Capture Video From Screen With Webcamera Overlay
 \Screen Capturing SDK\C++ (unmanaged)\Capture Webm Video From Entire Screen in QT
-\Screen Capturing SDK\Java\Record screen video
-\Screen Capturing SDK\JavaScript\Capture Entire Screen video
-\Screen Capturing SDK\VB.NET\Blackout Sensitive Info on screen video
-\Screen Capturing SDK\VB.NET\Capture From Entire Screen into WEBM video
-\Screen Capturing SDK\VB.NET\Capture screen video and Add Time Stamp
-\Screen Capturing SDK\VB.NET\Pause And Resume screen video recording
-\Screen Capturing SDK\VB.NET\record screen video from Command line console
-\Screen Capturing SDK\VB.NET\Record screen video From Entire Screen
-\Screen Capturing SDK\VB.NET\Record screen video From Given Region
-\Screen Capturing SDK\VB.NET\Record screen video From Given Window
-\Screen Capturing SDK\VB.NET\Record screen video from Region Around Mouse
-\Screen Capturing SDK\VB.NET\Record screen video From Separate Thread
-\Screen Capturing SDK\VB.NET\Record video from Web Cam in Full Screen Only
-\Screen Capturing SDK\VB.NET\Record video with Webcamera Overlay
-\Screen Capturing SDK\VB.NET\Set Low FPS To Get Min File Size for screen video
-\Screen Capturing SDK\VB.NET\Set Video and Audio Settings for screen video
+\Screen Capturing SDK\Java\Record Screen Video
+\Screen Capturing SDK\JavaScript\Capture Entire Screen Video
+\Screen Capturing SDK\VB.NET\Blackout Sensitive Info on Screen Video
+\Screen Capturing SDK\VB.NET\Capture From Entire Screen into WEBM Video
+\Screen Capturing SDK\VB.NET\Capture Screen Video and Add Time Stamp
+\Screen Capturing SDK\VB.NET\Pause And Resume Screen Video Recording
+\Screen Capturing SDK\VB.NET\Record Screen Video from Command Line Console
+\Screen Capturing SDK\VB.NET\Record Screen Video From Entire Screen
+\Screen Capturing SDK\VB.NET\Record Screen Video From Given Region
+\Screen Capturing SDK\VB.NET\Record Screen Video From Given Window
+\Screen Capturing SDK\VB.NET\Record Screen Video from Region Around Mouse
+\Screen Capturing SDK\VB.NET\Record Screen Video From Separate Thread
+\Screen Capturing SDK\VB.NET\Record Video from Web Cam in Full Screen Only
+\Screen Capturing SDK\VB.NET\Record Video with Webcamera Overlay
+\Screen Capturing SDK\VB.NET\Set Low FPS To Get Min File Size for Screen Video
+\Screen Capturing SDK\VB.NET\Set Video and Audio Settings for Screen Video
 \Screen Capturing SDK\VB.NET\Take Screenshots During Recording
-\Screen Capturing SDK\VB.NET\Use Video Quality Profiles for screen recording
-\Screen Capturing SDK\VBScript and VB6\Capture Entire Screen and Web Cam Video
-\Screen Capturing SDK\VBScript and VB6\Capture Entire Screen and WebCam as video
-\Screen Capturing SDK\VBScript and VB6\Capture Entire Screen into video
-\Screen Capturing SDK\VBScript and VB6\Capture Entire Screen to HD WMV video
-\Screen Capturing SDK\VBScript and VB6\Capture Entire Screen video With Transparent Windows
+\Screen Capturing SDK\VB.NET\Use Video Quality Profiles for Screen Recording
+\Screen Capturing SDK\VBScript and VB6\Capture Entire Screen and WebCam Video
+\Screen Capturing SDK\VBScript and VB6\Capture Entire Screen into Video
+\Screen Capturing SDK\VBScript and VB6\Capture Entire Screen to HD WMV Video
+\Screen Capturing SDK\VBScript and VB6\Capture Entire Screen Video With Transparent Windows
+\Screen Capturing SDK\VBScript and VB6\Capture Full Screen with WebCam
 \Screen Capturing SDK\VBScript and VB6\Capture Given Window And Crop video
-\Screen Capturing SDK\VBScript and VB6\Capture Given Window And Stop video On Window Closed
-\Screen Capturing SDK\VBScript and VB6\Capture Given Window into video
-\Screen Capturing SDK\VBScript and VB6\Capture Region area as video And Do Not Resize
-\Screen Capturing SDK\VBScript and VB6\Capture Region into video
-\Screen Capturing SDK\VBScript and VB6\Capture screen video and Add Red Text
-\Screen Capturing SDK\VBScript and VB6\Capture screen video Around Mouse
-\Screen Capturing SDK\VBScript and VB6\Capture screen video with Time Stamp
-\Screen Capturing SDK\VBScript and VB6\Capture video From FlashPlayer Control In Browser
-\Screen Capturing SDK\VBScript and VB6\Capture video From Silverlight Control In Browser
+\Screen Capturing SDK\VBScript and VB6\Capture Given Window And Stop Video On Window Closed
+\Screen Capturing SDK\VBScript and VB6\Capture Given Window into Video
+\Screen Capturing SDK\VBScript and VB6\Capture Region Area as Video And Do Not Resize
+\Screen Capturing SDK\VBScript and VB6\Capture Region into Video
+\Screen Capturing SDK\VBScript and VB6\Capture Screen Video and Add Red Text
+\Screen Capturing SDK\VBScript and VB6\Capture Screen Video Around Mouse
+\Screen Capturing SDK\VBScript and VB6\Capture Screen Video with Time Stamp
+\Screen Capturing SDK\VBScript and VB6\Capture Video From FlashPlayer Control In Browser
+\Screen Capturing SDK\VBScript and VB6\Capture Video From Silverlight Control In Browser
 \Screen Capturing SDK\VBScript and VB6\Capture WebCam Full Screen Only
-\Screen Capturing SDK\VBScript and VB6\Pause And Resume screen video recording
-\Screen Capturing SDK\VBScript and VB6\Set Black out for sensitive Info in screen video
-\Screen Capturing SDK\VBScript and VB6\Set Low FPS and Min WMV Size for video
-\Screen Capturing SDK\VBScript and VB6\Set Mouse Spot Size for screen video
-\Screen Capturing SDK\VBScript and VB6\Set Multiple Regions Recording for video
+\Screen Capturing SDK\VBScript and VB6\Pause And Resume Screen Video Recording
+\Screen Capturing SDK\VBScript and VB6\Set Blackout for Sensitive Info in Screen Video
+\Screen Capturing SDK\VBScript and VB6\Set Low FPS and Min WMV Size for Video
+\Screen Capturing SDK\VBScript and VB6\Set Mouse Spot Size for Screen Video
+\Screen Capturing SDK\VBScript and VB6\Set Multiple Regions Recording for Video
 \Screen Capturing SDK\VBScript and VB6\Set WMV Video Bitrate
 \Screen Capturing SDK\VBScript and VB6\Show Capturing Properties Dialog
-\Screen Capturing SDK\VBScript and VB6\Take manual Screenshots during video recording
+\Screen Capturing SDK\VBScript and VB6\Take Manual Screenshots During Video Recording
 \Screen Capturing SDK\VBScript and VB6\Take Screenshots On Click
 \Screen Capturing SDK\VBScript and VB6\Take Screenshots On Timer
-\Screen Capturing SDK\VBScript and VB6\Use WEBM Output for video
-\Screen Capturing SDK\VBScript and VB6\Use WMV Profile for video settings
+\Screen Capturing SDK\VBScript and VB6\Use WEBM Output for Video
+\Screen Capturing SDK\VBScript and VB6\Use WMV Profile for Video Settings
 \Solutions\Convert Scanned PDF to Excel
-\Solutions\Display PDF in browser and select area using PDF.js
+\Solutions\Display PDF in Browser and Select Area Using PDF.js
 \Solutions\Extract Text From Large PDF Document in Parallel Processing
-\Solutions\Generate and check QR Code barcode with image inside
+\Solutions\Generate and Check QR Code Barcode with Image Inside
 \Solutions\Generate Barcodes From Spreadsheet
 \Solutions\Human Assisted Invoice Parsing
-\Solutions\Make large text searchable PDF using Parallel Processing
-\Solutions\Read invoice and parse invoice
-\Solutions\Read PDF with scanned image and Hindi text
-\Solutions\Regular expression search and highlight in PDF
-\Solutions\Regular expression search In PDF And Highlight On Rendered Page
+\Solutions\Make Large Text Searchable PDF Using Parallel Processing
+\Solutions\Parse Invoice
+\Solutions\Read PDF with Scanned Image and Hindi Text
+\Solutions\Regular Expression Search and Highlight in PDF
+\Solutions\Regular Expression Search In PDF And Highlight On Rendered Page
 \Solutions\Select Region And Perform OCR
-\Solutions\Slice PDF by horizontal lines inside
+\Solutions\Slice PDF by Horizontal Lines Inside
 \Solutions\Convert Scanned PDF to Excel\C#
 \Solutions\Convert Scanned PDF to Excel\VB.NET
-\Solutions\Display PDF in browser and select area using PDF.js\Javascript and PDF.js v1.x
-\Solutions\Display PDF in browser and select area using PDF.js\Javascript and PDF.js v2.x
+\Solutions\Display PDF in Browser and Select Area Using PDF.js\Javascript and PDF.js v1.x
+\Solutions\Display PDF in Browser and Select Area Using PDF.js\Javascript and PDF.js v2.x
 \Solutions\Extract Text From Large PDF Document in Parallel Processing\C#
-\Solutions\Generate and check QR Code barcode with image inside\C#
-\Solutions\Generate and check QR Code barcode with image inside\VB.NET
+\Solutions\Generate and Check QR Code Barcode with Image Inside\C#
+\Solutions\Generate and Check QR Code Barcode with Image Inside\VB.NET
 \Solutions\Generate Barcodes From Spreadsheet\VBScript
 \Solutions\Human Assisted Invoice Parsing\C#
-\Solutions\Make large text searchable PDF using Parallel Processing\C#
-\Solutions\Make large text searchable PDF using Parallel Processing\VB.NET
-\Solutions\Read invoice and parse invoice\C#
-\Solutions\Read invoice and parse invoice\VB.NET
-\Solutions\Read PDF with scanned image and Hindi text\C#
-\Solutions\Read PDF with scanned image and Hindi text\VB.NET
-\Solutions\Regular expression search and highlight in PDF\C#
-\Solutions\Regular expression search and highlight in PDF\VB.NET
-\Solutions\Regular expression search In PDF And Highlight On Rendered Page\C#
+\Solutions\Make Large Text Searchable PDF Using Parallel Processing\C#
+\Solutions\Make Large Text Searchable PDF Using Parallel Processing\VB.NET
+\Solutions\Parse Invoice\C#
+\Solutions\Parse Invoice\VB.NET
+\Solutions\Read PDF with Scanned Image and Hindi Text\C#
+\Solutions\Read PDF with Scanned Image and Hindi Text\VB.NET
+\Solutions\Regular Expression Search and Highlight in PDF\C#
+\Solutions\Regular Expression Search and Highlight in PDF\VB.NET
+\Solutions\Regular Expression Search In PDF And Highlight On Rendered Page\C#
 \Solutions\Select Region And Perform OCR\C#
-\Solutions\Slice PDF by horizontal lines inside\C#
-\Solutions\Slice PDF by horizontal lines inside\VB.NET
+\Solutions\Slice PDF by Horizontal Lines Inside\C#
+\Solutions\Slice PDF by Horizontal Lines Inside\VB.NET
 \Spreadsheet SDK\ASP Classic
 \Spreadsheet SDK\ASP.NET C#
 \Spreadsheet SDK\ASP.NET VB.NET
@@ -1733,7 +1733,7 @@
 \Spreadsheet SDK\VB.NET
 \Spreadsheet SDK\VB6
 \Spreadsheet SDK\VBScript
-\Spreadsheet SDK\ASP Classic\Generate XLS spreadsheet
+\Spreadsheet SDK\ASP Classic\Generate XLS Spreadsheet
 \Spreadsheet SDK\ASP.NET C#\Display XLS as HTML
 \Spreadsheet SDK\ASP.NET VB.NET\Display XLS as HTML
 \Spreadsheet SDK\C#\Add Area Chart
@@ -1744,11 +1744,11 @@
 \Spreadsheet SDK\C#\Add Columns Into Existing Spreadsheet
 \Spreadsheet SDK\C#\Add Combination Chart
 \Spreadsheet SDK\C#\Add Doughnut Chart
-\Spreadsheet SDK\C#\Add Header and Footer for spreadsheet
+\Spreadsheet SDK\C#\Add Header and Footer for Spreadsheet
 \Spreadsheet SDK\C#\Add Image Into Existing Spreadsheet
-\Spreadsheet SDK\C#\Add Image to spreadsheet
+\Spreadsheet SDK\C#\Add Image to Spreadsheet
 \Spreadsheet SDK\C#\Add Images Advanced
-\Spreadsheet SDK\C#\Add Images to spreadsheet
+\Spreadsheet SDK\C#\Add Images to Spreadsheet
 \Spreadsheet SDK\C#\Add Line Chart
 \Spreadsheet SDK\C#\Add Pie Chart
 \Spreadsheet SDK\C#\Add Radar Chart
@@ -1764,21 +1764,21 @@
 \Spreadsheet SDK\C#\Change Column Width and Row Height
 \Spreadsheet SDK\C#\Change Data in Existing Spreadsheet
 \Spreadsheet SDK\C#\Change Document Properties
-\Spreadsheet SDK\C#\convert CSV to SQL Server
-\Spreadsheet SDK\C#\convert CSV To XLS
-\Spreadsheet SDK\C#\convert ODS to SQL Server
+\Spreadsheet SDK\C#\Convert CSV to SQL Server
+\Spreadsheet SDK\C#\Convert CSV To XLS
+\Spreadsheet SDK\C#\Convert ODS to SQL Server
 \Spreadsheet SDK\C#\Convert Template To XLS
-\Spreadsheet SDK\C#\convert TXT to SQL Server
+\Spreadsheet SDK\C#\Convert TXT to SQL Server
 \Spreadsheet SDK\C#\Convert XLS to CSV
-\Spreadsheet SDK\C#\convert XLS to SQL Server
-\Spreadsheet SDK\C#\convert XLS to SQL Server (via CSV BULK INSERT)
+\Spreadsheet SDK\C#\Convert XLS to SQL Server
+\Spreadsheet SDK\C#\Convert XLS to SQL Server (via CSV BULK INSERT)
 \Spreadsheet SDK\C#\Convert XLS to TXT
 \Spreadsheet SDK\C#\Convert XLS to XLSX
 \Spreadsheet SDK\C#\Convert XLS to XML
-\Spreadsheet SDK\C#\convert XLS to XML and XML to XLS
-\Spreadsheet SDK\C#\convert XLSX to SQL Server
+\Spreadsheet SDK\C#\Convert XLS to XML and XML to XLS
+\Spreadsheet SDK\C#\Convert XLSX to SQL Server
 \Spreadsheet SDK\C#\Convert XML to XLS
-\Spreadsheet SDK\C#\Copy range
+\Spreadsheet SDK\C#\Copy Range
 \Spreadsheet SDK\C#\Copy Worksheet
 \Spreadsheet SDK\C#\CopyPaste Columns
 \Spreadsheet SDK\C#\CopyPaste Rows
@@ -1820,7 +1820,7 @@
 \Spreadsheet SDK\C#\Read Merged Cells
 \Spreadsheet SDK\C#\Read Number Format In Cell
 \Spreadsheet SDK\C#\Read ODS (Open Office Calc) Files
-\Spreadsheet SDK\C#\Read TXT (tab delimited)
+\Spreadsheet SDK\C#\Read TXT (Tab Delimited)
 \Spreadsheet SDK\C#\Read XLSX (Office 2007) Files
 \Spreadsheet SDK\C#\Read XML Spreadsheet (SpreadsheetML format)
 \Spreadsheet SDK\C#\Remove Columns from Existing Spreadsheet
@@ -1846,14 +1846,14 @@
 \Spreadsheet SDK\C#\Validate Cells with Dates
 \Spreadsheet SDK\C#\Validate Data in Cell and Mark Wrong With Color
 \Spreadsheet SDK\C#\View Spreadsheet
-\Spreadsheet SDK\C++ (managed)\create simple spreadsheet
-\Spreadsheet SDK\C++ (unmanaged)\create simple spreasdsheet
-\Spreadsheet SDK\Console\convert in Batch from XLS to CSV
-\Spreadsheet SDK\Console\convert in batch to XLS
-\Spreadsheet SDK\Console\convert in Batch from XLS to CSV\Input Files
-\Spreadsheet SDK\Console\convert in batch to XLS\Input Files
-\Spreadsheet SDK\JavaScript\create spreadsheet
-\Spreadsheet SDK\PHP\create spreadsheet
+\Spreadsheet SDK\C++ (managed)\Create Simple Spreadsheet
+\Spreadsheet SDK\C++ (unmanaged)\Create Simple Spreasdsheet
+\Spreadsheet SDK\Console\Convert in Batch from XLS to CSV
+\Spreadsheet SDK\Console\Convert in Batch to XLS
+\Spreadsheet SDK\Console\Convert in Batch from XLS to CSV\Input Files
+\Spreadsheet SDK\Console\Convert in Batch to XLS\Input Files
+\Spreadsheet SDK\JavaScript\Create Spreadsheet
+\Spreadsheet SDK\PHP\Create Spreadsheet
 \Spreadsheet SDK\VB.NET\Add Area Chart
 \Spreadsheet SDK\VB.NET\Add Background Image
 \Spreadsheet SDK\VB.NET\Add Bar Chart
@@ -1879,23 +1879,23 @@
 \Spreadsheet SDK\VB.NET\Change Column Width and Row Height
 \Spreadsheet SDK\VB.NET\Change Data in Existing Spreadsheet
 \Spreadsheet SDK\VB.NET\Change Document Properties
-\Spreadsheet SDK\VB.NET\convert ODS to SQL Server
-\Spreadsheet SDK\VB.NET\convert Template To XLS
-\Spreadsheet SDK\VB.NET\convert TXT to SQL Server
+\Spreadsheet SDK\VB.NET\Convert ODS to SQL Server
+\Spreadsheet SDK\VB.NET\Convert Template To XLS
+\Spreadsheet SDK\VB.NET\Convert TXT to SQL Server
 \Spreadsheet SDK\VB.NET\Convert XLS to CSV
-\Spreadsheet SDK\VB.NET\convert XLS to SQL Server
-\Spreadsheet SDK\VB.NET\convert XLS to SQL Server (via CSV BULK INSERT)
+\Spreadsheet SDK\VB.NET\Convert XLS to SQL Server
+\Spreadsheet SDK\VB.NET\Convert XLS to SQL Server (via CSV BULK INSERT)
 \Spreadsheet SDK\VB.NET\Convert XLS to TXT
 \Spreadsheet SDK\VB.NET\Convert XLS to XLSX
 \Spreadsheet SDK\VB.NET\Convert XLS to XML
-\Spreadsheet SDK\VB.NET\convert XLS to XML and XML to XLS
-\Spreadsheet SDK\VB.NET\convert XLSX to SQL Server
+\Spreadsheet SDK\VB.NET\Convert XLS to XML and XML to XLS
+\Spreadsheet SDK\VB.NET\Convert XLSX to SQL Server
 \Spreadsheet SDK\VB.NET\Convert XML to XLS
-\Spreadsheet SDK\VB.NET\Copy range
+\Spreadsheet SDK\VB.NET\Copy Range
 \Spreadsheet SDK\VB.NET\Copy Worksheet
 \Spreadsheet SDK\VB.NET\CopyPaste Columns
 \Spreadsheet SDK\VB.NET\CopyPaste Rows
-\Spreadsheet SDK\VB.NET\create simple Hello World spreadsheet
+\Spreadsheet SDK\VB.NET\Create Simple Hello World Spreadsheet
 \Spreadsheet SDK\VB.NET\Create Worksheets
 \Spreadsheet SDK\VB.NET\Create XLSX
 \Spreadsheet SDK\VB.NET\CSV to SQL Server
@@ -1948,24 +1948,24 @@
 \Spreadsheet SDK\VB.NET\Set Date Formatting in Cells
 \Spreadsheet SDK\VB.NET\Set Hidden Formula
 \Spreadsheet SDK\VB.NET\Set Hidden Rows And Columns
-\Spreadsheet SDK\VB.NET\set ShrinkToFit for Cells
+\Spreadsheet SDK\VB.NET\Set ShrinkToFit for Cells
 \Spreadsheet SDK\VB.NET\Swap Cells and Their Values
 \Spreadsheet SDK\VB.NET\Swap Worksheets
 \Spreadsheet SDK\VB.NET\Unmerge Cells
 \Spreadsheet SDK\VB.NET\Use Rich Formatting to Create Report
-\Spreadsheet SDK\VB.NET\use Unicode Text
+\Spreadsheet SDK\VB.NET\Use Unicode Text
 \Spreadsheet SDK\VB.NET\Validate Cell if Value is in Range
 \Spreadsheet SDK\VB.NET\Validate Cells with Dates
 \Spreadsheet SDK\VB.NET\Validate Data in Cell and Mark Wrong With Color
 \Spreadsheet SDK\VB.NET\View Spreadsheet
-\Spreadsheet SDK\VB6\create a spreadsheet
-\Spreadsheet SDK\VBScript\Add Images to spreadsheet
+\Spreadsheet SDK\VB6\Create Spreadsheet
+\Spreadsheet SDK\VBScript\Add Images to Spreadsheet
 \Spreadsheet SDK\VBScript\Change Cell Background Color
 \Spreadsheet SDK\VBScript\Change Column Height
 \Spreadsheet SDK\VBScript\Change Row Height
-\Spreadsheet SDK\VBScript\convert CSV to XLS
-\Spreadsheet SDK\VBScript\create Barcode from Excel
-\Spreadsheet SDK\VBScript\create simple spreadsheet
+\Spreadsheet SDK\VBScript\Convert CSV to XLS
+\Spreadsheet SDK\VBScript\Create Barcode from Excel
+\Spreadsheet SDK\VBScript\Create Simple Spreadsheet
 \Spreadsheet SDK\VBScript\Export To HTML
 \Spreadsheet SDK\VBScript\Merge Cells and Set Alignment
 \Spreadsheet SDK\VBScript\Save As PDF
@@ -1988,47 +1988,47 @@
 \SWF To Video SDK\C#\FLV  to WMV
 \SWF To Video SDK\C#\Multiple Conversions At Once
 \SWF To Video SDK\C#\Set Audio Track
-\SWF To Video SDK\C#\SWF parameters to PNG
-\SWF To Video SDK\C#\SWF to lossless AVI
+\SWF To Video SDK\C#\SWF Parameters to PNG
+\SWF To Video SDK\C#\SWF to Lossless AVI
 \SWF To Video SDK\C#\SWF to PNG
-\SWF To Video SDK\C#\SWF to PNG (all frames)
+\SWF To Video SDK\C#\SWF to PNG (All Frames)
 \SWF To Video SDK\C#\SWF to PNG Large Size
-\SWF To Video SDK\C#\SWF to PNG with transparency
-\SWF To Video SDK\C#\SWF to uncompressed AVI
+\SWF To Video SDK\C#\SWF to PNG with Transparency
+\SWF To Video SDK\C#\SWF to Uncompressed AVI
 \SWF To Video SDK\C#\SWF To Video
 \SWF To Video SDK\C#\SWF To WebM
 \SWF To Video SDK\C#\SWF to WMV
-\SWF To Video SDK\C#\SWF to WMV with live preview
-\SWF To Video SDK\C#\SWF with data to AVI
-\SWF To Video SDK\C#\SWF with data to PNG
-\SWF To Video SDK\C#\SWF with data to WEBM
-\SWF To Video SDK\C#\SWF with data to WMV
+\SWF To Video SDK\C#\SWF to WMV with Live Preview
+\SWF To Video SDK\C#\SWF with Data to AVI
+\SWF To Video SDK\C#\SWF with Data to PNG
+\SWF To Video SDK\C#\SWF with Data to WEBM
+\SWF To Video SDK\C#\SWF with Data to WMV
 \SWF To Video SDK\C#\Video Length Setting
-\SWF To Video SDK\C#\SWF to WMV with live preview\PreviewContext
+\SWF To Video SDK\C#\SWF to WMV with Live Preview\PreviewContext
 \SWF To Video SDK\C++\SWF To Video
 \SWF To Video SDK\C++\SWF To WEBM
-\SWF To Video SDK\VB.NET\32bit RGBA AVI
+\SWF To Video SDK\VB.NET\32-bit RGBA AVI
 \SWF To Video SDK\VB.NET\Conversion Progress
 \SWF To Video SDK\VB.NET\Conversion Progress GUI
 \SWF To Video SDK\VB.NET\FLV  to AVI
 \SWF To Video SDK\VB.NET\FLV  to WMV
 \SWF To Video SDK\VB.NET\Multiple Conversions At Once
 \SWF To Video SDK\VB.NET\Set Audio Track
-\SWF To Video SDK\VB.NET\SWF parameters to PNG
-\SWF To Video SDK\VB.NET\SWF to lossless AVI
+\SWF To Video SDK\VB.NET\SWF Parameters to PNG
+\SWF To Video SDK\VB.NET\SWF to Lossless AVI
 \SWF To Video SDK\VB.NET\SWF to PNG
-\SWF To Video SDK\VB.NET\SWF to PNG (all frames)
+\SWF To Video SDK\VB.NET\SWF to PNG (All Frames)
 \SWF To Video SDK\VB.NET\SWF to PNG Large Size
-\SWF To Video SDK\VB.NET\SWF to PNG with transparency
-\SWF To Video SDK\VB.NET\SWF to uncompressed AVI
+\SWF To Video SDK\VB.NET\SWF to PNG with Transparency
+\SWF To Video SDK\VB.NET\SWF to Uncompressed AVI
 \SWF To Video SDK\VB.NET\SWF To Video
 \SWF To Video SDK\VB.NET\SWF To WEBM
 \SWF To Video SDK\VB.NET\SWF to WMV
-\SWF To Video SDK\VB.NET\SWF to WMV with live preview
-\SWF To Video SDK\VB.NET\SWF with data to AVI
-\SWF To Video SDK\VB.NET\SWF with data to PNG
-\SWF To Video SDK\VB.NET\SWF with data to WEBM
-\SWF To Video SDK\VB.NET\SWF with data to WMV
+\SWF To Video SDK\VB.NET\SWF to WMV with Live Preview
+\SWF To Video SDK\VB.NET\SWF with Data to AVI
+\SWF To Video SDK\VB.NET\SWF with Data to PNG
+\SWF To Video SDK\VB.NET\SWF with Data to WEBM
+\SWF To Video SDK\VB.NET\SWF with Data to WMV
 \SWF To Video SDK\VB.NET\Video Length Setting
 \SWF To Video SDK\VB6\SWF to PNG
 \SWF To Video SDK\VB6\SWF To Video
@@ -2036,165 +2036,165 @@
 \SWF To Video SDK\VBScript\FLV to AVI
 \SWF To Video SDK\VBScript\FLV to WMV
 \SWF To Video SDK\VBScript\From URL
-\SWF To Video SDK\VBScript\SWF To large PNG (6000x6000)
+\SWF To Video SDK\VBScript\SWF To Large PNG (6000x6000)
 \SWF To Video SDK\VBScript\SWF to PNG
 \SWF To Video SDK\VBScript\SWF To WEBM
 \SWF To Video SDK\VBScript\SWF To WMV
-\SWF To Video SDK\VBScript\SWF with dynamic scene to PNG frames
+\SWF To Video SDK\VBScript\SWF with Dynamic Scene to PNG Frames
 \Text Recognition SDK\C#
 \Text Recognition SDK\PowerShell
 \Text Recognition SDK\VB.NET
 \Text Recognition SDK\VBScript and VB6
 \Text Recognition SDK\C#\Extract Text From Areas
-\Text Recognition SDK\C#\Recognize text from document
+\Text Recognition SDK\C#\Recognize Text From Document
 \Text Recognition SDK\C#\Use Image Preprocessing Filters
 \Text Recognition SDK\C#\Use Text Auto Corrections
 \Text Recognition SDK\PowerShell\Extract Text From Areas
-\Text Recognition SDK\PowerShell\Recognize text from image
+\Text Recognition SDK\PowerShell\Recognize Text from Image
 \Text Recognition SDK\PowerShell\Set Image Preprocessing Filters
 \Text Recognition SDK\PowerShell\Set Text Auto Corrections
 \Text Recognition SDK\VB.NET\Extract Text From Areas
-\Text Recognition SDK\VB.NET\Recognize text from image document
+\Text Recognition SDK\VB.NET\Recognize Text from Image Document
 \Text Recognition SDK\VB.NET\Use Auto Corrections for Text
 \Text Recognition SDK\VB.NET\Use Image Preprocessing Filters
-\Text Recognition SDK\VBScript and VB6\Extract Text From image Areas
-\Text Recognition SDK\VBScript and VB6\Recognize text from images
+\Text Recognition SDK\VBScript and VB6\Extract Text From Image Areas
+\Text Recognition SDK\VBScript and VB6\Recognize Text from Images
 \Text Recognition SDK\VBScript and VB6\Set Auto Corrections for Text
-\Text Recognition SDK\VBScript and VB6\Use Image Preprocessing Filters for document
+\Text Recognition SDK\VBScript and VB6\Use Image Preprocessing Filters for Document
 \Watermarking SDK\ASP classic
 \Watermarking SDK\ASP.NET
 \Watermarking SDK\C#
 \Watermarking SDK\VB.NET
 \Watermarking SDK\VBScript
-\Watermarking SDK\ASP classic\Add watermark to image
-\Watermarking SDK\ASP.NET\Add watermark Image From Stream
-\Watermarking SDK\ASP.NET\Add watermark to jpg
-\Watermarking SDK\C#\add advanced text watermark
-\Watermarking SDK\C#\Add Annotation watermark to image
-\Watermarking SDK\C#\Add date time to image
-\Watermarking SDK\C#\add diagonal stamp to image
-\Watermarking SDK\C#\add diagonal text watermark
-\Watermarking SDK\C#\add file name caption to image
-\Watermarking SDK\C#\Add logo and text to image
-\Watermarking SDK\C#\Add logo and text to image with options
-\Watermarking SDK\C#\Add logo to image
-\Watermarking SDK\C#\Add logo to image with options
-\Watermarking SDK\C#\add simple text watermark
-\Watermarking SDK\C#\Add simple text watermark to image
+\Watermarking SDK\ASP classic\Add Watermark to Image
+\Watermarking SDK\ASP.NET\Add Watermark Image From Stream
+\Watermarking SDK\ASP.NET\Add Watermark to JPEG
+\Watermarking SDK\C#\Add Advanced Text Watermark
+\Watermarking SDK\C#\Add Annotation Watermark to Image
+\Watermarking SDK\C#\Add Date Time to Image
+\Watermarking SDK\C#\Add Diagonal Stamp to Image
+\Watermarking SDK\C#\Add Diagonal Text Watermark
+\Watermarking SDK\C#\Add File Name Caption to Image
+\Watermarking SDK\C#\Add Logo and Text to Image
+\Watermarking SDK\C#\Add Logo and Text to Image with Options
+\Watermarking SDK\C#\Add Logo to Image
+\Watermarking SDK\C#\Add Logo to Image with Options
+\Watermarking SDK\C#\Add Simple Text Watermark
+\Watermarking SDK\C#\Add Simple Text Watermark to Image
 \Watermarking SDK\C#\Add Simple Watermark
-\Watermarking SDK\C#\add stamp for whole page
-\Watermarking SDK\C#\add stamp to image
-\Watermarking SDK\C#\add tiled diagonal text watermark
-\Watermarking SDK\C#\add tiled text watermark
-\Watermarking SDK\C#\add tiled vertical text watermark
-\Watermarking SDK\C#\add vertical text watermark
-\Watermarking SDK\C#\add vertical text watermark with options
-\Watermarking SDK\C#\add whole page text watermark
-\Watermarking SDK\C#\Batch watermark multiple images
-\Watermarking SDK\C#\Change DPI image resolution
-\Watermarking SDK\C#\Resize image as Fit within
-\Watermarking SDK\C#\Resize image in percentage
-\Watermarking SDK\C#\Resize image in pixels
-\Watermarking SDK\C#\Set Advanced Annotation based watermark
-\Watermarking SDK\C#\set diagonal text watermark options
-\Watermarking SDK\C#\Show progress indication
-\Watermarking SDK\C#\Use Actual units to resize image
-\Watermarking SDK\C#\Use EXIF Macros for watermarks
-\Watermarking SDK\C#\add advanced text watermark\TextFitsPage
-\Watermarking SDK\C#\Add Annotation watermark to image\Annotation
-\Watermarking SDK\C#\Add date time to image\DateTime
-\Watermarking SDK\C#\Add date time to image\DateTime\DateTime
-\Watermarking SDK\C#\add diagonal stamp to image\StampFitsPageDiagonal
-\Watermarking SDK\C#\add diagonal text watermark\TextFitsPageDiagonal
-\Watermarking SDK\C#\add file name caption to image\FileName
-\Watermarking SDK\C#\Add logo and text to image\LogoImageWithText
-\Watermarking SDK\C#\Add logo and text to image with options\LogoImageWithText
-\Watermarking SDK\C#\Add logo to image\LogoImage
-\Watermarking SDK\C#\Add logo to image with options\LogoImage
-\Watermarking SDK\C#\add simple text watermark\SimpleText
-\Watermarking SDK\C#\Add simple text watermark to image\SimpleText
+\Watermarking SDK\C#\Add Stamp for Whole Page
+\Watermarking SDK\C#\Add Stamp to Image
+\Watermarking SDK\C#\Add Tiled Diagonal Text Watermark
+\Watermarking SDK\C#\Add Tiled Text Watermark
+\Watermarking SDK\C#\Add Tiled Vertical Text Watermark
+\Watermarking SDK\C#\Add Vertical Text Watermark
+\Watermarking SDK\C#\Add Vertical Text Watermark with Options
+\Watermarking SDK\C#\Add Whole Page Text Watermark
+\Watermarking SDK\C#\Batch Watermark Multiple Images
+\Watermarking SDK\C#\Change DPI Image Resolution
+\Watermarking SDK\C#\Resize Image as Fit Within
+\Watermarking SDK\C#\Resize Image in Percentage
+\Watermarking SDK\C#\Resize Image in Pixels
+\Watermarking SDK\C#\Set Advanced Annotation Based Watermark
+\Watermarking SDK\C#\Set Diagonal Text Watermark Options
+\Watermarking SDK\C#\Show Progress Indication
+\Watermarking SDK\C#\Use Actual Units to Resize Image
+\Watermarking SDK\C#\Use EXIF Macros for Watermarks
+\Watermarking SDK\C#\Add Advanced Text Watermark\TextFitsPage
+\Watermarking SDK\C#\Add Annotation Watermark to Image\Annotation
+\Watermarking SDK\C#\Add Date Time to Image\DateTime
+\Watermarking SDK\C#\Add Date Time to Image\DateTime\DateTime
+\Watermarking SDK\C#\Add Diagonal Stamp to Image\StampFitsPageDiagonal
+\Watermarking SDK\C#\Add Diagonal Text Watermark\TextFitsPageDiagonal
+\Watermarking SDK\C#\Add File Name Caption to Image\FileName
+\Watermarking SDK\C#\Add Logo and Text to Image\LogoImageWithText
+\Watermarking SDK\C#\Add Logo and Text to Image with Options\LogoImageWithText
+\Watermarking SDK\C#\Add Logo to Image\LogoImage
+\Watermarking SDK\C#\Add Logo to Image with Options\LogoImage
+\Watermarking SDK\C#\Add Simple Text Watermark\SimpleText
+\Watermarking SDK\C#\Add Simple Text Watermark to Image\SimpleText
 \Watermarking SDK\C#\Add Simple Watermark\hello_world_cs
-\Watermarking SDK\C#\add stamp for whole page\StampFitsPage
-\Watermarking SDK\C#\add stamp to image\Stamps
-\Watermarking SDK\C#\add tiled diagonal text watermark\TiledTextDiagonal
-\Watermarking SDK\C#\add tiled text watermark\TiledText
-\Watermarking SDK\C#\add tiled vertical text watermark\TiledTextVertical
-\Watermarking SDK\C#\add vertical text watermark\SimpleVerticalText
-\Watermarking SDK\C#\add vertical text watermark with options\SimpleVerticalText
-\Watermarking SDK\C#\add whole page text watermark\TextFitsPage
-\Watermarking SDK\C#\Batch watermark multiple images\BatchWatermarking
-\Watermarking SDK\C#\Change DPI image resolution\Change DPI
-\Watermarking SDK\C#\Resize image as Fit within\Fit within resize
-\Watermarking SDK\C#\Resize image in percentage\Percentage resize
-\Watermarking SDK\C#\Resize image in pixels\Pixels resize
-\Watermarking SDK\C#\Set Advanced Annotation based watermark\Annotation
-\Watermarking SDK\C#\set diagonal text watermark options\TextFitsPageDiagonal
-\Watermarking SDK\C#\Use Actual units to resize image\Actual units resize
-\Watermarking SDK\C#\Use EXIF Macros for watermarks\AnnotationMacros
-\Watermarking SDK\VB.NET\add and show progress Indicator
-\Watermarking SDK\VB.NET\add annotation watermark
-\Watermarking SDK\VB.NET\add annotation watermark with options
-\Watermarking SDK\VB.NET\add colored stamp to image
-\Watermarking SDK\VB.NET\add date time to image
-\Watermarking SDK\VB.NET\add diagonal stamp watermark
-\Watermarking SDK\VB.NET\add diagonal text watermark
-\Watermarking SDK\VB.NET\add diagonal text with images with options
-\Watermarking SDK\VB.NET\add filename to image
-\Watermarking SDK\VB.NET\add logo and text to image
-\Watermarking SDK\VB.NET\add logo and text to images with options
-\Watermarking SDK\VB.NET\add logo to image
-\Watermarking SDK\VB.NET\add simple text watermark
-\Watermarking SDK\VB.NET\add simple text watermark to image with options
-\Watermarking SDK\VB.NET\add simple watermark
-\Watermarking SDK\VB.NET\add stamp for whole image
-\Watermarking SDK\VB.NET\add stamp watermark to image
-\Watermarking SDK\VB.NET\add tiled diagonal text watermark to image
-\Watermarking SDK\VB.NET\add tiled text watermark
-\Watermarking SDK\VB.NET\add tiled vertical text watermark
-\Watermarking SDK\VB.NET\add vertical text watermark
-\Watermarking SDK\VB.NET\add vertical text with options
-\Watermarking SDK\VB.NET\add watermark and Fit within resize
-\Watermarking SDK\VB.NET\add while page text watermark to image
-\Watermarking SDK\VB.NET\batch watermark set of images
-\Watermarking SDK\VB.NET\Change image resolution in DPI
-\Watermarking SDK\VB.NET\resize image in actual units
-\Watermarking SDK\VB.NET\resize image in percents
-\Watermarking SDK\VB.NET\resize image in pixels
-\Watermarking SDK\VB.NET\set options for text watermark
-\Watermarking SDK\VB.NET\set options for tiled text watermark
-\Watermarking SDK\VB.NET\use macros for watermarks
-\Watermarking SDK\VB.NET\add annotation watermark with options\Annotation preset (advanced settings) (VB.NET)
-\Watermarking SDK\VB.NET\add colored stamp to image\StampFitsPageColor (VB.NET)
-\Watermarking SDK\VB.NET\add date time to image\DateTime
-\Watermarking SDK\VB.NET\add diagonal stamp watermark\StampFitsPageDiagonal
-\Watermarking SDK\VB.NET\add diagonal text watermark\TextFitsPageDiagonal
-\Watermarking SDK\VB.NET\add diagonal text with images with options\TextFitsPageDiagonal (VB.NET)
-\Watermarking SDK\VB.NET\add filename to image\FileName (VB.NET)
-\Watermarking SDK\VB.NET\add logo and text to image\LogoImageWithText
-\Watermarking SDK\VB.NET\add logo and text to image\LogoImageWithText preset (VB.NET)
-\Watermarking SDK\VB.NET\add logo and text to images with options\LogoImageWithText preset (VB.NET)
-\Watermarking SDK\VB.NET\add logo to image\LogoImage (VB.NET)
-\Watermarking SDK\VB.NET\add simple text watermark\SimpleText (VB.NET)
-\Watermarking SDK\VB.NET\add simple text watermark to image with options\SimpleText (VB.NET)
-\Watermarking SDK\VB.NET\add simple watermark\hello_world_vb
-\Watermarking SDK\VB.NET\add stamp for whole image\StampFitsPage
-\Watermarking SDK\VB.NET\add stamp watermark to image\screenshots
-\Watermarking SDK\VB.NET\add stamp watermark to image\Stamps
-\Watermarking SDK\VB.NET\add tiled diagonal text watermark to image\TiledTextDiagonal
-\Watermarking SDK\VB.NET\add tiled text watermark\TiledText
-\Watermarking SDK\VB.NET\add tiled vertical text watermark\TiledTextVertical
-\Watermarking SDK\VB.NET\add vertical text watermark\SimpleVerticalText (VB.NET)
-\Watermarking SDK\VB.NET\add vertical text with options\SimpleVerticalText (VB.NET)
-\Watermarking SDK\VB.NET\add watermark and Fit within resize\Fit within resize VB.NET
-\Watermarking SDK\VB.NET\add while page text watermark to image\TextFitsPage
-\Watermarking SDK\VB.NET\batch watermark set of images\Batch watermarking
-\Watermarking SDK\VB.NET\Change image resolution in DPI\Change DPI VB.NET
-\Watermarking SDK\VB.NET\resize image in actual units\Actual units resize VB.NET
-\Watermarking SDK\VB.NET\resize image in percents\Percentage resize VB.NET
-\Watermarking SDK\VB.NET\resize image in pixels\Pixels resize VB.NET
-\Watermarking SDK\VB.NET\set options for text watermark\TextFitsPage (VB.NET)
-\Watermarking SDK\VB.NET\set options for tiled text watermark\TiledText (VB.NET)
-\Watermarking SDK\VB.NET\use macros for watermarks\AnnotationMacros  (VB.NET)
-\Watermarking SDK\VBScript\add annotation watermarks with macros
-\Watermarking SDK\VBScript\add watermark to image
-\Watermarking SDK\VBScript\set adjustments for watermark on image
+\Watermarking SDK\C#\Add Stamp for Whole Page\StampFitsPage
+\Watermarking SDK\C#\Add Stamp to Image\Stamps
+\Watermarking SDK\C#\Add Tiled Diagonal Text Watermark\TiledTextDiagonal
+\Watermarking SDK\C#\Add Tiled Text Watermark\TiledText
+\Watermarking SDK\C#\Add Tiled Vertical Text Watermark\TiledTextVertical
+\Watermarking SDK\C#\Add Vertical Text Watermark\SimpleVerticalText
+\Watermarking SDK\C#\Add Vertical Text Watermark with Options\SimpleVerticalText
+\Watermarking SDK\C#\Add Whole Page Text Watermark\TextFitsPage
+\Watermarking SDK\C#\Batch Watermark Multiple Images\BatchWatermarking
+\Watermarking SDK\C#\Change DPI Image Resolution\Change DPI
+\Watermarking SDK\C#\Resize Image as Fit Within\Fit within resize
+\Watermarking SDK\C#\Resize Image in Percentage\Percentage resize
+\Watermarking SDK\C#\Resize Image in Pixels\Pixels resize
+\Watermarking SDK\C#\Set Advanced Annotation Based Watermark\Annotation
+\Watermarking SDK\C#\Set Diagonal Text Watermark Options\TextFitsPageDiagonal
+\Watermarking SDK\C#\Use Actual Units to Resize Image\Actual units resize
+\Watermarking SDK\C#\Use EXIF Macros for Watermarks\AnnotationMacros
+\Watermarking SDK\VB.NET\Add and Show Progress Indicator
+\Watermarking SDK\VB.NET\Add Annotation Watermark
+\Watermarking SDK\VB.NET\Add Annotation Watermark with Options
+\Watermarking SDK\VB.NET\Add Colored Stamp to Image
+\Watermarking SDK\VB.NET\Add Date Time to Image
+\Watermarking SDK\VB.NET\Add Diagonal Stamp Watermark
+\Watermarking SDK\VB.NET\Add Diagonal Text Watermark
+\Watermarking SDK\VB.NET\Add Diagonal Text with Images with Options
+\Watermarking SDK\VB.NET\Add Filename to Image
+\Watermarking SDK\VB.NET\Add Logo and Text to Image
+\Watermarking SDK\VB.NET\Add Logo and Text to Images with Options
+\Watermarking SDK\VB.NET\Add Logo to Image
+\Watermarking SDK\VB.NET\Add Simple Text Watermark
+\Watermarking SDK\VB.NET\Add Simple Text Watermark to Image with Options
+\Watermarking SDK\VB.NET\Add Simple Watermark
+\Watermarking SDK\VB.NET\Add Stamp for Whole Image
+\Watermarking SDK\VB.NET\Add Stamp Watermark to Image
+\Watermarking SDK\VB.NET\Add Tiled Diagonal Text Watermark to Image
+\Watermarking SDK\VB.NET\Add Tiled Text Watermark
+\Watermarking SDK\VB.NET\Add Tiled Vertical Text Watermark
+\Watermarking SDK\VB.NET\Add Vertical Text Watermark
+\Watermarking SDK\VB.NET\Add Vertical Text with Options
+\Watermarking SDK\VB.NET\Add Watermark and Fit within Resize
+\Watermarking SDK\VB.NET\Add While Page Text Watermark to Image
+\Watermarking SDK\VB.NET\Batch Watermark Set of Images
+\Watermarking SDK\VB.NET\Change Image Resolution in DPI
+\Watermarking SDK\VB.NET\Resize Image in Actual Units
+\Watermarking SDK\VB.NET\Resize Image in Percents
+\Watermarking SDK\VB.NET\Resize Image in Pixels
+\Watermarking SDK\VB.NET\Set Options for Text Watermark
+\Watermarking SDK\VB.NET\Set Options for Tiled Text Watermark
+\Watermarking SDK\VB.NET\Use Macros for Watermarks
+\Watermarking SDK\VB.NET\Add Annotation Watermark with Options\Annotation preset (advanced settings) (VB.NET)
+\Watermarking SDK\VB.NET\Add Colored Stamp to Image\StampFitsPageColor (VB.NET)
+\Watermarking SDK\VB.NET\Add Date Time to Image\DateTime
+\Watermarking SDK\VB.NET\Add Diagonal Stamp Watermark\StampFitsPageDiagonal
+\Watermarking SDK\VB.NET\Add Diagonal Text Watermark\TextFitsPageDiagonal
+\Watermarking SDK\VB.NET\Add Diagonal Text with Images with Options\TextFitsPageDiagonal (VB.NET)
+\Watermarking SDK\VB.NET\Add Filename to Image\FileName (VB.NET)
+\Watermarking SDK\VB.NET\Add Logo and Text to Image\LogoImageWithText
+\Watermarking SDK\VB.NET\Add Logo and Text to Image\LogoImageWithText preset (VB.NET)
+\Watermarking SDK\VB.NET\Add Logo and Text to Images with Options\LogoImageWithText preset (VB.NET)
+\Watermarking SDK\VB.NET\Add Logo to Image\LogoImage (VB.NET)
+\Watermarking SDK\VB.NET\Add Simple Text Watermark\SimpleText (VB.NET)
+\Watermarking SDK\VB.NET\Add Simple Text Watermark to Image with Options\SimpleText (VB.NET)
+\Watermarking SDK\VB.NET\Add Simple Watermark\hello_world_vb
+\Watermarking SDK\VB.NET\Add Stamp for Whole Image\StampFitsPage
+\Watermarking SDK\VB.NET\Add Stamp Watermark to Image\screenshots
+\Watermarking SDK\VB.NET\Add Stamp Watermark to Image\Stamps
+\Watermarking SDK\VB.NET\Add Tiled Diagonal Text Watermark to Image\TiledTextDiagonal
+\Watermarking SDK\VB.NET\Add Tiled Text Watermark\TiledText
+\Watermarking SDK\VB.NET\Add Tiled Vertical Text Watermark\TiledTextVertical
+\Watermarking SDK\VB.NET\Add Vertical Text Watermark\SimpleVerticalText (VB.NET)
+\Watermarking SDK\VB.NET\Add Vertical Text with Options\SimpleVerticalText (VB.NET)
+\Watermarking SDK\VB.NET\Add Watermark and Fit within Resize\Fit within resize VB.NET
+\Watermarking SDK\VB.NET\Add While Page Text Watermark to Image\TextFitsPage
+\Watermarking SDK\VB.NET\Batch Watermark Set of Images\Batch watermarking
+\Watermarking SDK\VB.NET\Change Image Resolution in DPI\Change DPI VB.NET
+\Watermarking SDK\VB.NET\Resize Image in Actual Units\Actual units resize VB.NET
+\Watermarking SDK\VB.NET\Resize Image in Percents\Percentage resize VB.NET
+\Watermarking SDK\VB.NET\Resize Image in Pixels\Pixels resize VB.NET
+\Watermarking SDK\VB.NET\Set Options for Text Watermark\TextFitsPage (VB.NET)
+\Watermarking SDK\VB.NET\Set Options for Tiled Text Watermark\TiledText (VB.NET)
+\Watermarking SDK\VB.NET\Use Macros for Watermarks\AnnotationMacros  (VB.NET)
+\Watermarking SDK\VBScript\Add Annotation Watermarks with Macros
+\Watermarking SDK\VBScript\Add Watermark to Image
+\Watermarking SDK\VBScript\Set Adjustments for Watermark on Image
