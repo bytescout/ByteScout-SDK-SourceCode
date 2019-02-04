@@ -30,7 +30,7 @@ Class Program
         extractor.SaveHtmlPageToFile(1, "output.html")
 
         ' Cleanup
-        extractor.Dispose();
+        extractor.Dispose()
 
         ' Open output file in default associated application
         System.Diagnostics.Process.Start("output.html")
