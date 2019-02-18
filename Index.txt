@@ -1964,6 +1964,7 @@
 \Spreadsheet SDK\VBScript\Change Column Height
 \Spreadsheet SDK\VBScript\Change Row Height
 \Spreadsheet SDK\VBScript\Convert CSV to XLS
+\Spreadsheet SDK\VBScript\Copy Data Between Spreadsheets
 \Spreadsheet SDK\VBScript\Create Barcode from Excel
 \Spreadsheet SDK\VBScript\Create Simple Spreadsheet
 \Spreadsheet SDK\VBScript\Export To HTML
