@@ -1,7 +1,5 @@
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # Direct URL of source PDF file.
@@ -13,7 +11,7 @@ $Password = ""
 
 
 # Prepare URL for `PDF To JPEG` API call
-$query = "https://bytescout.io/v1/pdf/convert/to/jpg?password={0}&pages={1}&url={2}" -f `
+$query = "https://api.pdf.co/v1/pdf/convert/to/jpg?password={0}&pages={1}&url={2}" -f `
     $Password, $Pages, $SourceFileUrl
 $query = [System.Uri]::EscapeUriString($query)
 

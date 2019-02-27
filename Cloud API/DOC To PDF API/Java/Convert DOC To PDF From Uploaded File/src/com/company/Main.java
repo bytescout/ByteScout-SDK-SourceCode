@@ -22,10 +22,8 @@ import java.nio.file.Paths;
 
 public class Main
 {
-    // (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
     // The authentication key (API Key).
-    // Get your own by registering at https://secure.bytescout.com/users/sign_up
+    // Get your own by registering at https://app.pdf.co/documentation/api
     final static String API_KEY = "***********************************";
 
     // Source DOC or DOCX file
@@ -44,7 +42,7 @@ public class Main
 
         // Prepare URL for `Get Presigned URL` API call
         String query = String.format(
-                "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=%s",
+                "https://api.pdf.co/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=%s",
                 SourceFile.getFileName());
 
         // Make correctly escaped (encoded) URL
@@ -106,7 +104,7 @@ public class Main
     {
         // Prepare URL for `DOC To PDF` API call
         String query = String.format(
-                "https://bytescout.io/v1/pdf/convert/from/doc?name=%s&url=%s",
+                "https://api.pdf.co/v1/pdf/convert/from/doc?name=%s&url=%s",
                 destinationFile.getFileName(),
                 uploadedFileUrl);
 

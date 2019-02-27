@@ -19,10 +19,8 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
-		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-		
 		// The authentication key (API Key).
-		// Get your own by registering at https://secure.bytescout.com/users/sign_up
+		// Get your own by registering at https://app.pdf.co/documentation/api
 		const String API_KEY = "***********************************";
 		
 		// Direct URL of PDF file to get information
@@ -38,7 +36,7 @@ namespace ByteScoutWebApiExample
 
 			// Prepare URL for `PDF Info` API call
 			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/pdf/info?url={0}", 
+				"https://api.pdf.co/v1/pdf/info?url={0}", 
 				SourceFileURL));
 
 			try

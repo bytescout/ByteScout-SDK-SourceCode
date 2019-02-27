@@ -20,16 +20,14 @@ Imports Newtonsoft.Json.Linq
 
 Module Module1
 
-	' (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 	' The authentication key (API Key).
-	' Get your own by registering at https://secure.bytescout.com/users/sign_up
+	' Get your own by registering at https://app.pdf.co/documentation/api
 	Const API_KEY As String = "***********************************"
 
 	' Direct URL of source file to search barcodes in.
 	Const SourceFileURL As String = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/barcode-reader/sample.pdf"
 	' Comma-separated list of barcode types to search. 
-	' See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeReadFromUrlGet
+	' See valid barcode types in the documentation https://app.pdf.co/documentation/api/1.0/barcode/read_from_url.html
 	Const BarcodeTypes As String = "Code128,Code39,Interleaved2of5,EAN13"
 	' Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 	Const Pages As String = ""
@@ -47,7 +45,7 @@ Module Module1
 
 		' Prepare URL for `Barcode Reader` API call
 		Dim query As String = Uri.EscapeUriString(String.Format(
-			"https://bytescout.io/v1/barcode/read/from/url?types={0}&pages={1}&url={2}&async={3}",
+			"https://api.pdf.co/v1/barcode/read/from/url?types={0}&pages={1}&url={2}&async={3}",
 			BarcodeTypes,
 			Pages,
 			SourceFileURL, 
@@ -130,7 +128,7 @@ Module Module1
 
 		Using webClient As WebClient = New WebClient()
 
-			Dim url As String = "https://bytescout.io/v1/job/check?jobid=" + jobId
+			Dim url As String = "https://api.pdf.co/v1/job/check?jobid=" + jobId
 
 			Dim response As String = webClient.DownloadString(url)
 			Dim json As JObject = JObject.Parse(response)

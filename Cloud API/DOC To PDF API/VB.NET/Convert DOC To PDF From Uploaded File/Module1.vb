@@ -16,10 +16,8 @@ Imports Newtonsoft.Json.Linq
 
 Module Module1
 
-	' (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 	' The authentication key (API Key).
-	' Get your own by registering at https://secure.bytescout.com/users/sign_up
+	' Get your own by registering at https://app.pdf.co/documentation/api
 	Const API_KEY As String = "***********************************"
 
 	' Source DOC or DOCX file
@@ -40,7 +38,7 @@ Module Module1
 
 		' Prepare URL for `Get Presigned URL` API call
 		Dim query As string = Uri.EscapeUriString(string.Format(
-			"https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name={0}", 
+			"https://api.pdf.co/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name={0}", 
 			Path.GetFileName(SourceFile)))
 
 		Try
@@ -65,7 +63,7 @@ Module Module1
 
 				' Prepare URL for `DOC To PDF` API call
 				query = Uri.EscapeUriString(String.Format(
-					"https://bytescout.io/v1/pdf/convert/from/doc?name={0}&url={1}",
+					"https://api.pdf.co/v1/pdf/convert/from/doc?name={0}&url={1}",
 					Path.GetFileName(DestinationFile),
 					uploadedFileUrl))
 

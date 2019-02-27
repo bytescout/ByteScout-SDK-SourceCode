@@ -10,21 +10,19 @@
 //*******************************************************************************************//
 
 
-// (!) If you are getting "(403) Forbidden" error please ensure you have set the correct API_KEY
-
 var https = require("https");
 var path = require("path");
 var fs = require("fs");
 
 
 // The authentication key (API Key).
-// Get your own by registering at https://secure.bytescout.com/users/sign_up
+// Get your own by registering at https://app.pdf.co/documentation/api
 const API_KEY = "***********************************";
 
 
 // Result image file name
 const DestinationFile = "./barcode.png";
-// Barcode type. See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeGenerateGet
+// Barcode type. See valid barcode types in the documentation https://app.pdf.co/documentation/api/1.0/barcode/generate.html
 const BarcodeType = "Code128";
 // Barcode value
 const BarcodeValue = "qweasd123456";
@@ -33,7 +31,7 @@ const BarcodeValue = "qweasd123456";
 // Prepare request to `Barcode Generator` API endpoint
 var queryPath = `/v1/barcode/generate?name=${path.basename(DestinationFile)}&type=${BarcodeType}&value=${BarcodeValue}`;
 var reqOptions = {
-    host: "bytescout.io",
+    host: "api.pdf.co",
     path: encodeURI(queryPath),
     headers: {
         "x-api-key": API_KEY

@@ -19,11 +19,9 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
-		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-		
 		// The authentication key (API Key).
-		// Get your own by registering at https://secure.bytescout.com/users/sign_up
-		const String API_KEY = "***********************************";
+		// Get your own by registering at https://app.pdf.co/documentation/api
+		const String API_KEY = "**************************************";
 		
 		// Direct URL of source PDF file.
 		const string SourceFileUrl = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/pdf-to-csv/sample.pdf";
@@ -44,7 +42,7 @@ namespace ByteScoutWebApiExample
 
 			// Prepare URL for `PDF To CSV` API call
 			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/pdf/convert/to/csv?name={0}&password={1}&pages={2}&url={3}", 
+                "https://api.pdf.co/v1/pdf/convert/to/csv?name={0}&password={1}&pages={2}&url={3}", 
 				Path.GetFileName(DestinationFile),
 				Password,
 				Pages,
@@ -58,8 +56,8 @@ namespace ByteScoutWebApiExample
 				// Parse JSON response
 				JObject json = JObject.Parse(response);
 
-				if (json["error"].ToObject<bool>() == false)
-				{
+                if (json["status"].ToString() != "error")
+                {
 					// Get URL of generated CSV file
 					string resultFileUrl = json["url"].ToString();
 

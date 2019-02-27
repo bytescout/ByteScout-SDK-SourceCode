@@ -1,7 +1,5 @@
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # Source image files
@@ -16,7 +14,7 @@ try {
         # 1a. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
         
         # Prepare URL for `Get Presigned URL` API call
-        $query = "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
+        $query = "https://api.pdf.co/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
             [IO.Path]::GetFileName($imageFile)
         $query = [System.Uri]::EscapeUriString($query)
 
@@ -52,7 +50,7 @@ try {
         # 2. CREATE PDF DOCUMENT FROM UPLOADED IMAGE FILES
     
         # Prepare URL for `DOC To PDF` API call
-        $query = "https://bytescout.io/v1/pdf/convert/from/image?name=$(Split-Path $DestinationFile -Leaf)&url=$($uploadedFiles -join ",")"
+        $query = "https://api.pdf.co/v1/pdf/convert/from/image?name=$(Split-Path $DestinationFile -Leaf)&url=$($uploadedFiles -join ",")"
         $query = [System.Uri]::EscapeUriString($query)
         
         # Execute request

@@ -12,8 +12,6 @@
 
 /*jshint esversion: 6 */
 
-// (!) If you are getting "(403) Forbidden" error please ensure you have set the correct API_KEY
-
 var https = require("https");
 var path = require("path");
 var fs = require("fs");
@@ -23,8 +21,8 @@ var url = require("url");
 var request = require("request");
 
 // The authentication key (API Key).
-// Get your own by registering at https://secure.bytescout.com/users/sign_up
-const API_KEY = "pdfco_fn4gg4niugnsdfnungjkfomopacirbgga";
+// Get your own by registering at https://app.pdf.co/documentation/api
+const API_KEY = "**************************************";
 
 
 // Source PDF file
@@ -60,7 +58,7 @@ function getPresignedUrl(apiKey, localFile) {
         // Prepare request to `Get Presigned URL` API endpoint
         let queryPath = `/v1/file/upload/get-presigned-url?name=${path.basename(SourceFile)}`;
         let reqOptions = {
-            host: "bytescout.io",
+            host: "api.pdf.co",
             path: encodeURI(queryPath),
             headers: { "x-api-key": API_KEY }
         };
@@ -108,7 +106,7 @@ function convertPdfToCsv(apiKey, uploadedFileUrl, password, pages, destinationFi
     // Prepare request to `PDF To CSV` API endpoint
     var queryPath = `/v1/pdf/convert/to/csv?name=${path.basename(destinationFile)}&password=${password}&pages=${pages}&url=${uploadedFileUrl}`;
     let reqOptions = {
-        host: "bytescout.io",
+        host: "api.pdf.co",
         path: encodeURI(queryPath),
         method: "GET",
         headers: { "x-api-key": API_KEY }

@@ -31,8 +31,11 @@ function generateBarcode()
         return false;
     }
 
+    //show loader
+    showLoader(true);
+
     // Prepare URL
-    var url = "https://bytescout.io/v1/barcode/generate?name=barcode.png";
+    var url = "https://api.pdf.co/v1/barcode/generate?name=barcode.png";
     url += "&type=" + barcodeType; // Set barcode type (symbology)
     url += "&value=" + inputValue; // Set barcode value
 
@@ -60,10 +63,24 @@ function generateBarcode()
                 document.getElementById("errorBlock").style.display = "block"; // show hidden errorBlock
                 document.getElementById("error").innerHTML = "Request failed. Please check you use the correct API key.";
             }
+
+            // Hide loader
+            showLoader(false);
         }
     }
     // Send request
     httpRequest.send();
 
     return true;
+}
+
+function showLoader(isDisplay){
+    var loader = document.getElementById("loader");
+
+    if(isDisplay){
+        loader.style.display = "";
+    }
+    else{
+        loader.style.display="none";
+    }
 }

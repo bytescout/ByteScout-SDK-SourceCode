@@ -1,7 +1,5 @@
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # Source PDF files
@@ -16,7 +14,7 @@ try {
         # 1a. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
         
         # Prepare URL for `Get Presigned URL` API call
-        $query = "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
+        $query = "https://api.pdf.co/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
             [IO.Path]::GetFileName($pdfFile)
         $query = [System.Uri]::EscapeUriString($query)
 
@@ -52,7 +50,7 @@ try {
         # 2. MERGE UPLOADED PDF DOCUMENTS
     
         # Prepare URL for `Merge PDF` API call
-        $query = "https://bytescout.io/v1/pdf/merge?name={0}&url={1}" -f `
+        $query = "https://api.pdf.co/v1/pdf/merge?name={0}&url={1}" -f `
             $(Split-Path $DestinationFile -Leaf), $($uploadedFiles -join ",")
         $query = [System.Uri]::EscapeUriString($query)
         

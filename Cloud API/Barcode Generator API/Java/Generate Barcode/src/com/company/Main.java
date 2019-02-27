@@ -24,15 +24,13 @@ import java.nio.file.Paths;
 
 public class Main
 {
-    // (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
     // The authentication key (API Key).
-    // Get your own by registering at https://secure.bytescout.com/users/sign_up
+    // Get your own by registering at https://app.pdf.co/documentation/api
     final static String API_KEY = "***********************************";
 
     // Result file name
     final static Path ResultFile = Paths.get(".\\barcode.png");
-    // Barcode type. See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeGenerateGet
+    // Barcode type. See valid barcode types in the documentation https://app.pdf.co/documentation/api/1.0/barcode/generate.html
     final static String BarcodeType = "Code128";
     // Barcode value
     final static String BarcodeValue = "qweasd123456";
@@ -45,7 +43,7 @@ public class Main
         
         // Prepare URL for `Barcode Generator` API call
         String query = String.format(
-                "https://bytescout.io/v1/barcode/generate?name=%s&type=%s&value=%s",
+                "https://api.pdf.co/v1/barcode/generate?name=%s&type=%s&value=%s",
                 ResultFile.getFileName(),
                 BarcodeType,
                 BarcodeValue);

@@ -16,10 +16,8 @@ Imports Newtonsoft.Json.Linq
 
 Module Module1
 
-	' (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 	' The authentication key (API Key).
-	' Get your own by registering at https://secure.bytescout.com/users/sign_up
+	' Get your own by registering at https://app.pdf.co/documentation/api
 	Const API_KEY As String = "***********************************"
 
 	' Source PDF file
@@ -39,7 +37,7 @@ Module Module1
 
 		' Prepare URL for `PDF To JPEG` API call
 		Dim query As String = Uri.EscapeUriString(String.Format(
-			"https://bytescout.io/v1/pdf/convert/to/jpg?password={0}&pages={1}&url={2}",
+			"https://api.pdf.co/v1/pdf/convert/to/jpg?password={0}&pages={1}&url={2}",
 			Password,
 			Pages,
 			SourceFileUrl))

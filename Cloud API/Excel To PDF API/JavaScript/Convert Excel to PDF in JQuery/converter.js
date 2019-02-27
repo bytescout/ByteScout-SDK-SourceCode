@@ -22,7 +22,7 @@ $(document).on("click", "#submit", function () {
     $("#inlineOutput").text(''); // inline output div
     $("#status").text(''); // status div
 
-    var apiKey = $("#apiKey").val().trim(); //Get your API key at https://secure.bytescout.com/cloudapi.html
+    var apiKey = $("#apiKey").val().trim(); //Get your API key at https://app.pdf.co/documentation/api
 
     var formData = $("#form input[type=file]")[0].files[0]; // file to upload
     var toType = $("#convertType").val(); // output type
@@ -31,7 +31,7 @@ $(document).on("click", "#submit", function () {
     $("#status").text('requesting presigned url for upload...');
 
     $.ajax({
-        url: 'https://bytescout.io/v1/file/upload/get-presigned-url?name=test.pdf&encrypt=true',
+        url: 'https://api.pdf.co/v1/file/upload/get-presigned-url?name=test.pdf&encrypt=true',
         type: 'GET',
         headers: { 'x-api-key': apiKey }, // passing our api key
         success: function (result) {
@@ -52,7 +52,7 @@ $(document).on("click", "#submit", function () {
                         $("#status").text('converting...');
 
                         $.ajax({
-                            url: 'https://bytescout.io/v1/xls/convert/to/' + toType + '?url=' + presignedUrl + '&encrypt=true&inline=' + isInline,
+                            url: 'https://api.pdf.co/v1/xls/convert/to/' + toType + '?url=' + presignedUrl + '&encrypt=true&inline=' + isInline,
                             type: 'POST',
                             headers: { 'x-api-key': apiKey },
                             success: function (result) {

@@ -1,7 +1,5 @@
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # HTML template
@@ -12,7 +10,7 @@ $TemplateData = [IO.File]::ReadAllText(".\invoice_data.json")
 $DestinationFile = ".\result.pdf"
 
 # Prepare URL for HTML to PDF API call
-$query = "https://bytescout.io/v1/pdf/convert/from/html?name=$(Split-Path $DestinationFile -Leaf)"
+$query = "https://api.pdf.co/v1/pdf/convert/from/html?name=$(Split-Path $DestinationFile -Leaf)"
 $query = [System.Uri]::EscapeUriString($query)
 
 # Prepare request body (will be auto-converted to JSON by Invoke-RestMethod)

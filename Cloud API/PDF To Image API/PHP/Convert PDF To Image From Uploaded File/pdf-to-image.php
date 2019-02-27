@@ -9,7 +9,7 @@
 <?php 
 
 // Get submitted form data
-$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://secure.bytescout.com/users/sign_up
+$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://app.pdf.co/documentation/api
 $outputFormat = $_POST["outputFormat"];
 $pages = $_POST["pages"];
 
@@ -18,7 +18,7 @@ $pages = $_POST["pages"];
 // * If you already have a direct PDF file link, go to the step 3.
 
 // Create URL
-$url = "https://bytescout.io/v1/file/upload/get-presigned-url" .
+$url = "https://api.pdf.co/v1/file/upload/get-presigned-url" .
     "?name=" . $_FILES["file"]["name"] .
     "&contenttype=application/octet-stream";
     
@@ -104,7 +104,7 @@ function RenderPDF($apiKey, $fileUrl, $outputFormat, $pages)
     $format = $formats[$outputFormat];
 
     // Create URL
-    $url = "https://bytescout.io/v1/pdf/convert/to/" . $format .
+    $url = "https://api.pdf.co/v1/pdf/convert/to/" . $format .
         "?url=" . urlencode($fileUrl) .
         "&pages=" . urlencode($pages);
         

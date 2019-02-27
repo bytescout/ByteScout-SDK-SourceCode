@@ -9,7 +9,7 @@
 <?php 
 
 // Get submitted form data
-$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://secure.bytescout.com/users/sign_up
+$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://app.pdf.co/documentation/api
 $pages = $_POST["pages"];
 $ocrLanguage = $_POST["ocrLanguage"];
 
@@ -18,7 +18,7 @@ $ocrLanguage = $_POST["ocrLanguage"];
 // * If you already have the direct PDF file link, go to the step 3.
 
 // Create URL
-$url = "https://bytescout.io/v1/file/upload/get-presigned-url" . 
+$url = "https://api.pdf.co/v1/file/upload/get-presigned-url" . 
     "?name=" . $_FILES["file"]["name"] .
     "&contenttype=application/octet-stream";
     
@@ -100,7 +100,7 @@ else
 function MakePdfSearchable($apiKey, $uploadedFileUrl, $pages, $ocrLanguage) 
 {
     // Prepare URL for `Make Searchable PDF` API call
-    $url = "https://bytescout.io/v1/pdf/makesearchable" . 
+    $url = "https://api.pdf.co/v1/pdf/makesearchable" . 
         "?name=result.pdf" .
         "&url=" . $uploadedFileUrl .
         "&pages=" . $pages . 

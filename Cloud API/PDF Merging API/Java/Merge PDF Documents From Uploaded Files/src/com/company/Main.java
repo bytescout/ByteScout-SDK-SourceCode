@@ -24,10 +24,8 @@ import java.util.List;
 
 public class Main
 {
-    // (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
     // The authentication key (API Key).
-    // Get your own by registering at https://secure.bytescout.com/users/sign_up
+    // Get your own by registering at https://app.pdf.co/documentation/api
     final static String API_KEY = "***********************************";
 
     // Source PDF files
@@ -53,7 +51,7 @@ public class Main
 
             // Prepare URL for `Get Presigned URL` API call
             String query = String.format(
-                    "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=%s",
+                    "https://api.pdf.co/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=%s",
                     pdfFile.getFileName());
 
             // Prepare request
@@ -110,7 +108,7 @@ public class Main
     {
         // Prepare URL for `Merge PDF` API call
         String query = String.format(
-                "https://bytescout.io/v1/pdf/merge?name=%s&url=%s",
+                "https://api.pdf.co/v1/pdf/merge?name=%s&url=%s",
                 destinationFile.getFileName(),
                 String.join(",", uploadedFileUrls));
 

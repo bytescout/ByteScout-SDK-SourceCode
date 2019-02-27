@@ -24,10 +24,8 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
-		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-		
 		// The authentication key (API Key).
-		// Get your own by registering at https://secure.bytescout.com/users/sign_up
+		// Get your own by registering at https://app.pdf.co/documentation/api
 		const String API_KEY = "***********************************";
 		
 		// URL of web page to convert to PDF document.
@@ -48,7 +46,7 @@ namespace ByteScoutWebApiExample
 
 			// Prepare URL for `Web Page to PDF` API call
 			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/pdf/convert/from/url?name={0}&url={1}&async={2}",
+				"https://api.pdf.co/v1/pdf/convert/from/url?name={0}&url={1}&async={2}",
 				Path.GetFileName(DestinationFile),
 				SourceUrl,
 				Async));
@@ -121,7 +119,7 @@ namespace ByteScoutWebApiExample
 		{
 			using (WebClient webClient = new WebClient())
 			{
-				string url = "https://bytescout.io/v1/job/check?jobid=" + jobId;
+				string url = "https://api.pdf.co/v1/job/check?jobid=" + jobId;
 
 				string response = webClient.DownloadString(url);
 				JObject json = JObject.Parse(response);

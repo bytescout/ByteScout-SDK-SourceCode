@@ -70,7 +70,7 @@ Public Class Form1
 
                 ' Prepare URL for `Get Presigned URL` API call
                 Dim query As String = Uri.EscapeUriString(
-                    String.Format("https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name={0}",
+                    String.Format("https://api.pdf.co/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name={0}",
                                   Path.GetFileName(txtInputPDFFileName.Text)))
 
                 ' Execute request
@@ -94,7 +94,7 @@ Public Class Form1
 
                     ' Prepare URL for `PDF To Excel` API call
                     query = Uri.EscapeUriString(
-                        String.Format("https://bytescout.io/v1/pdf/convert/to/{4}?name={0}&password={1}&pages={2}&url={3}&encrypt=true&inline={5}",
+                        String.Format("https://api.pdf.co/v1/pdf/convert/to/{4}?name={0}&password={1}&pages={2}&url={3}&encrypt=true&inline={5}",
                                       Path.GetFileName(DestinationFile),
                                       Password,
                                       Pages,

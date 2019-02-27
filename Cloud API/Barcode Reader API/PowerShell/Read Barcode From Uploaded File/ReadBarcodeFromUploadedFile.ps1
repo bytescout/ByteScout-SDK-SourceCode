@@ -1,13 +1,11 @@
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # Source file name
 $SourceFile = ".\sample.pdf"
 # Comma-separated list of barcode types to search. 
-# See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeReadFromUrlGet
+# See valid barcode types in the documentation https://app.pdf.co/documentation/api/1.0/barcode/read_from_url.html
 $BarcodeTypes = "Code128,Code39,Interleaved2of5,EAN13"
 # Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 $Pages = ""
@@ -17,7 +15,7 @@ $Pages = ""
 # * If you already have a direct file URL, skip to the step 3.
 
 # Prepare URL for `Get Presigned URL` API call
-$query = "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
+$query = "https://api.pdf.co/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
     [System.IO.Path]::GetFileName($SourceFile)
 $query = [System.Uri]::EscapeUriString($query)
 
@@ -40,7 +38,7 @@ try {
             # 3. READ BARCODES FROM UPLOADED FILE
 
             # Prepare URL for `Barcode Reader` API call
-            $query = "https://bytescout.io/v1/barcode/read/from/url?types=$($BarcodeTypes)&pages=$($Pages)&url=$($uploadedFileUrl)"
+            $query = "https://api.pdf.co/v1/barcode/read/from/url?types=$($BarcodeTypes)&pages=$($Pages)&url=$($uploadedFileUrl)"
             $query = [System.Uri]::EscapeUriString($query)
 
             # Execute request

@@ -1,12 +1,10 @@
-:: (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
-::@echo off
+@echo off
 
 :: Path of the cURL executable
 set CURL="curl.exe"
 
 :: The authentication key (API Key).
-:: Get your own by registering at https://secure.bytescout.com/users/sign_up
+:: Get your own by registering at https://app.pdf.co/documentation/api
 set API_KEY=***********************************
 
 :: Direct URL of source PDF file.
@@ -24,7 +22,7 @@ set COLUMN_LAYOUT=false
 
 
 :: Prepare URL for `PDF To HTML` API call
-set QUERY="https://bytescout.io/v1/pdf/convert/to/html?name=%RESULT_FILE_NAME%&password=%PASSWORD%&pages=%PAGES%&simple=%PLAIN_HTML%&columns=%COLUMN_LAYOUT%&url=%SOURCE_FILE_URL%"
+set QUERY="https://api.pdf.co/v1/pdf/convert/to/html?name=%RESULT_FILE_NAME%&password=%PASSWORD%&pages=%PAGES%&simple=%PLAIN_HTML%&columns=%COLUMN_LAYOUT%&url=%SOURCE_FILE_URL%"
 
 :: Perform request and save response to a file
 %CURL% -# -X GET -H "x-api-key: %API_KEY%" %QUERY% >response.json

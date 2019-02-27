@@ -10,15 +10,13 @@
 //*******************************************************************************************//
 
 
-// (!) If you are getting "(403) Forbidden" error please ensure you have set the correct API_KEY
-
 var https = require("https");
 var path = require("path");
 var fs = require("fs");
 
 
 // The authentication key (API Key).
-// Get your own by registering at https://secure.bytescout.com/users/sign_up
+// Get your own by registering at https://app.pdf.co/documentation/api
 const API_KEY = "***********************************";
 
 
@@ -40,7 +38,7 @@ const ColumnLayout = false;
 var queryPath = `/v1/pdf/convert/to/html?name=${path.basename(DestinationFile)}&password=${Password}&pages=${Pages}` + 
     `&simple=${PlainHtml}&columns=${ColumnLayout}&url=${SourceFileUrl}`;
 var reqOptions = {
-    host: "bytescout.io",
+    host: "api.pdf.co",
     path: encodeURI(queryPath),
     headers: {
         "x-api-key": API_KEY

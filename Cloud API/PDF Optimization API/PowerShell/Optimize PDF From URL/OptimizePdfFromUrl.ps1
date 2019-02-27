@@ -1,7 +1,5 @@
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # Direct URL of source PDF file.
@@ -13,7 +11,7 @@ $DestinationFile = ".\result.pdf"
 
 
 # Prepare URL for `Optimize PDF` API call
-$query = "https://bytescout.io/v1/pdf/optimize?name={0}&password={1}&url={2}" -f `
+$query = "https://api.pdf.co/v1/pdf/optimize?name={0}&password={1}&url={2}" -f `
     $(Split-Path $DestinationFile -Leaf), $Password, $SourceFileURL
 $query = [System.Uri]::EscapeUriString($query)
 

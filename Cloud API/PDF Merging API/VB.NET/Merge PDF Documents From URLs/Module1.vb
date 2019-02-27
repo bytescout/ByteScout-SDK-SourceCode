@@ -16,10 +16,8 @@ Imports Newtonsoft.Json.Linq
 
 Module Module1
 
-	' (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 	' The authentication key (API Key).
-	' Get your own by registering at https://secure.bytescout.com/users/sign_up
+	' Get your own by registering at https://app.pdf.co/documentation/api
 	Const API_KEY As String = "***********************************"
 
 	' Direct URLs of PDF files to merge
@@ -39,7 +37,7 @@ Module Module1
 
 		' Prepare URL for `Merge PDF` API call
 		Dim query As String = Uri.EscapeUriString(String.Format(
-			"https://bytescout.io/v1/pdf/merge?name={0}&url={1}",
+			"https://api.pdf.co/v1/pdf/merge?name={0}&url={1}",
 			Path.GetFileName(DestinationFile),
 			string.Join(",", SourceFiles)))
 

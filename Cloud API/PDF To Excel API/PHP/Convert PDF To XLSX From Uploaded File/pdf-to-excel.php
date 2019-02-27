@@ -9,7 +9,7 @@
 <?php 
 
 // Get submitted form data
-$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://secure.bytescout.com/users/sign_up
+$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://app.pdf.co/documentation/api
 $pages = $_POST["pages"];
 
 
@@ -17,7 +17,7 @@ $pages = $_POST["pages"];
 // * If you already have the direct PDF file link, go to the step 3.
 
 // Create URL
-$url = "https://bytescout.io/v1/file/upload/get-presigned-url" . 
+$url = "https://api.pdf.co/v1/file/upload/get-presigned-url" . 
     "?name=" . $_FILES["file"]["name"] .
     "&contenttype=application/octet-stream";
     
@@ -99,11 +99,11 @@ else
 function ExtractExcel($apiKey, $uploadedFileUrl, $pages) 
 {
     // Create URL
-    $url = "https://bytescout.io/v1/pdf/convert/to/xlsx" .
+    $url = "https://api.pdf.co/v1/pdf/convert/to/xlsx" .
         "?url=" . $uploadedFileUrl .
         "&pages=" . $pages;
         
-    // (!) If you need the old XLS format use `https://bytescout.io/v1/pdf/convert/to/xls` endpoint,
+    // (!) If you need the old XLS format use `https://api.pdf.co/v1/pdf/convert/to/xls` endpoint,
     
     // Create request
     $curl = curl_init();

@@ -8,15 +8,13 @@
 
 <?php 
 
-// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 // Get submitted form data
-$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://secure.bytescout.com/users/sign_up
+$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://app.pdf.co/documentation/api
 $sourceUrl = $_POST["sourceUrl"];
 
 
 // Prepare URL for `Web Page to PDF` API call
-$url = "https://bytescout.io/v1/pdf/convert/from/url" . 
+$url = "https://api.pdf.co/v1/pdf/convert/from/url" . 
     "?name=result.pdf" .
     "&url=" . $sourceUrl;
 

@@ -19,16 +19,14 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
-		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 		// The authentication key (API Key).
-		// Get your own by registering at https://secure.bytescout.com/users/sign_up
+		// Get your own by registering at https://app.pdf.co/documentation/api
 		const String API_KEY = "***********************************";
 		
 		// Source file name
 		const string SourceFile = @".\sample.pdf";
 		// Comma-separated list of barcode types to search. 
-		// See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeReadFromUrlGet
+		// See valid barcode types in the documentation https://app.pdf.co/documentation/api/1.0/barcode/read_from_url.html
 		const string BarcodeTypes = "Code128,Code39,Interleaved2of5,EAN13";
 		// Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 		const string Pages = "";
@@ -46,7 +44,7 @@ namespace ByteScoutWebApiExample
 			
 			// Prepare URL for `Get Presigned URL` API call
 			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name={0}", 
+				"https://api.pdf.co/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name={0}", 
 				Path.GetFileName(SourceFile)));
 
 			try
@@ -73,7 +71,7 @@ namespace ByteScoutWebApiExample
 
 					// Prepare URL for `Barcode Reader` API call
 					query = Uri.EscapeUriString(string.Format(
-						"https://bytescout.io/v1/barcode/read/from/url?types={0}&pages={1}&url={2}",
+						"https://api.pdf.co/v1/barcode/read/from/url?types={0}&pages={1}&url={2}",
 						BarcodeTypes,
 						Pages,
 						uploadedFileUrl));

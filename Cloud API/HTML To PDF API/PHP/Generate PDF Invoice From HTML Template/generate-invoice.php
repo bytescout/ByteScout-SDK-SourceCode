@@ -9,7 +9,7 @@
 <?php 
 
 // Get submitted form data
-$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://secure.bytescout.com/users/sign_up
+$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://app.pdf.co/documentation/api
 
 // HTML template
 $template = file_get_contents("./invoice_template.html");
@@ -18,7 +18,7 @@ $templateData = file_get_contents("./invoice_data.json");
 
 
 // Prepare URL for HTML to PDF API call
-$url = "https://bytescout.io/v1/pdf/convert/from/html?name=result.pdf";
+$url = "https://api.pdf.co/v1/pdf/convert/from/html?name=result.pdf";
 
 // Create HTML to PDF options
 $data = json_encode(array(

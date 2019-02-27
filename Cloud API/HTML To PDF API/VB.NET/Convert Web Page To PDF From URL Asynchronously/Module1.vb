@@ -21,10 +21,8 @@ Imports Newtonsoft.Json.Linq
 
 Module Module1
 
-	' (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 	' The authentication key (API Key).
-	' Get your own by registering at https://secure.bytescout.com/users/sign_up
+	' Get your own by registering at https://app.pdf.co/documentation/api
 	Const API_KEY As String = "***********************************"
 
 	' URL of web page to convert to PDF document.
@@ -45,7 +43,7 @@ Module Module1
 
 		' Prepare URL for `Web Page to PDF` API call
 		Dim query As String = Uri.EscapeUriString(String.Format(
-			"https://bytescout.io/v1/pdf/convert/from/url?name={0}&url={1}&async={2}",
+			"https://api.pdf.co/v1/pdf/convert/from/url?name={0}&url={1}&async={2}",
 			Path.GetFileName(DestinationFile),
 			SourceUrl,
 			Async))
@@ -116,7 +114,7 @@ Module Module1
 
 		Using webClient As WebClient = New WebClient()
 
-			Dim url As String = "https://bytescout.io/v1/job/check?jobid=" + jobId
+			Dim url As String = "https://api.pdf.co/v1/job/check?jobid=" + jobId
 
 			Dim response As String = webClient.DownloadString(url)
 			Dim json As JObject = JObject.Parse(response)

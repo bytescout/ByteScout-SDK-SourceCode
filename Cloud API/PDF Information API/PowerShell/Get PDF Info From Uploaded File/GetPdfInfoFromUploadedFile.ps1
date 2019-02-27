@@ -1,7 +1,5 @@
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # Source PDF file to get information
@@ -12,7 +10,7 @@ $SourceFile = ".\sample.pdf"
 # * If you already have a direct file URL, skip to the step 3.
 
 # Prepare URL for `Get Presigned URL` API call
-$query = "https://bytescout.io/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
+$query = "https://api.pdf.co/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=" + `
     [System.IO.Path]::GetFileName($SourceFile)
 $query = [System.Uri]::EscapeUriString($query)
 
@@ -35,7 +33,7 @@ try {
             # 3. GET INFORMATION FROM UPLOADED FILE
 
             # Prepare URL for `PDF Info` API call
-            $query = "https://bytescout.io/v1/pdf/info?url=$($uploadedFileUrl)"
+            $query = "https://api.pdf.co/v1/pdf/info?url=$($uploadedFileUrl)"
             $query = [System.Uri]::EscapeUriString($query)
 
             # Execute request

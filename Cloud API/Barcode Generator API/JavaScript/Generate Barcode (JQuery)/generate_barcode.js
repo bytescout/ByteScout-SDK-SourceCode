@@ -16,9 +16,9 @@ $(document).ready(function () {
 });
 
 $(document).on("click", "#submit", function () {
-    var apiKey = $("#apiKey").val().trim(); //Get your API key by registering at http://www.bytescout.io/
+    var apiKey = $("#apiKey").val().trim(); // Get your API key by registering at https://app.pdf.co/documentation/api
 
-    var url = "https://bytescout.io/v1/barcode/generate?name=barcode.png";
+    var url = "https://api.pdf.co/v1/barcode/generate?name=barcode.png";
     url += "&type=" + $("#barcodeType").val(); // Set barcode type (symbology)
     url += "&value=" + $("#inputValue").val(); // Set barcode value
 

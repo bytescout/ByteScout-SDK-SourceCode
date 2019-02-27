@@ -24,10 +24,8 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
-		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-		
 		// The authentication key (API Key).
-		// Get your own by registering at https://secure.bytescout.com/users/sign_up
+		// Get your own by registering at https://app.pdf.co/documentation/api
 		const String API_KEY = "***********************************";
 		
 		// Direct URL of source PDF file.
@@ -54,7 +52,7 @@ namespace ByteScoutWebApiExample
 
 			// Prepare URL for `Make Searchable PDF` API call
 			string query = Uri.EscapeUriString(string.Format(
-				"https://bytescout.io/v1/pdf/makesearchable?name={0}&password={1}&pages={2}&lang={3}&url={4}&async={5}",
+				"https://api.pdf.co/v1/pdf/makesearchable?name={0}&password={1}&pages={2}&lang={3}&url={4}&async={5}",
 				Path.GetFileName(DestinationFile),
 				Password,
 				Pages,
@@ -130,7 +128,7 @@ namespace ByteScoutWebApiExample
 		{
 			using (WebClient webClient = new WebClient())
 			{
-				string url = "https://bytescout.io/v1/job/check?jobid=" + jobId;
+				string url = "https://api.pdf.co/v1/job/check?jobid=" + jobId;
 
 				string response = webClient.DownloadString(url);
 				JObject json = JObject.Parse(response);

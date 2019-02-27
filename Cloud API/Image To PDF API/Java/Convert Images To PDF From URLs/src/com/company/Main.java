@@ -22,10 +22,8 @@ import java.nio.file.Paths;
 
 public class Main
 {
-    // (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
     // The authentication key (API Key).
-    // Get your own by registering at https://secure.bytescout.com/users/sign_up
+    // Get your own by registering at https://app.pdf.co/documentation/api
     final static String API_KEY = "***********************************";
 
     // Direct URLs of image files to convert to PDF document
@@ -43,7 +41,7 @@ public class Main
 
         // Prepare URL for `Image To PDF` API call
         String query = String.format(
-                "https://bytescout.io/v1/pdf/convert/from/image?name=%s&url=%s",
+                "https://api.pdf.co/v1/pdf/convert/from/image?name=%s&url=%s",
                 DestinationFile.getFileName(),
                 String.join(",", SourceFiles));
 

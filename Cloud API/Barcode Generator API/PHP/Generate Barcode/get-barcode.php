@@ -8,16 +8,14 @@
 
 <?php 
 
-// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 // Get submitted form data
-$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://secure.bytescout.com/users/sign_up
+$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://app.pdf.co/documentation/api
 $barcodeType = $_POST["barcodeType"];
 $barcodeValue = $_POST["inputValue"];
 
 
 // Create URL
-$url = "https://bytescout.io/v1/barcode/generate" . 
+$url = "https://api.pdf.co/v1/barcode/generate" . 
     "?value=" . $barcodeValue .
     "&type=" . $barcodeType;
 

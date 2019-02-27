@@ -19,10 +19,8 @@ namespace ByteScoutWebApiExample
 {
 	class Program
 	{
-		// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-		
 		// The authentication key (API Key).
-		// Get your own by registering at https://secure.bytescout.com/users/sign_up
+		// Get your own by registering at https://app.pdf.co/documentation/api
 		const String API_KEY = "***********************************";
 
 		// Source PDF file to split
@@ -42,7 +40,7 @@ namespace ByteScoutWebApiExample
 			{
 				// Prepare URL for `Split PDF` API call
 				string query = Uri.EscapeUriString(string.Format(
-					"https://bytescout.io/v1/pdf/split?pages={0}&url={1}",
+					"https://api.pdf.co/v1/pdf/split?pages={0}&url={1}",
 					Pages,
 					SourceFileUrl));
 

@@ -9,14 +9,14 @@
 <?php 
 
 // Get submitted form data
-$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://secure.bytescout.com/users/sign_up
+$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://app.pdf.co/documentation/api
 
 
 // 1. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
 // * If you already have the direct PDF file link, go to the step 3.
 
 // Create URL
-$url = "https://bytescout.io/v1/file/upload/get-presigned-url" . 
+$url = "https://api.pdf.co/v1/file/upload/get-presigned-url" . 
     "?name=" . $_FILES["file"]["name"] .
     "&contenttype=application/octet-stream";
     
@@ -106,7 +106,7 @@ else
 function CsvToPdf($apiKey, $uploadedFileUrl, $pages) 
 {
     // Create URL
-    $url = "https://bytescout.io/v1/pdf/convert/from/csv" . 
+    $url = "https://api.pdf.co/v1/pdf/convert/from/csv" . 
         "?url=" . $uploadedFileUrl .
         "&pages=" . $pages;
     

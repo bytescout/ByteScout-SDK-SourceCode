@@ -1,10 +1,8 @@
 # Cloud API asynchronous "DOC To PDF" job example.
 # Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # Direct URL of source DOC or DOCX file.
@@ -16,7 +14,7 @@ $Async = $true
 
 
 # Prepare URL for `DOC To PDF` API call
-$query = "https://bytescout.io/v1/pdf/convert/from/doc?name=$(Split-Path $DestinationFile -Leaf)&url=$($SourceFileURL)&async=$($Async)"
+$query = "https://api.pdf.co/v1/pdf/convert/from/doc?name=$(Split-Path $DestinationFile -Leaf)&url=$($SourceFileURL)&async=$($Async)"
 $query = [System.Uri]::EscapeUriString($query)
 
 try {
@@ -31,7 +29,7 @@ try {
 
         # Check the job status in a loop. 
         do {
-            $statusCheckUrl = "https://bytescout.io/v1/job/check?jobid=" + $jobId
+            $statusCheckUrl = "https://api.pdf.co/v1/job/check?jobid=" + $jobId
             $jsonStatus = Invoke-RestMethod -Method Get -Uri $statusCheckUrl
 
             # Display timestamp and status (for demo purposes)

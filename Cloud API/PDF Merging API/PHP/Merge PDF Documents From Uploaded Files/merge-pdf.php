@@ -9,7 +9,7 @@
 <?php 
 
 // Get submitted form data
-$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://secure.bytescout.com/users/sign_up
+$apiKey = $_POST["apiKey"]; // The authentication key (API Key). Get your own by registering at https://app.pdf.co/documentation/api
 
 
 // 1. UPLOAD FILES TO CLOUD
@@ -26,7 +26,7 @@ for($i = 0; $i < $fileCount; $i++)
     // 1a. RETRIEVE THE PRESIGNED URL TO UPLOAD THE FILE.
     
     // Create URL
-    $url = "https://bytescout.io/v1/file/upload/get-presigned-url" . 
+    $url = "https://api.pdf.co/v1/file/upload/get-presigned-url" . 
         "?name=" . $_FILES["files"]["name"][$i] .
         "&contenttype=application/octet-stream";
         
@@ -118,7 +118,7 @@ if (count($uploadedFiles) > 0)
 function MergePdf($apiKey, $uploadedFiles) 
 {
     // Create URL
-    $url = "https://bytescout.io/v1/pdf/merge" .
+    $url = "https://api.pdf.co/v1/pdf/merge" .
         "?name=result.pdf" .
         "&url=" . join(",", $uploadedFiles);
     

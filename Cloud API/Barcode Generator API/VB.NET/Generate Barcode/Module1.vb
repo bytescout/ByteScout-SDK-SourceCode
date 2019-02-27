@@ -16,15 +16,13 @@ Imports Newtonsoft.Json.Linq
 
 Module Module1
 
-	' (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 	' The authentication key (API Key).
-	' Get your own by registering at https://secure.bytescout.com/users/sign_up
+	' Get your own by registering at https://app.pdf.co/documentation/api
 	Const API_KEY As String = "***********************************"
 
 	' Result file name
 	Const ResultFileName As String = ".\barcode.png"
-	' Barcode type. See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeGenerateGet
+	' Barcode type. See valid barcode types in the documentation https://app.pdf.co/documentation/api/1.0/barcode/generate.html
 	Const BarcodeType As String = "Code128"
 	' Barcode value
 	Const BarcodeValue As String = "qweasd123456"
@@ -39,7 +37,7 @@ Module Module1
 
 		' Prepare URL for `Barcode Generator` API call
 		Dim query As String = Uri.EscapeUriString(string.Format(
-			"https://bytescout.io/v1/barcode/generate?name={0}&type={1}&value={2}", 
+			"https://api.pdf.co/v1/barcode/generate?name={0}&type={1}&value={2}", 
 			Path.GetFileName(ResultFileName), 
 			BarcodeType, 
 			BarcodeValue))

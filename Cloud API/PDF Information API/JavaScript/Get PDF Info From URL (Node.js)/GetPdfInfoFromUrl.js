@@ -10,15 +10,13 @@
 //*******************************************************************************************//
 
 
-// (!) If you are getting "(403) Forbidden" error please ensure you have set the correct API_KEY
-
 var https = require("https");
 var path = require("path");
 var fs = require("fs");
 
 
 // The authentication key (API Key).
-// Get your own by registering at https://secure.bytescout.com/users/sign_up
+// Get your own by registering at https://app.pdf.co/documentation/api
 const API_KEY = "***********************************";
 
 
@@ -29,7 +27,7 @@ const SourceFileUrl = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/de
 // Prepare request to `PDF Info` API endpoint
 var queryPath = `/v1/pdf/info?url=${SourceFileUrl}`;
 var reqOptions = {
-    host: "bytescout.io",
+    host: "api.pdf.co",
     path: encodeURI(queryPath),
     headers: {
         "x-api-key": API_KEY

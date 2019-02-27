@@ -12,23 +12,21 @@
 // Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 
-// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-		
 // The authentication key (API Key).
-// Get your own by registering at https://secure.bytescout.com/users/sign_up
+// Get your own by registering at https://app.pdf.co/documentation/api
 $apiKey = "***********************************";
 
 // Direct URL of source file (image or PDF) to search barcodes in. Check another example if you need to upload a local file to the cloud.
 $sourceFileUrl = "https://s3-us-west-2.amazonaws.com/bytescout-com/files/demo-files/cloud-api/barcode-reader/sample.pdf";
 // Comma-separated list of barcode types to search. 
-// See valid barcode types in the documentation https://secure.bytescout.com/cloudapi.html#api-Default-barcodeReadFromUrlGet
+// See valid barcode types in the documentation https://app.pdf.co/documentation/api/1.0/barcode/read_from_url.html
 $barcodeTypes = "Code128,Code39,Interleaved2of5,EAN13";
 // Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 $pages = "";
 
 
 // Prepare URL for `Barcode Reader` API call
-$url = "https://bytescout.io/v1/barcode/read/from/url" . 
+$url = "https://api.pdf.co/v1/barcode/read/from/url" . 
     "?types=" . $barcodeTypes .
     "&pages=" . $pages .
     "&url=" . $sourceFileUrl .
@@ -114,7 +112,7 @@ function CheckJobStatus($jobId)
     $status = null;
     
     // Create URL
-    $url = "https://bytescout.io/v1/job/check?jobid=" . $jobId;
+    $url = "https://api.pdf.co/v1/job/check?jobid=" . $jobId;
     
     // Create request
     $curl = curl_init();

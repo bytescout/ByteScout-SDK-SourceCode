@@ -12,8 +12,6 @@
 
 /*jshint esversion: 6 */
 
-// (!) If you are getting "(403) Forbidden" error please ensure you have set the correct API_KEY
-
 var https = require("https");
 var path = require("path");
 var fs = require("fs");
@@ -23,7 +21,7 @@ var url = require("url");
 var request = require("request");
 
 // The authentication key (API Key).
-// Get your own by registering at https://secure.bytescout.com/users/sign_up
+// Get your own by registering at https://app.pdf.co/documentation/api
 const API_KEY = "***********************************";
 
 
@@ -64,7 +62,7 @@ function getPresignedUrl(apiKey, localFile) {
         // Prepare request to `Get Presigned URL` API endpoint
         let queryPath = `/v1/file/upload/get-presigned-url?contenttype=application/octet-stream&name=${path.basename(SourceFile)}`;
         let reqOptions = {
-            host: "bytescout.io",
+            host: "api.pdf.co",
             path: encodeURI(queryPath),
             headers: { "x-api-key": API_KEY }
         };
@@ -116,7 +114,7 @@ function convertPdfToHtml(apiKey, uploadedFileUrl, password, pages, plainHtml, c
     var queryPath = `/v1/pdf/convert/to/html?name=${path.basename(destinationFile)}&password=${password}&pages=${pages}` + 
         `&simple=${plainHtml}&columns=${columnLayout}&url=${uploadedFileUrl}`;
     let reqOptions = {
-        host: "bytescout.io",
+        host: "api.pdf.co",
         path: encodeURI(queryPath),
         method: "GET",
         headers: { "x-api-key": API_KEY }
@@ -139,13 +137,13 @@ function convertPdfToHtml(apiKey, uploadedFileUrl, password, pages, plainHtml, c
             }
             else {
                 // Service reported error
-                console.log("readBarcodes(): " + data.message);
+                console.log("convertPdfToHtml(): " + data.message);
             }
         });
     })
     .on("error", (e) => {
         // Request error
-        console.log("readBarcodes(): " + e);
+        console.log("convertPdfToHtml(): " + e);
     });
 }
 

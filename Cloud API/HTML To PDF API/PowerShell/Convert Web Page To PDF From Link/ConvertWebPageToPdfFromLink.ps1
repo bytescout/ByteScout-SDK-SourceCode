@@ -1,7 +1,5 @@
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # URL of web page to convert to PDF document.
@@ -11,7 +9,7 @@ $DestinationFile = ".\result.pdf"
 
 
 # Prepare URL for `Web Page to PDF` API call
-$query = "https://bytescout.io/v1/pdf/convert/from/url?name=$(Split-Path $DestinationFile -Leaf)&url=$($SourceUrl)"
+$query = "https://api.pdf.co/v1/pdf/convert/from/url?name=$(Split-Path $DestinationFile -Leaf)&url=$($SourceUrl)"
 $query = [System.Uri]::EscapeUriString($query)
 
 try {

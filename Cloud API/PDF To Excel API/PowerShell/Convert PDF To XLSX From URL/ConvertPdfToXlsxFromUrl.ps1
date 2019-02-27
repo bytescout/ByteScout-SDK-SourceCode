@@ -1,7 +1,5 @@
-# (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 # The authentication key (API Key).
-# Get your own by registering at https://secure.bytescout.com/users/sign_up
+# Get your own by registering at https://app.pdf.co/documentation/api
 $API_KEY = "***********************************"
 
 # Direct URL of source PDF file.
@@ -15,7 +13,7 @@ $DestinationFile = ".\result.xlsx"
 
 
 # Prepare URL for `PDF To XLSX` API call
-$query = "https://bytescout.io/v1/pdf/convert/to/xlsx?name={0}&password={1}&pages={2}&url={3}" -f `
+$query = "https://api.pdf.co/v1/pdf/convert/to/xlsx?name={0}&password={1}&pages={2}&url={3}" -f `
     $(Split-Path $DestinationFile -Leaf), $Password, $Pages, $SourceFileUrl
 $query = [System.Uri]::EscapeUriString($query)
 

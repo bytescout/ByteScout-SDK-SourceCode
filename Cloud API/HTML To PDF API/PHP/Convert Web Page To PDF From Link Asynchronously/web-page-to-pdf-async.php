@@ -12,10 +12,8 @@
 // Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 
-// (!) If you are getting '(403) Forbidden' error please ensure you have set the correct API_KEY
-
 // The authentication key (API Key).
-// Get your own by registering at https://secure.bytescout.com/users/sign_up
+// Get your own by registering at https://app.pdf.co/documentation/api
 $apiKey = "***********************************";
 
 // URL of web page to convert to PDF document.
@@ -23,7 +21,7 @@ $sourceUrl = "http://www.usa.gov";
 
 
 // Prepare URL for `Web Page to PDF` API call
-$url = "https://bytescout.io/v1/pdf/convert/from/url" . 
+$url = "https://api.pdf.co/v1/pdf/convert/from/url" . 
     "?name=result.pdf" .
     "&url=" . $sourceUrl .
     "&async=true"; // (!) Make asynchronous job
@@ -108,7 +106,7 @@ function CheckJobStatus($jobId)
     $status = null;
     
     // Create URL
-    $url = "https://bytescout.io/v1/job/check?jobid=" . $jobId;
+    $url = "https://api.pdf.co/v1/job/check?jobid=" . $jobId;
     
     // Create request
     $curl = curl_init();
