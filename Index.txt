@@ -453,6 +453,7 @@
 \BarCode SDK\VBScript\Batch Barcode Generation
 \BarCode SDK\VBScript\Caption Font
 \BarCode SDK\VBScript\Change Fore and Back Color
+\BarCode SDK\VBScript\Command Line Use
 \BarCode SDK\VBScript\Create Barcode from Excel
 \BarCode SDK\VBScript\Custom PDF417 Configuration
 \BarCode SDK\VBScript\Generate Barcode
@@ -1641,6 +1642,7 @@
 \QR Code SDK\VB.NET\Generate QR Code With Image Inside
 \QR Code SDK\VB.NET\Generate QR Code with Unicode Value
 \QR Code SDK\VB.NET\Generate Simple QR Code
+\QR Code SDK\VBScript and VB6\Command Line Use
 \QR Code SDK\VBScript and VB6\Create Colored QR Code
 \QR Code SDK\VBScript and VB6\Create GS1 QR Code
 \QR Code SDK\VBScript and VB6\Create Simple QR Code Barcode
