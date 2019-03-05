@@ -3,10 +3,11 @@ templateVersion: 1
 sourceId: My Custom Template
 
 detectionRules:
-  # Few keywords (or regex expressions) uniquely identifying the document design.
+  # Few regex expressions uniquely identifying the document design.
+  # Don't forget to escape special characters.
   keywords:
   - Your Company Name
-  - Invoice No.
+  - Invoice No\.
   - TOTAL
 
 # Expressions to extract distinct fields.
