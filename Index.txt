@@ -1627,6 +1627,7 @@
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL Asynchronously
 \QR Code SDK\C#
+\QR Code SDK\Microsoft Access
 \QR Code SDK\VB.NET
 \QR Code SDK\VBScript and VB6
 \QR Code SDK\C#\Convert vCard to QR Code
@@ -1636,6 +1637,7 @@
 \QR Code SDK\C#\Create QR Code with Unicode Value
 \QR Code SDK\C#\Create Simple QR Code
 \QR Code SDK\C#\Make QR Code With Image
+\QR Code SDK\Microsoft Access\Add Barcode to Report
 \QR Code SDK\VB.NET\Convert vCard to QR Code Barcode
 \QR Code SDK\VB.NET\Create Colored QR Code Barcode
 \QR Code SDK\VB.NET\Encode Binary Data to QR Code
