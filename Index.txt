@@ -909,6 +909,7 @@
 \PDF SDK\C#\Draw Rectangles in PDF
 \PDF SDK\C#\Draw Text String in PDF
 \PDF SDK\C#\Draw with Transparency in PDF
+\PDF SDK\C#\Fill Form 1099-INT
 \PDF SDK\C#\Fill PDF Form
 \PDF SDK\C#\Flatten PDF Form
 \PDF SDK\C#\Load Existing PDF Document
@@ -935,6 +936,7 @@
 \PDF SDK\C#\Set Transformations for Drawings in PDF
 \PDF SDK\C#\Set Word Spacing for Text in PDF
 \PDF SDK\C#\Sign PDF and Set Security
+\PDF SDK\C#\Split PDF Document
 \PDF SDK\C#\Use PDF Layers
 \PDF SDK\VB.NET\Add 3D Annotations to PDF
 \PDF SDK\VB.NET\Add File Attachment to PDF
