@@ -1414,6 +1414,7 @@
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From URL Asynchronously
+\PDF.co Web API\PDF To CSV API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL Asynchronously
