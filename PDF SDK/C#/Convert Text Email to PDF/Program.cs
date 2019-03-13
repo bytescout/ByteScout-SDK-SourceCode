@@ -10,13 +10,12 @@
 //*******************************************************************************************//
 
 
-using Bytescout.PDF;
+using Bytescout.PDF.Converters;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using Font = Bytescout.PDF.Font;
-using SolidBrush = Bytescout.PDF.SolidBrush;
+using System.Drawing.Printing;
+using System.Text;
 
 namespace EmailToPDF_TextEmail
 {
@@ -44,55 +43,43 @@ namespace EmailToPDF_TextEmail
                     // Recipient CC information
                     var recipientsCc = msg.GetEmailRecipients(MsgReader.Outlook.RecipientType.Cc, false, false);
 
-                    // Message subject
-                    var subject = msg.Subject;
+                    #region Generate and save html
 
-                    // Get Message Body
-                    var msgBody = msg.BodyText;
+                    // Get Html
+                    HtmlGenerator oHtmlGenerator = new HtmlGenerator();
+                    oHtmlGenerator.Title = $"Subject: {msg.Subject}";
 
-                    // Prepare PDF docuemnt
-                    using (Document outputDocument = new Document())
+                    oHtmlGenerator.AddParagraphBodyItem($"File Name: {msg.FileName}");
+                    oHtmlGenerator.AddParagraphBodyItem($"From: {from}");
+                    oHtmlGenerator.AddParagraphBodyItem($"Sent On: {(sentOn.HasValue ? sentOn.Value.ToString("MM/dd/yyyy HH:mm") : "")}");
+                    oHtmlGenerator.AddParagraphBodyItem($"To: {recipientsTo}");
+                    oHtmlGenerator.AddParagraphBodyItem($"Subject: {msg.Subject}");
+
+                    if (!string.IsNullOrEmpty(recipientsCc))
                     {
-                        // Add registration keys
-                        outputDocument.RegistrationName = "demo";
-                        outputDocument.RegistrationKey = "demo";
+                        oHtmlGenerator.AddParagraphBodyItem($"CC: {recipientsCc}");
+                    }
 
-                        // Add page
-                        Page page = new Page(PaperFormat.A4);
-                        outputDocument.Pages.Add(page);
+                    oHtmlGenerator.AddRawBodyItem("<hr/>");
 
-                        // Add sample content
-                        Font font = new Font(StandardFonts.Times, 12);
-                        Brush brush = new SolidBrush();
+                    var msgBodySplitted = msg.BodyText.Split("\n".ToCharArray());
 
-                        // Add Email contents
-                        int topMargin = 20;
-                        page.Canvas.DrawString($"File Name: {msg.FileName}", font, brush, 20, (topMargin += 20));
-                        page.Canvas.DrawString($"From: {from}", font, brush, 20, (topMargin += 20));
-                        page.Canvas.DrawString($"Sent On: {(sentOn.HasValue ? sentOn.Value.ToString("MM/dd/yyyy HH:mm") : "")}", font, brush, 20, (topMargin += 20));
-                        page.Canvas.DrawString($"To: {recipientsTo}", font, brush, 20, (topMargin += 20));
+                    foreach (var itmBody in msgBodySplitted)
+                    {
+                        oHtmlGenerator.AddParagraphBodyItem(itmBody);
+                    }
 
-                        if (!string.IsNullOrEmpty(recipientsCc))
-                        {
-                            page.Canvas.DrawString($"CC: {recipientsCc}", font, brush, 20, (topMargin += 20));
-                        }
+                    // Generate Html
+                    oHtmlGenerator.SaveHtml("result.html");
 
-                        page.Canvas.DrawString($"Subject: {subject}", font, brush, 20, (topMargin += 20));
-                        page.Canvas.DrawString("Message body in next page.", font, brush, 20, (topMargin += 20));
+                    #endregion
 
-                        // Get string splitted so that it can be fit properly into page canvas.
-                        var splittedStringList = _GetStringMeasuredAndSplitted(msgBody, font);
-                        foreach (var itmString in splittedStringList)
-                        {
-                            Page pageBody = new Page(PaperFormat.A4);
-                            pageBody.Canvas.DrawString(itmString, font, brush, 20, 20);
+                    using (HtmlToPdfConverter converter = new HtmlToPdfConverter())
+                    {
+                        converter.PageSize = PaperKind.A4;
+                        converter.Orientation = Bytescout.PDF.Converters.PaperOrientation.Portrait;
 
-                            // Add new page
-                            outputDocument.Pages.Add(pageBody);
-                        }
-
-                        // Save output file
-                        outputDocument.Save("result.pdf");
+                        converter.ConvertHtmlToPdf("result.html", "result.pdf");
 
                         // Open result document in default associated application (for demo purpose)
                         ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
@@ -108,59 +95,94 @@ namespace EmailToPDF_TextEmail
                 Console.ReadLine();
             }
         }
+    }
 
+    /// <summary>
+    /// Html Generator class
+    /// </summary>
+    class HtmlGenerator
+    {
+        #region Constructor
+
+        public HtmlGenerator()
+        {
+            this.StrBodyItems = new List<string>();
+        }
+
+        #endregion
+
+        #region Variable Declarations
+
+        public string Title { get; set; }
+        private List<string> StrBodyItems { get; set; }
+
+        #endregion
+
+        #region Methods
 
         /// <summary>
-        /// Gets string measured and splitted properly
+        /// Add Body Item
         /// </summary>
-        private static List<string> _GetStringMeasuredAndSplitted(string msgBody, Font font)
+        public void AddRawBodyItem(string strBodyItem)
         {
-            List<string> lstStringRet = new List<string>();
-
-            KeyValuePair<string, string> oMeasuredString = new KeyValuePair<string, string>();
-
-            while (!string.IsNullOrEmpty(msgBody))
-            {
-                oMeasuredString = _MeasuredString(msgBody, font);
-
-                lstStringRet.Add(oMeasuredString.Key);
-
-                msgBody = oMeasuredString.Value;
-            }
-            
-            return lstStringRet;
+            StrBodyItems.Add(strBodyItem);
         }
 
         /// <summary>
-        /// Measure string
+        /// Add Paragraph body item
         /// </summary>
-        private static KeyValuePair<string, string> _MeasuredString(string msgBody, Font font)
+        /// <param name="strText"></param>
+        public void AddParagraphBodyItem(string strText)
         {
-            Page pageBody = new Page(PaperFormat.A4);
-
-            var msgBodySplitted = msgBody.Split("\n".ToCharArray());
-
-            string strTemp = "";
-            for (int i = 0; i < msgBodySplitted.Length; i++)
-            {
-                // Here, using Canvas.MeasureString method which measures string against canvas, so we can split to multiple pages it if text is big
-                var sizeF = pageBody.Canvas.MeasureString(strTemp + "" + msgBodySplitted[i], font);
-
-                // Page height should be below 800 in-order to fit into page properly
-                if (sizeF.Height > 800)
-                {
-                    var lstRetString_Value = string.Join("\n", msgBodySplitted.Skip(i));
-
-                    // return splittd string and remained of it
-                    return new KeyValuePair<string, string>(strTemp, lstRetString_Value);
-                }
-
-                strTemp += msgBodySplitted[i];
-            }
-
-            // No need to split more
-            return new KeyValuePair<string, string>(msgBody, "");
+            StrBodyItems.Add(string.Format("<p style=''>{0}</p>", strText));
         }
+
+        /// <summary>
+        /// Gets Generated Html
+        /// </summary>
+        /// <returns></returns>
+        public string GetHtml()
+        {
+            StringBuilder oRetHtml = new StringBuilder(string.Empty);
+
+            oRetHtml.Append("<html>");
+
+            oRetHtml.Append("<head>");
+            oRetHtml.AppendFormat("<title>{0}</title>", Title);
+            oRetHtml.Append(@"<style>p {
+                                    line-height: 107.9 %;
+                                    margin-bottom: 13pt;
+                                    font-family: 'Arial', 'sans-serif';
+                                    font-size: 15pt;
+                                    margin-top: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                            }</style>");
+            oRetHtml.Append("</head>");
+
+            oRetHtml.Append("<body>");
+            foreach (var itemBody in StrBodyItems)
+            {
+                oRetHtml.Append(itemBody);
+            }
+            oRetHtml.Append("</body>");
+
+            oRetHtml.Append("</html>");
+
+            return oRetHtml.ToString();
+        }
+
+        /// <summary>
+        /// Save all Html
+        /// </summary>
+        /// <param name="fileName"></param>
+        public void SaveHtml(string fileName)
+        {
+            var allHtml = GetHtml();
+            System.IO.File.WriteAllText(fileName, allHtml);
+        }
+
+        #endregion
 
     }
 }

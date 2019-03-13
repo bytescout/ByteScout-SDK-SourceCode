@@ -10,11 +10,11 @@
 '*******************************************************************************************'
 
 
+Imports System.Drawing.Printing
 Imports System.IO
+Imports System.Text
 Imports Bytescout.PDF
-
-Imports Font = Bytescout.PDF.Font
-Imports SolidBrush = Bytescout.PDF.SolidBrush
+Imports Bytescout.PDF.Converters
 
 Module Program
 
@@ -40,89 +40,79 @@ Module Program
                 ' Recipient BCC information
                 Dim recipientBcc = msg.GetEmailRecipients(MsgReader.Outlook.RecipientType.Bcc, False, False)
 
-                ' Message subject
-                Dim subject = msg.Subject
+#Region "Generate and save HTML"
 
-                ' Get Message Body
-                Dim msgBody = msg.BodyText
+                Dim oHtmlGenerator As New HtmlGenerator()
 
-                ' Prepare PDF docuemnt
-                Using outputDocument As Document = New Document()
+                oHtmlGenerator.Title = $"Subject: {msg.Subject}"
+                oHtmlGenerator.AddParagraphBodyItem($"File Name: {msg.FileName}")
+                oHtmlGenerator.AddParagraphBodyItem($"From: {from}")
+                oHtmlGenerator.AddParagraphBodyItem($"Sent On: {(If(sentOn.HasValue, sentOn.Value.ToString("MM/dd/yyyy HH:mm"), ""))}")
+                oHtmlGenerator.AddParagraphBodyItem($"To: {recipientsTo}")
+                oHtmlGenerator.AddParagraphBodyItem($"Subject: {msg.Subject}")
 
-                    ' Add registration keys
-                    outputDocument.RegistrationName = "demo"
-                    outputDocument.RegistrationKey = "demo"
+                If Not String.IsNullOrEmpty(recipientsCc) Then
+                    oHtmlGenerator.AddParagraphBodyItem($"CC: {recipientsCc}")
+                End If
 
-                    ' Add page
-                    Dim page As Page = New Page(PaperFormat.A4)
-                    outputDocument.Pages.Add(page)
+                If Not String.IsNullOrEmpty(recipientBcc) Then
+                    oHtmlGenerator.AddParagraphBodyItem($"BCC: {recipientBcc}")
+                End If
 
-                    ' Default font and brush
-                    Dim font As Font = New Font(StandardFonts.Times, 12)
-                    Dim brush As Brush = New SolidBrush()
+                oHtmlGenerator.AddRawBodyItem("<hr/>")
+                Dim msgBodySplitted = msg.BodyText.Split(vbLf.ToCharArray())
 
-                    ' Add Email contents
-                    Dim topMargin As Integer = 0
-                    topMargin += 20
-                    page.Canvas.DrawString($"File Name: {msg.FileName}", font, brush, 20, topMargin)
+                For Each itmBody In msgBodySplitted
+                    oHtmlGenerator.AddParagraphBodyItem(itmBody)
+                Next
 
-                    topMargin += 20
-                    page.Canvas.DrawString($"From: {from}", font, brush, 20, topMargin)
+                ' Generate Html
+                oHtmlGenerator.SaveHtml("result.html")
 
-                    topMargin += 20
-                    page.Canvas.DrawString($"Sent On: {(If(sentOn.HasValue, sentOn.Value.ToString("MM/dd/yyyy HH:mm"), ""))}", font, brush, 20, topMargin)
+#End Region
 
-                    topMargin += 20
-                    page.Canvas.DrawString($"To: {recipientsTo}", font, brush, 20, topMargin)
+                Using Converter As HtmlToPdfConverter = New HtmlToPdfConverter()
 
-                    If Not String.IsNullOrEmpty(recipientsCc) Then
-                        topMargin += 20
-                        page.Canvas.DrawString($"CC: {recipientsCc}", font, brush, 20, topMargin)
-                    End If
+                    Converter.PageSize = PaperKind.A4
+                    Converter.Orientation = Bytescout.PDF.Converters.PaperOrientation.Portrait
 
-                    If Not String.IsNullOrEmpty(recipientBcc) Then
-                        topMargin += 20
-                        page.Canvas.DrawString($"BCC: {recipientBcc}", font, brush, 20, topMargin)
-                    End If
-
-                    topMargin += 20
-                    page.Canvas.DrawString($"Subject: {subject}", font, brush, 20, topMargin)
-
-                    topMargin += 20
-                    page.Canvas.DrawString("Message body and attachment in next page.", font, brush, 20, topMargin)
-
-                    ' Add another page for text body
-                    Dim pageBody As Page = New Page(PaperFormat.A4)
-                    pageBody.Canvas.DrawString(msgBody, font, brush, 20, 20)
-                    outputDocument.Pages.Add(pageBody)
+                    Converter.ConvertHtmlToPdf("result.html", "result.pdf")
 
                     ' Get attachments from message (if any, and append to document)
                     If msg.Attachments.Count > 0 Then
 
-                        For Each itmAttachment As MsgReader.Outlook.Storage.Attachment In msg.Attachments
+                        Using outputDocument As New Document("result.pdf")
 
-                            ' Get Memory Stream
-                            Dim attachmentMemoryStream As MemoryStream = New MemoryStream(itmAttachment.Data)
+                            For Each itmAttachment As MsgReader.Outlook.Storage.Attachment In msg.Attachments
 
-                            ' Append Attachment
-                            Dim docAttachment As Document = New Document(attachmentMemoryStream)
+                                ' Get Memory Stream
+                                Dim attachmentMemoryStream As MemoryStream = New MemoryStream(itmAttachment.Data)
 
-                            ' Append all pages to main PDF
-                            For Each item As Page In docAttachment.Pages
-                                outputDocument.Pages.Add(item)
+                                ' Append Attachment
+                                Dim docAttachment As Document = New Document(attachmentMemoryStream)
+
+                                ' Append all pages to main PDF
+                                For Each item As Page In docAttachment.Pages
+                                    outputDocument.Pages.Add(item)
+                                Next
+
                             Next
 
-                        Next
+                            ' Save output file
+                            outputDocument.Save("result.pdf")
+
+                        End Using
 
                     End If
 
-                    ' Save output file
-                    outputDocument.Save("result.pdf")
-
                     ' Open output file
-                    Process.Start("result.pdf")
+                    Dim processStartInfo As ProcessStartInfo = New ProcessStartInfo("result.pdf")
+                    processStartInfo.UseShellExecute = True
+
+                    Process.Start(processStartInfo)
 
                 End Using
+
             End Using
 
         Catch ex As Exception
@@ -132,5 +122,79 @@ Module Program
         End Try
 
     End Sub
+
+
+    ''' <summary>
+    ''' Html Generator class
+    ''' </summary>
+    Class HtmlGenerator
+
+#Region "Constructors and variable declarations"
+
+        Public Sub New()
+            Me.StrBodyItems = New List(Of String)()
+        End Sub
+
+        Public Property Title As String
+        Private Property StrBodyItems As List(Of String)
+
+#End Region
+
+#Region "Methods"
+
+        ''' <summary>
+        ''' Add Body Item
+        ''' </summary>
+        Public Sub AddRawBodyItem(ByVal strBodyItem As String)
+            StrBodyItems.Add(strBodyItem)
+        End Sub
+
+        ''' <summary>
+        ''' Add Paragraph body item
+        ''' </summary>
+        Public Sub AddParagraphBodyItem(ByVal strText As String)
+            StrBodyItems.Add(String.Format("<p style=''>{0}</p>", strText))
+        End Sub
+
+        ''' <summary>
+        ''' Gets generated HTML
+        ''' </summary>
+        Public Function GetHtml() As String
+            Dim oRetHtml As StringBuilder = New StringBuilder(String.Empty)
+            oRetHtml.Append("<html>")
+            oRetHtml.Append("<head>")
+            oRetHtml.AppendFormat("<title>{0}</title>", Title)
+            oRetHtml.Append("<style>p {
+                                    line-height: 107.9 %;
+                                    margin-bottom: 13pt;
+                                    font-family: 'Arial', 'sans-serif';
+                                    font-size: 15pt;
+                                    margin-top: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                            }</style>")
+            oRetHtml.Append("</head>")
+            oRetHtml.Append("<body>")
+
+            For Each itemBody In StrBodyItems
+                oRetHtml.Append(itemBody)
+            Next
+
+            oRetHtml.Append("</body>")
+            oRetHtml.Append("</html>")
+            Return oRetHtml.ToString()
+        End Function
+
+        ''' <summary>
+        ''' Save all HTML
+        ''' </summary>
+        Public Sub SaveHtml(ByVal fileName As String)
+            Dim allHtml = GetHtml()
+            System.IO.File.WriteAllText(fileName, allHtml)
+        End Sub
+
+#End Region
+
+    End Class
 
 End Module

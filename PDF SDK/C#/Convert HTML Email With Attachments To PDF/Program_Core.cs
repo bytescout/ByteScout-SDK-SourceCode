@@ -21,7 +21,7 @@ using Bytescout.PDF.Converters;
 using Font = Bytescout.PDF.Font;
 using SolidBrush = Bytescout.PDF.SolidBrush;
 
-namespace EmailToPDF_HTMLEmail
+namespace EmailToPDF_HTMLEmailWithAttachments
 {
     class Program
     {
@@ -29,30 +29,31 @@ namespace EmailToPDF_HTMLEmail
         {
             try
             {
+                // Registering encoding provider for .net core solution
+                System.Text.EncodingProvider encodingProvider = System.Text.CodePagesEncodingProvider.Instance;
+                Encoding.RegisterProvider(encodingProvider);
+
                 // Parse MessageContents using MsgReader Library
                 // MsgReader library can be obtained from: https://github.com/Sicos1977/MSGReader
-                using (var msg = new MsgReader.Outlook.Storage.Message("RtfSampleEmail.msg"))
+                using (var msg = new MsgReader.Outlook.Storage.Message("HtmlSampleEmailWithAttachment.msg"))
                 {
                     // Get Sender information
                     var from = msg.GetEmailSender(false, false);
 
                     // Message sent datetime
                     var sentOn = msg.SentOn;
-                    
+
                     // Recipient To information
                     var recipientsTo = msg.GetEmailRecipients(MsgReader.Outlook.RecipientType.To, false, false);
-                    
+
                     // Recipient CC information
                     var recipientsCc = msg.GetEmailRecipients(MsgReader.Outlook.RecipientType.Cc, false, false);
-                    
+
                     // Message subject
                     var subject = msg.Subject;
-                    
-                    // Get Message Body
-                    var msgBody = msg.BodyRtf;
 
-                     // COnvert RTF to HTML
-                    msgBody = RtfPipe.Rtf.ToHtml(msgBody); 
+                    // Get Message Body
+                    var msgBody = msg.BodyHtml;
 
                     // Prepare PDF docuemnt
                     using (Document outputDocument = new Document())
@@ -82,9 +83,7 @@ namespace EmailToPDF_HTMLEmail
                         }
 
                         page.Canvas.DrawString($"Subject: {subject}", font, brush, 20, (topMargin += 20));
-                        page.Canvas.DrawString("Message body in next page.", font, brush, 20, (topMargin += 20));
-
-                        
+                        page.Canvas.DrawString("Message body and attachments in next page.", font, brush, 20, (topMargin += 20));
 
                         // Convert Html body to PDF in order to retain all formatting.
                         using (HtmlToPdfConverter converter = new HtmlToPdfConverter())
@@ -97,23 +96,41 @@ namespace EmailToPDF_HTMLEmail
                             MemoryStream inputStream = new MemoryStream(byteArrayBody);
 
                             // Create output stream to store generated PDF file
-                            using (var outputStream = new MemoryStream())
+                            MemoryStream outputStream = new MemoryStream();
+
+                            // Convert HTML to PDF
+                            converter.ConvertHtmlToPdf(inputStream, outputStream);
+
+                            // Create new document from generated output stream
+                            Document docContent = new Document(outputStream);
+
+                            // Append all pages to main PDF
+                            foreach (Page item in docContent.Pages)
                             {
-                                // Convert HTML to PDF
-                                converter.ConvertHtmlToPdf(inputStream, outputStream);
-
-                                // Create new document from generated output stream
-                                Document docContent = new Document(outputStream);
-
-                                // Append all pages to main PDF
-                                foreach (Page item in docContent.Pages)
-                                {
-                                    outputDocument.Pages.Add(item);
-                                }
-
-                                // Save output file
-                                outputDocument.Save("result.pdf");
+                                outputDocument.Pages.Add(item);
                             }
+
+                            // Get attachments from message (if any, and append to document)
+                            if (msg.Attachments.Count > 0)
+                            {
+                                foreach (MsgReader.Outlook.Storage.Attachment itmAttachment in msg.Attachments)
+                                {
+                                    // Get Memory Stream
+                                    MemoryStream attachmentMemoryStream = new MemoryStream(itmAttachment.Data);
+
+                                    // Append Attachment
+                                    Document docAttachment = new Document(attachmentMemoryStream);
+
+                                    // Append all pages to main PDF
+                                    foreach (Page item in docAttachment.Pages)
+                                    {
+                                        outputDocument.Pages.Add(item);
+                                    }
+                                }
+                            }
+
+                            // Save output file
+                            outputDocument.Save("result.pdf");
                         }
 
                         // Open result document in default associated application (for demo purpose)

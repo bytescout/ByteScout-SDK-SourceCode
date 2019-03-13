@@ -954,13 +954,13 @@
 \PDF SDK\VB.NET\Add Watermarks to PDF
 \PDF SDK\VB.NET\Convert DOCX to HTML
 \PDF SDK\VB.NET\Convert DOCX to PDF
-\PDF SDK\VB.NET\Convert Email with Attachments to PDF
-\PDF SDK\VB.NET\Convert Email with RTF and Attachments to PDF
+\PDF SDK\VB.NET\convert Email with attachemnts to PDF
 \PDF SDK\VB.NET\Convert HTML Email to PDF
 \PDF SDK\VB.NET\Convert HTML Email with Attachments to PDF
 \PDF SDK\VB.NET\Convert HTML to DOCX
 \PDF SDK\VB.NET\Convert HTML to PDF
 \PDF SDK\VB.NET\Convert RTF Email to PDF
+\PDF SDK\VB.NET\Convert RTF Email with attachments to PDF
 \PDF SDK\VB.NET\Convert SVG to PDF
 \PDF SDK\VB.NET\Convert Text Email to PDF
 \PDF SDK\VB.NET\Convert Text Email with Attachments to PDF

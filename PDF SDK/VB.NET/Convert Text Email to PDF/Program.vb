@@ -10,11 +10,11 @@
 '*******************************************************************************************'
 
 
+Imports System.Drawing.Printing
 Imports System.Linq
+Imports System.Text
 Imports Bytescout.PDF
-
-Imports Font = Bytescout.PDF.Font
-Imports SolidBrush = Bytescout.PDF.SolidBrush
+Imports Bytescout.PDF.Converters
 
 Module Program
 
@@ -43,75 +43,45 @@ Module Program
                 ' Recipient BCC information
                 Dim recipientBcc = msg.GetEmailRecipients(MsgReader.Outlook.RecipientType.Bcc, False, False)
 
-                ' Message subject
-                Dim subject = msg.Subject
 
-                ' Get Message Body
-                Dim msgBody = msg.BodyText
+                Dim oHtmlGenerator As HtmlGenerator = New HtmlGenerator()
 
-                ' Prepare PDF docuemnt
-                Using outputDocument As Document = New Document()
+                oHtmlGenerator.Title = $"Subject: {msg.Subject}"
+                oHtmlGenerator.AddParagraphBodyItem($"File Name: {msg.FileName}")
+                oHtmlGenerator.AddParagraphBodyItem($"From: {from}")
+                oHtmlGenerator.AddParagraphBodyItem($"Sent On: {(If(sentOn.HasValue, sentOn.Value.ToString("MM/dd/yyyy HH:mm"), ""))}")
+                oHtmlGenerator.AddParagraphBodyItem($"To: {recipientsTo}")
+                oHtmlGenerator.AddParagraphBodyItem($"Subject: {msg.Subject}")
 
-                    ' Add registration keys
-                    outputDocument.RegistrationName = "demo"
-                    outputDocument.RegistrationKey = "demo"
+                If Not String.IsNullOrEmpty(recipientsCc) Then
+                    oHtmlGenerator.AddParagraphBodyItem($"CC: {recipientsCc}")
+                End If
 
-                    ' Add page
-                    Dim page As Page = New Page(PaperFormat.A4)
-                    outputDocument.Pages.Add(page)
+                If Not String.IsNullOrEmpty(recipientBcc) Then
+                    oHtmlGenerator.AddParagraphBodyItem($"BCC: {recipientBcc}")
+                End If
 
-                    ' Default font and brush
-                    Dim font As Font = New Font(StandardFonts.Times, 12)
-                    Dim brush As Brush = New SolidBrush()
+                oHtmlGenerator.AddRawBodyItem("<hr/>")
+                Dim msgBodySplitted = msg.BodyText.Split(vbLf.ToCharArray())
 
-                    ' Add Email contents
-                    Dim topMargin As Integer = 0
-                    topMargin += 20
-                    page.Canvas.DrawString($"File Name: {msg.FileName}", font, brush, 20, topMargin)
+                For Each itmBody In msgBodySplitted
+                    oHtmlGenerator.AddParagraphBodyItem(itmBody)
+                Next
 
-                    topMargin += 20
-                    page.Canvas.DrawString($"From: {from}", font, brush, 20, topMargin)
+                oHtmlGenerator.SaveHtml("result.html")
 
-                    topMargin += 20
-                    page.Canvas.DrawString($"Sent On: {(If(sentOn.HasValue, sentOn.Value.ToString("MM/dd/yyyy HH:mm"), ""))}", font, brush, 20, topMargin)
+                Using converter As HtmlToPdfConverter = New HtmlToPdfConverter()
+                    converter.PageSize = PaperKind.A4
+                    converter.Orientation = Bytescout.PDF.Converters.PaperOrientation.Portrait
+                    converter.ConvertHtmlToPdf("result.html", "result.pdf")
 
-                    topMargin += 20
-                    page.Canvas.DrawString($"To: {recipientsTo}", font, brush, 20, topMargin)
+                    Dim processStartInfo As ProcessStartInfo = New ProcessStartInfo("result.pdf")
+                    processStartInfo.UseShellExecute = True
 
-                    If Not String.IsNullOrEmpty(recipientsCc) Then
-                        topMargin += 20
-                        page.Canvas.DrawString($"CC: {recipientsCc}", font, brush, 20, topMargin)
-                    End If
-
-                    If Not String.IsNullOrEmpty(recipientBcc) Then
-                        topMargin += 20
-                        page.Canvas.DrawString($"BCC: {recipientBcc}", font, brush, 20, topMargin)
-                    End If
-
-                    topMargin += 20
-                    page.Canvas.DrawString($"Subject: {subject}", font, brush, 20, topMargin)
-
-                    topMargin += 20
-                    page.Canvas.DrawString("Message body in next page.", font, brush, 20, topMargin)
-
-                    ' Get string splitted so that it can be fit properly into page canvas.
-                    Dim splittedStringList = _GetStringMeasuredAndSplitted(msgBody, font)
-                    For Each itmString As String In splittedStringList
-
-                        Dim pageBody As New Page(PaperFormat.A4)
-                        pageBody.Canvas.DrawString(itmString, font, brush, 20, 20)
-
-                        ' Add new page
-                        outputDocument.Pages.Add(pageBody)
-                    Next
-
-                    ' Save output file
-                    outputDocument.Save("result.pdf")
-
-                    ' Open output file
-                    Process.Start("result.pdf")
+                    Process.Start(processStartInfo)
 
                 End Using
+
             End Using
 
         Catch ex As Exception
@@ -123,52 +93,76 @@ Module Program
     End Sub
 
     ''' <summary>
-    ''' Gets string measured and splitted properly
+    ''' Html Generator class
     ''' </summary>
-    Private Function _GetStringMeasuredAndSplitted(ByVal msgBody As String, ByVal font As Font) As List(Of String)
+    Class HtmlGenerator
 
-        Dim lstStringRet As List(Of String) = New List(Of String)()
+#Region "Constructors and variable declarations"
 
-        Dim oMeasuredString As KeyValuePair(Of String, String) = New KeyValuePair(Of String, String)()
+        Public Sub New()
+            Me.StrBodyItems = New List(Of String)()
+        End Sub
 
-        While Not String.IsNullOrEmpty(msgBody)
+        Public Property Title As String
+        Private Property StrBodyItems As List(Of String)
 
-            oMeasuredString = _MeasuredString(msgBody, font)
+#End Region
 
-            lstStringRet.Add(oMeasuredString.Key)
+#Region "Methods"
 
-            msgBody = oMeasuredString.Value
+        ''' <summary>
+        ''' Add Body Item
+        ''' </summary>
+        Public Sub AddRawBodyItem(ByVal strBodyItem As String)
+            StrBodyItems.Add(strBodyItem)
+        End Sub
 
-        End While
+        ''' <summary>
+        ''' Add Paragraph body item
+        ''' </summary>
+        Public Sub AddParagraphBodyItem(ByVal strText As String)
+            StrBodyItems.Add(String.Format("<p style=''>{0}</p>", strText))
+        End Sub
 
-        Return lstStringRet
+        ''' <summary>
+        ''' Gets generated HTML
+        ''' </summary>
+        Public Function GetHtml() As String
+            Dim oRetHtml As StringBuilder = New StringBuilder(String.Empty)
+            oRetHtml.Append("<html>")
+            oRetHtml.Append("<head>")
+            oRetHtml.AppendFormat("<title>{0}</title>", Title)
+            oRetHtml.Append("<style>p {
+                                    line-height: 107.9 %;
+                                    margin-bottom: 13pt;
+                                    font-family: 'Arial', 'sans-serif';
+                                    font-size: 15pt;
+                                    margin-top: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                            }</style>")
+            oRetHtml.Append("</head>")
+            oRetHtml.Append("<body>")
 
-    End Function
+            For Each itemBody In StrBodyItems
+                oRetHtml.Append(itemBody)
+            Next
 
-    ''' <summary>
-    ''' Measure string
-    ''' </summary>
-    ''' <param name="msgBody"></param>
-    ''' <param name="font"></param>
-    ''' <returns></returns>
-    Private Function _MeasuredString(ByVal msgBody As String, ByVal font As Font) As KeyValuePair(Of String, String)
-        Dim pageBody As Page = New Page(PaperFormat.A4)
-        Dim msgBodySplitted = msgBody.Split(vbLf.ToCharArray())
-        Dim strTemp As String = ""
+            oRetHtml.Append("</body>")
+            oRetHtml.Append("</html>")
+            Return oRetHtml.ToString()
+        End Function
 
-        For i As Integer = 0 To msgBodySplitted.Length - 1
-            Dim sizeF = pageBody.Canvas.MeasureString(strTemp & "" & msgBodySplitted(i), font)
+        ''' <summary>
+        ''' Save all HTML
+        ''' </summary>
+        Public Sub SaveHtml(ByVal fileName As String)
+            Dim allHtml = GetHtml()
+            System.IO.File.WriteAllText(fileName, allHtml)
+        End Sub
 
-            If sizeF.Height > 800 Then
-                Dim lstRetString_Value = String.Join(vbLf, msgBodySplitted.Skip(i))
-                Return New KeyValuePair(Of String, String)(strTemp, lstRetString_Value)
-            End If
+#End Region
 
-            strTemp += msgBodySplitted(i)
-        Next
-
-        Return New KeyValuePair(Of String, String)(msgBody, "")
-    End Function
-
+    End Class
 
 End Module

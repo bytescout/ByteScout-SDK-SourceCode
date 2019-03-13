@@ -11,11 +11,13 @@
 
 
 using Bytescout.PDF;
+using Bytescout.PDF.Converters;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing.Printing;
 using System.IO;
-using Font = Bytescout.PDF.Font;
-using SolidBrush = Bytescout.PDF.SolidBrush;
+using System.Text;
 
 namespace EmailToPDF_TextEmailWithAttachments
 {
@@ -41,67 +43,66 @@ namespace EmailToPDF_TextEmailWithAttachments
                     // Recipient CC information
                     var recipientsCc = msg.GetEmailRecipients(MsgReader.Outlook.RecipientType.Cc, false, false);
 
-                    // Message subject
-                    var subject = msg.Subject;
+                    #region Generate and save html
 
-                    // Get Message Body
-                    var msgBody = msg.BodyText;
+                    // Get Html
+                    HtmlGenerator oHtmlGenerator = new HtmlGenerator();
+                    oHtmlGenerator.Title = $"Subject: {msg.Subject}";
 
-                    // Prepare PDF docuemnt
-                    using (Document outputDocument = new Document())
+                    oHtmlGenerator.AddParagraphBodyItem($"File Name: {msg.FileName}");
+                    oHtmlGenerator.AddParagraphBodyItem($"From: {from}");
+                    oHtmlGenerator.AddParagraphBodyItem($"Sent On: {(sentOn.HasValue ? sentOn.Value.ToString("MM/dd/yyyy HH:mm") : "")}");
+                    oHtmlGenerator.AddParagraphBodyItem($"To: {recipientsTo}");
+                    oHtmlGenerator.AddParagraphBodyItem($"Subject: {msg.Subject}");
+
+                    if (!string.IsNullOrEmpty(recipientsCc))
                     {
-                        // Add registration keys
-                        outputDocument.RegistrationName = "demo";
-                        outputDocument.RegistrationKey = "demo";
+                        oHtmlGenerator.AddParagraphBodyItem($"CC: {recipientsCc}");
+                    }
 
-                        // Add page
-                        Page page = new Page(PaperFormat.A4);
-                        outputDocument.Pages.Add(page);
+                    oHtmlGenerator.AddRawBodyItem("<hr/>");
 
-                        // Add sample content
-                        Font font = new Font(StandardFonts.Times, 12);
-                        Brush brush = new SolidBrush();
+                    var msgBodySplitted = msg.BodyText.Split("\n".ToCharArray());
 
-                        // Add Email contents
-                        int topMargin = 20;
-                        page.Canvas.DrawString($"File Name: {msg.FileName}", font, brush, 20, (topMargin += 20));
-                        page.Canvas.DrawString($"From: {from}", font, brush, 20, (topMargin += 20));
-                        page.Canvas.DrawString($"Sent On: {(sentOn.HasValue ? sentOn.Value.ToString("MM/dd/yyyy HH:mm") : "")}", font, brush, 20, (topMargin += 20));
-                        page.Canvas.DrawString($"To: {recipientsTo}", font, brush, 20, (topMargin += 20));
+                    foreach (var itmBody in msgBodySplitted)
+                    {
+                        oHtmlGenerator.AddParagraphBodyItem(itmBody);
+                    }
 
-                        if (!string.IsNullOrEmpty(recipientsCc))
-                        {
-                            page.Canvas.DrawString($"CC: {recipientsCc}", font, brush, 20, (topMargin += 20));
-                        }
+                    // Generate Html
+                    oHtmlGenerator.SaveHtml("result.html");
 
-                        page.Canvas.DrawString($"Subject: {subject}", font, brush, 20, (topMargin += 20));
-                        page.Canvas.DrawString("Message body and attachments in next page.", font, brush, 20, (topMargin += 20));
+                    #endregion
 
-                        Page pageBody = new Page(PaperFormat.A4);
-                        pageBody.Canvas.DrawString(msgBody, font, brush, 20, 20);
-                        outputDocument.Pages.Add(pageBody);
+                    using (HtmlToPdfConverter converter = new HtmlToPdfConverter())
+                    {
+                        converter.PageSize = PaperKind.A4;
+                        converter.Orientation = Bytescout.PDF.Converters.PaperOrientation.Portrait;
+
+                        converter.ConvertHtmlToPdf("result.html", "result.pdf");
 
                         // Get attachments from message (if any, and append to document)
                         if (msg.Attachments.Count > 0)
                         {
-                            foreach (MsgReader.Outlook.Storage.Attachment itmAttachment in msg.Attachments)
+                            using (Document outputDocument = new Document("result.pdf"))
                             {
-                                // Get Memory Stream
-                                MemoryStream attachmentMemoryStream = new MemoryStream(itmAttachment.Data);
-
-                                // Append Attachment
-                                Document docAttachment = new Document(attachmentMemoryStream);
-
-                                // Append all pages to main PDF
-                                foreach (Page item in docAttachment.Pages)
+                                foreach (MsgReader.Outlook.Storage.Attachment itmAttachment in msg.Attachments)
                                 {
-                                    outputDocument.Pages.Add(item);
+                                    // Get Memory Stream
+                                    MemoryStream attachmentMemoryStream = new MemoryStream(itmAttachment.Data);
+
+                                    // Append Attachment
+                                    Document docAttachment = new Document(attachmentMemoryStream);
+
+                                    // Append all pages to main PDF
+                                    foreach (Page item in docAttachment.Pages)
+                                    {
+                                        outputDocument.Pages.Add(item);
+                                    }
                                 }
+                                outputDocument.Save("result.pdf");
                             }
                         }
-
-                        // Save output file
-                        outputDocument.Save("result.pdf");
 
                         // Open result document in default associated application (for demo purpose)
                         ProcessStartInfo processStartInfo = new ProcessStartInfo("result.pdf");
@@ -117,6 +118,97 @@ namespace EmailToPDF_TextEmailWithAttachments
                 Console.ReadLine();
             }
         }
+    }
+
+
+
+    /// <summary>
+    /// Html Generator class
+    /// </summary>
+    class HtmlGenerator
+    {
+        #region Constructor
+
+        public HtmlGenerator()
+        {
+            this.StrBodyItems = new List<string>();
+        }
+
+        #endregion
+
+        #region Variable Declarations
+
+        public string Title { get; set; }
+        private List<string> StrBodyItems { get; set; }
+
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Add Body Item
+        /// </summary>
+        public void AddRawBodyItem(string strBodyItem)
+        {
+            StrBodyItems.Add(strBodyItem);
+        }
+
+        /// <summary>
+        /// Add Paragraph body item
+        /// </summary>
+        /// <param name="strText"></param>
+        public void AddParagraphBodyItem(string strText)
+        {
+            StrBodyItems.Add(string.Format("<p style=''>{0}</p>", strText));
+        }
+
+        /// <summary>
+        /// Gets Generated Html
+        /// </summary>
+        /// <returns></returns>
+        public string GetHtml()
+        {
+            StringBuilder oRetHtml = new StringBuilder(string.Empty);
+
+            oRetHtml.Append("<html>");
+
+            oRetHtml.Append("<head>");
+            oRetHtml.AppendFormat("<title>{0}</title>", Title);
+            oRetHtml.Append(@"<style>p {
+                                    line-height: 107.9 %;
+                                    margin-bottom: 13pt;
+                                    font-family: 'Arial', 'sans-serif';
+                                    font-size: 15pt;
+                                    margin-top: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                            }</style>");
+            oRetHtml.Append("</head>");
+
+            oRetHtml.Append("<body>");
+            foreach (var itemBody in StrBodyItems)
+            {
+                oRetHtml.Append(itemBody);
+            }
+            oRetHtml.Append("</body>");
+
+            oRetHtml.Append("</html>");
+
+            return oRetHtml.ToString();
+        }
+
+        /// <summary>
+        /// Save all Html
+        /// </summary>
+        /// <param name="fileName"></param>
+        public void SaveHtml(string fileName)
+        {
+            var allHtml = GetHtml();
+            System.IO.File.WriteAllText(fileName, allHtml);
+        }
+
+        #endregion
 
     }
+
 }
