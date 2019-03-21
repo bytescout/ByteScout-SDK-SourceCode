@@ -31,11 +31,12 @@ namespace SearchablePDFMakerProgressChangedEvent
                     Console.WriteLine("Searchable PDF making in progress: \n");
                     searchablePDFMaker.ProgressChanged += SearchablePDF_ProgressChanged;
 
-                    // Set the location of "tessdata" folder containing language data files
-                    searchablePDFMaker.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\Redistributable\net2.00\tessdata\";
+                    // Set the location of OCR language data files
+                    searchablePDFMaker.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\";
 
                     // Set OCR language
-                    searchablePDFMaker.OCRLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
+                    searchablePDFMaker.OCRLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder
+                    // Find more language files at https://github.com/tesseract-ocr/tessdata
 
                     // Set PDF document rendering resolution
                     searchablePDFMaker.OCRResolution = 300;

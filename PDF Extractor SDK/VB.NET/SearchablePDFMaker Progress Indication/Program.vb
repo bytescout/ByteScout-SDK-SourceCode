@@ -27,8 +27,8 @@ Module Program
                 Console.WriteLine("Searchable PDF making in progress: " & vbLf)
                 AddHandler searchablePDFMaker.ProgressChanged, AddressOf SearchablePDF_ProgressChanged
 
-                ' Set the location of "tessdata" folder containing language data files 
-                searchablePDFMaker.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\Redistributable\net2.00\tessdata\"
+                ' Set the location of OCR language data files 
+                searchablePDFMaker.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\"
 
                 ' Set OCR language
                 searchablePDFMaker.OCRLanguage = "eng"

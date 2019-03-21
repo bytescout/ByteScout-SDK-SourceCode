@@ -38,12 +38,12 @@ namespace OCRAnalyser
             // RectangleF.Empty means the full page.
             RectangleF rectangle = RectangleF.Empty; // new RectangleF(100, 50, 350, 250);
 
-            // Location of "tessdata" folder containing language data files
-            string ocrLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\Redistributable\net2.00\tessdata\";
+            // Location of language data files
+            string ocrLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\";
 
             // OCR language
-            string ocrLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
-            // Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
+            string ocrLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder
+            // Find more language files at https://github.com/tesseract-ocr/tessdata
 
 
             // Create OCRAnalyzer instance and activate it with your registration information

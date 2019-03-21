@@ -13,7 +13,7 @@
 using System.Diagnostics;
 using Bytescout.PDFExtractor;
 
-// To make OCR work you should add to your project references to Bytescout.PDFExtractor.dll and Bytescout.PDFExtractor.OCRExtension.dll 
+// To make OCR work you should references "Bytescout.PDFExtractor.dll" and "Bytescout.PDFExtractor.OCRExtension.dll" from your project.
 
 namespace MakeSearchablePDF
 {
@@ -29,11 +29,11 @@ namespace MakeSearchablePDF
             // Load sample Image document
             searchablePDFMaker.LoadDocumentFromFile("sample_ocr.jpg");
             
-            // Set the location of "tessdata" folder containing language data files
-            searchablePDFMaker.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\Redistributable\net2.00\tessdata\";
+            // Set the location of OCR language data files
+            searchablePDFMaker.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\";
 
             // Set OCR language
-            searchablePDFMaker.OCRLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
+            searchablePDFMaker.OCRLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder
 
             // Set PDF document rendering resolution
             searchablePDFMaker.OCRResolution = 300;

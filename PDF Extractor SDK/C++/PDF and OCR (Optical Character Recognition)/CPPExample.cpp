@@ -41,8 +41,8 @@
 		// in .Auto mode (SDK automatically checks if needs to use OCR or not)
 		pITextExtractor->put_OCRMode(OCRMode_Auto);
 		
-		// Set the location of "tessdata" folder containing language data files
-		_bstr_t bstrOCRLangDataPath(L"c:\\Program Files\\Bytescout PDF Extractor SDK\\net4.00\\tessdata");
+		// Set the location of OCR language data files
+		_bstr_t bstrOCRLangDataPath(L"c:\\Program Files\\Bytescout PDF Extractor SDK\\ocrdata");
 		pITextExtractor->put_OCRLanguageDataFolder(bstrOCRLangDataPath);
 
 		// Set OCR language

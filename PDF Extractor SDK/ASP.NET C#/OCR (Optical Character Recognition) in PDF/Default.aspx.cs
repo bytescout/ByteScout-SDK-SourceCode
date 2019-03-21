@@ -13,10 +13,9 @@
 using System;
 using Bytescout.PDFExtractor;
 
-// Before running the example copy missing .traineddata files from "Redistributable" folder to "tessdata" project folder.
-// or download from https://github.com/tesseract-ocr/tessdata/tree/3.04.00
+// Before running the example, copy missing *.traineddata files from "Redistributable" folder to "ocrdata" project folder.
+// or download from https://github.com/tesseract-ocr/tessdata
 // Make sure "Copy to Output Directory" property of each added language file is set to "Copy always".
-// Note: Do not rename the "tessdata" folder - its name is hardcoded in OCR engine.
 
 namespace OpticalCharacterRecognition
 {
@@ -27,7 +26,7 @@ namespace OpticalCharacterRecognition
             String inputFile = Server.MapPath(@".\bin\sample_ocr.pdf");
 		    
             // Location of language files
-		    String ocrLanguageDataFolder = Server.MapPath(@".\bin\tessdata");
+		    String ocrLanguageDataFolder = Server.MapPath(@".\bin\ocrdata");
 
 		    // Create Bytescout.PDFExtractor.TextExtractor instance
 		    using (TextExtractor extractor = new TextExtractor())
@@ -38,10 +37,10 @@ namespace OpticalCharacterRecognition
 		        // Enable Optical Character Recognition (OCR)
 		        // in .Auto mode (SDK automatically checks if needs to use OCR or not)
 		        extractor.OCRMode = OCRMode.Auto;
-		        // Set the location of "tessdata" folder containing language data file
+		        // Set the location of OCR language data files
 		        extractor.OCRLanguageDataFolder = ocrLanguageDataFolder;
 		        // Set OCR language
-		        extractor.OCRLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
+		        extractor.OCRLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder
 		        // Set PDF document rendering resolution
 		        extractor.OCRResolution = 300;
 

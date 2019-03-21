@@ -24,7 +24,7 @@ Class Program
         Dim extractor As New TextExtractor()
         extractor.RegistrationName = "demo"
         extractor.RegistrationKey = "demo"
-        extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\net2.00\tessdata"
+        extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata"
 
         ' Load sample PDF document
         extractor.LoadDocumentFromFile("sample_ocr.pdf")

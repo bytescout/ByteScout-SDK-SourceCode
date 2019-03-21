@@ -26,13 +26,13 @@ extractor.LoadDocumentFromFile("..\..\sample_ocr.pdf")
 ' Enable Optical Character Recognition (OCR)
 extractor.OCRMode = 1 ' OCRMode.Auto = 1
 
-' Set the location of "tessdata" folder containing language data files
-extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\Redistributable\net2.00\tessdata"
+' Set the location of OCR language data files
+extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata"
 			
 ' Set OCR language
-' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "tessdata" folder.
+' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder.
 extractor.OCRLanguage = "eng"  
-' Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
+' Find more language files at https://github.com/tesseract-ocr/tessdata
 
 ' Set PDF document rendering resolution
 extractor.OCRResolution = 300

@@ -26,12 +26,12 @@ Module Program
                 ' Set the font repairing OCR mode 
                 extractor.OCRMode = OCRMode.TextFromImagesAndVectorsAndRepairedFonts
 
-                ' Set the location of "tessdata" folder containing language data files
-                extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\Redistributable\net2.00\tessdata\"
+                ' Set the location of OCR language data files
+                extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\"
 
                 ' Set OCR language
-                extractor.OCRLanguage = "eng" ' "eng" For english, "deu" For German, "fra" For French, "spa" For Spanish etc - according To files In /tessdata
-                ' Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
+                extractor.OCRLanguage = "eng" ' "eng" For english, "deu" For German, "fra" For French, "spa" For Spanish etc - according To files In "ocrdata" folder
+                ' Find more language files at https://github.com/tesseract-ocr/tessdata
 
                 ' Set PDF document rendering resolution
                 extractor.OCRResolution = 300
