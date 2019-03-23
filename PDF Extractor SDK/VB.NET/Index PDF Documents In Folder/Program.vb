@@ -115,7 +115,7 @@ Module Program
 
             ' Set OCR language
             extractor.OCRLanguage = "eng" '"eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder
-            ' Find more language files at https://github.com/tesseract-ocr/tessdata
+            ' Find more language files at https://github.com/bytescout/ocrdata
 
             ' Set PDF document rendering resolution
             extractor.OCRResolution = 300

@@ -14,7 +14,7 @@ using System;
 using Bytescout.PDFExtractor;
 
 // Before running the example, copy missing *.traineddata files from "Redistributable" folder to "ocrdata" project folder.
-// or download from https://github.com/tesseract-ocr/tessdata
+// or download from https://github.com/bytescout/ocrdata
 // Make sure "Copy to Output Directory" property of each added language file is set to "Copy always".
 
 namespace OpticalCharacterRecognition

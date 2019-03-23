@@ -24,7 +24,7 @@ searchablePDFMaker.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extra
 ' Set OCR language
 ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder.
 searchablePDFMaker.OCRLanguage = "eng"  
-' Find more language files at https://github.com/tesseract-ocr/tessdata
+' Find more language files at https://github.com/bytescout/ocrdata
 
 ' Set PDF document rendering resolution
 searchablePDFMaker.OCRResolution = 300

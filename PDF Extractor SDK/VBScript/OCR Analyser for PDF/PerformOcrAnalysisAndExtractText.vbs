@@ -26,7 +26,7 @@ ocrLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\"
 
 ' OCR language
 ocrLanguage = "eng" ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder
-' Find more language files at https://github.com/tesseract-ocr/tessdata
+' Find more language files at https://github.com/bytescout/ocrdata
 
 
 ' Create OCRAnalyzer object and activate it with your registration information
