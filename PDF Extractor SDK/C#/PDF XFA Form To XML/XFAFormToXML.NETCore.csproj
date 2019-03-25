@@ -21,6 +21,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\samplexfa.pdf" Link="samplexfa.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>

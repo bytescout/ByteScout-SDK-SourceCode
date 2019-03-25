@@ -17,7 +17,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile "sample_xfa_form.pdf"
+extractor.LoadDocumentFromFile "..\..\samplexfa.pdf"
 
 ' Iterate through content types. See type descriptions below.
 For i = 0 To 12 

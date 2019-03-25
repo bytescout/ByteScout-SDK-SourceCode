@@ -43,5 +43,9 @@
     <Compile Include="Properties\AssemblyInfo.vb" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\samplexfa.pdf">
+      <Link>samplexfa.pdf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
