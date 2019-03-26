@@ -1110,6 +1110,7 @@
 \PDF.co Web API\PDF Merging API
 \PDF.co Web API\PDF Optimization API
 \PDF.co Web API\PDF Splitting API
+\PDF.co Web API\PDF Text Search API
 \PDF.co Web API\PDF To CSV API
 \PDF.co Web API\PDF To Excel API
 \PDF.co Web API\PDF To HTML API
@@ -1402,6 +1403,8 @@
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From Uploaded File
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From URL
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From URL Asynchronously
+\PDF.co Web API\PDF Text Search API\C#
+\PDF.co Web API\PDF Text Search API\C#\Find Text
 \PDF.co Web API\PDF To CSV API\C#
 \PDF.co Web API\PDF To CSV API\cURL
 \PDF.co Web API\PDF To CSV API\Java
