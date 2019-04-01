@@ -1144,12 +1144,14 @@
 \PDF.co Web API\Barcode Reader API\PHP
 \PDF.co Web API\Barcode Reader API\PowerShell
 \PDF.co Web API\Barcode Reader API\VB.NET
+\PDF.co Web API\Barcode Reader API\C#\Advanced Conversion Options
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From URL Asynchronously
 \PDF.co Web API\Barcode Reader API\cURL\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\Java\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\Java\Read Barcode From URL
+\PDF.co Web API\Barcode Reader API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From File (Node.js)
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From File (Node.js) - Async Api
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From Uploaded File (Node.js)
@@ -1158,9 +1160,11 @@
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From URL (Node.js) - Async API
 \PDF.co Web API\Barcode Reader API\PHP\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\PHP\Read Barcode From URL Asynchronously
+\PDF.co Web API\Barcode Reader API\PowerShell\Advanced Conversion Options
 \PDF.co Web API\Barcode Reader API\PowerShell\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\PowerShell\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\PowerShell\Read Barcode From URL Asynchronously
+\PDF.co Web API\Barcode Reader API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From URL Asynchronously
@@ -1306,12 +1310,14 @@
 \PDF.co Web API\PDF Make Searchable API\PHP
 \PDF.co Web API\PDF Make Searchable API\PowerShell
 \PDF.co Web API\PDF Make Searchable API\VB.NET
+\PDF.co Web API\PDF Make Searchable API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From URL Asynchronously
 \PDF.co Web API\PDF Make Searchable API\cURL\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\Java\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\Java\Make Searchable PDF From URL
+\PDF.co Web API\PDF Make Searchable API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From File (Node.js)
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From File (Node.js) - Async API
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From Uploaded File (Node.js)
@@ -1320,9 +1326,11 @@
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From URL (Node.js) - Async API
 \PDF.co Web API\PDF Make Searchable API\PHP\Make Searchable PDF Asynchronously
 \PDF.co Web API\PDF Make Searchable API\PHP\Make Searchable PDF From Uploaded File
+\PDF.co Web API\PDF Make Searchable API\PowerShell\Advanced Conversion Options
 \PDF.co Web API\PDF Make Searchable API\PowerShell\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\PowerShell\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\PowerShell\Make Searchable PDF From URL Asynchronously
+\PDF.co Web API\PDF Make Searchable API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF Make Searchable API\VB.NET\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\VB.NET\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\VB.NET\Make Searchable PDF From URL Asynchronously
@@ -1412,6 +1420,7 @@
 \PDF.co Web API\PDF To CSV API\PHP
 \PDF.co Web API\PDF To CSV API\PowerShell
 \PDF.co Web API\PDF To CSV API\VB.NET
+\PDF.co Web API\PDF To CSV API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From URL Asynchronously
@@ -1419,6 +1428,7 @@
 \PDF.co Web API\PDF To CSV API\Java\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\Java\Convert PDF To CSV From Uploaded File Asynchronously
 \PDF.co Web API\PDF To CSV API\Java\Convert PDF To CSV From URL
+\PDF.co Web API\PDF To CSV API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From File (Node.js)
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From File (Node.js) - Async API
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From Uploaded File (Node.js)
@@ -1429,6 +1439,7 @@
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF to CSV in JQuery - Async API
 \PDF.co Web API\PDF To CSV API\PHP\Convert PDF To CSV Asynchronously
 \PDF.co Web API\PDF To CSV API\PHP\Convert PDF To CSV From Uploaded File
+\PDF.co Web API\PDF To CSV API\PowerShell\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From URL Asynchronously
@@ -1457,6 +1468,7 @@
 \PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLS From URL
 \PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLSX From URL
+\PDF.co Web API\PDF To Excel API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From File (Node.js)
 \PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From File (Node.js) - Async API
 \PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From Uploaded File (Node.js)
@@ -1473,12 +1485,14 @@
 \PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLSX in JQuery - Async API
 \PDF.co Web API\PDF To Excel API\PHP\Convert PDF To XLSX Asynchronously
 \PDF.co Web API\PDF To Excel API\PHP\Convert PDF To XLSX From Uploaded File
+\PDF.co Web API\PDF To Excel API\PowerShell\Advanced Conversion Options
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLS From Uploaded File
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLS From URL
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLS From URL Asynchronously
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLSX From URL
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLSX From URL Asynchronously
+\PDF.co Web API\PDF To Excel API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From Uploaded File
 \PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From Uploaded File (WinForms)
 \PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From URL
@@ -1585,12 +1599,14 @@
 \PDF.co Web API\PDF To JSON API\PHP
 \PDF.co Web API\PDF To JSON API\PowerShell
 \PDF.co Web API\PDF To JSON API\VB.NET
+\PDF.co Web API\PDF To JSON API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From URL Asynchronously
 \PDF.co Web API\PDF To JSON API\cURL\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\Java\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\Java\Convert PDF To JSON From URL
+\PDF.co Web API\PDF To JSON API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From File (Node.js)
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From File (Node.js) - Async API
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From Uploaded File (Node.js)
@@ -1601,9 +1617,11 @@
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON in JQuery - Async API
 \PDF.co Web API\PDF To JSON API\PHP\Convert PDF To JSON Asynchronously
 \PDF.co Web API\PDF To JSON API\PHP\Convert PDF To JSON From Uploaded File
+\PDF.co Web API\PDF To JSON API\PowerShell\Advanced Conversion Options
 \PDF.co Web API\PDF To JSON API\PowerShell\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\PowerShell\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\PowerShell\Convert PDF To JSON From URL Asynchronously
+\PDF.co Web API\PDF To JSON API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From URL Asynchronously
@@ -1614,12 +1632,14 @@
 \PDF.co Web API\PDF To Text API\PHP
 \PDF.co Web API\PDF To Text API\PowerShell
 \PDF.co Web API\PDF To Text API\VB.NET
+\PDF.co Web API\PDF To Text API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From URL Asynchronously
 \PDF.co Web API\PDF To Text API\cURL\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\Java\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\Java\Convert PDF To Text From URL
+\PDF.co Web API\PDF To Text API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From File (Node.js)
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From File (Node.js) - Async API
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From Uploaded File (Node.js)
@@ -1630,9 +1650,11 @@
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text in JQuery - Async API
 \PDF.co Web API\PDF To Text API\PHP\Convert PDF To Text Asynchronously
 \PDF.co Web API\PDF To Text API\PHP\Convert PDF To Text From Uploaded File
+\PDF.co Web API\PDF To Text API\PowerShell\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From URL Asynchronously
+\PDF.co Web API\PDF To Text API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL Asynchronously
@@ -1643,12 +1665,14 @@
 \PDF.co Web API\PDF To XML API\PHP
 \PDF.co Web API\PDF To XML API\PowerShell
 \PDF.co Web API\PDF To XML API\VB.NET
+\PDF.co Web API\PDF To XML API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From URL Asynchronously
 \PDF.co Web API\PDF To XML API\cURL\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\Java\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\Java\Convert PDF To XML From URL
+\PDF.co Web API\PDF To XML API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From File (Node.js)
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From File (Node.js) - Async API
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From Uploaded File (Node.js)
@@ -1659,9 +1683,11 @@
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML in JQuery - Async API
 \PDF.co Web API\PDF To XML API\PHP\Convert PDF To XML Asynchronously
 \PDF.co Web API\PDF To XML API\PHP\Convert PDF To XML From Uploaded File
+\PDF.co Web API\PDF To XML API\PowerShell\Advanced Conversion Options
 \PDF.co Web API\PDF To XML API\PowerShell\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\PowerShell\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\PowerShell\Convert PDF To XML From URL Asynchronously
+\PDF.co Web API\PDF To XML API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL Asynchronously
