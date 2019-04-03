@@ -476,10 +476,13 @@
 \Document Parser SDK\_Sample Templates
 \Document Parser SDK\C#\Create Custom Template
 \Document Parser SDK\C#\Parse Simple Document
+\Document Parser SDK\C#\Parse with OCR
 \Document Parser SDK\VB.NET\Create Custom Template
 \Document Parser SDK\VB.NET\Parse Simple Document
+\Document Parser SDK\VB.NET\Parse with OCR
 \Document Parser SDK\VBScript and VB6\Create Custom Template
 \Document Parser SDK\VBScript and VB6\Parse Simple Document
+\Document Parser SDK\VBScript and VB6\Parse with OCR
 \Image To Video SDK\.NET Core
 \Image To Video SDK\ASP.NET
 \Image To Video SDK\C#
