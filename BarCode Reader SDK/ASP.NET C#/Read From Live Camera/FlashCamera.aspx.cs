@@ -118,6 +118,8 @@ public partial class uploadimage : System.Web.UI.Page
             barcodeTypeToScan.GS1DataBarStacked = true;
         else if (selectedItemText.IndexOf("I2OF5") > -1)
             barcodeTypeToScan.Interleaved2of5 = true;
+        else if (selectedItemText.IndexOf("INTELLIGENT MAIL") > -1)
+            barcodeTypeToScan.IntelligentMail = true;
         else if (selectedItemText.IndexOf("PATCH") > -1)
             barcodeTypeToScan.PatchCode = true;
         else if (selectedItemText.IndexOf("PDF 417") > -1)
