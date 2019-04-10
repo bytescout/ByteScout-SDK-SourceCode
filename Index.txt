@@ -1604,6 +1604,7 @@
 \PDF.co Web API\PDF To JSON API\VB.NET
 \PDF.co Web API\PDF To JSON API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From Uploaded File
+\PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From Uploaded File Asynchronously
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From URL Asynchronously
 \PDF.co Web API\PDF To JSON API\cURL\Convert PDF To JSON From URL
