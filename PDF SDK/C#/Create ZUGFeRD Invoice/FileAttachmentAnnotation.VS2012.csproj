@@ -49,8 +49,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\PDF Extractor SDK\Invoice.pdf">
-      <Link>Invoice.pdf</Link>
+    <None Include="Invoice.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

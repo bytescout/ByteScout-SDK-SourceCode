@@ -19,10 +19,10 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="..\..\..\PDF Extractor SDK\Invoice.pdf" Link="Invoice.pdf">
+    <None Include="ZUGFeRD-invoice.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="ZUGFeRD-invoice.xml">
+    <None Include="Invoice.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
