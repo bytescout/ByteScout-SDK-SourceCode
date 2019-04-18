@@ -2207,17 +2207,17 @@
 \Text Recognition SDK\C#\Use Image Preprocessing Filters
 \Text Recognition SDK\C#\Use Text Auto Corrections
 \Text Recognition SDK\PowerShell\Extract Text From Areas
-\Text Recognition SDK\PowerShell\Recognize Text from Image
-\Text Recognition SDK\PowerShell\Set Image Preprocessing Filters
-\Text Recognition SDK\PowerShell\Set Text Auto Corrections
+\Text Recognition SDK\PowerShell\Recognize Text From Document
+\Text Recognition SDK\PowerShell\Use Image Preprocessing Filters
+\Text Recognition SDK\PowerShell\Use Text Auto Corrections
 \Text Recognition SDK\VB.NET\Extract Text From Areas
-\Text Recognition SDK\VB.NET\Recognize Text from Image Document
-\Text Recognition SDK\VB.NET\Use Auto Corrections for Text
+\Text Recognition SDK\VB.NET\Recognize Text From Document
 \Text Recognition SDK\VB.NET\Use Image Preprocessing Filters
-\Text Recognition SDK\VBScript and VB6\Extract Text From Image Areas
-\Text Recognition SDK\VBScript and VB6\Recognize Text from Images
-\Text Recognition SDK\VBScript and VB6\Set Auto Corrections for Text
-\Text Recognition SDK\VBScript and VB6\Use Image Preprocessing Filters for Document
+\Text Recognition SDK\VB.NET\Use Text Auto Corrections
+\Text Recognition SDK\VBScript and VB6\Extract Text From Areas
+\Text Recognition SDK\VBScript and VB6\Recognize Text From Document
+\Text Recognition SDK\VBScript and VB6\Use Image Preprocessing Filters
+\Text Recognition SDK\VBScript and VB6\Use Text Auto Corrections
 \Watermarking SDK\ASP classic
 \Watermarking SDK\ASP.NET
 \Watermarking SDK\C#

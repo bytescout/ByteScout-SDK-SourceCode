@@ -14,12 +14,12 @@ try {
     # Load document (image or PDF)
     $textRecognizer.LoadDocument($InputDocument)
 
-    # Set location of "tessdata" folder containing language data files
-    $textRecognizer.OCRLanguageDataFolder = "c:\Program Files\ByteScout Text Recognition SDK\tessdata\"
+    # Set the location of OCR language data files
+    $textRecognizer.OCRLanguageDataFolder = "c:\Program Files\ByteScout Text Recognition SDK\ocrdata_best\"
 
     # Set OCR language.
-    # "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "tessdata" folder
-    # Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
+    # "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish, etc. - according to files in "ocrdata" folder
+    # Find more language files at https://github.com/bytescout/ocrdata
     $textRecognizer.OCRLanguage = "eng"
 
 
