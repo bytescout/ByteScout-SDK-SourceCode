@@ -1419,6 +1419,7 @@
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From URL
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From URL Asynchronously
 \PDF.co Web API\PDF Text Search API\C#
+\PDF.co Web API\PDF Text Search API\Java
 \PDF.co Web API\PDF Text Search API\JavaScript
 \PDF.co Web API\PDF Text Search API\PowerShell
 \PDF.co Web API\PDF Text Search API\VB.NET
@@ -1426,6 +1427,10 @@
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from URL
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from URL Asynchronously
+\PDF.co Web API\PDF Text Search API\Java\PDF Text Search from Uploaded File
+\PDF.co Web API\PDF Text Search API\Java\PDF Text Search from Uploaded File Asynchronously
+\PDF.co Web API\PDF Text Search API\Java\PDF Text Search from URL
+\PDF.co Web API\PDF Text Search API\Java\PDF Text Search from URL Asynchronously
 \PDF.co Web API\PDF Text Search API\JavaScript\PDF Text Search from File (Node js)
 \PDF.co Web API\PDF Text Search API\JavaScript\PDF Text Search from File (Node js) - Async API
 \PDF.co Web API\PDF Text Search API\JavaScript\PDF Text Search from Uploaded File (Node js)
