@@ -899,6 +899,7 @@
 \PDF SDK\C#\Convert Text Email to PDF
 \PDF SDK\C#\Convert Text Email with Attachments to PDF
 \PDF SDK\C#\Convert XML to PDF
+\PDF SDK\C#\Convert XPS to PDF
 \PDF SDK\C#\Create And Use Template In PDF
 \PDF SDK\C#\Create Button in PDF Form
 \PDF SDK\C#\Create Checkbox In PDF Form
@@ -969,6 +970,7 @@
 \PDF SDK\VB.NET\Convert Text Email to PDF
 \PDF SDK\VB.NET\Convert Text Email with Attachments to PDF
 \PDF SDK\VB.NET\Convert XML to PDF
+\PDF SDK\VB.NET\Convert XPS to PDF
 \PDF SDK\VB.NET\Create And Use Template In PDF
 \PDF SDK\VB.NET\Create Bookmarks in PDF
 \PDF SDK\VB.NET\Create Button in PDF Form
