@@ -24,13 +24,13 @@ invoiceParser.RegistrationKey = "demo"
 ' in .Auto mode (SDK automatically checks if needs to use OCR or not)
 invoiceParser.OCRMode = 1 ' OCRMode.Auto = 1
 
-' Set the location of "tessdata" folder containing language data files
-invoiceParser.OCRLanguageDataFolder = "c:\Program Files\ByteScout Invoice Parser SDK\tessdata"
+' Set the location of OCR language data files
+invoiceParser.OCRLanguageDataFolder = "c:\Program Files\ByteScout Invoice Parser SDK\ocrdata"
 			
 ' Set OCR language
+' "eng" for english, "deu" for German, "fra" for French, etc. - according to files in "ocrdata" folder
 invoiceParser.OCRLanguage = "eng"
-' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "tessdata" folder.
-' Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
+' Find more language files at https://github.com/bytescout/ocrdata
 
 ' Parse invoice data in JSON format
 invoiceParser.ParseDocument inputDocument, "output.json", 0 ' 0 = OutputFormat.JSON

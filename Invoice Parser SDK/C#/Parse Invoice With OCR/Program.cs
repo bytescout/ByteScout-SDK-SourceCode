@@ -31,13 +31,13 @@ namespace ParseWithOCR
                 // in .Auto mode (SDK automatically checks if needs to use OCR or not)
                 invoiceParser.OCRMode = OCRMode.Auto;
 
-                // Set the location of "tessdata" folder containing language data files
-                invoiceParser.OCRLanguageDataFolder = @".\tessdata\";
+                // Set the location of OCR language data files
+                invoiceParser.OCRLanguageDataFolder = @"c:\Program Files\ByteScout Invoice Parser SDK\ocrdata";
 
                 // Set OCR language
+                // "eng" for english, "deu" for German, "fra" for French, etc. - according to files in "ocrdata" folder
                 invoiceParser.OCRLanguage = "eng";
-                // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in /tessdata
-                // Find more language files at https://github.com/tesseract-ocr/tessdata/tree/3.04.00
+                // Find more language files at https://github.com/bytescout/ocrdata
 
 
                 Console.WriteLine($"Parsing \"{inputDocument1}\"...");

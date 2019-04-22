@@ -53,23 +53,7 @@
     <Content Include="..\..\DigitalOcean-scanned.jpg">
       <Link>DigitalOcean-scanned.jpg</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="c:\Program Files\ByteScout Invoice Parser SDK\tessdata\deu.traineddata">
-      <Link>tessdata\deu.traineddata</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="c:\Program Files\ByteScout Invoice Parser SDK\tessdata\eng.traineddata">
-      <Link>tessdata\eng.traineddata</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="c:\Program Files\ByteScout Invoice Parser SDK\tessdata\fra.traineddata">
-      <Link>tessdata\fra.traineddata</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="c:\Program Files\ByteScout Invoice Parser SDK\tessdata\spa.traineddata">
-      <Link>tessdata\spa.traineddata</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Content>    
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

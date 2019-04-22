@@ -97,22 +97,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="c:\Program Files\ByteScout Invoice Parser SDK\tessdata\deu.traineddata">
-      <Link>tessdata\deu.traineddata</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="c:\Program Files\ByteScout Invoice Parser SDK\tessdata\eng.traineddata">
-      <Link>tessdata\eng.traineddata</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="c:\Program Files\ByteScout Invoice Parser SDK\tessdata\fra.traineddata">
-      <Link>tessdata\fra.traineddata</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="c:\Program Files\ByteScout Invoice Parser SDK\tessdata\spa.traineddata">
-      <Link>tessdata\spa.traineddata</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
