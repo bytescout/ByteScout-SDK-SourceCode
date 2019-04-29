@@ -37,6 +37,7 @@
 \BarCode Reader SDK\ASP Classic\Read Barcode From Image
 \BarCode Reader SDK\ASP Classic\Read Barcode From PDF
 \BarCode Reader SDK\ASP.NET C#\Batch Read Barcodes To CSV
+\BarCode Reader SDK\ASP.NET C#\Decode page by page from PDF OR TIFF
 \BarCode Reader SDK\ASP.NET C#\Read Barcode
 \BarCode Reader SDK\ASP.NET C#\Read Barcodes From Image
 \BarCode Reader SDK\ASP.NET C#\Read Barcodes From PDF
@@ -44,6 +45,7 @@
 \BarCode Reader SDK\ASP.NET C#\Split PDF by Barcode
 \BarCode Reader SDK\ASP.NET C#\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\ASP.NET MVC C#\Batch Read Barcodes To CSV
+\BarCode Reader SDK\ASP.NET MVC C#\Decode page by page from PDF OR TIFF
 \BarCode Reader SDK\ASP.NET MVC C#\Read Barcode
 \BarCode Reader SDK\ASP.NET MVC C#\Read Barcodes From Image
 \BarCode Reader SDK\ASP.NET MVC C#\Read Barcodes From PDF
@@ -51,6 +53,7 @@
 \BarCode Reader SDK\ASP.NET MVC C#\Split PDF by Barcode
 \BarCode Reader SDK\ASP.NET MVC C#\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\ASP.NET VB\Batch Read Barcodes To CSV
+\BarCode Reader SDK\ASP.NET VB\Decode page by page from PDF OR TIFF
 \BarCode Reader SDK\ASP.NET VB\Read Barcode
 \BarCode Reader SDK\ASP.NET VB\Read Barcodes From Image
 \BarCode Reader SDK\ASP.NET VB\Read Barcodes From PDF
@@ -96,6 +99,8 @@
 \BarCode Reader SDK\C#\Decode MaxiCode
 \BarCode Reader SDK\C#\Decode MICR from Bank Check
 \BarCode Reader SDK\C#\Decode Numly
+\BarCode Reader SDK\C#\Decode page by page from PDF
+\BarCode Reader SDK\C#\Decode page by page from TIFF
 \BarCode Reader SDK\C#\Decode Patch Code
 \BarCode Reader SDK\C#\Decode PDF417
 \BarCode Reader SDK\C#\Decode PZN
@@ -121,6 +126,7 @@
 \BarCode Reader SDK\C#\Read Barcodes From TIFF
 \BarCode Reader SDK\C#\Read Checkboxes
 \BarCode Reader SDK\C#\Read vCard from QR Code
+\BarCode Reader SDK\C#\Reduce CPU Usage
 \BarCode Reader SDK\C#\Set Barcode Decoding Profiles
 \BarCode Reader SDK\C#\Split PDF Document By Found Barcode
 \BarCode Reader SDK\C#\WPF UI Example for barcode reading
@@ -179,6 +185,8 @@
 \BarCode Reader SDK\VB.NET\Decode MaxiCode
 \BarCode Reader SDK\VB.NET\Decode MICR from Bank Check
 \BarCode Reader SDK\VB.NET\Decode Numly
+\BarCode Reader SDK\VB.NET\Decode page by page from PDF
+\BarCode Reader SDK\VB.NET\Decode page by page from TIFF
 \BarCode Reader SDK\VB.NET\Decode Patch Code
 \BarCode Reader SDK\VB.NET\Decode PDF417
 \BarCode Reader SDK\VB.NET\Decode PZN
@@ -204,6 +212,7 @@
 \BarCode Reader SDK\VB.NET\Read Barcodes From TIFF
 \BarCode Reader SDK\VB.NET\Read Checkboxes From Image
 \BarCode Reader SDK\VB.NET\Read vCard from QR Code
+\BarCode Reader SDK\VB.NET\Reduce CPU Usage
 \BarCode Reader SDK\VB.NET\Split PDF Document By Found Barcode
 \BarCode Reader SDK\VB.NET\WPF UI Barcode Reading Example
 \BarCode Reader SDK\VB.NET\Batch Read Barcodes To CSV\BarcodeFiles
@@ -587,6 +596,7 @@
 \PDF Extractor SDK\ASP.NET C#\Make PDF Unsearchable
 \PDF Extractor SDK\ASP.NET C#\OCR (Optical Character Recognition) in PDF
 \PDF Extractor SDK\ASP.NET C#\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\C#\Batch check folder agianst JSON settings
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF
 \PDF Extractor SDK\C#\Compare PDF Documents
 \PDF Extractor SDK\C#\Data Masking in PDF
@@ -631,6 +641,7 @@
 \PDF Extractor SDK\C#\PDF files Parallel Processing
 \PDF Extractor SDK\C#\PDF Invoice Parsing
 \PDF Extractor SDK\C#\PDF To CSV
+\PDF Extractor SDK\C#\PDF To CSV (Merge multiline text to table cell)
 \PDF Extractor SDK\C#\PDF To CSV By Pages
 \PDF Extractor SDK\C#\PDF To JSON
 \PDF Extractor SDK\C#\PDF To JSON With Images
@@ -656,6 +667,7 @@
 \PDF Extractor SDK\C#\Split PDF Document
 \PDF Extractor SDK\C#\TextExtractor Progress Indication
 \PDF Extractor SDK\C#\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\C#\Batch check folder agianst JSON settings\InputFiles
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF\InputFiles
 \PDF Extractor SDK\C#\Index PDF Documents In Folder\Files
 \PDF Extractor SDK\C++\Compare PDF Documents
@@ -669,9 +681,11 @@
 \PDF Extractor SDK\Delphi\PDF Batch Processing
 \PDF Extractor SDK\Microsoft Excel\Extract Text From Coordinates from PDF
 \PDF Extractor SDK\Powershell\PDF To JSON
+\PDF Extractor SDK\VB.NET\Batch check folder agianst JSON settings
 \PDF Extractor SDK\VB.NET\Check If OCR Is Required for PDF
 \PDF Extractor SDK\VB.NET\Compare PDF Documents
 \PDF Extractor SDK\VB.NET\Convert PDF To CSV
+\PDF Extractor SDK\VB.NET\Convert PDF To CSV  (Merge multiline text to table cell)
 \PDF Extractor SDK\VB.NET\Convert PDF To CSV By Pages
 \PDF Extractor SDK\VB.NET\Convert PDF To JSON
 \PDF Extractor SDK\VB.NET\Convert PDF To JSON With Images
@@ -738,9 +752,11 @@
 \PDF Extractor SDK\VB.NET\Split Document
 \PDF Extractor SDK\VB.NET\TextExtractor Progress Indication
 \PDF Extractor SDK\VB.NET\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\VB.NET\Batch check folder agianst JSON settings\InputFiles
 \PDF Extractor SDK\VB.NET\Check If OCR Is Required for PDF\InputFiles
 \PDF Extractor SDK\VB.NET\Index PDF Documents In Folder\Files
 \PDF Extractor SDK\VB6\Convert PDF To CSV
+\PDF Extractor SDK\VB6\Convert PDF To CSV (Merge multiline text to table cell)
 \PDF Extractor SDK\VB6\Convert PDF To JSON
 \PDF Extractor SDK\VB6\Convert PDF To Text
 \PDF Extractor SDK\VB6\Convert PDF To XML
@@ -749,6 +765,7 @@
 \PDF Extractor SDK\VB6\Split PDF
 \PDF Extractor SDK\VBScript\Compare PDF Documents
 \PDF Extractor SDK\VBScript\Convert PDF To CSV
+\PDF Extractor SDK\VBScript\Convert PDF To CSV (Merge multiline text to table cell)
 \PDF Extractor SDK\VBScript\Convert PDF To CSV By Pages
 \PDF Extractor SDK\VBScript\Convert PDF To JSON
 \PDF Extractor SDK\VBScript\Convert PDF To JSON With Images
@@ -886,6 +903,7 @@
 \PDF SDK\C#\Add URI Link Action in PDF
 \PDF SDK\C#\Add Video Annotation in PDF
 \PDF SDK\C#\Add Watermarks to PDF
+\PDF SDK\C#\Convert Digital Photos to PDF
 \PDF SDK\C#\Convert DOCX to HTML
 \PDF SDK\C#\Convert DOCX to PDF
 \PDF SDK\C#\Convert Email with Attachments to PDF
@@ -905,6 +923,7 @@
 \PDF SDK\C#\Create Checkbox In PDF Form
 \PDF SDK\C#\Create ComboBox in PDF form
 \PDF SDK\C#\Create ListBox in PDF form
+\PDF SDK\C#\Create Multipage Tiff to PDF
 \PDF SDK\C#\Create New PDF Document
 \PDF SDK\C#\Create RadioButton in PDF form
 \PDF SDK\C#\Create Right To Left Text in PDF
@@ -962,6 +981,7 @@
 \PDF SDK\VB.NET\Add Text Field to PDF Form
 \PDF SDK\VB.NET\Add Video Annotation in PDF
 \PDF SDK\VB.NET\Add Watermarks to PDF
+\PDF SDK\VB.NET\Convert Digital Photos to PDF
 \PDF SDK\VB.NET\Convert DOCX to HTML
 \PDF SDK\VB.NET\Convert DOCX to PDF
 \PDF SDK\VB.NET\convert Email with attachemnts to PDF
@@ -982,11 +1002,13 @@
 \PDF SDK\VB.NET\Create CheckBox in PDF Form
 \PDF SDK\VB.NET\Create ComboBox in PDF Form
 \PDF SDK\VB.NET\Create ListBox in PDF Form
+\PDF SDK\VB.NET\Create Multipage Tiff to PDF
 \PDF SDK\VB.NET\Create New PDF Document
 \PDF SDK\VB.NET\Create Radio Button in PDF Form
 \PDF SDK\VB.NET\Create Submit Form Action in PDF
 \PDF SDK\VB.NET\Create Tables in PDF
 \PDF SDK\VB.NET\Create URI Link Action in PDF
+\PDF SDK\VB.NET\Create ZUGFeRD Invoice
 \PDF SDK\VB.NET\Draw Lines and Curves in PDF
 \PDF SDK\VB.NET\Draw Rectangles in PDF
 \PDF SDK\VB.NET\Draw Text String in PDF
@@ -1050,6 +1072,7 @@
 \PDF SDK\VBScript and VB6\Create Text Fields in PDF
 \PDF SDK\VBScript and VB6\Create Tiling Patterns Drawings in PDF
 \PDF SDK\VBScript and VB6\Create URI (Link) Action in PDF
+\PDF SDK\VBScript and VB6\Create ZUGFeRD Invoice
 \PDF SDK\VBScript and VB6\Draw Lines and Curves in PDF
 \PDF SDK\VBScript and VB6\Draw Rectangles in PDF
 \PDF SDK\VBScript and VB6\Draw String in PDF

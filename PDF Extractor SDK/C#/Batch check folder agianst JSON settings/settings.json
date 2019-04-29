@@ -1,0 +1,17 @@
+﻿{
+  "MainFolderName": "Outputs",
+  "Settings": [
+    {
+      "category": "Invoices",
+      "regex": "invoice|bill"
+    },
+    {
+      "category": "User Details",
+      "regex": "email"
+    },
+    {
+      "category": "Products",
+      "regex": "product|quantity"
+    }
+  ]
+}

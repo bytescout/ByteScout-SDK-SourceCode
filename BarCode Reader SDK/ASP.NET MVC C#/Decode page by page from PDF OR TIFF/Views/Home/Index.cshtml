@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    @using (Html.BeginForm("ProcessFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div>
+            <label>
+                Please select PDF/TIFF File:
+            </label>
+            &nbsp;&nbsp;&nbsp;
+            <input type="file" name="UploadedFile" />
+        </div>
+        <br />
+        <div>
+            <label>
+                Page No (to read barcode from):
+            </label>
+            &nbsp;&nbsp;&nbsp;
+            <input type="text" name="PageNo" value="1" />
+        </div>
+        <br />
+        <input type="submit" value="Upload file and read barcodes" />
+    }
+
+</body>
+</html>

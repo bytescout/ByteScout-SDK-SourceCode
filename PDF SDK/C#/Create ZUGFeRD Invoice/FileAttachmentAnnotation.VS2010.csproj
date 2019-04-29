@@ -6,7 +6,6 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{474F52FF-3928-44EA-8F6F-379E9DAA23FF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FileAttachmentAnnotationExample</RootNamespace>
     <AssemblyName>FileAttachmentAnnotationExample</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
@@ -41,7 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ZUGFeRD-invoice.xml">
