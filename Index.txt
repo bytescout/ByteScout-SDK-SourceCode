@@ -915,11 +915,16 @@
 \PDF SDK\C#\Draw Text String in PDF
 \PDF SDK\C#\Draw with Transparency in PDF
 \PDF SDK\C#\Fill Form 1099-INT
+\PDF SDK\C#\Fill Form W-4
+\PDF SDK\C#\Fill Form W-9
 \PDF SDK\C#\Fill PDF Form
 \PDF SDK\C#\Flatten PDF Form
 \PDF SDK\C#\Load Existing PDF Document
 \PDF SDK\C#\Merge Two PDF Documents
+\PDF SDK\C#\Read Form Values from 1099-INT form
 \PDF SDK\C#\Read Form Values from PDF form
+\PDF SDK\C#\Read Form Values from W-4 form
+\PDF SDK\C#\Read Form Values from W-9 form
 \PDF SDK\C#\Remove Password and Protection From PDF
 \PDF SDK\C#\Reorder Pages in PDF
 \PDF SDK\C#\Set Blend Mode for Drawing in PDF
@@ -991,12 +996,18 @@
 \PDF SDK\VB.NET\Draw with Color Profiles in PDF
 \PDF SDK\VB.NET\Draw with Graphics State in PDF
 \PDF SDK\VB.NET\Draw with Transparency in PDF
+\PDF SDK\VB.NET\Fill Form 1099-INT
+\PDF SDK\VB.NET\Fill Form W-4
+\PDF SDK\VB.NET\Fill Form W-9
 \PDF SDK\VB.NET\Fill PDF Form
 \PDF SDK\VB.NET\Flatten PDF Form
 \PDF SDK\VB.NET\Insert Images in PDF
 \PDF SDK\VB.NET\Load Existing PDF Document
 \PDF SDK\VB.NET\Merge Two PDF Documents
+\PDF SDK\VB.NET\Read Form Values from 1099-INT form
 \PDF SDK\VB.NET\Read Form Values from PDF Form
+\PDF SDK\VB.NET\Read Form Values from W-4 form
+\PDF SDK\VB.NET\Read Form Values from W-9 form
 \PDF SDK\VB.NET\Remove Protection from PDF
 \PDF SDK\VB.NET\Reorder Pages in PDF
 \PDF SDK\VB.NET\Rotate Text in PDF
