@@ -1836,6 +1836,7 @@
 \Screen Capturing SDK\C++ (unmanaged)\Capture Webm Video From Entire Screen in QT
 \Screen Capturing SDK\Java\Record Screen Video
 \Screen Capturing SDK\JavaScript\Capture Entire Screen Video
+\Screen Capturing SDK\Registry\Set Options
 \Screen Capturing SDK\VB.NET\Blackout Sensitive Info on Screen Video
 \Screen Capturing SDK\VB.NET\Capture From Entire Screen into WEBM Video
 \Screen Capturing SDK\VB.NET\Capture Screen Video and Add Time Stamp
