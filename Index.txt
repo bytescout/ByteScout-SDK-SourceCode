@@ -52,6 +52,7 @@
 \BarCode Reader SDK\ASP.NET MVC C#\Read From Live Camera
 \BarCode Reader SDK\ASP.NET MVC C#\Split PDF by Barcode
 \BarCode Reader SDK\ASP.NET MVC C#\Batch Read Barcodes To CSV\BarcodeFiles
+\BarCode Reader SDK\ASP.NET MVC C#\Read From Live Camera\app
 \BarCode Reader SDK\ASP.NET VB\Batch Read Barcodes To CSV
 \BarCode Reader SDK\ASP.NET VB\Decode page by page from PDF OR TIFF
 \BarCode Reader SDK\ASP.NET VB\Read Barcode
@@ -347,7 +348,7 @@
 \BarCode SDK\C#\WPF Barcode Control for Desktop
 \BarCode SDK\C#\WPF barcode Control for Web
 \BarCode SDK\C#\Generate Barcode from Service\ServiceController
-\BarCode SDK\C#\Generate Barcode from Service\WindowsService1
+\BarCode SDK\C#\Generate Barcode from Service\WindowsService
 \BarCode SDK\C++\Generate Barcode
 \BarCode SDK\C++\Generate Barcode Monochrome Bitmap
 \BarCode SDK\C++\Get Barcode To Memory Buffer
@@ -453,7 +454,7 @@
 \BarCode SDK\VB.NET\USPS Tray Label
 \BarCode SDK\VB.NET\WinForms Barcode Control
 \BarCode SDK\VB.NET\Generate Barcode from Service\ServiceController
-\BarCode SDK\VB.NET\Generate Barcode from Service\WindowsService1
+\BarCode SDK\VB.NET\Generate Barcode from Service\WindowsService
 \BarCode SDK\VB.NET\MaxiCode Mode 2-3 (Postal)\PostalMaxiCode
 \BarCode SDK\VBScript\Add Barcode to PDF
 \BarCode SDK\VBScript\Add Barcodes To Image
