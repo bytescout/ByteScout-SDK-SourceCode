@@ -40,6 +40,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bytescout.BarCode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Bytescout BarCode SDK\net4.00\Bytescout.BarCode.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Bytescout.BarCode.WinForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Bytescout BarCode SDK\net4.00\Bytescout.BarCode.WinForms.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
