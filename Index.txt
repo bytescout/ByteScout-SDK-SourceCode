@@ -810,6 +810,7 @@
 \PDF Generator SDK for Javascript\Javascript\Add Image To PDF From Canvas
 \PDF Generator SDK for Javascript\Javascript\Add Image To PDF From URL
 \PDF Generator SDK for Javascript\Javascript\Add Text In Columns To PDF
+\PDF Generator SDK for Javascript\Javascript\draw invoice spanning multiple page
 \PDF Generator SDK for Javascript\Javascript\Draw Invoice With Logo And Table
 \PDF Generator SDK for Javascript\Javascript\Draw Line In PDF
 \PDF Generator SDK for Javascript\Javascript\Draw Rectangle In PDF
