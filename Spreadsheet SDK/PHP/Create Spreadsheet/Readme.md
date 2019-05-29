@@ -1,12 +1,23 @@
+## How to create spreadsheet in PHP with ByteScout Spreadsheet SDK
 
-<h2>How to create spreadsheet in PHP with Spreadsheet SDK</h2>
+### The tutorial shows how to create spreadsheet in PHP
 
-<h3>This code in PHP to create spreadsheet with this how to tutorial</h3>
-Source code documentation samples are included for the purposes of providing quick and easy way to add a required functionality into your application. Here you may find thousands pre-made source code pieces for easy implementation in your own programming projects. The documentation and coding tutorials are designed to help you to implement and test the features on your side without need to write your own code.
-Today you are going to learn how to create spreadsheet in PHP. Today we will explain the steps and algorithm of implementing create spreadsheet task and how to make it work in your application. We’ve created and updating regularly our sample code library so you may quickly learn how to create spreadsheet in PHP.
-Fast, smooth application programming interfaces provided by Spreadsheet SDK for PHP plus the instruction and the PHP code below will help you to quickly learn how to create spreadsheet and you will save lot of time on writing and testing code as you may just take the code below and use it in your application. This rich sample source code in PHP for Spreadsheet SDK includes the number of functions and actions you should do calling the API to create spreadsheet. PHP code samples for PHP developers helps to speed up the application code writing when you use ByteScout products such as Spreadsheet SDK.
+The sample source codes on this page shows how to create spreadsheet in PHP. What is ByteScout Spreadsheet SDK? It is the SDK component for writing, reading, modifying and calculating Excel and CSV spreadsheets. Can calculate and reculculate formulas with Excel installed. You may import or export data to and from CSV, XML, JSON. Supports export to databases, arrays, streams. It can help you to create spreadsheet in your PHP application.
 
-In order to implement the functionality to create spreadsheet, you should copy and paste this basic sample code for PHP below into your code editor, compile and run your application. To create spreadsheet in your PHP project or application you may simply copy & paste the code and then run your app! This SDK sample code should be copied and pasted into your application’s code to create spreadsheet.
-Further testing and enhancement of the code will make it more vigorous and will allow the function to be tested and working properly with your data. Enjoy writing a code with ready to use sample PHP codes to create spreadsheet using Spreadsheet SDK. Enjoy writing a code with ready to use sample PHP codes to create spreadsheet using Spreadsheet SDK in PHP.
+You will save a lot of time on writing and testing code as you may just take the PHP code from ByteScout Spreadsheet SDK for create spreadsheet below and use it in your application. In your PHP project or application you may simply copy & paste the code and then run your app! Detailed tutorials and documentation are available along with installed ByteScout Spreadsheet SDK if you'd like to dive deeper into the topic and the details of the API.
 
-Our website provides free trial version download of Spreadsheet SDK and this free trial version includes lot of source code samples to help you with your PHP application. ByteScout free trial version is available for download from our website and free trial also includes programming tutorials along with source code samples. Trial version of ByteScout is available for free download from our website, it includes this and other source code samples for PHP and other programming languages.
+You can download free trial version of ByteScout Spreadsheet SDK from our website to see and try many others source code samples for PHP.
+
+## Contact Customer Support
+
+Click here to get in touch via our secure online customer support desk [please click here](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Spreadsheet%20SDK%20Question)
+
+or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Spreadsheet%20SDK%20Question) 
+
+## Free Trial
+
+[Get 90 Day Free Trial On-Premise SDK](https://bytescout.com/download/web-installer?utm_source=github-readme)
+
+or if you are looking for pay as you go online Web API:
+
+[Get Your Free API Key for PDF.co Web API](https://pdf.co/documentation/api?utm_source=github-readme)

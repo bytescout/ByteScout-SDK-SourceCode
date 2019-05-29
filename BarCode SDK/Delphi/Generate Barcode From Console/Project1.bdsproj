@@ -215,7 +215,6 @@
       <Excluded_Packages Name="X:\My_projects\CODE\delphi-compo\bpl\tbx_d10.bpl">Toolbar2000 -- TBX Extensions (Alex Denisov)</Excluded_Packages>
       <Excluded_Packages Name="X:\My_projects\CODE\delphi-compo\bpl\tb2k_d10.bpl">Toolbar2000 Components (Jordan Russell)</Excluded_Packages>
       <Excluded_Packages Name="c:\program files\borland\bds\4.0\Bin\dclie100.bpl">Internet Explorer Components</Excluded_Packages>
-      <Excluded_Packages Name="X:\My_projects\CODE\delphi-compo\bpl\ShockwaveFlashObjects.bpl">Shockwave Flash Objects</Excluded_Packages>
     </Excluded_Packages>
   </Delphi.Personality>
 	<StarTeamAssociation></StarTeamAssociation>

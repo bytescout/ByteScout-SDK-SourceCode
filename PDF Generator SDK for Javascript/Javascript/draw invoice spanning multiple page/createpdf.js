@@ -110,50 +110,6 @@ function CreatePDF(IsInternetExplorer8OrLower) {
     pdf.textAdd(395, (PageHeightUtilized + 50), 'Signature', 0);
     pdf.graphicsDrawLine(450, (PageHeightUtilized + 50), 570, (PageHeightUtilized + 50));
 
-
-    /*
-    
-        // draw table header
-        pdf.graphicsDrawRectangle(50, 200, 520, 220);
-        pdf.graphicsDrawLine(50, 220, 570, 220);
-        pdf.textSetAlign(BytescoutPDF.CENTER);
-    
-        // add 'Description' column
-        pdf.textSetBox(50, 200, 220, 20);
-        pdf.textAddToBox('Description');
-        pdf.graphicsDrawLine(270, 200, 270, 420);
-    
-        // add 'Quantity' column
-        pdf.textSetBox(270, 200, 80, 20);
-        pdf.textAddToBox('Quantity');
-        pdf.graphicsDrawLine(350, 200, 350, 420);
-    
-        // add 'Price' column
-        pdf.textSetBox(350, 200, 100, 20);
-        pdf.textAddToBox('Price');
-        pdf.graphicsDrawLine(450, 200, 450, 420);
-    
-        // add 'Amount' column
-        pdf.textSetBox(450, 200, 120, 20);
-        pdf.textAddToBox('Amount');
-
-        pdf.textSetAlign(BytescoutPDF.LEFT);
-    
-        // fill table content
-        for (var row = 0; row < 10; row++) {
-            pdf.textSetBox(50, 220 + row * 20, 220, 20);
-            pdf.textAddToBox('ITEM ' + row);
-    
-            pdf.textSetBox(100, 220 + row * 20, 220, 20);
-            pdf.textAddToBox('' + (220 + (row * 20)));
-    
-            pdf.graphicsDrawLine(50, 240 + row * 20, 570, 240 + row * 20);
-        }
-    
-        // add signature
-        pdf.textAdd(390, 470, 'Signature', 0);
-        pdf.graphicsDrawLine(450, 470, 570, 470);
-    */
     // return BytescoutPDF object instance
     return pdf;
 }

@@ -1,12 +1,23 @@
+## How to generate slide show in .NET Core with ByteScout Image To Video SDK
 
-<h2>How to generate slide show in .NET Core with Image To Video SDK</h2>
+### Tutorial on how to generate slide show in .NET Core
 
-<h3>How to generate slide show in .NET Core</h3>.
-Writing of the code to generate slide show in .NET Core can be done by developers of any level using Image To Video SDK. Source code documentation samples are included for the purposes of providing quick and easy way to add a required functionality into your application. On this page you will learn from code samples for programming in .NET Core.
-Sample source codes below will show you how to cope with a difficult task like generate slide show in .NET Core. Today you are going to learn how to generate slide show in .NET Core. We’ve created and updating regularly our sample code library so you may quickly learn how to generate slide show in .NET Core.
-Fast, smooth application programming interfaces provided by Image To Video SDK for .NET Core plus the instruction and the .NET Core code below will help you to quickly learn how to generate slide show and you will save lot of time on writing and testing code as you may just take the code below and use it in your application. .NET Core code snippet like this for Image To Video SDK works best when you need to quickly add generate slide show in your .NET Core application. The SDK samples like this one below explains how to quickly make your application to do generate slide show in .NET Core with a help of Image To Video SDK.
+We made thousands of pre-made source code pieces for easy implementation in your own programming projects. ByteScout Image To Video SDK is the library for conversion of images into video slideshow. Provides built-in support for more than hundred of 2D and 3D transition effects. Output formats supported are AVI,WMV and WEBM video files. You may adjust output video size, quality, framerate and add audio. It can be used to generate slide show using .NET Core.
 
-To generate slide show in your .NET Core project or application you may simply copy & paste the code and then run your app! Follow the instructions from the scratch to work within Image To Video SDK programming SDK to generate slide show. .NET Core sample code is all you need to generate slide show in your application, just copy and paste the code into your .NET Core application, add references (if needs to) and you are all set!
-Use of Image To Video SDK in .NET Core is also explained in the documentation included along with the product. This basic programming language sample code for .NET Core will do the whole work for you to generate slide show. Test .NET Core sample code examples whether they respond your needs and requirements for the project.
+Fast application programming interfaces of ByteScout Image To Video SDK for .NET Core plus the instruction and the code below will help you quickly learn how to generate slide show. Just copy and paste the code into your .NET Core application’s code and follow the instruction. Further enhancement of the code will make it more vigorous.
 
-Our website provides free trial version download of Image To Video SDK and this free trial version includes lot of source code samples to help you with your .NET Core project. Our website provides free trial version download of Image To Video SDK and this free trial version includes lot of source code samples to help you with your .NET Core application. Trial version of ByteScout is available for free download from our website, it includes this and other source code samples for .NET Core and other programming languages.
+Free trial version of ByteScout Image To Video SDK is available for download from our website. Get it to try other source code samples for .NET Core.
+
+## Contact Customer Support
+
+Click here to get in touch via our secure online customer support desk [please click here](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Image%20To%20Video%20SDK%20Question)
+
+or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Image%20To%20Video%20SDK%20Question) 
+
+## Free Trial
+
+[Get 90 Day Free Trial On-Premise SDK](https://bytescout.com/download/web-installer?utm_source=github-readme)
+
+or if you are looking for pay as you go online Web API:
+
+[Get Your Free API Key for PDF.co Web API](https://pdf.co/documentation/api?utm_source=github-readme)

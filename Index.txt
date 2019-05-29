@@ -257,9 +257,7 @@
 \BarCode SDK\ASP.NET\Generate Barcode in WebImage Control in VB.NET
 \BarCode SDK\ASP.NET\Generate Barcode With WebImage Control in C#
 \BarCode SDK\ASP.NET\Generate SSRS Reports VS 2008
-\BarCode SDK\ASP.NET\Generate Barcode in ASP.NET MVC\Generate barcode in aspnet mvc
-\BarCode SDK\ASP.NET\Generate Barcode in ASP.NET MVC\packages
-\BarCode SDK\ASP.NET\Generate Barcode in ASP.NET MVC\Generate barcode in aspnet mvc\Helpers
+\BarCode SDK\ASP.NET\Generate Barcode in ASP.NET MVC\Helpers
 \BarCode SDK\C#\Add Barcode Checksum
 \BarCode SDK\C#\Add Barcode Checksum To Caption
 \BarCode SDK\C#\Add Barcode To Image
@@ -455,7 +453,6 @@
 \BarCode SDK\VB.NET\WinForms Barcode Control
 \BarCode SDK\VB.NET\Generate Barcode from Service\ServiceController
 \BarCode SDK\VB.NET\Generate Barcode from Service\WindowsService
-\BarCode SDK\VB.NET\MaxiCode Mode 2-3 (Postal)\PostalMaxiCode
 \BarCode SDK\VBScript\Add Barcode to PDF
 \BarCode SDK\VBScript\Add Barcodes To Image
 \BarCode SDK\VBScript\Add Barcodes To New PDF
@@ -924,6 +921,7 @@
 \PDF SDK\C#\Create Button in PDF Form
 \PDF SDK\C#\Create Checkbox In PDF Form
 \PDF SDK\C#\Create ComboBox in PDF form
+\PDF SDK\C#\Create Invoice Spanning Multiple Page
 \PDF SDK\C#\Create ListBox in PDF form
 \PDF SDK\C#\Create Multipage Tiff to PDF
 \PDF SDK\C#\Create New PDF Document
@@ -1003,6 +1001,7 @@
 \PDF SDK\VB.NET\Create Button in PDF Form
 \PDF SDK\VB.NET\Create CheckBox in PDF Form
 \PDF SDK\VB.NET\Create ComboBox in PDF Form
+\PDF SDK\VB.NET\Create Invoice Spanning Multiple Page
 \PDF SDK\VB.NET\Create ListBox in PDF Form
 \PDF SDK\VB.NET\Create Multipage Tiff to PDF
 \PDF SDK\VB.NET\Create New PDF Document
@@ -2202,7 +2201,6 @@
 \SWF To Video SDK\C#\SWF with Data to WEBM
 \SWF To Video SDK\C#\SWF with Data to WMV
 \SWF To Video SDK\C#\Video Length Setting
-\SWF To Video SDK\C#\SWF to WMV with Live Preview\PreviewContext
 \SWF To Video SDK\C++\SWF To Video
 \SWF To Video SDK\C++\SWF To WEBM
 \SWF To Video SDK\VB.NET\32-bit RGBA AVI
@@ -2298,37 +2296,6 @@
 \Watermarking SDK\C#\Show Progress Indication
 \Watermarking SDK\C#\Use Actual Units to Resize Image
 \Watermarking SDK\C#\Use EXIF Macros for Watermarks
-\Watermarking SDK\C#\Add Advanced Text Watermark\TextFitsPage
-\Watermarking SDK\C#\Add Annotation Watermark to Image\Annotation
-\Watermarking SDK\C#\Add Date Time to Image\DateTime
-\Watermarking SDK\C#\Add Date Time to Image\DateTime\DateTime
-\Watermarking SDK\C#\Add Diagonal Stamp to Image\StampFitsPageDiagonal
-\Watermarking SDK\C#\Add Diagonal Text Watermark\TextFitsPageDiagonal
-\Watermarking SDK\C#\Add File Name Caption to Image\FileName
-\Watermarking SDK\C#\Add Logo and Text to Image\LogoImageWithText
-\Watermarking SDK\C#\Add Logo and Text to Image with Options\LogoImageWithText
-\Watermarking SDK\C#\Add Logo to Image\LogoImage
-\Watermarking SDK\C#\Add Logo to Image with Options\LogoImage
-\Watermarking SDK\C#\Add Simple Text Watermark\SimpleText
-\Watermarking SDK\C#\Add Simple Text Watermark to Image\SimpleText
-\Watermarking SDK\C#\Add Simple Watermark\hello_world_cs
-\Watermarking SDK\C#\Add Stamp for Whole Page\StampFitsPage
-\Watermarking SDK\C#\Add Stamp to Image\Stamps
-\Watermarking SDK\C#\Add Tiled Diagonal Text Watermark\TiledTextDiagonal
-\Watermarking SDK\C#\Add Tiled Text Watermark\TiledText
-\Watermarking SDK\C#\Add Tiled Vertical Text Watermark\TiledTextVertical
-\Watermarking SDK\C#\Add Vertical Text Watermark\SimpleVerticalText
-\Watermarking SDK\C#\Add Vertical Text Watermark with Options\SimpleVerticalText
-\Watermarking SDK\C#\Add Whole Page Text Watermark\TextFitsPage
-\Watermarking SDK\C#\Batch Watermark Multiple Images\BatchWatermarking
-\Watermarking SDK\C#\Change DPI Image Resolution\Change DPI
-\Watermarking SDK\C#\Resize Image as Fit Within\Fit within resize
-\Watermarking SDK\C#\Resize Image in Percentage\Percentage resize
-\Watermarking SDK\C#\Resize Image in Pixels\Pixels resize
-\Watermarking SDK\C#\Set Advanced Annotation Based Watermark\Annotation
-\Watermarking SDK\C#\Set Diagonal Text Watermark Options\TextFitsPageDiagonal
-\Watermarking SDK\C#\Use Actual Units to Resize Image\Actual units resize
-\Watermarking SDK\C#\Use EXIF Macros for Watermarks\AnnotationMacros
 \Watermarking SDK\VB.NET\Add and Show Progress Indicator
 \Watermarking SDK\VB.NET\Add Annotation Watermark
 \Watermarking SDK\VB.NET\Add Annotation Watermark with Options
@@ -2361,38 +2328,6 @@
 \Watermarking SDK\VB.NET\Set Options for Text Watermark
 \Watermarking SDK\VB.NET\Set Options for Tiled Text Watermark
 \Watermarking SDK\VB.NET\Use Macros for Watermarks
-\Watermarking SDK\VB.NET\Add Annotation Watermark with Options\Annotation preset (advanced settings) (VB.NET)
-\Watermarking SDK\VB.NET\Add Colored Stamp to Image\StampFitsPageColor (VB.NET)
-\Watermarking SDK\VB.NET\Add Date Time to Image\DateTime
-\Watermarking SDK\VB.NET\Add Diagonal Stamp Watermark\StampFitsPageDiagonal
-\Watermarking SDK\VB.NET\Add Diagonal Text Watermark\TextFitsPageDiagonal
-\Watermarking SDK\VB.NET\Add Diagonal Text with Images with Options\TextFitsPageDiagonal (VB.NET)
-\Watermarking SDK\VB.NET\Add Filename to Image\FileName (VB.NET)
-\Watermarking SDK\VB.NET\Add Logo and Text to Image\LogoImageWithText
-\Watermarking SDK\VB.NET\Add Logo and Text to Image\LogoImageWithText preset (VB.NET)
-\Watermarking SDK\VB.NET\Add Logo and Text to Images with Options\LogoImageWithText preset (VB.NET)
-\Watermarking SDK\VB.NET\Add Logo to Image\LogoImage (VB.NET)
-\Watermarking SDK\VB.NET\Add Simple Text Watermark\SimpleText (VB.NET)
-\Watermarking SDK\VB.NET\Add Simple Text Watermark to Image with Options\SimpleText (VB.NET)
-\Watermarking SDK\VB.NET\Add Simple Watermark\hello_world_vb
-\Watermarking SDK\VB.NET\Add Stamp for Whole Image\StampFitsPage
-\Watermarking SDK\VB.NET\Add Stamp Watermark to Image\screenshots
-\Watermarking SDK\VB.NET\Add Stamp Watermark to Image\Stamps
-\Watermarking SDK\VB.NET\Add Tiled Diagonal Text Watermark to Image\TiledTextDiagonal
-\Watermarking SDK\VB.NET\Add Tiled Text Watermark\TiledText
-\Watermarking SDK\VB.NET\Add Tiled Vertical Text Watermark\TiledTextVertical
-\Watermarking SDK\VB.NET\Add Vertical Text Watermark\SimpleVerticalText (VB.NET)
-\Watermarking SDK\VB.NET\Add Vertical Text with Options\SimpleVerticalText (VB.NET)
-\Watermarking SDK\VB.NET\Add Watermark and Fit within Resize\Fit within resize VB.NET
-\Watermarking SDK\VB.NET\Add While Page Text Watermark to Image\TextFitsPage
-\Watermarking SDK\VB.NET\Batch Watermark Set of Images\Batch watermarking
-\Watermarking SDK\VB.NET\Change Image Resolution in DPI\Change DPI VB.NET
-\Watermarking SDK\VB.NET\Resize Image in Actual Units\Actual units resize VB.NET
-\Watermarking SDK\VB.NET\Resize Image in Percents\Percentage resize VB.NET
-\Watermarking SDK\VB.NET\Resize Image in Pixels\Pixels resize VB.NET
-\Watermarking SDK\VB.NET\Set Options for Text Watermark\TextFitsPage (VB.NET)
-\Watermarking SDK\VB.NET\Set Options for Tiled Text Watermark\TiledText (VB.NET)
-\Watermarking SDK\VB.NET\Use Macros for Watermarks\AnnotationMacros  (VB.NET)
 \Watermarking SDK\VBScript\Add Annotation Watermarks with Macros
 \Watermarking SDK\VBScript\Add Watermark to Image
 \Watermarking SDK\VBScript\Set Adjustments for Watermark on Image

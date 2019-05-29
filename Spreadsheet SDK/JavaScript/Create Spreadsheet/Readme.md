@@ -1,12 +1,23 @@
+## How to create spreadsheet in JavaScript and ByteScout Spreadsheet SDK
 
-<h2>How to create spreadsheet in JavaScript using Spreadsheet SDK</h2>
+### Tutorial on how to create spreadsheet in JavaScript
 
-<h3>How to create spreadsheet in JavaScript</h3>.
-ByteScout tutorials explain the code material for beginners and advanced programmers. The documentation and coding tutorials are designed to help you to implement and test the features on your side without need to write your own code. On this page you will learn from code samples for programming in JavaScript.
-Today you are going to learn how to create spreadsheet in JavaScript. Sample source codes below will show you how to cope with a difficult task like create spreadsheet in JavaScript. We’ve created and updating regularly our sample code library so you may quickly learn how to create spreadsheet in JavaScript.
-The SDK samples like this one below explains how to quickly make your application to do create spreadsheet in JavaScript with a help of Spreadsheet SDK. Fast, smooth application programming interfaces provided by Spreadsheet SDK for JavaScript plus the instruction and the JavaScript code below will help you to quickly learn how to create spreadsheet and you will save lot of time on writing and testing code as you may just take the code below and use it in your application. This rich sample source code in JavaScript for Spreadsheet SDK includes the number of functions and actions you should do calling the API to create spreadsheet.
+This sample source code below will demonstrate you how to create spreadsheet in JavaScript. Want to create spreadsheet in your JavaScript app? ByteScout Spreadsheet SDK is designed for it. ByteScout Spreadsheet SDK is the SDK to create, read, modify and calculate spreadsheets. Formula calculations are supported, import and export to and from JSON, CSV, XML, databases, arrays.
 
-To create spreadsheet in your JavaScript project or application you may simply copy & paste the code and then run your app! JavaScript sample code is all you need to create spreadsheet in your application, just copy and paste the code into your JavaScript application, add references (if needs to) and you are all set! This SDK sample code should be copied and pasted into your application’s code to create spreadsheet.
-Enjoy writing a code with ready to use sample JavaScript codes to create spreadsheet using Spreadsheet SDK. Use of Spreadsheet SDK in JavaScript is also explained in the documentation included along with the product. You can use these JavaScript sample examples in one or many applications.
+This code snippet below for ByteScout Spreadsheet SDK works best when you need to quickly create spreadsheet in your JavaScript application. In order to implement the functionality, you should copy and paste this code for JavaScript below into your code editor with your app, compile and run your application. Code testing will allow the function to be tested and work properly with your data.
 
-ByteScout free trial version is available for download from our website and free trial also includes programming tutorials along with source code samples. Our website provides free trial version download of Spreadsheet SDK and this free trial version includes lot of source code samples to help you with your JavaScript project. Trial version of ByteScout is available for free download from our website, it includes this and other source code samples for JavaScript and other programming languages.
+You can download free trial version of ByteScout Spreadsheet SDK from our website to see and try many others source code samples for JavaScript.
+
+## Contact Customer Support
+
+Click here to get in touch via our secure online customer support desk [please click here](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Spreadsheet%20SDK%20Question)
+
+or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Spreadsheet%20SDK%20Question) 
+
+## Free Trial
+
+[Get 90 Day Free Trial On-Premise SDK](https://bytescout.com/download/web-installer?utm_source=github-readme)
+
+or if you are looking for pay as you go online Web API:
+
+[Get Your Free API Key for PDF.co Web API](https://pdf.co/documentation/api?utm_source=github-readme)

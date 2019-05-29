@@ -1,12 +1,23 @@
+## How to record screen video in Java using ByteScout Screen Capturing SDK
 
-<h2>How to record screen video in Java using Screen Capturing SDK</h2>
+### Write code in Java to record screen video with this step-by-step tutorial
 
-<h3>Tutorial on how to record screen video in Java</h3>.
-The documentation and coding tutorials are designed to help you to implement and test the features on your side without need to write your own code. Source code documentation samples are included for the purposes of providing quick and easy way to add a required functionality into your application. On this page you will learn from code samples for programming in Java.
-We’ve created and updating regularly our sample code library so you may quickly learn how to record screen video in Java. Today we will explain the steps and algorithm of implementing record screen video task and how to make it work in your application. The sample source codes on this page will demonstrate you how to record screen video in Java.
-Java code samples for Java developers helps to speed up the application code writing when you use ByteScout products such as Screen Capturing SDK. Fast, smooth application programming interfaces provided by Screen Capturing SDK for Java plus the instruction and the Java code below will help you to quickly learn how to record screen video and you will save lot of time on writing and testing code as you may just take the code below and use it in your application. Java code snippet like this for Screen Capturing SDK works best when you need to quickly add record screen video in your Java application.
+With this source code sample you may quickly learn how to record screen video in Java. ByteScout Screen Capturing SDK is the SDK for developers for quick implementation of screen video recording. The SDK records screen into video or into a series of screenshots. Can also record audio. Saves video into AVI,WMV and Google's WebM. Output video quality, size, resolution or framerate can be adjusted easily. Provides additional tools for privacy features like blacking out on scren areas with sensitive information on screen right during recording. Supports web camera as input and can add instant text and images into video output and you can use it to record screen video with Java.
 
-Java sample code is all you need to record screen video in your application, just copy and paste the code into your Java application, add references (if needs to) and you are all set! In order to implement the functionality to record screen video, you should copy and paste this basic sample code for Java below into your code editor, compile and run your application. To record screen video in your Java project or application you may simply copy & paste the code and then run your app!
-Further testing and enhancement of the code will make it more vigorous and will allow the function to be tested and working properly with your data. Enjoy writing a code with ready to use sample Java codes to record screen video using Screen Capturing SDK. This basic programming language sample code for Java will do the whole work for you to record screen video.
+You will save a lot of time on writing and testing code as you may just take the Java code from ByteScout Screen Capturing SDK for record screen video below and use it in your application. This Java sample code is all you need for your app. Just copy and paste the code, add references (if needs to) and you are all set! Test Java sample code examples whether they respond your needs and requirements for the project.
 
-Our website provides free trial version download of Screen Capturing SDK and this free trial version includes lot of source code samples to help you with your Java application. Our website provides free trial version download of Screen Capturing SDK and this free trial version includes lot of source code samples to help you with your Java project. Trial version of ByteScout is available for free download from our website, it includes this and other source code samples for Java and other programming languages.
+ByteScout Screen Capturing SDK free trial version is available on our website. Java and other programming languages are supported.
+
+## Contact Customer Support
+
+Click here to get in touch via our secure online customer support desk [please click here](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Screen%20Capturing%20SDK%20Question)
+
+or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
+
+## Free Trial
+
+[Get 90 Day Free Trial On-Premise SDK](https://bytescout.com/download/web-installer?utm_source=github-readme)
+
+or if you are looking for pay as you go online Web API:
+
+[Get Your Free API Key for PDF.co Web API](https://pdf.co/documentation/api?utm_source=github-readme)
