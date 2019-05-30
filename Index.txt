@@ -921,6 +921,7 @@
 \PDF SDK\C#\Create Button in PDF Form
 \PDF SDK\C#\Create Checkbox In PDF Form
 \PDF SDK\C#\Create ComboBox in PDF form
+\PDF SDK\C#\Create Invoice PDF from HTML
 \PDF SDK\C#\Create Invoice Spanning Multiple Page
 \PDF SDK\C#\Create ListBox in PDF form
 \PDF SDK\C#\Create Multipage Tiff to PDF
@@ -1001,6 +1002,7 @@
 \PDF SDK\VB.NET\Create Button in PDF Form
 \PDF SDK\VB.NET\Create CheckBox in PDF Form
 \PDF SDK\VB.NET\Create ComboBox in PDF Form
+\PDF SDK\VB.NET\Create Invoice PDF from HTML
 \PDF SDK\VB.NET\Create Invoice Spanning Multiple Page
 \PDF SDK\VB.NET\Create ListBox in PDF Form
 \PDF SDK\VB.NET\Create Multipage Tiff to PDF
