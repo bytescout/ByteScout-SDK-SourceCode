@@ -1,12 +1,12 @@
 ## How to generate barcode from service for service controller in VB.NET and ByteScout Barcode SDK
 
-### Step By Step Tutorial: how to generate barcode from service for service controller in VB.NET
+### See how to generate barcode from service to have service controller in VB.NET
 
-Writing of the code to generate barcode from service in VB.NET can be done by developers of any level using ByteScout Barcode SDK. ByteScout Barcode SDK was made to help with service controller in VB.NET. ByteScout Barcode SDK is the fully featured library to generate barcodes. Supports QR Code, Code 39, Code 128, UPC, GS1, GS-128, PDF417, Datamatrix and many other barcode types. Includes various options for barcode generation to ensure output quality, add barcodes to new or existing pdf files and images.
+The sample source codes on this page will demonstrate you how to make service controller in VB.NET. ByteScout Barcode SDK was made to help with service controller in VB.NET. ByteScout Barcode SDK is the robost library (Software Development Kit) that is designed for automatic generation of high-quality barcodes for printing, electronic documents and pdf. All popular barcode types are supported from Code 39 and Code 129 to QR Code, UPC, GS1, GS-128, Datamatrix, PDF417, Maxicode and many others. Provides support for full customization of fonts, colors, output and printing sizes. Special tools are included to verify output quality and printing quality. Can add generated barcode into new or existing documents, images and PDF.
 
-The SDK samples like this one below explain how to quickly make your application do service controller in VB.NET with the help of ByteScout Barcode SDK. For implimentation of this functionality, please copy and paste code below into your app using code editor. Then compile and run your app. Test VB.NET sample code examples whether they respond your needs and requirements for the project.
+You will save a lot of time on writing and testing code as you may just take the code below and use it in your application. Open your VB.NET project and simply copy & paste the code and then run your app! Further enhancement of the code will make it more vigorous.
 
-ByteScout free trial version is available for FREE download from our website. Programming tutorials along with source code samples are included.
+ByteScout Barcode SDK - free trial version is on available our website. Also, there are other code samples to help you with your VB.NET application included into trial version.
 
 ## Contact Customer Support
 

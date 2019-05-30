@@ -1,12 +1,12 @@
 ## How to generate barcode from service for service controller in C# with ByteScout Barcode SDK
 
-### Tutorial: how to generate barcode from service for service controller in C#
+### See how to generate barcode from service to have service controller in C#
 
-Today we will explain the steps and algorithm of how to generate barcode from service and how to make it work in your application. ByteScout Barcode SDK was made to help with service controller in C#. ByteScout Barcode SDK is the fully featured library to generate barcodes. Supports QR Code, Code 39, Code 128, UPC, GS1, GS-128, PDF417, Datamatrix and many other barcode types. Includes various options for barcode generation to ensure output quality, add barcodes to new or existing pdf files and images.
+Every ByteScout tool contains example C# source codes that you can find here or in the folder with installed ByteScout product. ByteScout Barcode SDK was made to help with service controller in C#. ByteScout Barcode SDK is the robost library (Software Development Kit) that is designed for automatic generation of high-quality barcodes for printing, electronic documents and pdf. All popular barcode types are supported from Code 39 and Code 129 to QR Code, UPC, GS1, GS-128, Datamatrix, PDF417, Maxicode and many others. Provides support for full customization of fonts, colors, output and printing sizes. Special tools are included to verify output quality and printing quality. Can add generated barcode into new or existing documents, images and PDF.
 
-C# code snippet like this for ByteScout Barcode SDK works best when you need to quickly implement service controller in your C# application. This C# sample code should be copied and pasted into your project. After doing this just compile your project and click Run. This basic programming language sample code for C# will do the whole work for you in implementing service controller in your app.
+C# code samples for C# developers help to speed up the application's code writing when using ByteScout Barcode SDK. This C# sample code should be copied and pasted into your project. After doing this just compile your project and click Run. This basic programming language sample code for C# will do the whole work for you in implementing service controller in your app.
 
-ByteScout Barcode SDK - free trial version is on available our website. Also, there are other code samples to help you with your C# application included into trial version.
+Our website provides free trial version of ByteScout Barcode SDK that includes source code samples to help with your C# project.
 
 ## Contact Customer Support
 
