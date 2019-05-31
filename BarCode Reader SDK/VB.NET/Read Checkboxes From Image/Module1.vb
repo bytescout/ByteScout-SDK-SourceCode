@@ -28,6 +28,10 @@ Module Module1
         ' Enable check boxes recognition
         reader.BarcodeTypesToFind.Checkbox = True
 
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
 
         ' Find check boxes
         Dim barcodes = reader.ReadFrom(ImageFile)

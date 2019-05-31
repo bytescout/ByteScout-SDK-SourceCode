@@ -31,6 +31,11 @@ Module Module1
             ' Enable QR Code decoding
             reader.BarcodeTypesToFind.QRCode = True
 
+            ' -----------------------------------------------------------------------
+            ' NOTE: We can read barcodes from specific page to increase performance .
+            ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ' ----------------------------------------------------------------------- 
+
             ' Decode QR Code from image
             Dim barcodes = reader.ReadFrom("sample_vcard.gif")
 

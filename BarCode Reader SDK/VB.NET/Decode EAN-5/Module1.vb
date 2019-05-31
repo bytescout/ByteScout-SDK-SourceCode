@@ -30,6 +30,11 @@ Module Module1
         ' EAN-5 barcode is normally supplemental to EAN-13 so we should force the detection of standalone EAN-5 barcode.
         reader.AllowOrphanedSupplementals = True
 
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
+
         ' Read barcodes
         Dim barcodes As FoundBarcode() = reader.ReadFrom(imageFile)
 

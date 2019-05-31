@@ -137,6 +137,11 @@ Partial Public Class WebCamBarcodeDecoder
                     Dim bitmap As Bitmap = _touchlessLibManager.CurrentCamera.GetCurrentImage()
                     If bitmap IsNot Nothing Then
 
+                        ' -----------------------------------------------------------------------
+                        ' NOTE: We can read barcodes from specific page to increase performance .
+                        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+                        ' ----------------------------------------------------------------------- 
+
                         ' Search barcodes
                         Dim result As FoundBarcode() = reader.ReadFrom(bitmap)
                         If result IsNot Nothing And result.Length > 0 Then

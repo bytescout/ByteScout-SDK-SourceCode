@@ -30,6 +30,11 @@ namespace ExportResults
             // Set barcode type to find
             reader.BarcodeTypesToFind.All1D = true;
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
             // Read barcodes
             reader.ReadFromFile("barcodes.pdf");
 

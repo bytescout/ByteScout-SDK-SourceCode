@@ -231,6 +231,11 @@ Public Class MainForm
 					return
 				End If
 
+				' -----------------------------------------------------------------------
+				' NOTE: We can read barcodes from specific page to increase performance .
+				' For sample please refer to "Decoding barcodes from PDF by pages" program.
+				' ----------------------------------------------------------------------- 
+
 				' Search the image for barcodes
 				Dim result As FoundBarcode() = reader.ReadFrom(bitmap)
 

@@ -30,6 +30,11 @@ Module Module1
 
         AddHandler reader.BarcodeFound, AddressOf Reader_BarcodeFound
 
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
+
         ' Read barcodes
         reader.ReadFrom(imageFile)
 

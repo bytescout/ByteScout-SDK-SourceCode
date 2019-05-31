@@ -32,6 +32,11 @@ namespace CommonExample
 			// Enable check boxes recognition
 			reader.BarcodeTypesToFind.Checkbox = true;
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
 			// Find check boxes
 			FoundBarcode[] barcodes = reader.ReadFrom(ImageFile);
 

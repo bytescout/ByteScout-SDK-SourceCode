@@ -55,6 +55,11 @@ Class MainWindow
         ' Show wait cursor
         Mouse.OverrideCursor = Cursors.Wait
 
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
+
         Try
             '  Search for barcodes
             reader.ReadFrom(tbFileName.Text)

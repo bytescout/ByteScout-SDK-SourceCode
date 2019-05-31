@@ -30,6 +30,11 @@ namespace AustralianPostCode
             reader.RegistrationName = "demo";
 			reader.RegistrationKey = "demo";
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance .
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
 	    	// Set barcode type to find
             reader.BarcodeTypesToFind.AustralianPostCode = true;
 

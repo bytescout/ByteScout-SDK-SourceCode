@@ -31,6 +31,11 @@ Module Module1
 
             Console.WriteLine("Image {0}", "low-contrast-barcode.png")
 
+            ' -----------------------------------------------------------------------
+            ' NOTE: We can read barcodes from specific page to increase performance .
+            ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ' ----------------------------------------------------------------------- 
+
             Dim barcodes As FoundBarcode() = reader.ReadFrom("low-contrast-barcode.png")
 
             If barcodes.Length = 0 Then

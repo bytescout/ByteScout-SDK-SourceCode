@@ -69,6 +69,12 @@ namespace GuiExample
                 reader.BarcodeTypesToFind.All2D = true;
 
             Cursor = Cursors.WaitCursor;
+
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
             FoundBarcode[] foundBarcodes = reader.ReadFrom(_fileName);
             ResetCursor();
 

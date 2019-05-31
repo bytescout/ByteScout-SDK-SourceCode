@@ -31,6 +31,11 @@ namespace BarcodesFromTIFF
 			
 			Console.WriteLine("Reading barcode(s) from TIFF image...");
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decode page by page from TIFF" program.
+            ----------------------------------------------------------------------- */
+
             FoundBarcode[] barcodes = reader.ReadFrom("multipage.tif");
 
             foreach (FoundBarcode barcode in barcodes)

@@ -39,6 +39,11 @@ namespace ImagePDFBarcodeToCSV
                 var files = System.IO.Directory.GetFiles("BarcodeFiles");
                 foreach (var fileName in files)
                 {
+                    /* -----------------------------------------------------------------------
+                    NOTE: We can read barcodes from specific page to increase performance .
+                    For sample please refer to "Decoding barcodes from PDF by pages" program.
+                    ----------------------------------------------------------------------- */
+
                     // Read barcodes
                     FoundBarcode[] barcodes = reader.ReadFrom(fileName);
 

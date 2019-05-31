@@ -100,7 +100,6 @@
 \BarCode Reader SDK\C#\Decode MaxiCode
 \BarCode Reader SDK\C#\Decode MICR from Bank Check
 \BarCode Reader SDK\C#\Decode Numly
-\BarCode Reader SDK\C#\Decode page by page from PDF
 \BarCode Reader SDK\C#\Decode page by page from TIFF
 \BarCode Reader SDK\C#\Decode Patch Code
 \BarCode Reader SDK\C#\Decode PDF417
@@ -115,6 +114,7 @@
 \BarCode Reader SDK\C#\Decode UPC-E
 \BarCode Reader SDK\C#\Decode USPS Sack Label
 \BarCode Reader SDK\C#\Decode USPS Tray Label
+\BarCode Reader SDK\C#\Decoding barcodes from PDF by pages
 \BarCode Reader SDK\C#\Export Results to XML, CSV, TXT
 \BarCode Reader SDK\C#\General Example reading barcodes
 \BarCode Reader SDK\C#\GUI Example for Barcode Reading
@@ -186,7 +186,6 @@
 \BarCode Reader SDK\VB.NET\Decode MaxiCode
 \BarCode Reader SDK\VB.NET\Decode MICR from Bank Check
 \BarCode Reader SDK\VB.NET\Decode Numly
-\BarCode Reader SDK\VB.NET\Decode page by page from PDF
 \BarCode Reader SDK\VB.NET\Decode page by page from TIFF
 \BarCode Reader SDK\VB.NET\Decode Patch Code
 \BarCode Reader SDK\VB.NET\Decode PDF417
@@ -201,6 +200,7 @@
 \BarCode Reader SDK\VB.NET\Decode UPC-E
 \BarCode Reader SDK\VB.NET\Decode USPS Sack Label
 \BarCode Reader SDK\VB.NET\Decode USPS Tray Label
+\BarCode Reader SDK\VB.NET\Decoding barcodes from PDF by pages
 \BarCode Reader SDK\VB.NET\Export Results to XML, CSV, TXT
 \BarCode Reader SDK\VB.NET\General Barcode Reading Example
 \BarCode Reader SDK\VB.NET\GUI Example For Barcode Reading

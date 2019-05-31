@@ -75,6 +75,11 @@ Public Class MainWindow
 
             reader.BarcodeTypesToFind = _barcodeTypeToFind
 
+            ' -----------------------------------------------------------------------
+            ' NOTE: We can read barcodes from specific page to increase performance .
+            ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ' ----------------------------------------------------------------------- 
+
             Dim result As FoundBarcode() = reader.ReadFrom(bitmap)
             Dim timeNow As String = String.Format("{0:HH:mm:ss:tt}", DateTime.Now)
 

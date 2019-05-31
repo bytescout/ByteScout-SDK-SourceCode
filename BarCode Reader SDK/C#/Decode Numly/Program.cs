@@ -32,6 +32,11 @@ namespace ReadNumly
             // Set barcode type to find
             reader.BarcodeTypesToFind.Code39 = true; // "Numly" barcode type is the same as "Code 39"
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
             // Read barcodes
             FoundBarcode[] barcodes = reader.ReadFrom(ImageFile);
 

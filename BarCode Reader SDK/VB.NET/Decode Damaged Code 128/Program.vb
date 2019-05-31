@@ -24,6 +24,11 @@ Module Program
                 ' Set barcode type to find
                 reader.BarcodeTypesToFind.Code128 = True
 
+                ' -----------------------------------------------------------------------
+                ' NOTE: We can read barcodes from specific page to increase performance .
+                ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+                ' ----------------------------------------------------------------------- 
+
                 ' Read barcodes
                 Dim barcodes() As FoundBarcode = reader.ReadFrom("corrupted_barcode_code128.png")
 

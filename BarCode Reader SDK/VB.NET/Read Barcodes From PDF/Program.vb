@@ -26,6 +26,11 @@ Class Program
 
         Console.WriteLine("Reading barcodes from PDF document...")
 
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
+
         Dim barcodes As FoundBarcode() = reader.ReadFrom("example.pdf")
 
         For Each barcode As FoundBarcode In barcodes

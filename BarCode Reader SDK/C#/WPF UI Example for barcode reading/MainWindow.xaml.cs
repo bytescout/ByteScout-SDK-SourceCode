@@ -70,6 +70,11 @@ namespace ReadBarcodeFromImage
             // Show wait cursor
             Mouse.OverrideCursor = Cursors.Wait;
             
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
             try
             {
                 // Search for barcodes

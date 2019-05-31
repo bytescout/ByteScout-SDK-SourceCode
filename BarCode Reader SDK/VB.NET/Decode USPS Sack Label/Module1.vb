@@ -28,6 +28,11 @@ Module Module1
         ' Set barcode type to find
         reader.BarcodeTypesToFind.Interleaved2of5 = True ' "USPS Sack Label" barcode type is the same as "Interleaved 2 of 5"
 
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
+
         ' Read barcodes
         Dim barcodes As FoundBarcode() = reader.ReadFrom(imageFile)
 

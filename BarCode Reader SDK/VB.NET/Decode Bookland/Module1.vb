@@ -28,6 +28,11 @@ Module Module1
         ' Set barcode type to find
         reader.BarcodeTypesToFind.EAN13 = True ' Bookland is the same as EAN-13 barcode
 
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
+
         ' Read barcodes
         Dim barcodes As FoundBarcode() = reader.ReadFrom(imageFile)
 

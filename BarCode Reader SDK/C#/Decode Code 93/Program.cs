@@ -33,6 +33,11 @@ namespace ReadCode93
             // Set barcode type to find
             reader.BarcodeTypesToFind.Code93 = true;
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
             // Read barcodes
             FoundBarcode[] barcodes = reader.ReadFrom(ImageFile);
 

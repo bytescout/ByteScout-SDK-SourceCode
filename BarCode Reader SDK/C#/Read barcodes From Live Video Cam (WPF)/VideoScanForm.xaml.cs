@@ -93,6 +93,12 @@ namespace ReadFromVideoCamera.VS2010.WPF
                 reader.BarcodeTypesToFind = _barcodeTypeToFind;
 				
                 //reader.MaxNumberOfBarcodesPerPage = 1;
+
+                /* -----------------------------------------------------------------------
+                NOTE: We can read barcodes from specific page to increase performance.
+                For sample please refer to "Decoding barcodes from PDF by pages" program.
+                ----------------------------------------------------------------------- */
+
                 FoundBarcode[] result = reader.ReadFrom(bitmap);
                 String timeNow = string.Format("{0:HH:mm:ss:tt}", DateTime.Now);
 

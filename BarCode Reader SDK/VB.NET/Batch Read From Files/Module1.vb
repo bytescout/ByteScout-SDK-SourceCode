@@ -37,6 +37,11 @@ Module Module1
             Console.WriteLine()
             Console.WriteLine("Reading barcode(s) from image {0}", file)
 
+            ' -----------------------------------------------------------------------
+            ' NOTE: We can read barcodes from specific page to increase performance .
+            ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ' ----------------------------------------------------------------------- 
+
             ' Read barcodes from image
             Dim barcodes As FoundBarcode() = reader.ReadFrom(file)
 

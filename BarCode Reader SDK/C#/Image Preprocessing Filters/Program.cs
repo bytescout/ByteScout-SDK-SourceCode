@@ -55,6 +55,11 @@ namespace ImagePreprocessingFilters
 
                 Console.WriteLine("Image {0}", "noisy-barcode.png");
 
+                /* -----------------------------------------------------------------------
+                NOTE: We can read barcodes from specific page to increase performance.
+                For sample please refer to "Decoding barcodes from PDF by pages" program.
+                ----------------------------------------------------------------------- */
+
                 barcodes = reader.ReadFrom("noisy-barcode.png");
 
                 if (barcodes.Length == 0)

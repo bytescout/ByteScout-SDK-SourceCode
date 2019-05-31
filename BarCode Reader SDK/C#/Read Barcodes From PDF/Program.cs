@@ -31,6 +31,11 @@ namespace BarcodesFromPDF
 
             Console.WriteLine("Reading barcodes from PDF document...");
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
             FoundBarcode[] barcodes = reader.ReadFrom("example.pdf");
 
             foreach (FoundBarcode barcode in barcodes)

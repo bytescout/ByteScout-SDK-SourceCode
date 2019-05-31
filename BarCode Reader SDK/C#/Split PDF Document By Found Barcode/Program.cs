@@ -34,6 +34,11 @@ namespace SplitDocumentByFoundBarcode
             // Set barcode type to find
             reader.BarcodeTypesToFind.Code39 = true;
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
             // Find barcode in PDF document
             reader.ReadFrom(InputFIle);
 

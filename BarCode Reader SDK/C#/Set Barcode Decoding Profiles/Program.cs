@@ -37,6 +37,11 @@ namespace Profiles
                 // render PDF at 150 DPI resoultion.
                 reader.Profiles = "code39, ean13, pdf150dpi";
 
+                /* -----------------------------------------------------------------------
+                NOTE: We can read barcodes from specific page to increase performance.
+                For sample please refer to "Decoding barcodes from PDF by pages" program.
+                ----------------------------------------------------------------------- */
+
                 // Decode and show barcodes from sample1.pdf
                 reader.ReadFrom("sample1.pdf");
                 foreach (FoundBarcode foundBarcode in reader.FoundBarcodes)

@@ -32,6 +32,11 @@ namespace ReadPZN
             // Set barcode type to find
             reader.BarcodeTypesToFind.PZN = true; // "PZN" barcode type is the same as "Code 39"
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
             // Read barcodes
             FoundBarcode[] barcodes = reader.ReadFrom(ImageFile);
 

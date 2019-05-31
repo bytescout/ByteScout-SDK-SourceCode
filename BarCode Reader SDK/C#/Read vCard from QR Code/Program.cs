@@ -37,6 +37,11 @@ namespace ReadVCardFromQRCode
 				// Enable QR Code decoding
 				reader.BarcodeTypesToFind.QRCode = true;
 
+				/* -----------------------------------------------------------------------
+				NOTE: We can read barcodes from specific page to increase performance.
+				For sample please refer to "Decoding barcodes from PDF by pages" program.
+				----------------------------------------------------------------------- */
+
 				// Decode QR Code from image
 				FoundBarcode[] barcodes = reader.ReadFrom("sample_vcard.gif");
 

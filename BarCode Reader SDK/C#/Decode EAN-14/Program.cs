@@ -32,6 +32,11 @@ namespace ReadEAN14
             // Set barcode type to find
             reader.BarcodeTypesToFind.Code128 = true; // "EAN-14" barcode type is the same as "Code 128"
 
+            /* -----------------------------------------------------------------------
+            NOTE: We can read barcodes from specific page to increase performance.
+            For sample please refer to "Decoding barcodes from PDF by pages" program.
+            ----------------------------------------------------------------------- */
+
             // Read barcodes
             FoundBarcode[] barcodes = reader.ReadFrom(ImageFile);
 

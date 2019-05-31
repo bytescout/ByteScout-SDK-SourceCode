@@ -60,6 +60,12 @@ Public Partial Class Form1
 		End If
 
 		Cursor = Cursors.WaitCursor
+
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
+
 		Dim foundBarcodes As FoundBarcode() = reader.ReadFrom(_fileName)
 		ResetCursor()
 

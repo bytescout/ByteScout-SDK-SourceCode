@@ -57,6 +57,11 @@ NotInheritable Class Program
         ' To speed up the processing and avoid false positives select specific barcodes type, 
         ' e.g. barcodeReader.BarcodeTypesToFind.PDF417 = True
 
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
+
         Dim barcodes As FoundBarcode() = barcodeReader.ReadFrom(wiaScanner.OutputFiles(0))
 
         If barcodes.Length > 0 Then

@@ -41,6 +41,11 @@ namespace BatchProcessing
                 Console.WriteLine();
                 Console.WriteLine("Reading barcodes from image \"{0}\"...", file);
 
+                /* -----------------------------------------------------------------------
+                NOTE: We can read barcodes from specific page to increase performance .
+                For sample please refer to "Decoding barcodes from PDF by pages" program.
+                ----------------------------------------------------------------------- */
+
                 // Read barcodes from image
                 FoundBarcode[] barcodes = reader.ReadFrom(file);
 

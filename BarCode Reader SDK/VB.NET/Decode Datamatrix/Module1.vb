@@ -27,6 +27,11 @@ Module Module1
         ' Set barcode type to find
         reader.BarcodeTypesToFind.DataMatrix = True
 
+        ' -----------------------------------------------------------------------
+        ' NOTE: We can read barcodes from specific page to increase performance .
+        ' For sample please refer to "Decoding barcodes from PDF by pages" program.
+        ' ----------------------------------------------------------------------- 
+
         ' Read barcodes
         Dim barcodes As FoundBarcode() = reader.ReadFrom(imageFile)
 
