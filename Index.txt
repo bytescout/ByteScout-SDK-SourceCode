@@ -1886,6 +1886,7 @@
 \Screen Capturing SDK\VBScript and VB6\Use WEBM Output for Video
 \Screen Capturing SDK\VBScript and VB6\Use WMV Profile for Video Settings
 \Solutions\Convert Scanned PDF to Excel
+\Solutions\Create side by side manifest
 \Solutions\Display PDF in Browser and Select Area Using PDF.js
 \Solutions\Extract Text From Large PDF Document in Parallel Processing
 \Solutions\Generate and Check QR Code Barcode with Image Inside
@@ -1901,6 +1902,7 @@
 \Solutions\Slice PDF by Horizontal Lines Inside
 \Solutions\Convert Scanned PDF to Excel\C#
 \Solutions\Convert Scanned PDF to Excel\VB.NET
+\Solutions\Create side by side manifest\VB6
 \Solutions\Display PDF in Browser and Select Area Using PDF.js\Javascript and PDF.js v1.x
 \Solutions\Display PDF in Browser and Select Area Using PDF.js\Javascript and PDF.js v2.x
 \Solutions\Extract Text From Large PDF Document in Parallel Processing\C#

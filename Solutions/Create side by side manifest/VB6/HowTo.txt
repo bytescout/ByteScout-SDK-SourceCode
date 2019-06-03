@@ -1,0 +1,13 @@
+For Visual Basic 6 and other programming languages where ByteScout is used via COM / ActiveX interface.
+
+Windows provides a feature called "Side by side manifest"  for .exe and .dll applications. The idea is that you may link to .NET / ActiveX dll libraries without installing or registering them on the computer for global access. 
+
+While it still recommended to install ActiveX / COM version using `InstallAsActiveX.bat` included into `/Redistributable/` folder you may also generate `.manifest` file that will tell Windows to load dlls from the same folder instead of global ones.
+
+The Manifest Generator tool from https://github.com/wqweto/UMMM (comes with open source code for Visual Basic 6) can generate manifest file for COM / ActiveX and .NET dlls (like ByteScout SDK) 
+
+Also see this discussion: https://stackoverflow.com/questions/465882/generate-manifest-files-for-registration-free-com
+
+Dynamic manifest generation will also help to avoid manual update in case some of dlls (from ByteScout or from another vendor) will add new classes or declarations.
+
+See `/src/Readme.md` for more details and the detailed instruction.
