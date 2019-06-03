@@ -650,6 +650,7 @@
 \PDF Extractor SDK\C#\PDF XFA Form To XML
 \PDF Extractor SDK\C#\PDF-A Compatibility Test
 \PDF Extractor SDK\C#\Read Hindi Text from PDF
+\PDF Extractor SDK\C#\Read Text From Noisy Image
 \PDF Extractor SDK\C#\Read Values from PDF Form Fields
 \PDF Extractor SDK\C#\Reduce Memory Usage for PDF to Text
 \PDF Extractor SDK\C#\Remove Empty Pages from PDF
@@ -736,6 +737,7 @@
 \PDF Extractor SDK\VB.NET\PDF-A Compatibility Test
 \PDF Extractor SDK\VB.NET\Profiles
 \PDF Extractor SDK\VB.NET\Read Hindi Text
+\PDF Extractor SDK\VB.NET\Read Text From Noisy Image
 \PDF Extractor SDK\VB.NET\Read Values from Form Fields
 \PDF Extractor SDK\VB.NET\Reduce Memory Usage
 \PDF Extractor SDK\VB.NET\Remove Empty Pages
