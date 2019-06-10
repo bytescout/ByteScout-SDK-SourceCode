@@ -635,6 +635,7 @@
 \PDF Extractor SDK\C#\OCR Analyser
 \PDF Extractor SDK\C#\OCR With Best Dataset
 \PDF Extractor SDK\C#\OCR With Fast Dataset
+\PDF Extractor SDK\C#\OCR With Mean Dataset
 \PDF Extractor SDK\C#\Optimize PDF
 \PDF Extractor SDK\C#\PDF and OCR (Optical Character Recognition)
 \PDF Extractor SDK\C#\PDF Batch Processing
@@ -735,6 +736,7 @@
 \PDF Extractor SDK\VB.NET\OCR Analyser in PDF
 \PDF Extractor SDK\VB.NET\OCR With Best Dataset
 \PDF Extractor SDK\VB.NET\OCR With Fast Dataset
+\PDF Extractor SDK\VB.NET\OCR With Mean Dataset
 \PDF Extractor SDK\VB.NET\Optimize PDF
 \PDF Extractor SDK\VB.NET\Parallel Processing of PDF files
 \PDF Extractor SDK\VB.NET\PDF files Batch Processing
@@ -803,6 +805,7 @@
 \PDF Extractor SDK\VBScript\OCR Analyser for PDF
 \PDF Extractor SDK\VBScript\OCR With Best Dataset
 \PDF Extractor SDK\VBScript\OCR With Fast Dataset
+\PDF Extractor SDK\VBScript\OCR With Mean Dataset
 \PDF Extractor SDK\VBScript\PDF Extraction Profiles
 \PDF Extractor SDK\VBScript\PDF files Batch Processing
 \PDF Extractor SDK\VBScript\PDF OCR (Optical Character Recognition)
