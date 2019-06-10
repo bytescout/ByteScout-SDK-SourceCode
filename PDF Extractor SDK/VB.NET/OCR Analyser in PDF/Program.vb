@@ -35,11 +35,11 @@ Class Program
         Dim rectangle As RectangleF = RectangleF.Empty ' New RectangleF(100, 50, 350, 250)
 
         ' Location of OCR language data files
-        Dim ocrLanguageDataFolder As String = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\"
+        Dim ocrLanguageDataFolder As String = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\"
 
         ' OCR language
         Dim ocrLanguage As String = "eng" ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder
-        ' Find more language files at https://github.com/bytescout/ocrdata
+        ' Find more language files at https://github.com/bytescout/ocrdata/tree/master/ocrdata_best
 
 
         ' Create OCRAnalyzer instance and activate it with your registration information

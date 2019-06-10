@@ -39,7 +39,7 @@ contactName = "John Smith"
 location = "Corporate HQ"
 
 ' Invisible signature
-'pdfDocument.Sign(certficateFile, certficatePassword)
+'pdfDocument.Sign certficateFile, certficatePassword
 
 ' Visible signature
 pdfDocument.Sign_2 certficateFile, certficatePassword, 400, 50, 150, 100, signingReason, contactName, location
