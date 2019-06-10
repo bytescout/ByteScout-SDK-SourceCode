@@ -886,6 +886,8 @@
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To PNG
 \PDF Renderer SDK\VBScript and VB6\Hide Text or Vector or Image Layer In PDF
+\PDF Renderer SDK\VBScript and VB6\Override Resolution in Multipage TIFF
+\PDF Renderer SDK\VBScript and VB6\Override Resolution in Rendered Image
 \PDF Renderer SDK\VBScript and VB6\PDF To Image In Command Line
 \PDF Renderer SDK\VBScript and VB6\Silent PDF Printing
 \PDF SDK\ASP.NET
