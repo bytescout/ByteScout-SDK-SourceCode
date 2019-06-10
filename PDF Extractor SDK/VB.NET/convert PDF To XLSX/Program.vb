@@ -24,7 +24,7 @@ Class Program
         extractor.RegistrationName = "demo"
         extractor.RegistrationKey = "demo"
 
-        File.Delete("output.xls")
+        File.Delete("output.xlsx")
 
         ' Load sample PDF document
         extractor.LoadDocumentFromFile("sample3.pdf")
@@ -32,17 +32,17 @@ Class Program
         ' Uncomment this line if you need all pages converted into a single worksheet:
         'extractor.PageToWorksheet = False
 
-        ' Set the output format to XLS
-        extractor.OutputFormat = SpreadseetOutputFormat.XLS
+        ' Set the output format to XLSX
+        extractor.OutputFormat = SpreadseetOutputFormat.XLSX
 
         ' Save the spreadsheet to file
-        extractor.SaveToXLSFile("output.xls")
+        extractor.SaveToXLSFile("output.xlsx")
 
         ' Cleanup
         extractor.Dispose()
 
         ' Open result file in default associated application (for demo purposes)
-        Process.Start("output.xls")
+        Process.Start("output.xlsx")
 
     End Sub
 

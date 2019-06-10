@@ -645,6 +645,7 @@
 \PDF Extractor SDK\C#\PDF To JSON With Images
 \PDF Extractor SDK\C#\PDF To XFDF
 \PDF Extractor SDK\C#\PDF To XLS
+\PDF Extractor SDK\C#\PDF To XLSX
 \PDF Extractor SDK\C#\PDF To XML
 \PDF Extractor SDK\C#\PDF To XML With Images
 \PDF Extractor SDK\C#\PDF XFA Form To XML
@@ -690,6 +691,7 @@
 \PDF Extractor SDK\VB.NET\Convert PDF To JSON With Images
 \PDF Extractor SDK\VB.NET\Convert PDF To XFDF
 \PDF Extractor SDK\VB.NET\Convert PDF To XLS
+\PDF Extractor SDK\VB.NET\convert PDF To XLSX
 \PDF Extractor SDK\VB.NET\Convert PDF To XML
 \PDF Extractor SDK\VB.NET\Convert XFA Form To XML in PDF
 \PDF Extractor SDK\VB.NET\Data Masking in PDF
@@ -846,6 +848,7 @@
 \PDF Renderer SDK\C#\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\C#\Convert PDF To PNG
 \PDF Renderer SDK\C#\Make Thumbnail from PDF
+\PDF Renderer SDK\C#\PDF to Image With Custom Size
 \PDF Renderer SDK\C#\Print PDF
 \PDF Renderer SDK\C#\Render Text-Vector-Image Layers in PDF
 \PDF Renderer SDK\C#\Rendering PDF to image In Background Thread
@@ -861,6 +864,7 @@
 \PDF Renderer SDK\VB.NET\Convert PDF To PNG
 \PDF Renderer SDK\VB.NET\Make Thumbnail Image From PDF
 \PDF Renderer SDK\VB.NET\PDF To Image Rendering In Background Thread
+\PDF Renderer SDK\VB.NET\PDF to Image With Custom Size
 \PDF Renderer SDK\VB.NET\Print PDF
 \PDF Renderer SDK\VB.NET\Show Or Hide Text Or Vector Or Image Layers In PDF
 \PDF Renderer SDK\VB.NET\Silent PDF Document Printing
@@ -868,6 +872,7 @@
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To BMP
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To EMF
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To High Quality PNG
+\PDF Renderer SDK\VBScript and VB6\Convert PDF To Image
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To JPEG
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To PNG

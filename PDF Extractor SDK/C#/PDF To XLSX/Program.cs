@@ -27,7 +27,7 @@ namespace PDF2XLS
             extractor.RegistrationName = "demo";
             extractor.RegistrationKey = "demo";
 
-            File.Delete("output.xls");
+            File.Delete("output.xlsx");
 
             // Load sample PDF document
             extractor.LoadDocumentFromFile("sample3.pdf");
@@ -35,17 +35,17 @@ namespace PDF2XLS
             // Uncomment this line if you need all pages converted into a single worksheet:
             //extractor.PageToWorksheet = false;
 
-            // Set the output format to XLS
-            extractor.OutputFormat = SpreadseetOutputFormat.XLS;
+            // Set the output format to XLSX
+            extractor.OutputFormat = SpreadseetOutputFormat.XLSX;
             
             // Save the spreadsheet to file
-            extractor.SaveToXLSFile("output.xls");
+            extractor.SaveToXLSFile("output.xlsx");
 
             // Cleanup
             extractor.Dispose();
 
             // Open result document in default associated application (for demo purpose)
-            ProcessStartInfo processStartInfo = new ProcessStartInfo("output.xls");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("output.xlsx");
             processStartInfo.UseShellExecute = true;
             Process.Start(processStartInfo);
         }
