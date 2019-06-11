@@ -1,10 +1,10 @@
-## OCR (optical character recognition) and PDF in VB.NET with ByteScout PDF Extractor SDK
+## OCR with best dataset in VB.NET and ByteScout PDF Extractor SDK
 
-### Tutorial: how to do OCR (optical character recognition) and PDF in VB.NET
+### Write code in VB.NET to make OCR with best dataset with this How-To tutorial
 
-Today you are going to learn how to OCR (optical character recognition) and PDF in VB.NET. OCR (optical character recognition) and PDF in VB.NET can be implemented with ByteScout PDF Extractor SDK. ByteScout PDF Extractor SDK is the SDK that helps developers to extract data from unstructured documents, pdf, images, scanned and electronic forms. Includes AI functions like automatic table detection, automatic table extraction and restructuring, text recognition and text restoration from pdf and scanned documents. Includes PDF to CSV, PDF to XML, PDF to JSON, PDF to searchable PDF functions as well as methods for low level data extraction.
+These source code samples are listed and grouped by their programming language and functions they use. ByteScout PDF Extractor SDK helps with OCR with best dataset in VB.NET. ByteScout PDF Extractor SDK is the SDK is designed to help developers with pdf tables and pdf data extraction from unstructured documents like pdf, tiff, scans, images, scanned and electronic forms. The library is powered by OCR, computer vision and AI to provide unique functionality like table detection, automatic table structure extraction, data restoration, data restructuring and reconstruction. Supports PDF, TIFF, PNG, JPG images as input and can output CSV, XML, JSON formatted data. Includes full set of utilities like pdf splitter, pdf merger, searchable pdf maker and other utilities.
 
-You will save a lot of time on writing and testing code as you may just take the code below and use it in your application. This VB.NET sample code should be copied and pasted into your application’s code editor. Then just compile and run it to see how it works. Use of ByteScout PDF Extractor SDK in VB.NET is also explained in the documentation included along with the product.
+VB.NET code snippet like this for ByteScout PDF Extractor SDK works best when you need to quickly implement OCR with best dataset in your VB.NET application. Follow the instruction from the scratch to work and copy and paste code for VB.NET into your editor. Use of ByteScout PDF Extractor SDK in VB.NET is also explained in the documentation included along with the product.
 
 Trial version can be obtained from our website for free. It includes this and other source code samples for VB.NET.
 
