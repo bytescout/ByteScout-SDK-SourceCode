@@ -629,6 +629,8 @@
 \PDF Extractor SDK\C#\Index PDF Documents In Folder
 \PDF Extractor SDK\C#\Index PDF Files
 \PDF Extractor SDK\C#\Make Searchable PDF
+\PDF Extractor SDK\C#\Make Searchable PDF and Fix Rotated Pages
+\PDF Extractor SDK\C#\Make Searchable PDF Discarding Existing Content
 \PDF Extractor SDK\C#\Make Searchable PDF from Image
 \PDF Extractor SDK\C#\Make Unsearchable PDF
 \PDF Extractor SDK\C#\Merge PDF Documents
@@ -729,6 +731,8 @@
 \PDF Extractor SDK\VB.NET\Index PDF Documents In Folder
 \PDF Extractor SDK\VB.NET\Index PDF Files
 \PDF Extractor SDK\VB.NET\Make Searchable PDF
+\PDF Extractor SDK\VB.NET\Make Searchable PDF and Fix Rotated Pages
+\PDF Extractor SDK\VB.NET\Make Searchable PDF Discarding Existing Content
 \PDF Extractor SDK\VB.NET\Make Searchable PDF from Image
 \PDF Extractor SDK\VB.NET\Make Unsearchable PDF
 \PDF Extractor SDK\VB.NET\Merge PDF Documents
@@ -800,6 +804,8 @@
 \PDF Extractor SDK\VBScript\Find Text in PDF Using Regex
 \PDF Extractor SDK\VBScript\Index PDF Files
 \PDF Extractor SDK\VBScript\Make Searchable PDF
+\PDF Extractor SDK\VBScript\Make Searchable PDF and Fix Rotated Pages
+\PDF Extractor SDK\VBScript\Make Searchable PDF Discarding Existing Content
 \PDF Extractor SDK\VBScript\Make Unsearchable PDF
 \PDF Extractor SDK\VBScript\Merge PDF Documents
 \PDF Extractor SDK\VBScript\OCR Analyser for PDF
@@ -857,6 +863,8 @@
 \PDF Renderer SDK\C#\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\C#\Convert PDF To PNG
 \PDF Renderer SDK\C#\Make Thumbnail from PDF
+\PDF Renderer SDK\C#\Override Resolution in Multipage TIFF
+\PDF Renderer SDK\C#\Override Resolution in Rendered Image
 \PDF Renderer SDK\C#\PDF to Image With Custom Size
 \PDF Renderer SDK\C#\Print PDF
 \PDF Renderer SDK\C#\Render Text-Vector-Image Layers in PDF
@@ -872,6 +880,8 @@
 \PDF Renderer SDK\VB.NET\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VB.NET\Convert PDF To PNG
 \PDF Renderer SDK\VB.NET\Make Thumbnail Image From PDF
+\PDF Renderer SDK\VB.NET\Override Resolution in Multipage TIFF
+\PDF Renderer SDK\VB.NET\Override Resolution in Rendered Image
 \PDF Renderer SDK\VB.NET\PDF To Image Rendering In Background Thread
 \PDF Renderer SDK\VB.NET\PDF to Image With Custom Size
 \PDF Renderer SDK\VB.NET\Print PDF
