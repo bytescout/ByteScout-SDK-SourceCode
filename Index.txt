@@ -597,6 +597,7 @@
 \PDF Extractor SDK\C#\Batch check folder agianst JSON settings
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF
 \PDF Extractor SDK\C#\Compare PDF Documents
+\PDF Extractor SDK\C#\Convert Protected PDF Document to XLS
 \PDF Extractor SDK\C#\Data Masking in PDF
 \PDF Extractor SDK\C#\Detect Lines in PDF
 \PDF Extractor SDK\C#\Extract Attachments from PDF
@@ -634,6 +635,7 @@
 \PDF Extractor SDK\C#\Make Searchable PDF from Image
 \PDF Extractor SDK\C#\Make Unsearchable PDF
 \PDF Extractor SDK\C#\Merge PDF Documents
+\PDF Extractor SDK\C#\Merge Protected PDF Documents
 \PDF Extractor SDK\C#\OCR Analyser
 \PDF Extractor SDK\C#\OCR With Best Dataset
 \PDF Extractor SDK\C#\OCR With Fast Dataset
@@ -670,18 +672,22 @@
 \PDF Extractor SDK\C#\SearchablePDFMaker Progress Indication
 \PDF Extractor SDK\C#\Set Configuration Profiles
 \PDF Extractor SDK\C#\Split PDF Document
+\PDF Extractor SDK\C#\Split Protected PDF Document
 \PDF Extractor SDK\C#\TextExtractor Progress Indication
 \PDF Extractor SDK\C#\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\C#\Batch check folder agianst JSON settings\InputFiles
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF\InputFiles
 \PDF Extractor SDK\C#\Index PDF Documents In Folder\Files
 \PDF Extractor SDK\C++\Compare PDF Documents
+\PDF Extractor SDK\C++\Convert Protected PDF Document to Excel (C++ CLR)
 \PDF Extractor SDK\C++\Extract PDF Pages
 \PDF Extractor SDK\C++\Extract Text from PDF
 \PDF Extractor SDK\C++\Find Table And Extract As CSV from PDF
 \PDF Extractor SDK\C++\Merge PDF Documents
+\PDF Extractor SDK\C++\Merge Protected PDF Documents (C++ CLR)
 \PDF Extractor SDK\C++\PDF and OCR (Optical Character Recognition)
 \PDF Extractor SDK\C++\Split PDF Document
+\PDF Extractor SDK\C++\Split Protected PDF Document (C++ CLR)
 \PDF Extractor SDK\Delphi\Convert PDF To CSV
 \PDF Extractor SDK\Delphi\PDF Batch Processing
 \PDF Extractor SDK\Microsoft Excel\Extract Text From Coordinates from PDF
