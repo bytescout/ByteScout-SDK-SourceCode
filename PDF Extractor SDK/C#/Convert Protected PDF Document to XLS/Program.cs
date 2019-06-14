@@ -31,6 +31,14 @@ namespace PDF2XLS
 
             File.Delete("output.xls");
 
+            // Document Password Can be set in two ways
+            // 1. Using Property
+            // 2. Using Events
+
+            // 1. Handle document password using Property
+            // extractor.Password = "password"
+
+            // 2. Handle document password using Event
             extractor.PasswordRequired += new System.EventHandler(extractor_PasswordRequired);
 
             // Load sample PDF document

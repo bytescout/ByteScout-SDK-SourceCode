@@ -704,6 +704,7 @@
 \PDF Extractor SDK\VB.NET\Convert PDF To XLS
 \PDF Extractor SDK\VB.NET\convert PDF To XLSX
 \PDF Extractor SDK\VB.NET\Convert PDF To XML
+\PDF Extractor SDK\VB.NET\Convert Protected PDF Document to XLS
 \PDF Extractor SDK\VB.NET\Convert XFA Form To XML in PDF
 \PDF Extractor SDK\VB.NET\Data Masking in PDF
 \PDF Extractor SDK\VB.NET\Detect Lines in PDF
@@ -742,6 +743,7 @@
 \PDF Extractor SDK\VB.NET\Make Searchable PDF from Image
 \PDF Extractor SDK\VB.NET\Make Unsearchable PDF
 \PDF Extractor SDK\VB.NET\Merge PDF Documents
+\PDF Extractor SDK\VB.NET\Merge Protected PDF Documents
 \PDF Extractor SDK\VB.NET\OCR (Optical Character Recognition) and PDF
 \PDF Extractor SDK\VB.NET\OCR Analyser in PDF
 \PDF Extractor SDK\VB.NET\OCR With Best Dataset
@@ -768,6 +770,7 @@
 \PDF Extractor SDK\VB.NET\Scanned PDF To XML
 \PDF Extractor SDK\VB.NET\SearchablePDFMaker Progress Indication
 \PDF Extractor SDK\VB.NET\Split Document
+\PDF Extractor SDK\VB.NET\Split Protected PDF Document
 \PDF Extractor SDK\VB.NET\TextExtractor Progress Indication
 \PDF Extractor SDK\VB.NET\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\VB.NET\Batch check folder agianst JSON settings\InputFiles
