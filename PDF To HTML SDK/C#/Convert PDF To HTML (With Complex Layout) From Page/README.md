@@ -27,3 +27,7 @@ or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=By
 [Explore ByteScout PDF To HTML SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
 
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+
+## Video
+
+[https://www.youtube.com/watch?v=kB2ELm_kCds](https://www.youtube.com/watch?v=kB2ELm_kCds)

@@ -27,3 +27,7 @@ or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=By
 [Explore ByteScout Barcode SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
 
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+
+## Video
+
+[https://www.youtube.com/watch?v=REnj3A-oSPI](https://www.youtube.com/watch?v=REnj3A-oSPI)
