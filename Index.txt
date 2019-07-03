@@ -1933,6 +1933,7 @@
 \Solutions\Read PDF with Scanned Image and Hindi Text
 \Solutions\Regular Expression Search and Highlight in PDF
 \Solutions\Regular Expression Search In PDF And Highlight On Rendered Page
+\Solutions\Remove Text From Selected Regions
 \Solutions\Select Region And Perform OCR
 \Solutions\Slice PDF by Horizontal Lines Inside
 \Solutions\Convert Scanned PDF to Excel\C#
@@ -1955,6 +1956,7 @@
 \Solutions\Regular Expression Search and Highlight in PDF\C#
 \Solutions\Regular Expression Search and Highlight in PDF\VB.NET
 \Solutions\Regular Expression Search In PDF And Highlight On Rendered Page\C#
+\Solutions\Remove Text From Selected Regions\C#
 \Solutions\Select Region And Perform OCR\C#
 \Solutions\Slice PDF by Horizontal Lines Inside\C#
 \Solutions\Slice PDF by Horizontal Lines Inside\VB.NET

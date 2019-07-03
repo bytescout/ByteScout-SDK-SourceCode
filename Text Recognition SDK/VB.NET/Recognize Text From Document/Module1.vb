@@ -10,6 +10,8 @@
 '*******************************************************************************************'
 
 
+Imports System
+Imports System.Diagnostics
 Imports Bytescout.TextRecognition
 
 Module Module1
