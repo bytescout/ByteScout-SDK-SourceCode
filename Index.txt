@@ -2,6 +2,9 @@
 
 \BarCode Reader SDK
 \BarCode SDK
+\Barcode Suite
+\Cloud API Server
+\Data Extraction Suite
 \Document Parser SDK
 \Image To Video SDK
 \Invoice Parser SDK
@@ -9,9 +12,11 @@
 \PDF Generator SDK for Javascript
 \PDF Renderer SDK
 \PDF SDK
+\PDF Suite
 \PDF To HTML SDK
 \PDF Viewer SDK
 \PDF.co Web API
+\Premium Suite
 \QR Code SDK
 \Screen Capturing SDK
 \Solutions
