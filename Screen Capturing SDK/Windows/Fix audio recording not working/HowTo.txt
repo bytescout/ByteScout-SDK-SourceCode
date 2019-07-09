@@ -1,0 +1,13 @@
+
+If you have no sound in Screen Capturing then try the following: If you are running Windows 7 and have a Realtek sound card the virtual-audio-capturer or Stereo Mix may be missing from the selectable Audio Input > Device setting.
+
+**[!] Before attempting this solution, make sure your Windows is fully up-to-date and you have the latest Realtek drivers.**
+
+Solution:
+
+1. Press Windows Key + R to open Run
+2. type "control mmsys.cpl sounds" (without the quotes) and hit Enter
+3. Click the Recording tab and check if the Stereo Mix device is there
+-  If yes, right-click on it and select Enable then restart the Screen Capturing app
+-  If no, right-click in a blank area and make sure Show Disabled Devices is checked then do the step 3.1
+4. Enjoy!

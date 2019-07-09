@@ -1836,6 +1836,7 @@
 \Screen Capturing SDK\Registry
 \Screen Capturing SDK\VB.NET
 \Screen Capturing SDK\VBScript and VB6
+\Screen Capturing SDK\Windows
 \Screen Capturing SDK\ASP.NET\Record Screen
 \Screen Capturing SDK\C#\Add Text And Image Overlays to Screen Recording
 \Screen Capturing SDK\C#\Blackout Sensitive Info on Screen Video
@@ -1920,6 +1921,7 @@
 \Screen Capturing SDK\VBScript and VB6\Take Screenshots On Timer
 \Screen Capturing SDK\VBScript and VB6\Use WEBM Output for Video
 \Screen Capturing SDK\VBScript and VB6\Use WMV Profile for Video Settings
+\Screen Capturing SDK\Windows\Fix audio recording not working
 \Solutions\Convert Scanned PDF to Excel
 \Solutions\Create side by side manifest
 \Solutions\Display PDF in Browser and Select Area Using PDF.js
