@@ -1,5 +1,5 @@
----
-templateVersion: 1
+﻿---
+templateVersion: 2
 templatePriority: 0
 sourceId: Amazon Web Services Invoice
 detectionRules:
@@ -9,29 +9,27 @@ detectionRules:
   - Invoice
 fields:
   total:
-    expression: TOTAL AMOUNT DUE ON.*\$(\d+\.\d+)
-    type: decimal
-  subTotal:
-    expression: TOTAL AMOUNT DUE ON.*\$(\d+\.\d+)
+    expression: TOTAL AMOUNT DUE ON{{ANY}}{{MONEY}}
     type: decimal
   dateIssued:
     expression: Invoice Date:\s+([a-zA-Z]+ \d+ , \d+)
     type: date
     dateFormat: MMMM d , yyyy
   invoiceId:
-    expression: Invoice Number:\s+(\d+)
-  sourceName:
+    expression: 'Invoice Number: {{123}}'
+  companyName:
     expression: Amazon Web Services, Inc.
     static: true
-  sourceWebsite:
+  companyWebsite:
     expression: aws.amazon.com
     static: true
   billTo:
+    expression: Bill to Address:{{ANY}}
     rect:
     - 33
-    - 137
-    - 214
-    - 51
+    - 115.5
+    - 213.75
+    - 72.75
     pageIndex: 0
   currency:
     expression: USD
@@ -41,14 +39,15 @@ tables:
   start:
     expression: Detail
   end:
-    expression: \z
-  itemStart:
+    expression: '\z'
+  subItemStart:
     expression: ^\s+(?<description>\w+.*)\$(?<unitPrice>\d+\.\d+)
+  subItemEnd:
+    expression: (VAT \*\*)|(Estimated US sales tax to be collected)\s+\$(\d+\.\d+)
   row:
     expression: (.*)\$(\d+\.\d+)
-  itemEnd:
-    expression: (VAT \*\*)|(Estimated US sales tax to be collected)\s+\$(\d+\.\d+)
-  types:
-    unitPrice: decimal
-options:
+  columns:
+  - name: unitPrice
+    type: decimal
   multipage: true
+

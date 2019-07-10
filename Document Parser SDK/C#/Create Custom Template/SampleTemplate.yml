@@ -1,68 +1,48 @@
----
-templateVersion: 1
-sourceId: My Custom Template
-
+﻿sourceId: My Custom Template
 detectionRules:
-  # Few regex expressions uniquely identifying the document design.
-  # Don't forget to escape special characters.
   keywords:
   - Your Company Name
   - Invoice No\.
   - TOTAL
-
-# Expressions to extract distinct fields.
-# Last matching group or "<value>" group will be passed to result.
 fields:
   total:
-    expression: TOTAL\s+(\d+\.\d+)
+    expression: TOTAL {{DECIMAL}}
     type: decimal
+    pageIndex: 0
   dateIssued:
-    expression: Invoice Date (\d{2}/\d{2}/\d{4})
-    # If type is dateTime and dateFormat property is specified
-    # the date will be converted to universal time by the specified format.
-    type: dateTime
-    dateFormat: MM/dd/yyyy
+    expression: Invoice Date {{DATE}}
+    type: date
+    dateFormat: auto-mdy
+    pageIndex: 0
   invoiceId:
-    expression: Invoice No. (\d+)
-  # Static field that will be passed to result unchanged.
-  sourceName:
+    expression: Invoice No. {{123}}
+    pageIndex: 0
+  companyName:
     expression: Vendor Company
     static: true
-  # Couple of fixed rectangular fields. 
-  # You can use "Template Editor" application to add them with ease.
+    pageIndex: 0
   billTo:
-    # Rectangle coordinates sequence: x, y, width, height.
     rect:
     - 32.25
     - 150
     - 348
     - 70.5
+    pageIndex: 0
   notes:
     rect:
     - 32.25
     - 227.25
     - 531
     - 47.25
-    # Optional page index parameter (zero-based) if you need to extract from specific page.
     pageIndex: 0
-
-# Table data extraction.
 tables:
 - name: table1
   start:
-    # Table start after header row "Item  Quantity  Price  Total".
     expression: Item\s+Quantity\s+Price\s+Total
   end:
-    # Table rows last until "TOTAL" keyword.
     expression: TOTAL
+  subItemStart: {}
+  subItemEnd: {}
   row:
-    # Regex for table rows extraction.
     expression: ^\s*(?<description>\w+.*)(?<quantity>\d+)\s+(?<unitPrice>\d+\.\d{2})\s+(?<itemTotal>\d+\.\d{2})\s*$
-  types:
-    # Column datatypes. Names correspond to regex matching groups.
-    unitPrice: decimal
-    itemTotal: decimal
 
-options:
-  # multipage - set 'true' if table data can continue on following pages.
-  multipage: false

@@ -76,9 +76,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="My Project\" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="..\..\DigitalOcean-scanned.jpg">
       <Link>DigitalOcean-scanned.jpg</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

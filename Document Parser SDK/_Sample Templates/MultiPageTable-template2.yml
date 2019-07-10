@@ -1,0 +1,46 @@
+﻿---
+# Template that demonstrates parsing of multi-page table without using 
+# a regular expression for table rows. Rows and cells are extracted automatically 
+# by specified column coordinates. Use `Template Editor` app to find get the coordinates 
+# (cursor coordinates are shown in the toolbar).
+templateVersion: 2
+templatePriority: 0
+sourceId: Multipage Table Test
+detectionRules:
+  keywords:
+  - Sample document with multi-page table
+fields:
+  total:
+    expression: TOTAL {{DECIMAL}}    
+tables:
+- name: table1
+  # coordinate or regular expression to find the table start on each document page
+  start:
+    #y: 136
+    expression: Item\s+Description\s+Price\s+Qty\s+Extended Price
+  # coordinate or regular expression to find the table end on each document page
+  end:
+    #y: 787
+    expression: (Page \d+ of \d+)|(TOTAL\s+\d+\.\d\d)
+  # left coordinate of the table (optional)
+  left: 51
+  # right coordinate of the table (optional)
+  right: 528
+  # column names, data types and coordinates (left edge)
+  columns: 
+  - name: itemNo
+    x: 51
+    type: integer
+  - name: description
+    x: 102
+    type: string
+  - name: price
+    x: 324
+    type: decimal
+  - name: qty
+    x: 396
+    type: integer
+  - name: extPrice
+    x: 441
+    type: decimal
+  multipage: true

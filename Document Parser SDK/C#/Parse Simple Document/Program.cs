@@ -14,7 +14,7 @@
 using System;
 using ByteScout.DocumentParser;
 
-// This example demonstrates document data parsing to JSON and YAML formats.
+// This example demonstrates document data parsing to JSON, YAML and XML formats.
 
 namespace GeneralExample
 {
@@ -25,6 +25,7 @@ namespace GeneralExample
             string templatesFolder = @".\Templates";
             string inputDocument1 = @".\DigitalOcean.pdf";
             string inputDocument2 = @".\AmazonAWS.pdf";
+            string inputDocument3 = @".\Google.pdf";
 
             // Create DocumentParser instance
             using (DocumentParser documentParser = new DocumentParser("demo", "demo"))
@@ -56,6 +57,17 @@ namespace GeneralExample
                 Console.WriteLine("Parsing results in YAML format:");
                 Console.WriteLine();
                 Console.WriteLine(yamlString);
+                
+                Console.WriteLine();
+                Console.WriteLine($"Parsing \"{inputDocument3}\"...");
+                Console.WriteLine();
+
+                // Parse document data in XML format
+                string xmlString = documentParser.ParseDocument(inputDocument3, OutputFormat.XML);
+                // Display parsed data in console
+                Console.WriteLine("Parsing results in XML format:");
+                Console.WriteLine();
+                Console.WriteLine(xmlString);
             }
 
             Console.WriteLine();

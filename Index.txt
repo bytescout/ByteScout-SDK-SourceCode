@@ -487,12 +487,15 @@
 \Document Parser SDK\VBScript and VB6
 \Document Parser SDK\_Sample Templates
 \Document Parser SDK\C#\Create Custom Template
+\Document Parser SDK\C#\Parse Multipage Table
 \Document Parser SDK\C#\Parse Simple Document
 \Document Parser SDK\C#\Parse with OCR
 \Document Parser SDK\VB.NET\Create Custom Template
+\Document Parser SDK\VB.NET\Parse Multipage Table
 \Document Parser SDK\VB.NET\Parse Simple Document
 \Document Parser SDK\VB.NET\Parse with OCR
 \Document Parser SDK\VBScript and VB6\Create Custom Template
+\Document Parser SDK\VBScript and VB6\Parse Multipage Table
 \Document Parser SDK\VBScript and VB6\Parse Simple Document
 \Document Parser SDK\VBScript and VB6\Parse with OCR
 \Image To Video SDK\.NET Core

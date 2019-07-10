@@ -1,5 +1,5 @@
 ---
-templateVersion: 1
+templateVersion: 2
 # set lowest priority (highest priority is 0)
 templatePriority: 999999
 sourceId: Generic Invoice
