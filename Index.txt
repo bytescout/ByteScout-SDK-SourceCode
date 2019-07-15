@@ -1970,6 +1970,7 @@
 \Solutions\Human Assisted Invoice Parsing
 \Solutions\Make Large PDF Document Searchable Using Parallel Processing
 \Solutions\Parse Invoice
+\Solutions\PDF Data Remover Tool
 \Solutions\Read PDF with Scanned Image and Hindi Text
 \Solutions\Regular Expression Search and Highlight in PDF
 \Solutions\Regular Expression Search In PDF And Highlight On Rendered Page
@@ -1991,6 +1992,7 @@
 \Solutions\Make Large PDF Document Searchable Using Parallel Processing\VB.NET
 \Solutions\Parse Invoice\C#
 \Solutions\Parse Invoice\VB.NET
+\Solutions\PDF Data Remover Tool\C#
 \Solutions\Read PDF with Scanned Image and Hindi Text\C#
 \Solutions\Read PDF with Scanned Image and Hindi Text\VB.NET
 \Solutions\Regular Expression Search and Highlight in PDF\C#
