@@ -57,8 +57,13 @@ namespace PrintPDF
 		}
 
 		private void buttonPageSetup_Click(object sender, EventArgs e)
-		{
-			pageSetupDialog1.ShowDialog();
+        {
+            // Set landscape orientation if needed
+            RectangleF pageRectangle = _rasterRenderer.GetPageRectangle(0);
+            if (pageRectangle.Width > pageRectangle.Height)
+                pageSetupDialog1.PageSettings.Landscape = true;
+
+            pageSetupDialog1.ShowDialog();
 		}
 
 		private void buttonPrintPreview_Click(object sender, EventArgs e)
@@ -83,7 +88,7 @@ namespace PrintPDF
 
 		    try
 		    {
-		        // For the best quality set the rendering resoultion equal to the printer resoultion
+		        // For the best quality set the rendering resolution equal to the printer resolution
 		        float renderingResolution = e.PageSettings.PrinterResolution.X;
 
 		        // Render page to image

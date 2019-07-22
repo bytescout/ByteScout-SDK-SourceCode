@@ -46,9 +46,17 @@ Public Partial Class Form1
 		End Try
 	End Sub
 
-	Private Sub buttonPageSetup_Click(sender As Object, e As EventArgs)
-		pageSetupDialog1.ShowDialog()
-	End Sub
+    Private Sub buttonPageSetup_Click(ByVal sender As Object, ByVal e As EventArgs)
+
+        ' Set landscape orientation if needed
+        Dim pageRectangle As RectangleF = _rasterRenderer.GetPageRectangle(0)
+        If (pageRectangle.Width > pageRectangle.Height) Then
+            pageSetupDialog1.PageSettings.Landscape = True
+        End If
+
+        pageSetupDialog1.ShowDialog()
+
+    End Sub
 
 	Private Sub buttonPrintPreview_Click(sender As Object, e As EventArgs)
 		_page = 0
@@ -68,9 +76,7 @@ Public Partial Class Form1
         Cursor = Cursors.WaitCursor
 
         Try
-            _rasterRenderer.LoadDocumentFromFile(_document)
-
-            ' For the best quality set the rendering resoultion equal to the printer resoultion
+            ' For the best quality set the rendering resolution equal to the printer resolution
             Dim renderingResolution As Single = e.PageSettings.PrinterResolution.X
 
             ' Render page to image

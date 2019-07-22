@@ -38,6 +38,7 @@ namespace Sample_UI_Application
             pdfViewerControl1.MultiSelectMode = true;
             pdfViewerControl1.AllowResizeSelectionRectangles = true;
             pdfViewerControl1.ShowResizeHandlesForActiveSelectionOnly = true;
+            pdfViewerControl1.ClearSelectionOnClick = false;
 
             // Load document into PDF viewer
             pdfViewerControl1.InputFile = "sample.pdf";
