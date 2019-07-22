@@ -19,6 +19,7 @@
 \Premium Suite
 \QR Code SDK
 \Screen Capturing SDK
+\Sensitive Data Suite
 \Solutions
 \Spreadsheet SDK
 \SWF To Video SDK
@@ -482,6 +483,13 @@
 \BarCode SDK\Visual Basic 6\Save Barcode to EMF Images
 \BarCode SDK\Visual Basic 6\Save Barcode to PNG Images
 \BarCode SDK\Visual Basic 6\Set Barcode Size
+\Barcode Suite\C#
+\Barcode Suite\C#\First Sample
+\Cloud API Server\C#
+\Cloud API Server\C#\First Sample
+\Data Extraction Suite\C#
+\Data Extraction Suite\C#\Select Region And Perform OCR
+\Data Extraction Suite\C#\Select Region And Perform OCR\C#
 \Document Parser SDK\C#
 \Document Parser SDK\VB.NET
 \Document Parser SDK\VBScript and VB6
@@ -1151,6 +1159,8 @@
 \PDF SDK\VBScript and VB6\Use Color Profiles in Drawing in PDF
 \PDF SDK\VBScript and VB6\Use Layers in PDF
 \PDF SDK\VBScript and VB6\Use Radio Button in PDF form
+\PDF Suite\C#
+\PDF Suite\C#\First Sample
 \PDF To HTML SDK\ASP.NET
 \PDF To HTML SDK\C#
 \PDF To HTML SDK\VB.NET
@@ -1840,6 +1850,8 @@
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL Asynchronously
+\Premium Suite\C#
+\Premium Suite\C#\First Sample
 \QR Code SDK\C#
 \QR Code SDK\Microsoft Access
 \QR Code SDK\VB.NET
@@ -1960,6 +1972,9 @@
 \Screen Capturing SDK\VBScript and VB6\Use WEBM Output for Video
 \Screen Capturing SDK\VBScript and VB6\Use WMV Profile for Video Settings
 \Screen Capturing SDK\Windows\Fix audio recording not working
+\Sensitive Data Suite\C#
+\Sensitive Data Suite\C#\PDF Data Remover Tool
+\Sensitive Data Suite\C#\PDF Data Remover Tool\C#
 \Solutions\Convert Scanned PDF to Excel
 \Solutions\Create side by side manifest
 \Solutions\Display PDF in Browser and Select Area Using PDF.js
