@@ -1975,9 +1975,11 @@
 \Sensitive Data Suite\C#
 \Sensitive Data Suite\VB.NET
 \Sensitive Data Suite\C#\PDF Data Remover Tool
-\Sensitive Data Suite\C#\RemoveSensitiveDataFromRegion
+\Sensitive Data Suite\C#\Remove Sensitive Data From Region
+\Sensitive Data Suite\C#\Remove Sensitive Text Using Regex Expressions
 \Sensitive Data Suite\C#\PDF Data Remover Tool\C#
-\Sensitive Data Suite\VB.NET\RemoveSensitiveDataFromRegion
+\Sensitive Data Suite\VB.NET\Remove Sensitive Data From Region
+\Sensitive Data Suite\VB.NET\Remove Sensitive Text Using Regex Expressions
 \Solutions\Convert Scanned PDF to Excel
 \Solutions\Create side by side manifest
 \Solutions\Display PDF in Browser and Select Area Using PDF.js
