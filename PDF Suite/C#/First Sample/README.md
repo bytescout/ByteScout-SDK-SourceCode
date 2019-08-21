@@ -1,14 +1,14 @@
-## first sample in C# using ByteScout Barcode Suite
+## first sample in C# with ByteScout PDF Suite
 
-### Make first sample in C#: ### Tutorial on how to do first sample in C#
+### How to apply ByteScout PDF Suite for first sample in C#
 
-Every ByteScout tool contains example C# source codes that you can find here or in the folder with installed ByteScout product. ByteScout Barcode Suite was made to help with first sample in C#. ByteScout Barcode Suite is the bundle that privides 3  SDK products to generate barcodes (Barcode SDK), read barcodes (Barcode Reaer SDK) and read and write spreadsheets (Spreadsheet SDK).
+These source code samples are assembled by their programming language and functions they use. ByteScout PDF Suite was made to help with first sample in C#. ByteScout PDF Suite is the bundle that provides six different SDK libraries to work with PDF from generating rich PDF reports to extracting data from PDF documents and converting them to HTML. This bundle includes PDF (Generator) SDK, PDF Renderer SDK, PDF Extractor SDK, PDF to HTML SDK, PDF Viewer SDK and PDF Generator SDK for Javascript.
 
-C# code snippet like this for ByteScout Barcode Suite works best when you need to quickly implement first sample in your C# application. C# sample code is all you need: copy and paste the code to your C# application's code editor, add a reference to ByteScout Barcode Suite (if you haven't added yet) and you are ready to go! Further enhancement of the code will make it more vigorous.
+C# code snippet like this for ByteScout PDF Suite works best when you need to quickly implement first sample in your C# application. If you want to implement this functionality, you should copy and paste code below into your app using code editor. Then compile and run your application. Enjoy writing a code with ready-to-use sample C# codes to add first sample functions using ByteScout PDF Suite in C#.
 
-Our website provides free trial version of ByteScout Barcode Suite. It comes along with all these source code samples with the goal to help you with your C# application implementation.
+Trial version along with the source code samples for C# can be downloaded from our website
 
-## Contact Customer Support
+## Get In Touch
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Suite%20Question)
 
@@ -16,18 +16,20 @@ or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=By
 
 ## Free Trial Download
 
-[Get 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
 
-## Looking for Web API? 
+## Web API (On-demand version)
 
-[Get your PDF.co API key](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
 
-## Documentation and Reference
+## API Documentation and References
 
 [Explore ByteScout PDF Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
 
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
 
-## Video
+[Check Free Training Sessions for ByteScout%20PDF%20Suite](https://academy.bytescout.com/)
+
+## Video Review
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)

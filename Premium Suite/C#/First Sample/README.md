@@ -1,14 +1,14 @@
-## first sample in C# using ByteScout Barcode Suite
+## first sample in C# with ByteScout Premium Suite
 
-### Make first sample in C#: ### Tutorial on how to do first sample in C#
+### Simple tutorial on how to do first sample in C#
 
-Every ByteScout tool contains example C# source codes that you can find here or in the folder with installed ByteScout product. ByteScout Barcode Suite was made to help with first sample in C#. ByteScout Barcode Suite is the bundle that privides 3  SDK products to generate barcodes (Barcode SDK), read barcodes (Barcode Reaer SDK) and read and write spreadsheets (Spreadsheet SDK).
+An easy to understand guide to learn how to first sample in C#. ByteScout Premium Suite helps with first sample in C#. ByteScout Premium Suite is the bundle that includes twelve SDK products from ByteScout including tools and components for PDF, barcodes, spreadsheets, screen video recording.
 
-C# code snippet like this for ByteScout Barcode Suite works best when you need to quickly implement first sample in your C# application. C# sample code is all you need: copy and paste the code to your C# application's code editor, add a reference to ByteScout Barcode Suite (if you haven't added yet) and you are ready to go! Further enhancement of the code will make it more vigorous.
+ Want to speed up the application development? Then this C#, code samples for C#, developers help to speed up the application development and writing a code when using ByteScout Premium Suite. To use first sample in your C# project or application just copy & paste the code and then run your app! Use of ByteScout Premium Suite in C# is also described in the documentation included along with the product.
 
-Our website provides free trial version of ByteScout Barcode Suite. It comes along with all these source code samples with the goal to help you with your C# application implementation.
+Trial version along with the source code samples for C# can be downloaded from our website
 
-## Contact Customer Support
+## Get In Touch
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Premium%20Suite%20Question)
 
@@ -16,18 +16,20 @@ or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=By
 
 ## Free Trial Download
 
-[Get 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
 
-## Looking for Web API? 
+## Web API (On-demand version)
 
-[Get your PDF.co API key](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
 
-## Documentation and Reference
+## API Documentation and References
 
 [Explore ByteScout Premium Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
 
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
 
-## Video
+[Check Free Training Sessions for ByteScout%20Premium%20Suite](https://academy.bytescout.com/)
+
+## Video Review
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)

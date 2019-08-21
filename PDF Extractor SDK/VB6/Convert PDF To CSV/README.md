@@ -8,7 +8,7 @@ VB6 code samples for VB6 developers help to speed up coding of your application 
 
 Free trial version of ByteScout PDF Extractor SDK is available for download from our website. Get it to try other source code samples for VB6.
 
-## Contact Customer Support
+## Get In Touch
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Extractor%20SDK%20Question)
 
@@ -16,18 +16,20 @@ or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=By
 
 ## Free Trial Download
 
-[Get 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
 
-## Looking for Web API? 
+## Web API (On-demand version)
 
-[Get your PDF.co API key](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
 
-## Documentation and Reference
+## API Documentation and References
 
 [Explore ByteScout PDF Extractor SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
 
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
 
-## Video
+[Check Free Training Sessions for ByteScout%20PDF%20Extractor%20SDK](https://academy.bytescout.com/)
+
+## Video Review
 
 [https://www.youtube.com/watch?v=s28W3_KMraU](https://www.youtube.com/watch?v=s28W3_KMraU)

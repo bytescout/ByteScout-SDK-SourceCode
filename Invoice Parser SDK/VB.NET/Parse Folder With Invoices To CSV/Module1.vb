@@ -23,9 +23,6 @@ Module Module1
         ' Create InvoiceParser instance
         Using parser As InvoiceParser = New InvoiceParser("demo", "demo")
 
-            ' Disable fallback to default generic template if document is nor recognized
-            parser.FallbackToGenericTemplate = False
-
             ' Setup CSV output
             Dim csvOptions As CSVOptions = New CSVOptions()
             csvOptions.Encoding = Encoding.UTF8

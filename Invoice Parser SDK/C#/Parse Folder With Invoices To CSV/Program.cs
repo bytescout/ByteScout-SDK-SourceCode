@@ -28,9 +28,6 @@ namespace ParseFolderToCSV
             // Create InvoiceParser instance
             using (InvoiceParser parser = new InvoiceParser("demo", "demo"))
             {
-                // Disable fallback to default generic template if document is nor recognized
-                parser.FallbackToGenericTemplate = false;
-
                 // Setup CSV output
                 CSVOptions csvOptions = new CSVOptions
                 {

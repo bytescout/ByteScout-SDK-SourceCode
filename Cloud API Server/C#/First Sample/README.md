@@ -1,14 +1,14 @@
-## first sample in C# using ByteScout Barcode Suite
+## first sample in C# and ByteScout Cloud API Server
 
-### Make first sample in C#: ### Tutorial on how to do first sample in C#
+### Learn to code first sample in C#: How-To tutorial
 
-Every ByteScout tool contains example C# source codes that you can find here or in the folder with installed ByteScout product. ByteScout Barcode Suite was made to help with first sample in C#. ByteScout Barcode Suite is the bundle that privides 3  SDK products to generate barcodes (Barcode SDK), read barcodes (Barcode Reaer SDK) and read and write spreadsheets (Spreadsheet SDK).
+The samples of source code documentation give a quick and simple method to apply a required functionality into your application. ByteScout Cloud API Server was created to assist first sample in C#. ByteScout Cloud API Server is API server that is ready to use and can be installed and deployed in less than 30 minutes on your own Windows server or server in a cloud. It can save data and files on your local server-based file storage or in Amazon AWS S3 storage. Data is processed solely on the API server and is powered by ByteScout engine, no cloud services or Internet connection is required for data processing..
 
-C# code snippet like this for ByteScout Barcode Suite works best when you need to quickly implement first sample in your C# application. C# sample code is all you need: copy and paste the code to your C# application's code editor, add a reference to ByteScout Barcode Suite (if you haven't added yet) and you are ready to go! Further enhancement of the code will make it more vigorous.
+Save time on writing and testing code by using the code below and use it in your application. If you want to know how it works, then this C# sample code should be copied and pasted into your application’s code editor. Then just compile and run it. Want to see how it works with your data then code testing will allow the function to be tested and work properly.
 
-Our website provides free trial version of ByteScout Barcode Suite. It comes along with all these source code samples with the goal to help you with your C# application implementation.
+Trial version can be downloaded from our website for free. It contains this and other source code samples for C#.
 
-## Contact Customer Support
+## Get In Touch
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Cloud%20API%20Server%20Question)
 
@@ -16,18 +16,20 @@ or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=By
 
 ## Free Trial Download
 
-[Get 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
 
-## Looking for Web API? 
+## Web API (On-demand version)
 
-[Get your PDF.co API key](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
 
-## Documentation and Reference
+## API Documentation and References
 
 [Explore ByteScout Cloud API Server Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
 
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
 
-## Video
+[Check Free Training Sessions for ByteScout%20Cloud%20API%20Server](https://academy.bytescout.com/)
+
+## Video Review
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
