@@ -1202,6 +1202,7 @@
 \PDF.co Web API\Barcode Reader API
 \PDF.co Web API\CSV To PDF API
 \PDF.co Web API\DOC To PDF API
+\PDF.co Web API\Document Parser API
 \PDF.co Web API\Excel To CSV API
 \PDF.co Web API\Excel To HTML API
 \PDF.co Web API\Excel To JSON API
@@ -1352,6 +1353,10 @@
 \PDF.co Web API\DOC To PDF API\VB.NET\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\VB.NET\Convert DOC To PDF From URL
 \PDF.co Web API\DOC To PDF API\VB.NET\Convert DOC To PDF From URL Asynchronously
+\PDF.co Web API\Document Parser API\C#
+\PDF.co Web API\Document Parser API\Java
+\PDF.co Web API\Document Parser API\C#\Parse Uploaded File
+\PDF.co Web API\Document Parser API\Java\Parse Uploaded File
 \PDF.co Web API\Excel To CSV API\JavaScript
 \PDF.co Web API\Excel To CSV API\JavaScript\Convert Excel to CSV in jQuery
 \PDF.co Web API\Excel To CSV API\JavaScript\Convert Excel to CSV in jQuery - Async API
