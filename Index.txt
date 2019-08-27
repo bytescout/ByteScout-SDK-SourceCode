@@ -1263,6 +1263,7 @@
 \PDF Extractor SDK\ASP.NET C#\Make PDF Unsearchable
 \PDF Extractor SDK\ASP.NET C#\OCR (Optical Character Recognition) in PDF
 \PDF Extractor SDK\ASP.NET C#\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\C#\Add Image Stamp in PDF
 \PDF Extractor SDK\C#\Batch check folder agianst JSON settings
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF
 \PDF Extractor SDK\C#\Compare PDF Documents
@@ -1361,6 +1362,7 @@
 \PDF Extractor SDK\Delphi\PDF Batch Processing
 \PDF Extractor SDK\Microsoft Excel\Extract Text From Coordinates from PDF
 \PDF Extractor SDK\Powershell\PDF To JSON
+\PDF Extractor SDK\VB.NET\Add Image Stamp in PDF
 \PDF Extractor SDK\VB.NET\Batch check folder agianst JSON settings
 \PDF Extractor SDK\VB.NET\Check If OCR Is Required for PDF
 \PDF Extractor SDK\VB.NET\Compare PDF Documents
