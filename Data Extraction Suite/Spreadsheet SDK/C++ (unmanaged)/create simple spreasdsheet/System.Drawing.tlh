@@ -1,0 +1,117 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (8b168475).
+//
+// System.Drawing.tlh
+//
+// C++ source equivalent of Win32 type library System.Drawing.tlb
+// compiler-generated file created 10/24/10 at 18:49:04 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace System_Drawing {
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ Image;
+struct /* coclass */ System_Drawing_Bitmap;
+struct Color;
+struct System_Drawing_Point;
+struct Rectangle;
+struct Size;
+struct /* coclass */ Font;
+struct PointF;
+struct SizeF;
+struct __declspec(uuid("2948ebcd-5e0a-3184-9a87-37d3258c0d98"))
+/* dual interface */ _Image;
+struct __declspec(uuid("f86086e0-a89e-3ebe-b036-79bf72354656"))
+/* dual interface */ _System_Drawing_Bitmap;
+struct __declspec(uuid("bc28f4b1-b9ab-3dd8-a471-5b7ae757f8f9"))
+/* dual interface */ _Font;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_Image, __uuidof(_Image));
+_COM_SMARTPTR_TYPEDEF(_System_Drawing_Bitmap, __uuidof(_System_Drawing_Bitmap));
+_COM_SMARTPTR_TYPEDEF(_Font, __uuidof(_Font));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("451dbf16-b46b-3b4f-993c-efd8b01553a0"))
+Image;
+    // [ default ] interface _Image
+    // interface _Object
+    // interface ISerializable
+    // interface ICloneable
+    // interface IDisposable
+
+struct __declspec(uuid("6549e875-8857-35a3-94a2-c3d574ddeb1d"))
+System_Drawing_Bitmap;
+    // [ default ] interface _System_Drawing_Bitmap
+    // interface _Object
+    // interface ISerializable
+    // interface ICloneable
+    // interface IDisposable
+
+struct System_Drawing_Point
+{
+    long x;
+    long y;
+};
+
+struct Rectangle
+{
+    long x;
+    long y;
+    long width;
+    long height;
+};
+
+struct Size
+{
+    long width;
+    long height;
+};
+
+struct __declspec(uuid("091b628b-3473-38bf-9a98-4f9db4fb61f8"))
+Font;
+    // [ default ] interface _Font
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+    // interface IDisposable
+
+struct PointF
+{
+    float x;
+    float y;
+};
+
+struct SizeF
+{
+    float width;
+    float height;
+};
+
+struct __declspec(uuid("2948ebcd-5e0a-3184-9a87-37d3258c0d98"))
+_Image : IDispatch
+{};
+
+struct __declspec(uuid("f86086e0-a89e-3ebe-b036-79bf72354656"))
+_System_Drawing_Bitmap : IDispatch
+{};
+
+struct __declspec(uuid("bc28f4b1-b9ab-3dd8-a471-5b7ae757f8f9"))
+_Font : IDispatch
+{};
+
+} // namespace System_Drawing
+
+#pragma pack(pop)

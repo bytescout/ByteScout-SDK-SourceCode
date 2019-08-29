@@ -1,0 +1,14 @@
+﻿<Window x:Class="PdfViewerInWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:bs="clr-namespace:Bytescout.PDFViewer;assembly=Bytescout.PDFViewer"
+        Title="MainWindow" Height="640" Width="900" Loaded="Window_Loaded">
+	<Grid>
+		<Menu Height="22" HorizontalAlignment="Stretch" Margin="0" Name="menu1" VerticalAlignment="Top" Focusable="False">
+			<MenuItem Name="menuItemOpen" Header="Open" Click="menuItemOpen_Click" Focusable="False" />
+		</Menu>
+		<WindowsFormsHost HorizontalAlignment="Stretch" Margin="0,22,0,0" VerticalAlignment="Stretch">
+			<bs:PDFViewerControl x:Name="pdfViewerControl1" AllowResizeSelectionRectangles="True" MouseMode="Selection"/>
+		</WindowsFormsHost>
+	</Grid>
+</Window>

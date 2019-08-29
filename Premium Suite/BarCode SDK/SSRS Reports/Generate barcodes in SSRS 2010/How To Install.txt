@@ -1,0 +1,48 @@
+How to install the Bytescout SSRS Control manually
+==================================================
+
+1. Copy "Bytescout.BarCode.BarCodeReportItem.dll" to
+   "C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies"
+   and to
+   "C:\Program Files\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer\bin"
+
+   NOTE: "MSRS11.MSSQLSERVER" part of Report Services path may vary depending on the server edition or the installation type.
+   Make sure you specified the correct path in config files below!!!
+
+2. Edit the "C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\RSReportDesigner.config" file.
+   Add following lines inside the <Extensions> tag:
+
+	<ReportItems>
+		<ReportItem Name="BarCode" Type="Bytescout.BarCode.BarCodeReportItem, Bytescout.BarCode.BarCodeReportItem" />
+	</ReportItems>
+	<ReportItemDesigner>
+		<ReportItem Name="BarCode" Type="Bytescout.BarCode.BarCodeReportItemDesigner, Bytescout.BarCode.BarCodeReportItem" />
+	</ReportItemDesigner>
+
+3. Edit the "C:\Program Files\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer\rsreportserver.config" file.
+   Add following lines inside the <Extensions> tag:
+
+	<ReportItems>
+		<ReportItem Name="BarCode" Type="Bytescout.BarCode.BarCodeReportItem, Bytescout.BarCode.BarCodeReportItem" />
+	</ReportItems>
+
+4. Edit the "C:\Program Files\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer\rssrvpolicy.config" file.
+   Add following lines inside the <CodeGroup class="FirstMatchCodeGroup"> tag:
+
+	<CodeGroup class="UnionCodeGroup" version="1" PermissionSetName="FullTrust" Name="Bytescout_BarCode_ReportItem"
+			Description="This code group grants Bytescout.BarCode.BarCodeReportItem.dll FullTrust permission.">
+		<IMembershipCondition class="UrlMembershipCondition" version="1" Url="C:\Program Files\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer\bin\Bytescout.BarCode.BarCodeReportItem.dll" />
+	</CodeGroup>
+
+5. Copy "Bytescout.BarCode.dll" to 
+	"C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies"
+	and to
+	"C:\Program Files\Microsoft SQL Server\MSRS11.MSSQLSERVER\Reporting Services\ReportServer\bin"
+	
+
+6. Create new or open existing Report project in Visual Studio 2010 (or in "SQL Server Data Tools" installed with MS SQL Server 2012).
+   Right-click the Visual Studio toolbox and select "Choose Items...". On the .NET Components tab, select "Browse..."
+   and navigate to "C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\Bytescout.BarCode.BarCodeReportItem.dll".
+   BarCode control icon will appear on the toolbox and you now can drag and drop it on your report.
+
+7. To set dynamic barcode value for the put "=Fields!ReportField.Value" expression to Value property of the barcode control.

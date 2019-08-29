@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DecodeDamagedCode39", "DecodeDamagedCode39.vbproj", "{E379C06C-FCAC-44C9-8A99-1AA4CB9FB035}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E379C06C-FCAC-44C9-8A99-1AA4CB9FB035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E379C06C-FCAC-44C9-8A99-1AA4CB9FB035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E379C06C-FCAC-44C9-8A99-1AA4CB9FB035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E379C06C-FCAC-44C9-8A99-1AA4CB9FB035}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAE13245-BDF5-4E1D-A21E-17FE00E07FC1}
+	EndGlobalSection
+EndGlobal

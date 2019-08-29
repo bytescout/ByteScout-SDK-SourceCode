@@ -1,0 +1,182 @@
+%PDF-1.4
+1 0 obj
+<</Title (Sample document title)
+/Subject (Sample subject)
+/Keywords (keyword1, keyword 2, keyword3)
+/Author (Document Author Name)
+/Creator (Document Creator Name)
+/CreationDate (D:20120710164846+00'00')
+/ModDate (D:20120710164846+00'00')
+/Producer (BytescoutPDF 1.0)
+>>
+endobj
+2 0 obj
+<</Type /Catalog
+/Markings  <</Marked true >>
+/Pages 3 0 R
+/Outlines 4 0 R
+/PageMode /UseOutlines
+>>
+endobj
+3 0 obj
+<</Type /Pages
+/Kids [5 0 R 8 0 R 10 0 R ]
+/Count 3
+>>
+endobj
+4 0 obj
+<</Type /Outlines
+/First 12 0 R
+/Last 18 0 R
+/Count 4
+>>
+endobj
+5 0 obj
+<</Type /Page
+/Parent 3 0 R
+/MediaBox [0 0 594 846]
+/Group <</S/Transparency /CS/DeviceRGB /I true>>
+/Contents 6 0 R
+/Resources <</Font <</F7 7 0 R>>/ProcSet [/PDF /Text]>>
+>>
+endobj
+6 0 obj
+<</Length 381
+>>
+stream
+q BT 0 0 0 rg /F7 12 Tf 1 0 0 1 20 826 cm (The quick brown fox jumps over the lazy dog)Tj ET Q q BT 0 0 0 rg /F7 12 Tf 1 0 0 1 50 626 cm (The quick brown fox jumps over the lazy dog)Tj ET Q q BT 0 0 0 rg /F7 12 Tf 1 0 0 1 50 426 cm (The quick brown fox jumps over the lazy dog)Tj ET Q q BT 0 0 0 rg /F7 12 Tf 1 0 0 1 100 226 cm (The quick brown fox jumps over the lazy dog)Tj ET Q 
+endstream
+endobj
+7 0 obj
+<</Type /Font
+/Subtype /Type1
+/Name /F7
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/FirstChar 0
+/LastChar 255
+/Widths [255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 286 366 573 573 916 687 197 343 343 401 602 286 343 286 286 573 573 573 573 573 573 573 573 573 573 286 286 602 602 602 573 1045 687 687 744 744 687 629 801 744 286 515 687 573 858 744 801 687 801 744 687 629 744 687 972 687 687 629 286 286 286 483 573 343 573 573 515 573 573 286 573 573 229 229 515 229 858 573 573 573 573 343 515 286 573 515 744 515 515 515 344 268 344 602 0 573 0 229 573 343 1030 573 573 343 1030 687 343 1030 0 629 0 0 229 229 343 343 361 573 1030 343 1030 515 343 972 0 515 687 0 343 573 573 573 573 268 573 343 759 381 573 602 0 759 569 412 565 343 343 343 593 553 343 343 343 376 573 859 859 859 629 687 687 687 687 687 687 1030 744 687 687 687 687 286 286 286 286 744 744 801 801 801 801 801 602 801 744 744 744 744 687 687 629 573 573 573 573 573 573 916 515 573 573 573 573 286 286 286 286 573 573 573 573 573 573 573 565 629 573 573 573 573 515 573 515]
+>>
+endobj
+8 0 obj
+<</Type /Page
+/Parent 3 0 R
+/MediaBox [0 0 594 846]
+/Group <</S/Transparency /CS/DeviceRGB /I true>>
+/Contents 9 0 R
+/Resources <</Font <</F7 7 0 R>>/ProcSet [/PDF /Text]>>
+>>
+endobj
+9 0 obj
+<</Length 95
+>>
+stream
+q BT 0 0 0 rg /F7 12 Tf 1 0 0 1 20 826 cm (The quick brown fox jumps over the lazy dog)Tj ET Q 
+endstream
+endobj
+10 0 obj
+<</Type /Page
+/Parent 3 0 R
+/MediaBox [0 0 594 846]
+/Group <</S/Transparency /CS/DeviceRGB /I true>>
+/Contents 11 0 R
+/Resources <</Font <</F7 7 0 R>>/ProcSet [/PDF /Text]>>
+>>
+endobj
+11 0 obj
+<</Length 95
+>>
+stream
+q BT 0 0 0 rg /F7 12 Tf 1 0 0 1 20 826 cm (The quick brown fox jumps over the lazy dog)Tj ET Q 
+endstream
+endobj
+12 0 obj
+<</Title (First Chapter)
+/Parent 4 0 R
+/A <</Type /Action/S /GoTo/D [5 0 R /XYZ 0 846 0]>>
+/Next 16 0 R
+/First 13 0 R
+/Last 14 0 R
+/Count 2
+>>
+endobj
+13 0 obj
+<</Title (Part A)
+/Parent 12 0 R
+/A <</Type /Action/S /GoTo/D [5 0 R /XYZ 0 646 0]>>
+/Next 14 0 R
+/Count 0
+>>
+endobj
+14 0 obj
+<</Title (Part B)
+/Parent 12 0 R
+/A <</Type /Action/S /GoTo/D [5 0 R /XYZ 0 446 0]>>
+/Prev 13 0 R
+/First 15 0 R
+/Last 15 0 R
+/Count 1
+>>
+endobj
+15 0 obj
+<</Title (Details)
+/Parent 14 0 R
+/A <</Type /Action/S /GoTo/D [5 0 R /XYZ 0 246 0]>>
+/Count 0
+>>
+endobj
+16 0 obj
+<</Title (Second Chapter)
+/Parent 4 0 R
+/A <</Type /Action/S /GoTo/D [8 0 R /XYZ 0 846 0]>>
+/Prev 12 0 R
+/Next 17 0 R
+/Count 0
+>>
+endobj
+17 0 obj
+<</Title (Third Chapter)
+/Parent 4 0 R
+/A <</Type /Action/S /GoTo/D [10 0 R /XYZ 0 846 0]>>
+/Prev 16 0 R
+/Next 18 0 R
+/Count 0
+>>
+endobj
+18 0 obj
+<</Title (External URL)
+/Parent 4 0 R
+/A <</Type /Action/S /URI/URI (www.google.com)>>
+/Prev 17 0 R
+/Count 0
+>>
+endobj
+xref
+0 19
+0000000000 65535 f
+0000000010 00000 n
+0000000308 00000 n
+0000000432 00000 n
+0000000508 00000 n
+0000000587 00000 n
+0000000787 00000 n
+0000001225 00000 n
+0000002394 00000 n
+0000002594 00000 n
+0000002745 00000 n
+0000002947 00000 n
+0000003099 00000 n
+0000003268 00000 n
+0000003402 00000 n
+0000003565 00000 n
+0000003686 00000 n
+0000003841 00000 n
+0000003996 00000 n
+trailer
+<< /Size 19
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+4132
+%%EOF

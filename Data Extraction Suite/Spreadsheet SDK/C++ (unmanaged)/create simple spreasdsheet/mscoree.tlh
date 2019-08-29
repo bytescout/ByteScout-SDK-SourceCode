@@ -1,0 +1,332 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (6bf3799b).
+//
+// mscoree.tlh
+//
+// C++ source equivalent of Win32 type library mscoree.tlb
+// compiler-generated file created 10/24/10 at 19:00:39 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace mscoree {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("178e5337-1528-4591-b1c9-1c6e484686d8"))
+/* interface */ IApartmentCallback;
+typedef unsigned long ULONG_PTR;
+struct __declspec(uuid("c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4"))
+/* interface */ IManagedObject;
+struct __declspec(uuid("04c6be1e-1db1-4058-ab7a-700cccfbf254"))
+/* interface */ ICatalogServices;
+struct /* coclass */ ComCallUnmarshal;
+struct /* coclass */ CorRuntimeHost;
+struct __declspec(uuid("cb2f6722-ab3a-11d2-9c40-00c04fa30a3e"))
+/* interface */ ICorRuntimeHost;
+struct __declspec(uuid("5c2b07a5-1e98-11d3-872f-00c04f79ed0d"))
+/* interface */ ICorConfiguration;
+struct __declspec(uuid("f31d1788-c397-4725-87a5-6af3472c2791"))
+/* interface */ IGCThreadControl;
+struct __declspec(uuid("5513d564-8374-4cb9-aed9-0083f4160a1d"))
+/* interface */ IGCHostControl;
+struct __declspec(uuid("23d86786-0bb5-4774-8fb5-e3522add6246"))
+/* interface */ IDebuggerThreadControl;
+struct __declspec(uuid("fac34f6e-0dcd-47b5-8021-531bc5ecca63"))
+/* interface */ IGCHost;
+struct _COR_GC_STATS;
+struct _COR_GC_THREAD_STATS;
+struct __declspec(uuid("63df8730-dc81-4062-84a2-1ff943f59fac"))
+/* interface */ IValidator;
+struct __declspec(uuid("856ca1b2-7dab-11d3-acec-00c04f86c309"))
+/* interface */ IVEHandler;
+struct tag_VerError;
+struct __declspec(uuid("bf24142d-a47d-4d24-a66d-8c2141944e44"))
+/* interface */ IDebuggerInfo;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IApartmentCallback, __uuidof(IApartmentCallback));
+_COM_SMARTPTR_TYPEDEF(IManagedObject, __uuidof(IManagedObject));
+_COM_SMARTPTR_TYPEDEF(ICatalogServices, __uuidof(ICatalogServices));
+_COM_SMARTPTR_TYPEDEF(ICorRuntimeHost, __uuidof(ICorRuntimeHost));
+_COM_SMARTPTR_TYPEDEF(ICorConfiguration, __uuidof(ICorConfiguration));
+_COM_SMARTPTR_TYPEDEF(IGCThreadControl, __uuidof(IGCThreadControl));
+_COM_SMARTPTR_TYPEDEF(IGCHostControl, __uuidof(IGCHostControl));
+_COM_SMARTPTR_TYPEDEF(IDebuggerThreadControl, __uuidof(IDebuggerThreadControl));
+_COM_SMARTPTR_TYPEDEF(IGCHost, __uuidof(IGCHost));
+_COM_SMARTPTR_TYPEDEF(IValidator, __uuidof(IValidator));
+_COM_SMARTPTR_TYPEDEF(IVEHandler, __uuidof(IVEHandler));
+_COM_SMARTPTR_TYPEDEF(IDebuggerInfo, __uuidof(IDebuggerInfo));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("178e5337-1528-4591-b1c9-1c6e484686d8"))
+IApartmentCallback : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall DoCallback (
+        ULONG_PTR pFunc,
+        ULONG_PTR pData ) = 0;
+};
+
+struct __declspec(uuid("c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4"))
+IManagedObject : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetSerializedBuffer (
+        BSTR * pBSTR ) = 0;
+    virtual HRESULT __stdcall GetObjectIdentity (
+        BSTR * pBSTRGUID,
+        int * AppDomainID,
+        int * pCCW ) = 0;
+};
+
+struct __declspec(uuid("04c6be1e-1db1-4058-ab7a-700cccfbf254"))
+ICatalogServices : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Autodone ( ) = 0;
+    virtual HRESULT __stdcall NotAutodone ( ) = 0;
+};
+
+struct __declspec(uuid("3f281000-e95a-11d2-886b-00c04f869f04"))
+ComCallUnmarshal;
+    // [ default ] interface IMarshal
+
+struct __declspec(uuid("cb2f6723-ab3a-11d2-9c40-00c04fa30a3e"))
+CorRuntimeHost;
+    // [ default ] interface ICorRuntimeHost
+    // interface IGCHost
+    // interface ICorConfiguration
+    // interface IValidator
+    // interface IDebuggerInfo
+
+struct __declspec(uuid("cb2f6722-ab3a-11d2-9c40-00c04fa30a3e"))
+ICorRuntimeHost : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall CreateLogicalThreadState ( ) = 0;
+    virtual HRESULT __stdcall DeleteLogicalThreadState ( ) = 0;
+    virtual HRESULT __stdcall SwitchInLogicalThreadState (
+        unsigned long * pFiberCookie ) = 0;
+    virtual HRESULT __stdcall SwitchOutLogicalThreadState (
+        unsigned long * * pFiberCookie ) = 0;
+    virtual HRESULT __stdcall LocksHeldByLogicalThread (
+        unsigned long * pCount ) = 0;
+    virtual HRESULT __stdcall MapFile (
+        void * hFile,
+        void * * hMapAddress ) = 0;
+    virtual HRESULT __stdcall GetConfiguration (
+        struct ICorConfiguration * * pConfiguration ) = 0;
+    virtual HRESULT __stdcall Start ( ) = 0;
+    virtual HRESULT __stdcall Stop ( ) = 0;
+    virtual HRESULT __stdcall CreateDomain (
+        LPWSTR pwzFriendlyName,
+        IUnknown * pIdentityArray,
+        IUnknown * * pAppDomain ) = 0;
+    virtual HRESULT __stdcall GetDefaultDomain (
+        IUnknown * * pAppDomain ) = 0;
+    virtual HRESULT __stdcall EnumDomains (
+        void * * hEnum ) = 0;
+    virtual HRESULT __stdcall NextDomain (
+        void * hEnum,
+        IUnknown * * pAppDomain ) = 0;
+    virtual HRESULT __stdcall CloseEnum (
+        void * hEnum ) = 0;
+    virtual HRESULT __stdcall CreateDomainEx (
+        LPWSTR pwzFriendlyName,
+        IUnknown * pSetup,
+        IUnknown * pEvidence,
+        IUnknown * * pAppDomain ) = 0;
+    virtual HRESULT __stdcall CreateDomainSetup (
+        IUnknown * * pAppDomainSetup ) = 0;
+    virtual HRESULT __stdcall CreateEvidence (
+        IUnknown * * pEvidence ) = 0;
+    virtual HRESULT __stdcall UnloadDomain (
+        IUnknown * pAppDomain ) = 0;
+    virtual HRESULT __stdcall CurrentDomain (
+        IUnknown * * pAppDomain ) = 0;
+};
+
+struct __declspec(uuid("5c2b07a5-1e98-11d3-872f-00c04f79ed0d"))
+ICorConfiguration : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SetGCThreadControl (
+        struct IGCThreadControl * pGCThreadControl ) = 0;
+    virtual HRESULT __stdcall SetGCHostControl (
+        struct IGCHostControl * pGCHostControl ) = 0;
+    virtual HRESULT __stdcall SetDebuggerThreadControl (
+        struct IDebuggerThreadControl * pDebuggerThreadControl ) = 0;
+    virtual HRESULT __stdcall AddDebuggerSpecialThread (
+        unsigned long dwSpecialThreadId ) = 0;
+};
+
+struct __declspec(uuid("f31d1788-c397-4725-87a5-6af3472c2791"))
+IGCThreadControl : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall ThreadIsBlockingForSuspension ( ) = 0;
+    virtual HRESULT __stdcall SuspensionStarting ( ) = 0;
+    virtual HRESULT __stdcall SuspensionEnding (
+        unsigned long Generation ) = 0;
+};
+
+struct __declspec(uuid("5513d564-8374-4cb9-aed9-0083f4160a1d"))
+IGCHostControl : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall RequestVirtualMemLimit (
+        ULONG_PTR sztMaxVirtualMemMB,
+        ULONG_PTR * psztNewMaxVirtualMemMB ) = 0;
+};
+
+struct __declspec(uuid("23d86786-0bb5-4774-8fb5-e3522add6246"))
+IDebuggerThreadControl : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall ThreadIsBlockingForDebugger ( ) = 0;
+    virtual HRESULT __stdcall ReleaseAllRuntimeThreads ( ) = 0;
+    virtual HRESULT __stdcall StartBlockingForDebugger (
+        unsigned long dwUnused ) = 0;
+};
+
+struct __declspec(uuid("fac34f6e-0dcd-47b5-8021-531bc5ecca63"))
+IGCHost : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SetGCStartupLimits (
+        unsigned long SegmentSize,
+        unsigned long MaxGen0Size ) = 0;
+    virtual HRESULT __stdcall Collect (
+        long Generation ) = 0;
+    virtual HRESULT __stdcall GetStats (
+        struct _COR_GC_STATS * pStats ) = 0;
+    virtual HRESULT __stdcall GetThreadStats (
+        unsigned long * pFiberCookie,
+        struct _COR_GC_THREAD_STATS * pStats ) = 0;
+    virtual HRESULT __stdcall SetVirtualMemLimit (
+        ULONG_PTR sztMaxVirtualMemMB ) = 0;
+};
+
+struct _COR_GC_STATS
+{
+    unsigned long Flags;
+    ULONG_PTR ExplicitGCCount;
+    ULONG_PTR GenCollectionsTaken[3];
+    ULONG_PTR CommittedKBytes;
+    ULONG_PTR ReservedKBytes;
+    ULONG_PTR Gen0HeapSizeKBytes;
+    ULONG_PTR Gen1HeapSizeKBytes;
+    ULONG_PTR Gen2HeapSizeKBytes;
+    ULONG_PTR LargeObjectHeapSizeKBytes;
+    ULONG_PTR KBytesPromotedFromGen0;
+    ULONG_PTR KBytesPromotedFromGen1;
+};
+
+struct _COR_GC_THREAD_STATS
+{
+    unsigned __int64 PerThreadAllocation;
+    unsigned long Flags;
+};
+
+struct __declspec(uuid("63df8730-dc81-4062-84a2-1ff943f59fac"))
+IValidator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Validate (
+        struct IVEHandler * veh,
+        IUnknown * pAppDomain,
+        unsigned long ulFlags,
+        unsigned long ulMaxError,
+        unsigned long Token,
+        LPWSTR fileName,
+        unsigned char * pe,
+        unsigned long ulSize ) = 0;
+    virtual HRESULT __stdcall FormatEventInfo (
+        HRESULT hVECode,
+        struct tag_VerError Context,
+        LPWSTR msg,
+        unsigned long ulMaxLength,
+        SAFEARRAY * psa ) = 0;
+};
+
+struct __declspec(uuid("856ca1b2-7dab-11d3-acec-00c04f86c309"))
+IVEHandler : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall VEHandler (
+        HRESULT VECode,
+        struct tag_VerError Context,
+        SAFEARRAY * psa ) = 0;
+    virtual HRESULT __stdcall SetReporterFtn (
+        __int64 lFnPtr ) = 0;
+};
+
+struct tag_VerError
+{
+    unsigned long Flags;
+    unsigned long opcode;
+    unsigned long uOffset;
+    unsigned long Token;
+    unsigned long item1_flags;
+    int * item1_data;
+    unsigned long item2_flags;
+    int * item2_data;
+};
+
+struct __declspec(uuid("bf24142d-a47d-4d24-a66d-8c2141944e44"))
+IDebuggerInfo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall IsDebuggerAttached (
+        long * pbAttached ) = 0;
+};
+
+} // namespace mscoree
+
+#pragma pack(pop)

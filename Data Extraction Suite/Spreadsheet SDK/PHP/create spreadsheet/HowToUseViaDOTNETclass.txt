@@ -1,0 +1,41 @@
+You may use the SDK from PHP on Windows using DOTNET() class in PHP
+
+1) Install the DLL into the GAC (global assembly cache)
+
+ a) Open "c:\Windows\assembly" in Windows Explorer and drag-and-drop the dll into this folder
+ OR
+ b) install via command line:
+
+"%programfiles%\Microsoft SDKs\Windows\v6.0\bin\gacutil.exe" -i "Bytescout.Spreadsheet.dll"
+
+NOTE: you may need to change %programfiles%\Microsoft SDKs\Windows\v6.0\bin\ into 
+%programfiles%\Microsoft SDKs\Windows\v6.0A\bin\
+or into
+%programfiles%\Microsoft SDKs\Windows\v7.0A\bin\
+
+If you are still getting "File not found" then run the search for gacutil.exe in "Program Files" folder to find it.
+
+2) Now run Windows Explorer and open "C:\WINDOWS\assembly" to view installed .NET assemblies in the GAC to verify if the dll was installed into the GAC
+3) Find the installed and right-click on it and select "Properties"
+4) In the Properties window double-click on "Assembly Name" and copy it to your PHP code (see below)
+5) In the Properties window double-click on "Public Key Token" and copy it to your PHP code (see below)
+6) In the Properties window double-click on "Version" value and copy it to your PHP code (see below)
+
+from (4), (5) and (6) you should compose the following string:
+
+$dotnetobj = new DOTNET("ASSEMBLYNAME, Version=VERSIONVALUE, Culture=neutral, PublicKeyToken=PUBLICKEYVALUE", 
+"ASSEMBLYNAME.CLASSNAME"); 
+
+Where 
+ASSEMBLYNAME = the assembly name  (like Bytescout.Spreadsheet)
+VERSIONVALUE = version value you got on step (5)
+PUBLICKEYVALUE = public key value you got on step (4)
+CLASSNAME = class name from the dll you want to create (for example, "Spreadsheet")
+
+Example for Spreadsheet SDK version 2.4.0.1370:
+
+$dotnetobj = new DOTNET("Bytescout.Spreadsheet, Version=2.4.0.1370, Culture=neutral, PublicKeyToken=f7dd1bd9d40a50eb", 
+"Bytescout.Spreadsheet.Spreadsheet");
+
+Then you may use $dotnetobj and call its methods like this:
+$dotnetobj->SomeMethod() (see the documentation of the SDK for available classes and methods and properties)

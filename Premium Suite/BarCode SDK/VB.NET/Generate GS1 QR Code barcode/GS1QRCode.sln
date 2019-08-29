@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GS1QRCode", "GS1QRCode.vbproj", "{375CB266-4769-4E60-9A0A-F60C1CF83381}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{375CB266-4769-4E60-9A0A-F60C1CF83381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{375CB266-4769-4E60-9A0A-F60C1CF83381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{375CB266-4769-4E60-9A0A-F60C1CF83381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{375CB266-4769-4E60-9A0A-F60C1CF83381}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10025AB5-F050-4E30-97FA-C797FAB5A41F}
+	EndGlobalSection
+EndGlobal

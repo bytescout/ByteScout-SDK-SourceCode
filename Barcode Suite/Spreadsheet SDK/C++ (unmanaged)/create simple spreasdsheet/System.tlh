@@ -1,0 +1,1840 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (653f1f12).
+//
+// System.tlh
+//
+// C++ source equivalent of Win32 type library System.tlb
+// compiler-generated file created 10/24/10 at 18:53:00 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\mscorlib.tlb"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace System {
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ CodeObject;
+struct /* coclass */ CodeExpression;
+struct /* coclass */ CodeArgumentReferenceExpression;
+struct /* coclass */ CodeArrayCreateExpression;
+struct /* coclass */ CodeArrayIndexerExpression;
+struct /* coclass */ CodeStatement;
+struct /* coclass */ CodeAssignStatement;
+struct /* coclass */ CodeAttachEventStatement;
+struct /* coclass */ CodeAttributeArgument;
+struct /* coclass */ CodeAttributeArgumentCollection;
+struct /* coclass */ CodeAttributeDeclaration;
+struct /* coclass */ CodeAttributeDeclarationCollection;
+struct /* coclass */ CodeBaseReferenceExpression;
+struct /* coclass */ CodeBinaryOperatorExpression;
+struct /* coclass */ CodeCastExpression;
+struct /* coclass */ CodeCatchClause;
+struct /* coclass */ CodeCatchClauseCollection;
+struct /* coclass */ CodeComment;
+struct /* coclass */ CodeCommentStatement;
+struct /* coclass */ CodeCommentStatementCollection;
+struct /* coclass */ CodeCompileUnit;
+struct /* coclass */ CodeConditionStatement;
+struct /* coclass */ CodeTypeMember;
+struct /* coclass */ CodeMemberMethod;
+struct /* coclass */ CodeConstructor;
+struct /* coclass */ CodeDelegateCreateExpression;
+struct /* coclass */ CodeDelegateInvokeExpression;
+struct /* coclass */ CodeDirectionExpression;
+struct /* coclass */ CodeEntryPointMethod;
+struct /* coclass */ CodeEventReferenceExpression;
+struct /* coclass */ CodeExpressionCollection;
+struct /* coclass */ CodeExpressionStatement;
+struct /* coclass */ CodeFieldReferenceExpression;
+struct /* coclass */ CodeGotoStatement;
+struct /* coclass */ CodeIndexerExpression;
+struct /* coclass */ CodeIterationStatement;
+struct /* coclass */ CodeLabeledStatement;
+struct /* coclass */ CodeLinePragma;
+struct /* coclass */ CodeMemberEvent;
+struct /* coclass */ CodeMemberField;
+struct /* coclass */ CodeMemberProperty;
+struct /* coclass */ CodeMethodInvokeExpression;
+struct /* coclass */ CodeMethodReferenceExpression;
+struct /* coclass */ CodeMethodReturnStatement;
+struct /* coclass */ CodeNamespace;
+struct /* coclass */ CodeNamespaceCollection;
+struct /* coclass */ CodeNamespaceImport;
+struct /* coclass */ CodeNamespaceImportCollection;
+struct /* coclass */ CodeObjectCreateExpression;
+struct /* coclass */ CodeParameterDeclarationExpression;
+struct /* coclass */ CodeParameterDeclarationExpressionCollection;
+struct /* coclass */ CodePrimitiveExpression;
+struct /* coclass */ CodePropertyReferenceExpression;
+struct /* coclass */ CodePropertySetValueReferenceExpression;
+struct /* coclass */ CodeRemoveEventStatement;
+struct /* coclass */ CodeSnippetCompileUnit;
+struct /* coclass */ CodeSnippetExpression;
+struct /* coclass */ CodeSnippetStatement;
+struct /* coclass */ CodeSnippetTypeMember;
+struct /* coclass */ CodeStatementCollection;
+struct /* coclass */ CodeThisReferenceExpression;
+struct /* coclass */ CodeThrowExceptionStatement;
+struct /* coclass */ CodeTryCatchFinallyStatement;
+struct /* coclass */ CodeTypeConstructor;
+struct /* coclass */ CodeTypeDeclaration;
+struct /* coclass */ CodeTypeDeclarationCollection;
+struct /* coclass */ CodeTypeDelegate;
+struct /* coclass */ CodeTypeMemberCollection;
+struct /* coclass */ CodeTypeOfExpression;
+struct /* coclass */ CodeTypeReference;
+struct /* coclass */ CodeTypeReferenceCollection;
+struct /* coclass */ CodeTypeReferenceExpression;
+struct /* coclass */ CodeVariableDeclarationStatement;
+struct /* coclass */ CodeVariableReferenceExpression;
+struct /* coclass */ TypeConverter;
+struct /* coclass */ MemberDescriptor;
+struct /* coclass */ PropertyDescriptor;
+struct __declspec(uuid("b86e59f2-f1e2-389d-b5f1-c55307c8106e"))
+/* dual interface */ IComponent;
+struct /* coclass */ ComponentCollection;
+struct __declspec(uuid("61d9c50c-4aad-3539-af82-4f36c19d77c8"))
+/* dual interface */ IContainer;
+struct __declspec(uuid("c4e1006a-9d98-3e96-a07e-921725135c28"))
+/* dual interface */ ISite;
+struct /* coclass */ EventDescriptor;
+struct /* coclass */ EventDescriptorCollection;
+struct __declspec(uuid("5cbae170-8759-3b8a-b919-e12fb86ad1f3"))
+/* dual interface */ ITypeDescriptorContext;
+struct /* coclass */ AttributeCollection;
+struct /* coclass */ CommandID;
+struct /* coclass */ ComponentChangedEventArgs;
+struct /* coclass */ ComponentChangedEventHandler;
+struct /* coclass */ ComponentChangingEventArgs;
+struct /* coclass */ ComponentChangingEventHandler;
+struct /* coclass */ ComponentEventArgs;
+struct /* coclass */ ComponentEventHandler;
+struct /* coclass */ ComponentRenameEventArgs;
+struct /* coclass */ ComponentRenameEventHandler;
+struct /* coclass */ DesignerTransactionCloseEventArgs;
+struct /* coclass */ DesignerTransactionCloseEventHandler;
+struct /* coclass */ MenuCommand;
+struct /* coclass */ DesignerVerb;
+struct /* coclass */ DesignerVerbCollection;
+struct __declspec(uuid("2fef0210-9ebd-32c0-9bfd-24841ac0fcf7"))
+/* dual interface */ IComponentChangeService;
+struct __declspec(uuid("6eef3d0d-305a-3df4-9830-8c2b40e1c4bf"))
+/* dual interface */ IDesigner;
+struct __declspec(uuid("6ba96b42-7fdd-3223-bf52-7fe677b92815"))
+/* dual interface */ IServiceContainer;
+struct __declspec(uuid("eec98cd8-ef5b-3b60-82c9-86f616f6bb20"))
+/* dual interface */ IDesignerHost;
+struct __declspec(uuid("1a19d89e-f4fe-3e8e-b7ec-05d4e592f3f6"))
+/* dual interface */ IEventBindingService;
+struct __declspec(uuid("df651c5d-783e-3789-901f-a962b7587e69"))
+/* dual interface */ IMenuCommandService;
+struct __declspec(uuid("2cc5e562-6c14-34a6-9d0b-e6ff949ae8fb"))
+/* dual interface */ IRootDesigner;
+struct __declspec(uuid("297a65be-5080-3f7f-ad19-b0d05d6f2327"))
+/* dual interface */ ISelectionService;
+struct /* coclass */ ServiceCreatorCallback;
+struct /* coclass */ WebClient;
+struct /* coclass */ WebHeaderCollection;
+struct /* coclass */ PerformanceCounterManager;
+struct __declspec(uuid("ee499efd-22e2-3740-a64a-2ab010099c01"))
+/* dual interface */ _CodeObject;
+struct __declspec(uuid("ad377794-864f-3421-9fb8-c684bbc1bc02"))
+/* dual interface */ _CodeExpression;
+struct __declspec(uuid("a52b85c6-5370-35c9-a04a-04a92013862c"))
+/* dual interface */ _CodeArgumentReferenceExpression;
+struct __declspec(uuid("f7955e55-7f3b-3277-aa0c-f62aa615676d"))
+/* dual interface */ _CodeArrayCreateExpression;
+struct __declspec(uuid("732748f5-5256-327b-a7e5-2000b07f21b3"))
+/* dual interface */ _CodeArrayIndexerExpression;
+struct __declspec(uuid("b125774d-ef66-382b-878d-2d916999b0d2"))
+/* dual interface */ _CodeStatement;
+struct __declspec(uuid("e2024de0-dc21-305d-8761-6c31f2177fb0"))
+/* dual interface */ _CodeAssignStatement;
+struct __declspec(uuid("f7bc47e9-706c-3aa7-b1ba-8ab95188fa11"))
+/* dual interface */ _CodeAttachEventStatement;
+struct __declspec(uuid("02efd952-ff8c-3b72-8c33-739a506d53d9"))
+/* dual interface */ _CodeAttributeArgument;
+struct __declspec(uuid("fe84e484-a7ec-3d15-b5e2-edc2de2db42e"))
+/* dual interface */ _CodeAttributeArgumentCollection;
+struct __declspec(uuid("ef72d021-2c6d-3e33-9442-574bfd6e0871"))
+/* dual interface */ _CodeAttributeDeclaration;
+struct __declspec(uuid("7e9aca22-637c-3f88-a931-aaf36a4f9a6b"))
+/* dual interface */ _CodeAttributeDeclarationCollection;
+struct __declspec(uuid("45e29ca6-670a-3b13-9557-4e5903056bf3"))
+/* dual interface */ _CodeBaseReferenceExpression;
+struct __declspec(uuid("a22929c9-d301-3f5b-98b7-844fdba1dedf"))
+/* dual interface */ _CodeBinaryOperatorExpression;
+struct __declspec(uuid("90bed8ed-21e3-31fe-8f02-c929ba4fb0ac"))
+/* dual interface */ _CodeCastExpression;
+struct __declspec(uuid("609c7788-bdb0-364c-92e3-fc16ac613430"))
+/* dual interface */ _CodeCatchClause;
+struct __declspec(uuid("ff5e1cd9-0478-34a4-9b9c-7c80bcb1a725"))
+/* dual interface */ _CodeCatchClauseCollection;
+struct __declspec(uuid("c94f39b3-436f-3711-9cb0-91c6299b62a2"))
+/* dual interface */ _CodeComment;
+struct __declspec(uuid("0c13f8b9-f2e0-3918-a33e-3e491bdc529e"))
+/* dual interface */ _CodeCommentStatement;
+struct __declspec(uuid("e34ceb72-8f86-333d-aeda-069221df6a1a"))
+/* dual interface */ _CodeCommentStatementCollection;
+struct __declspec(uuid("6f20c263-af67-380f-a482-9a21f7599748"))
+/* dual interface */ _CodeCompileUnit;
+struct __declspec(uuid("69904b31-5fb5-39bf-83b0-5ddfa1f26d71"))
+/* dual interface */ _CodeConditionStatement;
+struct __declspec(uuid("8068ae1d-26cb-3db6-97cd-ed83de116c5a"))
+/* dual interface */ _CodeTypeMember;
+struct __declspec(uuid("95c2ee26-4247-3ddc-8056-97353f10de8f"))
+/* dual interface */ _CodeMemberMethod;
+struct __declspec(uuid("5a33c771-806e-337d-ae1f-66b523fc49bf"))
+/* dual interface */ _CodeConstructor;
+struct __declspec(uuid("d14e12c1-e1d1-3b74-a3af-021a5a268fbe"))
+/* dual interface */ _CodeDelegateCreateExpression;
+struct __declspec(uuid("6f6c3482-8900-36ea-b621-943534e82c73"))
+/* dual interface */ _CodeDelegateInvokeExpression;
+struct __declspec(uuid("11edaf3b-144e-32c8-8be0-81d40a950656"))
+/* dual interface */ _CodeDirectionExpression;
+struct __declspec(uuid("7cd4ef19-27eb-399e-8ed2-c6647a99c03e"))
+/* dual interface */ _CodeEntryPointMethod;
+struct __declspec(uuid("35872687-5a11-34d7-85ab-865830a3bdee"))
+/* dual interface */ _CodeEventReferenceExpression;
+struct __declspec(uuid("af72cc74-2275-362a-9141-a4a79d596f39"))
+/* dual interface */ _CodeExpressionCollection;
+struct __declspec(uuid("cea240af-60c5-3c69-9da1-da3f9a6d7b3c"))
+/* dual interface */ _CodeExpressionStatement;
+struct __declspec(uuid("82d57b2b-c639-32a0-89b4-62a0c29dd64e"))
+/* dual interface */ _CodeFieldReferenceExpression;
+struct __declspec(uuid("8f1baed9-52ec-3545-9cf0-6ed71a76a5ca"))
+/* dual interface */ _CodeGotoStatement;
+struct __declspec(uuid("c92c323f-8601-34d4-a2d6-f5e2653db456"))
+/* dual interface */ _CodeIndexerExpression;
+struct __declspec(uuid("b16f7137-c0e7-3ecf-9652-fb1ea947e44e"))
+/* dual interface */ _CodeIterationStatement;
+struct __declspec(uuid("56699cca-fd8d-3ad2-9643-149bad87fd60"))
+/* dual interface */ _CodeLabeledStatement;
+struct __declspec(uuid("1b52ded6-92f3-3b4f-851c-ab1f647582a3"))
+/* dual interface */ _CodeLinePragma;
+struct __declspec(uuid("e1a7ea9f-5d43-3fa9-afbc-9a2bfda84b65"))
+/* dual interface */ _CodeMemberEvent;
+struct __declspec(uuid("eef50d17-7aa6-3e14-96c6-dd90fe5baa1e"))
+/* dual interface */ _CodeMemberField;
+struct __declspec(uuid("802e2acc-a7f8-3ca9-9114-f49998bebe6e"))
+/* dual interface */ _CodeMemberProperty;
+struct __declspec(uuid("ffe1f142-85cf-3353-8512-ee73775e9c4c"))
+/* dual interface */ _CodeMethodInvokeExpression;
+struct __declspec(uuid("cbdf02f4-a9f4-33c0-8b24-275008890dcb"))
+/* dual interface */ _CodeMethodReferenceExpression;
+struct __declspec(uuid("851d821b-1e0c-3e91-832d-ba593523f566"))
+/* dual interface */ _CodeMethodReturnStatement;
+struct __declspec(uuid("31ed1dcb-c007-3f96-8809-4d5e3540a7c1"))
+/* dual interface */ _CodeNamespace;
+struct __declspec(uuid("f5e54f16-ade3-3b5d-8b05-1f9803557905"))
+/* dual interface */ _CodeNamespaceCollection;
+struct __declspec(uuid("34418787-726b-3e74-aeed-c01397fc707d"))
+/* dual interface */ _CodeNamespaceImport;
+struct __declspec(uuid("4c545457-76d7-3c56-b277-6a9e86d1046f"))
+/* dual interface */ _CodeNamespaceImportCollection;
+struct __declspec(uuid("cfe5e5e9-745f-348b-a7e6-38a46d1a20e0"))
+/* dual interface */ _CodeObjectCreateExpression;
+struct __declspec(uuid("ee96565b-2b1a-33c6-ba07-b63158f1c8c4"))
+/* dual interface */ _CodeParameterDeclarationExpression;
+struct __declspec(uuid("05192769-7d6a-3c8c-94c2-dfa668f61088"))
+/* dual interface */ _CodeParameterDeclarationExpressionCollection;
+struct __declspec(uuid("175bb49a-4cbe-38b3-8c6c-1b0145edabb7"))
+/* dual interface */ _CodePrimitiveExpression;
+struct __declspec(uuid("f8d64802-f9b7-3095-a641-d31e6e9f87b1"))
+/* dual interface */ _CodePropertyReferenceExpression;
+struct __declspec(uuid("2ee13fa1-8a02-3573-9ac9-4febd2ceab45"))
+/* dual interface */ _CodePropertySetValueReferenceExpression;
+struct __declspec(uuid("853bc437-ca6e-375d-bcbb-818e917d9691"))
+/* dual interface */ _CodeRemoveEventStatement;
+struct __declspec(uuid("c7d34cf6-cf82-38b0-bf67-eb36da63ae6e"))
+/* dual interface */ _CodeSnippetCompileUnit;
+struct __declspec(uuid("9f3e3cd1-8082-31e9-851c-3e177e56a87b"))
+/* dual interface */ _CodeSnippetExpression;
+struct __declspec(uuid("b4b00613-c48b-3fa9-b8f6-a527ec6f21c3"))
+/* dual interface */ _CodeSnippetStatement;
+struct __declspec(uuid("575bf8d0-7a9d-39eb-81f9-aa2beba890fa"))
+/* dual interface */ _CodeSnippetTypeMember;
+struct __declspec(uuid("4b9a5032-4b8c-3de6-997c-c38b4b3af26a"))
+/* dual interface */ _CodeStatementCollection;
+struct __declspec(uuid("3b4a1a6b-8e65-355d-b93a-e6ab753b2401"))
+/* dual interface */ _CodeThisReferenceExpression;
+struct __declspec(uuid("12350e95-6f4e-30f0-9343-72f1c64380a0"))
+/* dual interface */ _CodeThrowExceptionStatement;
+struct __declspec(uuid("8fd0f76a-29bf-3982-8335-c9b44abf31c3"))
+/* dual interface */ _CodeTryCatchFinallyStatement;
+struct __declspec(uuid("261ad877-0f22-33de-9a3a-31f5da424b30"))
+/* dual interface */ _CodeTypeConstructor;
+struct __declspec(uuid("7aa363e1-fa53-31eb-be4a-1eb4838264f3"))
+/* dual interface */ _CodeTypeDeclaration;
+struct __declspec(uuid("be0eced3-5f0d-310a-b352-7d1adf28f8ec"))
+/* dual interface */ _CodeTypeDeclarationCollection;
+struct __declspec(uuid("455090ab-5c44-3f4f-8eed-ccc90a3112b5"))
+/* dual interface */ _CodeTypeDelegate;
+struct __declspec(uuid("f943231e-6192-33a0-9ca3-d6ed0e4f323d"))
+/* dual interface */ _CodeTypeMemberCollection;
+struct __declspec(uuid("12cbce8e-75ff-312f-81b9-7fbc6212090b"))
+/* dual interface */ _CodeTypeOfExpression;
+struct __declspec(uuid("b6d972c6-022b-3f91-9655-e288e9d32c55"))
+/* dual interface */ _CodeTypeReference;
+struct __declspec(uuid("68a04561-d0a0-3eeb-b904-462dc4eb5531"))
+/* dual interface */ _CodeTypeReferenceCollection;
+struct __declspec(uuid("726bb04d-2c4c-3e3d-a01a-31448db063dd"))
+/* dual interface */ _CodeTypeReferenceExpression;
+struct __declspec(uuid("4192a87c-5c57-3879-8624-af5ca2ed9eb2"))
+/* dual interface */ _CodeVariableDeclarationStatement;
+struct __declspec(uuid("54b54936-a71c-3a45-b982-2c484e7bcf86"))
+/* dual interface */ _CodeVariableReferenceExpression;
+struct __declspec(uuid("05241989-96c5-3bf9-ab9b-37e261c1b8f8"))
+/* dual interface */ _TypeConverter;
+struct __declspec(uuid("f55efa91-812e-3c6e-998f-3598e93fb8a7"))
+/* dual interface */ _MemberDescriptor;
+struct __declspec(uuid("fe5060f8-212f-3a4f-8fa8-db2e14588c49"))
+/* dual interface */ _PropertyDescriptor;
+struct __declspec(uuid("42f00c62-f454-3a38-af9e-35d4e2bdfdac"))
+/* dual interface */ _ComponentCollection;
+struct __declspec(uuid("95b6a563-4a39-37a2-91d7-04b8ecdd1b66"))
+/* dual interface */ _EventDescriptor;
+struct __declspec(uuid("4c933253-83f2-35b6-961a-0780ff1baf7c"))
+/* dual interface */ _EventDescriptorCollection;
+struct __declspec(uuid("6f971e04-b06a-3dd0-b6f5-622826693454"))
+/* dual interface */ _AttributeCollection;
+struct __declspec(uuid("fc50598b-2406-33d2-ba9a-cfbea52bc05a"))
+/* dual interface */ _CommandID;
+struct __declspec(uuid("a8fef1c6-d434-3686-a4de-b68e8eabb509"))
+/* dual interface */ _ComponentChangedEventArgs;
+struct __declspec(uuid("0451c390-1f90-341d-9278-b9ff2636d67d"))
+/* dual interface */ _ComponentChangedEventHandler;
+struct __declspec(uuid("b78cbaa3-37df-31c9-abd2-cdcb1a7fba9f"))
+/* dual interface */ _ComponentChangingEventArgs;
+struct __declspec(uuid("7f8c2da3-d337-334f-92e9-87be9bdc6070"))
+/* dual interface */ _ComponentChangingEventHandler;
+struct __declspec(uuid("438e8dcf-6875-305f-8ca5-40dbb15782a6"))
+/* dual interface */ _ComponentEventArgs;
+struct __declspec(uuid("290b355d-80d3-3afa-96ab-b4d395729374"))
+/* dual interface */ _ComponentEventHandler;
+struct __declspec(uuid("da5d7739-9522-3e28-9ab7-7c2d7d27c63a"))
+/* dual interface */ _ComponentRenameEventArgs;
+struct __declspec(uuid("ba2df049-da87-3bd1-97b0-7904b59adf7e"))
+/* dual interface */ _ComponentRenameEventHandler;
+struct __declspec(uuid("3924a637-c2c4-3558-945f-279b5ac39ed9"))
+/* dual interface */ _DesignerTransactionCloseEventArgs;
+struct __declspec(uuid("4543d155-ee6a-3529-bc8d-cf0e866b6b0b"))
+/* dual interface */ _DesignerTransactionCloseEventHandler;
+struct __declspec(uuid("1ff238ce-6190-3750-a34f-05f02b7315a6"))
+/* dual interface */ _MenuCommand;
+struct __declspec(uuid("7c41b90e-52fb-3e54-8b03-ebe0bf172c84"))
+/* dual interface */ _DesignerVerb;
+struct __declspec(uuid("ac3bdda4-25b8-3321-a1c0-7c37bbf2dded"))
+/* dual interface */ _DesignerVerbCollection;
+struct __declspec(uuid("be380bec-79f2-3876-b510-fa2fe43b7eb7"))
+/* dual interface */ _ServiceCreatorCallback;
+struct __declspec(uuid("85b4a627-7552-3aa6-8a1c-a213c5788fec"))
+/* dual interface */ _WebClient;
+struct __declspec(uuid("b97e84f2-fab2-340d-8d49-2ac85cf5c0ec"))
+/* dual interface */ _WebHeaderCollection;
+struct __declspec(uuid("a9809e7d-42f8-3284-82cf-ab5f863a29aa"))
+/* dual interface */ _PerformanceCounterManager;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IComponent, __uuidof(IComponent));
+_COM_SMARTPTR_TYPEDEF(IContainer, __uuidof(IContainer));
+_COM_SMARTPTR_TYPEDEF(ISite, __uuidof(ISite));
+_COM_SMARTPTR_TYPEDEF(ITypeDescriptorContext, __uuidof(ITypeDescriptorContext));
+_COM_SMARTPTR_TYPEDEF(IComponentChangeService, __uuidof(IComponentChangeService));
+_COM_SMARTPTR_TYPEDEF(IDesigner, __uuidof(IDesigner));
+_COM_SMARTPTR_TYPEDEF(IServiceContainer, __uuidof(IServiceContainer));
+_COM_SMARTPTR_TYPEDEF(IDesignerHost, __uuidof(IDesignerHost));
+_COM_SMARTPTR_TYPEDEF(IEventBindingService, __uuidof(IEventBindingService));
+_COM_SMARTPTR_TYPEDEF(IMenuCommandService, __uuidof(IMenuCommandService));
+_COM_SMARTPTR_TYPEDEF(IRootDesigner, __uuidof(IRootDesigner));
+_COM_SMARTPTR_TYPEDEF(ISelectionService, __uuidof(ISelectionService));
+_COM_SMARTPTR_TYPEDEF(_CodeObject, __uuidof(_CodeObject));
+_COM_SMARTPTR_TYPEDEF(_CodeExpression, __uuidof(_CodeExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeArgumentReferenceExpression, __uuidof(_CodeArgumentReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeArrayCreateExpression, __uuidof(_CodeArrayCreateExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeArrayIndexerExpression, __uuidof(_CodeArrayIndexerExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeStatement, __uuidof(_CodeStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeAssignStatement, __uuidof(_CodeAssignStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeAttachEventStatement, __uuidof(_CodeAttachEventStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeAttributeArgument, __uuidof(_CodeAttributeArgument));
+_COM_SMARTPTR_TYPEDEF(_CodeAttributeArgumentCollection, __uuidof(_CodeAttributeArgumentCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeAttributeDeclaration, __uuidof(_CodeAttributeDeclaration));
+_COM_SMARTPTR_TYPEDEF(_CodeAttributeDeclarationCollection, __uuidof(_CodeAttributeDeclarationCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeBaseReferenceExpression, __uuidof(_CodeBaseReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeBinaryOperatorExpression, __uuidof(_CodeBinaryOperatorExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeCastExpression, __uuidof(_CodeCastExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeCatchClause, __uuidof(_CodeCatchClause));
+_COM_SMARTPTR_TYPEDEF(_CodeCatchClauseCollection, __uuidof(_CodeCatchClauseCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeComment, __uuidof(_CodeComment));
+_COM_SMARTPTR_TYPEDEF(_CodeCommentStatement, __uuidof(_CodeCommentStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeCommentStatementCollection, __uuidof(_CodeCommentStatementCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeCompileUnit, __uuidof(_CodeCompileUnit));
+_COM_SMARTPTR_TYPEDEF(_CodeConditionStatement, __uuidof(_CodeConditionStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeMember, __uuidof(_CodeTypeMember));
+_COM_SMARTPTR_TYPEDEF(_CodeMemberMethod, __uuidof(_CodeMemberMethod));
+_COM_SMARTPTR_TYPEDEF(_CodeConstructor, __uuidof(_CodeConstructor));
+_COM_SMARTPTR_TYPEDEF(_CodeDelegateCreateExpression, __uuidof(_CodeDelegateCreateExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeDelegateInvokeExpression, __uuidof(_CodeDelegateInvokeExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeDirectionExpression, __uuidof(_CodeDirectionExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeEntryPointMethod, __uuidof(_CodeEntryPointMethod));
+_COM_SMARTPTR_TYPEDEF(_CodeEventReferenceExpression, __uuidof(_CodeEventReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeExpressionCollection, __uuidof(_CodeExpressionCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeExpressionStatement, __uuidof(_CodeExpressionStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeFieldReferenceExpression, __uuidof(_CodeFieldReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeGotoStatement, __uuidof(_CodeGotoStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeIndexerExpression, __uuidof(_CodeIndexerExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeIterationStatement, __uuidof(_CodeIterationStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeLabeledStatement, __uuidof(_CodeLabeledStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeLinePragma, __uuidof(_CodeLinePragma));
+_COM_SMARTPTR_TYPEDEF(_CodeMemberEvent, __uuidof(_CodeMemberEvent));
+_COM_SMARTPTR_TYPEDEF(_CodeMemberField, __uuidof(_CodeMemberField));
+_COM_SMARTPTR_TYPEDEF(_CodeMemberProperty, __uuidof(_CodeMemberProperty));
+_COM_SMARTPTR_TYPEDEF(_CodeMethodInvokeExpression, __uuidof(_CodeMethodInvokeExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeMethodReferenceExpression, __uuidof(_CodeMethodReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeMethodReturnStatement, __uuidof(_CodeMethodReturnStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeNamespace, __uuidof(_CodeNamespace));
+_COM_SMARTPTR_TYPEDEF(_CodeNamespaceCollection, __uuidof(_CodeNamespaceCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeNamespaceImport, __uuidof(_CodeNamespaceImport));
+_COM_SMARTPTR_TYPEDEF(_CodeNamespaceImportCollection, __uuidof(_CodeNamespaceImportCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeObjectCreateExpression, __uuidof(_CodeObjectCreateExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeParameterDeclarationExpression, __uuidof(_CodeParameterDeclarationExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeParameterDeclarationExpressionCollection, __uuidof(_CodeParameterDeclarationExpressionCollection));
+_COM_SMARTPTR_TYPEDEF(_CodePrimitiveExpression, __uuidof(_CodePrimitiveExpression));
+_COM_SMARTPTR_TYPEDEF(_CodePropertyReferenceExpression, __uuidof(_CodePropertyReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_CodePropertySetValueReferenceExpression, __uuidof(_CodePropertySetValueReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeRemoveEventStatement, __uuidof(_CodeRemoveEventStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeSnippetCompileUnit, __uuidof(_CodeSnippetCompileUnit));
+_COM_SMARTPTR_TYPEDEF(_CodeSnippetExpression, __uuidof(_CodeSnippetExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeSnippetStatement, __uuidof(_CodeSnippetStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeSnippetTypeMember, __uuidof(_CodeSnippetTypeMember));
+_COM_SMARTPTR_TYPEDEF(_CodeStatementCollection, __uuidof(_CodeStatementCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeThisReferenceExpression, __uuidof(_CodeThisReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeThrowExceptionStatement, __uuidof(_CodeThrowExceptionStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeTryCatchFinallyStatement, __uuidof(_CodeTryCatchFinallyStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeConstructor, __uuidof(_CodeTypeConstructor));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeDeclaration, __uuidof(_CodeTypeDeclaration));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeDeclarationCollection, __uuidof(_CodeTypeDeclarationCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeDelegate, __uuidof(_CodeTypeDelegate));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeMemberCollection, __uuidof(_CodeTypeMemberCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeOfExpression, __uuidof(_CodeTypeOfExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeReference, __uuidof(_CodeTypeReference));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeReferenceCollection, __uuidof(_CodeTypeReferenceCollection));
+_COM_SMARTPTR_TYPEDEF(_CodeTypeReferenceExpression, __uuidof(_CodeTypeReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_CodeVariableDeclarationStatement, __uuidof(_CodeVariableDeclarationStatement));
+_COM_SMARTPTR_TYPEDEF(_CodeVariableReferenceExpression, __uuidof(_CodeVariableReferenceExpression));
+_COM_SMARTPTR_TYPEDEF(_TypeConverter, __uuidof(_TypeConverter));
+_COM_SMARTPTR_TYPEDEF(_MemberDescriptor, __uuidof(_MemberDescriptor));
+_COM_SMARTPTR_TYPEDEF(_PropertyDescriptor, __uuidof(_PropertyDescriptor));
+_COM_SMARTPTR_TYPEDEF(_ComponentCollection, __uuidof(_ComponentCollection));
+_COM_SMARTPTR_TYPEDEF(_EventDescriptor, __uuidof(_EventDescriptor));
+_COM_SMARTPTR_TYPEDEF(_EventDescriptorCollection, __uuidof(_EventDescriptorCollection));
+_COM_SMARTPTR_TYPEDEF(_AttributeCollection, __uuidof(_AttributeCollection));
+_COM_SMARTPTR_TYPEDEF(_CommandID, __uuidof(_CommandID));
+_COM_SMARTPTR_TYPEDEF(_ComponentChangedEventArgs, __uuidof(_ComponentChangedEventArgs));
+_COM_SMARTPTR_TYPEDEF(_ComponentChangedEventHandler, __uuidof(_ComponentChangedEventHandler));
+_COM_SMARTPTR_TYPEDEF(_ComponentChangingEventArgs, __uuidof(_ComponentChangingEventArgs));
+_COM_SMARTPTR_TYPEDEF(_ComponentChangingEventHandler, __uuidof(_ComponentChangingEventHandler));
+_COM_SMARTPTR_TYPEDEF(_ComponentEventArgs, __uuidof(_ComponentEventArgs));
+_COM_SMARTPTR_TYPEDEF(_ComponentEventHandler, __uuidof(_ComponentEventHandler));
+_COM_SMARTPTR_TYPEDEF(_ComponentRenameEventArgs, __uuidof(_ComponentRenameEventArgs));
+_COM_SMARTPTR_TYPEDEF(_ComponentRenameEventHandler, __uuidof(_ComponentRenameEventHandler));
+_COM_SMARTPTR_TYPEDEF(_DesignerTransactionCloseEventArgs, __uuidof(_DesignerTransactionCloseEventArgs));
+_COM_SMARTPTR_TYPEDEF(_DesignerTransactionCloseEventHandler, __uuidof(_DesignerTransactionCloseEventHandler));
+_COM_SMARTPTR_TYPEDEF(_MenuCommand, __uuidof(_MenuCommand));
+_COM_SMARTPTR_TYPEDEF(_DesignerVerb, __uuidof(_DesignerVerb));
+_COM_SMARTPTR_TYPEDEF(_DesignerVerbCollection, __uuidof(_DesignerVerbCollection));
+_COM_SMARTPTR_TYPEDEF(_ServiceCreatorCallback, __uuidof(_ServiceCreatorCallback));
+_COM_SMARTPTR_TYPEDEF(_WebClient, __uuidof(_WebClient));
+_COM_SMARTPTR_TYPEDEF(_WebHeaderCollection, __uuidof(_WebHeaderCollection));
+_COM_SMARTPTR_TYPEDEF(_PerformanceCounterManager, __uuidof(_PerformanceCounterManager));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("88d0c986-398a-3a31-9349-b0736357c40b"))
+CodeObject;
+    // [ default ] interface _CodeObject
+    // interface _Object
+
+struct __declspec(uuid("f4267fe0-72e6-34e2-9093-17dea43078c1"))
+CodeExpression;
+    // [ default ] interface _CodeExpression
+    // interface _Object
+
+struct __declspec(uuid("3e3f971a-a80d-3468-a9eb-3113ce46d13a"))
+CodeArgumentReferenceExpression;
+    // [ default ] interface _CodeArgumentReferenceExpression
+    // interface _Object
+
+struct __declspec(uuid("24b3bced-984a-340b-923c-c9b39d94d5a9"))
+CodeArrayCreateExpression;
+    // [ default ] interface _CodeArrayCreateExpression
+    // interface _Object
+
+struct __declspec(uuid("8c0bc333-6f03-3228-8b5c-31c8627daab3"))
+CodeArrayIndexerExpression;
+    // [ default ] interface _CodeArrayIndexerExpression
+    // interface _Object
+
+struct __declspec(uuid("10a98d9f-994d-3762-89b4-2116a95063ee"))
+CodeStatement;
+    // [ default ] interface _CodeStatement
+    // interface _Object
+
+struct __declspec(uuid("e4350caa-27c9-320e-ac79-71294abda592"))
+CodeAssignStatement;
+    // [ default ] interface _CodeAssignStatement
+    // interface _Object
+
+struct __declspec(uuid("1ab6b26c-a339-3b51-9308-44ca3a05f873"))
+CodeAttachEventStatement;
+    // [ default ] interface _CodeAttachEventStatement
+    // interface _Object
+
+struct __declspec(uuid("06e6faa2-7623-396a-b9f1-75d31a17cf27"))
+CodeAttributeArgument;
+    // [ default ] interface _CodeAttributeArgument
+    // interface _Object
+
+struct __declspec(uuid("424720cd-671f-329d-80df-fa8bcd9ea9cd"))
+CodeAttributeArgumentCollection;
+    // [ default ] interface _CodeAttributeArgumentCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("c0ba0202-2ff3-3e0a-952a-b570b1371db2"))
+CodeAttributeDeclaration;
+    // [ default ] interface _CodeAttributeDeclaration
+    // interface _Object
+
+struct __declspec(uuid("3a8e937e-c560-3779-a423-b645bad276a1"))
+CodeAttributeDeclarationCollection;
+    // [ default ] interface _CodeAttributeDeclarationCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("3a9e7044-fbd0-3e23-82ae-f0dfb86c0c4e"))
+CodeBaseReferenceExpression;
+    // [ default ] interface _CodeBaseReferenceExpression
+    // interface _Object
+
+struct __declspec(uuid("30776c84-e88e-330d-8ce2-b5bf1e48427d"))
+CodeBinaryOperatorExpression;
+    // [ default ] interface _CodeBinaryOperatorExpression
+    // interface _Object
+
+enum CodeBinaryOperatorType
+{
+    CodeBinaryOperatorType_Add = 0,
+    CodeBinaryOperatorType_Subtract = 1,
+    CodeBinaryOperatorType_Multiply = 2,
+    CodeBinaryOperatorType_Divide = 3,
+    CodeBinaryOperatorType_Modulus = 4,
+    CodeBinaryOperatorType_Assign = 5,
+    CodeBinaryOperatorType_IdentityInequality = 6,
+    CodeBinaryOperatorType_IdentityEquality = 7,
+    CodeBinaryOperatorType_ValueEquality = 8,
+    CodeBinaryOperatorType_BitwiseOr = 9,
+    CodeBinaryOperatorType_BitwiseAnd = 10,
+    CodeBinaryOperatorType_BooleanOr = 11,
+    CodeBinaryOperatorType_BooleanAnd = 12,
+    CodeBinaryOperatorType_LessThan = 13,
+    CodeBinaryOperatorType_LessThanOrEqual = 14,
+    CodeBinaryOperatorType_GreaterThan = 15,
+    CodeBinaryOperatorType_GreaterThanOrEqual = 16
+};
+
+struct __declspec(uuid("de2ae793-c1c1-3c33-8b9c-0d8f90301860"))
+CodeCastExpression;
+    // [ default ] interface _CodeCastExpression
+    // interface _Object
+
+struct __declspec(uuid("548f7954-b3fd-39e0-9a30-9d8fc9443c0e"))
+CodeCatchClause;
+    // [ default ] interface _CodeCatchClause
+    // interface _Object
+
+struct __declspec(uuid("2077ecf3-61c8-3cc5-9e45-721189a88e03"))
+CodeCatchClauseCollection;
+    // [ default ] interface _CodeCatchClauseCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("f3e7e9c5-e63a-3f3b-a4f8-096e82664819"))
+CodeComment;
+    // [ default ] interface _CodeComment
+    // interface _Object
+
+struct __declspec(uuid("f69f43d6-ef83-3723-8839-519d2421e927"))
+CodeCommentStatement;
+    // [ default ] interface _CodeCommentStatement
+    // interface _Object
+
+struct __declspec(uuid("c12a8292-f24a-3ba8-94e6-eb3206d225e2"))
+CodeCommentStatementCollection;
+    // [ default ] interface _CodeCommentStatementCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("25a5d609-4d61-3c52-a3e1-49ef93066fd1"))
+CodeCompileUnit;
+    // [ default ] interface _CodeCompileUnit
+    // interface _Object
+
+struct __declspec(uuid("1ba2de2f-ee39-3628-968f-0e12705013c4"))
+CodeConditionStatement;
+    // [ default ] interface _CodeConditionStatement
+    // interface _Object
+
+struct __declspec(uuid("69dce654-e184-38e5-bfd6-e0eb6f592a11"))
+CodeTypeMember;
+    // [ default ] interface _CodeTypeMember
+    // interface _Object
+
+struct __declspec(uuid("812e9b72-2ccc-364b-9eb8-da8f4eae724f"))
+CodeMemberMethod;
+    // [ default ] interface _CodeMemberMethod
+    // interface _Object
+
+struct __declspec(uuid("2a7a02a4-408d-32c6-b5e2-bc4b57399b0c"))
+CodeConstructor;
+    // [ default ] interface _CodeConstructor
+    // interface _Object
+
+struct __declspec(uuid("92fb692e-211c-33da-be48-05b690d3f00b"))
+CodeDelegateCreateExpression;
+    // [ default ] interface _CodeDelegateCreateExpression
+    // interface _Object
+
+struct __declspec(uuid("d79b10b1-16a3-3a23-a606-ce1227f3765a"))
+CodeDelegateInvokeExpression;
+    // [ default ] interface _CodeDelegateInvokeExpression
+    // interface _Object
+
+struct __declspec(uuid("5fea4be0-d7fc-3daf-877e-16f181f18bae"))
+CodeDirectionExpression;
+    // [ default ] interface _CodeDirectionExpression
+    // interface _Object
+
+struct __declspec(uuid("dff5c8a1-425f-305d-ae85-10c9dd7704c3"))
+CodeEntryPointMethod;
+    // [ default ] interface _CodeEntryPointMethod
+    // interface _Object
+
+struct __declspec(uuid("e396945b-2690-377e-a992-12775d444cd7"))
+CodeEventReferenceExpression;
+    // [ default ] interface _CodeEventReferenceExpression
+    // interface _Object
+
+struct __declspec(uuid("26d06c1f-81ba-33c3-bde2-49747aa83a11"))
+CodeExpressionCollection;
+    // [ default ] interface _CodeExpressionCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("abc8fc89-d640-32fc-9e9f-04410010e5ec"))
+CodeExpressionStatement;
+    // [ default ] interface _CodeExpressionStatement
+    // interface _Object
+
+struct __declspec(uuid("e2f01f29-a264-387b-ae29-a273ac89eee7"))
+CodeFieldReferenceExpression;
+    // [ default ] interface _CodeFieldReferenceExpression
+    // interface _Object
+
+struct __declspec(uuid("148e03e0-c74e-3d67-bd3a-b27995f9ac49"))
+CodeGotoStatement;
+    // [ default ] interface _CodeGotoStatement
+    // interface _Object
+
+struct __declspec(uuid("4d19b9bb-0979-38be-b438-29997e58c2d1"))
+CodeIndexerExpression;
+    // [ default ] interface _CodeIndexerExpression
+    // interface _Object
+
+struct __declspec(uuid("421c8130-0316-3993-801d-e6be3a159baa"))
+CodeIterationStatement;
+    // [ default ] interface _CodeIterationStatement
+    // interface _Object
+
+struct __declspec(uuid("4975b127-5464-3e9e-b4aa-d6df3721189a"))
+CodeLabeledStatement;
+    // [ default ] interface _CodeLabeledStatement
+    // interface _Object
+
+struct __declspec(uuid("17575ea6-be56-381e-88e7-74b376743e77"))
+CodeLinePragma;
+    // [ default ] interface _CodeLinePragma
+    // interface _Object
+
+struct __declspec(uuid("e401e3c7-2646-37c7-a37a-ba115d000faa"))
+CodeMemberEvent;
+    // [ default ] interface _CodeMemberEvent
+    // interface _Object
+
+struct __declspec(uuid("acdcdf3a-21dc-37e3-9253-cd26caec0b58"))
+CodeMemberField;
+    // [ default ] interface _CodeMemberField
+    // interface _Object
+
+struct __declspec(uuid("d459c868-9174-353a-bb17-f2166e83fe24"))
+CodeMemberProperty;
+    // [ default ] interface _CodeMemberProperty
+    // interface _Object
+
+struct __declspec(uuid("62ac67b4-2088-3db7-9a80-154efe9c6caf"))
+CodeMethodInvokeExpression;
+    // [ default ] interface _CodeMethodInvokeExpression
+    // interface _Object
+
+struct __declspec(uuid("36ae2637-c0a4-3214-8a93-aee1cabd540e"))
+CodeMethodReferenceExpression;
+    // [ default ] interface _CodeMethodReferenceExpression
+    // interface _Object
+
+struct __declspec(uuid("031a6b24-bfaa-3d76-b6da-59c9c469a0fb"))
+CodeMethodReturnStatement;
+    // [ default ] interface _CodeMethodReturnStatement
+    // interface _Object
+
+struct __declspec(uuid("dd1c0c7a-bc95-339a-8321-9dbf4803caf4"))
+CodeNamespace;
+    // [ default ] interface _CodeNamespace
+    // interface _Object
+
+struct __declspec(uuid("d4985194-80e5-36fe-8b95-8cd2e35e5ff5"))
+CodeNamespaceCollection;
+    // [ default ] interface _CodeNamespaceCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("b0b32470-44a6-3dbc-bdb2-ce024f966088"))
+CodeNamespaceImport;
+    // [ default ] interface _CodeNamespaceImport
+    // interface _Object
+
+struct __declspec(uuid("7a168834-5605-30db-8274-6b21e621a955"))
+CodeNamespaceImportCollection;
+    // [ default ] interface _CodeNamespaceImportCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("f3ba98c3-39cf-3c2d-ada5-75bd63d7af08"))
+CodeObjectCreateExpression;
+    // [ default ] interface _CodeObjectCreateExpression
+    // interface _Object
+
+struct __declspec(uuid("6acd3b02-ef29-31b9-8958-45b47bad4a00"))
+CodeParameterDeclarationExpression;
+    // [ default ] interface _CodeParameterDeclarationExpression
+    // interface _Object
+
+struct __declspec(uuid("7fd9e7c0-b133-302f-a3a1-42167780cb62"))
+CodeParameterDeclarationExpressionCollection;
+    // [ default ] interface _CodeParameterDeclarationExpressionCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("6c1e6791-0558-3cd3-aab8-c90a2b03ef5f"))
+CodePrimitiveExpression;
+    // [ default ] interface _CodePrimitiveExpression
+    // interface _Object
+
+struct __declspec(uuid("9703f066-9c59-32c4-86b2-570e97ab75f2"))
+CodePropertyReferenceExpression;
+    // [ default ] interface _CodePropertyReferenceExpression
+    // interface _Object
+
+struct __declspec(uuid("395c1a4d-aabb-3415-b527-8cb694777b84"))
+CodePropertySetValueReferenceExpression;
+    // [ default ] interface _CodePropertySetValueReferenceExpression
+    // interface _Object
+
+struct __declspec(uuid("f38b3709-9b63-32e6-9cfb-07991c40717f"))
+CodeRemoveEventStatement;
+    // [ default ] interface _CodeRemoveEventStatement
+    // interface _Object
+
+struct __declspec(uuid("af2df285-73d3-3623-aeab-1cdbcf75a9d0"))
+CodeSnippetCompileUnit;
+    // [ default ] interface _CodeSnippetCompileUnit
+    // interface _Object
+
+struct __declspec(uuid("509af058-a0e5-32e6-ae00-15f8209d31f9"))
+CodeSnippetExpression;
+    // [ default ] interface _CodeSnippetExpression
+    // interface _Object
+
+struct __declspec(uuid("880287bc-d3a4-3113-b8d1-6538b7c19e97"))
+CodeSnippetStatement;
+    // [ default ] interface _CodeSnippetStatement
+    // interface _Object
+
+struct __declspec(uuid("0fac5dab-ad52-38bf-854e-fd3059369c44"))
+CodeSnippetTypeMember;
+    // [ default ] interface _CodeSnippetTypeMember
+    // interface _Object
+
+struct __declspec(uuid("a531374e-fa08-36c6-af96-31c684eefc08"))
+CodeStatementCollection;
+    // [ default ] interface _CodeStatementCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("21206362-562f-3f08-8f06-4bcfd2c95f29"))
+CodeThisReferenceExpression;
+    // [ default ] interface _CodeThisReferenceExpression
+    // interface _Object
+
+struct __declspec(uuid("a2f81ded-8536-3c27-9759-ba3eac94d0a2"))
+CodeThrowExceptionStatement;
+    // [ default ] interface _CodeThrowExceptionStatement
+    // interface _Object
+
+struct __declspec(uuid("cb3bf2d6-db22-31df-a6f4-e3707972e10c"))
+CodeTryCatchFinallyStatement;
+    // [ default ] interface _CodeTryCatchFinallyStatement
+    // interface _Object
+
+struct __declspec(uuid("7544623f-e6de-3918-9e10-29aaf16e560b"))
+CodeTypeConstructor;
+    // [ default ] interface _CodeTypeConstructor
+    // interface _Object
+
+struct __declspec(uuid("2b708a48-52d8-3049-9565-6ba42ee2be17"))
+CodeTypeDeclaration;
+    // [ default ] interface _CodeTypeDeclaration
+    // interface _Object
+
+struct __declspec(uuid("a0bd9913-b07d-32c3-8df1-aa998b3fb10e"))
+CodeTypeDeclarationCollection;
+    // [ default ] interface _CodeTypeDeclarationCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("6fbc1e34-565d-3721-b5c0-5c796540481f"))
+CodeTypeDelegate;
+    // [ default ] interface _CodeTypeDelegate
+    // interface _Object
+
+struct __declspec(uuid("85d435c5-7af6-30e9-8a0b-c978737c2849"))
+CodeTypeMemberCollection;
+    // [ default ] interface _CodeTypeMemberCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("fb6a595a-b5dd-3361-8842-70e806d73573"))
+CodeTypeOfExpression;
+    // [ default ] interface _CodeTypeOfExpression
+    // interface _Object
+
+struct __declspec(uuid("f3de25ac-25ed-374c-8805-4b6456fa0cb2"))
+CodeTypeReference;
+    // [ default ] interface _CodeTypeReference
+    // interface _Object
+
+struct __declspec(uuid("3f2e333c-9a04-33ac-95c7-7b0015beb345"))
+CodeTypeReferenceCollection;
+    // [ default ] interface _CodeTypeReferenceCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("8871c106-c8ba-37a0-ade2-e4aebec7e3c9"))
+CodeTypeReferenceExpression;
+    // [ default ] interface _CodeTypeReferenceExpression
+    // interface _Object
+
+struct __declspec(uuid("943b4474-d661-344e-ad1b-1a1f3c8ea01a"))
+CodeVariableDeclarationStatement;
+    // [ default ] interface _CodeVariableDeclarationStatement
+    // interface _Object
+
+struct __declspec(uuid("39abd141-93ae-397a-9e98-6f2e50124cec"))
+CodeVariableReferenceExpression;
+    // [ default ] interface _CodeVariableReferenceExpression
+    // interface _Object
+
+enum FieldDirection
+{
+    FieldDirection_In = 0,
+    FieldDirection_Out = 1,
+    FieldDirection_Ref = 2
+};
+
+enum MemberAttributes
+{
+    MemberAttributes_Abstract = 1,
+    MemberAttributes_Final = 2,
+    MemberAttributes_Static = 3,
+    MemberAttributes_Override = 4,
+    MemberAttributes_Const = 5,
+    MemberAttributes_New = 16,
+    MemberAttributes_Overloaded = 256,
+    MemberAttributes_Assembly = 4096,
+    MemberAttributes_FamilyAndAssembly = 8192,
+    MemberAttributes_Family = 12288,
+    MemberAttributes_FamilyOrAssembly = 16384,
+    MemberAttributes_Private = 20480,
+    MemberAttributes_Public = 24576,
+    MemberAttributes_AccessMask = 61440,
+    MemberAttributes_ScopeMask = 15,
+    MemberAttributes_VTableMask = 240
+};
+
+struct __declspec(uuid("75992c48-bf7a-3b44-ac68-a946cffdb2bf"))
+TypeConverter;
+    // [ default ] interface _TypeConverter
+    // interface _Object
+
+struct __declspec(uuid("670b0d04-dad1-39a7-9043-b0b58ccb46e6"))
+MemberDescriptor;
+    // [ default ] interface _MemberDescriptor
+    // interface _Object
+
+struct __declspec(uuid("d40e4e6f-4692-3438-b4cc-7e423473b2c1"))
+PropertyDescriptor;
+    // [ default ] interface _PropertyDescriptor
+    // interface _Object
+
+struct __declspec(uuid("b86e59f2-f1e2-389d-b5f1-c55307c8106e"))
+IComponent : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Site (
+        struct ISite * * pRetVal ) = 0;
+    virtual HRESULT __stdcall putref_Site (
+        struct ISite * pRetVal ) = 0;
+    virtual HRESULT __stdcall add_Disposed (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_Disposed (
+        struct mscorlib::_EventHandler * value ) = 0;
+};
+
+struct __declspec(uuid("9653003f-5a61-33cb-86e6-1ba38ced5df8"))
+ComponentCollection;
+    // [ default ] interface _ComponentCollection
+    // interface _Object
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("61d9c50c-4aad-3539-af82-4f36c19d77c8"))
+IContainer : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Add (
+        struct IComponent * component ) = 0;
+    virtual HRESULT __stdcall Add_2 (
+        struct IComponent * component,
+        BSTR name ) = 0;
+    virtual HRESULT __stdcall get_Components (
+        struct _ComponentCollection * * pRetVal ) = 0;
+    virtual HRESULT __stdcall Remove (
+        struct IComponent * component ) = 0;
+};
+
+struct __declspec(uuid("c4e1006a-9d98-3e96-a07e-921725135c28"))
+ISite : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_component (
+        struct IComponent * * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_Container (
+        struct IContainer * * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_DesignMode (
+        VARIANT_BOOL * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_name (
+        BSTR * pRetVal ) = 0;
+    virtual HRESULT __stdcall put_name (
+        BSTR pRetVal ) = 0;
+};
+
+enum DesignerSerializationVisibility
+{
+    DesignerSerializationVisibility_Hidden = 0,
+    DesignerSerializationVisibility_Visible = 1,
+    DesignerSerializationVisibility_Content = 2
+};
+
+struct __declspec(uuid("52964536-afda-35c2-8c8b-903c2519ad4e"))
+EventDescriptor;
+    // [ default ] interface _EventDescriptor
+    // interface _Object
+
+struct __declspec(uuid("c657a06c-7655-32f7-8cc8-9a3bdc803487"))
+EventDescriptorCollection;
+    // [ default ] interface _EventDescriptorCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("5cbae170-8759-3b8a-b919-e12fb86ad1f3"))
+ITypeDescriptorContext : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Container (
+        struct IContainer * * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_Instance (
+        VARIANT * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_PropertyDescriptor (
+        struct _PropertyDescriptor * * pRetVal ) = 0;
+    virtual HRESULT __stdcall OnComponentChanging (
+        VARIANT_BOOL * pRetVal ) = 0;
+    virtual HRESULT __stdcall OnComponentChanged ( ) = 0;
+};
+
+struct __declspec(uuid("4309d526-f739-3be3-b89c-4f6dde852c14"))
+AttributeCollection;
+    // [ default ] interface _AttributeCollection
+    // interface _Object
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("e60178f7-1512-389f-9ca6-084df14cf596"))
+CommandID;
+    // [ default ] interface _CommandID
+    // interface _Object
+
+struct __declspec(uuid("06cba6e8-112a-32ba-a7bf-7dcfe0404931"))
+ComponentChangedEventArgs;
+    // [ default ] interface _ComponentChangedEventArgs
+    // interface _Object
+
+struct __declspec(uuid("01157188-eb62-312d-aea6-14332a2aebf9"))
+ComponentChangedEventHandler;
+    // [ default ] interface _ComponentChangedEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("834c5649-9074-33f5-ab36-716d4ae08e9e"))
+ComponentChangingEventArgs;
+    // [ default ] interface _ComponentChangingEventArgs
+    // interface _Object
+
+struct __declspec(uuid("d296eb38-add4-3fbe-8cf5-03cbd74ddb74"))
+ComponentChangingEventHandler;
+    // [ default ] interface _ComponentChangingEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("cb919e0f-1205-37ec-ac02-38b51390629f"))
+ComponentEventArgs;
+    // [ default ] interface _ComponentEventArgs
+    // interface _Object
+
+struct __declspec(uuid("c001b07f-6b98-359a-8f0a-652f82bd81e1"))
+ComponentEventHandler;
+    // [ default ] interface _ComponentEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("f41e1b27-1c7c-3620-9662-bf72882e3f7e"))
+ComponentRenameEventArgs;
+    // [ default ] interface _ComponentRenameEventArgs
+    // interface _Object
+
+struct __declspec(uuid("819762b6-dc8a-3a36-b063-82bc2ee44168"))
+ComponentRenameEventHandler;
+    // [ default ] interface _ComponentRenameEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("c5d1eab9-e039-399e-a709-9a0a7107a610"))
+DesignerTransactionCloseEventArgs;
+    // [ default ] interface _DesignerTransactionCloseEventArgs
+    // interface _Object
+
+struct __declspec(uuid("54bf09ce-0db6-3d92-aa2d-546ad897ef59"))
+DesignerTransactionCloseEventHandler;
+    // [ default ] interface _DesignerTransactionCloseEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("5c719461-3a18-33d0-b3e1-33f169085c21"))
+MenuCommand;
+    // [ default ] interface _MenuCommand
+    // interface _Object
+
+struct __declspec(uuid("5231ccd9-dabb-3fde-ad29-8fd3d382c248"))
+DesignerVerb;
+    // [ default ] interface _DesignerVerb
+    // interface _Object
+
+struct __declspec(uuid("67114ed5-9f2a-3a0a-8c7a-746fda064488"))
+DesignerVerbCollection;
+    // [ default ] interface _DesignerVerbCollection
+    // interface _Object
+    // interface IList
+    // interface ICollection
+    // interface IEnumerable
+
+struct __declspec(uuid("2fef0210-9ebd-32c0-9bfd-24841ac0fcf7"))
+IComponentChangeService : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall add_ComponentAdded (
+        struct _ComponentEventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_ComponentAdded (
+        struct _ComponentEventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_ComponentAdding (
+        struct _ComponentEventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_ComponentAdding (
+        struct _ComponentEventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_ComponentChanged (
+        struct _ComponentChangedEventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_ComponentChanged (
+        struct _ComponentChangedEventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_ComponentChanging (
+        struct _ComponentChangingEventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_ComponentChanging (
+        struct _ComponentChangingEventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_ComponentRemoved (
+        struct _ComponentEventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_ComponentRemoved (
+        struct _ComponentEventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_ComponentRemoving (
+        struct _ComponentEventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_ComponentRemoving (
+        struct _ComponentEventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_ComponentRename (
+        struct _ComponentRenameEventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_ComponentRename (
+        struct _ComponentRenameEventHandler * value ) = 0;
+    virtual HRESULT __stdcall OnComponentChanged (
+        VARIANT component,
+        struct _MemberDescriptor * member,
+        VARIANT oldValue,
+        VARIANT newValue ) = 0;
+    virtual HRESULT __stdcall OnComponentChanging (
+        VARIANT component,
+        struct _MemberDescriptor * member ) = 0;
+};
+
+struct __declspec(uuid("6eef3d0d-305a-3df4-9830-8c2b40e1c4bf"))
+IDesigner : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_component (
+        struct IComponent * * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_Verbs (
+        struct _DesignerVerbCollection * * pRetVal ) = 0;
+    virtual HRESULT __stdcall DoDefaultAction ( ) = 0;
+    virtual HRESULT __stdcall Initialize (
+        struct IComponent * component ) = 0;
+};
+
+struct __declspec(uuid("6ba96b42-7fdd-3223-bf52-7fe677b92815"))
+IServiceContainer : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall AddService (
+        struct mscorlib::_Type * serviceType,
+        VARIANT serviceInstance ) = 0;
+    virtual HRESULT __stdcall AddService_2 (
+        struct mscorlib::_Type * serviceType,
+        VARIANT serviceInstance,
+        VARIANT_BOOL promote ) = 0;
+    virtual HRESULT __stdcall AddService_3 (
+        struct mscorlib::_Type * serviceType,
+        struct _ServiceCreatorCallback * callback ) = 0;
+    virtual HRESULT __stdcall AddService_4 (
+        struct mscorlib::_Type * serviceType,
+        struct _ServiceCreatorCallback * callback,
+        VARIANT_BOOL promote ) = 0;
+    virtual HRESULT __stdcall RemoveService (
+        struct mscorlib::_Type * serviceType ) = 0;
+    virtual HRESULT __stdcall RemoveService_2 (
+        struct mscorlib::_Type * serviceType,
+        VARIANT_BOOL promote ) = 0;
+};
+
+struct __declspec(uuid("eec98cd8-ef5b-3b60-82c9-86f616f6bb20"))
+IDesignerHost : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Loading (
+        VARIANT_BOOL * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_InTransaction (
+        VARIANT_BOOL * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_Container (
+        struct IContainer * * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_RootComponent (
+        struct IComponent * * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_RootComponentClassName (
+        BSTR * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_TransactionDescription (
+        BSTR * pRetVal ) = 0;
+    virtual HRESULT __stdcall add_Activated (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_Activated (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_Deactivated (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_Deactivated (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_LoadComplete (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_LoadComplete (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_TransactionClosed (
+        struct _DesignerTransactionCloseEventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_TransactionClosed (
+        struct _DesignerTransactionCloseEventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_TransactionClosing (
+        struct _DesignerTransactionCloseEventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_TransactionClosing (
+        struct _DesignerTransactionCloseEventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_TransactionOpened (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_TransactionOpened (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_TransactionOpening (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_TransactionOpening (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall Activate ( ) = 0;
+    virtual HRESULT __stdcall CreateComponent (
+        struct mscorlib::_Type * componentClass,
+        struct IComponent * * pRetVal ) = 0;
+    virtual HRESULT __stdcall CreateComponent_2 (
+        struct mscorlib::_Type * componentClass,
+        BSTR name,
+        struct IComponent * * pRetVal ) = 0;
+    virtual HRESULT __stdcall CreateTransaction (
+        IUnknown * * pRetVal ) = 0;
+    virtual HRESULT __stdcall CreateTransaction_2 (
+        BSTR description,
+        IUnknown * * pRetVal ) = 0;
+    virtual HRESULT __stdcall DestroyComponent (
+        struct IComponent * component ) = 0;
+    virtual HRESULT __stdcall GetDesigner (
+        struct IComponent * component,
+        struct IDesigner * * pRetVal ) = 0;
+    virtual HRESULT __stdcall GetType (
+        BSTR typeName,
+        struct mscorlib::_Type * * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("1a19d89e-f4fe-3e8e-b7ec-05d4e592f3f6"))
+IEventBindingService : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall CreateUniqueMethodName (
+        struct IComponent * component,
+        struct _EventDescriptor * e,
+        BSTR * pRetVal ) = 0;
+    virtual HRESULT __stdcall GetCompatibleMethods (
+        struct _EventDescriptor * e,
+        struct mscorlib::ICollection * * pRetVal ) = 0;
+    virtual HRESULT __stdcall GetEvent (
+        struct _PropertyDescriptor * property,
+        struct _EventDescriptor * * pRetVal ) = 0;
+    virtual HRESULT __stdcall GetEventProperties (
+        struct _EventDescriptorCollection * events,
+        IUnknown * * pRetVal ) = 0;
+    virtual HRESULT __stdcall GetEventProperty (
+        struct _EventDescriptor * e,
+        struct _PropertyDescriptor * * pRetVal ) = 0;
+    virtual HRESULT __stdcall ShowCode (
+        VARIANT_BOOL * pRetVal ) = 0;
+    virtual HRESULT __stdcall ShowCode_2 (
+        long lineNumber,
+        VARIANT_BOOL * pRetVal ) = 0;
+    virtual HRESULT __stdcall ShowCode_3 (
+        struct IComponent * component,
+        struct _EventDescriptor * e,
+        VARIANT_BOOL * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("df651c5d-783e-3789-901f-a962b7587e69"))
+IMenuCommandService : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Verbs (
+        struct _DesignerVerbCollection * * pRetVal ) = 0;
+    virtual HRESULT __stdcall AddCommand (
+        struct _MenuCommand * command ) = 0;
+    virtual HRESULT __stdcall AddVerb (
+        struct _DesignerVerb * verb ) = 0;
+    virtual HRESULT __stdcall FindCommand (
+        struct _CommandID * CommandID,
+        struct _MenuCommand * * pRetVal ) = 0;
+    virtual HRESULT __stdcall GlobalInvoke (
+        struct _CommandID * CommandID,
+        VARIANT_BOOL * pRetVal ) = 0;
+    virtual HRESULT __stdcall RemoveCommand (
+        struct _MenuCommand * command ) = 0;
+    virtual HRESULT __stdcall RemoveVerb (
+        struct _DesignerVerb * verb ) = 0;
+    virtual HRESULT __stdcall ShowContextMenu (
+        struct _CommandID * menuID,
+        long x,
+        long y ) = 0;
+};
+
+struct __declspec(uuid("2cc5e562-6c14-34a6-9d0b-e6ff949ae8fb"))
+IRootDesigner : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_SupportedTechnologies (
+        SAFEARRAY * * pRetVal ) = 0;
+    virtual HRESULT __stdcall GetView (
+        enum ViewTechnology technology,
+        VARIANT * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("297a65be-5080-3f7f-ad19-b0d05d6f2327"))
+ISelectionService : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_PrimarySelection (
+        VARIANT * pRetVal ) = 0;
+    virtual HRESULT __stdcall get_SelectionCount (
+        long * pRetVal ) = 0;
+    virtual HRESULT __stdcall add_SelectionChanged (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_SelectionChanged (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall add_SelectionChanging (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall remove_SelectionChanging (
+        struct mscorlib::_EventHandler * value ) = 0;
+    virtual HRESULT __stdcall GetComponentSelected (
+        VARIANT component,
+        VARIANT_BOOL * pRetVal ) = 0;
+    virtual HRESULT __stdcall GetSelectedComponents (
+        struct mscorlib::ICollection * * pRetVal ) = 0;
+    virtual HRESULT __stdcall SetSelectedComponents (
+        struct mscorlib::ICollection * Components ) = 0;
+    virtual HRESULT __stdcall SetSelectedComponents_2 (
+        struct mscorlib::ICollection * Components,
+        enum SelectionTypes selectionType ) = 0;
+};
+
+enum SelectionTypes
+{
+    SelectionTypes_Normal = 1,
+    SelectionTypes_Replace = 2,
+    SelectionTypes_MouseDown = 4,
+    SelectionTypes_MouseUp = 8,
+    SelectionTypes_Click = 16,
+    SelectionTypes_Valid = 31
+};
+
+struct __declspec(uuid("e90ade71-cac0-3f72-834e-cd39f93670ee"))
+ServiceCreatorCallback;
+    // [ default ] interface _ServiceCreatorCallback
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+enum ViewTechnology
+{
+    ViewTechnology_Passthrough = 0,
+    ViewTechnology_WindowsForms = 1
+};
+
+struct __declspec(uuid("7d458845-b4b8-30cb-b2ad-fc4960fcdf81"))
+WebClient;
+    // [ default ] interface _WebClient
+    // interface _Object
+    // interface IComponent
+    // interface IDisposable
+
+struct __declspec(uuid("430d1273-c3e9-3632-9988-389c81849c00"))
+WebHeaderCollection;
+    // [ default ] interface _WebHeaderCollection
+    // interface _Object
+    // interface ICollection
+    // interface IEnumerable
+    // interface ISerializable
+    // interface IDeserializationCallback
+
+struct __declspec(uuid("82840be1-d273-11d2-b94a-00600893b17a"))
+PerformanceCounterManager;
+    // [ default ] interface _PerformanceCounterManager
+    // interface _Object
+
+struct __declspec(uuid("ee499efd-22e2-3740-a64a-2ab010099c01"))
+_CodeObject : IDispatch
+{};
+
+struct __declspec(uuid("ad377794-864f-3421-9fb8-c684bbc1bc02"))
+_CodeExpression : IDispatch
+{};
+
+struct __declspec(uuid("a52b85c6-5370-35c9-a04a-04a92013862c"))
+_CodeArgumentReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("f7955e55-7f3b-3277-aa0c-f62aa615676d"))
+_CodeArrayCreateExpression : IDispatch
+{};
+
+struct __declspec(uuid("732748f5-5256-327b-a7e5-2000b07f21b3"))
+_CodeArrayIndexerExpression : IDispatch
+{};
+
+struct __declspec(uuid("b125774d-ef66-382b-878d-2d916999b0d2"))
+_CodeStatement : IDispatch
+{};
+
+struct __declspec(uuid("e2024de0-dc21-305d-8761-6c31f2177fb0"))
+_CodeAssignStatement : IDispatch
+{};
+
+struct __declspec(uuid("f7bc47e9-706c-3aa7-b1ba-8ab95188fa11"))
+_CodeAttachEventStatement : IDispatch
+{};
+
+struct __declspec(uuid("02efd952-ff8c-3b72-8c33-739a506d53d9"))
+_CodeAttributeArgument : IDispatch
+{};
+
+struct __declspec(uuid("fe84e484-a7ec-3d15-b5e2-edc2de2db42e"))
+_CodeAttributeArgumentCollection : IDispatch
+{};
+
+struct __declspec(uuid("ef72d021-2c6d-3e33-9442-574bfd6e0871"))
+_CodeAttributeDeclaration : IDispatch
+{};
+
+struct __declspec(uuid("7e9aca22-637c-3f88-a931-aaf36a4f9a6b"))
+_CodeAttributeDeclarationCollection : IDispatch
+{};
+
+struct __declspec(uuid("45e29ca6-670a-3b13-9557-4e5903056bf3"))
+_CodeBaseReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("a22929c9-d301-3f5b-98b7-844fdba1dedf"))
+_CodeBinaryOperatorExpression : IDispatch
+{};
+
+struct __declspec(uuid("90bed8ed-21e3-31fe-8f02-c929ba4fb0ac"))
+_CodeCastExpression : IDispatch
+{};
+
+struct __declspec(uuid("609c7788-bdb0-364c-92e3-fc16ac613430"))
+_CodeCatchClause : IDispatch
+{};
+
+struct __declspec(uuid("ff5e1cd9-0478-34a4-9b9c-7c80bcb1a725"))
+_CodeCatchClauseCollection : IDispatch
+{};
+
+struct __declspec(uuid("c94f39b3-436f-3711-9cb0-91c6299b62a2"))
+_CodeComment : IDispatch
+{};
+
+struct __declspec(uuid("0c13f8b9-f2e0-3918-a33e-3e491bdc529e"))
+_CodeCommentStatement : IDispatch
+{};
+
+struct __declspec(uuid("e34ceb72-8f86-333d-aeda-069221df6a1a"))
+_CodeCommentStatementCollection : IDispatch
+{};
+
+struct __declspec(uuid("6f20c263-af67-380f-a482-9a21f7599748"))
+_CodeCompileUnit : IDispatch
+{};
+
+struct __declspec(uuid("69904b31-5fb5-39bf-83b0-5ddfa1f26d71"))
+_CodeConditionStatement : IDispatch
+{};
+
+struct __declspec(uuid("8068ae1d-26cb-3db6-97cd-ed83de116c5a"))
+_CodeTypeMember : IDispatch
+{};
+
+struct __declspec(uuid("95c2ee26-4247-3ddc-8056-97353f10de8f"))
+_CodeMemberMethod : IDispatch
+{};
+
+struct __declspec(uuid("5a33c771-806e-337d-ae1f-66b523fc49bf"))
+_CodeConstructor : IDispatch
+{};
+
+struct __declspec(uuid("d14e12c1-e1d1-3b74-a3af-021a5a268fbe"))
+_CodeDelegateCreateExpression : IDispatch
+{};
+
+struct __declspec(uuid("6f6c3482-8900-36ea-b621-943534e82c73"))
+_CodeDelegateInvokeExpression : IDispatch
+{};
+
+struct __declspec(uuid("11edaf3b-144e-32c8-8be0-81d40a950656"))
+_CodeDirectionExpression : IDispatch
+{};
+
+struct __declspec(uuid("7cd4ef19-27eb-399e-8ed2-c6647a99c03e"))
+_CodeEntryPointMethod : IDispatch
+{};
+
+struct __declspec(uuid("35872687-5a11-34d7-85ab-865830a3bdee"))
+_CodeEventReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("af72cc74-2275-362a-9141-a4a79d596f39"))
+_CodeExpressionCollection : IDispatch
+{};
+
+struct __declspec(uuid("cea240af-60c5-3c69-9da1-da3f9a6d7b3c"))
+_CodeExpressionStatement : IDispatch
+{};
+
+struct __declspec(uuid("82d57b2b-c639-32a0-89b4-62a0c29dd64e"))
+_CodeFieldReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("8f1baed9-52ec-3545-9cf0-6ed71a76a5ca"))
+_CodeGotoStatement : IDispatch
+{};
+
+struct __declspec(uuid("c92c323f-8601-34d4-a2d6-f5e2653db456"))
+_CodeIndexerExpression : IDispatch
+{};
+
+struct __declspec(uuid("b16f7137-c0e7-3ecf-9652-fb1ea947e44e"))
+_CodeIterationStatement : IDispatch
+{};
+
+struct __declspec(uuid("56699cca-fd8d-3ad2-9643-149bad87fd60"))
+_CodeLabeledStatement : IDispatch
+{};
+
+struct __declspec(uuid("1b52ded6-92f3-3b4f-851c-ab1f647582a3"))
+_CodeLinePragma : IDispatch
+{};
+
+struct __declspec(uuid("e1a7ea9f-5d43-3fa9-afbc-9a2bfda84b65"))
+_CodeMemberEvent : IDispatch
+{};
+
+struct __declspec(uuid("eef50d17-7aa6-3e14-96c6-dd90fe5baa1e"))
+_CodeMemberField : IDispatch
+{};
+
+struct __declspec(uuid("802e2acc-a7f8-3ca9-9114-f49998bebe6e"))
+_CodeMemberProperty : IDispatch
+{};
+
+struct __declspec(uuid("ffe1f142-85cf-3353-8512-ee73775e9c4c"))
+_CodeMethodInvokeExpression : IDispatch
+{};
+
+struct __declspec(uuid("cbdf02f4-a9f4-33c0-8b24-275008890dcb"))
+_CodeMethodReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("851d821b-1e0c-3e91-832d-ba593523f566"))
+_CodeMethodReturnStatement : IDispatch
+{};
+
+struct __declspec(uuid("31ed1dcb-c007-3f96-8809-4d5e3540a7c1"))
+_CodeNamespace : IDispatch
+{};
+
+struct __declspec(uuid("f5e54f16-ade3-3b5d-8b05-1f9803557905"))
+_CodeNamespaceCollection : IDispatch
+{};
+
+struct __declspec(uuid("34418787-726b-3e74-aeed-c01397fc707d"))
+_CodeNamespaceImport : IDispatch
+{};
+
+struct __declspec(uuid("4c545457-76d7-3c56-b277-6a9e86d1046f"))
+_CodeNamespaceImportCollection : IDispatch
+{};
+
+struct __declspec(uuid("cfe5e5e9-745f-348b-a7e6-38a46d1a20e0"))
+_CodeObjectCreateExpression : IDispatch
+{};
+
+struct __declspec(uuid("ee96565b-2b1a-33c6-ba07-b63158f1c8c4"))
+_CodeParameterDeclarationExpression : IDispatch
+{};
+
+struct __declspec(uuid("05192769-7d6a-3c8c-94c2-dfa668f61088"))
+_CodeParameterDeclarationExpressionCollection : IDispatch
+{};
+
+struct __declspec(uuid("175bb49a-4cbe-38b3-8c6c-1b0145edabb7"))
+_CodePrimitiveExpression : IDispatch
+{};
+
+struct __declspec(uuid("f8d64802-f9b7-3095-a641-d31e6e9f87b1"))
+_CodePropertyReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("2ee13fa1-8a02-3573-9ac9-4febd2ceab45"))
+_CodePropertySetValueReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("853bc437-ca6e-375d-bcbb-818e917d9691"))
+_CodeRemoveEventStatement : IDispatch
+{};
+
+struct __declspec(uuid("c7d34cf6-cf82-38b0-bf67-eb36da63ae6e"))
+_CodeSnippetCompileUnit : IDispatch
+{};
+
+struct __declspec(uuid("9f3e3cd1-8082-31e9-851c-3e177e56a87b"))
+_CodeSnippetExpression : IDispatch
+{};
+
+struct __declspec(uuid("b4b00613-c48b-3fa9-b8f6-a527ec6f21c3"))
+_CodeSnippetStatement : IDispatch
+{};
+
+struct __declspec(uuid("575bf8d0-7a9d-39eb-81f9-aa2beba890fa"))
+_CodeSnippetTypeMember : IDispatch
+{};
+
+struct __declspec(uuid("4b9a5032-4b8c-3de6-997c-c38b4b3af26a"))
+_CodeStatementCollection : IDispatch
+{};
+
+struct __declspec(uuid("3b4a1a6b-8e65-355d-b93a-e6ab753b2401"))
+_CodeThisReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("12350e95-6f4e-30f0-9343-72f1c64380a0"))
+_CodeThrowExceptionStatement : IDispatch
+{};
+
+struct __declspec(uuid("8fd0f76a-29bf-3982-8335-c9b44abf31c3"))
+_CodeTryCatchFinallyStatement : IDispatch
+{};
+
+struct __declspec(uuid("261ad877-0f22-33de-9a3a-31f5da424b30"))
+_CodeTypeConstructor : IDispatch
+{};
+
+struct __declspec(uuid("7aa363e1-fa53-31eb-be4a-1eb4838264f3"))
+_CodeTypeDeclaration : IDispatch
+{};
+
+struct __declspec(uuid("be0eced3-5f0d-310a-b352-7d1adf28f8ec"))
+_CodeTypeDeclarationCollection : IDispatch
+{};
+
+struct __declspec(uuid("455090ab-5c44-3f4f-8eed-ccc90a3112b5"))
+_CodeTypeDelegate : IDispatch
+{};
+
+struct __declspec(uuid("f943231e-6192-33a0-9ca3-d6ed0e4f323d"))
+_CodeTypeMemberCollection : IDispatch
+{};
+
+struct __declspec(uuid("12cbce8e-75ff-312f-81b9-7fbc6212090b"))
+_CodeTypeOfExpression : IDispatch
+{};
+
+struct __declspec(uuid("b6d972c6-022b-3f91-9655-e288e9d32c55"))
+_CodeTypeReference : IDispatch
+{};
+
+struct __declspec(uuid("68a04561-d0a0-3eeb-b904-462dc4eb5531"))
+_CodeTypeReferenceCollection : IDispatch
+{};
+
+struct __declspec(uuid("726bb04d-2c4c-3e3d-a01a-31448db063dd"))
+_CodeTypeReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("4192a87c-5c57-3879-8624-af5ca2ed9eb2"))
+_CodeVariableDeclarationStatement : IDispatch
+{};
+
+struct __declspec(uuid("54b54936-a71c-3a45-b982-2c484e7bcf86"))
+_CodeVariableReferenceExpression : IDispatch
+{};
+
+struct __declspec(uuid("05241989-96c5-3bf9-ab9b-37e261c1b8f8"))
+_TypeConverter : IDispatch
+{};
+
+struct __declspec(uuid("f55efa91-812e-3c6e-998f-3598e93fb8a7"))
+_MemberDescriptor : IDispatch
+{};
+
+struct __declspec(uuid("fe5060f8-212f-3a4f-8fa8-db2e14588c49"))
+_PropertyDescriptor : IDispatch
+{};
+
+struct __declspec(uuid("42f00c62-f454-3a38-af9e-35d4e2bdfdac"))
+_ComponentCollection : IDispatch
+{};
+
+struct __declspec(uuid("95b6a563-4a39-37a2-91d7-04b8ecdd1b66"))
+_EventDescriptor : IDispatch
+{};
+
+struct __declspec(uuid("4c933253-83f2-35b6-961a-0780ff1baf7c"))
+_EventDescriptorCollection : IDispatch
+{};
+
+struct __declspec(uuid("6f971e04-b06a-3dd0-b6f5-622826693454"))
+_AttributeCollection : IDispatch
+{};
+
+struct __declspec(uuid("fc50598b-2406-33d2-ba9a-cfbea52bc05a"))
+_CommandID : IDispatch
+{};
+
+struct __declspec(uuid("a8fef1c6-d434-3686-a4de-b68e8eabb509"))
+_ComponentChangedEventArgs : IDispatch
+{};
+
+struct __declspec(uuid("0451c390-1f90-341d-9278-b9ff2636d67d"))
+_ComponentChangedEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("b78cbaa3-37df-31c9-abd2-cdcb1a7fba9f"))
+_ComponentChangingEventArgs : IDispatch
+{};
+
+struct __declspec(uuid("7f8c2da3-d337-334f-92e9-87be9bdc6070"))
+_ComponentChangingEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("438e8dcf-6875-305f-8ca5-40dbb15782a6"))
+_ComponentEventArgs : IDispatch
+{};
+
+struct __declspec(uuid("290b355d-80d3-3afa-96ab-b4d395729374"))
+_ComponentEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("da5d7739-9522-3e28-9ab7-7c2d7d27c63a"))
+_ComponentRenameEventArgs : IDispatch
+{};
+
+struct __declspec(uuid("ba2df049-da87-3bd1-97b0-7904b59adf7e"))
+_ComponentRenameEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("3924a637-c2c4-3558-945f-279b5ac39ed9"))
+_DesignerTransactionCloseEventArgs : IDispatch
+{};
+
+struct __declspec(uuid("4543d155-ee6a-3529-bc8d-cf0e866b6b0b"))
+_DesignerTransactionCloseEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("1ff238ce-6190-3750-a34f-05f02b7315a6"))
+_MenuCommand : IDispatch
+{};
+
+struct __declspec(uuid("7c41b90e-52fb-3e54-8b03-ebe0bf172c84"))
+_DesignerVerb : IDispatch
+{};
+
+struct __declspec(uuid("ac3bdda4-25b8-3321-a1c0-7c37bbf2dded"))
+_DesignerVerbCollection : IDispatch
+{};
+
+struct __declspec(uuid("be380bec-79f2-3876-b510-fa2fe43b7eb7"))
+_ServiceCreatorCallback : IDispatch
+{};
+
+struct __declspec(uuid("85b4a627-7552-3aa6-8a1c-a213c5788fec"))
+_WebClient : IDispatch
+{};
+
+struct __declspec(uuid("b97e84f2-fab2-340d-8d49-2ac85cf5c0ec"))
+_WebHeaderCollection : IDispatch
+{};
+
+struct __declspec(uuid("a9809e7d-42f8-3284-82cf-ab5f863a29aa"))
+_PerformanceCounterManager : IDispatch
+{};
+
+} // namespace System
+
+#pragma pack(pop)

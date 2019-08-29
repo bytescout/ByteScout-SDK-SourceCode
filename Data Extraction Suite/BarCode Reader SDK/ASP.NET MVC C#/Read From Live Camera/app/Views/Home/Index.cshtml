@@ -1,0 +1,148 @@
+@using Bytescout.BarCodeReader
+@{
+    string scr = ViewBag.Img;
+    FoundBarcode[] barcodes = ViewBag.Barcodes;
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        Web Barcode Reader
+    </title>
+    <link href="~/Style/index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="upload_image">
+        <h3>Barcodes From Image (scans for all type of barcodes)</h3>
+        <form action="/home/index" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="Upload file" />
+        </form>
+        @if (barcodes != null)
+        {
+            <select multiple>
+                @foreach (FoundBarcode item in barcodes)
+                {
+                    <option>@String.Format("{0} : {1}", item.Type, item.Value)</option>
+                }
+            </select>
+        }
+        @if (scr != null)
+        {
+            <img src="/@scr" />
+        }
+    </div>
+    <div class="line"></div>
+    <div class="upload_camera">
+        <h3>Barcodes From Camera</h3>
+        <div id="userMedia" style="display:none; height: 575px; width: 1182px">
+            <table>
+                <tr align="left" valign="top">
+                    <td valign="top" colspan="2">
+                        <h5 style=" color:Green; ">(HTML5 based camera) This works in Chrome, Firefox, Safari and other modern browsers with HTML5 support. If HTML5 camera is not enabled then Flash based camera should appear instead. To enable web-cam access answer ALLOW when asked if you want to give access to webcam </h5>                        
+                    	<strong>IMPORTANT: html5 webcam access (Chrome, Firefox, Safari on desktop and iOS) requires SSL connection! Otherwise, web camera will not initialize at all as it requies SSL connection only. </strong>
+                    </td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td valign="top">
+                        <h2 id="choiceU"> <b>Barcode Type To Scan (to start barcode scan - click START below)</b></h2>
+                        <br />
+                        <select id="comboBoxBarCodeTypeHTML5" onchange="selectType(this)">
+                            <option value="1">All Barcodes (slow)</option>
+                            <option value="2">All Linear Barcodes (Code39, Code 128, EAN 13, UPCA, UPCE, etc.)</option>
+                            <option value="3">All 2D Barcodes (QR Code, Aztec, DataMatrix, PDF417, etc.)</option>
+                            <option value="4">Code 39c</option>
+                            <option value="5">Code 128</option>
+                            <option value="6">EAN 13</option>
+                            <option value="7">UPCA</option>
+                            <option value="8">GS1-128</option>
+                            <option value="9">GS1DataBarExpanded</option>
+                            <option value="10">GS1DataBarExpandedStacked </option>
+                            <option value="11">GS1DataBarLimited</option>
+                            <option value="12">GS1DataBarOmnidirectional</option>
+                            <option value="13">GS1DataBarStacked</option>
+                            <option value="14">I2of5</option>
+                            <option value="15">Intelligent Mail</option>
+                            <option value="16">Patch Code</option>
+                            <option value="17">PDF 417</option>
+                            <option value="18">QR Code</option>
+                            <option value="19">Datamatrix</option>
+                            <option value="20">Aztec</option>
+                            <option value="21">MaxiCode</option>
+                        </select>
+                        <br />
+                        <span style=" font-size:20px; ">Output barcode values read appears below: </span>
+                        <br />
+                        <!-- decoding results appears in this listbox -->
+                        <textarea style="width:500px; height:100px;" size="8" id="OutListBoxHTML5"></textarea>
+                        <br />
+                        <input id="snap" style="color:black; font-weight:bold; font-size:large;" type="button" onclick="UploadToCloud();" value="START READING BARCODES..." />
+                        <input id="pause" style="color:black;" type="button" onclick="stopCall();" value="STOP" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <h4 id="report"></h4>
+                    </td>
+                    <td valign="top">
+                        <span>Webcam preview shows below:</span>
+                        <video id="video" width="640" height="480" autoplay playsinline muted></video>
+                        <!-- canvas with the output -->
+                        <canvas id="canvasU" width="640" height="480" style="display:none"></canvas>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- Flash (SWF) camera based capturing section -->
+        <!-- this div block will be shown when browser does not support user media so the only way is to capture with flash (swf) camera -->
+        <div id="flashDiv" style=" display:none; ">
+            <table>
+                <tr align="left" valign="top">
+                    <td colspan="2"><h5 style=" color:Green; ">(FLASH based camera) This works in Internet Explorer 9+, Chrome, Firefox and other browsers with flash support. To enable web-cam access answer ALLOW when asked if you want to give access to webcam </h5></td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td valign="top">
+                        <h4 id="choice"> <b>Barcode Type To Scan (to start barcode scan - click START below)</b></h4>
+                        <br />
+                        <select id="comboBoxBarCodeTypeFlash" onchange="selectType(this)">
+                            <option value="1">All Barcodes (slow)</option>
+                            <option value="2">All Linear Barcodes (Code39, Code 128, EAN 13, UPCA, UPCE, etc.)</option>
+                            <option value="3">All 2D Barcodes (QR Code, Aztec, DataMatrix, PDF417, etc.)</option>
+                            <option value="4">Code 39</option>
+                            <option value="5">Code 128</option>
+                            <option value="6">EAN 13</option>
+                            <option value="7">UPCA</option>
+                            <option value="8">GS1-128</option>
+                            <option value="9">GS1DataBarExpanded</option>
+                            <option value="10">GS1DataBarExpandedStacked </option>
+                            <option value="11">GS1DataBarLimited</option>
+                            <option value="12">GS1DataBarOmnidirectional</option>
+                            <option value="13">GS1DataBarStacked</option>
+                            <option value="14">I2of5</option>
+                            <option value="15">Intelligent Mail</option>
+                            <option value="16">Patch Code</option>
+                            <option value="17">PDF 417</option>
+                            <option value="18">QR Code</option>
+                            <option value="19">DataMatrix</option>
+                            <option value="20">Aztec</option>
+                            <option value="21">MaxiCode</option>
+                        </select>
+                        <br />
+                        <span style=" font-size:20px; ">Output barcode values read appears below: </span>
+                        <br />
+                        <!-- decoding results appears in this listbox -->
+                        <textarea style="width:500px; height:100px;" size="8" id="OutListBoxFlash"> </textarea>
+                        <br />
+                        <input type="button" style="color:black; font-weight:bold; font-size:large;" value="START READING BARCODES.." onclick="take_snapshot()" /> &nbsp;&nbsp;&nbsp;
+                        <br />
+                        <input type="button" style="color:black; font-weight:bold; font-size:large;" value="STOP" onclick="stopScanning()" />
+                        <br />
+                        <div id="upload_results" style="background-color:#eee;"></div>
+                    </td>
+                    <td>
+                        <div id="flashOut"> </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="~/Scripts/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="~/Scripts/webcam.js"></script>
+    <script type="text/javascript" src="~/Scripts/index.js"></script>
+</body>
+</html>

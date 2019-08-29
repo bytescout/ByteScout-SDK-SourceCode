@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Eugene</Author>
+  <LastAuthor>Eugene</LastAuthor>
+  <Created>2018-06-28T05:09:21Z</Created>
+  <LastSaved>2018-06-28T05:11:40Z</LastSaved>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12435</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s63">
+   <NumberFormat ss:Format="#,##0.00\ &quot;₽&quot;"/>
+  </Style>
+  <Style ss:ID="s64">
+   <NumberFormat
+    ss:Format="_-* #,##0.00\ &quot;₽&quot;_-;\-* #,##0.00\ &quot;₽&quot;_-;_-* &quot;-&quot;??\ &quot;₽&quot;_-;_-@_-"/>
+  </Style>
+  <Style ss:ID="s65">
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s66">
+   <NumberFormat ss:Format="[$-F800]dddd\,\ mmmm\ dd\,\ yyyy"/>
+  </Style>
+  <Style ss:ID="s67">
+   <NumberFormat ss:Format="[$-F400]h:mm:ss\ AM/PM"/>
+  </Style>
+  <Style ss:ID="s68">
+   <NumberFormat ss:Format="Percent"/>
+  </Style>
+  <Style ss:ID="s69">
+   <NumberFormat ss:Format="#&quot; &quot;?/?"/>
+  </Style>
+  <Style ss:ID="s70">
+   <NumberFormat ss:Format="Scientific"/>
+  </Style>
+  <Style ss:ID="s71">
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="11" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="80.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="89.25"/>
+   <Row>
+    <Cell><Data ss:Type="String">General</Data></Cell>
+    <Cell><Data ss:Type="Number">123</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">123</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Currency</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">123</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Accounting</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">123</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Short Date</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="DateTime">2018-05-02T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Long Date</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="DateTime">2018-05-02T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Time</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="DateTime">1899-12-31T12:20:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Percentage</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">0.2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fraction</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">0.33333333333333331</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Scientific</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1.5000000000000001E-20</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">123</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>11</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

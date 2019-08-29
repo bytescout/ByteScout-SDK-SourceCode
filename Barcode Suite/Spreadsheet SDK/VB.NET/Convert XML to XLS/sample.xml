@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report>
+	<Columns>
+		<Column Name="DESCRIPTION" />
+		<Column Name="COST" />
+		<Column Name="STAFF" />
+		<Column Name="FACTOR1" />
+		<Column Name="FACTOR2" />
+		<Column Name="FACTOR3" />
+		<Column Name="FACTOR4" />
+		<Column Name="FACTOR5" />
+	</Columns>
+  <ReportData>
+    <DESCRIPTION>Administration</DESCRIPTION>
+    <COST>122</COST>
+    <STAFF>10</STAFF>
+    <FACTOR1>317.4080</FACTOR1>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>CEO office</DESCRIPTION>
+    <COST>011</COST>
+    <STAFF>3</STAFF>
+    <FACTOR1>95.2220</FACTOR1>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>Commercial Affairs</DESCRIPTION>
+    <COST>131</COST>
+    <STAFF>90</STAFF>
+    <FACTOR1>1460.0750</FACTOR1>
+    <FACTOR2>510.2110</FACTOR2>
+    <FACTOR3>290.2560</FACTOR3>
+    <FACTOR4>350.4030</FACTOR4>
+    <FACTOR5>171.6560</FACTOR5>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>Finance Dep.</DESCRIPTION>
+    <COST>050</COST>
+    <STAFF>12</STAFF>
+    <FACTOR1>380.8890</FACTOR1>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>HR Dep</DESCRIPTION>
+    <COST>121</COST>
+    <STAFF>16</STAFF>
+    <FACTOR1>507.8520</FACTOR1>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>HSE Dep.</DESCRIPTION>
+    <COST>161</COST>
+    <STAFF>9</STAFF>
+    <FACTOR1>158.7040</FACTOR1>
+    <FACTOR2>34.0140</FACTOR2>
+    <FACTOR3>26.3870</FACTOR3>
+    <FACTOR4>31.8550</FACTOR4>
+    <FACTOR5>24.5220</FACTOR5>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>IT</DESCRIPTION>
+    <COST>071</COST>
+    <STAFF>10</STAFF>
+    <FACTOR1>317.4080</FACTOR1>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>Internal Audit</DESCRIPTION>
+    <COST>031</COST>
+    <STAFF>3</STAFF>
+    <FACTOR1>95.2220</FACTOR1>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>Legal Department</DESCRIPTION>
+    <COST>015</COST>
+    <STAFF>2</STAFF>
+    <FACTOR1>63.4820</FACTOR1>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>OPERATIONS</DESCRIPTION>
+    <COST>082</COST>
+    <STAFF>210</STAFF>
+    <FACTOR2>2040.8430</FACTOR2>
+    <FACTOR3>1609.6040</FACTOR3>
+    <FACTOR4>1369.7590</FACTOR4>
+    <FACTOR5>1128.0260</FACTOR5>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>PROJECTS</DESCRIPTION>
+    <COST>094</COST>
+    <STAFF>71</STAFF>
+    <FACTOR1>793.5190</FACTOR1>
+    <FACTOR2>442.1830</FACTOR2>
+    <FACTOR3>343.0300</FACTOR3>
+    <FACTOR4>318.5490</FACTOR4>
+    <FACTOR5>245.2230</FACTOR5>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>Planning &amp; Asset Management</DESCRIPTION>
+    <COST>096</COST>
+    <STAFF>51</STAFF>
+    <FACTOR1>1206.1490</FACTOR1>
+    <FACTOR2>136.0560</FACTOR2>
+    <FACTOR3>105.5480</FACTOR3>
+    <FACTOR4>95.5650</FACTOR4>
+    <FACTOR5>49.0450</FACTOR5>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>Regulatory, Corporate &amp; Strategy</DESCRIPTION>
+    <COST>151</COST>
+    <STAFF>6</STAFF>
+    <FACTOR1>190.4450</FACTOR1>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>Shared Services Dep.</DESCRIPTION>
+    <COST>014</COST>
+    <STAFF>3</STAFF>
+    <FACTOR1>95.2220</FACTOR1>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>TECHNICAL SERVICES</DESCRIPTION>
+    <COST>088</COST>
+    <STAFF>20</STAFF>
+    <FACTOR1>158.7040</FACTOR1>
+    <FACTOR3>290.2560</FACTOR3>
+    <FACTOR4>127.4190</FACTOR4>
+  </ReportData>
+  <ReportData>
+    <DESCRIPTION>Tender procurement &amp; Contracts</DESCRIPTION>
+    <COST>112</COST>
+    <STAFF>13</STAFF>
+    <FACTOR1>412.6300</FACTOR1>
+  </ReportData>
+</Report>
