@@ -279,6 +279,7 @@
 \BarCode SDK\C#\Code 128 Barcode
 \BarCode SDK\C#\Code 39 Barcode
 \BarCode SDK\C#\Code 93 Barcode
+\BarCode SDK\C#\Composed Barcode
 \BarCode SDK\C#\DataMatrix Barcode
 \BarCode SDK\C#\DataMatrix Barcode With Binary Data
 \BarCode SDK\C#\Deutsche Post Identcode Barcode
@@ -395,6 +396,7 @@
 \BarCode SDK\VB.NET\Code 128 Barcode
 \BarCode SDK\VB.NET\Code 39 Barcode
 \BarCode SDK\VB.NET\Code 93 Barcode
+\BarCode SDK\VB.NET\Composed Barcode
 \BarCode SDK\VB.NET\DataMatrix (2D) Barcode
 \BarCode SDK\VB.NET\DataMatrix With Binary Data
 \BarCode SDK\VB.NET\Deutsche Post Identcode Barcode
@@ -4016,8 +4018,19 @@
 \PDF.co Web API\DOC To PDF API\VB.NET\Convert DOC To PDF From URL Asynchronously
 \PDF.co Web API\Document Parser API\C#
 \PDF.co Web API\Document Parser API\Java
+\PDF.co Web API\Document Parser API\JavaScript
+\PDF.co Web API\Document Parser API\Powershell
+\PDF.co Web API\Document Parser API\VB.NET
+\PDF.co Web API\Document Parser API\C#\Parse From URL
 \PDF.co Web API\Document Parser API\C#\Parse Uploaded File
+\PDF.co Web API\Document Parser API\Java\Parse From Url
 \PDF.co Web API\Document Parser API\Java\Parse Uploaded File
+\PDF.co Web API\Document Parser API\JavaScript\Parse From Url (Node.js)
+\PDF.co Web API\Document Parser API\JavaScript\Parse Uploaded File (Node.js)
+\PDF.co Web API\Document Parser API\Powershell\Parse From Uploaded File
+\PDF.co Web API\Document Parser API\Powershell\Parse From Url
+\PDF.co Web API\Document Parser API\VB.NET\Parse From Url
+\PDF.co Web API\Document Parser API\VB.NET\Parse Uploaded File
 \PDF.co Web API\Excel To CSV API\JavaScript
 \PDF.co Web API\Excel To CSV API\JavaScript\Convert Excel to CSV in jQuery
 \PDF.co Web API\Excel To CSV API\JavaScript\Convert Excel to CSV in jQuery - Async API
