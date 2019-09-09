@@ -2695,6 +2695,7 @@
 \PDF Extractor SDK\C#\Make Searchable PDF Discarding Existing Content
 \PDF Extractor SDK\C#\Make Searchable PDF from Image
 \PDF Extractor SDK\C#\Make Unsearchable PDF
+\PDF Extractor SDK\C#\Merge All Documents Within Folder
 \PDF Extractor SDK\C#\Merge PDF Documents
 \PDF Extractor SDK\C#\Merge Protected PDF Documents
 \PDF Extractor SDK\C#\OCR Analyser
@@ -2739,6 +2740,7 @@
 \PDF Extractor SDK\C#\Batch check folder agianst JSON settings\InputFiles
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF\InputFiles
 \PDF Extractor SDK\C#\Index PDF Documents In Folder\Files
+\PDF Extractor SDK\C#\Merge All Documents Within Folder\PDFDocs
 \PDF Extractor SDK\C++\Compare PDF Documents
 \PDF Extractor SDK\C++\Convert Protected PDF Document to Excel (C++ CLR)
 \PDF Extractor SDK\C++\Extract PDF Pages
@@ -2804,6 +2806,7 @@
 \PDF Extractor SDK\VB.NET\Make Searchable PDF Discarding Existing Content
 \PDF Extractor SDK\VB.NET\Make Searchable PDF from Image
 \PDF Extractor SDK\VB.NET\Make Unsearchable PDF
+\PDF Extractor SDK\VB.NET\Merge All Documents Within Folder
 \PDF Extractor SDK\VB.NET\Merge PDF Documents
 \PDF Extractor SDK\VB.NET\Merge Protected PDF Documents
 \PDF Extractor SDK\VB.NET\OCR (Optical Character Recognition) and PDF
@@ -2838,6 +2841,7 @@
 \PDF Extractor SDK\VB.NET\Batch check folder agianst JSON settings\InputFiles
 \PDF Extractor SDK\VB.NET\Check If OCR Is Required for PDF\InputFiles
 \PDF Extractor SDK\VB.NET\Index PDF Documents In Folder\Files
+\PDF Extractor SDK\VB.NET\Merge All Documents Within Folder\PDFDocs
 \PDF Extractor SDK\VB6\Convert PDF To CSV
 \PDF Extractor SDK\VB6\Convert PDF To CSV (Merge multiline text to table cell)
 \PDF Extractor SDK\VB6\Convert PDF To JSON
@@ -2878,6 +2882,7 @@
 \PDF Extractor SDK\VBScript\Make Searchable PDF and Fix Rotated Pages
 \PDF Extractor SDK\VBScript\Make Searchable PDF Discarding Existing Content
 \PDF Extractor SDK\VBScript\Make Unsearchable PDF
+\PDF Extractor SDK\VBScript\Merge All Documents Within Folder
 \PDF Extractor SDK\VBScript\Merge PDF Documents
 \PDF Extractor SDK\VBScript\OCR Analyser for PDF
 \PDF Extractor SDK\VBScript\OCR With Best Dataset
@@ -2892,6 +2897,7 @@
 \PDF Extractor SDK\VBScript\Rotate PDF Document
 \PDF Extractor SDK\VBScript\Split PDF Document
 \PDF Extractor SDK\VBScript\ZUGFeRD Invoice Extraction
+\PDF Extractor SDK\VBScript\Merge All Documents Within Folder\PDFDocs
 \PDF Generator SDK for Javascript\Javascript
 \PDF Generator SDK for Javascript\Javascript\Add Image To PDF From Base64
 \PDF Generator SDK for Javascript\Javascript\Add Image To PDF From Canvas
@@ -3854,8 +3860,10 @@
 \PDF Viewer SDK\VB.NET
 \PDF Viewer SDK\C#\Change PDF Selection Options and Use CustomPaint
 \PDF Viewer SDK\C#\Create Sample PDF Viewer UI Application
+\PDF Viewer SDK\C#\Custom MultiKey Press Event Handling
 \PDF Viewer SDK\C#\Get Selection Points with PDF Viewer UI Application
 \PDF Viewer SDK\C#\PDF Viewer Control Hosted in WPF
+\PDF Viewer SDK\VB.NET\Custom MultiKey Press Event Handling
 \PDF Viewer SDK\VB.NET\Get Selection Points with PDF Viewer UI Application
 \PDF Viewer SDK\VB.NET\PDF Viewer Control Hosted in WPF
 \PDF Viewer SDK\VB.NET\Sample PDF Viewing UI Application
