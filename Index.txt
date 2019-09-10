@@ -2722,6 +2722,7 @@
 \PDF Extractor SDK\C#\Read Hindi Text from PDF
 \PDF Extractor SDK\C#\Read Text From Noisy Image
 \PDF Extractor SDK\C#\Read Values from PDF Form Fields
+\PDF Extractor SDK\C#\Reading and Writing to Azure Blob
 \PDF Extractor SDK\C#\Reduce Memory Usage for PDF to Text
 \PDF Extractor SDK\C#\Remove Empty Pages from PDF
 \PDF Extractor SDK\C#\Remove Text from PDF
@@ -2824,6 +2825,7 @@
 \PDF Extractor SDK\VB.NET\Read Hindi Text
 \PDF Extractor SDK\VB.NET\Read Text From Noisy Image
 \PDF Extractor SDK\VB.NET\Read Values from Form Fields
+\PDF Extractor SDK\VB.NET\Reading and Writing to Azure Blob
 \PDF Extractor SDK\VB.NET\Reduce Memory Usage
 \PDF Extractor SDK\VB.NET\Remove Empty Pages
 \PDF Extractor SDK\VB.NET\Remove Text
