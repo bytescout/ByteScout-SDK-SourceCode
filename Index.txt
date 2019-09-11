@@ -2735,6 +2735,7 @@
 \PDF Extractor SDK\C#\Scanned PDF to Text
 \PDF Extractor SDK\C#\Scanned PDF to XML
 \PDF Extractor SDK\C#\SearchablePDFMaker Progress Indication
+\PDF Extractor SDK\C#\Sensitive Data Detector
 \PDF Extractor SDK\C#\Set Configuration Profiles
 \PDF Extractor SDK\C#\Split PDF Document
 \PDF Extractor SDK\C#\Split Protected PDF Document
@@ -2838,6 +2839,7 @@
 \PDF Extractor SDK\VB.NET\Scanned PDF To Text
 \PDF Extractor SDK\VB.NET\Scanned PDF To XML
 \PDF Extractor SDK\VB.NET\SearchablePDFMaker Progress Indication
+\PDF Extractor SDK\VB.NET\Sensitive Data Detector
 \PDF Extractor SDK\VB.NET\Split Document
 \PDF Extractor SDK\VB.NET\Split Protected PDF Document
 \PDF Extractor SDK\VB.NET\TextExtractor Progress Indication
@@ -3050,6 +3052,7 @@
 \PDF SDK\C#\Fill Form W-9
 \PDF SDK\C#\Fill PDF Form
 \PDF SDK\C#\Flatten PDF Form
+\PDF SDK\C#\Insert Page to PDF
 \PDF SDK\C#\Load Existing PDF Document
 \PDF SDK\C#\Merge Two PDF Documents
 \PDF SDK\C#\Read Form Values from 1099-INT form
@@ -3138,6 +3141,7 @@
 \PDF SDK\VB.NET\Fill PDF Form
 \PDF SDK\VB.NET\Flatten PDF Form
 \PDF SDK\VB.NET\Insert Images in PDF
+\PDF SDK\VB.NET\Insert Pages to PDF
 \PDF SDK\VB.NET\Load Existing PDF Document
 \PDF SDK\VB.NET\Merge Two PDF Documents
 \PDF SDK\VB.NET\Read Form Values from 1099-INT form
