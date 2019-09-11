@@ -125,6 +125,7 @@
 \BarCode Reader SDK\C#\General Example reading barcodes
 \BarCode Reader SDK\C#\GUI Example for Barcode Reading
 \BarCode Reader SDK\C#\Image Preprocessing Filters
+\BarCode Reader SDK\C#\Inspect Decoded Barcodes
 \BarCode Reader SDK\C#\Interrupt Barcode Decoding Processing
 \BarCode Reader SDK\C#\Parallel Barcode Decoding
 \BarCode Reader SDK\C#\Read barcode From Live Video Cam
@@ -210,6 +211,7 @@
 \BarCode Reader SDK\VB.NET\Export Results to XML, CSV, TXT
 \BarCode Reader SDK\VB.NET\General Barcode Reading Example
 \BarCode Reader SDK\VB.NET\GUI Example For Barcode Reading
+\BarCode Reader SDK\VB.NET\Inspect Decoded Barcodes
 \BarCode Reader SDK\VB.NET\Interrupt Barcode Processing
 \BarCode Reader SDK\VB.NET\Parallel Barcode Decoding
 \BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam
