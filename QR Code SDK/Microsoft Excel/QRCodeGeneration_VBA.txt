@@ -1,0 +1,103 @@
+' IMPORTANT: This demo uses VBA so if you have it disabled please temporary enable
+' by going to Tools - Macro - Security.. and changing the security mode to ""Medium""
+' to Ask if you want enable macro or not. Then close and reopen this Excel document
+
+' You should have evaluation version of the ByteScout QRCode SDK installed to get it working - get it from https://bytescout.com
+
+'==============================================
+'References used
+'=================
+'ByteScout QRCode SDK
+'
+' IMPORTANT:
+' ==============================================================
+'1) Add "ByteScout QRCode SDK" reference in Tools -> References
+'2) Loop through the values from the Column A for which barcode has to be generated
+'3) Parse the value to barcode object to generate the barcode.
+'4) Save the generated barcode image.
+'5) Insert the barcode image in the column B.
+'6) Repeat the steps 3 to 5 till the last value in column A
+'
+'==================================================================
+
+Option Explicit
+
+' declare function to get temporary folder (where we could save barcode images temporary)
+Declare Function GetTempPath _
+Lib "kernel32" Alias "GetTempPathA" _
+(ByVal nBufferLength As Long, _
+ByVal lpBuffer As String) As Long
+ 
+' function to return path to temporary folder
+Public Function fncGetTempPath() As String
+    Dim PathLen As Long
+    Dim WinTempDir As String
+    Dim BufferLength As Long
+    BufferLength = 260
+    WinTempDir = Space(BufferLength)
+    PathLen = GetTempPath(BufferLength, WinTempDir)
+    If Not PathLen = 0 Then
+        fncGetTempPath = Left(WinTempDir, PathLen)
+    Else
+        fncGetTempPath = CurDir()
+    End If
+End Function
+
+
+Sub Barcode_Click()
+
+'Fetch the Worksheet
+Dim mySheet As Worksheet
+Set mySheet = Worksheets(1)                 'Barcode_Data Sheet
+
+'temp path to save the Barcode images
+Dim filePath As String
+filePath = fncGetTempPath()            'Change the Path But should end with Backslash( \ )
+
+'Prepare the ByteScout QRCode object
+'====================================
+Dim myBarcode As New Bytescout_BarCode_QRCode.QRCode
+myBarcode.RegistrationName = "demo"         'Change the name for full version
+myBarcode.RegistrationKey = "demo"          'Change the key for full version
+
+myBarcode.DrawCaption = True                'Showing Barcode Captions in the Barcode Image
+
+' first clean the B column from old images (if any)
+Dim Sh As Shape
+With mySheet
+   For Each Sh In .Shapes
+       If Not Application.Intersect(Sh.TopLeftCell, .Range("B1:B50")) Is Nothing Then
+         If Sh.Type = msoPicture Then Sh.Delete
+       End If
+    Next Sh
+End With
+
+' now generate new barcodes and insert into cells in the column B
+' Repeat the steps for each row from 2 to 6
+Dim myVal As Integer
+
+For myVal = 2 To 6                          'change the code to all rows with values
+    'Parse the Value from the Column A to Bytescout Barcode Object
+    myBarcode.Value = mySheet.Cells(myVal, 1).Text
+    'Save the barcode image to a file in temporary folder
+    myBarcode.SaveImage filePath & "myBarcode" & myVal & ".png"
+    
+    'Insert the Barcode image to the Column B and resize them to fit the cell.
+    '==========================================================================
+    With mySheet.Pictures.Insert(filePath & "myBarcode" & myVal & ".png")
+        .ShapeRange.LockAspectRatio = True ' lock aspect ratio
+        .Left = mySheet.Cells(myVal, 2).Left + 1 ' set left
+        .Top = mySheet.Cells(myVal, 2).Top + 1 ' set right
+        .PrintObject = True ' allow printing this object
+        .Placement = xlMove ' set placement mode to move but do not resize with the cell
+        .ShapeRange.ScaleHeight 1, True ' set height scale to 1 (no scale)
+        .ShapeRange.ScaleWidth 1, True ' set width scale to 1 (no scale)
+    End With
+    
+    
+Next myVal ' move to next cell in the column
+
+' Release the Barcode Object.
+Set myBarcode = Nothing
+
+End Sub

@@ -5607,6 +5607,7 @@
 \Premium Suite\Visual Basic 6\Create side by side manifest\UMMM-master\Src
 \QR Code SDK\C#
 \QR Code SDK\Microsoft Access
+\QR Code SDK\Microsoft Excel
 \QR Code SDK\VB.NET
 \QR Code SDK\VBScript and VB6
 \QR Code SDK\C#\Convert vCard to QR Code
