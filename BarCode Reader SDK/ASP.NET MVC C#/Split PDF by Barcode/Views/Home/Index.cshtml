@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Split Barcode demo</title>
+</head>
+<body>
+
+    @using (Html.BeginForm("ProcessIndex", "Home", FormMethod.Post))
+    {
+    <label>
+        Demonstrate splitting PDF document with barcode<br />
+    </label>
+        <br />
+        <br />
+        <div>
+            <input type="submit" value="Split PDF Barcode" />
+        </div>
+    }
+
+</body>
+</html>

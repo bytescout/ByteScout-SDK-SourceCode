@@ -1,0 +1,21 @@
+﻿@model List<string>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Result</title>
+</head>
+<body>
+
+    @foreach (var itmMsg in Model)
+    {
+        <div style="display:block; border: solid 1px lightgray; padding:15px; margin:15px;"> @itmMsg </div>
+    }
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Simple Web Barcode Reader Tester</title>
+</head>
+<body>
+
+    @using (Html.BeginForm("ProcessIndex", "Home", FormMethod.Post))
+    {
+        <label>
+            Demonstrate reading barcode from pdf file.
+        </label>
+        <br />
+        <br />
+        <div>
+            <input type="submit" value="Read Barcode Value" />
+        </div>
+    }
+
+</body>
+</html>

@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ImagePdfBarcodeToCSV</RootNamespace>
-    <AssemblyName>ImagePdfBarcodeToCSV</AssemblyName>
+    <RootNamespace>ReadBarcoces</RootNamespace>
+    <AssemblyName>ReadBarcoces</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -86,8 +86,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BarcodeFiles\sample1.jpg" />
-    <Content Include="BarcodeFiles\sample2.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -101,7 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="BarcodeFiles\sample3.pdf" />
+    <Content Include="example.pdf" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">

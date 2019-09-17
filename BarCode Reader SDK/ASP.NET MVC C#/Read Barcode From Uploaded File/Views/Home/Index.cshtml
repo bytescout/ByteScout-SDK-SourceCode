@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Read barcode from uploaded file</title>
+</head>
+<body>
+
+    @using (Html.BeginForm("ProcessFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div>
+            <label>
+                Please upload image/PDF File to read barcode from:
+            </label>
+            &nbsp;&nbsp;&nbsp;
+            <input type="file" name="UploadedFile" />
+        </div>
+        <br />
+        <div>
+            <input type="submit" value="Read Barcode Value" />
+        </div>
+    }
+
+</body>
+</html>

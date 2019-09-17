@@ -53,7 +53,7 @@
 \BarCode Reader SDK\ASP.NET MVC C#\Batch Read Barcodes To CSV
 \BarCode Reader SDK\ASP.NET MVC C#\Decode page by page from PDF OR TIFF
 \BarCode Reader SDK\ASP.NET MVC C#\Read Barcode
-\BarCode Reader SDK\ASP.NET MVC C#\Read Barcodes From Image
+\BarCode Reader SDK\ASP.NET MVC C#\Read Barcode From Uploaded File
 \BarCode Reader SDK\ASP.NET MVC C#\Read Barcodes From PDF
 \BarCode Reader SDK\ASP.NET MVC C#\Read From Live Camera
 \BarCode Reader SDK\ASP.NET MVC C#\Split PDF by Barcode
