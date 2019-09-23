@@ -1,0 +1,35 @@
+## How to split PDF by barcode in ASP.NET MVC C# using ByteScout BarCode Reader SDK
+
+### This code in ASP.NET MVC C# shows how to split PDF by barcode with this how to tutorial
+
+An easy to understand guide on how to split PDF by barcode in ASP.NET MVC C# with this source code sample. ByteScout BarCode Reader SDK: the barcode decoder with support for code 39, code 128, QR Code, Datamatrix, GS1, PDF417 and all other popular barcodes. Can read barcodes from images, pdf, tiff documents and live web camera. Supports noisy and damaged documents, can split and merge pdf and tiff documents based on barcodes. Can export barcode decoder results to XML, JSON, CSV and into custom data structures. It can split PDF by barcode in ASP.NET MVC C#.
+
+Want to save time? You will save a lot of time on writing and testing code as you may just take the ASP.NET MVC C# code from ByteScout BarCode Reader SDK for split PDF by barcode below and use it in your application.  Simply copy and paste in your ASP.NET MVC C# project or application you and then run your app! Further improvement of the code will make it more robust.
+
+You can download free trial version of ByteScout BarCode Reader SDK from our website with this and other source code samples for ASP.NET MVC C#.
+
+## Get In Touch
+
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20BarCode%20Reader%20SDK%20Question)
+
+or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20BarCode%20Reader%20SDK%20Question) 
+
+## Free Trial Download
+
+[Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+
+## Web API (On-demand version)
+
+[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+
+## API Documentation and References
+
+[Explore ByteScout BarCode Reader SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+
+[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+
+[Check Free Training Sessions for ByteScout%20BarCode%20Reader%20SDK](https://academy.bytescout.com/)
+
+## Video Review
+
+[https://www.youtube.com/watch?v=EARSPJFIJMU](https://www.youtube.com/watch?v=EARSPJFIJMU)
