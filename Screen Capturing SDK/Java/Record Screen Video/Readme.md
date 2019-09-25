@@ -8,28 +8,121 @@ You will save a lot of time on writing and testing code as you may just take the
 
 ByteScout Screen Capturing SDK free trial version is available on our website. Java and other programming languages are supported.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Screen%20Capturing%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Screen Capturing SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Screen%20Capturing%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=fujkvtWUVCw](https://www.youtube.com/watch?v=fujkvtWUVCw)
+
+
+
+
+<!-- code block begin -->
+
+##### ****Readme.txt:**
+    
+```
+If you are running your Java application on Windows then you may use Screen Capturing SDK from Java using the Jacob library ( you may get it from http://danadler.com/jacob/ )
+
+The final code (using Jacob) code should look like this 
+
+import com.ms.com.*;
+import com.ms.activeX.*;
+
+public class DispatchTest
+{
+ public static void main(String[] args)
+ {
+   ActiveXComponent captureLib = new ActiveXComponent("BytescoutScreenCapturing.Capturer");
+   Object capturer = captureLib.getObject();
+   try {
+     // output file name
+     Dispatch.put(capturer, "OutputFileName", "EntireScreenCaptured.wmv");
+    // output width 
+    Dispatch.put(capturer, "OutputWidth", 640);
+    // output height
+     Dispatch.put(capturer, "OutputHeight", 480);
+    // setting the capturing type to 3 (entire screen)
+     Dispatch.put(capturer, "CapturingType", 3);
+
+    // run the recording
+     Variant f = new Variant(false);
+     Dispatch.call(workbook, "Run", f);
+
+     // record for 5 seconds
+     Thread.sleep(4000);
+
+   } catch (Exception e) {
+     e.printStackTrace();
+   } finally {
+           ;
+   }
+ }
+}
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****Test.java:**
+    
+```
+/*
+If you are running your Java application on Windows then you may use Screen Capturing SDK from Java using the Jacob library ( you may get it from http://danadler.com/jacob/ )
+
+The final code (using Jacob) code should look like this 
+*/
+import com.ms.com.*;
+import com.ms.activeX.*;
+
+public class DispatchTest
+{
+ public static void main(String[] args)
+ {
+   ActiveXComponent captureLib = new ActiveXComponent("BytescoutScreenCapturing.Capturer");
+   Object capturer = captureLib.getObject();
+   try {
+     // output file name
+     Dispatch.put(capturer, "OutputFileName", "EntireScreenCaptured.wmv");
+    // output width 
+    Dispatch.put(capturer, "OutputWidth", 640);
+    // output height
+     Dispatch.put(capturer, "OutputHeight", 480);
+    // setting the capturing type to 3 (entire screen)
+     Dispatch.put(capturer, "CapturingType", 3);
+
+    // run the recording
+     Variant f = new Variant(false);
+     Dispatch.call(workbook, "Run", f);
+
+     // record for 5 seconds
+     Thread.sleep(4000);
+
+   } catch (Exception e) {
+     e.printStackTrace();
+   } finally {
+           ;
+   }
+ }
+}
+```
+
+<!-- code block end -->

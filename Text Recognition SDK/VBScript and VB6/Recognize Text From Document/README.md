@@ -8,28 +8,64 @@ This code snippet below for ByteScout Text Recognition SDK works best when you n
 
 Free trial version of ByteScout Text Recognition SDK is available on our website. Documentation and source code samples are included.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Text%20Recognition%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Text%20Recognition%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Text%20Recognition%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Text Recognition SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Text%20Recognition%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****GeneralExample.vbs:**
+    
+```
+' Create and activate TextRecognizer object
+Set textRecognizer = CreateObject("ByteScout.TextRecognition.TextRecognizer")
+textRecognizer.RegistrationName = "demo"
+textRecognizer.RegistrationKey = "demo"
+
+inputDocument = "..\..\invoice-sample.png"
+outputDocument = "result.txt"
+
+' Load document (image or PDF)
+textRecognizer.LoadDocument(inputDocument)
+
+' Set the location of OCR language data files
+textRecognizer.OCRLanguageDataFolder = "c:\Program Files\ByteScout Text Recognition SDK\ocrdata_best\"
+
+' Set OCR language.
+' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish, etc. - according to files in "ocrdata" folder
+' Find more language files at https://github.com/bytescout/ocrdata
+textRecognizer.OCRLanguage = "eng" 
+
+' Recognize text from all pages and save it to file
+textRecognizer.SaveText(outputDocument)
+
+WScript.Echo "Extracted text saved to " + outputDocument
+
+Set recognizer = Nothing
+
+
+```
+
+<!-- code block end -->

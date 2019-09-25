@@ -8,28 +8,124 @@ VBScript code snippet like this for ByteScout Image To Video SDK works best when
 
 ByteScout Image To Video SDK is available as free trial. You may get it from our website along with all other source code samples for VBScript applications.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Image%20To%20Video%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Image%20To%20Video%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Image%20To%20Video%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Image To Video SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Image%20To%20Video%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=FzPgeGFL8YA](https://www.youtube.com/watch?v=FzPgeGFL8YA)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PanEffects.vbs:**
+    
+```
+' Create an instance of BytescoutImageToVideo.ImageToVideo ActiveX object
+Set converter = CreateObject("BytescoutImageToVideo.ImageToVideo")
+
+' Activate the component
+converter.RegistrationName = "demo"
+converter.RegistrationKey = "demo"
+
+' set default in effect for slides (you can also set effects for each single slide)
+converter.Slides.DefaultSlideInEffect = 0 ' default effect
+converter.Slides.DefaultSlideInEffectDuration = 1000 ' 1000 msec for slide transition effect effect
+
+converter.Slides.DefaultSlideDuration = 2000 ' total duration is 2000 = slide transition (1000 ms) + 1000 ms of slide it self (with pan and zoom effect applied)
+
+
+' uncomment to use background picture
+' converter.SetBackgroundPictureFileName "..\..\background.jpg"
+
+' apply transition effect to the very first slide
+converter.UseInEffectForFirstSlide = false
+
+Randomize ' initialize random values generator 
+
+bChangeSlide = True ' temporary variable to change slides
+
+
+' now try all 12 pan zoom effects for slides from 1 to 12
+' list of PanZoom effects (Slide.PanZoomEffect property)
+'   pzeNone = 0, // default
+'	pzeMoveCamFromLeftTopToRightTop = 1,
+'	pzeMoveCamFromRightTopToLeftTop = 2,
+'
+'	pzeMoveCamFromLeftTopToRightBottom = 3,
+'	pzeMoveCamFromRightBottomToLeftTop = 4,
+'
+'	pzeMoveCamFromLeftCenterToRightCenter = 5,
+'	pzeMoveCamFromRightCenterToLeftCenter = 6,
+'
+'	pzeMoveCamFromLeftBottomToRightBottom = 7,
+'	pzeMoveCamFromRightBottomToLeftBottom = 8,
+'
+'	pzeMoveCamFromCenterTopToCenterBottom = 9,
+'	pzeMoveCamFromCenterBottomToCenterTop = 10,
+'
+'	pzeMoveCamFromLeftBottomToRightTop = 11,
+'	pzeMoveCamFromRightTopToLeftBottom = 12,
+
+
+for i=1 to 11
+
+' Add slide image, set the duration
+
+if not bChangeSlide then
+	Set slide = converter.AddImageFromFileName("..\..\koala.jpg")
+Else 
+	Set slide = converter.AddImageFromFileName("..\..\penguins.jpg")
+End If
+
+bChangeSlide = not bChangeSlide ' switch to use another slide next tim
+
+slide.Duration = 2000 ' 2 seconds (2000 ms)
+slide.InEffect = Rnd * 100 + 1' set random slide transition effect
+Slide.InEffectDuration = 1000 ' 1000 ms for slide transition effect
+slide.PanZoomEffect = i ' set panzoom effect will be shown on whole slide duration (2000 ms)
+
+Next
+
+
+' Set output video size
+converter.OutputWidth = 640
+converter.OutputHeight = 480
+
+' Set output video file name
+converter.OutputVideoFileName = "PanEffects.wmv"
+
+' Run the conversion
+converter.RunAndWait()
+
+MsgBox "Done! See PanEffects.wmv"
+
+Set converter = Nothing
+
+
+' Open the output file in default app
+Set shell = CreateObject("WScript.Shell")
+shell.Run "PanEffects.wmv", 1, false
+Set shell = Nothing
+
+```
+
+<!-- code block end -->

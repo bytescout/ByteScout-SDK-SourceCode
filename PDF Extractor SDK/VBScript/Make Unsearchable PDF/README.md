@@ -8,28 +8,57 @@ This rich sample source code in VBScript for ByteScout PDF Extractor SDK include
 
 ByteScout PDF Extractor SDK free trial version is available on our website. VBScript and other programming languages are supported.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Extractor%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Extractor%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Extractor%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Extractor SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Extractor%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=s28W3_KMraU](https://www.youtube.com/watch?v=s28W3_KMraU)
+
+
+
+
+<!-- code block begin -->
+
+##### ****MakeUnsearchablePDF.vbs:**
+    
+```
+' Create Bytescout.PDFExtractor.UnsearchablePDFMaker object
+Set unsearchablePDFMaker = CreateObject("Bytescout.PDFExtractor.UnsearchablePDFMaker")
+unsearchablePDFMaker.RegistrationName = "demo"
+unsearchablePDFMaker.RegistrationKey = "demo"
+
+' Load sample PDF document
+unsearchablePDFMaker.LoadDocumentFromFile("..\..\sample1.pdf")
+
+' Set PDF rendering resolution to 150 DPI. Higher value - better quality, but larger output file.
+unsearchablePDFMaker.RenderingResolution = 150
+' Set embedded images format
+unsearchablePDFMaker.ImageFormat = 0 ' JPEG = 0; PNG = 1
+' Set quality factor for JPEG format; from 0 to 100; default is 90.
+' Lower quality - smaller the result file.
+unsearchablePDFMaker.JPEGQuality = 60
+
+' Process the document
+unsearchablePDFMaker.MakePDFUnsearchable("result.pdf")
+
+WScript.Echo "Unsearchable document saved as 'result.pdf'."
+```
+
+<!-- code block end -->

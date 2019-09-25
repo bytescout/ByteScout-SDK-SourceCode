@@ -8,28 +8,86 @@ The SDK samples given below describe how to quickly make your application do cre
 
 Trial version of ByteScout PDF Suite is available for free. Source code samples are included to help you with your VBScript app.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****TextFields.vbs:**
+    
+```
+' This example demonstrates how text fields and theirs variations.
+
+' Create Bytescout.PDF.Document object
+Set pdfDocument = CreateObject("Bytescout.PDF.Document")
+pdfDocument.RegistrationName = "demo"
+pdfDocument.RegistrationKey = "demo"
+
+Set comHelpers = pdfDocument.ComHelpers
+
+' Add page
+Set page1 = comHelpers.CreatePage(comHelpers.PAPERFORMAT_A4)
+pdfDocument.Pages.Add(page1)
+
+' Add simple text field with default properties
+Set edit1 = comHelpers.CreateEditBox(20, 20, 120, 25, "editBox1")
+edit1.Text = "One two three"
+page1.Annotations.Add(edit1)
+
+' Add password box
+Set edit2 = comHelpers.CreateEditBox(20, 50, 120, 25, "editBox2")
+edit2.Text = "password"
+edit2.Password = True
+page1.Annotations.Add(edit2)
+
+' Add multiline text field
+Set edit3 = comHelpers.CreateEditBox(20, 80, 120, 50, "editBox3")
+edit3.Multiline = True
+edit3.Text = "The quick brown fox jumps over, the lazy dog."
+page1.Annotations.Add(edit3)
+
+' Demonstrate various decoration properties 
+Set edit4 = comHelpers.CreateEditBox(20, 135, 120, 30, "editBox4")
+edit4.Text = "Decorated text field"
+edit4.TextAlign = comHelpers.TEXTALIGN_RIGHT
+edit4.BackgroundColor = comHelpers.CreateColorRGB(255, 240, 240)
+edit4.BorderWidth = 2
+edit4.BorderStyle = comHelpers.BORDERSTYLE_DASHED
+edit4.BorderColor = comHelpers.CreateColorRGB(128, 0, 0)
+edit4.FontColor = comHelpers.CreateColorRGB(128, 0, 0)
+edit4.Font.Size = 9
+page1.Annotations.Add(edit4)
+
+' Save document to file
+pdfDocument.Save("result.pdf")
+
+' Open document in default PDF viewer app
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.pdf", 1, false
+
+```
+
+<!-- code block end -->

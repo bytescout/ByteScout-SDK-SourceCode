@@ -8,28 +8,104 @@ The SDK samples displayed below below explain how to quickly make your applicati
 
 Trial version of ByteScout is available for free download from our website. This and other source code samples for PowerShell and other programming languages are available.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Cloud%20API%20Server%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Cloud%20API%20Server%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Cloud%20API%20Server%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Cloud API Server Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Cloud%20API%20Server](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****GeneratePdfInvoiceFromHtmlTemplate.ps1:**
+    
+```
+# Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
+# If it's not then please replace this with with your hosting url.
+
+# HTML template
+$Template = [IO.File]::ReadAllText(".\invoice_template.html")
+# Data to fill the template
+$TemplateData = [IO.File]::ReadAllText(".\invoice_data.json")
+# Destination PDF file name
+$DestinationFile = ".\result.pdf"
+
+# Prepare URL for HTML to PDF API call
+$query = "https://localhost/pdf/convert/from/html?name=$(Split-Path $DestinationFile -Leaf)"
+$query = [System.Uri]::EscapeUriString($query)
+
+# Prepare request body (will be auto-converted to JSON by Invoke-RestMethod)
+$body = @{
+    "html" = $Template
+    "templateData" = $TemplateData
+} | ConvertTo-Json
+
+try {
+    # Execute request
+    $response = Invoke-WebRequest -Method Post -Headers @{ "Content-Type" = "application/json" } -Body $body -Uri $query
+
+    if ($response.StatusCode -eq 200) {
+        
+        $jsonResponse = $response.Content | ConvertFrom-Json
+
+        if ($jsonResponse.error -eq $false) {
+            # Get URL of generated PDF file
+            $resultFileUrl = $jsonResponse.url;
+            
+            # Download PDF file
+            Invoke-WebRequest  -OutFile $DestinationFile -Uri $resultFileUrl
+
+            Write-Host "Generated PDF file saved as `"$($DestinationFile)`" file."
+        }
+        else {
+            # Display service reported error
+            Write-Host $jsonResponse.message
+        }
+    }
+    else {
+        # Display request error status
+        Write-Host $response.StatusCode + " " + $response.StatusDescription
+    }
+}
+catch {
+    # Display request error
+    Write-Host $_.Exception
+}
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****run.bat:**
+    
+```
+@echo off
+
+powershell -NoProfile -ExecutionPolicy Bypass -Command "& .\GeneratePdfInvoiceFromHtmlTemplate.ps1"
+echo Script finished with errorlevel=%errorlevel%
+
+pause
+```
+
+<!-- code block end -->

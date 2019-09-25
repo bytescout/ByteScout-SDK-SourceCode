@@ -8,28 +8,76 @@ Want to save time? You will save a lot of time on writing and testing code as yo
 
 All these programming tutorials along with source code samples and ByteScout free trial version are available for download from our website.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PdfToXls-CommandLine.vbs:**
+    
+```
+if Wscript.Arguments.Length < 2 Then
+    WScript.Echo "Usage: PdfToXls.vbs ""input.pdf"" ""output.xlsx"""
+    WScript.Quit
+End If
+
+' Create Bytescout.PDFExtractor.XLSExtractor object
+Set extractor = CreateObject("Bytescout.PDFExtractor.XLSExtractor")
+extractor.RegistrationName = "demo"
+extractor.RegistrationKey = "demo"
+
+' Set Excel format
+extractor.OutputFormat = 1 ' 0 - XLS format; 1 - XLSX format.
+
+' Uncomment this line if you need all pages converted into a single worksheet:
+'extractor.PageToWorksheet = False
+
+' Load sample PDF document
+extractor.LoadDocumentFromFile WScript.Arguments.Item(0)
+
+' Extract data to Excel format
+extractor.SaveToXLSFile WScript.Arguments.Item(1)
+
+WScript.Echo "Extracted data saved to '" & WScript.Arguments.Item(1) & "' file."
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****PdfToXls.bat:**
+    
+```
+REM Run the script from the command line
+cscript.exe PdfToXls-CommandLine.vbs "../../sample3.pdf" "output.xlsx"
+pause
+
+
+
+```
+
+<!-- code block end -->

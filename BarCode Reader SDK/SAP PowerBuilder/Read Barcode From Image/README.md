@@ -8,28 +8,61 @@ This code snippet below for ByteScout BarCode Reader SDK works best when you nee
 
 ByteScout free trial version is available for download from our website. It includes all these programming tutorials along with source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20BarCode%20Reader%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20BarCode%20Reader%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20BarCode%20Reader%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout BarCode Reader SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20BarCode%20Reader%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=EARSPJFIJMU](https://www.youtube.com/watch?v=EARSPJFIJMU)
+
+
+
+
+<!-- code block begin -->
+
+##### ****Sample.txt:**
+    
+```
+//Creating the Instance of the OLE object as barcodeReader
+OLEObject barcodeReader
+barcodeReader = Create OLEObject
+
+//Connecting to the Barcode Reader object
+If barcodeReader.ConnectToNewObject("Bytescout.BarCodeReader.Reader") < 0 Then  
+    Destroy barcodeReader
+    MessageBox("Error", "Can't create Bytescout.BarCodeReader.Reader ActiveX/COM object")
+    Return
+End If
+
+// Enable barcode types to find:
+barcodeReader.BarcodeTypesToFind.Code39 = True
+barcodeReader.BarcodeTypesToFind.Code128 = True
+
+// Read barcode from image file
+barcodeReader.ReadFromFile("barcode.png")
+
+For i = 0 To barcodeReader.FoundCount - 1
+    // Use barcodeReader.GetFoundBarcodePage(i), barcodeReader.GetFoundBarcodeType(i) and barcodeReader.GetFoundBarcodeValue(i)
+    // to get the found barcode information
+Next
+
+Destroy barcodeReader
+```
+
+<!-- code block end -->

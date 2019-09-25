@@ -8,28 +8,98 @@ You will save a lot of time on writing and testing code as you may just take the
 
 ByteScout Screen Capturing SDK is available as free trial. You may get it from our website along with all other source code samples for VBScript and VB6 applications.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Screen%20Capturing%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Screen Capturing SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Screen%20Capturing%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=fujkvtWUVCw](https://www.youtube.com/watch?v=fujkvtWUVCw)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PauseResume.vbs:**
+    
+```
+' create video capturer activex object
+Set capturer = CreateObject("BytescoutScreenCapturing.Capturer")
+
+' set output video file name (WMV), you can also set to AVI 
+capturer.OutputFileName = "PauseAndResume.wmv" 
+
+' set capturing type to the caScreen =3 to capture the entire screen
+capturer.CapturingType = 3
+
+' set width of the output video
+' capturer.OutputWidth = 1280
+' set height of the output video
+' capturer.OutputHeight = 720
+
+' uncomment to set Bytescout Lossless Video format output video compression method
+' do not forget to set file to .avi format if you use Video Codec Name
+' capturer.CurrentVideoCodecName = "Bytescout Lossless"
+
+' uncomment to enable recording of semitransparent or layered windows (Warning: may cause mouse cursor flickering)
+' capturer.CaptureTransparentControls = true
+
+MsgBox "This script will record 2 parts video and will merge it automaticaly. Now recording of the first part 3 seconds will start"
+
+' run video capturing 
+capturer.Run()
+
+' IMPORTANT: if you want to check for some code if need to stop the recording then make sure you are 
+' using Thread.Sleep(1) inside the checking loop, so you have the loop like
+' Do 
+' Thread.Sleep(1) 
+' While StopButtonNotClicked
+
+' wait for 3 seconds (3000 msec)
+WScript.Sleep(3000)
+
+' pause video capturing 
+capturer.Pause()
+
+MsgBox "The recording was paused. Click OK to resume the recording for another 3 seconds"
+
+' run recording for another 3 seconds
+capturer.Run()
+
+' IMPORTANT: if you want to check for some code if need to stop the recording then make sure you are 
+' using Thread.Sleep(1) inside the checking loop, so you have the loop like
+' Do 
+' Thread.Sleep(1) 
+' While StopButtonNotClicked
+
+' wait for 3 seconds (3000 msec)
+WScript.Sleep(3000)
+
+' finally stop capturing, we should get 6 seconds of the video
+capturer.Stop()
+
+MsgBox "The recording is done! Final video will be created now"
+
+
+' destroy Capturer object so the video will be saved into the disk
+Set capturer = Nothing
+
+```
+
+<!-- code block end -->

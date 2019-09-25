@@ -8,28 +8,78 @@ The SDK samples given below describe how to quickly make your application do sea
 
 ByteScout provides the free trial version of ByteScout Barcode Suite along with the documentation and source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****TestBarcodeReadingFromPDF.vbs:**
+    
+```
+' Create BarCodeReader object
+Set bc = CreateObject("Bytescout.BarCodeReader.Reader")
+
+' Limit barcode search to PDF417 barcodes only
+bc.BarcodeTypesToFind.PDF417 = True
+
+' Create File System object
+Set FSO = CreateObject("Scripting.FileSystemObject")
+
+' Get folder object (current folder)
+Set objFolder = FSO.GetFolder(".")
+
+' Get file list
+Set files = objFolder.Files
+
+' Create output file
+Set TS = FSO.CreateTextFile("output.txt")
+
+' Run barcode search for PDF and TIFF files
+For Each file in files
+
+	ext = UCase(FSO.GetExtensionName(file))	
+	If ext = "PDF" Or ext = "TIF" Then
+		bc.ReadFromFile file.Name
+		For i = 0 To bc.FoundCount - 1
+			' Write found barcode information to output file
+			TS.Write("File: """ & file.Name & """ Page " & CStr(bc.GetFoundBarcodePage(i)) & ": Barcode: " & bc.GetFoundBarcodeValue(i)) & vbCRLF
+		Next
+    End If 
+    
+Next
+
+TS.Close
+
+Set bc = Nothing
+Set TS = Nothing
+Set FSO = Nothing
+
+MsgBox "Done! See output.txt with found results"
+
+
+```
+
+<!-- code block end -->

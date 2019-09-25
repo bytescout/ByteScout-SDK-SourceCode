@@ -8,28 +8,61 @@ Fast application programming interfaces of ByteScout PDF SDK for VBScript and VB
 
 ByteScout PDF SDK is available as free trial. You may get it from our website along with all other source code samples for VBScript and VB6 applications.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=gdsQ0EAqwGQ](https://www.youtube.com/watch?v=gdsQ0EAqwGQ)
+
+
+
+
+<!-- code block begin -->
+
+##### ****Fill Form.vbs:**
+    
+```
+' This example demonstrates how to fill PDF form programmatically.
+
+' Create Bytescout.PDF.Document object
+Set pdfDocument = CreateObject("Bytescout.PDF.Document")
+pdfDocument.RegistrationName = "demo"
+pdfDocument.RegistrationKey = "demo"
+
+' Load PDF form
+pdfDocument.Load("form.pdf")
+
+Set page = pdfDocument.Pages.Item(0)
+
+' Get widget by its name and change value
+page.Annotations.Item_2("editBox1").Text = "Test 123"
+page.Annotations.Item_2("editBox2").Text = "Test 456"
+page.Annotations.Item_2("checkBox1").Checked = True
+
+' Save document to file
+pdfDocument.Save("result.pdf")
+
+' Open document in default PDF viewer app
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.pdf", 1, false
+
+```
+
+<!-- code block end -->

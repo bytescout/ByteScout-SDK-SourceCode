@@ -8,28 +8,51 @@ The SDK samples given below describe how to quickly make your application do rem
 
 The trial version of ByteScout Data Extraction Suite can be downloaded for free from our website. It also includes source code samples for VBScript and other programming languages.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Data%20Extraction%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Data%20Extraction%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Data%20Extraction%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Data Extraction Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Data%20Extraction%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****RemoveText.vbs:**
+    
+```
+' Create Bytescout.PDFExtractor.CSVExtractor object
+Set remover = CreateObject("Bytescout.PDFExtractor.Remover")
+remover.RegistrationName = "demo"
+remover.RegistrationKey = "demo"
+
+' Load sample PDF document
+remover.LoadDocumentFromFile "../../sample1.pdf"
+
+' Remove text "LOREM IPSUM" and save edited document as "result1.pdf".
+' NOTE: The removed text might be larger than the search string. Currently the Remover deletes 
+' the whole PDF text object containing the search string.
+remover.RemoveText 0, "LOREM IPSUM", True, "result.pdf"
+        
+WScript.Echo "Modified document saved as 'result.pdf' file."
+```
+
+<!-- code block end -->

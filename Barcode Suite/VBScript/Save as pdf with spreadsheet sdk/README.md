@@ -8,28 +8,60 @@ The sample shows instructions and algorithm of how to save as pdf with spreadshe
 
 ByteScout provides the free trial version of ByteScout Barcode Suite along with the documentation and source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****Save As PDF.vbs:**
+    
+```
+Set document = CreateObject("Bytescout.Spreadsheet.Spreadsheet")
+
+document.RegistrationName = "demo"
+document.RegistrationKey = "demo"
+
+ ' Add new worksheet
+Set worksheet = document.Workbook.Worksheets.Add("HelloWorld")
+
+' add a cell 
+Set cell = worksheet.Cell(1, 1)
+cell.Value = "Testing, Testing, Testing, Testing..."
+
+' Save spreadsheet as PDF file:
+
+' Save PDF with automatic page size...
+document.SaveAsPDF "autosized.pdf"
+' ... or save PDF with fixed page size
+document.SaveAsPDF_2 "fixedsize.pdf", False ' the second parameter disables autosizing 
+
+' close Spreadsheet
+Set document = Nothing
+
+
+```
+
+<!-- code block end -->

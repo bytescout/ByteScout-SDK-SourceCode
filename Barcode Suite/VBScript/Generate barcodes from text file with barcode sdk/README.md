@@ -8,28 +8,83 @@ This prolific sample source code in VBScript for ByteScout Barcode Suite contain
 
 Trial version of ByteScout Barcode Suite is available for free. Source code samples are included to help you with your VBScript app.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****generate_barcodes.vbs:**
+    
+```
+'*** Prepare Barcode object
+Set barcode = CreateObject("Bytescout.BarCode.Barcode")
+barcode.RegistrationName = "demo"
+barcode.RegistrationKey = "demo"
+' Set barcode type to PDF417
+barcode.Symbology = 16 ' 16 means QR Code
+' Set higher resoultion (300 is good for printing)
+barcode.ResolutionX = 300
+barcode.ResolutionY = 300
+' Show barcode caption (remove these lines if you don't need it)
+barcode.DrawCaption = True
+barcode.DrawCaptionFor2DBarcodes = True
+
+' Open text file containing barcode data and read it line by line
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set listFile = fso.OpenTextFile("list.txt")
+i = 0
+
+do while not listFile.AtEndOfStream 
+    ' Set barcode value
+    barcode.Value = listFile.ReadLine()
+	' Fit barcode into 30x30 mm rectangle
+	barcode.FitInto_3 30, 30, 4 ' 4 means millimeter units
+	' Save barcode image to file
+	barcode.SaveImage("barcode" & i & ".png")
+	i = i + 1
+loop
+
+Set barcode = Nothing
+set fso = Nothing
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****list.txt:**
+    
+```
+sample data 1
+sample data 2
+sample data 3
+sample data 4
+sample data 5
+sample data 6
+```
+
+<!-- code block end -->

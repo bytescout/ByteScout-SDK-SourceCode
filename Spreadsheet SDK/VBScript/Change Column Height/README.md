@@ -8,28 +8,68 @@ You will save a lot of time on writing and testing code as you may just take the
 
 Trial version of ByteScout Spreadsheet SDK can be downloaded for free from our website. It also includes source code samples for VBScript and other programming languages.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Spreadsheet%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Spreadsheet%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Spreadsheet%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Spreadsheet SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Spreadsheet%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=nm_7I0PN1TY](https://www.youtube.com/watch?v=nm_7I0PN1TY)
+
+
+
+
+<!-- code block begin -->
+
+##### ****ChangeColumn.vbs:**
+    
+```
+' IMPORTANT NOTE: you need to have .NET Framework 1.10 installed to use Spreadsheet SDK from Visual Basic
+' to download and install .NET Framework 1.10 please use this link: http://www.microsoft.com/downloads/details.aspx?familyid=262D25E3-F589-4842-8157-034D1E7CF3A3
+
+Set document = CreateObject("Bytescout.Spreadsheet.Spreadsheet")
+
+document.RegistrationName = "demo"
+document.RegistrationKey = "demo"
+
+ ' Add new worksheet
+Set worksheet = document.Workbook.Worksheets.Add("HelloWorld")
+
+' add cell with HTML formatted text
+Set cell = worksheet.Cell(2,2)
+cell.ValueAsHTML = "test resizing"
+
+set column = worksheet.columns.Item(1)
+
+column.Width = 200
+
+' delete output file if exists already
+Set fso = CreateObject("Scripting.FileSystemObject")
+If (fso.FileExists("Output.xls")) Then fso.DeleteFile("Output.xls")
+Set fso = nothing
+
+' save document
+document.SaveAs "Output.xls"
+
+' close Spreadsheet
+Set document = Nothing
+
+
+```
+
+<!-- code block end -->

@@ -8,28 +8,64 @@ Fast application programming interfaces of ByteScout PDF Extractor SDK for VBScr
 
 Free trial version of ByteScout PDF Extractor SDK is available for download from our website. Get it to try other source code samples for VBScript.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Extractor%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Extractor%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Extractor%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Extractor SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Extractor%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=s28W3_KMraU](https://www.youtube.com/watch?v=s28W3_KMraU)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PdfToCsvByPages.vbs:**
+    
+```
+' Create Bytescout.PDFExtractor.CSVExtractor object
+Set extractor = CreateObject("Bytescout.PDFExtractor.CSVExtractor")
+
+extractor.RegistrationName = "demo"
+extractor.RegistrationKey = "demo"
+
+' Load sample PDF document
+extractor.LoadDocumentFromFile "../../sample3.pdf"
+
+' You can change CSV separator and quotation symbols if needed
+'extractor.CSVSeparatorSymbol = "," 
+'extractor.CSVQuotaionSymbol = "'" 
+
+' Get page count
+pageCount = extractor.GetPageCount()
+		
+For i = 0 To pageCount - 1
+
+	fileName = "page" & i & ".csv"
+
+	' Save extracted page text to file
+	extractor.SavePageCSVToFile i, fileName
+Next
+
+WScript.Echo "Extracted data saved as 'page0.csv' and so on..."
+
+
+```
+
+<!-- code block end -->

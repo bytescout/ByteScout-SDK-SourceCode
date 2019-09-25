@@ -8,28 +8,64 @@ Want to quickly learn? This fast application programming interfaces of ByteScout
 
 You can download free trial version of ByteScout Barcode Suite from our website with this and other source code samples for JavaScript.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****HelloWorld.js:**
+    
+```
+
+ var bc = WScript.CreateObject('Bytescout.BarCode.Barcode');
+
+ // set symbology to Code39
+ bc.Symbology = 1; // 1 = Code39 symbology type
+
+ // set barcode value to encode
+ bc.Value = "012345";
+
+ // Saving Code39 barcode to 'Code39.png'
+
+ bc.SaveImage ("Code39.png");
+
+ // Encoding '012345' using Aztec symbology
+
+ // set symbology to Aztec (2D)
+ bc.Symbology = 17; // 17 = Aztec
+
+ // set barcode value to encode
+ bc.Value = "012345";
+
+ // Encoding '012345' using Aztec  symbology" & vbCRLF & bc.GetValueRestrictions(17), where 17 = Code39 symbology
+
+ bc.SaveImage ("Aztec.png");
+
+ bc = null
+
+```
+
+<!-- code block end -->

@@ -8,28 +8,59 @@ The SDK samples like this one below explain how to quickly make your application
 
 You can download free trial version of ByteScout QR Code from our website to see and try many others source code samples for VBScript and VB6.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20QR%20Code%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20QR%20Code%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20QR%20Code%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout QR Code Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20QR%20Code](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=A5hB9ul3tX0](https://www.youtube.com/watch?v=A5hB9ul3tX0)
+
+
+
+
+<!-- code block begin -->
+
+##### ****GeneralExample.vbs:**
+    
+```
+' Create and activate QRCode instance
+Set barcode = CreateObject("Bytescout.BarCode.QRCode")
+barcode.RegistrationName = "demo"
+barcode.RegistrationKey = "demo"
+
+' Set barcode value
+barcode.Value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"
+
+' Uncomment if you don't need margins
+'barcode.SetMargins 0, 0, 0, 0
+'barcode.DrawQuietZones = False
+
+' Save barcode image to file
+barcode.SaveImage("result.png")
+
+' Open the image in default image viewer (for demo purpose)
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.png", 1, false
+Set shell = Nothing
+
+Set barcode = Nothing
+
+```
+
+<!-- code block end -->

@@ -8,28 +8,77 @@ The following code snippet for ByteScout Premium Suite works best when you need 
 
 ByteScout Premium Suite free trial version is available on our website. VBScript and other programming languages are supported.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Premium%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Premium%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Premium%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Premium Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Premium%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****Images.vbs:**
+    
+```
+' This example demonstrates how to add images of various formats. 
+
+' Create Bytescout.PDF.Document object
+Set pdfDocument = CreateObject("Bytescout.PDF.Document")
+pdfDocument.RegistrationName = "demo"
+pdfDocument.RegistrationKey = "demo"
+
+Set comHelpers = pdfDocument.ComHelpers
+
+' Add page
+Set page1 = comHelpers.CreatePage(comHelpers.PAPERFORMAT_A4)
+pdfDocument.Pages.Add(page1)
+
+Set canvas = page1.Canvas
+
+' Add JPEG image and draw unscaled
+Set image1 = comHelpers.CreateImage("Image1.jpg")
+canvas.DrawImage (image1), 20, 20
+
+' Add PNG image and draw reduced twice
+Set image2 = comHelpers.CreateImage("Image2.png")
+canvas.DrawImage_2 (image2), 20, 520, image2.Width / 2, image2.Height / 2
+
+' Add TIFF image and draw scaled disproportionately
+Set image3 = comHelpers.CreateImage("Image3.tif")
+canvas.DrawImage_2 (image3), 270, 520, image3.Width / 2, image3.Height / 4
+
+' Add GIF image and draw rotated 90 degrees and scaled
+Set image4 = comHelpers.CreateImage("Image4.gif")
+canvas.TranslateTransform 390, 650
+canvas.RotateTransform 90
+canvas.DrawImage_2 (image4), 0, 0, image4.Width / 4, image4.Height / 4
+
+' Save document to file
+pdfDocument.Save("result.pdf")
+
+' Open document in default PDF viewer app
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.pdf", 1, false
+
+```
+
+<!-- code block end -->

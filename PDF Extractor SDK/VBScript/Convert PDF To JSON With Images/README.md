@@ -8,28 +8,63 @@ This rich sample source code in VBScript for ByteScout PDF Extractor SDK include
 
 Free trial version of ByteScout PDF Extractor SDK is available on our website. Documentation and source code samples are included.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Extractor%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Extractor%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Extractor%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Extractor SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Extractor%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=s28W3_KMraU](https://www.youtube.com/watch?v=s28W3_KMraU)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PdfToJsonWithImages.vbs:**
+    
+```
+' Create Bytescout.PDFExtractor.JSONExtractor object
+Set extractor = CreateObject("Bytescout.PDFExtractor.JSONExtractor")
+
+extractor.RegistrationName = "demo"
+extractor.RegistrationKey = "demo"
+
+' Load sample PDF document
+extractor.LoadDocumentFromFile "../../sample1.pdf"
+
+' Uncomment this line to get rid of empty nodes in JSON
+'extractor.PreserveFormattingOnTextExtraction = False
+
+' Set output image format
+extractor.ImageFormat = 0 ' 0 = PNG; 1 = JPEG; 2 = GIF; 3 = BMP
+
+' Save images to external files
+extractor.SaveImages = 1 ' 1 = ImageHandling.OuterFile
+extractor.ImageFolder = "images" ' Folder for external images
+extractor.SaveJSONToFile "result_with_external_images.json"
+
+' Embed images into JSON as Base64 encoded string
+extractor.SaveImages = 2 ' 2 = ImageHandling.Embed
+extractor.SaveJSONToFile "result_with_embedded_images.json"
+
+WScript.Echo "Done."
+
+```
+
+<!-- code block end -->

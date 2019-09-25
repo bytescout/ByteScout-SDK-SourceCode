@@ -8,28 +8,56 @@ Quickly learn how to convert pdf to emf with pdf renderer sdk in VBScript with t
 
 ByteScout PDF Suite free trial version is available on our website. VBScript and other programming languages are supported.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PDFToEmf.vbs:**
+    
+```
+' Create Bytescout.PDFRenderer.VectorRenderer  object
+Set renderer = CreateObject("Bytescout.PDFRenderer.VectorRenderer")
+
+renderer.RegistrationName = "demo"
+renderer.RegistrationKey = "demo"
+
+' Load sample PDF document
+renderer.LoadDocumentFromFile "../../multipage.pdf"
+
+' iterate through pages
+For i = 0 To renderer.GetPageCount() - 1
+
+	' Render document page to EMF image file
+    renderer.Save "image" & i & ".emf", i, 300
+
+Next
+
+
+
+```
+
+<!-- code block end -->

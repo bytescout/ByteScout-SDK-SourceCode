@@ -8,28 +8,57 @@ Easy to understand coding instructions are written to assist you to try-out the 
 
 ByteScout PDF Suite is available as a free trial. You may get it from our website along with all other source code samples for VBScript applications.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****Flatten Form.vbs:**
+    
+```
+' This example demonstrates how to submit or reset form.
+
+' Create Bytescout.PDF.Document object
+Set pdfDocument = CreateObject("Bytescout.PDF.Document")
+pdfDocument.RegistrationName = "demo"
+pdfDocument.RegistrationKey = "demo"
+
+' Load filled PDF form
+pdfDocument.Load("filled_form.pdf")
+
+' Flatten the form
+pdfDocument.FlattenDocument()
+
+' Save document to file
+pdfDocument.Save("result.pdf")
+
+' Open document in default PDF viewer app
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.pdf", 1, false
+
+```
+
+<!-- code block end -->

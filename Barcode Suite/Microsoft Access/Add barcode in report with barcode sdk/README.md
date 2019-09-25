@@ -8,28 +8,71 @@ Want to quickly learn? This fast application programming interfaces of ByteScout
 
 Our website gives trial version of ByteScout Barcode Suite for free. It also includes documentation and source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****Barcode in Report.vb:**
+    
+```
+' 1. Add reference to "Bytescout Barcode SDK" ActiveX object to your database project (in menu Tools->References).
+' 2. Put Picture object on the Details section of the report.
+' 3. Handle the Format event of the Details section and set barcode image to the Picture control.
+
+Option Compare Database
+
+Dim BarCodeGenerator
+
+Private Sub Report_Open(Cancel As Integer)
+
+    ' Setup the barcode generator
+    Set BarCodeGenerator = CreateObject("Bytescout.BarCode.Barcode")
+    BarCodeGenerator.RegistrationName = "demo"
+    BarCodeGenerator.RegistrationKey = "demo"
+    BarCodeGenerator.Symbology = 16 ' QRCode
+    
+End Sub
+
+Private Sub Detail_Format(Cancel As Integer, FormatCount As Integer)
+
+    ' Set barcode value
+    BarCodeGenerator.Value = Me.Field1
+    ' Set generated barcode image to Picture object
+    Me.BarcodeImage.PictureData = BarCodeGenerator.GetImageBytesPNG()
+           
+End Sub
+
+Private Sub Report_Close()
+
+    ' Cleanup
+    Set BarCodeGenerator = Nothing
+
+End Sub
+
+```
+
+<!-- code block end -->

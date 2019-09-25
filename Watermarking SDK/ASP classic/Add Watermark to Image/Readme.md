@@ -8,28 +8,105 @@ This code snippet below for ByteScout Watermarking SDK works best when you need 
 
 You can download free trial version of ByteScout Watermarking SDK from our website to see and try many others source code samples for ASP classic.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Watermarking%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Watermarking%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Watermarking%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Watermarking SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Watermarking%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****WatermarkImage.asp:**
+    
+```
+<%
+
+' In case of "Server.CreateObject Failed", "Server object error "ASP 0177 : 8000ffff" or similar errors:
+' Please try the following:
+' - Open IIS 
+' - Find application pools (DefaultAppPool is used by default)
+' - Open its properties and check .NET CLR version selected:
+' - if you have  .NET 1.1 then change to .NET CLR 2.00
+' - if you have .NET CLR 2.00 then try to change to .NET CLR 4.0
+
+
+Set watermarker = Server.CreateObject("Bytescout.Watermarking.Watermarker")
+
+' Initialize library
+watermarker.InitLibrary "demo", "demo"
+
+' Set input file name
+Dim inputFilePath
+inputFilePath = Server.MapPath("sample_image.jpg")
+
+' Add image to apply watermarks to
+watermarker.AddInputFile inputFilePath
+
+' Create new watermark
+Set preset = Server.CreateObject("Bytescout.Watermarking.Presets.SimpleText")
+
+' Set watermark text
+preset.Text = "Bytescout Watermarking SDK"
+
+' Set watermark font
+Set font = Server.CreateObject("Bytescout.Watermarking.WatermarkFont")
+font.Name = "Arial"
+font.Style = 1 ' Bold
+font.SizeType = 1 ' Points
+font.Size = 18
+preset.Font = font
+
+' Set watermark text color
+preset.SetTextColor 255, 255, 255, 255 ' White color in ARGB values
+
+' Add watermark to watermarker
+waterMarker.AddWatermark(preset)
+
+' Apply watermarks
+waterMarker.Execute()
+
+' generate and get barcode image as PNG image array of bytes
+ OutImage = bc.GetImageBytes
+
+ response.ContentType = "image/png"
+
+ ' add content type header 
+ response.AddHeader "Content-Type", "image/png"
+
+ ' set the content disposition
+ response.AddHeader "Content-Disposition", "inline;filename=OutImage.png" 
+
+ ' write the binary image to the Response output stream 
+ response.BinaryWrite OutImage
+ response.End
+
+' Cleanup
+Set font = Nothing
+Set preset = Nothing
+Set watermarker = Nothing
+
+%>
+
+```
+
+<!-- code block end -->

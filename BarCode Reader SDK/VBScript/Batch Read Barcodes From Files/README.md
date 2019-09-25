@@ -8,28 +8,101 @@ You will save a lot of time on writing and testing code as you may just take the
 
 You can download free trial version of ByteScout BarCode Reader SDK from our website to see and try many others source code samples for VBScript.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20BarCode%20Reader%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20BarCode%20Reader%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20BarCode%20Reader%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout BarCode Reader SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20BarCode%20Reader%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=EARSPJFIJMU](https://www.youtube.com/watch?v=EARSPJFIJMU)
+
+
+
+
+<!-- code block begin -->
+
+##### ****BatchReadFromFiles.vbs:**
+    
+```
+if WScript.Arguments.Count < 2 Then
+ MsgBox "Run with the folder path as the argument" & vbCRLF & vbCRLF & "BatchReadFromFiles.vbs <InputFolder> <OutputFolder>"
+ WScript.Quit 0
+End If
+
+Set objFSO = CreateObject("Scripting.FileSystemObject")
+
+' define allowed input images extensions
+inputImagesExtensions = "JPG,JPEG,PNG,BMP,PDF,TIF"
+
+Set reader = CreateObject("Bytescout.BarCodeReader.Reader")
+
+' Set barcode types for searching
+reader.BarcodeTypesToFind.Code39 = True
+reader.BarcodeTypesToFind.QRCode = True
+reader.BarcodeTypesToFind.PDF417 = True
+reader.BarcodeTypesToFind.EAN13 = True
+
+Set objInputFolder = objFSO.GetFolder(WScript.Arguments(0))
+Set objResultsFile = objFSO.CreateTextFile(WScript.Arguments(1), True)
+
+Call ProcessFolder(objInputFolder)
+
+WScript.Quit 0
+
+Sub ProcessFolder(folder)
+
+    Set objFolder = objFSO.GetFolder(folder.Path)
+    Set colFiles = objFolder.Files
+    
+    For Each objFile in colFiles
+
+        ' Check the file type
+        If inStr(inputImagesExtensions, UCase(objFSO.GetExtensionName(objFile.Name))) > 0 Then
+
+        ' Read barcode from file
+        WScript.Echo "Reading from: " & objFile.Path
+        reader.ReadFromFile objFile.Path 
+
+        Dim csv 
+        csv = reader.ExportFoundBarcodesToCSV_4
+        objResultsFile.Write csv
+        
+        End If
+    Next
+
+    For Each subFolder in folder.SubFolders
+        ProcessFolder subFolder
+    Next
+End Sub
+
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****run.bat:**
+    
+```
+REM running from the command line
+cscript.exe BatchReadFromFiles.vbs "input" "results.csv"
+pause
+```
+
+<!-- code block end -->

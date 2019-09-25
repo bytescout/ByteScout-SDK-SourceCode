@@ -8,28 +8,100 @@ The SDK samples like this one below explain how to quickly make your application
 
 ByteScout Watermarking SDK free trial version is available on our website. VBScript and other programming languages are supported.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Watermarking%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Watermarking%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Watermarking%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Watermarking SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Watermarking%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****AnnotationWithMacros.vbs:**
+    
+```
+' Create Watermarker instance
+Set watermarker = CreateObject("Bytescout.Watermarking.Watermarker")
+
+' Initialize library
+watermarker.InitLibrary "demo", "demo"
+
+' Set input file name
+Dim inputFilePath
+inputFilePath = "..\sample_image.jpg"
+' Set output file title
+Dim outputFilePath
+outputFilePath = "result.png"
+
+' Add image to apply watermarks to
+watermarker.AddInputFile_2 inputFilePath, outputFilePath
+
+' Create new watermark
+Set preset = CreateObject("Bytescout.Watermarking.Presets.TextAnnotation")
+
+' Set watermark text with macros.
+' Complete list of available macros please see in the SDK documentation.
+preset.Text = "Date Time: {{LOCAL_DATE_LONG}} {{LOCAL_TIME}}" & vbCrLf & _
+            "Filename: {{FILENAME}}" & vbCrLf & _
+            "Manufacturer: {{EXIF_EQUIPMENT_MANUFACTURER}}" & vbCrLf & _
+            "Model: {{EXIF_EQUIPMENT_MODEL}}" & vbCrLf & _
+            "Software: {{EXIF_SOFTWARE_USED}}" & vbCrLf & _
+            "Date/Time: {{EXIF_ORIGINAL_DATE}}" & vbCrLf & _
+            "Exposure Time: {{EXIF_EXPOSURE_TIME}} sec" & vbCrLf & _
+            "Exposure Program: {{EXIF_EXPOSURE_PROGRAM}}" & vbCrLf & _
+            "Exposure Bias: {{EXIF_EXPOSURE_BIAS}} EV" & vbCrLf & _
+            "F Number: F {{EXIF_F_NUMBER}}" & vbCrLf & _
+            "ISO Speed Rating: ISO {{EXIF_ISO_SPEED}}" & vbCrLf & _
+            "Flash: {{EXIF_FLASH}}" & vbCrLf & _
+            "Focal Length: {{EXIF_FOCAL_LENGTH}} mm" & vbCrLf & _
+            "Metering Mode: {{EXIF_METERING_MODE}}"
+
+' Set watermark font
+Set font = CreateObject("Bytescout.Watermarking.WatermarkFont")
+font.Name = "Arial"
+font.Style = 1 ' Bold
+font.SizeType = 1 ' Points
+font.Size = 12
+preset.Font = font
+
+' Set text color
+preset.SetTextColor 255, 255, 255, 255 ' White color in ARGB values
+
+' Add watermark to watermarker
+waterMarker.AddWatermark(preset)
+
+' Apply watermarks
+waterMarker.Execute()
+
+' open generated image file in default image viewer installed in Windows
+Set shell = CreateObject("WScript.Shell")
+shell.Run outputFilePath, 1, false
+Set shell = Nothing
+
+' Cleanup
+Set font = Nothing
+Set preset = Nothing
+Set watermarker = Nothing
+
+```
+
+<!-- code block end -->

@@ -8,28 +8,86 @@ This rich sample source code in VBScript and VB6 for ByteScout Screen Capturing 
 
 ByteScout free trial version is available for download from our website. It includes all these programming tutorials along with source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Screen%20Capturing%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Screen Capturing SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Screen%20Capturing%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=fujkvtWUVCw](https://www.youtube.com/watch?v=fujkvtWUVCw)
+
+
+
+
+<!-- code block begin -->
+
+##### ****CaptureGivenWindow-control.vbs:**
+    
+```
+' create video capturer activex object
+Set capturer = CreateObject("BytescoutScreenCapturing.Capturer")
+
+' set output video file name (WMV), you can also set to AVI 
+capturer.OutputFileName = "GivenWindowCaptured-SilverlightControl.avi"
+
+' set capturing type to the caWindow =1 to capture the given window
+capturer.CapturingType = 1
+
+MsgBox "This script will record video from Silverlight control in Internet Explorer for 15 seconds. Please run Internet Explorer and open any web-site with silverlight content and click OK"
+
+capturer.SetLogFile "log-control.txt"
+
+' set window class to capture to MicrosoftSilverlight so this will record from silverlight control inside browser
+capturer.WindowClassToCapture = "MicrosoftSilverlight"
+
+' uncomment to enable recording of semitransparent or layered windows (Warning: may cause mouse cursor flickering)
+' capturer.CaptureTransparentControls = true
+
+' set width of the output video
+capturer.OutputWidth = 640
+' set height of the output video
+capturer.OutputHeight = 480
+
+' uncomment to set another output video compression method, Bytescout Lossless, DivX or MJPEG (if installed)
+' you can use lossless video format, Bytescout Lossless Video Codec
+' capturer.CurrentVideoCodecName = "Bytescout Lossless"
+
+' run video capturing 
+capturer.Run()
+
+
+' IMPORTANT: if you want to check for some code if need to stop the recording then make sure you are 
+' using Thread.Sleep(1) inside the checking loop, so you have the loop like
+' Do 
+' Thread.Sleep(1) 
+' While StopButtonNotClicked
+
+' wait for 15 seconds (15000 msec)
+WScript.Sleep(15000)
+
+' stop capturing
+capturer.Stop()
+
+' destroy Capturer object so the video will be saved into the disk
+Set capturer = Nothing
+
+MsgBox "Done"
+
+```
+
+<!-- code block end -->

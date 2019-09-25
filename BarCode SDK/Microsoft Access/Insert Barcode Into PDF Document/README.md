@@ -8,28 +8,56 @@ You will save a lot of time on writing and testing code as you may just take the
 
 Free trial version of ByteScout Barcode SDK is available for download from our website. Get it to try other source code samples for Microsoft Access.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=REnj3A-oSPI](https://www.youtube.com/watch?v=REnj3A-oSPI)
+
+
+
+
+<!-- code block begin -->
+
+##### ****Reference Error - README.txt:**
+    
+```
+' IMPORTANT: This demo uses VBA so if you have it disabled please temporary enable
+' by going to Tools - Macro - Security.. and changing the security mode to ""Medium""
+' to Ask if you want enable macro or not. Then close and reopen this Excel document
+
+' You should have evaluation version of the ByteScout SDK installed to get it working - get it from https://bytescout.com
+
+' If you are getting error message like
+' "File or assembly named Bytescout SDK, or one of its dependencies, was not found"
+' then please try the following:
+'
+' - Close Excel
+' - (for Office 2003 only) download and install this hotfix from Microsoft:
+' http://www.microsoft.com/downloads/details.aspx?FamilyId=1B0BFB35-C252-43CC-8A2A-6A64D6AC4670&displaylang=en
+'
+' and then try again!
+'
+' If you have any questions please contact us at http://bytescout.com/support/ or at support@bytescout.com
+                            
+
+```
+
+<!-- code block end -->

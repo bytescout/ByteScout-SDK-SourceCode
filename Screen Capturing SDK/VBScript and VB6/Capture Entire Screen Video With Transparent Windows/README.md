@@ -8,28 +8,83 @@ The SDK samples like this one below explain how to quickly make your application
 
 Our website provides trial version of ByteScout Screen Capturing SDK for free. It also includes documentation and source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Screen%20Capturing%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Screen Capturing SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Screen%20Capturing%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=fujkvtWUVCw](https://www.youtube.com/watch?v=fujkvtWUVCw)
+
+
+
+
+<!-- code block begin -->
+
+##### ****CaptureScreenWithTransparentControls.vbs:**
+    
+```
+' create video capturer activex object
+Set capturer = CreateObject("BytescoutScreenCapturing.Capturer")
+
+' set output video file name to .WMV or .AVI file
+capturer.OutputFileName = "EntireScreenCaptured.wmv" 
+
+' set capturing type to the caScreen =3 to capture the entire screen
+capturer.CapturingType = 3
+
+' output video width
+capturer.OutputWidth = 640
+
+' output video height
+capturer.OutputHeight = 480
+
+capturer.SetLogFile "log.txt"
+
+' enabling recording of semitransparent or layered windows (Warning: may cause mouse cursor flickering)
+capturer.CaptureTransparentControls = true
+
+' uncomment to set Bytescout Lossless Video format output video compression method
+' do not forget to set file to .avi format if you use Video Codec Name
+' capturer.CurrentVideoCodecName = "Bytescout Lossless";             
+
+
+
+MsgBox "This script will record 640x480 video from entire screen for 15 seconds. Output video will go to EntireScreenCaptured.avi"
+
+' run video capturing 
+capturer.Run()
+
+' IMPORTANT: if you want to check for some code if need to stop the recording then make sure you are 
+' using Thread.Sleep(1) inside the checking loop, so you have the loop like
+' Do 
+' Thread.Sleep(1) 
+' While StopButtonNotClicked
+
+' wait for 15 seconds (15000 msec)
+WScript.Sleep(15000)
+
+' stop capturing
+capturer.Stop()
+
+' destroy Capturer object so the video will be saved into the disk
+Set capturer = Nothing
+
+```
+
+<!-- code block end -->

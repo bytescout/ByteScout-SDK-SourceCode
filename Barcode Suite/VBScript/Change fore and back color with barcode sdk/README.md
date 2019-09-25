@@ -8,28 +8,58 @@ The following code snippet for ByteScout Barcode Suite works best when you need 
 
 Trial version of ByteScout Barcode Suite is available for free. Source code samples are included to help you with your VBScript app.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****BarCodeWithCustomColor.vbs:**
+    
+```
+
+Set bc = CreateObject("Bytescout.BarCode.Barcode")
+
+' set symbology to Code39
+bc.Symbology = 1 ' 1 = Code39 symbology type
+
+' set barcode value to encode
+bc.Value = "012345" 
+
+bc.SetForeColorRGB 255,255,0
+bc.SetBackColorRGB 0,0,0
+
+bc.SaveImage "CustomColor.png"
+
+Set bc = Nothing
+
+' Open the output file in default app
+Set shell = CreateObject("WScript.Shell")
+shell.Run "CustomColor.png", 1, false
+Set shell = Nothing
+
+```
+
+<!-- code block end -->

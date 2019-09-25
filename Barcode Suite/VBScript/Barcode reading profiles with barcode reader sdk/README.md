@@ -8,28 +8,73 @@ This rich and prolific sample source code in VBScript for ByteScout Barcode Suit
 
  If you want to try other samples for VBScript then free trial version of ByteScout Barcode Suite is available on our website.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****Profiles.vbs:**
+    
+```
+' This example demonstrates the use of profiles. Profiles are set of properties 
+' allowing to apply them to Reader in any combination quickly. You can use 
+' predefined profiles or create you own in JSON format like in this example.
+
+' Create Bytescout.PDFExtractor.TextExtractor object
+Set reader1 = CreateObject("Bytescout.BarCodeReader.Reader")
+reader1.RegistrationName = "demo"
+reader1.RegistrationKey = "demo"
+
+' Apply predefined profiles:
+' enable Code39;
+' enable EAN-13;
+' render PDF at 150 DPI resoultion.
+reader1.Profiles = "code39, ean13, pdf150dpi"
+
+' Decode and show barcodes from sample1.pdf
+reader1.ReadFromFile "sample1.pdf"
+For i = 0 To reader1.FoundCount - 1
+    WScript.Echo "Found type " & reader1.GetFoundBarcodeType(i) & " barcode with value " & reader1.GetFoundBarcodeValue(i) & """"
+Next
+
+
+Set reader2 = CreateObject("Bytescout.BarCodeReader.Reader")
+reader2.RegistrationName = "demo"
+reader2.RegistrationKey = "demo"
+
+' Load and apply custom profiles
+reader2.LoadProfiles "profiles.json"
+reader2.Profiles = "negative-distorted-datamatrix"
+
+' Decode and show barcodes from sample2.png
+reader2.ReadFromFile "sample2.png"
+For i = 0 To reader2.FoundCount - 1
+    WScript.Echo "Found type " & reader2.GetFoundBarcodeType(i) & " barcode with value " & reader2.GetFoundBarcodeValue(i) & """"
+Next
+
+```
+
+<!-- code block end -->

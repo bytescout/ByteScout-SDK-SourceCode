@@ -8,28 +8,89 @@ JavaScript code snippet like this for ByteScout Cloud API Server works best when
 
 Free! Free! Free! ByteScout free trial version is available for FREE download from our website. Programming tutorials along with source code samples are assembled.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Cloud%20API%20Server%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Cloud%20API%20Server%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Cloud%20API%20Server%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Cloud API Server Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Cloud%20API%20Server](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****ConvertCsvToPdfFromFile.js:**
+    
+```
+/*jshint esversion: 6 */
+
+// Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
+// If it's not then please replace this with with your hosting url.
+
+var https = require("https");
+var path = require("path");
+var fs = require("fs");
+
+// `request` module is required for file upload.
+// Use "npm install request" command to install.
+var request = require("request");
+
+// Source CSV file
+const SourceFile = "./sample.csv";
+// Destination PDF file name
+const DestinationFile = "./result.pdf";
+
+// Prepare URL for `CSV To PDF` API call
+var query = `https://localhost/pdf/convert/from/csv`;
+let reqOptions = {
+    uri: query,
+    formData: {
+        name: path.basename(DestinationFile),
+        file: fs.createReadStream(SourceFile)
+    }
+};
+
+// Send request
+request.post(reqOptions, function (error, response, body) {
+    if (error) {
+        return console.error("Error: ", error);
+    }
+
+    // Parse JSON response
+    let data = JSON.parse(body);
+    if (data.error == false) {
+        // Download PDF file
+        var file = fs.createWriteStream(DestinationFile);
+        https.get(data.url, (response2) => {
+            response2.pipe(file)
+            .on("close", () => {
+                console.log(`Generated PDF file saved as "${DestinationFile}" file.`);
+            });
+        });
+    }
+    else {
+        // Service reported error
+        console.log("Error: " + data.message);
+    }
+});
+
+```
+
+<!-- code block end -->

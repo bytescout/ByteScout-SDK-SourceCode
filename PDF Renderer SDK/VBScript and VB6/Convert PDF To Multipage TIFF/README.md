@@ -8,28 +8,59 @@ Fast application programming interfaces of ByteScout PDF Renderer SDK for VBScri
 
 Our website provides trial version of ByteScout PDF Renderer SDK for free. It also includes documentation and source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Renderer%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Renderer%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Renderer%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Renderer SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Renderer%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=eenhl7106lA](https://www.youtube.com/watch?v=eenhl7106lA)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PDFToTIFF.vbs:**
+    
+```
+' Create Bytescout.PDFRenderer.RasterRenderer  object
+Set renderer = CreateObject("Bytescout.PDFRenderer.RasterRenderer")
+
+renderer.RegistrationName = "demo"
+renderer.RegistrationKey = "demo"
+
+' Load sample PDF document
+renderer.LoadDocumentFromFile "../../multipage.pdf"
+
+' Render PDF document at 96 DPI - default PC display resolution
+' To get higher quality output, set 200, 300 or more
+Dim renderingResolution
+renderingResolution = 96
+
+Set renderingOptions = CreateObject("Bytescout.PDFRenderer.RenderingOptions")
+' Set TIFF compression to CCITT4 
+renderingOptions.TIFFCompression = 3  ' 1 - LZW; 2 - CCIT3; 3 - CCIT4; 4 - JPEG; 5 - RLE
+
+' save to multi-page TIFF
+renderer.SaveMultipageTiff_2 "multipage.tiff", 0, -1, renderingResolution, (renderingOptions)
+
+
+```
+
+<!-- code block end -->

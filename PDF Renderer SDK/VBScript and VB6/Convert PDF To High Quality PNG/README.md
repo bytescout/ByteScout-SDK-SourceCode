@@ -8,28 +8,62 @@ You will save a lot of time on writing and testing code as you may just take the
 
 ByteScout PDF Renderer SDK free trial version is available on our website. VBScript and VB6 and other programming languages are supported.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Renderer%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Renderer%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Renderer%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Renderer SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Renderer%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=eenhl7106lA](https://www.youtube.com/watch?v=eenhl7106lA)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PDFToPNG.vbs:**
+    
+```
+' Create Bytescout.PDFRenderer.RasterRenderer  object
+Set renderer = CreateObject("Bytescout.PDFRenderer.RasterRenderer")
+
+renderer.RegistrationName = "demo"
+renderer.RegistrationKey = "demo"
+
+' Load sample PDF document
+renderer.LoadDocumentFromFile "../../multipage.pdf"
+
+' Render PDF document at 600 DPI for higher quality
+Dim renderingResolution
+renderingResolution = 600
+
+' Image format: 0 - BMP; 1 - JPEG; 2 - PNG; 3 - TIFF; 4 - GIF
+Dim outputImageFormat
+outputImageFormat = 2
+
+' Iterate through pages
+For pageIndex = 0 To renderer.GetPageCount() - 1
+	' Render document page to PNG image file
+	renderer.Save "page" & CStr(pageIndex) & ".png", outputImageFormat, pageIndex, renderingResolution
+Next
+
+
+
+```
+
+<!-- code block end -->

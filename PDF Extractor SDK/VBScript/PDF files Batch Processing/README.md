@@ -8,28 +8,59 @@ VBScript code snippet like this for ByteScout PDF Extractor SDK works best when 
 
 Trial version can be downloaded from our website. Source code samples for VBScript and documentation are included.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Extractor%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Extractor%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Extractor%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Extractor SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Extractor%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=s28W3_KMraU](https://www.youtube.com/watch?v=s28W3_KMraU)
+
+
+
+
+<!-- code block begin -->
+
+##### ****BatchProcessing.vbs:**
+    
+```
+' Create Bytescout.PDFExtractor.TextExtractor object
+Set extractor = CreateObject("Bytescout.PDFExtractor.TextExtractor")
+extractor.RegistrationName = "demo"
+extractor.RegistrationKey = "demo"
+
+' Get all files in folder
+Set objFSO = CreateObject("Scripting.FileSystemObject")
+Set objFolder = objFSO.GetFolder("..\..")
+Set colFiles = objFolder.Files
+
+' Convert every PDF file to text 
+For Each objFile In colFiles
+    if objFSO.GetExtensionName(objFile) = "pdf" Then
+        ' Load PDF file
+        extractor.LoadDocumentFromFile objFile.Path
+        ' Save extracted text to .txt file
+        extractor.SaveTextToFile Replace(objFile.Name, "." & objFSO.GetExtensionName(objFile),".txt")
+        ' Reset the extractor before load another file
+        extractor.Reset
+    End If
+Next
+
+```
+
+<!-- code block end -->

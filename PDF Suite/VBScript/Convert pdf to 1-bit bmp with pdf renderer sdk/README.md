@@ -8,28 +8,66 @@ The SDK samples given below describe how to quickly make your application do con
 
 Our website gives trial version of ByteScout PDF Suite for free. It also includes documentation and source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PDFToBmp.vbs:**
+    
+```
+' Create Bytescout.PDFRenderer.RasterRenderer  object
+Set renderer = CreateObject("Bytescout.PDFRenderer.RasterRenderer")
+
+renderer.RegistrationName = "demo"
+renderer.RegistrationKey = "demo"
+
+' Load sample PDF document
+renderer.LoadDocumentFromFile "../../multipage.pdf"
+
+' Image format: 0 - BMP; 1 - JPEG; 2 - PNG; 3 - TIFF; 4 - GIF
+Dim outputImageFormat
+outputImageFormat = 2
+
+' Render PDF document at 96 DPI - default PC display resolution
+' To get higher quality output, set 200, 300 or more
+Dim renderingResolution
+renderingResolution = 96
+
+Set renderingOptions = CreateObject("Bytescout.PDFRenderer.RenderingOptions")
+' Set pixel format to 1-bit
+renderingOptions.ImageBitsPerPixel = 0 ' 0 - 1-bit; 1 - 8-bit; 2 - 24-bit; 3 - 32-bit
+
+' iterate through pages
+For i = 0 To renderer.GetPageCount() - 1
+	' Save 1-bit image to file
+	renderer.Save_2 "page" & CStr(i) & ".bmp", outputImageFormat, i, renderingResolution, (renderingOptions)
+Next
+
+
+```
+
+<!-- code block end -->

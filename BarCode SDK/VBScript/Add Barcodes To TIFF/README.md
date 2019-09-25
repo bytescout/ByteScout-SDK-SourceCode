@@ -8,28 +8,59 @@ This code snippet below for ByteScout Barcode SDK works best when you need to qu
 
 Free trial version of ByteScout Barcode SDK is available on our website. Documentation and source code samples are included.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=REnj3A-oSPI](https://www.youtube.com/watch?v=REnj3A-oSPI)
+
+
+
+
+<!-- code block begin -->
+
+##### ****AddBarcodeToMultipageTiff.vbs:**
+    
+```
+' Create barcode object and register it
+Set barcode = CreateObject("Bytescout.BarCode.Barcode")
+barcode.RegistrationName = "demo"
+barcode.RegistrationKey = "demo"
+
+' set symbology to PDF417
+barcode.Symbology = 13 ' 13 = PDF417 symbology type
+
+' set barcode value to encode
+barcode.Value = "Sample barcode" 
+
+' Place barcode at bottom-right corner of the the first TIFF page
+barcode.DrawToImage "..\wikipedia.tif", 0, 550, 1100, "result.tif"
+
+' Open the output file in default image viewer.
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.tif", 1, false
+Set shell = Nothing
+
+Set barcode = Nothing
+
+
+```
+
+<!-- code block end -->

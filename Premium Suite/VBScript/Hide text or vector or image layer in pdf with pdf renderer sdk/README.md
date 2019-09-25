@@ -8,28 +8,67 @@ Every ByteScout tool includes sampleVBScript source codes that you can find here
 
  If you want to try other samples for VBScript then free trial version of ByteScout Premium Suite is available on our website.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Premium%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Premium%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Premium%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Premium Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Premium%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****PDFToPNG.vbs:**
+    
+```
+' Create Bytescout.PDFRenderer.RasterRenderer  object
+Set renderer = CreateObject("Bytescout.PDFRenderer.RasterRenderer")
+
+renderer.RegistrationName = "demo"
+renderer.RegistrationKey = "demo"
+
+' Load sample PDF document
+renderer.LoadDocumentFromFile "../../multipage.pdf"
+
+Set renderingOptions = CreateObject("Bytescout.PDFRenderer.RenderingOptions")
+
+' Enable text objects rendering
+renderingOptions.RenderTextObjects = True
+' DISABLE vector objects rendering
+renderingOptions.RenderVectorObjects = False
+' DISABLE image objects rendering
+renderingOptions.RenderImageObjects = False
+        
+' Render PDF document at 96 DPI - default PC display resolution
+' To get higher quality output, set 200, 300 or more
+Dim renderingResolution
+renderingResolution = 96
+
+' iterate through pages
+For i=0 To renderer.GetPageCount()-1
+	' Render document page to PNG image file
+    renderer.Save_2 "image" & i & ".png", 2, i, renderingResolution, (renderingOptions)
+Next
+
+
+```
+
+<!-- code block end -->

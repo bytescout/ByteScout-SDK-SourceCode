@@ -8,28 +8,54 @@ VBScript code samples for VBScript developers help to speed up coding of your ap
 
 Free trial version of ByteScout BarCode Reader SDK is available on our website. Documentation and source code samples are included.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20BarCode%20Reader%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20BarCode%20Reader%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20BarCode%20Reader%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout BarCode Reader SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20BarCode%20Reader%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=EARSPJFIJMU](https://www.youtube.com/watch?v=EARSPJFIJMU)
+
+
+
+
+<!-- code block begin -->
+
+##### ****TestBarcodeReadingFromPDF.vbs:**
+    
+```
+Set bc = CreateObject("Bytescout.BarCodeReader.Reader")
+
+' Limit search to 1D barcodes only (exclude 2D barcodes to speed up the search).
+' Change to bc.BarcodeTypesToFind.SetAll() to scan for all supported 1D and 2D barcodes 
+' or select specific type, e.g. bc.BarcodeTypesToFind.PDF417 = True
+bc.BarcodeTypesToFind.SetAll1D()
+
+' Reading barcode from PDF
+bc.ReadFromFile "example.pdf"
+
+' Iterate throuhg all found barcodes
+For i = 0 To bc.FoundCount - 1
+     Msgbox "Found barcode on page #" & CStr(bc.GetFoundBarcodePage(i)) & " with type " & Cstr(bc.GetFoundBarcodeType(i)) & " and value " & bc.GetFoundBarcodeValue(i)
+Next
+
+Set bc = Nothing
+
+```
+
+<!-- code block end -->

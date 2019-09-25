@@ -8,28 +8,87 @@ If you want to speed up the application’s code writing then PowerShell code sa
 
 Trial version of ByteScout is available for free download from our website. This and other source code samples for PowerShell and other programming languages are available.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Cloud%20API%20Server%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Cloud%20API%20Server%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Cloud%20API%20Server%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Cloud API Server Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Cloud%20API%20Server](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****ConvertWebPageToPdfFromLink.ps1:**
+    
+```
+# Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
+# If it's not then please replace this with with your hosting url.
+
+# URL of web page to convert to PDF document.
+$SourceUrl = "http://www.usa.gov"
+# Destination PDF file name
+$DestinationFile = ".\result.pdf"
+
+# Prepare URL for `Web Page to PDF` API call
+$query = "https://localhost/pdf/convert/from/url?name=$(Split-Path $DestinationFile -Leaf)&url=$($SourceUrl)"
+$query = [System.Uri]::EscapeUriString($query)
+
+try {
+    # Execute request
+    $jsonResponse = Invoke-RestMethod -Method Get  -Uri $query
+
+    if ($jsonResponse.error -eq $false) {
+        # Get URL of generated PDF file
+        $resultFileUrl = $jsonResponse.url;
+        
+        # Download PDF file
+        Invoke-WebRequest  -OutFile $DestinationFile -Uri $resultFileUrl
+
+        Write-Host "Generated PDF file saved as `"$($DestinationFile)`" file."
+    }
+    else {
+        # Display service reported error
+        Write-Host $jsonResponse.message
+    }
+}
+catch {
+    # Display request error
+    Write-Host $_.Exception
+}
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****run.bat:**
+    
+```
+@echo off
+
+powershell -NoProfile -ExecutionPolicy Bypass -Command "& .\ConvertWebPageToPdfFromLink.ps1"
+echo Script finished with errorlevel=%errorlevel%
+
+pause
+```
+
+<!-- code block end -->

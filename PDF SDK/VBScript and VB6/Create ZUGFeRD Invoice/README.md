@@ -8,28 +8,62 @@ VBScript and VB6 code samples for VBScript and VB6 developers help to speed up c
 
 ByteScout free trial version is available for download from our website. It includes all these programming tutorials along with source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=gdsQ0EAqwGQ](https://www.youtube.com/watch?v=gdsQ0EAqwGQ)
+
+
+
+
+<!-- code block begin -->
+
+##### ****FileAttachmentAnnotations.vbs:**
+    
+```
+' This example demonstrates how to attach a file to PDF document.
+
+' Open pdf document
+Set pdfDocument = CreateObject("Bytescout.PDF.Document")
+pdfDocument.RegistrationName = "demo"
+pdfDocument.RegistrationKey = "demo"
+
+' Load existing document
+pdfDocument.Load("Invoice.pdf")
+
+Set comHelpers = pdfDocument.ComHelpers
+
+' Attach ZUGFeRD XML file
+Set fileAttachment = comHelpers.CreateFileAttachmentAnnotation("ZUGFeRD-invoice.xml", 0, 0, 0, 0)
+pdfDocument.Pages.Item(0).Annotations.Add(fileAttachment)
+
+' Instruct PDF viewer applications to show attachments pane on startup (optional)
+pdfDocument.PageMode = comHelpers.PAGEMODE_ATTACHMENT
+
+' Save document to file
+pdfDocument.Save("result.pdf")
+
+' Open document in default PDF viewer app
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.pdf", 1, false
+```
+
+<!-- code block end -->

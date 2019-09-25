@@ -8,28 +8,64 @@ VBScript and VB6 code snippet like this for ByteScout QR Code works best when yo
 
 ByteScout QR Code free trial version is available for download from our website. Free trial also includes programming tutorials along with source code samples.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20QR%20Code%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20QR%20Code%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20QR%20Code%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout QR Code Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20QR%20Code](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=A5hB9ul3tX0](https://www.youtube.com/watch?v=A5hB9ul3tX0)
+
+
+
+
+<!-- code block begin -->
+
+##### ****UnicodeValue.vbs:**
+    
+```
+' Create and activate QRCode instance
+Set barcode = CreateObject("Bytescout.BarCode.QRCode")
+barcode.RegistrationName = "demo"
+barcode.RegistrationKey = "demo"
+
+' Set barcode value
+barcode.Value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"
+
+' Set the character encoding to UTF-16
+barcode.SetCharacterEncoding "utf-16"
+
+' Set Unicode barcode value
+barcode.Value = "日本"
+
+' Show barcode caption (optional)
+barcode.DrawCaption = True
+
+' Save barcode image to file
+barcode.SaveImage("result.png")
+
+' Open the image in default image viewer (for demo purpose)
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.png", 1, false
+Set shell = Nothing
+
+Set barcode = Nothing
+
+```
+
+<!-- code block end -->

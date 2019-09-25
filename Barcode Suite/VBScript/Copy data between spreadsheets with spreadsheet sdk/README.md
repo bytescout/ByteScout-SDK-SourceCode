@@ -8,28 +8,68 @@ This prolific sample source code in VBScript for ByteScout Barcode Suite contain
 
 Trial version of ByteScout Barcode Suite is available for free. Source code samples are included to help you with your VBScript app.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****CopyDataBetweenSpreadsheets.vbs:**
+    
+```
+' Create and activate two Spreadsheet objects
+Set srcDocument = CreateObject("Bytescout.Spreadsheet.Spreadsheet")
+srcDocument.RegistrationName = "demo"
+srcDocument.RegistrationKey = "demo"
+Set dstDocument = CreateObject("Bytescout.Spreadsheet.Spreadsheet")
+dstDocument.RegistrationName = "demo"
+dstDocument.RegistrationKey = "demo"
+
+' Load exported data
+srcDocument.LoadFromFile ".\sample.csv"
+' Load destination document
+dstDocument.LoadFromFile ".\destination.xlsx"
+
+' Get worksheets
+Set srcWorksheet = srcDocument.Worksheet(0)
+Set dstWorksheet = dstDocument.Worksheet(0)
+
+' Copy data from source to destination
+For row = 0 To 3
+    For column = 0 To 3
+        dstWorksheet.Cell(row, column).Value = srcWorksheet.Cell(row, column).Value
+    Next
+Next
+
+' Recalculate formulas
+dstDocument.Workbook.Calculate
+
+' Save modified document as "result.xls"
+dstDocument.SaveAs ".\result.xls"
+
+
+```
+
+<!-- code block end -->

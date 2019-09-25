@@ -8,28 +8,90 @@ This rich sample source code in VBScript for ByteScout PDF To HTML SDK includes 
 
 You can download free trial version of ByteScout PDF To HTML SDK from our website to see and try many others source code samples for VBScript.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20To%20HTML%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20To%20HTML%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20To%20HTML%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF To HTML SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20To%20HTML%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=kB2ELm_kCds](https://www.youtube.com/watch?v=kB2ELm_kCds)
+
+
+
+
+<!-- code block begin -->
+
+##### ****ExtractHTML.vbs:**
+    
+```
+' Create Bytescout.PDF2HTML.HTMLExtractor object
+Set extractor = CreateObject("Bytescout.PDF2HTML.HTMLExtractor")
+extractor.RegistrationName = "demo"
+extractor.RegistrationKey = "demo"
+
+' Set plain HTML extraction mode
+extractor.ExtractionMode = 0
+
+' Load sample PDF document
+extractor.LoadDocumentFromFile("..\..\sample2.pdf")
+
+' Save extracted HTML to file
+extractor.SaveHtmlToFile_2 "output.html"
+
+' Open output file in default associated application
+Set shell = CreateObject("WScript.Shell")
+shell.Run "output.html", 1, false
+Set shell = Nothing
+
+Set extractor = Nothing
+
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****ExtractHTMLFromPage.vbs:**
+    
+```
+' Create Bytescout.PDF2HTML.HTMLExtractor object
+Set extractor = CreateObject("Bytescout.PDF2HTML.HTMLExtractor")
+extractor.RegistrationName = "demo"
+extractor.RegistrationKey = "demo"
+
+' Set plain HTML extraction mode
+extractor.ExtractionMode = 0
+
+' Load sample PDF document
+extractor.LoadDocumentFromFile("..\..\sample2.pdf")
+
+' Convert 2-nd page to HTML and save it to file
+extractor.SaveHtmlPageToFile 1, "output.html"
+
+' Open output file in default associated application
+Set shell = CreateObject("WScript.Shell")
+shell.Run "output.html", 1, false
+Set shell = Nothing
+
+Set extractor = Nothing
+
+
+```
+
+<!-- code block end -->

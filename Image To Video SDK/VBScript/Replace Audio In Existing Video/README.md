@@ -8,28 +8,67 @@ This code snippet below for ByteScout Image To Video SDK works best when you nee
 
 Free trial version of ByteScout Image To Video SDK is available for download from our website. Get it to try other source code samples for VBScript.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Image%20To%20Video%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Image%20To%20Video%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Image%20To%20Video%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Image To Video SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Image%20To%20Video%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=FzPgeGFL8YA](https://www.youtube.com/watch?v=FzPgeGFL8YA)
+
+
+
+
+<!-- code block begin -->
+
+##### ****ReplaceAudio.vbs:**
+    
+```
+' Create an instance of BytescoutImageToVideo.ImageToVideo ActiveX object
+Set converter = CreateObject("BytescoutImageToVideo.ImageToVideo")
+
+' Activate the component
+converter.RegistrationName = "demo"
+converter.RegistrationKey = "demo"
+
+' converter.SetLogFile "log.txt"
+
+' set input video file
+converter.InputVideoFileName = "input.wmv"
+
+' set input audio file
+converter.ExternalAudioTrackFromFileName = "11k16bitpcm.wav"
+
+' Set output video file name
+converter.OutputVideoFileName = "ReplacedAudio.wmv"
+
+' Run the conversion
+converter.RunAndWait()
+
+MsgBox "ReplacedAudio.wmv is ready. Script will try to open the video in default media player"
+
+' Open result in default media player
+Set shell = CreateObject("WScript.Shell")
+shell.Run "ReplacedAudio.wmv", 1, false
+Set shell = Nothing
+
+Set converter = Nothing
+
+```
+
+<!-- code block end -->

@@ -8,28 +8,66 @@ CURL code snippet like this for ByteScout Cloud API Server works best when you n
 
 Trial version of ByteScout is available for free download from our website. This and other source code samples for cURL and other programming languages are available.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Cloud%20API%20Server%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Cloud%20API%20Server%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Cloud%20API%20Server%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Cloud API Server Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Cloud%20API%20Server](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****SplitPdfFromUrl.cmd:**
+    
+```
+@echo off
+
+:: Path of the cURL executable
+set CURL="curl.exe"
+
+:: Source PDF file to split
+set SOURCE_FILE_URL=https://bytescout-com.s3.amazonaws.com/files/demo-files/cloud-api/pdf-split/sample.pdf
+:: Comma-separated list of page numbers (or ranges) to process. Example: '1,3-5,7-'.
+set PAGES=1-2,3-
+:: Result PDF file name
+set RESULT_FILE_NAME=result.pdf
+
+:: Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
+:: If it's not then please replace this with with your hosting url.
+
+:: Prepare URL for `Split PDF` API call
+set QUERY="https://localhost/pdf/split?name=%RESULT_FILE_NAME%&pages=%PAGES%&url=%SOURCE_FILE_URL%"
+
+:: Perform request and save response to a file
+%CURL% -# -X GET %QUERY% >response.json
+
+:: Display the response
+type response.json
+
+:: Use any convenient way to parse JSON response and get URL of generated file(s)
+
+
+echo.
+pause
+```
+
+<!-- code block end -->

@@ -8,28 +8,64 @@ This rich and prolific sample source code in VBScript for ByteScout Barcode Suit
 
 ByteScout Barcode Suite is available as a free trial. You may get it from our website along with all other source code samples for VBScript applications.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Barcode%20Suite%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Barcode%20Suite%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Barcode Suite Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Barcode%20Suite](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+
+
+
+
+<!-- code block begin -->
+
+##### ****SetCustomPDF417Configuration.vbs:**
+    
+```
+
+Set bc = CreateObject("Bytescout.BarCode.Barcode")
+
+' set symbology to PDF417
+bc.Symbology = 13 ' 13 = PDF417 barcode type
+
+' set barcode value to encode
+bc.Value = "12345678901234567890"
+
+' by default the SDK tries to make the barcode size as small as possible
+' if we need it then we can set manual number of rows and columns
+
+bc.Options.PDF417UseManualSize = true ' enable manual size mode
+bc.Options.PDF417ColumnCount = 7 ' set max number of columns
+bc.Options.PDF417RowCount = 50 ' set max number of rows
+
+bc.CutUnusedSpace = False ' you can set it to True to cut unused space
+
+bc.SaveImage "result.png"
+
+Set bc = Nothing
+
+' Open the output file in default app
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.png", 1, false
+Set shell = Nothing
+
+```
+
+<!-- code block end -->

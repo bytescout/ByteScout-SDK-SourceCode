@@ -8,28 +8,217 @@ This code snippet below for ByteScout BarCode Reader SDK works best when you nee
 
 Download free trial version of ByteScout BarCode Reader SDK from our website with this and other source code samples for C++ (Unmanaged).
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20BarCode%20Reader%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20BarCode%20Reader%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20BarCode%20Reader%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout BarCode Reader SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20BarCode%20Reader%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=EARSPJFIJMU](https://www.youtube.com/watch?v=EARSPJFIJMU)
+
+
+
+
+<!-- code block begin -->
+
+##### ****ReadFromMemory.cpp:**
+    
+```
+// ReadFromMemory.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "atlbase.h"
+
+#import "c:\\Program Files\\Bytescout BarCode Reader SDK\\net4.00\\Bytescout.BarCodeReader.tlb" raw_interfaces_only
+using namespace Bytescout_BarCodeReader;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	// Initialize COM.
+	HRESULT hr = CoInitialize(NULL);
+
+	// Create the interface pointer.
+	IReaderPtr pIReader(__uuidof(Reader));
+
+	// set the registration name and key
+	BSTR regname = ::SysAllocString(L"DEMO");
+	pIReader->put_RegistrationName(regname);
+	SysFreeString(regname);
+	BSTR regkey = ::SysAllocString(L"DEMO");
+	pIReader->put_RegistrationKey(regkey);
+	SysFreeString(regkey);
+
+	// Set barcode type to find
+	_BarcodeTypeSelectorPtr pBarcodeTypesToFind;
+	pIReader->get_BarcodeTypesToFind(&pBarcodeTypesToFind);
+	pBarcodeTypesToFind->put_GS1DataBarExpanded(VARIANT_TRUE);
+
+	// Get full path of sample barcode image file
+	WCHAR file[MAX_PATH];
+	::GetFullPathName(L"GS1DataBarExpanded.png", MAX_PATH, file, NULL);
+
+	// Load file content to byte array (for demonstration purpose)
+	HANDLE hFile = CreateFile(file, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	DWORD fileSize = GetFileSize(hFile, NULL);
+	byte* pBuffer = new byte[fileSize];
+	DWORD numberOfBytesRead;
+	ReadFile(hFile, pBuffer, fileSize, &numberOfBytesRead, NULL);
+	CloseHandle(hFile);
+
+	// Read barcode from memory
+	IStream* stream = SHCreateMemStream(pBuffer, fileSize);
+	hr = pIReader->ReadFromStream(stream);
+
+	stream->Release();
+	delete[] pBuffer;
+
+	// Get found barcode count
+	long count;
+	pIReader->get_FoundCount(&count);
+
+	// Get found barcode information
+	for (int i = 0; i < count; i++)
+	{
+		SymbologyType type;
+		hr = pIReader->GetFoundBarcodeType(i, &type);
+		wprintf(L"Barcode type: %d\n", type);
+
+		float confidence;
+		hr = pIReader->GetFoundBarcodeConfidence(i, &confidence);
+		wprintf(L"Barcode confidence: %f\n", confidence);
+
+		BSTR bstrValue;
+		hr = pIReader->GetFoundBarcodeValue(i, &bstrValue);
+		wprintf(L"Barcode value: %s\n", bstrValue);
+		::SysFreeString(bstrValue);
+
+		wprintf(L"\n");
+	}
+
+	if (count == 0)
+	{
+		wprintf(L"no barcodes found");
+	}
+
+	// Uninitialize COM.
+	CoUninitialize();
+	
+	wprintf(L"\nHit key to continue\n");
+	getchar();
+
+	return 0;
+}
+
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****ReadFromMemory.sln:**
+    
+```
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReadFromMemory", "ReadFromMemory.vcxproj", "{ABBECC62-8779-458A-B8DC-F949363D29AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABBECC62-8779-458A-B8DC-F949363D29AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABBECC62-8779-458A-B8DC-F949363D29AF}.Debug|Win32.Build.0 = Debug|Win32
+		{ABBECC62-8779-458A-B8DC-F949363D29AF}.Release|Win32.ActiveCfg = Release|Win32
+		{ABBECC62-8779-458A-B8DC-F949363D29AF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****stdafx.cpp:**
+    
+```
+// stdafx.cpp : source file that includes just the standard includes
+// ReadFromMemory.pch will be the pre-compiled header
+// stdafx.obj will contain the pre-compiled type information
+
+#include "stdafx.h"
+
+// TODO: reference any additional headers you need in STDAFX.H
+// and not in this file
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****stdafx.h:**
+    
+```
+// stdafx.h : include file for standard system include files,
+// or project specific include files that are used frequently, but
+// are changed infrequently
+//
+
+#pragma once
+
+#include "targetver.h"
+
+#include <stdio.h>
+#include <tchar.h>
+
+
+
+// TODO: reference additional headers your program requires here
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### ****targetver.h:**
+    
+```
+#pragma once
+
+// Including SDKDDKVer.h defines the highest available Windows platform.
+
+// If you wish to build your application for a previous Windows platform, include WinSDKVer.h and
+// set the _WIN32_WINNT macro to the platform you wish to support before including SDKDDKVer.h.
+
+#include <SDKDDKVer.h>
+
+```
+
+<!-- code block end -->

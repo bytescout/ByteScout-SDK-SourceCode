@@ -8,28 +8,62 @@ This rich sample source code in ASP.NET for ByteScout Screen Capturing SDK inclu
 
 Free trial version of ByteScout Screen Capturing SDK is available on our website. Documentation and source code samples are included.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Screen%20Capturing%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Screen%20Capturing%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Screen Capturing SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Screen%20Capturing%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=fujkvtWUVCw](https://www.youtube.com/watch?v=fujkvtWUVCw)
+
+
+
+
+<!-- code block begin -->
+
+##### ****README-FIRST.txt:**
+    
+```
+Interact with desktop permission may be required to run Screen Capturing SDK or SWF To Video SDK from service or to convert interactive ("live") flash movies with SWF To Video SDK
+
+You may set this "Allow to interact with desktop" checkbox for the user that is used to run the service/app 
+For IIS asp.net apps this user name is typically IIS_... user name
+
+Important note for Windows Server 2008 or later
+
+Newest Windows has disabled interactive services 
+
+New Windows versions are no longer allowing to run interactive services by default to prevent services from accessing the desktop (to provide more security)
+
+If you must run a Screen Capturing SDK or SWF To Video SDK from an interactive service then you may sacrifice server stability for compatibility by changing the following registry value from the default of "1" to "0".
+
+HKLM\SYSTEM\CurrentControlSet\Control\Windows 
+NoInteractiveServices
+
+Then reboot so Windows will pick the new value from the registry and the Interactive Services Detection Service will start.
+
+To make this change manually please do the following 
+
+Start the registry editor (regedit.exe) in As Administrator mode
+Locate the following Registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Windows on the left side
+double-click the NoInteractiveServices entry on the right side and change its value from 1 to 0
+Then click OK and close the registry editor
+Restart the computer
+```
+
+<!-- code block end -->

@@ -8,28 +8,68 @@ The SDK samples like this one below explain how to quickly make your application
 
 Download free trial version of ByteScout PDF SDK from our website with this and other source code samples for VBScript and VB6.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20PDF%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20PDF%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout PDF SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20PDF%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=gdsQ0EAqwGQ](https://www.youtube.com/watch?v=gdsQ0EAqwGQ)
+
+
+
+
+<!-- code block begin -->
+
+##### ****RightToLeftText.vbs:**
+    
+```
+' This example demonstrates how to draw right-to-left text.
+
+' Create Bytescout.PDF.Document object
+Set pdfDocument = CreateObject("Bytescout.PDF.Document")
+pdfDocument.RegistrationName = "demo"
+pdfDocument.RegistrationKey = "demo"
+
+Set comHelpers = pdfDocument.ComHelpers
+
+' Add page
+Set page1 = comHelpers.CreatePage(comHelpers.PAPERFORMAT_A4)
+pdfDocument.Pages.Add(page1)
+
+Set font = comHelpers.CreateSystemFont("Arial", 16)
+Set brush = comHelpers.CreateSolidBrush(comHelpers.CreateColorGray(0))
+
+' Set right to left text direction
+Set stringFormat = comHelpers.CreateStringFormat()
+stringFormat.DirectionRightToLeft = True
+
+page1.Canvas.DrawString_4 "???? ????? ?????", (font), (brush), page1.Width - 20, 30, (stringFormat)
+page1.Canvas.DrawString_4 "???, ?????, ????", (font), (brush), page1.Width - 20, 50, (stringFormat)
+page1.Canvas.DrawString_4 "?? ?? ??", (font), (brush), page1.Width - 20, 70, (stringFormat)
+
+' Save document to file
+pdfDocument.Save("result.pdf")
+
+' Open document in default PDF viewer app
+Set shell = CreateObject("WScript.Shell")
+shell.Run "result.pdf", 1, false
+
+```
+
+<!-- code block end -->

@@ -8,28 +8,104 @@ This code snippet below for ByteScout Document Parser SDK works best when you ne
 
 Download free trial version of ByteScout Document Parser SDK from our website with this and other source code samples for VBScript and VB6.
 
-## Get In Touch
+## REQUEST FREE TECH SUPPORT
 
 [Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Document%20Parser%20SDK%20Question)
 
-or send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Document%20Parser%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Document%20Parser%20SDK%20Question) 
 
-## Free Trial Download
+## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
+[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Sign Up For Online Training](https://academy.bytescout.com/)
 
-## Web API (On-demand version)
 
-[Get your free API key](https://pdf.co/documentation/api?utm_source=github-readme)
+## ON-DEMAND REST WEB API
 
-## API Documentation and References
-
-[Explore ByteScout Document Parser SDK Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
-
+[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
 [Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
-[Check Free Training Sessions for ByteScout%20Document%20Parser%20SDK](https://academy.bytescout.com/)
-
-## Video Review
+## VIDEO REVIEW
 
 [https://www.youtube.com/watch?v=MG5FfTWWSVE](https://www.youtube.com/watch?v=MG5FfTWWSVE)
+
+
+
+
+<!-- code block begin -->
+
+##### ****ParseWithOCR.vbs:**
+    
+```
+' This example demonstrates parsing of scanned documents
+' using the Optical Character Recognition (OCR).
+
+template = "..\..\_Sample Templates\DigitalOcean.yml"
+inputDocument = "..\..\DigitalOcean-scanned.jpg"
+
+
+' Create and activate DocumentParser object
+Set documentParser = CreateObject("Bytescout.DocumentParser.DocumentParser")
+documentParser.RegistrationName = "demo"
+documentParser.RegistrationKey = "demo"
+
+' Enable Optical Character Recognition (OCR) in Auto mode
+' (DocumentParser automatically detects if OCR Is required).
+documentParser.OCRMode = 1 ' OCRMode.Auto
+
+' Set PDF document rendering resolution
+documentParser.OCRResolution = 300
+
+' Set the location of OCR language data files
+documentParser.OCRLanguageDataFolder = "c:\Program Files\ByteScout Document Parser SDK\ocrdata"
+
+' Set OCR language
+' "eng" for english, "deu" for German, "fra" for French, etc. - according to files in "ocrdata" folder
+documentParser.OCRLanguage = "eng"
+' Find more language files at https://github.com/bytescout/ocrdata
+
+' Note: The OCRLanguage can be overridden in a template. 
+' See the Template Creation Guide.
+
+
+
+' You can also apply various preprocessing filters
+' to improve the recognition on low-quality scans.
+
+' Automatically deskew skewed scans
+'documentParser.OCRImagePreprocessingFilters.AddDeskew()
+
+' Remove vertical or horizontal lines (sometimes helps to avoid OCR engine's page segmentation errors)
+'documentParser.OCRImagePreprocessingFilters.AddVerticalLinesRemover()
+'documentParser.OCRImagePreprocessingFilters.AddHorizontalLinesRemover()
+
+' Repair broken letters
+'documentParser.OCRImagePreprocessingFilters.AddDilate()
+
+' Remove noise
+'documentParser.OCRImagePreprocessingFilters.AddMedian()
+
+' Apply Gamma Correction
+'documentParser.OCRImagePreprocessingFilters.AddGammaCorrection(1.4)
+
+' Add Contrast
+'documentParser.OCRImagePreprocessingFilters.AddContrast(20)
+
+
+
+' Load template
+documentParser.AddTemplate(template)
+
+' Parse document data in JSON format
+documentParser.ParseDocument inputDocument, "output.json", 0 ' 0 = OutputFormat.JSON
+
+WScript.Echo "Parsed data saved as 'output.json'"
+
+Set documentParser = Nothing
+
+
+```
+
+<!-- code block end -->
