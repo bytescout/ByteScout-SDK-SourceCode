@@ -35,6 +35,7 @@
 \BarCode Reader SDK\Delphi
 \BarCode Reader SDK\M-Files
 \BarCode Reader SDK\Microsoft Access
+\BarCode Reader SDK\Microsoft Excel
 \BarCode Reader SDK\PHP
 \BarCode Reader SDK\SAP PowerBuilder
 \BarCode Reader SDK\VB.NET
@@ -147,6 +148,8 @@
 \BarCode Reader SDK\Delphi\Read Barcodes From Subfolder
 \BarCode Reader SDK\M-Files\Read Barcodes
 \BarCode Reader SDK\Microsoft Access\Read Barcode From PDF File
+\BarCode Reader SDK\Microsoft Excel\Read barcodes from folder
+\BarCode Reader SDK\Microsoft Excel\Read barcodes from folder\InputFiles
 \BarCode Reader SDK\PHP\Read Barcode From Image
 \BarCode Reader SDK\SAP PowerBuilder\Read Barcode From Image
 \BarCode Reader SDK\VB.NET\Acquire Image From Scanner And Decode
