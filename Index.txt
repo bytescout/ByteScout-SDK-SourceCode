@@ -3902,6 +3902,7 @@
 \PDF.co Web API\PDF To Text API
 \PDF.co Web API\PDF To XML API
 \PDF.co Web API\Add Text And Images To PDF\C#
+\PDF.co Web API\Add Text And Images To PDF\cURL
 \PDF.co Web API\Add Text And Images To PDF\Java
 \PDF.co Web API\Add Text And Images To PDF\JavaScript
 \PDF.co Web API\Add Text And Images To PDF\PowerShell
@@ -3910,6 +3911,8 @@
 \PDF.co Web API\Add Text And Images To PDF\C#\Add Images to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\C#\Add Text by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\C#\Add Text to Existing PDF
+\PDF.co Web API\Add Text And Images To PDF\cURL\Add Images to Existing PDF
+\PDF.co Web API\Add Text And Images To PDF\cURL\Add Text to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\Java\Add Image by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\Java\Add Images to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\Java\Add Text by finding target coordinates
