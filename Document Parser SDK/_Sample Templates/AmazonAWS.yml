@@ -1,4 +1,4 @@
-﻿---
+---
 templateVersion: 2
 templatePriority: 0
 sourceId: Amazon Web Services Invoice
@@ -10,6 +10,9 @@ detectionRules:
 fields:
   total:
     expression: TOTAL AMOUNT DUE ON{{ANY}}{{MONEY}}
+    type: decimal
+  subTotal:
+    expression: ^[ ]+Charges[ ]+\$(?<value>(\d{1,3},?)+\.\d\d)
     type: decimal
   dateIssued:
     expression: Invoice Date:\s+([a-zA-Z]+ \d+ , \d+)
@@ -37,15 +40,11 @@ fields:
 tables:
 - name: table1
   start:
-    expression: Detail
+    expression: '^[ ]+Detail\r?$'
   end:
     expression: '\z'
-  subItemStart:
-    expression: ^\s+(?<description>\w+.*)\$(?<unitPrice>\d+\.\d+)
-  subItemEnd:
-    expression: (VAT \*\*)|(Estimated US sales tax to be collected)\s+\$(\d+\.\d+)
   row:
-    expression: (.*)\$(\d+\.\d+)
+    expression: '^[\f ]+(?<description>\S+(?: \S+)*)[ ]+\$(?<unitPrice>(\d{1,3},?)+\.\d\d)\r?$'
   columns:
   - name: unitPrice
     type: decimal
