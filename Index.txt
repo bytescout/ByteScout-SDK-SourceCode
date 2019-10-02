@@ -1203,6 +1203,7 @@
 \Cloud API Server\PDF To JSON API
 \Cloud API Server\PDF To Text API
 \Cloud API Server\PDF To XML API
+\Cloud API Server\Text Recognition API
 \Cloud API Server\Add Text And Images To PDF\C#
 \Cloud API Server\Add Text And Images To PDF\Java
 \Cloud API Server\Add Text And Images To PDF\JavaScript
@@ -1833,6 +1834,8 @@
 \Cloud API Server\PDF To XML API\VB.NET\Convert PDF To XML From Uploaded File
 \Cloud API Server\PDF To XML API\VB.NET\Convert PDF To XML From URL
 \Cloud API Server\PDF To XML API\VB.NET\Convert PDF To XML From URL Asynchronously
+\Cloud API Server\Text Recognition API\C#
+\Cloud API Server\Text Recognition API\C#\Perform OCR On Uploaded File Asynchronously
 \Data Extraction Suite\ASP Classic
 \Data Extraction Suite\ASP.NET C#
 \Data Extraction Suite\ASP.NET MVC C#
