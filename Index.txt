@@ -129,6 +129,9 @@
 \BarCode Reader SDK\C#\Inspect Decoded Barcodes
 \BarCode Reader SDK\C#\Interrupt Barcode Decoding Processing
 \BarCode Reader SDK\C#\Parallel Barcode Decoding
+\BarCode Reader SDK\C#\Read 50 Barcodes from picture
+\BarCode Reader SDK\C#\Read 50 datamatrix barcodes from picture
+\BarCode Reader SDK\C#\Read 50 QRCodes barcodes from picture
 \BarCode Reader SDK\C#\Read barcode From Live Video Cam
 \BarCode Reader SDK\C#\Read barcodes From Live Video Cam (WPF)
 \BarCode Reader SDK\C#\Read Barcodes From PDF
@@ -217,6 +220,9 @@
 \BarCode Reader SDK\VB.NET\Inspect Decoded Barcodes
 \BarCode Reader SDK\VB.NET\Interrupt Barcode Processing
 \BarCode Reader SDK\VB.NET\Parallel Barcode Decoding
+\BarCode Reader SDK\VB.NET\Read 50 Barcodes from picture
+\BarCode Reader SDK\VB.NET\Read 50 Datamatrix barcodes from picture
+\BarCode Reader SDK\VB.NET\Read 50 QRCodes barcodes from picture
 \BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam
 \BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam (simplified)
 \BarCode Reader SDK\VB.NET\Read Barcode From Live Video Cam (WPF)
