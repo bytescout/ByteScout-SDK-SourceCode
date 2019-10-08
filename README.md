@@ -16,3 +16,20 @@
 * **ByteScout Watermarking SDK** - [explore samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/Watermarking%20SDK) - [view home page](https://bytescout.com/products/developer/watermarkingsdk/watermarkingsdk.html)
 
 Source code samples copyright ByteScout [www.bytescout.com](https://bytescout.com)
+
+## Frequently Asked Questions
+
+### Can I get temporary demo license key?
+
+No demo key is required to try SDK and play with it. Download free trial version of 1 or more SDK from [download page](https://bytescout.com/download/web-installer)
+
+### I bought a license but my license key is not working
+
+Make sure that you have 
+
+- removed *demo* version
+- downloaded **full** version from your licensing dashboard. 
+- updated your application's code with your license name and license key
+- recompiled your application
+
+Can't find link to full version download? Please check your email box for order confirmation email where you may find link to your licensing dashboard.
