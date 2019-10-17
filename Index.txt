@@ -1187,7 +1187,6 @@
 \Cloud API Server\Add Text And Images To PDF
 \Cloud API Server\Barcode Generator API
 \Cloud API Server\Barcode Reader API
-\Cloud API Server\C#
 \Cloud API Server\CSV To PDF API
 \Cloud API Server\DOC To PDF API
 \Cloud API Server\Excel To CSV API
@@ -1287,7 +1286,6 @@
 \Cloud API Server\Barcode Reader API\VB.NET\Read Barcode From Uploaded File
 \Cloud API Server\Barcode Reader API\VB.NET\Read Barcode From URL
 \Cloud API Server\Barcode Reader API\VB.NET\Read Barcode From URL Asynchronously
-\Cloud API Server\C#\First Sample
 \Cloud API Server\CSV To PDF API\C#
 \Cloud API Server\CSV To PDF API\cURL
 \Cloud API Server\CSV To PDF API\Java
