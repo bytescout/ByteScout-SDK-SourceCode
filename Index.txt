@@ -239,6 +239,7 @@
 \BarCode Reader SDK\VBScript\Barcodes to Excel
 \BarCode Reader SDK\VBScript\Batch Read Barcodes From Files
 \BarCode Reader SDK\VBScript\Read Barcode From PDF
+\BarCode Reader SDK\VBScript\Read barcode From PDF With OrientationType
 \BarCode Reader SDK\VBScript\Read Barcode From Webcam or Scanner
 \BarCode Reader SDK\VBScript\Read Code 39 To Excel
 \BarCode Reader SDK\VBScript\Read QR Code To Excel
@@ -2551,9 +2552,12 @@
 \Document Parser SDK\VBScript and VB6
 \Document Parser SDK\_Sample Templates
 \Document Parser SDK\C#\Create Custom Template
+\Document Parser SDK\C#\Parse and Generate HL7 Output
 \Document Parser SDK\C#\Parse Multipage Table
 \Document Parser SDK\C#\Parse Simple Document
 \Document Parser SDK\C#\Parse with OCR
+\Document Parser SDK\C#\Parse and Generate HL7 Output\InputData
+\Document Parser SDK\C#\Parse and Generate HL7 Output\Src
 \Document Parser SDK\VB.NET\Create Custom Template
 \Document Parser SDK\VB.NET\Parse Multipage Table
 \Document Parser SDK\VB.NET\Parse Simple Document
