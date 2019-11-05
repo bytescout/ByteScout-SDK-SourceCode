@@ -1196,6 +1196,7 @@
 \Cloud API Server\Excel To PDF API
 \Cloud API Server\HTML To PDF API
 \Cloud API Server\Image To PDF API
+\Cloud API Server\PDF Classifier
 \Cloud API Server\PDF Information API
 \Cloud API Server\PDF Make Searchable API
 \Cloud API Server\PDF Merging API
@@ -1402,6 +1403,8 @@
 \Cloud API Server\Image To PDF API\VB.NET\Convert Images To PDF From Uploaded Files
 \Cloud API Server\Image To PDF API\VB.NET\Convert Images To PDF From URLs
 \Cloud API Server\Image To PDF API\VB.NET\Convert Images To PDF From URLs Asynchronously
+\Cloud API Server\PDF Classifier\PowerShell
+\Cloud API Server\PDF Classifier\PowerShell\Classify Uploaded PDF Asynchronously
 \Cloud API Server\PDF Information API\C#
 \Cloud API Server\PDF Information API\cURL
 \Cloud API Server\PDF Information API\Java
