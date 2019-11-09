@@ -4546,6 +4546,7 @@
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From URL Asynchronously
+\PDF.co Web API\PDF To Text API\Python\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\Python\Convert PDF To Text From Uploaded File Asynchronously
 \PDF.co Web API\PDF To Text API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From Uploaded File
