@@ -41,21 +41,59 @@ namespace ExtractFilledFormData
 			XmlNodeList formControls = xmlDocument.SelectNodes("//control");
 			if (formControls != null)
 			{
-				foreach (XmlNode formControl in formControls)
+				foreach (XmlNode controlNode in formControls)
 				{
-					XmlAttribute typeAttribute = formControl.Attributes["type"];
+					XmlAttribute typeAttribute = controlNode.Attributes["type"];
 
-					// Show filled textboxes
+					// Show textboxes
 					if (typeAttribute.Value == "editbox")
 					{
-						if (!String.IsNullOrEmpty(formControl.InnerText))
-							Console.WriteLine("EDITBOX " + formControl.Attributes["id"].Value + ": " + formControl.InnerText);
+						Console.WriteLine("EDITBOX:");
+						Console.WriteLine("  id = " + controlNode.Attributes["id"].Value);
+						Console.WriteLine("  text = " + controlNode.InnerText);
 					}
-					// Show checked checkboxes
+					// Show checkboxes
 					else if (typeAttribute.Value == "checkbox")
 					{
-						if (formControl.Attributes["state"].Value == "1")
-						    Console.WriteLine("CHECKBOX " + formControl.Attributes["id"].Value + ": " + formControl.Attributes["state"].Value);
+						Console.WriteLine("CHECKBOX:");
+                        Console.WriteLine("  id = " + controlNode.Attributes["id"].Value);
+                        Console.WriteLine("  state = " + controlNode.Attributes["state"].Value);
+					}
+                    // Show radio-buttons
+                    else if (typeAttribute.Value == "radiobutton")
+					{
+						Console.WriteLine("RADIOBUTTON:");
+                        Console.WriteLine("  group = " + controlNode.Attributes["id"].Value);
+                        Console.WriteLine("  state = " + controlNode.Attributes["state"].Value);
+                        Console.WriteLine("  value = " + controlNode.InnerText);
+					}
+                    // Show comboboxes
+                    else if (typeAttribute.Value == "combobox")
+					{
+						Console.WriteLine("COMBOBOX:");
+                        Console.WriteLine("  id = " + controlNode.Attributes["id"].Value);
+                        // list items:
+                        foreach (XmlNode valueNode in controlNode.SelectNodes("values/value"))
+                        {
+                            if (valueNode.Attributes["selected"]?.Value == "true")
+                                Console.WriteLine("  value (selected) = " + valueNode.InnerText);
+                            else
+                                Console.WriteLine("  value = " + valueNode.InnerText);
+                        }
+					}
+                    // Show listboxes
+                    else if (typeAttribute.Value == "listbox")
+					{
+						Console.WriteLine("LISTBOX:");
+                        Console.WriteLine("  id = " + controlNode.Attributes["id"].Value);
+                        // list items:
+                        foreach (XmlNode valueNode in controlNode.SelectNodes("values/value"))
+                        {
+                            if (valueNode.Attributes["selected"]?.Value == "true")
+                                Console.WriteLine("  value (selected) = " + valueNode.InnerText);
+                            else
+                                Console.WriteLine("  value = " + valueNode.InnerText);
+                        }
 					}
 				}
 			}
