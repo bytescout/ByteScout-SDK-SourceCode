@@ -23,11 +23,11 @@ Module Module1
         spreadsheet.RegistrationName = "demo"
         spreadsheet.RegistrationKey = "demo"
 
-        ' Load document
-        spreadsheet.LoadFromFile("CustomFuncExample.xlsx")
-
         ' Add custom formula handler
         spreadsheet.CustomFunctionsCallback = AddressOf MyFunctions
+
+        ' Load document
+        spreadsheet.LoadFromFile("CustomFuncExample.xlsx")
 
         ' Calculate the first worksheet
         Dim worksheet = spreadsheet.Workbook.Worksheets(0)
@@ -49,16 +49,16 @@ Module Module1
 
     End Sub
 
-    Private Function MyFunctions(ByVal funcname As String, ByVal args As Object(), ByRef handled As Boolean) As Object
+    Private Function MyFunctions(ByVal sender As Worksheet, ByVal funcName As String, ByVal arguments As Object(), ByRef handled As Boolean) As Object
 
         ' Handle "CUSTOMFUNC_FACTORIAL" function
-        If String.Compare(funcname, "CUSTOMFUNC_FACTORIAL", StringComparison.OrdinalIgnoreCase) = 0 Then
+        If String.Compare(funcName, "CUSTOMFUNC_FACTORIAL", StringComparison.OrdinalIgnoreCase) = 0 Then
 
             handled = True
 
             ' Compute factorial
-            If args.Length > 0 Then
-                Dim value As Integer = args(0)
+            If arguments.Length > 0 Then
+                Dim value As Integer = arguments(0)
 
                 If value = 0 Or value = 1 Then
                     Return 1
@@ -77,16 +77,16 @@ Module Module1
         End If
 
         ' Handle "CUSTOMFUNC_SUM" function
-        If String.Compare(funcname, "CUSTOMFUNC_SUM", StringComparison.OrdinalIgnoreCase) = 0 Then
+        If String.Compare(funcName, "CUSTOMFUNC_SUM", StringComparison.OrdinalIgnoreCase) = 0 Then
 
             handled = True
 
             ' Compute the sum of values
-            If args.Length > 0 Then
+            If arguments.Length > 0 Then
 
                 Dim sum As Double
 
-                For Each o As Object In args
+                For Each o As Object In arguments
                     sum = sum + o
                 Next
 

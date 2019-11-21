@@ -30,12 +30,12 @@ namespace CustomFunctions
             spreadsheet.RegistrationName = "demo";
             spreadsheet.RegistrationKey = "demo";
 
-            // Load document
-            spreadsheet.LoadFromFile(@"CustomFuncExample.xlsx");
-
             // Add custom formula handler
             spreadsheet.CustomFunctionsCallback = new CustomFunctionsCallback(MyFunctions);
             
+            // Load document
+            spreadsheet.LoadFromFile(@"CustomFuncExample.xlsx");
+
             // Calculate the first worksheet
             Worksheet worksheet = spreadsheet.Workbook.Worksheets[0];
             worksheet.Calculate();
@@ -55,7 +55,7 @@ namespace CustomFunctions
             Process.Start("result.xlsx");
         }
 
-        public static object MyFunctions(string funcName, object[] args, ref bool handled)
+        public static object MyFunctions(Worksheet sender, string funcName, object[] args, ref bool handled)
         {
             // Handle "CUSTOMFUNC_FACTORIAL" function
             if (String.Compare(funcName, "CUSTOMFUNC_FACTORIAL", StringComparison.OrdinalIgnoreCase) == 0)
@@ -90,7 +90,7 @@ namespace CustomFunctions
                 {
                     double sum = 0;
                     foreach (var o in args)
-                        sum += (double)o;
+                        sum += (double) o;
 
                     return sum;
                 }
