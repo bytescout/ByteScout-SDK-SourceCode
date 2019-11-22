@@ -3973,6 +3973,7 @@
 \PDF.co Web API\Barcode Reader API\JavaScript
 \PDF.co Web API\Barcode Reader API\PHP
 \PDF.co Web API\Barcode Reader API\PowerShell
+\PDF.co Web API\Barcode Reader API\Python
 \PDF.co Web API\Barcode Reader API\VB.NET
 \PDF.co Web API\Barcode Reader API\C#\Advanced Conversion Options
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From Uploaded File
@@ -3995,6 +3996,8 @@
 \PDF.co Web API\Barcode Reader API\PowerShell\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\PowerShell\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\PowerShell\Read Barcode From URL Asynchronously
+\PDF.co Web API\Barcode Reader API\Python\Read Barcode From Uploaded File
+\PDF.co Web API\Barcode Reader API\Python\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From URL
@@ -4139,6 +4142,7 @@
 \PDF.co Web API\PDF Information API\JavaScript
 \PDF.co Web API\PDF Information API\PHP
 \PDF.co Web API\PDF Information API\PowerShell
+\PDF.co Web API\PDF Information API\Python
 \PDF.co Web API\PDF Information API\VB.NET
 \PDF.co Web API\PDF Information API\C#\Get PDF Info From Uploaded File
 \PDF.co Web API\PDF Information API\C#\Get PDF Info From URL
@@ -4152,6 +4156,8 @@
 \PDF.co Web API\PDF Information API\PHP\Get PDF Info From Uploaded File
 \PDF.co Web API\PDF Information API\PowerShell\Get PDF Info From Uploaded File
 \PDF.co Web API\PDF Information API\PowerShell\Get PDF Info From URL
+\PDF.co Web API\PDF Information API\Python\Get PDF Info From Uploaded File
+\PDF.co Web API\PDF Information API\Python\Get PDF Info From URL
 \PDF.co Web API\PDF Information API\VB.NET\Get PDF Info From Uploaded File
 \PDF.co Web API\PDF Information API\VB.NET\Get PDF Info From URL
 \PDF.co Web API\PDF Make Searchable API\C#
@@ -4192,6 +4198,7 @@
 \PDF.co Web API\PDF Merging API\JavaScript
 \PDF.co Web API\PDF Merging API\PHP
 \PDF.co Web API\PDF Merging API\PowerShell
+\PDF.co Web API\PDF Merging API\Python
 \PDF.co Web API\PDF Merging API\VB.NET
 \PDF.co Web API\PDF Merging API\C#\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\C#\Merge PDF Documents From URLs
@@ -4209,6 +4216,8 @@
 \PDF.co Web API\PDF Merging API\PowerShell\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\PowerShell\Merge PDF Documents From URLs
 \PDF.co Web API\PDF Merging API\PowerShell\Merge PDF Documents From URLs Asynchronously
+\PDF.co Web API\PDF Merging API\Python\Merge PDF Documents From Uploaded Files
+\PDF.co Web API\PDF Merging API\Python\Merge PDF Documents From Uploaded Files Asynchronously
 \PDF.co Web API\PDF Merging API\VB.NET\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\VB.NET\Merge PDF Documents From URLs
 \PDF.co Web API\PDF Merging API\VB.NET\Merge PDF Documents From URLs Asynchronously
@@ -4246,6 +4255,7 @@
 \PDF.co Web API\PDF Splitting API\JavaScript
 \PDF.co Web API\PDF Splitting API\PHP
 \PDF.co Web API\PDF Splitting API\PowerShell
+\PDF.co Web API\PDF Splitting API\Python
 \PDF.co Web API\PDF Splitting API\VB.NET
 \PDF.co Web API\PDF Splitting API\C#\Split PDF From Uploaded File
 \PDF.co Web API\PDF Splitting API\C#\Split PDF From URL
@@ -4265,6 +4275,8 @@
 \PDF.co Web API\PDF Splitting API\PowerShell\Split PDF From Uploaded File
 \PDF.co Web API\PDF Splitting API\PowerShell\Split PDF From URL
 \PDF.co Web API\PDF Splitting API\PowerShell\Split PDF From URL Asynchronously
+\PDF.co Web API\PDF Splitting API\Python\Split PDF From Uploaded File
+\PDF.co Web API\PDF Splitting API\Python\Split PDF From Uploaded File Asynchronously
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From Uploaded File
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From URL
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From URL Asynchronously
@@ -4272,6 +4284,7 @@
 \PDF.co Web API\PDF Text Search API\Java
 \PDF.co Web API\PDF Text Search API\JavaScript
 \PDF.co Web API\PDF Text Search API\PowerShell
+\PDF.co Web API\PDF Text Search API\Python
 \PDF.co Web API\PDF Text Search API\VB.NET
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from Uploaded File
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from Uploaded File Asynchronously
@@ -4291,6 +4304,8 @@
 \PDF.co Web API\PDF Text Search API\PowerShell\PDF Text Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Text Search API\PowerShell\PDF Text Search from URL
 \PDF.co Web API\PDF Text Search API\PowerShell\PDF Text Search from URL Asynchronously
+\PDF.co Web API\PDF Text Search API\Python\PDF Text Search from Uploaded File
+\PDF.co Web API\PDF Text Search API\Python\PDF Text Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Text Search API\VB.NET\PDF Text Search from Uploaded File
 \PDF.co Web API\PDF Text Search API\VB.NET\PDF Text Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Text Search API\VB.NET\PDF Text Search from URL
@@ -4397,6 +4412,7 @@
 \PDF.co Web API\PDF To HTML API\JavaScript
 \PDF.co Web API\PDF To HTML API\PHP
 \PDF.co Web API\PDF To HTML API\PowerShell
+\PDF.co Web API\PDF To HTML API\Python
 \PDF.co Web API\PDF To HTML API\VB.NET
 \PDF.co Web API\PDF To HTML API\C#\Convert PDF To HTML From Uploaded File
 \PDF.co Web API\PDF To HTML API\C#\Convert PDF To HTML From URL
@@ -4418,6 +4434,8 @@
 \PDF.co Web API\PDF To HTML API\PowerShell\Convert PDF To HTML From Uploaded File
 \PDF.co Web API\PDF To HTML API\PowerShell\Convert PDF To HTML From URL
 \PDF.co Web API\PDF To HTML API\PowerShell\Convert PDF To HTML From URL Asynchronously
+\PDF.co Web API\PDF To HTML API\Python\Convert PDF To HTML From Uploaded File
+\PDF.co Web API\PDF To HTML API\Python\Convert PDF To HTML From Uploaded File Asynchronously
 \PDF.co Web API\PDF To HTML API\VB.NET\Convert PDF To HTML From Uploaded File
 \PDF.co Web API\PDF To HTML API\VB.NET\Convert PDF To HTML From URL
 \PDF.co Web API\PDF To HTML API\VB.NET\Convert PDF To HTML From URL Asynchronously
