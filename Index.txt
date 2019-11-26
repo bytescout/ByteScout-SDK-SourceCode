@@ -1190,6 +1190,7 @@
 \Cloud API Server\Barcode Reader API
 \Cloud API Server\CSV To PDF API
 \Cloud API Server\DOC To PDF API
+\Cloud API Server\Document Parser API
 \Cloud API Server\Excel To CSV API
 \Cloud API Server\Excel To HTML API
 \Cloud API Server\Excel To JSON API
@@ -1342,6 +1343,23 @@
 \Cloud API Server\DOC To PDF API\VB.NET\Convert DOC To PDF From Uploaded File
 \Cloud API Server\DOC To PDF API\VB.NET\Convert DOC To PDF From URL
 \Cloud API Server\DOC To PDF API\VB.NET\Convert DOC To PDF From URL Asynchronously
+\Cloud API Server\Document Parser API\C#
+\Cloud API Server\Document Parser API\Java
+\Cloud API Server\Document Parser API\JavaScript
+\Cloud API Server\Document Parser API\Powershell
+\Cloud API Server\Document Parser API\VB.NET
+\Cloud API Server\Document Parser API\C#\Parse From URL
+\Cloud API Server\Document Parser API\C#\Parse From URL Asynchronously
+\Cloud API Server\Document Parser API\C#\Parse Uploaded File
+\Cloud API Server\Document Parser API\C#\Parse Uploaded File Asynchronously
+\Cloud API Server\Document Parser API\Java\Parse From Url
+\Cloud API Server\Document Parser API\Java\Parse Uploaded File
+\Cloud API Server\Document Parser API\JavaScript\Parse From Url (Node.js)
+\Cloud API Server\Document Parser API\JavaScript\Parse Uploaded File (Node.js)
+\Cloud API Server\Document Parser API\Powershell\Parse From Uploaded File
+\Cloud API Server\Document Parser API\Powershell\Parse From Url
+\Cloud API Server\Document Parser API\VB.NET\Parse From Url
+\Cloud API Server\Document Parser API\VB.NET\Parse Uploaded File
 \Cloud API Server\Excel To CSV API\JavaScript
 \Cloud API Server\Excel To CSV API\JavaScript\Convert Excel to CSV in jQuery
 \Cloud API Server\Excel To CSV API\JavaScript\Convert Excel to CSV in jQuery - Async API
