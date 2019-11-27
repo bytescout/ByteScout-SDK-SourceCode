@@ -3754,8 +3754,8 @@
 \PDF Suite\VB6\Get pdf page width and height with pdf to html sdk
 \PDF Suite\VB6\Merge pdf with pdf extractor sdk
 \PDF Suite\VB6\Split pdf with pdf extractor sdk
-\PDF Suite\VB6\Create side by side manifest\UMMM-master
-\PDF Suite\VB6\Create side by side manifest\UMMM-master\Src
+\PDF Suite\VB6\Create side by side manifest\Create side by side manfiest
+\PDF Suite\VB6\Create side by side manifest\Create side by side manfiest\Src
 \PDF Suite\VBScript\Add 3d annotation in pdf with pdf sdk
 \PDF Suite\VBScript\Add file attachment to pdf with pdf sdk
 \PDF Suite\VBScript\Add goto action to pdf with pdf sdk
@@ -5700,8 +5700,8 @@
 \Premium Suite\Visual Basic 6\Set barcode size with barcode sdk
 \Premium Suite\Visual Basic 6\Simple barcode reading with BarCode Reader SDK
 \Premium Suite\Visual Basic 6\Split pdf with pdf extractor sdk
-\Premium Suite\Visual Basic 6\Create side by side manifest\UMMM-master
-\Premium Suite\Visual Basic 6\Create side by side manifest\UMMM-master\Src
+\Premium Suite\Visual Basic 6\Create side by side manifest\Create side by side manifest
+\Premium Suite\Visual Basic 6\Create side by side manifest\Create side by side manifest\Src
 \QR Code SDK\C#
 \QR Code SDK\Microsoft Access
 \QR Code SDK\Microsoft Excel
