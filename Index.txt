@@ -318,6 +318,7 @@
 \BarCode SDK\C#\GS1 DataBar Stacked Omnidirectional Barcode
 \BarCode SDK\C#\GS1 DataBar Truncated Barcode
 \BarCode SDK\C#\GS1 Datamatrix Barcode
+\BarCode SDK\C#\GS1 Datamatrix barcode with multiline captions
 \BarCode SDK\C#\GS1 QR Code Barcode
 \BarCode SDK\C#\Interleaved 2 of 5 Barcode
 \BarCode SDK\C#\ISBN Barcode
@@ -429,6 +430,7 @@
 \BarCode SDK\VB.NET\Generate vCard QR Code
 \BarCode SDK\VB.NET\Generate Word Document With Barcodes
 \BarCode SDK\VB.NET\GS1 Datamatrix
+\BarCode SDK\VB.NET\GS1 Datamatrix barcode with multiline captions
 \BarCode SDK\VB.NET\GS1 QR Code
 \BarCode SDK\VB.NET\Interleaved 2 of 5 Barcode
 \BarCode SDK\VB.NET\ISBN Barcode
@@ -484,6 +486,7 @@
 \BarCode SDK\VBScript\Create Barcode from Excel
 \BarCode SDK\VBScript\Custom PDF417 Configuration
 \BarCode SDK\VBScript\Generate Barcode
+\BarCode SDK\VBScript\Generate barcode with multiline caption
 \BarCode SDK\VBScript\Generate Barcodes From Text File
 \BarCode SDK\VBScript\Monochrome Bitmap
 \BarCode SDK\VBScript\PDF417 Barcode
@@ -3184,6 +3187,7 @@
 \PDF SDK\C#\Set Tiling Patterns for Drawings in PDF
 \PDF SDK\C#\Set Transformations for Drawings in PDF
 \PDF SDK\C#\Set Word Spacing for Text in PDF
+\PDF SDK\C#\Shift Page Content
 \PDF SDK\C#\Sign PDF and Set Security
 \PDF SDK\C#\Split PDF Document
 \PDF SDK\C#\Use PDF Layers
@@ -3265,6 +3269,7 @@
 \PDF SDK\VB.NET\Set PDF Document Information
 \PDF SDK\VB.NET\Set Superscript and Subscript for Text in PDF
 \PDF SDK\VB.NET\Set Word Spacing for Text in PDF
+\PDF SDK\VB.NET\Shift Page Content
 \PDF SDK\VB.NET\Sign PDF
 \PDF SDK\VB.NET\Use Drawing Transformations for PDF
 \PDF SDK\VB.NET\Use Markup for Annotations in PDF
@@ -3317,6 +3322,7 @@
 \PDF SDK\VBScript and VB6\Set Transparency for Drawing in PDF
 \PDF SDK\VBScript and VB6\Set Word Spacing for Text in PDF
 \PDF SDK\VBScript and VB6\Setup PDF Document Information
+\PDF SDK\VBScript and VB6\Shift Page Content
 \PDF SDK\VBScript and VB6\Sign PDF Document
 \PDF SDK\VBScript and VB6\Transform Drawing in PDF
 \PDF SDK\VBScript and VB6\Use Blend Mode for Drawing in PDF
@@ -3993,6 +3999,7 @@
 \PDF.co Web API\Excel To PDF API
 \PDF.co Web API\HTML To PDF API
 \PDF.co Web API\Image To PDF API
+\PDF.co Web API\Invoice Parser API
 \PDF.co Web API\PDF Information API
 \PDF.co Web API\PDF Make Searchable API
 \PDF.co Web API\PDF Merging API
@@ -4250,6 +4257,30 @@
 \PDF.co Web API\Image To PDF API\VB.NET\Convert Images To PDF From Uploaded Files
 \PDF.co Web API\Image To PDF API\VB.NET\Convert Images To PDF From URLs
 \PDF.co Web API\Image To PDF API\VB.NET\Convert Images To PDF From URLs Asynchronously
+\PDF.co Web API\Invoice Parser API\C#
+\PDF.co Web API\Invoice Parser API\cURL
+\PDF.co Web API\Invoice Parser API\Java
+\PDF.co Web API\Invoice Parser API\JavaScript
+\PDF.co Web API\Invoice Parser API\PHP
+\PDF.co Web API\Invoice Parser API\PowerShell
+\PDF.co Web API\Invoice Parser API\Python
+\PDF.co Web API\Invoice Parser API\VB.NET
+\PDF.co Web API\Invoice Parser API\C#\Get Invoice Info From Uploaded File
+\PDF.co Web API\Invoice Parser API\C#\Get Invoice Info From URL
+\PDF.co Web API\Invoice Parser API\cURL\Get Invoice Info from File
+\PDF.co Web API\Invoice Parser API\cURL\Get Invoice Info From URL
+\PDF.co Web API\Invoice Parser API\Java\Get Invoice Info From Uploaded File
+\PDF.co Web API\Invoice Parser API\Java\Get Invoice Info From URL
+\PDF.co Web API\Invoice Parser API\JavaScript\Get Invoice Info From File (Node.js)
+\PDF.co Web API\Invoice Parser API\JavaScript\Get Invoice Info From Uploaded File (Node.js)
+\PDF.co Web API\Invoice Parser API\JavaScript\Get Invoice Info From URL (Node.js)
+\PDF.co Web API\Invoice Parser API\PHP\Get Invoice Info From Uploaded File
+\PDF.co Web API\Invoice Parser API\PowerShell\Get Invoice Info From Uploaded File
+\PDF.co Web API\Invoice Parser API\PowerShell\Get Invoice Info From URL
+\PDF.co Web API\Invoice Parser API\Python\Get Invoice Info From Uploaded File
+\PDF.co Web API\Invoice Parser API\Python\Get Invoice Info From URL
+\PDF.co Web API\Invoice Parser API\VB.NET\Get Invoice Info From Uploaded File
+\PDF.co Web API\Invoice Parser API\VB.NET\Get Invoice Info From URL
 \PDF.co Web API\PDF Information API\C#
 \PDF.co Web API\PDF Information API\cURL
 \PDF.co Web API\PDF Information API\Java
@@ -4441,6 +4472,7 @@
 \PDF.co Web API\PDF To CSV API\Python
 \PDF.co Web API\PDF To CSV API\VB.NET
 \PDF.co Web API\PDF To CSV API\C#\Advanced Conversion Options
+\PDF.co Web API\PDF To CSV API\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From URL Asynchronously
@@ -4450,6 +4482,7 @@
 \PDF.co Web API\PDF To CSV API\Java\Convert PDF To CSV From Uploaded File Asynchronously
 \PDF.co Web API\PDF To CSV API\Java\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\JavaScript\Advanced Conversion Options
+\PDF.co Web API\PDF To CSV API\JavaScript\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From File (Node.js)
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From File (Node.js) - Async API
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From Uploaded File (Node.js)
@@ -4461,12 +4494,14 @@
 \PDF.co Web API\PDF To CSV API\PHP\Convert PDF To CSV Asynchronously
 \PDF.co Web API\PDF To CSV API\PHP\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\PowerShell\Advanced Conversion Options
+\PDF.co Web API\PDF To CSV API\PowerShell\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From URL Asynchronously
 \PDF.co Web API\PDF To CSV API\Python\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\Python\Convert PDF To CSV From Uploaded File Asynchronously
 \PDF.co Web API\PDF To CSV API\VB.NET\Advanced Conversion Options
+\PDF.co Web API\PDF To CSV API\VB.NET\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL Asynchronously
@@ -4479,6 +4514,7 @@
 \PDF.co Web API\PDF To Excel API\Python
 \PDF.co Web API\PDF To Excel API\VB.NET
 \PDF.co Web API\PDF To Excel API\C#\Advanced Conversion Options
+\PDF.co Web API\PDF To Excel API\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLS From Uploaded File
 \PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLS From Uploaded File (WinForms)
 \PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLS From URL
@@ -4495,6 +4531,7 @@
 \PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLSX From URL
 \PDF.co Web API\PDF To Excel API\JavaScript\Advanced Conversion Options
+\PDF.co Web API\PDF To Excel API\JavaScript\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From File (Node.js)
 \PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From File (Node.js) - Async API
 \PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From Uploaded File (Node.js)
@@ -4512,6 +4549,7 @@
 \PDF.co Web API\PDF To Excel API\PHP\Convert PDF To XLSX Asynchronously
 \PDF.co Web API\PDF To Excel API\PHP\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To Excel API\PowerShell\Advanced Conversion Options
+\PDF.co Web API\PDF To Excel API\PowerShell\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLS From Uploaded File
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLS From URL
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLS From URL Asynchronously
@@ -4521,6 +4559,7 @@
 \PDF.co Web API\PDF To Excel API\Python\Convert PDF To Excel From Uploaded File
 \PDF.co Web API\PDF To Excel API\Python\Convert PDF To Excel From Uploaded File Asynchronously
 \PDF.co Web API\PDF To Excel API\VB.NET\Advanced Conversion Options
+\PDF.co Web API\PDF To Excel API\VB.NET\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From Uploaded File
 \PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From Uploaded File (WinForms)
 \PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From URL
@@ -4639,6 +4678,7 @@
 \PDF.co Web API\PDF To JSON API\Python
 \PDF.co Web API\PDF To JSON API\VB.NET
 \PDF.co Web API\PDF To JSON API\C#\Advanced Conversion Options
+\PDF.co Web API\PDF To JSON API\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From Uploaded File Asynchronously
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From URL
@@ -4647,6 +4687,7 @@
 \PDF.co Web API\PDF To JSON API\Java\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\Java\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\JavaScript\Advanced Conversion Options
+\PDF.co Web API\PDF To JSON API\JavaScript\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From File (Node.js)
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From File (Node.js) - Async API
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From Uploaded File (Node.js)
@@ -4658,12 +4699,14 @@
 \PDF.co Web API\PDF To JSON API\PHP\Convert PDF To JSON Asynchronously
 \PDF.co Web API\PDF To JSON API\PHP\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\PowerShell\Advanced Conversion Options
+\PDF.co Web API\PDF To JSON API\PowerShell\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To JSON API\PowerShell\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\PowerShell\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\PowerShell\Convert PDF To JSON From URL Asynchronously
 \PDF.co Web API\PDF To JSON API\Python\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\Python\Convert PDF To JSON From Uploaded File Asynchronously
 \PDF.co Web API\PDF To JSON API\VB.NET\Advanced Conversion Options
+\PDF.co Web API\PDF To JSON API\VB.NET\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From URL Asynchronously
@@ -4676,6 +4719,7 @@
 \PDF.co Web API\PDF To Text API\Python
 \PDF.co Web API\PDF To Text API\VB.NET
 \PDF.co Web API\PDF To Text API\C#\Advanced Conversion Options
+\PDF.co Web API\PDF To Text API\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From URL Asynchronously
@@ -4684,6 +4728,7 @@
 \PDF.co Web API\PDF To Text API\Java\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\Java\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\JavaScript\Advanced Conversion Options
+\PDF.co Web API\PDF To Text API\JavaScript\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From File (Node.js)
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From File (Node.js) - Async API
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From Uploaded File (Node.js)
@@ -4695,12 +4740,14 @@
 \PDF.co Web API\PDF To Text API\PHP\Convert PDF To Text Asynchronously
 \PDF.co Web API\PDF To Text API\PHP\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\PowerShell\Advanced Conversion Options
+\PDF.co Web API\PDF To Text API\PowerShell\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From URL Asynchronously
 \PDF.co Web API\PDF To Text API\Python\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\Python\Convert PDF To Text From Uploaded File Asynchronously
 \PDF.co Web API\PDF To Text API\VB.NET\Advanced Conversion Options
+\PDF.co Web API\PDF To Text API\VB.NET\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL Asynchronously
@@ -4713,6 +4760,7 @@
 \PDF.co Web API\PDF To XML API\Python
 \PDF.co Web API\PDF To XML API\VB.NET
 \PDF.co Web API\PDF To XML API\C#\Advanced Conversion Options
+\PDF.co Web API\PDF To XML API\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From URL Asynchronously
@@ -4721,6 +4769,7 @@
 \PDF.co Web API\PDF To XML API\Java\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\Java\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\JavaScript\Advanced Conversion Options
+\PDF.co Web API\PDF To XML API\JavaScript\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From File (Node.js)
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From File (Node.js) - Async API
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From Uploaded File (Node.js)
@@ -4732,12 +4781,14 @@
 \PDF.co Web API\PDF To XML API\PHP\Convert PDF To XML Asynchronously
 \PDF.co Web API\PDF To XML API\PHP\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\PowerShell\Advanced Conversion Options
+\PDF.co Web API\PDF To XML API\PowerShell\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\PowerShell\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\PowerShell\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\PowerShell\Convert PDF To XML From URL Asynchronously
 \PDF.co Web API\PDF To XML API\Python\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\Python\Convert PDF To XML From Uploaded File Asynchronously
 \PDF.co Web API\PDF To XML API\VB.NET\Advanced Conversion Options
+\PDF.co Web API\PDF To XML API\VB.NET\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL Asynchronously
