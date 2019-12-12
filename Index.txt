@@ -2650,16 +2650,19 @@
 \Document Parser SDK\C#\Parse Multipage Table
 \Document Parser SDK\C#\Parse Simple Document
 \Document Parser SDK\C#\Parse with OCR
+\Document Parser SDK\C#\Parsing and reading data from Airline Tickets
 \Document Parser SDK\C#\Parse and Generate HL7 Output\InputData
 \Document Parser SDK\C#\Parse and Generate HL7 Output\Src
 \Document Parser SDK\VB.NET\Create Custom Template
 \Document Parser SDK\VB.NET\Parse Multipage Table
 \Document Parser SDK\VB.NET\Parse Simple Document
 \Document Parser SDK\VB.NET\Parse with OCR
+\Document Parser SDK\VB.NET\Parsing and reading data from Airline Tickets
 \Document Parser SDK\VBScript and VB6\Create Custom Template
 \Document Parser SDK\VBScript and VB6\Parse Multipage Table
 \Document Parser SDK\VBScript and VB6\Parse Simple Document
 \Document Parser SDK\VBScript and VB6\Parse with OCR
+\Document Parser SDK\VBScript and VB6\Parsing and reading data from Airline Tickets
 \Image To Video SDK\.NET Core
 \Image To Video SDK\ASP.NET
 \Image To Video SDK\C#
