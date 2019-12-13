@@ -141,6 +141,7 @@
 \BarCode Reader SDK\C#\Read vCard from QR Code
 \BarCode Reader SDK\C#\Reduce CPU Usage
 \BarCode Reader SDK\C#\Set Barcode Decoding Profiles
+\BarCode Reader SDK\C#\Set Orientation and Read Rotated Barcodes
 \BarCode Reader SDK\C#\Split PDF Document By Found Barcode
 \BarCode Reader SDK\C#\WPF UI Example for barcode reading
 \BarCode Reader SDK\C#\Batch Read Barcodes To CSV\BarcodeFiles
