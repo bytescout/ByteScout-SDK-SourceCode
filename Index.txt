@@ -123,6 +123,7 @@
 \BarCode Reader SDK\C#\Decode USPS Tray Label
 \BarCode Reader SDK\C#\Decoding barcodes from PDF by pages
 \BarCode Reader SDK\C#\Export Results to XML, CSV, TXT
+\BarCode Reader SDK\C#\Filters to downscale Image
 \BarCode Reader SDK\C#\General Example reading barcodes
 \BarCode Reader SDK\C#\GUI Example for Barcode Reading
 \BarCode Reader SDK\C#\Image Preprocessing Filters
@@ -215,6 +216,7 @@
 \BarCode Reader SDK\VB.NET\Decode USPS Tray Label
 \BarCode Reader SDK\VB.NET\Decoding barcodes from PDF by pages
 \BarCode Reader SDK\VB.NET\Export Results to XML, CSV, TXT
+\BarCode Reader SDK\VB.NET\Filters to downscale Image
 \BarCode Reader SDK\VB.NET\General Barcode Reading Example
 \BarCode Reader SDK\VB.NET\GUI Example For Barcode Reading
 \BarCode Reader SDK\VB.NET\Inspect Decoded Barcodes
@@ -5904,6 +5906,8 @@
 \Screen Capturing SDK\C#\Capture WebCam Full Screen Only
 \Screen Capturing SDK\C#\Create Full Featured Screen Capturing App
 \Screen Capturing SDK\C#\Make Full Screen Recording Demo 2 with Text And Images Overlay
+\Screen Capturing SDK\C#\Merge AVI Video Files
+\Screen Capturing SDK\C#\Merge WMV Video Files
 \Screen Capturing SDK\C#\Pause And Resume
 \Screen Capturing SDK\C#\Record Screen from Command Line Console
 \Screen Capturing SDK\C#\Set Video Audio Settings
@@ -5933,6 +5937,8 @@
 \Screen Capturing SDK\VB.NET\Blackout Sensitive Info on Screen Video
 \Screen Capturing SDK\VB.NET\Capture From Entire Screen into WEBM Video
 \Screen Capturing SDK\VB.NET\Capture Screen Video and Add Time Stamp
+\Screen Capturing SDK\VB.NET\Merge AVI Video Files
+\Screen Capturing SDK\VB.NET\Merge WMV Video Files
 \Screen Capturing SDK\VB.NET\Pause And Resume Screen Video Recording
 \Screen Capturing SDK\VB.NET\Record Screen Video from Command Line Console
 \Screen Capturing SDK\VB.NET\Record Screen Video From Entire Screen
@@ -5962,6 +5968,8 @@
 \Screen Capturing SDK\VBScript and VB6\Capture Video From FlashPlayer Control In Browser
 \Screen Capturing SDK\VBScript and VB6\Capture Video From Silverlight Control In Browser
 \Screen Capturing SDK\VBScript and VB6\Capture WebCam Full Screen Only
+\Screen Capturing SDK\VBScript and VB6\Merge AVI Video Files
+\Screen Capturing SDK\VBScript and VB6\Merge WMV Video Files
 \Screen Capturing SDK\VBScript and VB6\Pause And Resume Screen Video Recording
 \Screen Capturing SDK\VBScript and VB6\Set Blackout for Sensitive Info in Screen Video
 \Screen Capturing SDK\VBScript and VB6\Set Low FPS and Min WMV Size for Video
