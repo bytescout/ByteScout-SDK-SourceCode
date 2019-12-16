@@ -1,5 +1,5 @@
 ﻿---
-templateVersion: 2
+templateVersion: 3
 templatePriority: 0
 sourceId: Google Invoice
 detectionRules:
@@ -9,38 +9,46 @@ detectionRules:
   - Invoice
 fields:
   invoiceId:
+    type: regex
     expression: 'Invoice number: {{123}}'
   dateIssued:
+    type: regex
     expression: Issue date:\s+([a-zA-Z]{3} \d+, \d{4})
-    type: date
+    dataType: date
     dateFormat: MMM d, yyyy
   total:
+    type: regex
     expression: 'Amount due in USD: {{DECIMAL}}'
-    type: decimal
+    dataType: decimal
   subTotal:
+    type: regex
     expression: 'Subtotal in USD: {{DECIMAL}}'
-    type: decimal
+    dataType: decimal
   taxRate:
+    type: regex
     expression: State sales tax ({{123}}%)
-    type: integer
+    dataType: integer
   tax:
+    type: regex
     expression: State sales tax{{ANY}}{{DECIMAL}}
-    type: decimal
+    dataType: decimal
   companyName:
+    type: static
     expression: Google LLC
-    static: true
   billTo:
-    rect:
+    type: rectangle
+    rectangle:
     - 0
     - 152
     - 280
     - 72
     pageIndex: 0
   billingId:
+    type: regex
     expression: 'Billing ID: {{123+}}'
   currency:
+    type: static
     expression: USD
-    static: true
 tables:
 - name: table1
   start:

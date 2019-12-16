@@ -1,5 +1,5 @@
 ﻿---
-templateVersion: 2
+templateVersion: 3
 templatePriority: 0
 sourceId: DigitalOcean Invoice
 detectionRules:
@@ -9,20 +9,23 @@ detectionRules:
   - Invoice Number
 fields:
   companyName:
+    type: static
     expression: DigitalOcean
-    static: true
   total:
+    type: regex
     expression: 'Total: {{MONEY}}'
-    type: decimal
+    dataType: decimal
   dateIssued:
+    type: regex
     expression: 'Date Issued: {{DATE+}}'
-    type: date
+    dataType: date
     dateFormat: auto-mdy
   invoiceId:
+    type: regex
     expression: 'Invoice Number: {{123}}'
   currency:
+    type: static
     expression: USD
-    static: true
 tables:
 - name: table1
   start:

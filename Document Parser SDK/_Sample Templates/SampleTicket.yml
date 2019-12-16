@@ -1,8 +1,10 @@
 ﻿templateVersion: 3
 templatePriority: 0
-sourceId: Untitled document kind
+sourceId: MakeMyTrip Booking
 detectionRules:
-  keywords: []
+  keywords:
+  - MakeMyTrip
+  - Eticket-Dom-Flight
 fields:
   BookingNo:
     type: rectangle
@@ -24,18 +26,18 @@ fields:
   DepartureFrom:
     type: rectangle
     rectangle:
-    - 153.125
-    - 176.875
-    - 77.5000076
-    - 11.25
+    - 153
+    - 176
+    - 77
+    - 8.5
     pageIndex: 0
   ArrivalTo:
     type: rectangle
     rectangle:
-    - 286.875
-    - 175.625
-    - 83.75
-    - 11.875001
+    - 285
+    - 176
+    - 84
+    - 8.5
     pageIndex: 0
   DepartureAt:
     type: rectangle
@@ -58,10 +60,10 @@ fields:
   FlightType:
     type: rectangle
     rectangle:
-    - 434.375
-    - 160
-    - 68.125
-    - 10.625
+    - 433.5
+    - 159.5
+    - 68
+    - 10.5
     pageIndex: 0
   FlightDuration:
     type: rectangle

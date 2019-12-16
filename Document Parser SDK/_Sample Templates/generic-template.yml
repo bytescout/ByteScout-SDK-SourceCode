@@ -1,5 +1,5 @@
 ---
-templateVersion: 2
+templateVersion: 3
 # set lowest priority (highest priority is 0)
 templatePriority: 999999
 sourceId: Generic Invoice
@@ -9,14 +9,19 @@ detectionRules:
   - .+
 fields:
   invoiceId:
+    type: regex
     expression: '(?i)(?:Invoice Number|Invoice #|Invoice No|Number):?\s+(\S+)'
   dateIssued:
+    type: regex
     expression: '(?i)(?:Invoice Date|Issue Date|Billed On|Date):?\s+(.*?)(?=  |\r?$)'
   dateDue:
+    type: regex
     expression: '(?i)(?:Due Date|Due On):?\s+(.*?)(?=  |\r?$)'
   total:
+    type: regex
     expression: '(?i)(?:Total Due|\bTotal|Amount):?\s+(?:USD|\$)?\s?(?<value>(\d+,?)+\.\d\d)'
-    type: decimal
+    dataType: decimal
   subTotal:
+    type: regex
     expression: '(?i)(?:Subtotal):?\s+(?:USD|\$)?\s?(?<value>(\d+,?)+\.\d\d)'
-    type: decimal
+    dataType: decimal

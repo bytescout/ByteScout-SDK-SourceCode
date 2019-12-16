@@ -1,5 +1,5 @@
 ---
-templateVersion: 2
+templateVersion: 3
 templatePriority: 0
 sourceId: Amazon Web Services Invoice
 detectionRules:
@@ -9,34 +9,39 @@ detectionRules:
   - Invoice
 fields:
   total:
+    type: regex
     expression: TOTAL AMOUNT DUE ON{{ANY}}{{MONEY}}
-    type: decimal
+    dataType: decimal
   subTotal:
+    type: regex
     expression: ^[ ]+Charges[ ]+\$(?<value>(\d{1,3},?)+\.\d\d)
-    type: decimal
+    dataType: decimal
   dateIssued:
+    type: regex
     expression: Invoice Date:\s+([a-zA-Z]+ \d+ , \d+)
-    type: date
+    dataType: date
     dateFormat: MMMM d , yyyy
   invoiceId:
+    type: regex
     expression: 'Invoice Number: {{123}}'
   companyName:
+    type: static
     expression: Amazon Web Services, Inc.
-    static: true
   companyWebsite:
+    type: static
     expression: aws.amazon.com
-    static: true
   billTo:
+    type: rectangle
     expression: Bill to Address:{{ANY}}
-    rect:
+    rectangle:
     - 33
     - 115.5
     - 213.75
     - 72.75
     pageIndex: 0
   currency:
+    type: static
     expression: USD
-    static: true
 tables:
 - name: table1
   start:

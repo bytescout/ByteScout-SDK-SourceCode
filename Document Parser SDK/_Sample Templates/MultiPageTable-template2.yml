@@ -3,7 +3,7 @@
 # a regular expression for table rows. Rows and cells are extracted automatically 
 # by specified column coordinates. Use `Template Editor` app to find get the coordinates 
 # (cursor coordinates are shown in the toolbar).
-templateVersion: 2
+templateVersion: 3
 templatePriority: 0
 sourceId: Multipage Table Test
 detectionRules:
@@ -11,7 +11,9 @@ detectionRules:
   - Sample document with multi-page table
 fields:
   total:
-    expression: TOTAL {{DECIMAL}}    
+    type: regex
+    expression: TOTAL {{DECIMAL}}
+    dataType: decimal
 tables:
 - name: table1
   # coordinate or regular expression to find the table start on each document page
