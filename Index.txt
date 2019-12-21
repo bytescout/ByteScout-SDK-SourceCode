@@ -3129,6 +3129,7 @@
 \PDF SDK\C#\Add URI Link Action in PDF
 \PDF SDK\C#\Add Video Annotation in PDF
 \PDF SDK\C#\Add Watermarks to PDF
+\PDF SDK\C#\Change Page Size
 \PDF SDK\C#\Convert Digital Photos to PDF
 \PDF SDK\C#\Convert DOCX to HTML
 \PDF SDK\C#\Convert DOCX to PDF
