@@ -3998,6 +3998,7 @@
 \PDF.co Web API\Barcode Generator API
 \PDF.co Web API\Barcode Reader API
 \PDF.co Web API\CSV To PDF API
+\PDF.co Web API\Delete Text From PDF
 \PDF.co Web API\DOC To PDF API
 \PDF.co Web API\Document Parser API
 \PDF.co Web API\Excel To CSV API
@@ -4020,6 +4021,10 @@
 \PDF.co Web API\PDF To JSON API
 \PDF.co Web API\PDF To Text API
 \PDF.co Web API\PDF To XML API
+\PDF.co Web API\Render Url As Jpg
+\PDF.co Web API\Render Url As Png
+\PDF.co Web API\Replace Text From PDF
+\PDF.co Web API\Replace Text With Image From PDF
 \PDF.co Web API\Add Text And Images To PDF\C#
 \PDF.co Web API\Add Text And Images To PDF\cURL
 \PDF.co Web API\Add Text And Images To PDF\Java
@@ -4143,6 +4148,38 @@
 \PDF.co Web API\CSV To PDF API\VB.NET\Convert CSV To PDF From Uploaded File
 \PDF.co Web API\CSV To PDF API\VB.NET\Convert CSV To PDF From URL
 \PDF.co Web API\CSV To PDF API\VB.NET\Convert CSV To PDF From URL Asynchronously
+\PDF.co Web API\Delete Text From PDF\C#
+\PDF.co Web API\Delete Text From PDF\cURL
+\PDF.co Web API\Delete Text From PDF\Java
+\PDF.co Web API\Delete Text From PDF\JavaScript
+\PDF.co Web API\Delete Text From PDF\PHP
+\PDF.co Web API\Delete Text From PDF\PowerShell
+\PDF.co Web API\Delete Text From PDF\Python
+\PDF.co Web API\Delete Text From PDF\VB.NET
+\PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From Uploaded File
+\PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From URL
+\PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From URL Asynchronously
+\PDF.co Web API\Delete Text From PDF\cURL\Delete PDF Text From File
+\PDF.co Web API\Delete Text From PDF\cURL\Delete PDF Text From URL
+\PDF.co Web API\Delete Text From PDF\Java\Delete PDF Text From Uploaded File
+\PDF.co Web API\Delete Text From PDF\Java\Delete PDF Text From URL
+\PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From File (Node.js)
+\PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From File (Node.js) - Async API
+\PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From Uploaded File (Node.js)
+\PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From Uploaded File (Node.js) - Async API
+\PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From URL (Node.js)
+\PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From URL (Node.js) - Async API
+\PDF.co Web API\Delete Text From PDF\PHP\Delete PDF Text Asynchronously
+\PDF.co Web API\Delete Text From PDF\PHP\Delete PDF Text From Uploaded File
+\PDF.co Web API\Delete Text From PDF\PowerShell\Delete PDF Text From Uploaded File
+\PDF.co Web API\Delete Text From PDF\PowerShell\Delete PDF Text From URL
+\PDF.co Web API\Delete Text From PDF\PowerShell\Delete PDF Text From URL Asynchronously
+\PDF.co Web API\Delete Text From PDF\Python\Delete PDF Text From Uploaded File
+\PDF.co Web API\Delete Text From PDF\Python\Delete PDF Text From URL
+\PDF.co Web API\Delete Text From PDF\Python\Delete PDF Text From URL Asynchronously
+\PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From Uploaded File
+\PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From URL
+\PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From URL Asynchronously
 \PDF.co Web API\DOC To PDF API\C#
 \PDF.co Web API\DOC To PDF API\cURL
 \PDF.co Web API\DOC To PDF API\Java
@@ -4799,6 +4836,104 @@
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL Asynchronously
+\PDF.co Web API\Render Url As Jpg\C#
+\PDF.co Web API\Render Url As Jpg\cURL
+\PDF.co Web API\Render Url As Jpg\Java
+\PDF.co Web API\Render Url As Jpg\JavaScript
+\PDF.co Web API\Render Url As Jpg\PHP
+\PDF.co Web API\Render Url As Jpg\PowerShell
+\PDF.co Web API\Render Url As Jpg\Python
+\PDF.co Web API\Render Url As Jpg\VB.NET
+\PDF.co Web API\Render Url As Jpg\C#\Render Url To Jpg
+\PDF.co Web API\Render Url As Jpg\cURL\Render Url To Jpg
+\PDF.co Web API\Render Url As Jpg\Java\Render Url To Jpg
+\PDF.co Web API\Render Url As Jpg\JavaScript\Render Url To Jpg (Node.js)
+\PDF.co Web API\Render Url As Jpg\JavaScript\Render Url To Jpg (Node.js) - Async API
+\PDF.co Web API\Render Url As Jpg\PHP\Render Url To Jpg
+\PDF.co Web API\Render Url As Jpg\PowerShell\Render Url To Jpg
+\PDF.co Web API\Render Url As Jpg\Python\Render Url As Jpg
+\PDF.co Web API\Render Url As Jpg\VB.NET\Render Url To Jpg
+\PDF.co Web API\Render Url As Png\C#
+\PDF.co Web API\Render Url As Png\cURL
+\PDF.co Web API\Render Url As Png\Java
+\PDF.co Web API\Render Url As Png\JavaScript
+\PDF.co Web API\Render Url As Png\PHP
+\PDF.co Web API\Render Url As Png\PowerShell
+\PDF.co Web API\Render Url As Png\Python
+\PDF.co Web API\Render Url As Png\VB.NET
+\PDF.co Web API\Render Url As Png\C#\Render Url To Png
+\PDF.co Web API\Render Url As Png\cURL\Render Url To Png
+\PDF.co Web API\Render Url As Png\Java\Render Url To Png
+\PDF.co Web API\Render Url As Png\JavaScript\Render Url To Png (Node.js)
+\PDF.co Web API\Render Url As Png\JavaScript\Render Url To Png (Node.js) - Async API
+\PDF.co Web API\Render Url As Png\PHP\Render Url To Png
+\PDF.co Web API\Render Url As Png\PowerShell\Render Url To Png
+\PDF.co Web API\Render Url As Png\Python\Render Url As Png
+\PDF.co Web API\Render Url As Png\VB.NET\Render Url To Png
+\PDF.co Web API\Replace Text From PDF\C#
+\PDF.co Web API\Replace Text From PDF\cURL
+\PDF.co Web API\Replace Text From PDF\Java
+\PDF.co Web API\Replace Text From PDF\JavaScript
+\PDF.co Web API\Replace Text From PDF\PHP
+\PDF.co Web API\Replace Text From PDF\PowerShell
+\PDF.co Web API\Replace Text From PDF\Python
+\PDF.co Web API\Replace Text From PDF\VB.NET
+\PDF.co Web API\Replace Text From PDF\C#\Replace Text From Uploaded File
+\PDF.co Web API\Replace Text From PDF\C#\Replace Text From URL
+\PDF.co Web API\Replace Text From PDF\C#\Replace Text From URL Asynchronously
+\PDF.co Web API\Replace Text From PDF\cURL\Replace Text From File
+\PDF.co Web API\Replace Text From PDF\cURL\Replace Text From URL
+\PDF.co Web API\Replace Text From PDF\Java\Replace Text From Uploaded File
+\PDF.co Web API\Replace Text From PDF\Java\Replace Text From URL
+\PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From File (Node.js)
+\PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From File (Node.js) - Async API
+\PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From Uploaded File (Node.js)
+\PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From Uploaded File (Node.js) - Async API
+\PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From URL (Node.js)
+\PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From URL (Node.js) - Async API
+\PDF.co Web API\Replace Text From PDF\PHP\Replace Text Asynchronously
+\PDF.co Web API\Replace Text From PDF\PHP\Replace Text From Uploaded File
+\PDF.co Web API\Replace Text From PDF\PowerShell\Replace Text From Uploaded File
+\PDF.co Web API\Replace Text From PDF\PowerShell\Replace Text From URL
+\PDF.co Web API\Replace Text From PDF\PowerShell\Replace Text From URL Asynchronously
+\PDF.co Web API\Replace Text From PDF\Python\Replace Text From Uploaded File
+\PDF.co Web API\Replace Text From PDF\Python\Replace Text From URL
+\PDF.co Web API\Replace Text From PDF\Python\Replace Text From URL Asynchronously
+\PDF.co Web API\Replace Text From PDF\VB.NET\Replace Text From Uploaded File
+\PDF.co Web API\Replace Text From PDF\VB.NET\Replace Text From URL
+\PDF.co Web API\Replace Text From PDF\VB.NET\Replace Text From URL Asynchronously
+\PDF.co Web API\Replace Text With Image From PDF\C#
+\PDF.co Web API\Replace Text With Image From PDF\cURL
+\PDF.co Web API\Replace Text With Image From PDF\Java
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript
+\PDF.co Web API\Replace Text With Image From PDF\PHP
+\PDF.co Web API\Replace Text With Image From PDF\PowerShell
+\PDF.co Web API\Replace Text With Image From PDF\Python
+\PDF.co Web API\Replace Text With Image From PDF\VB.NET
+\PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From Uploaded File
+\PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From URL
+\PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From URL Asynchronously
+\PDF.co Web API\Replace Text With Image From PDF\cURL\Replace Text With Image From File
+\PDF.co Web API\Replace Text With Image From PDF\cURL\Replace Text With Image From URL
+\PDF.co Web API\Replace Text With Image From PDF\Java\Replace Text With Image From Uploaded File
+\PDF.co Web API\Replace Text With Image From PDF\Java\Replace Text With Image From URL
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From File (Node.js)
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From File (Node.js) - Async API
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From Uploaded File (Node.js)
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From Uploaded File (Node.js) - Async API
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From URL (Node.js)
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From URL (Node.js) - Async API
+\PDF.co Web API\Replace Text With Image From PDF\PHP\Replace Text With Image Asynchronously
+\PDF.co Web API\Replace Text With Image From PDF\PHP\Replace Text With Image From Uploaded File
+\PDF.co Web API\Replace Text With Image From PDF\PowerShell\Replace Text With Image From Uploaded File
+\PDF.co Web API\Replace Text With Image From PDF\PowerShell\Replace Text With Image From URL
+\PDF.co Web API\Replace Text With Image From PDF\PowerShell\Replace Text With Image From URL Asynchronously
+\PDF.co Web API\Replace Text With Image From PDF\Python\Replace Text With Image From Uploaded File
+\PDF.co Web API\Replace Text With Image From PDF\Python\Replace Text With Image From URL
+\PDF.co Web API\Replace Text With Image From PDF\Python\Replace Text With Image From URL Asynchronously
+\PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From Uploaded File
+\PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL
+\PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL Asynchronously
 \Premium Suite\ASP Classic
 \Premium Suite\ASP.NET C#
 \Premium Suite\ASP.NET MVC C#
