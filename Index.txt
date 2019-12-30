@@ -347,6 +347,11 @@
 \BarCode SDK\C#\QR Code Barcode With Calender Entry
 \BarCode SDK\C#\QR Code Barcode With Image inside
 \BarCode SDK\C#\QR Code Barcode With JSON Inside
+\BarCode SDK\C#\QR Code with Email
+\BarCode SDK\C#\QR Code with Message
+\BarCode SDK\C#\QR Code with Sms Message
+\BarCode SDK\C#\QR Code with vCard
+\BarCode SDK\C#\QR Code with Website Url
 \BarCode SDK\C#\Royal Mail Barcode
 \BarCode SDK\C#\Set Additional Barcode Caption
 \BarCode SDK\C#\Set Barcode Angle
@@ -460,8 +465,13 @@
 \BarCode SDK\VB.NET\PZN
 \BarCode SDK\VB.NET\QR Code (2D)
 \BarCode SDK\VB.NET\QR Code With CalenderEntry
+\BarCode SDK\VB.NET\QR Code With Email
 \BarCode SDK\VB.NET\QR Code With Image
 \BarCode SDK\VB.NET\QR Code With JSON
+\BarCode SDK\VB.NET\QR Code With Message
+\BarCode SDK\VB.NET\QR Code With Sms Message
+\BarCode SDK\VB.NET\QR Code With vCard
+\BarCode SDK\VB.NET\QR Code with Website Url
 \BarCode SDK\VB.NET\Rendering Options
 \BarCode SDK\VB.NET\Royal Mail
 \BarCode SDK\VB.NET\Set Angle
@@ -2649,6 +2659,7 @@
 \Document Parser SDK\VBScript and VB6
 \Document Parser SDK\_Sample Templates
 \Document Parser SDK\C#\Create Custom Template
+\Document Parser SDK\C#\Extract line items from tables on multiple pages
 \Document Parser SDK\C#\Parse and Generate HL7 Output
 \Document Parser SDK\C#\Parse Multipage Table
 \Document Parser SDK\C#\Parse Simple Document
@@ -2657,11 +2668,13 @@
 \Document Parser SDK\C#\Parse and Generate HL7 Output\InputData
 \Document Parser SDK\C#\Parse and Generate HL7 Output\Src
 \Document Parser SDK\VB.NET\Create Custom Template
+\Document Parser SDK\VB.NET\Extract line items from tables on multiple pages
 \Document Parser SDK\VB.NET\Parse Multipage Table
 \Document Parser SDK\VB.NET\Parse Simple Document
 \Document Parser SDK\VB.NET\Parse with OCR
 \Document Parser SDK\VB.NET\Parsing and reading data from Airline Tickets
 \Document Parser SDK\VBScript and VB6\Create Custom Template
+\Document Parser SDK\VBScript and VB6\Extract line items from tables on multiple pages
 \Document Parser SDK\VBScript and VB6\Parse Multipage Table
 \Document Parser SDK\VBScript and VB6\Parse Simple Document
 \Document Parser SDK\VBScript and VB6\Parse with OCR
@@ -2872,6 +2885,7 @@
 \PDF Extractor SDK\Delphi\Convert PDF To CSV
 \PDF Extractor SDK\Delphi\PDF Batch Processing
 \PDF Extractor SDK\Microsoft Excel\Extract Text From Coordinates from PDF
+\PDF Extractor SDK\Microsoft Excel\Merge PDF Documents
 \PDF Extractor SDK\Powershell\PDF To JSON
 \PDF Extractor SDK\VB.NET\Add Image Stamp in PDF
 \PDF Extractor SDK\VB.NET\Batch check folder agianst JSON settings
