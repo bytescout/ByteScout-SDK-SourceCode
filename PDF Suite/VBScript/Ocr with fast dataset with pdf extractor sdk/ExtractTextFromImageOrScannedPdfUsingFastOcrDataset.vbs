@@ -27,7 +27,7 @@ extractor.LoadDocumentFromFile("..\..\sample_ocr.pdf")
 extractor.OCRMode = 1 ' OCRMode.Auto = 1
 
 ' Set the location of OCR language data files
-extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_fast"
+extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best_fast"
 			
 ' Set OCR language
 ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder.

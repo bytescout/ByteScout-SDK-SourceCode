@@ -56,7 +56,7 @@ Module Program
                 extractor.OCRMode = OCRMode.TextFromImagesAndVectorsAndRepairedFonts
 
                 ' Set the location of OCR language data files
-                extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\"
+                extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\"
 
                 ' Set OCR language
                 extractor.OCRLanguage = "eng" ' "eng" For english, "deu" For German, "fra" For French, "spa" For Spanish etc - according To files In "ocrdata" folder

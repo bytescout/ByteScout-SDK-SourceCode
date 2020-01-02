@@ -528,7 +528,7 @@ namespace MakeSearchablePDFDiscardingExistingContent
             searchablePDFMaker.LoadDocumentFromFile("sample_ocr_withText.pdf");
             
             // Set the location of language data files
-            searchablePDFMaker.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\";
+            searchablePDFMaker.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\";
 
             // Set OCR language
             searchablePDFMaker.OCRLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder

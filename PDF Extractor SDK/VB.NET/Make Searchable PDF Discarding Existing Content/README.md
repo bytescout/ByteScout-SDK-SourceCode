@@ -627,7 +627,7 @@ Module Module1
         searchablePdfMaker.LoadDocumentFromFile("sample_ocr_withText.pdf")
 
         ' Set the location of OCR language data files
-        searchablePdfMaker.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\"
+        searchablePdfMaker.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\"
 
         ' Set OCR language
         searchablePdfMaker.OCRLanguage = "eng" ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder

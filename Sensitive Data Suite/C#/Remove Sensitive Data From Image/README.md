@@ -56,7 +56,7 @@ namespace RemoveSensitiveDataFromImage
             {
                 // Enable OCR mode and provide path to data folder
                 detector.OCRMode = OCRMode.Auto;
-                detector.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\";
+                detector.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\";
 
                 detector.LoadDocumentFromFile(input);
 

@@ -47,7 +47,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 Set extractor = CreateObject("Bytescout.PDFExtractor.TextExtractor")
 extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
-extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata"
+extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best"
 
 ' Load sample PDF document
 extractor.LoadDocumentFromFile("..\..\sample_ocr.pdf")

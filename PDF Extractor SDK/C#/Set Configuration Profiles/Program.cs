@@ -29,7 +29,7 @@ namespace Profiles
 			TextExtractor extractor = new TextExtractor();
 			extractor.RegistrationName = "demo";
 			extractor.RegistrationKey = "demo";
-            extractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata";
+            extractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best";
 
 			// Load sample PDF document
             extractor.LoadDocumentFromFile("sample_ocr.pdf");

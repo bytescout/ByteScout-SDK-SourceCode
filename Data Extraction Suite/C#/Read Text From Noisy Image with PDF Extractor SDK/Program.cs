@@ -32,7 +32,7 @@ namespace ReadTextFromNoisyImage
                     extractor.OCRMode = OCRMode.TextFromImagesAndVectorsAndRepairedFonts;
 
                     // Set the location of OCR language data files
-                    extractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\";
+                    extractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\";
 
                     // Set OCR language
                     extractor.OCRLanguage = "eng"; // "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder

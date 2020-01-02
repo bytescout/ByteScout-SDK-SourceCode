@@ -2824,6 +2824,7 @@
 \PDF Extractor SDK\C#\Make Searchable PDF Discarding Existing Content
 \PDF Extractor SDK\C#\Make Searchable PDF from Image
 \PDF Extractor SDK\C#\Make Unsearchable PDF
+\PDF Extractor SDK\C#\Maximize performance and speed
 \PDF Extractor SDK\C#\Merge All Documents Within Folder
 \PDF Extractor SDK\C#\Merge PDF Documents
 \PDF Extractor SDK\C#\Merge Protected PDF Documents
@@ -2938,6 +2939,7 @@
 \PDF Extractor SDK\VB.NET\Make Searchable PDF Discarding Existing Content
 \PDF Extractor SDK\VB.NET\Make Searchable PDF from Image
 \PDF Extractor SDK\VB.NET\Make Unsearchable PDF
+\PDF Extractor SDK\VB.NET\Maximize performance and speed
 \PDF Extractor SDK\VB.NET\Merge All Documents Within Folder
 \PDF Extractor SDK\VB.NET\Merge PDF Documents
 \PDF Extractor SDK\VB.NET\Merge Protected PDF Documents
@@ -3016,6 +3018,7 @@
 \PDF Extractor SDK\VBScript\Make Searchable PDF and Fix Rotated Pages
 \PDF Extractor SDK\VBScript\Make Searchable PDF Discarding Existing Content
 \PDF Extractor SDK\VBScript\Make Unsearchable PDF
+\PDF Extractor SDK\VBScript\Maximize performance and speed
 \PDF Extractor SDK\VBScript\Merge All Documents Within Folder
 \PDF Extractor SDK\VBScript\Merge PDF Documents
 \PDF Extractor SDK\VBScript\OCR Analyser for PDF

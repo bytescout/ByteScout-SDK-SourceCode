@@ -296,7 +296,7 @@ namespace ExtractAllText {
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="C:\Program Files\Bytescout PDF Extractor SDK\ocrdata\eng.traineddata">
+    <Content Include="c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\eng.traineddata">
       <Link>ocrdata\eng.traineddata</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

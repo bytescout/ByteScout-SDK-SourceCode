@@ -59,7 +59,7 @@ Class Program
             searchablePDFMaker.LoadDocumentFromFile("sampleScannedPDF_EmailAddress.pdf")
 
             ' Set the location of language data files
-            searchablePDFMaker.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\"
+            searchablePDFMaker.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\"
 
             ' Set OCR language
             searchablePDFMaker.OCRLanguage = "eng" ' "eng" For english, "deu" For German, "fra" For French, "spa" For Spanish etc - according To files In "ocrdata" folder

@@ -54,7 +54,7 @@ Class Program
 
             ' Enable OCR mode And provide path to data folder
             detector.OCRMode = OCRMode.Auto
-            detector.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata\"
+            detector.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\"
 
             detector.LoadDocumentFromFile(input)
 
