@@ -2788,6 +2788,7 @@
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF
 \PDF Extractor SDK\C#\Compare PDF Documents
 \PDF Extractor SDK\C#\Convert Protected PDF Document to XLS
+\PDF Extractor SDK\C#\Correction to Deal with Date Issue after OCR
 \PDF Extractor SDK\C#\Data Masking in PDF
 \PDF Extractor SDK\C#\Detect Lines in PDF
 \PDF Extractor SDK\C#\Extract Attachments from PDF
@@ -2903,6 +2904,7 @@
 \PDF Extractor SDK\VB.NET\Convert PDF To XML
 \PDF Extractor SDK\VB.NET\Convert Protected PDF Document to XLS
 \PDF Extractor SDK\VB.NET\Convert XFA Form To XML in PDF
+\PDF Extractor SDK\VB.NET\Correction to Deal with Date Issue after OCR
 \PDF Extractor SDK\VB.NET\Data Masking in PDF
 \PDF Extractor SDK\VB.NET\Detect Lines in PDF
 \PDF Extractor SDK\VB.NET\Extract Attachments from PDF

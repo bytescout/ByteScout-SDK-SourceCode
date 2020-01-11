@@ -1,0 +1,9 @@
+﻿{
+  "profiles": [
+    {
+      "ocr-dateIssue": {
+        "OCRCorrections.Add()": [ "(\\d)V(\\d)", "$1\\/$2", true ]
+      }
+    }
+  ]
+}
