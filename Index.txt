@@ -122,6 +122,7 @@
 \BarCode Reader SDK\C#\Decode USPS Sack Label
 \BarCode Reader SDK\C#\Decode USPS Tray Label
 \BarCode Reader SDK\C#\Decoding barcodes from PDF by pages
+\BarCode Reader SDK\C#\Download and Process file
 \BarCode Reader SDK\C#\Export Results to XML, CSV, TXT
 \BarCode Reader SDK\C#\Filters to downscale Image
 \BarCode Reader SDK\C#\General Example reading barcodes
@@ -216,6 +217,7 @@
 \BarCode Reader SDK\VB.NET\Decode USPS Sack Label
 \BarCode Reader SDK\VB.NET\Decode USPS Tray Label
 \BarCode Reader SDK\VB.NET\Decoding barcodes from PDF by pages
+\BarCode Reader SDK\VB.NET\Download and Process file
 \BarCode Reader SDK\VB.NET\Export Results to XML, CSV, TXT
 \BarCode Reader SDK\VB.NET\Filters to downscale Image
 \BarCode Reader SDK\VB.NET\General Barcode Reading Example
@@ -2791,6 +2793,7 @@
 \PDF Extractor SDK\C#\Correction to Deal with Date Issue after OCR
 \PDF Extractor SDK\C#\Data Masking in PDF
 \PDF Extractor SDK\C#\Detect Lines in PDF
+\PDF Extractor SDK\C#\Download and Process file
 \PDF Extractor SDK\C#\Extract Attachments from PDF
 \PDF Extractor SDK\C#\Extract Audio from PDF
 \PDF Extractor SDK\C#\Extract CSV from PDF and Fill Database (SQL Server)
@@ -2818,6 +2821,8 @@
 \PDF Extractor SDK\C#\Find Text in PDF With Hyphens
 \PDF Extractor SDK\C#\Find Text in PDF with Smart Match
 \PDF Extractor SDK\C#\Find US Address in PDF with Regex
+\PDF Extractor SDK\C#\Get Word Coordinates in JSON
+\PDF Extractor SDK\C#\Get Word Coordinates in XML
 \PDF Extractor SDK\C#\Index PDF Documents In Folder
 \PDF Extractor SDK\C#\Index PDF Files
 \PDF Extractor SDK\C#\Make Searchable PDF
@@ -2907,6 +2912,7 @@
 \PDF Extractor SDK\VB.NET\Correction to Deal with Date Issue after OCR
 \PDF Extractor SDK\VB.NET\Data Masking in PDF
 \PDF Extractor SDK\VB.NET\Detect Lines in PDF
+\PDF Extractor SDK\VB.NET\Download and Process file
 \PDF Extractor SDK\VB.NET\Extract Attachments from PDF
 \PDF Extractor SDK\VB.NET\Extract Audio from PDF
 \PDF Extractor SDK\VB.NET\Extract CSV from PDF and Fill Database in SQL Server
@@ -2934,6 +2940,8 @@
 \PDF Extractor SDK\VB.NET\Find Text in PDF with Smart Match
 \PDF Extractor SDK\VB.NET\Find Text With Hyphens in PDF
 \PDF Extractor SDK\VB.NET\Find US Address in PDF with Regex
+\PDF Extractor SDK\VB.NET\Get Word Coordinates in JSON
+\PDF Extractor SDK\VB.NET\Get Word Coordinates in XML
 \PDF Extractor SDK\VB.NET\Index PDF Documents In Folder
 \PDF Extractor SDK\VB.NET\Index PDF Files
 \PDF Extractor SDK\VB.NET\Make Searchable PDF
@@ -3015,6 +3023,8 @@
 \PDF Extractor SDK\VBScript\Find PDF Table And Extract As XML
 \PDF Extractor SDK\VBScript\Find Text in PDF
 \PDF Extractor SDK\VBScript\Find Text in PDF Using Regex
+\PDF Extractor SDK\VBScript\Get Word Coordinates in JSON
+\PDF Extractor SDK\VBScript\Get Word Coordinates in XML
 \PDF Extractor SDK\VBScript\Index PDF Files
 \PDF Extractor SDK\VBScript\Make Searchable PDF
 \PDF Extractor SDK\VBScript\Make Searchable PDF and Fix Rotated Pages
@@ -3078,6 +3088,7 @@
 \PDF Renderer SDK\C#\Convert PDF To Memory Stream Image
 \PDF Renderer SDK\C#\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\C#\Convert PDF To PNG
+\PDF Renderer SDK\C#\Download and Process file
 \PDF Renderer SDK\C#\Make Thumbnail from PDF
 \PDF Renderer SDK\C#\Override Resolution in Multipage TIFF
 \PDF Renderer SDK\C#\Override Resolution in Rendered Image
@@ -3096,6 +3107,7 @@
 \PDF Renderer SDK\VB.NET\Convert PDF To JPEG
 \PDF Renderer SDK\VB.NET\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VB.NET\Convert PDF To PNG
+\PDF Renderer SDK\VB.NET\Download and Process file
 \PDF Renderer SDK\VB.NET\Make Thumbnail Image From PDF
 \PDF Renderer SDK\VB.NET\Override Resolution in Multipage TIFF
 \PDF Renderer SDK\VB.NET\Override Resolution in Rendered Image
@@ -3177,6 +3189,7 @@
 \PDF SDK\C#\Create Right To Left Text in PDF
 \PDF SDK\C#\Create Tables in PDF
 \PDF SDK\C#\Create ZUGFeRD Invoice
+\PDF SDK\C#\Download and Process file
 \PDF SDK\C#\Draw Lines and Curves in PDF
 \PDF SDK\C#\Draw Rectangles in PDF
 \PDF SDK\C#\Draw Text String in PDF
@@ -3261,6 +3274,7 @@
 \PDF SDK\VB.NET\Create Tables in PDF
 \PDF SDK\VB.NET\Create URI Link Action in PDF
 \PDF SDK\VB.NET\Create ZUGFeRD Invoice
+\PDF SDK\VB.NET\Download and Process file
 \PDF SDK\VB.NET\Draw Lines and Curves in PDF
 \PDF SDK\VB.NET\Draw Rectangles in PDF
 \PDF SDK\VB.NET\Draw Text String in PDF
@@ -3987,11 +4001,13 @@
 \PDF To HTML SDK\C#\Convert PDF To HTML (Simple Layout) From Page
 \PDF To HTML SDK\C#\Convert PDF To HTML (With Complex Layout) From All Pages
 \PDF To HTML SDK\C#\Convert PDF To HTML (With Complex Layout) From Page
+\PDF To HTML SDK\C#\Download and Process file
 \PDF To HTML SDK\C#\Reduce Memory Usage During PDF to HTML Conversion
 \PDF To HTML SDK\VB.NET\Convert PDF To HTML (Complex Layout) From All Pages
 \PDF To HTML SDK\VB.NET\Convert PDF To HTML (Complex Layout) From Page
 \PDF To HTML SDK\VB.NET\Convert PDF To HTML (Simple Layout) From All Pages
 \PDF To HTML SDK\VB.NET\Convert PDF To HTML (Simple Layout) From Page
+\PDF To HTML SDK\VB.NET\Download and Process file
 \PDF To HTML SDK\VB.NET\Reduce Memory Usage During PDF to HTML Conversion
 \PDF To HTML SDK\VB6\Change PDF To HTML Output Page Width
 \PDF To HTML SDK\VB6\Convert PDF To HTML (Complex Layout)
@@ -6265,6 +6281,7 @@
 \Spreadsheet SDK\C#\Create Hello World Spreadsheet
 \Spreadsheet SDK\C#\Create Worksheets
 \Spreadsheet SDK\C#\Create XLSX
+\Spreadsheet SDK\C#\Download and Process file
 \Spreadsheet SDK\C#\Export To 2D Array
 \Spreadsheet SDK\C#\Export To Dataset
 \Spreadsheet SDK\C#\Export To DataTable
@@ -6380,6 +6397,7 @@
 \Spreadsheet SDK\VB.NET\Create XLSX
 \Spreadsheet SDK\VB.NET\CSV to SQL Server
 \Spreadsheet SDK\VB.NET\CSV to XLS
+\Spreadsheet SDK\VB.NET\Download and Process file
 \Spreadsheet SDK\VB.NET\Export To 2D Array
 \Spreadsheet SDK\VB.NET\Export To DataSet
 \Spreadsheet SDK\VB.NET\Export To DataTable
@@ -6525,6 +6543,7 @@
 \Text Recognition SDK\PowerShell
 \Text Recognition SDK\VB.NET
 \Text Recognition SDK\VBScript and VB6
+\Text Recognition SDK\C#\Download and Process file
 \Text Recognition SDK\C#\Extract Text From Areas
 \Text Recognition SDK\C#\Recognize Text From Document
 \Text Recognition SDK\C#\Screen Text Reader
@@ -6535,6 +6554,7 @@
 \Text Recognition SDK\PowerShell\Screen Text Reader
 \Text Recognition SDK\PowerShell\Use Image Preprocessing Filters
 \Text Recognition SDK\PowerShell\Use Text Auto Corrections
+\Text Recognition SDK\VB.NET\Download and Process file
 \Text Recognition SDK\VB.NET\Extract Text From Areas
 \Text Recognition SDK\VB.NET\Recognize Text From Document
 \Text Recognition SDK\VB.NET\Screen Text Reader
