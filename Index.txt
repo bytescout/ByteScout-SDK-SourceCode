@@ -103,6 +103,7 @@
 \BarCode Reader SDK\C#\Decode ISBN
 \BarCode Reader SDK\C#\Decode ITF-14
 \BarCode Reader SDK\C#\Decode JAN-13
+\BarCode Reader SDK\C#\Decode Macro PDF 417
 \BarCode Reader SDK\C#\Decode Macro PDF417
 \BarCode Reader SDK\C#\Decode MaxiCode
 \BarCode Reader SDK\C#\Decode MICR from Bank Check
@@ -198,6 +199,7 @@
 \BarCode Reader SDK\VB.NET\Decode ISBN
 \BarCode Reader SDK\VB.NET\Decode ITF-14
 \BarCode Reader SDK\VB.NET\Decode JAN-13
+\BarCode Reader SDK\VB.NET\Decode Macro PDF 417
 \BarCode Reader SDK\VB.NET\Decode Macro PDF417
 \BarCode Reader SDK\VB.NET\Decode MaxiCode
 \BarCode Reader SDK\VB.NET\Decode MICR from Bank Check
