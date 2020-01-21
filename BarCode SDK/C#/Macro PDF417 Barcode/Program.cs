@@ -11,12 +11,9 @@
 //*******************************************************************************************//
 
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Diagnostics;
-
 using Bytescout.BarCode;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Sample
 {
@@ -32,47 +29,77 @@ namespace Sample
 
             // we will encode value 123456789
             // will break into 3 segments, each segment includes 3 symbols
-                       
-            // 1st segment
-            // create the first segment barcode so set SegmentIndex = 1
-            barcode.Options.PDF417SegmentIndex = 1;
-            // Set value            
-            barcode.Value = "123";
-            // set that this is not the last segment yet
-            barcode.Options.PDF417LastSegment = false;
 
-            // Save barcode to image
-            barcode.SaveImage("MacroPDFBarcode-part1.png");
+            Macro417SegmentHelper macro417SegmentHelper = new Macro417SegmentHelper();
+            macro417SegmentHelper.AddValue("123", "456", "789");
 
-            // 2nd segment
-            // create the 2nd segment barcode so set SegmentIndex = 2
-            barcode.Options.PDF417SegmentIndex = 2;
-            // Set value            
-            barcode.Value = "456";
-            // set that this is not the last segment yet
-            barcode.Options.PDF417LastSegment = false;
+            foreach (var itmSegment in macro417SegmentHelper.GetAllSegments())
+            {
+                // create the first segment barcode so set SegmentIndex = 1
+                barcode.Options.PDF417SegmentIndex = itmSegment.SegmentIndex;
 
-            // Save barcode to image
-            barcode.SaveImage("MacroPDFBarcode-part2.png");
+                // Set value            
+                barcode.Value = itmSegment.SegmentValue;
 
+                // set that this is not the last segment yet
+                barcode.Options.PDF417LastSegment = itmSegment.IsLastSegment;
 
-            // 3rd segment
-            // create the 3rd segment barcode so set SegmentIndex = 3
-            barcode.Options.PDF417SegmentIndex = 3;
-            // Set value            
-            barcode.Value = "789";
-            // set that this is the LAST segment, so set PDF417LastSegment = TRUE
-            barcode.Options.PDF417LastSegment = true;
+                // Save barcode to image
+                barcode.SaveImage($"MacroPDFBarcode-part{itmSegment.SegmentIndex}.png");
 
-            // Save barcode to image
-            barcode.SaveImage("MacroPDFBarcode-part3.png");
-
-            // now open all three images
-            
-            // Show image in default image viewer
-            Process.Start("MacroPDFBarcode-part1.png");
-            Process.Start("MacroPDFBarcode-part2.png");
-            Process.Start("MacroPDFBarcode-part3.png");
+                // Show image in default image viewer
+                Process.Start($"MacroPDFBarcode-part{itmSegment.SegmentIndex}.png");
+            }
         }
     }
+
+
+    public class Macro417SegmentHelper
+    {
+        // Declarations
+        private List<string> lstValues { get; set; } = new List<string>();
+
+        /// <summary>
+        /// Add segment value
+        /// </summary>
+        public void AddValue(params string[] strValue)
+        {
+            foreach (var item in strValue)
+            {
+                lstValues.Add(item);
+            }
+        }
+
+        /// <summary>
+        /// Get all segments
+        /// </summary>
+        public List<Macro417Segment> GetAllSegments()
+        {
+            var lstRet = new List<Macro417Segment>();
+
+            for (int i = 0; i < lstValues.Count; i++)
+            {
+                // Create segment
+                var oSegment = new Macro417Segment
+                {
+                    SegmentValue = lstValues[i],
+                    SegmentIndex = i + 1,
+                    IsLastSegment = ((i + 1) == lstValues.Count)
+                };
+
+                lstRet.Add(oSegment);
+            }
+
+            return lstRet;
+        }
+
+    }
+
+    public class Macro417Segment
+    {
+        public string SegmentValue { get; set; }
+        public int SegmentIndex { get; set; }
+        public bool IsLastSegment { get; set; }
+    }
+
 }

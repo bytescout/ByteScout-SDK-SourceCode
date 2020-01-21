@@ -41,8 +41,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
-    <Reference Include="Thought.vCards">
-      <HintPath>packages\Thought.vCards.1.0.9\lib\net40\Thought.vCards.dll</HintPath>
+    <Reference Include="Thought.vCards, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Thought.vCards.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

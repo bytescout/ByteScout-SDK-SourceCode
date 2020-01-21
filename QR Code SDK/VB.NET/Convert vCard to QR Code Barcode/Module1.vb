@@ -29,7 +29,7 @@ Module Module1
         vCard.EmailAddresses.Add(new vCardEmailAddress("forrestgump@example.com", vCardEmailAddressType.Internet))
 			
         Dim address = new vCardDeliveryAddress()
-        address.AddressType.Add(vCardDeliveryAddressTypes.Home)
+        address.AddressType = vCardDeliveryAddressTypes.Home
         address.Street = "100 Waters Edge"
         address.City = "Baytown"
         address.Region = "LA"

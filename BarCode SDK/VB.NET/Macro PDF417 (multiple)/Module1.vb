@@ -23,47 +23,63 @@ Module Module1
 
         ' we will encode value 123456789
         ' will break into 3 segments, each segment includes 3 symbols
+        Dim macro417SegmentHelper As Macro417SegmentHelper = New Macro417SegmentHelper()
+        macro417SegmentHelper.AddValue("123", "456", "789")
 
-        ' 1st segment
-        ' create the first segment barcode so set SegmentIndex = 1
-        barcode.Options.PDF417SegmentIndex = 1
-        ' Set value            
-        barcode.Value = "123"
-        ' set that this is not the last segment yet
-        barcode.Options.PDF417LastSegment = False
+        For Each itmSegment As Macro417Segment In macro417SegmentHelper.GetAllSegments()
+            ' create the first segment barcode so set SegmentIndex = 1
+            barcode.Options.PDF417SegmentIndex = itmSegment.SegmentIndex
 
-        ' Save barcode to image
-        barcode.SaveImage("MacroPDFBarcode-part1.png")
+            ' Set value            
+            barcode.Value = itmSegment.SegmentValue
 
-        ' 2nd segment
-        ' create the 2nd segment barcode so set SegmentIndex = 2
-        barcode.Options.PDF417SegmentIndex = 2
-        ' Set value            
-        barcode.Value = "456"
-        ' set that this is not the last segment yet
-        barcode.Options.PDF417LastSegment = False
+            ' set that this Is Not the last segment yet
+            barcode.Options.PDF417LastSegment = itmSegment.IsLastSegment
 
-        ' Save barcode to image
-        barcode.SaveImage("MacroPDFBarcode-part2.png")
+            ' Save barcode to image
+            barcode.SaveImage($"MacroPDFBarcode-part{itmSegment.SegmentIndex}.png")
 
+            ' Show image in default image viewer
+            Process.Start($"MacroPDFBarcode-part{itmSegment.SegmentIndex}.png")
+        Next
 
-        ' 3rd segment
-        ' create the 3rd segment barcode so set SegmentIndex = 3
-        barcode.Options.PDF417SegmentIndex = 3
-        ' Set value            
-        barcode.Value = "789"
-        ' set that this is the LAST segment, so set PDF417LastSegment = TRUE
-        barcode.Options.PDF417LastSegment = True
-
-        ' Save barcode to image
-        barcode.SaveImage("MacroPDFBarcode-part3.png")
-
-        ' now open all three images
-
-        ' Show image in default image viewer
-        Process.Start("MacroPDFBarcode-part1.png")
-        Process.Start("MacroPDFBarcode-part2.png")
-        Process.Start("MacroPDFBarcode-part3.png")
     End Sub
+
+
+    Public Class Macro417SegmentHelper
+
+        ' Declarations
+        Private Property lstValues As List(Of String) = New List(Of String)()
+
+        ' Add segment value
+        Public Sub AddValue(ParamArray strValue As String())
+            For Each item As String In strValue
+                lstValues.Add(item)
+            Next
+        End Sub
+
+        ' Get all segment value
+        Public Function GetAllSegments() As List(Of Macro417Segment)
+            Dim lstRet = New List(Of Macro417Segment)()
+
+            For i As Integer = 0 To lstValues.Count - 1
+                Dim oSegment = New Macro417Segment With {
+                    .SegmentValue = lstValues(i),
+                    .SegmentIndex = i + 1,
+                    .IsLastSegment = ((i + 1) = lstValues.Count)
+                }
+                lstRet.Add(oSegment)
+            Next
+
+            Return lstRet
+        End Function
+
+    End Class
+
+    Public Class Macro417Segment
+        Public Property SegmentValue As String
+        Public Property SegmentIndex As Integer
+        Public Property IsLastSegment As Boolean
+    End Class
 
 End Module

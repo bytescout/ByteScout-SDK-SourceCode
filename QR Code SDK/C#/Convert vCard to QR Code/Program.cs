@@ -42,7 +42,7 @@ namespace GenerateVCardQRCode
 			vCard.EmailAddresses.Add(new vCardEmailAddress("forrestgump@example.com", vCardEmailAddressType.Internet));
 			
 			vCardDeliveryAddress address = new vCardDeliveryAddress();
-			address.AddressType.Add(vCardDeliveryAddressTypes.Home);
+            address.AddressType = vCardDeliveryAddressTypes.Home;
 			address.Street = "100 Waters Edge";
 			address.City = "Baytown";
 			address.Region = "LA";
