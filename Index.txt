@@ -2840,6 +2840,7 @@
 \PDF Extractor SDK\C#\OCR With Best Dataset
 \PDF Extractor SDK\C#\OCR With Fast Dataset
 \PDF Extractor SDK\C#\OCR With Mean Dataset
+\PDF Extractor SDK\C#\OCR with Multiple Languages
 \PDF Extractor SDK\C#\Optimize PDF
 \PDF Extractor SDK\C#\PDF and OCR (Optical Character Recognition)
 \PDF Extractor SDK\C#\PDF Batch Processing
@@ -2961,6 +2962,7 @@
 \PDF Extractor SDK\VB.NET\OCR With Best Dataset
 \PDF Extractor SDK\VB.NET\OCR With Fast Dataset
 \PDF Extractor SDK\VB.NET\OCR With Mean Dataset
+\PDF Extractor SDK\VB.NET\OCR with Multiple Languages
 \PDF Extractor SDK\VB.NET\Optimize PDF
 \PDF Extractor SDK\VB.NET\Parallel Processing of PDF files
 \PDF Extractor SDK\VB.NET\PDF files Batch Processing
@@ -3041,6 +3043,7 @@
 \PDF Extractor SDK\VBScript\OCR With Best Dataset
 \PDF Extractor SDK\VBScript\OCR With Fast Dataset
 \PDF Extractor SDK\VBScript\OCR With Mean Dataset
+\PDF Extractor SDK\VBScript\OCR with Multiple Languages
 \PDF Extractor SDK\VBScript\PDF Extraction Profiles
 \PDF Extractor SDK\VBScript\PDF files Batch Processing
 \PDF Extractor SDK\VBScript\PDF OCR (Optical Character Recognition)
@@ -6313,6 +6316,7 @@
 \Spreadsheet SDK\C#\Line Styles In Cells
 \Spreadsheet SDK\C#\Merge Cells
 \Spreadsheet SDK\C#\Merge Two Documents
+\Spreadsheet SDK\C#\Override Culture and Date Format Settings
 \Spreadsheet SDK\C#\Read Cell Color
 \Spreadsheet SDK\C#\Read CSV File
 \Spreadsheet SDK\C#\Read Date From Cell
@@ -6428,6 +6432,7 @@
 \Spreadsheet SDK\VB.NET\Merge Cells
 \Spreadsheet SDK\VB.NET\Merge Two Documents
 \Spreadsheet SDK\VB.NET\Number Format In Cells
+\Spreadsheet SDK\VB.NET\Override Culture and Date Format Settings
 \Spreadsheet SDK\VB.NET\Read Cell Color
 \Spreadsheet SDK\VB.NET\Read CSV File
 \Spreadsheet SDK\VB.NET\Read Date From Cell
