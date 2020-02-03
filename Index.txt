@@ -4132,6 +4132,7 @@
 \PDF.co Web API\Barcode Reader API\Python
 \PDF.co Web API\Barcode Reader API\VB.NET
 \PDF.co Web API\Barcode Reader API\C#\Advanced Conversion Options
+\PDF.co Web API\Barcode Reader API\C#\Async File Uploading
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From URL Asynchronously
@@ -4155,6 +4156,7 @@
 \PDF.co Web API\Barcode Reader API\Python\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\Python\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\VB.NET\Advanced Conversion Options
+\PDF.co Web API\Barcode Reader API\VB.NET\Async File Uploading
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From URL Asynchronously
