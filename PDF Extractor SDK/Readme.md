@@ -38,8 +38,12 @@
 <td>Use this repository to find out how to work with PDF Generator SDK for Javascript</td>
 </tr>
 <tr>
-<td><a href="https://github.com/bytescout/cloud-api-samples">Cloud API</a></td>
-<td>Samples helpful when working with ByteScout Cloud API</td>
+<td><a href="https://apidocs.pdf.co">PDF.co Web API</a></td>
+<td>Samples helpful when working with PDF.co Web API</td>
+</tr>
+<tr>
+<td><a href="https://bytescout.com/products/developer/cloudapiserver/index.html">Cloud API Server</a></td>
+<td>On-premise self-hosted API Server, can work offline</td>
 </tr>
 <tr>
 <td><a href="https://github.com/bytescout/pdf-renderer-sdk-samples">PDF Renderer SDK</a></td>

@@ -47,8 +47,12 @@ https://www.microsoft.com/en-us/download/details.aspx?id=40837</p>
 <td>Samples that help you generate 1D and 2D barcodes</td>
 </tr>
 <tr>
-<td><a href="https://github.com/bytescout/cloud-api-samples">Cloud API</a></td>
-<td>Samples helpful when working with ByteScout Cloud API</td>
+<td><a href="https://apidocs.pdf.co">PDF.co Web API</a></td>
+<td>Samples helpful when working with PDF.co Web API</td>
+</tr>
+<tr>
+<td><a href="https://bytescout.com/products/developer/cloudapiserver/index.html">Cloud API Server</a></td>
+<td>On-premise self-hosted API Server, can work offline</td>
 </tr>
 <tr>
 <td><a href="https://github.com/bytescout/pdf-extractor-sdk-samples">PDF Extractor SDK</a></td>

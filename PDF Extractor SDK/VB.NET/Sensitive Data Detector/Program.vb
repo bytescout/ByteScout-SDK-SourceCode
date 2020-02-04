@@ -25,7 +25,7 @@ Class Program
         sensitiveDataDetector.LoadDocumentFromFile(".\samplePDF_EmailSSN.pdf")
 
         ' Set the location of OCR language data files
-        sensitiveDataDetector.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best_fast\"
+        sensitiveDataDetector.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\"
 
         ' Perform detecting sensitive data
         Dim detectionResults = sensitiveDataDetector.PerformDetection()
