@@ -2827,6 +2827,7 @@
 \PDF Extractor SDK\C#\Get Word Coordinates in XML
 \PDF Extractor SDK\C#\Index PDF Documents In Folder
 \PDF Extractor SDK\C#\Index PDF Files
+\PDF Extractor SDK\C#\Load Unicode CSV to DataTable using OLEDB
 \PDF Extractor SDK\C#\Make Searchable PDF
 \PDF Extractor SDK\C#\Make Searchable PDF and Fix Rotated Pages
 \PDF Extractor SDK\C#\Make Searchable PDF Discarding Existing Content
@@ -2948,6 +2949,7 @@
 \PDF Extractor SDK\VB.NET\Get Word Coordinates in XML
 \PDF Extractor SDK\VB.NET\Index PDF Documents In Folder
 \PDF Extractor SDK\VB.NET\Index PDF Files
+\PDF Extractor SDK\VB.NET\Load Unicode CSV to DataTable using OLEDB
 \PDF Extractor SDK\VB.NET\Make Searchable PDF
 \PDF Extractor SDK\VB.NET\Make Searchable PDF and Fix Rotated Pages
 \PDF Extractor SDK\VB.NET\Make Searchable PDF Discarding Existing Content
