@@ -1,6 +1,7 @@
 # ByteScout SDK - Source Code
 ## Source code samples for:
-* **ByteScout Cloud API** - [explore samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/Cloud%20API) - [view home page](https://bytescout.com/products/developer/cloudapi/index.html)
+
+* **PDF.co Web API with Zapier support** - [explore samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API) - [view home page](https://apidocs.pdf.co)
 
 * **ByteScout BarCode Reader SDK** - [explore samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/BarCode%20Reader%20SDK) - [view home page](https://bytescout.com/products/developer/barcodereadersdk/bytescoutbarcodereadersdk.html)
 * **ByteScout BarCode SDK** - [explore samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/BarCode%20SDK) - [view home page](https://bytescout.com/products/developer/barcodesdk/bytescoutbarcodesdk.html)
