@@ -6358,6 +6358,7 @@
 \Spreadsheet SDK\C#\Validate Cells with Dates
 \Spreadsheet SDK\C#\Validate Data in Cell and Mark Wrong With Color
 \Spreadsheet SDK\C#\View Spreadsheet
+\Spreadsheet SDK\C#\Workbook AutoCalculation
 \Spreadsheet SDK\C++ (managed)\Create Simple Spreadsheet
 \Spreadsheet SDK\C++ (unmanaged)\Create Simple Spreasdsheet
 \Spreadsheet SDK\Console\Convert in Batch from XLS to CSV
@@ -6472,6 +6473,7 @@
 \Spreadsheet SDK\VB.NET\Validate Cells with Dates
 \Spreadsheet SDK\VB.NET\Validate Data in Cell and Mark Wrong With Color
 \Spreadsheet SDK\VB.NET\View Spreadsheet
+\Spreadsheet SDK\VB.NET\Workbook AutoCalculation
 \Spreadsheet SDK\VB6\Create Spreadsheet
 \Spreadsheet SDK\VBScript\Add Images to Spreadsheet
 \Spreadsheet SDK\VBScript\Change Cell Background Color
