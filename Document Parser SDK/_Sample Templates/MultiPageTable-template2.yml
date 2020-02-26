@@ -12,18 +12,18 @@ detectionRules:
 fields:
   total:
     type: regex
-    expression: TOTAL {{DECIMAL}}
+    expression: 'TOTAL{{Spaces}}({{Number}})'
     dataType: decimal
 tables:
 - name: table1
-  # coordinate or regular expression to find the table start on each document page
+  # coordinate or macro expression to find the table start on each document page
   start:
     #y: 136
-    expression: Item\s+Description\s+Price\s+Qty\s+Extended Price
-  # coordinate or regular expression to find the table end on each document page
+    expression: 'Item{{Spaces}}Description{{Spaces}}Price'
+  # coordinate or macro expression to find the table end on each document page
   end:
     #y: 787
-    expression: (Page \d+ of \d+)|(TOTAL\s+\d+\.\d\d)
+    expression: (Page {{Digits}} of {{Digits}})|(TOTAL{{Spaces}}{{Number}})
   # left coordinate of the table (optional)
   left: 51
   # right coordinate of the table (optional)

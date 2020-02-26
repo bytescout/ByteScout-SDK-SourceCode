@@ -9,32 +9,26 @@ detectionRules:
   - Invoice
 fields:
   invoiceId:
-    type: regex
-    expression: 'Invoice number: {{123}}'
+    expression: 'Invoice number:{{Spaces}}({{Digits}})'
   dateIssued:
-    type: regex
-    expression: Issue date:\s+([a-zA-Z]{3} \d+, \d{4})
+    expression: 'Issue date:{{Spaces}}({{SmartDate}})'
     dataType: date
     dateFormat: MMM d, yyyy
   total:
-    type: regex
-    expression: 'Amount due in USD: {{DECIMAL}}'
+    expression: 'Amount due in USD:{{Spaces}}{{Number}}'
     dataType: decimal
   subTotal:
-    type: regex
-    expression: 'Subtotal in USD: {{DECIMAL}}'
+    expression: 'Subtotal in USD:{{Spaces}}{{Number}}'
     dataType: decimal
   taxRate:
-    type: regex
-    expression: State sales tax ({{123}}%)
+    expression: 'State sales tax {{OpeningParenthesis}}{{Digits}}{{Percent}}{{ClosingParenthesis}}'
     dataType: integer
   tax:
-    type: regex
-    expression: State sales tax{{ANY}}{{DECIMAL}}
+    expression: 'State sales tax{{Anything}}{{Number}}{{LineEnd}}'
     dataType: decimal
   companyName:
     type: static
-    expression: Google LLC
+    expression: 'Google LLC'
   billTo:
     type: rectangle
     rectangle:
@@ -44,19 +38,18 @@ fields:
     - 72
     pageIndex: 0
   billingId:
-    type: regex
-    expression: 'Billing ID: {{123+}}'
+    expression: 'Billing ID:{{Spaces}}({{DigitsOrSymbols}})'
   currency:
     type: static
-    expression: USD
+    expression: 'USD'
 tables:
 - name: table1
   start:
-    expression: Description\s+Interval\s+Quantity\s+Amount \(\$\)
+    expression: 'Description{{Spaces}}Interval{{Spaces}}Quantity{{Spaces}}Amount'
   end:
-    expression: Subtotal in USD
+    expression: 'Subtotal in USD'
   row:
-    expression: ^\s+(?<description>\w+.*)(?<interval>[a-zA-Z]{3} \d+ - [a-zA-Z]{3} \d+)\s+(?<quantity>\d+)\s+(?<amount>\d+\.\d\d)
+    expression: '{{LineStart}}{{Spaces}}(?<description>{{SentenceWithSingleSpaces}}){{Spaces}}(?<interval>{{3Letters}}{{Space}}{{Digits}}{{Space}}{{Minus}}{{Space}}{{3Letters}}{{Space}}{{Digits}}){{Spaces}}(?<quantity>{{Digits}}){{Spaces}}(?<amount>{{Number}})'
   columns:
   - name: quantity
     type: integer

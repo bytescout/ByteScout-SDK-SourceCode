@@ -9,21 +9,21 @@ detectionRules:
   - Invoice
 fields:
   total:
-    type: regex
-    expression: TOTAL AMOUNT DUE ON{{ANY}}{{MONEY}}
+    type: macros
+    expression: 'TOTAL AMOUNT DUE ON{{Anything}}{{Dollar}}({{Number}})'
     dataType: decimal
   subTotal:
-    type: regex
-    expression: ^[ ]+Charges[ ]+\$(?<value>(\d{1,3},?)+\.\d\d)
+    type: macros
+    expression: '{{LineStart}}{{Spaces}}Charges{{Spaces}}{{Dollar}}({{Number}})'
     dataType: decimal
   dateIssued:
-    type: regex
-    expression: Invoice Date:\s+([a-zA-Z]+ \d+ , \d+)
+    type: macros
+    expression: 'Invoice Date:{{Spaces}}({{Anything}}){{LineEnd}}'
     dataType: date
     dateFormat: MMMM d , yyyy
   invoiceId:
-    type: regex
-    expression: 'Invoice Number: {{123}}'
+    type: macros
+    expression: 'Invoice Number:{{Spaces}}({{Digits}})'
   companyName:
     type: static
     expression: Amazon Web Services, Inc.
@@ -32,7 +32,7 @@ fields:
     expression: aws.amazon.com
   billTo:
     type: rectangle
-    expression: Bill to Address:{{ANY}}
+    expression: 'Bill to Address:{{ToggleSingleLineMode}}({{AnythingGreedy}})'
     rectangle:
     - 33
     - 115.5
@@ -45,13 +45,12 @@ fields:
 tables:
 - name: table1
   start:
-    expression: '^[ ]+Detail\r?$'
+    expression: '{{LineStart}}{{Spaces}}Detail{{LineEnd}}'
   end:
-    expression: '\z'
+    expression: '{{EndOfPage}}'
   row:
-    expression: '^[\f ]+(?<description>\S+(?: \S+)*)[ ]+\$(?<unitPrice>(\d{1,3},?)+\.\d\d)\r?$'
+    expression: '{{LineStart}}{{Spaces}}(?<description>{{SentenceWithSingleSpaces}}){{Spaces}}{{Dollar}}(?<unitPrice>{{Number}}){{LineEnd}}'
   columns:
   - name: unitPrice
     type: decimal
-  multipage: true
 

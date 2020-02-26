@@ -12,20 +12,19 @@ detectionRules:
   - Sample document with multi-page table
 fields:
   total:
-    type: regex
-    expression: TOTAL {{DECIMAL}}
+    expression: 'TOTAL{{Spaces}}({{Number}})'
     dataType: decimal
 tables:
 - name: table1
   start:
     # regular expression to find the table start in document
-    expression: Item\s+Description\s+Price\s+Qty\s+Extended Price
+    expression: 'Item{{Spaces}}Description{{Spaces}}Price'
   end:
     # regular expression to find the table end in document
-    expression: TOTAL\s+\d+\.\d\d
+    expression: 'TOTAL{{Spaces}}{{Number}}'
   row:
     # regular expression to find table rows
-    expression: '^\s*(?<itemNo>\d+)\s+(?<description>.+?)\s+(?<price>\d+\.\d\d)\s+(?<qty>\d+)\s+(?<extPrice>\d+\.\d\d)'
+    expression: '{{LineStart}}{{Spaces}}(?<itemNo>{{Digits}}){{Spaces}}(?<description>{{SentenceWithSingleSpaces}}){{Spaces}}(?<price>{{Number}}){{Spaces}}(?<qty>{{Digits}}){{Spaces}}(?<extPrice>{{Number}})'
   columns: 
   - name: itemNo
     type: integer

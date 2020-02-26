@@ -12,28 +12,28 @@ fields:
     type: static
     expression: DigitalOcean
   total:
-    type: regex
-    expression: 'Total: {{MONEY}}'
+    type: macros
+    expression: 'Total: {{Dollar}}({{Number}})'
     dataType: decimal
   dateIssued:
-    type: regex
-    expression: 'Date Issued: {{DATE+}}'
+    type: macros
+    expression: 'Date Issued: ({{SmartDate}})'
     dataType: date
     dateFormat: auto-mdy
   invoiceId:
-    type: regex
-    expression: 'Invoice Number: {{123}}'
+    type: macros
+    expression: 'Invoice Number: ({{Digits}})'
   currency:
     type: static
     expression: USD
 tables:
 - name: table1
   start:
-    expression: Description
+    expression: 'Description{{Spaces}}Hours'
   end:
     expression: 'Total:'
   row:
-    expression: ^\s*(?<description>\w+.*\))\s+(?<hours>\d{1,3})\s+(?<start>\d\d-\d\d\ \d\d:\d\d)\s+(?<end>\d\d-\d\d \d\d:\d\d)\s+\$(?<unitPrice>\d+\.\d\d)
+    expression: '{{LineStart}}{{Spaces}}(?<description>{{SentenceWithSingleSpaces}}){{Spaces}}(?<hours>{{Digits}}){{Spaces}}(?<start>{{2Digits}}{{Minus}}{{2Digits}}{{Space}}{{2Digits}}{{Colon}}{{2Digits}}){{Spaces}}(?<end>{{2Digits}}{{Minus}}{{2Digits}}{{Space}}{{2Digits}}{{Colon}}{{2Digits}}){{Spaces}}{{Dollar}}(?<unitPrice>{{Number}})'
   columns:
   - name: hours
     type: integer
