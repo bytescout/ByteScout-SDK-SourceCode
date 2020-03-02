@@ -4141,8 +4141,10 @@
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From URL Asynchronously
+\PDF.co Web API\Barcode Reader API\cURL\Advanced Conversation Options
 \PDF.co Web API\Barcode Reader API\cURL\Read Barcode from File
 \PDF.co Web API\Barcode Reader API\cURL\Read Barcode From URL
+\PDF.co Web API\Barcode Reader API\Java\Advanced Conversation Options
 \PDF.co Web API\Barcode Reader API\Java\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\Java\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\JavaScript\Advanced Conversion Options
@@ -4158,6 +4160,7 @@
 \PDF.co Web API\Barcode Reader API\PowerShell\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\PowerShell\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\PowerShell\Read Barcode From URL Asynchronously
+\PDF.co Web API\Barcode Reader API\Python\Advanced Conversation Options
 \PDF.co Web API\Barcode Reader API\Python\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\Python\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\VB.NET\Advanced Conversion Options
@@ -4410,8 +4413,10 @@
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From URL Asynchronously
+\PDF.co Web API\PDF Make Searchable API\cURL\Advanced Conversion Options
 \PDF.co Web API\PDF Make Searchable API\cURL\Make Searchable PDF from File
 \PDF.co Web API\PDF Make Searchable API\cURL\Make Searchable PDF From URL
+\PDF.co Web API\PDF Make Searchable API\Java\Advanced Conversation Options
 \PDF.co Web API\PDF Make Searchable API\Java\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\Java\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Advanced Conversion Options
@@ -4427,6 +4432,7 @@
 \PDF.co Web API\PDF Make Searchable API\PowerShell\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\PowerShell\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\PowerShell\Make Searchable PDF From URL Asynchronously
+\PDF.co Web API\PDF Make Searchable API\Python\Advanced Conversation Options
 \PDF.co Web API\PDF Make Searchable API\Python\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\Python\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\Python\Make Searchable PDF From URL Asynchronously
@@ -4569,8 +4575,12 @@
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From URL Asynchronously
+\PDF.co Web API\PDF To CSV API\cURL\Advanced Conversion Options
+\PDF.co Web API\PDF To CSV API\cURL\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\cURL\Convert PDF to CSV from File
 \PDF.co Web API\PDF To CSV API\cURL\Convert PDF To CSV From URL
+\PDF.co Web API\PDF To CSV API\Java\Advanced Conversion Options
+\PDF.co Web API\PDF To CSV API\Java\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\Java\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\Java\Convert PDF To CSV From Uploaded File Asynchronously
 \PDF.co Web API\PDF To CSV API\Java\Convert PDF To CSV From URL
@@ -4591,6 +4601,8 @@
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\PowerShell\Convert PDF To CSV From URL Asynchronously
+\PDF.co Web API\PDF To CSV API\Python\Advanced Conversation Options
+\PDF.co Web API\PDF To CSV API\Python\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\Python\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\Python\Convert PDF To CSV From Uploaded File Asynchronously
 \PDF.co Web API\PDF To CSV API\VB.NET\Advanced Conversion Options
@@ -4615,10 +4627,14 @@
 \PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLSX From URL
 \PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLSX From URL Asynchronously
+\PDF.co Web API\PDF To Excel API\cURL\Advanced Conversion Options
+\PDF.co Web API\PDF To Excel API\cURL\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Excel API\cURL\Convert PDF to XLS from File
 \PDF.co Web API\PDF To Excel API\cURL\Convert PDF To XLS From URL
 \PDF.co Web API\PDF To Excel API\cURL\Convert PDF to XLSX from File
 \PDF.co Web API\PDF To Excel API\cURL\Convert PDF To XLSX From URL
+\PDF.co Web API\PDF To Excel API\Java\Advanced Conversion Options
+\PDF.co Web API\PDF To Excel API\Java\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLS From Uploaded File
 \PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLS From URL
 \PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLSX From Uploaded File
@@ -4649,6 +4665,8 @@
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLSX From URL
 \PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLSX From URL Asynchronously
+\PDF.co Web API\PDF To Excel API\Python\Advanced Conversion Options
+\PDF.co Web API\PDF To Excel API\Python\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Excel API\Python\Convert PDF To Excel From Uploaded File
 \PDF.co Web API\PDF To Excel API\Python\Convert PDF To Excel From Uploaded File Asynchronously
 \PDF.co Web API\PDF To Excel API\VB.NET\Advanced Conversion Options
@@ -4713,18 +4731,27 @@
 \PDF.co Web API\PDF To Image API\C#\Convert PDF To TIFF From Uploaded File
 \PDF.co Web API\PDF To Image API\C#\Convert PDF To TIFF From URL
 \PDF.co Web API\PDF To Image API\C#\Convert PDF To TIFF From URL Asynchronously
+\PDF.co Web API\PDF To Image API\cURL\Advanced JPEG Conversion Options
+\PDF.co Web API\PDF To Image API\cURL\Advanced PNG Conversion Options
+\PDF.co Web API\PDF To Image API\cURL\Advanced TIFF Conversion Options
 \PDF.co Web API\PDF To Image API\cURL\Convert PDF to JPEG from File
 \PDF.co Web API\PDF To Image API\cURL\Convert PDF To JPEG From URL
 \PDF.co Web API\PDF To Image API\cURL\Convert PDF to PNG from File
 \PDF.co Web API\PDF To Image API\cURL\Convert PDF To PNG From URL
 \PDF.co Web API\PDF To Image API\cURL\Convert PDF to TIFF from File
 \PDF.co Web API\PDF To Image API\cURL\Convert PDF To TIFF From URL
+\PDF.co Web API\PDF To Image API\Java\Advanced JPEG Conversion Options
+\PDF.co Web API\PDF To Image API\Java\Advanced PNG Conversion Options
+\PDF.co Web API\PDF To Image API\Java\Advanced TIFF Conversion Options
 \PDF.co Web API\PDF To Image API\Java\Convert PDF To JPEG From Uploaded File
 \PDF.co Web API\PDF To Image API\Java\Convert PDF To JPEG From URL
 \PDF.co Web API\PDF To Image API\Java\Convert PDF To PNG From Uploaded File
 \PDF.co Web API\PDF To Image API\Java\Convert PDF To PNG From URL
 \PDF.co Web API\PDF To Image API\Java\Convert PDF To TIFF From Uploaded File
 \PDF.co Web API\PDF To Image API\Java\Convert PDF To TIFF From URL
+\PDF.co Web API\PDF To Image API\JavaScript\Advanced JPEG Conversion Options
+\PDF.co Web API\PDF To Image API\JavaScript\Advanced PNG Conversion Options
+\PDF.co Web API\PDF To Image API\JavaScript\Advanced TIFF Conversion Options
 \PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To JPEG From File (Node.js)
 \PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To JPEG From File (Node.js) - Async API
 \PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To JPEG From Uploaded File (Node.js)
@@ -4745,6 +4772,9 @@
 \PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To TIFF From URL (Node.js) - Async API
 \PDF.co Web API\PDF To Image API\PHP\Convert PDF To Image Asynchronously
 \PDF.co Web API\PDF To Image API\PHP\Convert PDF To Image From Uploaded File
+\PDF.co Web API\PDF To Image API\PowerShell\Advanced JPEG Conversion Options
+\PDF.co Web API\PDF To Image API\PowerShell\Advanced PNG Conversion Options
+\PDF.co Web API\PDF To Image API\PowerShell\Advanced TIFF Conversion Options
 \PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To JPEG From Uploaded File
 \PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To JPEG From URL
 \PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To JPEG From URL Asynchronously
@@ -4754,8 +4784,12 @@
 \PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To TIFF From Uploaded File
 \PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To TIFF From URL
 \PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To TIFF From URL Asynchronously
+\PDF.co Web API\PDF To Image API\Python\Advanced Conversation Options
 \PDF.co Web API\PDF To Image API\Python\Convert PDF To Image From Uploaded File
 \PDF.co Web API\PDF To Image API\Python\Convert PDF To Image From Uploaded File Asynchronously
+\PDF.co Web API\PDF To Image API\VB.NET\Advanced JPEG Conversation Options
+\PDF.co Web API\PDF To Image API\VB.NET\Advanced PNG Conversation Options
+\PDF.co Web API\PDF To Image API\VB.NET\Advanced TIFF Conversation Options
 \PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To JPEG From Uploaded File
 \PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To JPEG From URL
 \PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To JPEG From URL Asynchronously
@@ -4779,7 +4813,10 @@
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From Uploaded File Asynchronously
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From URL Asynchronously
+\PDF.co Web API\PDF To JSON API\cURL\Advanced Conversion Options
 \PDF.co Web API\PDF To JSON API\cURL\Convert PDF To JSON From URL
+\PDF.co Web API\PDF To JSON API\Java\Advanced Conversion Options
+\PDF.co Web API\PDF To JSON API\Java\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To JSON API\Java\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\Java\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\JavaScript\Advanced Conversion Options
@@ -4799,6 +4836,8 @@
 \PDF.co Web API\PDF To JSON API\PowerShell\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\PowerShell\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\PowerShell\Convert PDF To JSON From URL Asynchronously
+\PDF.co Web API\PDF To JSON API\Python\Advanced Conversion Options
+\PDF.co Web API\PDF To JSON API\Python\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To JSON API\Python\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\Python\Convert PDF To JSON From Uploaded File Asynchronously
 \PDF.co Web API\PDF To JSON API\VB.NET\Advanced Conversion Options
@@ -4819,8 +4858,12 @@
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From URL Asynchronously
+\PDF.co Web API\PDF To Text API\cURL\Advanced Conversion Options
+\PDF.co Web API\PDF To Text API\cURL\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\cURL\Convert PDF to Text from File
 \PDF.co Web API\PDF To Text API\cURL\Convert PDF To Text From URL
+\PDF.co Web API\PDF To Text API\Java\Advanced Conversion Options
+\PDF.co Web API\PDF To Text API\Java\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\Java\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\Java\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\JavaScript\Advanced Conversion Options
@@ -4840,6 +4883,8 @@
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\PowerShell\Convert PDF To Text From URL Asynchronously
+\PDF.co Web API\PDF To Text API\Python\Advanced Conversion Options
+\PDF.co Web API\PDF To Text API\Python\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\Python\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\Python\Convert PDF To Text From Uploaded File Asynchronously
 \PDF.co Web API\PDF To Text API\VB.NET\Advanced Conversion Options
@@ -4860,8 +4905,12 @@
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From URL Asynchronously
+\PDF.co Web API\PDF To XML API\cURL\Advanced Conversion Options
+\PDF.co Web API\PDF To XML API\cURL\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\cURL\Convert PDF to XML from File
 \PDF.co Web API\PDF To XML API\cURL\Convert PDF To XML From URL
+\PDF.co Web API\PDF To XML API\Java\Advanced Conversion Options
+\PDF.co Web API\PDF To XML API\Java\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\Java\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\Java\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\JavaScript\Advanced Conversion Options
@@ -4881,6 +4930,8 @@
 \PDF.co Web API\PDF To XML API\PowerShell\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\PowerShell\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\PowerShell\Convert PDF To XML From URL Asynchronously
+\PDF.co Web API\PDF To XML API\Python\Advanced Conversion Options
+\PDF.co Web API\PDF To XML API\Python\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\Python\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\Python\Convert PDF To XML From Uploaded File Asynchronously
 \PDF.co Web API\PDF To XML API\VB.NET\Advanced Conversion Options
