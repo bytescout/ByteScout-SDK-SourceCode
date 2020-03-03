@@ -102,6 +102,20 @@ namespace MultithreadProcessing
 		        using (DocumentSplitter splitter = new DocumentSplitter("demo", "demo"))
 		            splitter.ExtractPageRange(inputFile, chunk, startPage + 1, endPage + 1);
 
+				/*
+				By default, "SearchablePDFMaker" uses one of the standard PDF fonts to apply 
+				recognized text over the scanned document. Such fonts contain only basic characters 
+				from ISO-8859-1 charset. 
+				If you run OCR for one of the languages with characters that are not present in the default
+				encoding, you should explicitly specify the font that contains the required characters
+				using ".LabelingFont" property.
+				If you run the application in Windows with a selected locale that matches OCR language, 
+				it will be enough to specify the usual font "Arial". But if your app will run in an unknown
+				environment (for example, in some virtual machine) you will need to install some full Unicode 
+				font (e.g. "Arial Unicode MS") and then use it with SearchablePDFMaker:
+
+				//searchablePDFMaker.LabelingFont = "Arial Unicode MS";
+				*/
 		        // Process the piece
 		        using (SearchablePDFMaker searchablePdfMaker = new SearchablePDFMaker("demo", "demo"))
 		        {
