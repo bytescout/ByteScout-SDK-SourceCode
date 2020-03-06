@@ -1,7 +1,7 @@
 ﻿---
 # Template that demonstrates parsing of multi-page table using only 
-# regular expressions for the table start, end, and rows.
-# If regular expression cannot be written for every table row (for example, 
+# macro expressions for the table start, end, and rows.
+# If macro expression cannot be written for every table row (for example, 
 # if the table contains empty cells), try the second method demonstrated 
 # in `MultiPageTable-template2.yml` template.
 templateVersion: 3
@@ -17,14 +17,15 @@ fields:
 tables:
 - name: table1
   start:
-    # regular expression to find the table start in document
+    # macro expression to find the table start in document
     expression: 'Item{{Spaces}}Description{{Spaces}}Price'
   end:
-    # regular expression to find the table end in document
+    # macro expression to find the table end in document
     expression: 'TOTAL{{Spaces}}{{Number}}'
   row:
-    # regular expression to find table rows
+    # macro expression to find table rows
     expression: '{{LineStart}}{{Spaces}}(?<itemNo>{{Digits}}){{Spaces}}(?<description>{{SentenceWithSingleSpaces}}){{Spaces}}(?<price>{{Number}}){{Spaces}}(?<qty>{{Digits}}){{Spaces}}(?<extPrice>{{Number}})'
+  # output data types for columns
   columns: 
   - name: itemNo
     type: integer
