@@ -334,6 +334,7 @@
 \BarCode SDK\C#\MaxiCode Barcode
 \BarCode SDK\C#\MaxiCode Mode 2-3 Postal Barcode
 \BarCode SDK\C#\MSI Barcode
+\BarCode SDK\C#\Multiline Barcode Caption
 \BarCode SDK\C#\Multiple Barcode Generation
 \BarCode SDK\C#\Numly Barcode
 \BarCode SDK\C#\Optical Product Barcode
@@ -452,6 +453,7 @@
 \BarCode SDK\VB.NET\MaxiCode
 \BarCode SDK\VB.NET\MaxiCode Mode 2-3 (Postal)
 \BarCode SDK\VB.NET\MSI Barcode
+\BarCode SDK\VB.NET\Multiline Barcode Caption
 \BarCode SDK\VB.NET\Multiple Barcode Generation
 \BarCode SDK\VB.NET\Narrow Bar Width
 \BarCode SDK\VB.NET\Numly
