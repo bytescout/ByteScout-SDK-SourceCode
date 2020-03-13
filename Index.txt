@@ -4139,10 +4139,14 @@
 \PDF.co Web API\Barcode Reader API\Python
 \PDF.co Web API\Barcode Reader API\VB.NET
 \PDF.co Web API\Barcode Reader API\C#\Advanced Conversion Options
+\PDF.co Web API\Barcode Reader API\C#\Async file upload and async barcode reading
 \PDF.co Web API\Barcode Reader API\C#\Async File Uploading
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\C#\Read Barcode From URL Asynchronously
+\PDF.co Web API\Barcode Reader API\C#\Read Code 128
+\PDF.co Web API\Barcode Reader API\C#\Read EAN 13
+\PDF.co Web API\Barcode Reader API\C#\Read QR Code
 \PDF.co Web API\Barcode Reader API\cURL\Advanced Conversation Options
 \PDF.co Web API\Barcode Reader API\cURL\Read Barcode from File
 \PDF.co Web API\Barcode Reader API\cURL\Read Barcode From URL
@@ -4166,10 +4170,14 @@
 \PDF.co Web API\Barcode Reader API\Python\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\Python\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\VB.NET\Advanced Conversion Options
+\PDF.co Web API\Barcode Reader API\VB.NET\Async File Upload and Async Barcode Reading
 \PDF.co Web API\Barcode Reader API\VB.NET\Async File Uploading
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Barcode From URL Asynchronously
+\PDF.co Web API\Barcode Reader API\VB.NET\Read Code 128
+\PDF.co Web API\Barcode Reader API\VB.NET\Read EAN 13
+\PDF.co Web API\Barcode Reader API\VB.NET\Read QR Code
 \PDF.co Web API\CSV To PDF API\C#
 \PDF.co Web API\CSV To PDF API\cURL
 \PDF.co Web API\CSV To PDF API\Java
@@ -4450,6 +4458,7 @@
 \PDF.co Web API\PDF Merging API\PowerShell
 \PDF.co Web API\PDF Merging API\Python
 \PDF.co Web API\PDF Merging API\VB.NET
+\PDF.co Web API\PDF Merging API\C#\Async file upload and async Merge PDF
 \PDF.co Web API\PDF Merging API\C#\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\C#\Merge PDF Documents From URLs
 \PDF.co Web API\PDF Merging API\C#\Merge PDF Documents From URLs Asynchronously
@@ -4468,6 +4477,7 @@
 \PDF.co Web API\PDF Merging API\PowerShell\Merge PDF Documents From URLs Asynchronously
 \PDF.co Web API\PDF Merging API\Python\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\Python\Merge PDF Documents From Uploaded Files Asynchronously
+\PDF.co Web API\PDF Merging API\VB.NET\Async file upload and async Merge PDF
 \PDF.co Web API\PDF Merging API\VB.NET\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\VB.NET\Merge PDF Documents From URLs
 \PDF.co Web API\PDF Merging API\VB.NET\Merge PDF Documents From URLs Asynchronously
@@ -4511,6 +4521,7 @@
 \PDF.co Web API\PDF Splitting API\PowerShell
 \PDF.co Web API\PDF Splitting API\Python
 \PDF.co Web API\PDF Splitting API\VB.NET
+\PDF.co Web API\PDF Splitting API\C#\Async file upload and async Split PDF
 \PDF.co Web API\PDF Splitting API\C#\Split PDF From Uploaded File
 \PDF.co Web API\PDF Splitting API\C#\Split PDF From URL
 \PDF.co Web API\PDF Splitting API\C#\Split PDF From URL Asynchronously
@@ -4531,6 +4542,7 @@
 \PDF.co Web API\PDF Splitting API\PowerShell\Split PDF From URL Asynchronously
 \PDF.co Web API\PDF Splitting API\Python\Split PDF From Uploaded File
 \PDF.co Web API\PDF Splitting API\Python\Split PDF From Uploaded File Asynchronously
+\PDF.co Web API\PDF Splitting API\VB.NET\Async file upload and async Split PDF
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From Uploaded File
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From URL
 \PDF.co Web API\PDF Splitting API\VB.NET\Split PDF From URL Asynchronously
@@ -4540,6 +4552,7 @@
 \PDF.co Web API\PDF Text Search API\PowerShell
 \PDF.co Web API\PDF Text Search API\Python
 \PDF.co Web API\PDF Text Search API\VB.NET
+\PDF.co Web API\PDF Text Search API\C#\Async file upload and async Search Text
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from Uploaded File
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from URL
@@ -4560,6 +4573,7 @@
 \PDF.co Web API\PDF Text Search API\PowerShell\PDF Text Search from URL Asynchronously
 \PDF.co Web API\PDF Text Search API\Python\PDF Text Search from Uploaded File
 \PDF.co Web API\PDF Text Search API\Python\PDF Text Search from Uploaded File Asynchronously
+\PDF.co Web API\PDF Text Search API\VB.NET\Async file upload and async Search Text
 \PDF.co Web API\PDF Text Search API\VB.NET\PDF Text Search from Uploaded File
 \PDF.co Web API\PDF Text Search API\VB.NET\PDF Text Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Text Search API\VB.NET\PDF Text Search from URL
@@ -4574,6 +4588,7 @@
 \PDF.co Web API\PDF To CSV API\VB.NET
 \PDF.co Web API\PDF To CSV API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\C#\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To CSV API\C#\Async file upload and async PDF to CSV
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From URL Asynchronously
@@ -4609,6 +4624,7 @@
 \PDF.co Web API\PDF To CSV API\Python\Convert PDF To CSV From Uploaded File Asynchronously
 \PDF.co Web API\PDF To CSV API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\VB.NET\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To CSV API\VB.NET\Async file upload and async PDF to CSV
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL Asynchronously
@@ -4857,6 +4873,7 @@
 \PDF.co Web API\PDF To Text API\VB.NET
 \PDF.co Web API\PDF To Text API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\C#\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To Text API\C#\Async file upload and async PDF to Text
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\C#\Convert PDF To Text From URL Asynchronously
@@ -4891,6 +4908,7 @@
 \PDF.co Web API\PDF To Text API\Python\Convert PDF To Text From Uploaded File Asynchronously
 \PDF.co Web API\PDF To Text API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\VB.NET\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To Text API\VB.NET\Async file upload and async PDF to Text
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL Asynchronously
