@@ -2814,6 +2814,7 @@
 \PDF Extractor SDK\C#\Extract Text From PDF By Pages
 \PDF Extractor SDK\C#\Extract Video from PDF
 \PDF Extractor SDK\C#\Extraction From Complex Borderless Tables
+\PDF Extractor SDK\C#\Filter Watermark Text
 \PDF Extractor SDK\C#\Find Email Addresses in PDF with Regex
 \PDF Extractor SDK\C#\Find Keyword And Extract Page in PDF
 \PDF Extractor SDK\C#\Find Keyword And Extract Text in PDF
@@ -2937,6 +2938,7 @@
 \PDF Extractor SDK\VB.NET\Extract Text from PDF
 \PDF Extractor SDK\VB.NET\Extract Video from PDF
 \PDF Extractor SDK\VB.NET\Extraction From Complex Borderless Tables
+\PDF Extractor SDK\VB.NET\Filter Watermark Text
 \PDF Extractor SDK\VB.NET\Find Email Addresses in PDF using Regex
 \PDF Extractor SDK\VB.NET\Find Keyword in PDF And Extract Page
 \PDF Extractor SDK\VB.NET\Find Keyword in PDF And Extract Text
