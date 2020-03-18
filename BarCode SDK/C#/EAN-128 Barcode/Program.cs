@@ -31,7 +31,7 @@ namespace Sample
             barcode.Symbology = SymbologyType.EAN128;
             
             // Set value            
-            barcode.Value = "(12)this is a test";
+            barcode.Value = "(420)145322(92)00191234567812345671";
 
             // Save barcode to image
             barcode.SaveImage("result.png");
