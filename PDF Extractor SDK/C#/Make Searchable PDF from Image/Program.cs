@@ -55,7 +55,7 @@ namespace MakeSearchablePDF
             // Set PDF document rendering resolution
             searchablePDFMaker.OCRResolution = 300;
 
-            // Save extracted text to file
+            // Process document
             searchablePDFMaker.MakePDFSearchable("output.pdf");
 
             // Cleanup

@@ -49,7 +49,7 @@ Module Module1
         ' Detect Page Rotation
         searchablePdfMaker.OCRDetectPageRotation = True
 
-        ' Save extracted text to file
+        ' Process document
         searchablePdfMaker.MakePDFSearchable("output.pdf")
 
         ' Cleanup

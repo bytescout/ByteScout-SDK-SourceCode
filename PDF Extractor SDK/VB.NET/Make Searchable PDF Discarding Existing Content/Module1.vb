@@ -49,7 +49,7 @@ Module Module1
         ' Discard Existing Text in document
         searchablePdfMaker.DiscardExistingDocumentText = True
 
-        ' Save extracted text to file
+        ' Process document
         searchablePdfMaker.MakePDFSearchable("output.pdf")
 
         ' Cleanup

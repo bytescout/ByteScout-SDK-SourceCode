@@ -57,7 +57,7 @@ namespace MakeSearchablePDFAndFixRotatingPages
             // Detect Page Rotation
             searchablePDFMaker.OCRDetectPageRotation = true;
 
-            // Save extracted text to file
+            // Process document
             searchablePDFMaker.MakePDFSearchable("output.pdf");
 
             // Cleanup

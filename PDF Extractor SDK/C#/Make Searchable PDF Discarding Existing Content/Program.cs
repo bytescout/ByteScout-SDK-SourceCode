@@ -57,7 +57,7 @@ namespace MakeSearchablePDFDiscardingExistingContent
             // Discard Existing Text in document
             searchablePDFMaker.DiscardExistingDocumentText = true;
 
-            // Save extracted text to file
+            // Process document
             searchablePDFMaker.MakePDFSearchable("output.pdf");
 
             // Cleanup

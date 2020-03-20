@@ -46,7 +46,7 @@ Module Module1
         ' Set PDF document rendering resolution
         searchablePdfMaker.OCRResolution = 300
 
-        ' Save extracted text to file
+        ' Process document
         searchablePdfMaker.MakePDFSearchable("output.pdf")
 
         ' Cleanup
