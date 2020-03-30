@@ -327,6 +327,7 @@
 \BarCode SDK\C#\GS1 Datamatrix Barcode
 \BarCode SDK\C#\GS1 Datamatrix barcode with multiline captions
 \BarCode SDK\C#\GS1 QR Code Barcode
+\BarCode SDK\C#\GS1-128 Barcode
 \BarCode SDK\C#\Interleaved 2 of 5 Barcode
 \BarCode SDK\C#\ISBN Barcode
 \BarCode SDK\C#\JAN-13 Barcode
@@ -445,6 +446,7 @@
 \BarCode SDK\VB.NET\GS1 Datamatrix
 \BarCode SDK\VB.NET\GS1 Datamatrix barcode with multiline captions
 \BarCode SDK\VB.NET\GS1 QR Code
+\BarCode SDK\VB.NET\GS1-128
 \BarCode SDK\VB.NET\Interleaved 2 of 5 Barcode
 \BarCode SDK\VB.NET\ISBN Barcode
 \BarCode SDK\VB.NET\JAN-13 Barcode
@@ -736,6 +738,7 @@
 \Barcode Suite\C#\Generate gs1 databar truncated barcode with barcode sdk
 \Barcode Suite\C#\Generate gs1 datamatrix barcode with barcode sdk
 \Barcode Suite\C#\Generate gs1 qr code barcode with barcode sdk
+\Barcode Suite\C#\Generate gs1-128 barcode with barcode sdk
 \Barcode Suite\C#\Generate interleaved 2 of 5 barcode with barcode sdk
 \Barcode Suite\C#\Generate invoice with spreadsheet sdk
 \Barcode Suite\C#\Generate isbn barcode with barcode sdk
@@ -1048,6 +1051,7 @@
 \Barcode Suite\VB.NET\Generate ean-8 barcode with barcode sdk
 \Barcode Suite\VB.NET\Generate gs1 datamatrix barcode with barcode sdk
 \Barcode Suite\VB.NET\Generate gs1 qr code barcode with barcode sdk
+\Barcode Suite\VB.NET\Generate gs1-128 barcode with barcode sdk
 \Barcode Suite\VB.NET\Generate invoice with spreadsheet sdk
 \Barcode Suite\VB.NET\Generate isbn barcode with barcode sdk
 \Barcode Suite\VB.NET\Generate jan-13 barcode with barcode sdk
@@ -5356,6 +5360,7 @@
 \Premium Suite\C#\Generate gs1 databar truncated barcode with barcode sdk
 \Premium Suite\C#\Generate gs1 datamatrix barcode with barcode sdk
 \Premium Suite\C#\Generate gs1 qr code barcode with barcode sdk
+\Premium Suite\C#\Generate gs1-128 barcode with barcode sdk
 \Premium Suite\C#\Generate interleaved 2 of 5 barcode with barcode sdk
 \Premium Suite\C#\Generate isbn barcode with barcode sdk
 \Premium Suite\C#\Generate jan-13 barcode with barcode sdk
@@ -5803,6 +5808,7 @@
 \Premium Suite\VB.NET\Generate ean-8 barcode with barcode sdk
 \Premium Suite\VB.NET\Generate gs1 datamatrix barcode with barcode sdk
 \Premium Suite\VB.NET\Generate gs1 qr code barcode with barcode sdk
+\Premium Suite\VB.NET\Generate gs1-128 barcode with barcode sdk
 \Premium Suite\VB.NET\Generate isbn barcode with barcode sdk
 \Premium Suite\VB.NET\Generate jan-13 barcode with barcode sdk
 \Premium Suite\VB.NET\Generate macro pdf417 (multiple)  barcode with barcode sdk
