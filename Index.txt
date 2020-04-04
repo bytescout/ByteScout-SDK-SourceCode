@@ -2802,6 +2802,7 @@
 \PDF Extractor SDK\C#\Data Masking in PDF
 \PDF Extractor SDK\C#\Detect Lines in PDF
 \PDF Extractor SDK\C#\Download and Process file
+\PDF Extractor SDK\C#\Extract 3D Animation from PDF
 \PDF Extractor SDK\C#\Extract Attachments from PDF
 \PDF Extractor SDK\C#\Extract Audio from PDF
 \PDF Extractor SDK\C#\Extract CSV from PDF and Fill Database (SQL Server)
@@ -2926,6 +2927,7 @@
 \PDF Extractor SDK\VB.NET\Data Masking in PDF
 \PDF Extractor SDK\VB.NET\Detect Lines in PDF
 \PDF Extractor SDK\VB.NET\Download and Process file
+\PDF Extractor SDK\VB.NET\Extract 3D Animation from PDF
 \PDF Extractor SDK\VB.NET\Extract Attachments from PDF
 \PDF Extractor SDK\VB.NET\Extract Audio from PDF
 \PDF Extractor SDK\VB.NET\Extract CSV from PDF and Fill Database in SQL Server
