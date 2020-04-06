@@ -27,13 +27,20 @@ Class Program
         Dim page = New Page(PaperFormat.A4)
         pdfDocument.Pages.Add(page)
 
-        ' Add button
-        Dim button = New PushButton(20, 20, 150, 25, "button1")
-        button.Caption = "BYTESCOUT.COM"
-        ' Add URI action
-        Dim action = New URIAction(New Uri("http://bytescout.com/"))
-        button.OnActivated = action
-        page.Annotations.Add(button)
+        ' Set Url action
+        Dim action As New URIAction(New Uri("https://bytescout.com"))
+
+        ' Add link annotation
+        Dim linkAnnotation As New LinkAnnotation(action, 20, 20, 150, 25)
+
+        ' Set highlight mode
+        linkAnnotation.HighlightingMode = LinkAnnotationHighlightingMode.Outline
+
+        ' Set color
+        linkAnnotation.Color = New ColorRGB(0, 0, 255)
+
+        ' Add Link
+        page.Annotations.Add(linkAnnotation)
 
         ' Save document to file
         pdfDocument.Save("result.pdf")

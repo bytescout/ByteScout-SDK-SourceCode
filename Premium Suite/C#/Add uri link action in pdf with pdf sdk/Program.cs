@@ -28,18 +28,26 @@ namespace UriAction
             Document pdfDocument = new Document();
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
+
             // Add page
             Page page = new Page(PaperFormat.A4);
             pdfDocument.Pages.Add(page);
 
-            // Add button
-            PushButton button = new PushButton(20, 20, 150, 25, "button1");
-            button.Caption = "BYTESCOUT.COM";
-            // Add URI action
-            URIAction action = new URIAction(new Uri("http://bytescout.com/"));
-            button.OnActivated = action;
-            page.Annotations.Add(button);
-            
+            // Set Url action
+            URIAction action = new URIAction(new Uri("https://bytescout.com"));
+
+            // Add link annotation
+            LinkAnnotation linkAnnotation = new LinkAnnotation(action, 20, 20, 150, 25);
+
+            // Set highlight mode
+            linkAnnotation.HighlightingMode = LinkAnnotationHighlightingMode.Outline;
+
+            // Set color
+            linkAnnotation.Color = new ColorRGB(0, 0, 255);
+
+            // Add Link
+            page.Annotations.Add(linkAnnotation);
+
             // Save document to file
             pdfDocument.Save("result.pdf");
 
