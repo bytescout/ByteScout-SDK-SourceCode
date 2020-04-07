@@ -51,7 +51,7 @@ inputDocument = "..\..\sample_ocr.pdf"
 pageIndex = 0
 
 ' Location of OCR language data files
-ocrLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best_best\"
+ocrLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\"
 
 ' OCR language
 ocrLanguage = "eng" ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish etc - according to files in "ocrdata" folder

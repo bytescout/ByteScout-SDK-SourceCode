@@ -2847,6 +2847,7 @@
 \PDF Extractor SDK\C#\Merge PDF Documents
 \PDF Extractor SDK\C#\Merge Protected PDF Documents
 \PDF Extractor SDK\C#\OCR Analyser
+\PDF Extractor SDK\C#\OCR Modes
 \PDF Extractor SDK\C#\OCR With Best Dataset
 \PDF Extractor SDK\C#\OCR With Fast Dataset
 \PDF Extractor SDK\C#\OCR With Mean Dataset
@@ -2973,6 +2974,7 @@
 \PDF Extractor SDK\VB.NET\Merge Protected PDF Documents
 \PDF Extractor SDK\VB.NET\OCR (Optical Character Recognition) and PDF
 \PDF Extractor SDK\VB.NET\OCR Analyser in PDF
+\PDF Extractor SDK\VB.NET\OCR Modes
 \PDF Extractor SDK\VB.NET\OCR With Best Dataset
 \PDF Extractor SDK\VB.NET\OCR With Fast Dataset
 \PDF Extractor SDK\VB.NET\OCR With Mean Dataset
