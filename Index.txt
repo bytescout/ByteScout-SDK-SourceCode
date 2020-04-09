@@ -2794,6 +2794,7 @@
 \PDF Extractor SDK\ASP.NET C#\OCR (Optical Character Recognition) in PDF
 \PDF Extractor SDK\ASP.NET C#\ZUGFeRD Invoice Extraction
 \PDF Extractor SDK\C#\Add Image Stamp in PDF
+\PDF Extractor SDK\C#\Arabic Text Extraction
 \PDF Extractor SDK\C#\Batch check folder agianst JSON settings
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF
 \PDF Extractor SDK\C#\Compare PDF Documents
@@ -2910,6 +2911,7 @@
 \PDF Extractor SDK\Microsoft Excel\Merge PDF Documents
 \PDF Extractor SDK\Powershell\PDF To JSON
 \PDF Extractor SDK\VB.NET\Add Image Stamp in PDF
+\PDF Extractor SDK\VB.NET\Arabic Text Extraction
 \PDF Extractor SDK\VB.NET\Batch check folder agianst JSON settings
 \PDF Extractor SDK\VB.NET\Check If OCR Is Required for PDF
 \PDF Extractor SDK\VB.NET\Compare PDF Documents
@@ -3018,6 +3020,7 @@
 \PDF Extractor SDK\VB6\Merge PDF
 \PDF Extractor SDK\VB6\Scanned PDF To Text
 \PDF Extractor SDK\VB6\Split PDF
+\PDF Extractor SDK\VBScript\Arabic Text Extraction
 \PDF Extractor SDK\VBScript\Compare PDF Documents
 \PDF Extractor SDK\VBScript\Convert PDF To CSV
 \PDF Extractor SDK\VBScript\Convert PDF To CSV (Merge multiline text to table cell)
