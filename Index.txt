@@ -16,6 +16,7 @@
 \PDF To HTML SDK
 \PDF Viewer SDK
 \PDF.co Web API
+\Postman Collection
 \Premium Suite
 \QR Code SDK
 \Screen Capturing SDK
