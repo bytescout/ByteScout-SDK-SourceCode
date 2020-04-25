@@ -6713,6 +6713,8 @@
 \Text Recognition SDK\C#\Download and Process file
 \Text Recognition SDK\C#\Extract Text From Areas
 \Text Recognition SDK\C#\Recognize Text From Document
+\Text Recognition SDK\C#\Save OCR Objects As JSON
+\Text Recognition SDK\C#\Save OCR Objects As XML
 \Text Recognition SDK\C#\Screen Text Reader
 \Text Recognition SDK\C#\Use Image Preprocessing Filters
 \Text Recognition SDK\C#\Use Text Auto Corrections
@@ -6724,6 +6726,8 @@
 \Text Recognition SDK\VB.NET\Download and Process file
 \Text Recognition SDK\VB.NET\Extract Text From Areas
 \Text Recognition SDK\VB.NET\Recognize Text From Document
+\Text Recognition SDK\VB.NET\Save OCR Objects As JSON
+\Text Recognition SDK\VB.NET\Save OCR Objects As XML
 \Text Recognition SDK\VB.NET\Screen Text Reader
 \Text Recognition SDK\VB.NET\Use Image Preprocessing Filters
 \Text Recognition SDK\VB.NET\Use Text Auto Corrections
