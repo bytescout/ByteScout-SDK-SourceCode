@@ -6185,6 +6185,7 @@
 \RPA Robotic Process Automation\Generate Barcodes From Spreadsheet
 \RPA Robotic Process Automation\Hide Images In PDF Document
 \RPA Robotic Process Automation\Human Assisted Invoice Parsing
+\RPA Robotic Process Automation\Invoice fraud detection
 \RPA Robotic Process Automation\Make Large PDF Document Searchable Using Parallel Processing
 \RPA Robotic Process Automation\Parse Invoice
 \RPA Robotic Process Automation\PDF Data Remover Tool
@@ -6205,6 +6206,9 @@
 \RPA Robotic Process Automation\Generate Barcodes From Spreadsheet\VBScript
 \RPA Robotic Process Automation\Hide Images In PDF Document\C#
 \RPA Robotic Process Automation\Human Assisted Invoice Parsing\C#
+\RPA Robotic Process Automation\Invoice fraud detection\C#
+\RPA Robotic Process Automation\Invoice fraud detection\SampleInvoices
+\RPA Robotic Process Automation\Invoice fraud detection\VB.NET
 \RPA Robotic Process Automation\Make Large PDF Document Searchable Using Parallel Processing\C#
 \RPA Robotic Process Automation\Make Large PDF Document Searchable Using Parallel Processing\VB.NET
 \RPA Robotic Process Automation\Parse Invoice\C#

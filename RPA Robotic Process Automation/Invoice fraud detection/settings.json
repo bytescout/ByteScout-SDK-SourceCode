@@ -1,0 +1,42 @@
+[
+  {
+    "RegionType": "Account Number",
+    "CorrectValue": "123-456-7892",
+    "RegionLocation": {
+      "X": 129.0,
+      "Y": 185.3,
+      "Width": 98.3,
+      "Height":  12.8
+    }
+  },
+  {
+    "RegionType": "Swift Number",
+    "CorrectValue": "SF123456",
+    "RegionLocation": {
+      "X": 114.4,
+      "Y": 200.3,
+      "Width": 114.0,
+      "Height": 10.5
+    }
+  },
+  {
+    "RegionType": "Bank Name",
+    "CorrectValue": "Bank of XYZ",
+    "RegionLocation": {
+      "X": 114.0,
+      "Y": 213.8,
+      "Width": 115.5,
+      "Height": 11.3
+    }
+  },
+  {
+    "RegionType": "Branch",
+    "CorrectValue": "City of XYX",
+    "RegionLocation": {
+      "X": 107.3,
+      "Y": 226.3,
+      "Width": 122.3,
+      "Height": 15.0
+    }
+  }
+]
