@@ -372,6 +372,7 @@
 \BarCode SDK\C#\Set Unicode Value For Barcode
 \BarCode SDK\C#\Set Wide To Narrow Ratio
 \BarCode SDK\C#\Singapore Postal Code Barcode
+\BarCode SDK\C#\Store Large Data with Macro PDF417 Barcode
 \BarCode SDK\C#\Swiss Post Parcel Barcode
 \BarCode SDK\C#\UPCA Barcode
 \BarCode SDK\C#\UPCE Barcode
@@ -489,6 +490,7 @@
 \BarCode SDK\VB.NET\Set Unicode Text in Barcode
 \BarCode SDK\VB.NET\Set Wide To Narrow Ratio
 \BarCode SDK\VB.NET\Singapore Postal Code
+\BarCode SDK\VB.NET\Store Large Data with Macro PDF417 Barcode
 \BarCode SDK\VB.NET\Swiss Post Parcel
 \BarCode SDK\VB.NET\UPCA
 \BarCode SDK\VB.NET\UPCE
