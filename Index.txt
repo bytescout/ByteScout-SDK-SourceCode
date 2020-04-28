@@ -2890,6 +2890,7 @@
 \PDF Extractor SDK\C#\SearchablePDFMaker Progress Indication
 \PDF Extractor SDK\C#\Sensitive Data Detector
 \PDF Extractor SDK\C#\Set Configuration Profiles
+\PDF Extractor SDK\C#\Split Document into Separate Pages
 \PDF Extractor SDK\C#\Split PDF Document
 \PDF Extractor SDK\C#\Split Protected PDF Document
 \PDF Extractor SDK\C#\TextExtractor Progress Indication
@@ -3008,6 +3009,7 @@
 \PDF Extractor SDK\VB.NET\SearchablePDFMaker Progress Indication
 \PDF Extractor SDK\VB.NET\Sensitive Data Detector
 \PDF Extractor SDK\VB.NET\Split Document
+\PDF Extractor SDK\VB.NET\Split document into separate pages
 \PDF Extractor SDK\VB.NET\Split Protected PDF Document
 \PDF Extractor SDK\VB.NET\TextExtractor Progress Indication
 \PDF Extractor SDK\VB.NET\ZUGFeRD Invoice Extraction
