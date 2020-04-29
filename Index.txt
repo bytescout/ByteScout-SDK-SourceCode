@@ -2869,6 +2869,7 @@
 \PDF Extractor SDK\C#\PDF To XFDF
 \PDF Extractor SDK\C#\PDF To XLS
 \PDF Extractor SDK\C#\PDF To XLSX
+\PDF Extractor SDK\C#\PDF To XLSX by pages
 \PDF Extractor SDK\C#\PDF To XML
 \PDF Extractor SDK\C#\PDF To XML With Images
 \PDF Extractor SDK\C#\PDF XFA Form To XML
@@ -2927,6 +2928,7 @@
 \PDF Extractor SDK\VB.NET\Convert PDF To XFDF
 \PDF Extractor SDK\VB.NET\Convert PDF To XLS
 \PDF Extractor SDK\VB.NET\convert PDF To XLSX
+\PDF Extractor SDK\VB.NET\Convert PDF To XLSX by pages
 \PDF Extractor SDK\VB.NET\Convert PDF To XML
 \PDF Extractor SDK\VB.NET\Convert Protected PDF Document to XLS
 \PDF Extractor SDK\VB.NET\Convert XFA Form To XML in PDF
