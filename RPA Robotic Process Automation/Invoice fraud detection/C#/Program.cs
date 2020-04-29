@@ -28,7 +28,7 @@ namespace InvoiceFraudDetection
 	{
 		static void Main(string[] args)
 		{
-            var allInputFiles = new string[] { "InvoiceMar.pdf", "InvoiceApr.pdf", "InvoiceApr_Forged.pdf" };
+            var allInputFiles = new string[] { "Sample_Files\\InvoiceMar.pdf", "Sample_Files\\InvoiceApr.pdf", "Sample_Files\\InvoiceApr_Forged.pdf" };
             var settingJson = File.ReadAllText("settings.json");
             var deserializer = new JavaScriptSerializer();
             

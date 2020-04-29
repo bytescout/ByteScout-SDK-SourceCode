@@ -23,7 +23,7 @@ Module Module1
     ''' </summary>
     Sub Main()
 
-        Dim allInputFiles As String() = {"InvoiceMar.pdf", "InvoiceApr.pdf", "InvoiceApr_Forged.pdf"}
+        Dim allInputFiles As String() = {"Sample_Files\InvoiceMar.pdf", "Sample_Files\InvoiceApr.pdf", "Sample_Files\InvoiceApr_Forged.pdf"}
         Dim settingJson = File.ReadAllText("settings.json")
         Dim deserializer As New JavaScriptSerializer()
 

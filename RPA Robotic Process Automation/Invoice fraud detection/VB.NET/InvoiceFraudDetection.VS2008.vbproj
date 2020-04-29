@@ -69,22 +69,18 @@
     <Compile Include="Module1.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\SampleInvoices\InvoiceMar.pdf">
-      <Link>InvoiceMar.pdf</Link>
+    <None Include="Sample_Files\InvoiceApr.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\SampleInvoices\InvoiceApr.pdf">
-      <Link>InvoiceApr.pdf</Link>
+    </None>
+    <None Include="Sample_Files\InvoiceApr_Forged.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\SampleInvoices\InvoiceApr_Forged.pdf">
-      <Link>InvoiceApr_Forged.pdf</Link>
+    </None>
+    <None Include="Sample_Files\InvoiceMar.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\settings.json">
-      <Link>settings.json</Link>
+    </None>
+    <None Include="settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
