@@ -6195,6 +6195,7 @@
 \RPA Robotic Process Automation\Parse Invoice
 \RPA Robotic Process Automation\PDF Data Remover Tool
 \RPA Robotic Process Automation\PDF Invoices to Google Sheets
+\RPA Robotic Process Automation\PDF Invoices to Spreadsheet
 \RPA Robotic Process Automation\Read PDF with Scanned Image and Hindi Text
 \RPA Robotic Process Automation\Regular Expression Search and Highlight in PDF
 \RPA Robotic Process Automation\Regular Expression Search In PDF And Highlight On Rendered Page
@@ -6228,6 +6229,10 @@
 \RPA Robotic Process Automation\PDF Invoices to Google Sheets\VB.NET
 \RPA Robotic Process Automation\PDF Invoices to Google Sheets\C#\Sample_Files
 \RPA Robotic Process Automation\PDF Invoices to Google Sheets\VB.NET\Sample_Files
+\RPA Robotic Process Automation\PDF Invoices to Spreadsheet\C#
+\RPA Robotic Process Automation\PDF Invoices to Spreadsheet\VB.NET
+\RPA Robotic Process Automation\PDF Invoices to Spreadsheet\C#\Sample_Files
+\RPA Robotic Process Automation\PDF Invoices to Spreadsheet\VB.NET\Sample_Files
 \RPA Robotic Process Automation\Read PDF with Scanned Image and Hindi Text\C#
 \RPA Robotic Process Automation\Read PDF with Scanned Image and Hindi Text\VB.NET
 \RPA Robotic Process Automation\Regular Expression Search and Highlight in PDF\C#
