@@ -6181,6 +6181,7 @@
 \QR Code SDK\VBScript and VB6\Create Simple QR Code Barcode
 \QR Code SDK\VBScript and VB6\Encode Unicode Value to QR Code
 \QR Code SDK\VBScript and VB6\Make QR Code With Embedded Image
+\RPA Robotic Process Automation\Convert HL7 to Spreadsheet
 \RPA Robotic Process Automation\Convert Scanned PDF to Excel
 \RPA Robotic Process Automation\Create side by side manifest
 \RPA Robotic Process Automation\Display PDF in Browser and Select Area Using PDF.js
@@ -6193,12 +6194,16 @@
 \RPA Robotic Process Automation\Make Large PDF Document Searchable Using Parallel Processing
 \RPA Robotic Process Automation\Parse Invoice
 \RPA Robotic Process Automation\PDF Data Remover Tool
+\RPA Robotic Process Automation\PDF Invoices to Google Sheets
 \RPA Robotic Process Automation\Read PDF with Scanned Image and Hindi Text
 \RPA Robotic Process Automation\Regular Expression Search and Highlight in PDF
 \RPA Robotic Process Automation\Regular Expression Search In PDF And Highlight On Rendered Page
 \RPA Robotic Process Automation\Remove Text From Selected Regions
 \RPA Robotic Process Automation\Select Region And Perform OCR
 \RPA Robotic Process Automation\Slice PDF by Horizontal Lines Inside
+\RPA Robotic Process Automation\Convert HL7 to Spreadsheet\C#
+\RPA Robotic Process Automation\Convert HL7 to Spreadsheet\C#\Sample_Files
+\RPA Robotic Process Automation\Convert HL7 to Spreadsheet\C#\Src
 \RPA Robotic Process Automation\Convert Scanned PDF to Excel\C#
 \RPA Robotic Process Automation\Convert Scanned PDF to Excel\VB.NET
 \RPA Robotic Process Automation\Create side by side manifest\VB6
@@ -6219,6 +6224,10 @@
 \RPA Robotic Process Automation\Parse Invoice\C#
 \RPA Robotic Process Automation\Parse Invoice\VB.NET
 \RPA Robotic Process Automation\PDF Data Remover Tool\C#
+\RPA Robotic Process Automation\PDF Invoices to Google Sheets\C#
+\RPA Robotic Process Automation\PDF Invoices to Google Sheets\VB.NET
+\RPA Robotic Process Automation\PDF Invoices to Google Sheets\C#\Sample_Files
+\RPA Robotic Process Automation\PDF Invoices to Google Sheets\VB.NET\Sample_Files
 \RPA Robotic Process Automation\Read PDF with Scanned Image and Hindi Text\C#
 \RPA Robotic Process Automation\Read PDF with Scanned Image and Hindi Text\VB.NET
 \RPA Robotic Process Automation\Regular Expression Search and Highlight in PDF\C#
