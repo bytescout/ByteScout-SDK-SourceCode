@@ -6185,6 +6185,7 @@
 \QR Code SDK\VBScript and VB6\Create Simple QR Code Barcode
 \QR Code SDK\VBScript and VB6\Encode Unicode Value to QR Code
 \QR Code SDK\VBScript and VB6\Make QR Code With Embedded Image
+\RPA Robotic Process Automation\Automate Desktop Apps
 \RPA Robotic Process Automation\Convert HL7 to Spreadsheet
 \RPA Robotic Process Automation\Convert Scanned PDF to Excel
 \RPA Robotic Process Automation\Create side by side manifest
@@ -6206,6 +6207,11 @@
 \RPA Robotic Process Automation\Remove Text From Selected Regions
 \RPA Robotic Process Automation\Select Region And Perform OCR
 \RPA Robotic Process Automation\Slice PDF by Horizontal Lines Inside
+\RPA Robotic Process Automation\Automate Desktop Apps\C#
+\RPA Robotic Process Automation\Automate Desktop Apps\C#\AutomateDesktopApp
+\RPA Robotic Process Automation\Automate Desktop Apps\C#\InvoiceSayHello
+\RPA Robotic Process Automation\Automate Desktop Apps\C#\AutomateDesktopApp\Sample_Files
+\RPA Robotic Process Automation\Automate Desktop Apps\C#\AutomateDesktopApp\Screenshots
 \RPA Robotic Process Automation\Convert HL7 to Spreadsheet\C#
 \RPA Robotic Process Automation\Convert HL7 to Spreadsheet\C#\Sample_Files
 \RPA Robotic Process Automation\Convert HL7 to Spreadsheet\C#\Src

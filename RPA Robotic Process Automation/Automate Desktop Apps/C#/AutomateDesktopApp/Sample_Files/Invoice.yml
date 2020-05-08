@@ -1,0 +1,47 @@
+﻿templateVersion: 3
+templatePriority: 0
+sourceId: Untitled document kind
+detectionRules:
+  keywords: []
+fields:
+  BillTo:
+    type: rectangle
+    rectangle:
+    - 65.25
+    - 135.75
+    - 56.25
+    - 12
+    pageIndex: 0
+  BillAddress:
+    type: rectangle
+    rectangle:
+    - 31.5
+    - 148.5
+    - 159.75
+    - 29.25
+    pageIndex: 0
+  InvNo:
+    type: rectangle
+    rectangle:
+    - 529.5
+    - 116.25
+    - 51.75
+    - 8.25
+    pageIndex: 0
+  InvDate:
+    type: rectangle
+    rectangle:
+    - 521.25
+    - 128.25
+    - 57.75
+    - 10.5
+    pageIndex: 0
+  InvAmt:
+    type: rectangle
+    rectangle:
+    - 536.25
+    - 141.75
+    - 38.25
+    - 12.75
+    pageIndex: 0
+
