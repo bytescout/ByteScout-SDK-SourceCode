@@ -25,7 +25,7 @@ namespace ParseMultipageTable
         {
             string inputDocument = @".\MultiPageTable.pdf";
             string template1 = @".\MultiPageTable-template1.yml";
-            string template2 = @".\MultiPageTable-template1.yml";
+            string template2 = @".\MultiPageTable-template2.yml";
 
             using (DocumentParser documentParser = new DocumentParser("demo", "demo"))
             {

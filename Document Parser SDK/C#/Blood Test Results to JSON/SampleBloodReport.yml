@@ -1,35 +1,40 @@
-﻿templateVersion: 3
+﻿templateName: BloodTestTemplate
+templateVersion: 4
 templatePriority: 0
-sourceId: BloodTestTemplate
 detectionRules:
   keywords: []
-fields:
-  PatientName:
-    type: rectangle
+objects:
+- name: PatientName
+  fieldProperties:
+    fieldType: rectangle
     rectangle:
-    - 177.75
+    - 176.25
     - 123.75
-    - 62.25
+    - 156.75
     - 12.75
     pageIndex: 0
-  ReportName:
-    type: rectangle
-    expression: '{{SmartDate}}'
+- name: ReportName
+  fieldProperties:
+    fieldType: rectangle
+    expression: ''
     dataType: date
+    dateFormat: auto-mdy
     rectangle:
-    - 335.25
+    - 333
     - 94.5
-    - 65.25
+    - 133.5
     - 12
     pageIndex: 0
-  TestResults:
-    type: rectangle
-    dataType: table
-    rectangle:
-    - 41.25
-    - 261.75
-    - 532.5
-    - 450.75
-    pageIndex: 0
-    rowMergingRule: byBorders
+- objectType: table
+  name: TestResults
+  tableProperties:
+    start:
+      y: 261.75
+      pageIndex: 0
+    end:
+      y: 712.5
+      pageIndex: 0
+    left: 41.25
+    right: 573.75
+
 
