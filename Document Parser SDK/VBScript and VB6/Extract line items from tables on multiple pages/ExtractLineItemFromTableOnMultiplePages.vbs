@@ -14,8 +14,8 @@
 ' See comments in the code of templates.
 
 inputDocument = "..\..\MultiPageTable.pdf"
-template1 = "..\..\_Sample Templates\MultiPageTable-template1.yml"
-template2 = "..\..\_Sample Templates\MultiPageTable-template2.yml"
+template1 = ".\MultiPageTable-template1.yml"
+template2 = ".\MultiPageTable-template2.yml"
 
 
 ' Create DocumentParser object

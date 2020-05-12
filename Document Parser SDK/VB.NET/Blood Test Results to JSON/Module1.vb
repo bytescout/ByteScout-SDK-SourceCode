@@ -29,10 +29,10 @@ Module Module1
         Dim sampleDocument As String = ".\SampleBloodReport.pdf"
 
         ' Sample template which primarily extracts patient name, report date And test result table.
-        Dim sampleTemplate As String = ".\Templates\SampleBloodReport.yml"
+        Dim sampleTemplate As String = ".\SampleBloodReport.yml"
 
         ' Perform parsing with SDK
-        ' ParseWithSDK(sampleDocument, sampleTemplate)
+        ParseWithSDK(sampleDocument, sampleTemplate)
 
         ' Perform parsing with PDF.co api
         ' ParseWithPDFCoApi(sampleDocument, sampleTemplate)

@@ -22,7 +22,7 @@ namespace GeneralExample
     {
         static void Main(string[] args)
         {
-            string templateDocument = @".\Templates\SampleTicket.yml";
+            string templateDocument = @".\SampleTicket.yml";
             string inputDocument = @".\SampleTicket.pdf";
 
             // Create DocumentParser instance

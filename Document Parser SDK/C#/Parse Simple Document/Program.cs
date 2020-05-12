@@ -22,7 +22,8 @@ namespace GeneralExample
     {
         static void Main(string[] args)
         {
-            string templatesFolder = @".\Templates";
+            var templates = new string[] { "DigitalOcean.yml", "AmazonAWS.yml", "Google.yml" } ;
+
             string inputDocument1 = @".\DigitalOcean.pdf";
             string inputDocument2 = @".\AmazonAWS.pdf";
             string inputDocument3 = @".\Google.pdf";
@@ -31,10 +32,13 @@ namespace GeneralExample
             using (DocumentParser documentParser = new DocumentParser("demo", "demo"))
             {
                 Console.WriteLine($"Loading templates...");
-                
-                int count = documentParser.AddTemplates(templatesFolder);
 
-                Console.WriteLine($"{count} templates loaded.");
+                foreach (var template in templates)
+                {
+                    documentParser.AddTemplate(template);
+                }
+
+                Console.WriteLine($"templates loaded.");
                 Console.WriteLine();
 
                 Console.WriteLine($"Parsing \"{inputDocument1}\"...");

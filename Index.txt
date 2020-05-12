@@ -2670,7 +2670,6 @@
 \Document Parser SDK\C#
 \Document Parser SDK\VB.NET
 \Document Parser SDK\VBScript and VB6
-\Document Parser SDK\_Sample Templates
 \Document Parser SDK\C#\Blood Test Results to JSON
 \Document Parser SDK\C#\Create Custom Template
 \Document Parser SDK\C#\Extract line items from tables on multiple pages

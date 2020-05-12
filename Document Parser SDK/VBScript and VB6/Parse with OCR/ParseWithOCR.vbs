@@ -13,7 +13,7 @@
 ' This example demonstrates parsing of scanned documents
 ' using the Optical Character Recognition (OCR).
 
-template = "..\..\_Sample Templates\DigitalOcean.yml"
+template = ".\DigitalOcean.yml"
 inputDocument = "..\..\DigitalOcean-scanned.jpg"
 
 

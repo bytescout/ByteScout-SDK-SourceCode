@@ -70,8 +70,7 @@
     <Compile Include="Module1.vb" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\_Sample Templates\DigitalOcean.yml">
-      <Link>DigitalOcean.yml</Link>
+    <None Include="DigitalOcean.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

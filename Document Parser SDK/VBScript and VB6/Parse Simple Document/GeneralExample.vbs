@@ -13,6 +13,10 @@
 ' This example demonstrates document data parsing to JSON and YAML formats.
 
 templatesFolder = "..\..\_Sample Templates"
+
+template1 = ".\DigitalOcean.yml"
+template2 = ".\AmazonAWS.yml"
+
 inputDocument1 = "..\..\DigitalOcean.pdf"
 inputDocument2 = "..\..\AmazonAWS.pdf"
 
@@ -23,7 +27,8 @@ documentParser.RegistrationName = "demo"
 documentParser.RegistrationKey = "demo"
 
 ' Loading templates...
-documentParser.AddTemplates(templatesFolder)
+documentParser.AddTemplate(template1)
+documentParser.AddTemplate(template2)
 
 ' Parse document data in JSON format
 documentParser.ParseDocument inputDocument1, "output1.json", 0 ' 0 = OutputFormat.JSON

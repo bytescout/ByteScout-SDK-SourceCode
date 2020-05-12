@@ -52,8 +52,7 @@
       <Link>SampleBloodReport.pdf</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\SampleBloodReport.yml">
-      <Link>Templates\SampleBloodReport.yml</Link>
+    <None Include="SampleBloodReport.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />

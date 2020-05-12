@@ -46,12 +46,10 @@
       <Link>MultiPageTable.pdf</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\MultiPageTable-template1.yml">
-      <Link>MultiPageTable-template1.yml</Link>
+    <None Include="MultiPageTable-template1.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\MultiPageTable-template2.yml">
-      <Link>MultiPageTable-template2.yml</Link>
+    <None Include="MultiPageTable-template2.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

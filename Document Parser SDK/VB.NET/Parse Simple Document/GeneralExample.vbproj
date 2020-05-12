@@ -82,16 +82,13 @@
       <Link>Google.pdf</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\AmazonAWS.yml">
-      <Link>Templates\AmazonAWS.yml</Link>
+    <None Include="AmazonAWS.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\DigitalOcean.yml">
-      <Link>Templates\DigitalOcean.yml</Link>
+    <None Include="DigitalOcean.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\Google.yml">
-      <Link>Templates\Google.yml</Link>
+    <None Include="Google.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

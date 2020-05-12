@@ -49,8 +49,7 @@
       <Link>SampleTicket.pdf</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\SampleTicket.yml">
-      <Link>Templates\SampleTicket.yml</Link>
+    <None Include="SampleTicket.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

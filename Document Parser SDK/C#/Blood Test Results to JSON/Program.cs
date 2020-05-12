@@ -33,7 +33,7 @@ namespace BloodTestResultsToJson
             string sampleDocument = @".\SampleBloodReport.pdf";
 
             // Sample template which primarily extracts patient name, report date and test result table.
-            string sampleTemplate = @".\Templates\SampleBloodReport.yml";
+            string sampleTemplate = @".\SampleBloodReport.yml";
 
             // Perform parsing with SDK
             ParseWithSDK(sampleDocument, sampleTemplate);

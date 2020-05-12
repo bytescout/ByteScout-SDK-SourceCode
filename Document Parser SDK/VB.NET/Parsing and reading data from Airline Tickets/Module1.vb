@@ -18,7 +18,7 @@ Module Module1
 
     Sub Main()
 
-        Dim templatesDocument As String = ".\Templates\SampleTicket.yml"
+        Dim templatesDocument As String = ".\SampleTicket.yml"
         Dim inputDocument As String = ".\SampleTicket.pdf"
 
         ' Create DocumentParser instance
