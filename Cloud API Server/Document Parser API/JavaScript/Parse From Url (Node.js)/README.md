@@ -44,8 +44,8 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 # regular expressions for the table start, end, and rows.
 # If regular expression cannot be written for every table row (for example, 
 # if the table contains empty cells), try the second method demonstrated 
-# in 'MultiPageTable-template2.yml' template.
-templateVersion: 2
+# in `MultiPageTable-template2.yml` template.
+templateVersion: 3
 templatePriority: 0
 sourceId: Multipage Table Test
 detectionRules:
@@ -53,7 +53,9 @@ detectionRules:
   - Sample document with multi-page table
 fields:
   total:
-    expression: TOTAL {{DECIMAL}}    
+    type: regex
+    expression: TOTAL {{DECIMAL}}
+    dataType: decimal
 tables:
 - name: table1
   start:
@@ -83,7 +85,7 @@ tables:
 
 <!-- code block begin -->
 
-##### **ParsePdfFromUploadedFile.js:**
+##### **app.js:**
     
 ```
 /*jshint esversion: 6 */
@@ -148,6 +150,36 @@ request(
         }
     }
 );
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **package.json:**
+    
+```
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "PDF.co",
+  "main": "app.js",
+  "scripts": {
+  },
+  "keywords": [
+    "pdf.co",
+    "web",
+    "api",
+    "bytescout",
+    "api"
+  ],
+  "author": "ByteScout & PDF.co",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
+
 ```
 
 <!-- code block end -->

@@ -36,7 +36,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****GeneratePdfInvoiceFromHtmlTemplate.js:**
+##### **app.js:**
     
 ```
 // Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
@@ -94,6 +94,60 @@ var postRequest = https.request(reqOptions, (response) => {
 // Write request data
 postRequest.write(requestBody);
 postRequest.end();
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **invoice_data.json:**
+    
+```
+{
+    "number": "1234567",
+    "date": "April 30, 2016",
+    "from": "Acme Inc., City, Street 3rd , +1 888 123-456, support@example.com",
+    "to": "Food Delivery Inc., New York, Some Street, 42",
+    "lines": [{
+        "title": "Setting up new web-site",
+        "quantity": 3,
+        "price": 50
+    }, {
+        "title": "Configuring mail server and mailboxes",
+        "quantity": 5,
+        "price": 50
+    }]
+}
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **package.json:**
+    
+```
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "PDF.co",
+  "main": "app.js",
+  "scripts": {
+  },
+  "keywords": [
+    "pdf.co",
+    "web",
+    "api",
+    "bytescout",
+    "api"
+  ],
+  "author": "ByteScout & PDF.co",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
 
 ```
 

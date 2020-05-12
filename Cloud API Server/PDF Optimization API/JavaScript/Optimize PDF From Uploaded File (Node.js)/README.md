@@ -36,7 +36,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****OptimizePdfFromUploadedFile.js:**
+##### **app.js:**
     
 ```
 /*jshint esversion: 6 */
@@ -163,6 +163,36 @@ function optimizePdf(uploadedFileUrl, password, destinationFile) {
         console.log("readBarcodes(): " + e);
     });
 }
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **package.json:**
+    
+```
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "PDF.co",
+  "main": "app.js",
+  "scripts": {
+  },
+  "keywords": [
+    "pdf.co",
+    "web",
+    "api",
+    "bytescout",
+    "api"
+  ],
+  "author": "ByteScout & PDF.co",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
+
 ```
 
 <!-- code block end -->

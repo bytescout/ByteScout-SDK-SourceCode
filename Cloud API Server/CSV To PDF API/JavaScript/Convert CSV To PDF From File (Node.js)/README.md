@@ -36,7 +36,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****ConvertCsvToPdfFromFile.js:**
+##### **app.js:**
     
 ```
 /*jshint esversion: 6 */
@@ -90,6 +90,36 @@ request.post(reqOptions, function (error, response, body) {
         console.log("Error: " + data.message);
     }
 });
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **package.json:**
+    
+```
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "PDF.co",
+  "main": "app.js",
+  "scripts": {
+  },
+  "keywords": [
+    "pdf.co",
+    "web",
+    "api",
+    "bytescout",
+    "api"
+  ],
+  "author": "ByteScout & PDF.co",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
 
 ```
 
