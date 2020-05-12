@@ -12,6 +12,10 @@
 
 Imports Bytescout.PDFExtractor
 
+' Note: if you are looking for a more higher level API to extract data from invoices, reports, statements
+' then please check Document Parser SDK and Web API at https://bytescout.com/products/developer/documentparsersdk/index.html
+' and https://pdf.co for secure and scalable web api
+
 Module Program
 
     Sub Main()

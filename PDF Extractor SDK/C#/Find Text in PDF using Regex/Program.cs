@@ -16,6 +16,11 @@ using Bytescout.PDFExtractor;
 
 namespace FindText
 {
+
+    // Note: if you are looking for a more higher level API to extract data from invoices, reports, statements
+    // then please check Document Parser SDK and Web API at https://bytescout.com/products/developer/documentparsersdk/index.html
+    // and https://pdf.co for secure and scalable web api
+
     class Program
     {
         static void Main(string[] args)

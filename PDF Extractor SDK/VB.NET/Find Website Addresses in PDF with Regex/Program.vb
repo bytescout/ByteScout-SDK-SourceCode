@@ -27,7 +27,7 @@ Module Program
                 extractor.RegistrationKey = "demo"
 
                 ' Load sample PDF document
-                extractor.LoadDocumentFromFile("samplePDF_EmailAddress.pdf")
+                extractor.LoadDocumentFromFile("SampleInvoice.pdf")
 
                 ' Enable the regular expression 
                 extractor.RegexSearch = True
@@ -36,8 +36,8 @@ Module Program
 
                 ' Search through pages
                 For i As Integer = 0 To pageCount - 1
-                    ' Search Email addresses
-                    Dim regexPattern As String = "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"
+                    ' Search website address in document
+                    Dim regexPattern As String = "http(s)?://([\w-]+.)+[\w-]+(/[\w- ./?%&=])?"
                     ' See the complete regular expressions reference at https://msdn.microsoft.com/en-us/library/az24scfc(v=vs.110).aspx
 
                     ' Search each page for the pattern
@@ -46,7 +46,7 @@ Module Program
                         Do
                             ' Iterate through each element in the found text
                             For Each element As ISearchResultElement In extractor.FoundText.Elements
-                                Console.WriteLine("Found Email Addresses: " & element.Text)
+                                Console.WriteLine("Found URL: " + element.Text)
                             Next
                         Loop While extractor.FindNext()
 

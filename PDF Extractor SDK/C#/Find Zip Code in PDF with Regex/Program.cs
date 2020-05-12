@@ -14,7 +14,7 @@
 using Bytescout.PDFExtractor;
 using System;
 
-namespace FindUsAddressRegex
+namespace FindZipCodeWithRegexp
 {
 
     // Note: if you are looking for a more higher level API to extract data from invoices, reports, statements
@@ -34,7 +34,7 @@ namespace FindUsAddressRegex
                     extractor.RegistrationKey = "demo";
 
                     // Load sample PDF document
-                    extractor.LoadDocumentFromFile("samplePDF_Address.pdf");
+                    extractor.LoadDocumentFromFile("SampleInvoice.pdf");
 
                     extractor.RegexSearch = true; // Enable the regular expressions
 
@@ -43,8 +43,8 @@ namespace FindUsAddressRegex
                     // Search through pages
                     for (int i = 0; i < pageCount; i++)
                     {
-                        // Search Address
-                        string regexPattern = @"((\w+[ ,])+ ){2}([a-zA-Z]){2}[ , ] (\d+)";
+                        // Search five digit zip code
+                        string regexPattern = @"\d{5}";
                         // See the complete regular expressions reference at https://msdn.microsoft.com/en-us/library/az24scfc(v=vs.110).aspx
 
                         // Search each page for the pattern
@@ -55,7 +55,7 @@ namespace FindUsAddressRegex
                                 // Iterate through each element in the found text
                                 foreach (ISearchResultElement element in extractor.FoundText.Elements)
                                 {
-                                    Console.WriteLine("Found Address: " + element.Text);
+                                    Console.WriteLine("Found Zip Code Number: " + element.Text);
                                 }
                             }
                             while (extractor.FindNext());
