@@ -2673,6 +2673,7 @@
 \Document Parser SDK\C#\Blood Test Results to JSON
 \Document Parser SDK\C#\Create Custom Template
 \Document Parser SDK\C#\Extract line items from tables on multiple pages
+\Document Parser SDK\C#\Extract Text from Foldable Brochure Booklet
 \Document Parser SDK\C#\Parse and Generate HL7 Output
 \Document Parser SDK\C#\Parse Multipage Table
 \Document Parser SDK\C#\Parse Simple Document
@@ -2683,6 +2684,7 @@
 \Document Parser SDK\VB.NET\Blood Test Results to JSON
 \Document Parser SDK\VB.NET\Create Custom Template
 \Document Parser SDK\VB.NET\Extract line items from tables on multiple pages
+\Document Parser SDK\VB.NET\Extract Text from Foldable Brochure Booklet
 \Document Parser SDK\VB.NET\Parse Multipage Table
 \Document Parser SDK\VB.NET\Parse Simple Document
 \Document Parser SDK\VB.NET\Parse with OCR
@@ -2820,6 +2822,7 @@
 \PDF Extractor SDK\C#\Extract PDF text To Stream
 \PDF Extractor SDK\C#\Extract Table Structure from PDF
 \PDF Extractor SDK\C#\Extract Text By Columns from PDF
+\PDF Extractor SDK\C#\Extract Text from Foldable Brochure Booklet
 \PDF Extractor SDK\C#\Extract Text from PDF
 \PDF Extractor SDK\C#\Extract Text From PDF By Pages
 \PDF Extractor SDK\C#\Extract Video from PDF
@@ -2954,6 +2957,7 @@
 \PDF Extractor SDK\VB.NET\Extract Table Structure from PDF
 \PDF Extractor SDK\VB.NET\Extract Text By Columns from PDF
 \PDF Extractor SDK\VB.NET\Extract Text By Pages from PDF
+\PDF Extractor SDK\VB.NET\Extract Text from Foldable Brochure Booklet
 \PDF Extractor SDK\VB.NET\Extract Text From Page Area in PDF
 \PDF Extractor SDK\VB.NET\Extract Text from PDF
 \PDF Extractor SDK\VB.NET\Extract Video from PDF

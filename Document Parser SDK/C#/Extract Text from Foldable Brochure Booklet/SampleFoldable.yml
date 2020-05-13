@@ -1,0 +1,31 @@
+﻿templateVersion: 3
+templatePriority: 0
+sourceId: Untitled document kind
+detectionRules:
+  keywords: []
+fields:
+  Part1:
+    type: rectangle
+    rectangle:
+    - 7.5
+    - 33.75
+    - 244.5
+    - 353.25
+    pageIndex: 0
+  Part2:
+    type: rectangle
+    rectangle:
+    - 273.75
+    - 201.75
+    - 247.5
+    - 198
+    pageIndex: 0
+  Part3:
+    type: rectangle
+    rectangle:
+    - 537.75
+    - 27
+    - 246
+    - 268.5
+    pageIndex: 0
+
