@@ -4330,8 +4330,17 @@
 \PDF.co Web API\Document Parser API\C#\Parse with OCR
 \PDF.co Web API\Document Parser API\C#\Parsing and reading data from Airline Tickets
 \PDF.co Web API\Document Parser API\C#\Parse and Generate HL7 Output\Src
+\PDF.co Web API\Document Parser API\Java\Blood Test Results to JSON
+\PDF.co Web API\Document Parser API\Java\Create Custom Template
+\PDF.co Web API\Document Parser API\Java\Extract line items from tables on multiple pages
 \PDF.co Web API\Document Parser API\Java\Parse From Url
+\PDF.co Web API\Document Parser API\Java\Parse From URL Asynchronously
+\PDF.co Web API\Document Parser API\Java\Parse Multipage Table
+\PDF.co Web API\Document Parser API\Java\Parse Simple Document
 \PDF.co Web API\Document Parser API\Java\Parse Uploaded File
+\PDF.co Web API\Document Parser API\Java\Parse Uploaded File Asynchronously
+\PDF.co Web API\Document Parser API\Java\Parse with OCR
+\PDF.co Web API\Document Parser API\Java\Parsing and reading data from Airline Tickets
 \PDF.co Web API\Document Parser API\JavaScript\Parse From Url (Node.js)
 \PDF.co Web API\Document Parser API\JavaScript\Parse Uploaded File (Node.js)
 \PDF.co Web API\Document Parser API\Powershell\Parse From Uploaded File
