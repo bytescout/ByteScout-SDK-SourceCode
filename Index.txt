@@ -3243,6 +3243,7 @@
 \PDF SDK\C#\Download and Process file
 \PDF SDK\C#\Draw Lines and Curves in PDF
 \PDF SDK\C#\Draw Rectangles in PDF
+\PDF SDK\C#\Draw Text On Rotated Page
 \PDF SDK\C#\Draw Text String in PDF
 \PDF SDK\C#\Draw with Transparency in PDF
 \PDF SDK\C#\External JS for form data validation
@@ -3329,6 +3330,7 @@
 \PDF SDK\VB.NET\Download and Process file
 \PDF SDK\VB.NET\Draw Lines and Curves in PDF
 \PDF SDK\VB.NET\Draw Rectangles in PDF
+\PDF SDK\VB.NET\Draw Text On Rotated Page
 \PDF SDK\VB.NET\Draw Text String in PDF
 \PDF SDK\VB.NET\Draw Tiling Patterns in PDF
 \PDF SDK\VB.NET\Draw with Blend Mode in PDF
