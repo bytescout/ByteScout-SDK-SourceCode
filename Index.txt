@@ -2671,6 +2671,7 @@
 \Document Parser SDK\VB.NET
 \Document Parser SDK\VBScript and VB6
 \Document Parser SDK\C#\Blood Test Results to JSON
+\Document Parser SDK\C#\Census table from life and annuity quote request pdf
 \Document Parser SDK\C#\Create Custom Template
 \Document Parser SDK\C#\Extract line items from tables on multiple pages
 \Document Parser SDK\C#\Extract Text from Foldable Brochure Booklet
@@ -2682,6 +2683,7 @@
 \Document Parser SDK\C#\Parse and Generate HL7 Output\InputData
 \Document Parser SDK\C#\Parse and Generate HL7 Output\Src
 \Document Parser SDK\VB.NET\Blood Test Results to JSON
+\Document Parser SDK\VB.NET\Census table from life and annuity quote request pdf
 \Document Parser SDK\VB.NET\Create Custom Template
 \Document Parser SDK\VB.NET\Extract line items from tables on multiple pages
 \Document Parser SDK\VB.NET\Extract Text from Foldable Brochure Booklet
@@ -2802,6 +2804,7 @@
 \PDF Extractor SDK\C#\Add Image Stamp in PDF
 \PDF Extractor SDK\C#\Arabic Text Extraction
 \PDF Extractor SDK\C#\Batch check folder agianst JSON settings
+\PDF Extractor SDK\C#\Census Table from Life and Annuity quote request PDF
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF
 \PDF Extractor SDK\C#\Compare PDF Documents
 \PDF Extractor SDK\C#\Convert Protected PDF Document to XLS
@@ -2926,6 +2929,7 @@
 \PDF Extractor SDK\VB.NET\Add Image Stamp in PDF
 \PDF Extractor SDK\VB.NET\Arabic Text Extraction
 \PDF Extractor SDK\VB.NET\Batch check folder agianst JSON settings
+\PDF Extractor SDK\VB.NET\Census Table from Life and Annuity quote request PDF
 \PDF Extractor SDK\VB.NET\Check If OCR Is Required for PDF
 \PDF Extractor SDK\VB.NET\Compare PDF Documents
 \PDF Extractor SDK\VB.NET\Convert PDF To CSV
@@ -4318,6 +4322,7 @@
 \PDF.co Web API\Document Parser API\Sample_Templates
 \PDF.co Web API\Document Parser API\VB.NET
 \PDF.co Web API\Document Parser API\C#\Blood Test Results to JSON
+\PDF.co Web API\Document Parser API\C#\Census table from life and annuity quote request pdf
 \PDF.co Web API\Document Parser API\C#\Create Custom Template
 \PDF.co Web API\Document Parser API\C#\Extract line items from tables on multiple pages
 \PDF.co Web API\Document Parser API\C#\Parse and Generate HL7 Output
@@ -4348,6 +4353,7 @@
 \PDF.co Web API\Document Parser API\Python\Parse From Uploaded File
 \PDF.co Web API\Document Parser API\Python\Parse From Url
 \PDF.co Web API\Document Parser API\VB.NET\Blood Test Results to JSON
+\PDF.co Web API\Document Parser API\VB.NET\Census table from life and annuity quote request pdf
 \PDF.co Web API\Document Parser API\VB.NET\Create Custom Template
 \PDF.co Web API\Document Parser API\VB.NET\Extract line items from tables on multiple pages
 \PDF.co Web API\Document Parser API\VB.NET\Parse From Url
