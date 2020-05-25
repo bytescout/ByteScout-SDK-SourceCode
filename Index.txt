@@ -4316,6 +4316,7 @@
 \PDF.co Web API\Document Parser API\C#
 \PDF.co Web API\Document Parser API\Java
 \PDF.co Web API\Document Parser API\JavaScript
+\PDF.co Web API\Document Parser API\PHP
 \PDF.co Web API\Document Parser API\Powershell
 \PDF.co Web API\Document Parser API\Python
 \PDF.co Web API\Document Parser API\Sample_Files
@@ -4348,6 +4349,15 @@
 \PDF.co Web API\Document Parser API\Java\Parsing and reading data from Airline Tickets
 \PDF.co Web API\Document Parser API\JavaScript\Parse From Url (Node.js)
 \PDF.co Web API\Document Parser API\JavaScript\Parse Uploaded File (Node.js)
+\PDF.co Web API\Document Parser API\PHP\Blood Test Results to JSON
+\PDF.co Web API\Document Parser API\PHP\Create Custom Template
+\PDF.co Web API\Document Parser API\PHP\Extract line items from tables on multiple pages
+\PDF.co Web API\Document Parser API\PHP\Parse From URL Asynchronously
+\PDF.co Web API\Document Parser API\PHP\Parse Multipage Table
+\PDF.co Web API\Document Parser API\PHP\Parse Simple Document
+\PDF.co Web API\Document Parser API\PHP\Parse Uploaded File Asynchronously
+\PDF.co Web API\Document Parser API\PHP\Parse with OCR
+\PDF.co Web API\Document Parser API\PHP\Parsing and reading data from Airline Tickets
 \PDF.co Web API\Document Parser API\Powershell\Parse From Uploaded File
 \PDF.co Web API\Document Parser API\Powershell\Parse From Url
 \PDF.co Web API\Document Parser API\Python\Parse From Uploaded File
