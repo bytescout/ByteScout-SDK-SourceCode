@@ -124,6 +124,7 @@
 \BarCode Reader SDK\C#\Decode USPS Sack Label
 \BarCode Reader SDK\C#\Decode USPS Tray Label
 \BarCode Reader SDK\C#\Decoding barcodes from PDF by pages
+\BarCode Reader SDK\C#\Display License Info
 \BarCode Reader SDK\C#\Download and Process file
 \BarCode Reader SDK\C#\Export Results to XML, CSV, TXT
 \BarCode Reader SDK\C#\Filters to downscale Image
@@ -220,6 +221,7 @@
 \BarCode Reader SDK\VB.NET\Decode USPS Sack Label
 \BarCode Reader SDK\VB.NET\Decode USPS Tray Label
 \BarCode Reader SDK\VB.NET\Decoding barcodes from PDF by pages
+\BarCode Reader SDK\VB.NET\Display License Info
 \BarCode Reader SDK\VB.NET\Download and Process file
 \BarCode Reader SDK\VB.NET\Export Results to XML, CSV, TXT
 \BarCode Reader SDK\VB.NET\Filters to downscale Image
@@ -246,6 +248,7 @@
 \BarCode Reader SDK\VBScript\Barcode Reading Profiles
 \BarCode Reader SDK\VBScript\Barcodes to Excel
 \BarCode Reader SDK\VBScript\Batch Read Barcodes From Files
+\BarCode Reader SDK\VBScript\Display License Info
 \BarCode Reader SDK\VBScript\Read Barcode From PDF
 \BarCode Reader SDK\VBScript\Read barcode From PDF With OrientationType
 \BarCode Reader SDK\VBScript\Read Barcode From Webcam or Scanner
@@ -305,6 +308,7 @@
 \BarCode SDK\C#\Deutsche Post Identcode Barcode
 \BarCode SDK\C#\Deutsche Post Leitcode Barcode
 \BarCode SDK\C#\Display Barcode On Form
+\BarCode SDK\C#\Display License Info
 \BarCode SDK\C#\Draw Barcode Caption
 \BarCode SDK\C#\Dutch Kix Barcode
 \BarCode SDK\C#\EAN-128 Barcode
@@ -431,6 +435,7 @@
 \BarCode SDK\VB.NET\Deutsche Post Identcode Barcode
 \BarCode SDK\VB.NET\Deutsche Post Leitcode Barcode
 \BarCode SDK\VB.NET\Display Barcode On Form
+\BarCode SDK\VB.NET\Display License Info
 \BarCode SDK\VB.NET\Draw Caption
 \BarCode SDK\VB.NET\Dutch Kix
 \BarCode SDK\VB.NET\EAN-128
@@ -509,6 +514,7 @@
 \BarCode SDK\VBScript\Command Line Use
 \BarCode SDK\VBScript\Create Barcode from Excel
 \BarCode SDK\VBScript\Custom PDF417 Configuration
+\BarCode SDK\VBScript\Display License Info
 \BarCode SDK\VBScript\Generate Barcode
 \BarCode SDK\VBScript\Generate barcode with multiline caption
 \BarCode SDK\VBScript\Generate Barcodes From Text File
@@ -2811,6 +2817,7 @@
 \PDF Extractor SDK\C#\Correction to Deal with Date Issue after OCR
 \PDF Extractor SDK\C#\Data Masking in PDF
 \PDF Extractor SDK\C#\Detect Lines in PDF
+\PDF Extractor SDK\C#\Display License Info
 \PDF Extractor SDK\C#\Download and Process file
 \PDF Extractor SDK\C#\Extract 3D Animation from PDF
 \PDF Extractor SDK\C#\Extract Attachments from PDF
@@ -2947,6 +2954,7 @@
 \PDF Extractor SDK\VB.NET\Correction to Deal with Date Issue after OCR
 \PDF Extractor SDK\VB.NET\Data Masking in PDF
 \PDF Extractor SDK\VB.NET\Detect Lines in PDF
+\PDF Extractor SDK\VB.NET\Display License Info
 \PDF Extractor SDK\VB.NET\Download and Process file
 \PDF Extractor SDK\VB.NET\Extract 3D Animation from PDF
 \PDF Extractor SDK\VB.NET\Extract Attachments from PDF
@@ -3055,6 +3063,7 @@
 \PDF Extractor SDK\VBScript\Convert PDF To XLS
 \PDF Extractor SDK\VBScript\Convert PDF To XML
 \PDF Extractor SDK\VBScript\Convert PDF To XML With Images
+\PDF Extractor SDK\VBScript\Display License Info
 \PDF Extractor SDK\VBScript\Extract Attachments from PDF
 \PDF Extractor SDK\VBScript\Extract Image Coordinates By Page from PDF
 \PDF Extractor SDK\VBScript\Extract Images by Page from PDF
@@ -3139,6 +3148,7 @@
 \PDF Renderer SDK\C#\Convert PDF To Memory Stream Image
 \PDF Renderer SDK\C#\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\C#\Convert PDF To PNG
+\PDF Renderer SDK\C#\Display License Info
 \PDF Renderer SDK\C#\Download and Process file
 \PDF Renderer SDK\C#\Make Thumbnail from PDF
 \PDF Renderer SDK\C#\Override Resolution in Multipage TIFF
@@ -3158,6 +3168,7 @@
 \PDF Renderer SDK\VB.NET\Convert PDF To JPEG
 \PDF Renderer SDK\VB.NET\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VB.NET\Convert PDF To PNG
+\PDF Renderer SDK\VB.NET\Display License Info
 \PDF Renderer SDK\VB.NET\Download and Process file
 \PDF Renderer SDK\VB.NET\Make Thumbnail Image From PDF
 \PDF Renderer SDK\VB.NET\Override Resolution in Multipage TIFF
@@ -3176,6 +3187,7 @@
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To JPEG
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To PNG
+\PDF Renderer SDK\VBScript and VB6\Display License Info
 \PDF Renderer SDK\VBScript and VB6\Hide Text or Vector or Image Layer In PDF
 \PDF Renderer SDK\VBScript and VB6\Override Resolution in Multipage TIFF
 \PDF Renderer SDK\VBScript and VB6\Override Resolution in Rendered Image
