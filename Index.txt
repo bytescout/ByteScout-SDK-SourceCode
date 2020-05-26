@@ -4321,8 +4321,6 @@
 \PDF.co Web API\Document Parser API\PHP
 \PDF.co Web API\Document Parser API\Powershell
 \PDF.co Web API\Document Parser API\Python
-\PDF.co Web API\Document Parser API\Sample_Files
-\PDF.co Web API\Document Parser API\Sample_Templates
 \PDF.co Web API\Document Parser API\VB.NET
 \PDF.co Web API\Document Parser API\C#\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\C#\Census table from life and annuity quote request pdf
