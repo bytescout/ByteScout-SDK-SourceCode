@@ -2884,6 +2884,7 @@
 \PDF Extractor SDK\C#\PDF To CSV By Pages
 \PDF Extractor SDK\C#\PDF To JSON
 \PDF Extractor SDK\C#\PDF To JSON With Images
+\PDF Extractor SDK\C#\PDF to Scanned PDF
 \PDF Extractor SDK\C#\PDF To XFDF
 \PDF Extractor SDK\C#\PDF To XLS
 \PDF Extractor SDK\C#\PDF To XLSX
@@ -3016,6 +3017,7 @@
 \PDF Extractor SDK\VB.NET\Parallel Processing of PDF files
 \PDF Extractor SDK\VB.NET\PDF files Batch Processing
 \PDF Extractor SDK\VB.NET\PDF Invoice Parsing
+\PDF Extractor SDK\VB.NET\PDF to Scanned PDF
 \PDF Extractor SDK\VB.NET\PDF To XML With Images
 \PDF Extractor SDK\VB.NET\PDF-A Compatibility Test
 \PDF Extractor SDK\VB.NET\Profiles
@@ -3100,6 +3102,7 @@
 \PDF Extractor SDK\VBScript\PDF Extraction Profiles
 \PDF Extractor SDK\VBScript\PDF files Batch Processing
 \PDF Extractor SDK\VBScript\PDF OCR (Optical Character Recognition)
+\PDF Extractor SDK\VBScript\PDF to Scanned PDF
 \PDF Extractor SDK\VBScript\PDF XFA Form To XML
 \PDF Extractor SDK\VBScript\Reduce Memory Usage for PDF Extraction
 \PDF Extractor SDK\VBScript\Remove Text from PDF
@@ -6524,6 +6527,7 @@
 \Spreadsheet SDK\C#\Convert XML to XLS
 \Spreadsheet SDK\C#\Copy Range
 \Spreadsheet SDK\C#\Copy Worksheet
+\Spreadsheet SDK\C#\Copy Worksheet Data To Clipboard
 \Spreadsheet SDK\C#\CopyPaste Columns
 \Spreadsheet SDK\C#\CopyPaste Rows
 \Spreadsheet SDK\C#\Create Hello World Spreadsheet
@@ -6640,6 +6644,7 @@
 \Spreadsheet SDK\VB.NET\Convert XML to XLS
 \Spreadsheet SDK\VB.NET\Copy Range
 \Spreadsheet SDK\VB.NET\Copy Worksheet
+\Spreadsheet SDK\VB.NET\Copy Worksheet Data To Clipboard
 \Spreadsheet SDK\VB.NET\CopyPaste Columns
 \Spreadsheet SDK\VB.NET\CopyPaste Rows
 \Spreadsheet SDK\VB.NET\Create Simple Hello World Spreadsheet
