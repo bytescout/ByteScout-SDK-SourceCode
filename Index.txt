@@ -4130,6 +4130,7 @@
 \PDF.co Web API\Render Url As Png
 \PDF.co Web API\Replace Text From PDF
 \PDF.co Web API\Replace Text With Image From PDF
+\PDF.co Web API\Zapier
 \PDF.co Web API\Add Text And Images To PDF\C#
 \PDF.co Web API\Add Text And Images To PDF\cURL
 \PDF.co Web API\Add Text And Images To PDF\Java
@@ -5151,6 +5152,7 @@
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From Uploaded File
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL Asynchronously
+\PDF.co Web API\Zapier\Search in PDF
 \Premium Suite\ASP Classic
 \Premium Suite\ASP.NET C#
 \Premium Suite\ASP.NET MVC C#
