@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title></title>
-    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js" type="text/javascript"></script>  
+    <script src="https://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js" type="text/javascript"></script>  
     <script type="text/javascript" src="webcam.js"></script>
       <!-- this javascript plugin uses the webcam.swf file to capture image and send the image to server for further processing -->
     <script type="text/javascript">
