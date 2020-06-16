@@ -53,7 +53,9 @@ Class Program
         pdfDocument.Dispose()
 
         ' Open document in default PDF viewer app
-        Process.Start("result.pdf")
+        Dim processStartInfo As New ProcessStartInfo("result.pdf")
+        processStartInfo.UseShellExecute = True
+        Process.Start(processStartInfo)
 
     End Sub
 

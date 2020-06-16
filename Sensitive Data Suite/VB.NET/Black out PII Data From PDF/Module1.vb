@@ -59,7 +59,9 @@ Class Program
         Console.WriteLine("Press any key to continue and open result PDF files in default PDF viewer...")
         Console.ReadKey()
 
-        Process.Start("result1.pdf")
+        Dim processStartInfo As New ProcessStartInfo("result1.pdf")
+        processStartInfo.UseShellExecute = True
+        Process.Start(processStartInfo)
 
     End Sub
 

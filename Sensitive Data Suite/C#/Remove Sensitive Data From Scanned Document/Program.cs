@@ -12,6 +12,7 @@
 
 
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using Bytescout.PDFExtractor;
@@ -89,7 +90,9 @@ namespace RemoveSensitiveDataFromScannedDocument
             }
 
             // Open output file in default application
-            System.Diagnostics.Process.Start("result1.pdf");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result1.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
         }
     }
 }

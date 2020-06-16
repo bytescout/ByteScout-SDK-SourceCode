@@ -13,6 +13,7 @@
 
 using System;
 using System.Drawing;
+using System.Diagnostics;
 using Bytescout.PDFExtractor;
 
 namespace AutoRedactTextFromPDFByKeywords
@@ -48,7 +49,9 @@ namespace AutoRedactTextFromPDFByKeywords
             }
 
             // Open output file in default application
-            System.Diagnostics.Process.Start("result1.pdf");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result1.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
 
             // Clean up.
             remover.Dispose();

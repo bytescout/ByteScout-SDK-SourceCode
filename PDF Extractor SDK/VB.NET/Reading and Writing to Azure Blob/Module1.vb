@@ -58,7 +58,9 @@ Namespace ConsoleApplication1
             Console.ReadKey()
 
             ' Open result file in default associated application (for demo purposes)
-            Process.Start("output.csv")
+            Dim processStartInfo As New ProcessStartInfo("output.csv")
+            processStartInfo.UseShellExecute = True
+            Process.Start(processStartInfo)
 
         End Sub
 

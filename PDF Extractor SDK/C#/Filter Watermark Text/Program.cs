@@ -43,6 +43,7 @@ namespace ExtractText
 
             // Open result file in default associated application
             ProcessStartInfo processStartInfo = new ProcessStartInfo(@".\result.txt");
+            processStartInfo.UseShellExecute = true;
             Process.Start(processStartInfo);
         }
     }

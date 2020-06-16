@@ -27,7 +27,9 @@ Class Program
 
         End Using
 
-        Process.Start(DestinationDocument)
+        Dim processStartInfo As New ProcessStartInfo(DestinationDocument)
+        processStartInfo.UseShellExecute = True
+        Process.Start(processStartInfo)
 
     End Sub
     

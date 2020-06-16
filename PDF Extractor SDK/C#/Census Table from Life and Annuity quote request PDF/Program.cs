@@ -42,7 +42,9 @@ namespace LifeAndAnnuityQuoteRequest
             extractor.Dispose();
 
             // Open with default associated program
-            Process.Start(outputFile);
+            ProcessStartInfo processStartInfo = new ProcessStartInfo(outputFile);
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
 		}
 	}
 }

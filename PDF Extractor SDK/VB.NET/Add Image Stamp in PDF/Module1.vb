@@ -42,7 +42,9 @@ Namespace AddImageStampInPDF
             End Using
 
             ' Open result file in default associated application (for demo purposes)
-            Process.Start(outputFile)
+            Dim processStartInfo As New ProcessStartInfo(outputFile)
+            processStartInfo.UseShellExecute = True
+            Process.Start(processStartInfo)
 
         End Sub
 

@@ -65,7 +65,9 @@ namespace RemoveSensitiveDataFromImage
                     }
 
                     // Open output file with attached application
-                    Process.Start(result);
+                    ProcessStartInfo processStartInfo = new ProcessStartInfo(result);
+                    processStartInfo.UseShellExecute = true;
+                    Process.Start(processStartInfo);
                 }
             }
         }

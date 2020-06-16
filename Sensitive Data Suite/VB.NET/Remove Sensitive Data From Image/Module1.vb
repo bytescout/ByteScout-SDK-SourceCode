@@ -71,7 +71,9 @@ Class Program
         End Using
 
         ' Open output file with attached application
-        Process.Start(result)
+        Dim processStartInfo As New ProcessStartInfo(result)
+        processStartInfo.UseShellExecute = True
+        Process.Start(processStartInfo)
 
     End Sub
 

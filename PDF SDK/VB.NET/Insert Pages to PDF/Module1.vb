@@ -39,7 +39,9 @@ Module Module1
         document1.Save("MergedDocument.pdf")
 
         ' Open merged document in default PDF viewer application
-        Process.Start("MergedDocument.pdf")
+        Dim processStartInfo As New ProcessStartInfo("MergedDocument.pdf")
+        processStartInfo.UseShellExecute = True
+        Process.Start(processStartInfo)
 
     End Sub
 

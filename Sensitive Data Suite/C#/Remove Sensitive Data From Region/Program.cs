@@ -12,6 +12,7 @@
 
 
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using Bytescout.PDFExtractor;
 
@@ -33,7 +34,9 @@ namespace RemoveSensitiveDataFromRegion
             remover.RemoveText(0, new RectangleF(45f, 101f, 183f, 310f), @"result1.pdf");
 
             // Open output file in default application
-            System.Diagnostics.Process.Start("result1.pdf");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("result1.pdf");
+            processStartInfo.UseShellExecute = true;
+            Process.Start(processStartInfo);
 
             // Clean up.
             remover.Dispose();
