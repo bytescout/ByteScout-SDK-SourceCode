@@ -48,8 +48,7 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\SampleFoldable.pdf">
-      <Link>SampleFoldable.pdf</Link>
+    <None Include="SampleFoldable.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="SampleFoldable.yml">

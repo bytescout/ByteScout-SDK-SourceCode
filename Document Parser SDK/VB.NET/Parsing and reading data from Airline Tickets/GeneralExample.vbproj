@@ -70,8 +70,7 @@
     <Compile Include="Module1.vb" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\SampleTicket.pdf">
-      <Link>SampleTicket.pdf</Link>
+    <None Include="SampleTicket.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="SampleTicket.yml">

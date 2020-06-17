@@ -13,7 +13,7 @@
 ' This example demonstrates extracting line items from tables on multiple pages with two different approaches.
 ' See comments in the code of templates.
 
-inputDocument = "..\..\MultiPageTable.pdf"
+inputDocument = ".\MultiPageTable.pdf"
 template1 = ".\MultiPageTable-template1.yml"
 template2 = ".\MultiPageTable-template2.yml"
 

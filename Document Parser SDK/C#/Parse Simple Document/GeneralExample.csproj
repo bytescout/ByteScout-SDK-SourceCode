@@ -45,16 +45,13 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\DigitalOcean.pdf">
-      <Link>DigitalOcean.pdf</Link>
+    <None Include="DigitalOcean.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\AmazonAWS.pdf">
-      <Link>AmazonAWS.pdf</Link>
+    <None Include="AmazonAWS.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\Google.pdf">
-      <Link>Google.pdf</Link>
+    <None Include="Google.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="AmazonAWS.yml">

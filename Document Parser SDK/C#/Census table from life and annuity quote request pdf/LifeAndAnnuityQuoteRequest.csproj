@@ -48,8 +48,7 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\SampleGroupDisabilityForm.pdf">
-      <Link>SampleGroupDisabilityForm.pdf</Link>
+    <None Include="SampleGroupDisabilityForm.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="SampleGroupDisabilityForm.yml">

@@ -5153,6 +5153,7 @@
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL Asynchronously
 \PDF.co Web API\Zapier\Generate Barcode and Save to Dropbox
+\PDF.co Web API\Zapier\Google Forms to PDF
 \PDF.co Web API\Zapier\Google Sheets to PDF export type
 \PDF.co Web API\Zapier\Search in PDF
 \Premium Suite\ASP Classic

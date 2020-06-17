@@ -14,7 +14,7 @@
 ' using the Optical Character Recognition (OCR).
 
 template = ".\DigitalOcean.yml"
-inputDocument = "..\..\DigitalOcean-scanned.jpg"
+inputDocument = ".\DigitalOcean-scanned.jpg"
 
 
 ' Create and activate DocumentParser object

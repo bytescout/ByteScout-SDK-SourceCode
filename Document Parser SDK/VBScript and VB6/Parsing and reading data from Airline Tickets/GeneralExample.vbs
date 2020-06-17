@@ -13,7 +13,7 @@
 ' This example demonstrates document data parsing to JSON and YAML formats.
 
 templatesDocument = ".\SampleTicket.yml"
-inputDocument = "..\..\SampleTicket.pdf"
+inputDocument = ".\SampleTicket.pdf"
 
 
 ' Create DocumentParser object

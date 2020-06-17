@@ -65,8 +65,7 @@
     <Compile Include="Module1.vb" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\MultiPageTable.pdf">
-      <Link>MultiPageTable.pdf</Link>
+    <None Include="MultiPageTable.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="MultiPageTable-template1.yml">

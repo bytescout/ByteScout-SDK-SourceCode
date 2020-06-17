@@ -12,13 +12,11 @@
 
 ' This example demonstrates document data parsing to JSON and YAML formats.
 
-templatesFolder = "..\..\_Sample Templates"
-
 template1 = ".\DigitalOcean.yml"
 template2 = ".\AmazonAWS.yml"
 
-inputDocument1 = "..\..\DigitalOcean.pdf"
-inputDocument2 = "..\..\AmazonAWS.pdf"
+inputDocument1 = ".\DigitalOcean.pdf"
+inputDocument2 = ".\AmazonAWS.pdf"
 
 
 ' Create DocumentParser object
