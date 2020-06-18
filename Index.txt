@@ -70,6 +70,7 @@
 \BarCode Reader SDK\C#\Acquire Barcode From Scanner And Decode
 \BarCode Reader SDK\C#\Batch Read Barcodes To CSV
 \BarCode Reader SDK\C#\Batch Read From Files
+\BarCode Reader SDK\C#\Decode AAMVA data from PDF417 barcode
 \BarCode Reader SDK\C#\Decode Australian Post Code
 \BarCode Reader SDK\C#\Decode Aztec
 \BarCode Reader SDK\C#\Decode Bookland
@@ -86,6 +87,7 @@
 \BarCode Reader SDK\C#\Decode Datamatrix
 \BarCode Reader SDK\C#\Decode Deutsche Post Identcode
 \BarCode Reader SDK\C#\Decode Deutsche Post Leitcode
+\BarCode Reader SDK\C#\Decode Driver License Information (PDF417)
 \BarCode Reader SDK\C#\Decode EAN-128
 \BarCode Reader SDK\C#\Decode EAN-13
 \BarCode Reader SDK\C#\Decode EAN-14
@@ -99,6 +101,7 @@
 \BarCode Reader SDK\C#\Decode GS1 DataBar Stacked
 \BarCode Reader SDK\C#\Decode GS1 DataMatrix
 \BarCode Reader SDK\C#\Decode GS1-128
+\BarCode Reader SDK\C#\Decode Identification Card Information (PDF417)
 \BarCode Reader SDK\C#\Decode Intelligent Mail
 \BarCode Reader SDK\C#\Decode Interleaved 2 of 5
 \BarCode Reader SDK\C#\Decode ISBN
@@ -166,6 +169,7 @@
 \BarCode Reader SDK\VB.NET\Barcode Reading Profiles
 \BarCode Reader SDK\VB.NET\Batch Read Barcodes To CSV
 \BarCode Reader SDK\VB.NET\Batch Read From Files
+\BarCode Reader SDK\VB.NET\Decode AAMVA data from PDF417 barcode
 \BarCode Reader SDK\VB.NET\Decode Australian Post Code
 \BarCode Reader SDK\VB.NET\Decode Aztec
 \BarCode Reader SDK\VB.NET\Decode Bookland
@@ -183,6 +187,7 @@
 \BarCode Reader SDK\VB.NET\Decode Datamatrix
 \BarCode Reader SDK\VB.NET\Decode Deutsche Post Identcode
 \BarCode Reader SDK\VB.NET\Decode Deutsche Post Leitcode
+\BarCode Reader SDK\VB.NET\Decode Driver License Information (PDF417)
 \BarCode Reader SDK\VB.NET\Decode EAN-128
 \BarCode Reader SDK\VB.NET\Decode EAN-13
 \BarCode Reader SDK\VB.NET\Decode EAN-14
@@ -196,6 +201,7 @@
 \BarCode Reader SDK\VB.NET\Decode GS1 DataBar Stacked
 \BarCode Reader SDK\VB.NET\Decode GS1 DataMatrix
 \BarCode Reader SDK\VB.NET\Decode GS1-128
+\BarCode Reader SDK\VB.NET\Decode Identification Card Information (PDF417)
 \BarCode Reader SDK\VB.NET\Decode Intelligent Mail
 \BarCode Reader SDK\VB.NET\Decode Interleaved 2 of 5
 \BarCode Reader SDK\VB.NET\Decode ISBN
