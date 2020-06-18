@@ -6417,6 +6417,7 @@
 \Screen Capturing SDK\VBScript and VB6\Use WEBM Output for Video
 \Screen Capturing SDK\VBScript and VB6\Use WMV Profile for Video Settings
 \Screen Capturing SDK\Windows\Fix audio recording not working
+\Screen Capturing SDK\Windows\Fix Scaling and Incorrect Coordinates
 \Sensitive Data Suite\C#
 \Sensitive Data Suite\VB.NET
 \Sensitive Data Suite\C#\Auto Redact Text From PDF By Keywords
