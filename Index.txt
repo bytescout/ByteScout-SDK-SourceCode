@@ -150,6 +150,7 @@
 \BarCode Reader SDK\C#\Set Barcode Decoding Profiles
 \BarCode Reader SDK\C#\Set Orientation and Read Rotated Barcodes
 \BarCode Reader SDK\C#\Split PDF Document By Found Barcode
+\BarCode Reader SDK\C#\Two-pass decoding
 \BarCode Reader SDK\C#\WPF UI Example for barcode reading
 \BarCode Reader SDK\C#\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\C++ (Managed)\Read Barcode From Image
@@ -248,6 +249,7 @@
 \BarCode Reader SDK\VB.NET\Read vCard from QR Code
 \BarCode Reader SDK\VB.NET\Reduce CPU Usage
 \BarCode Reader SDK\VB.NET\Split PDF Document By Found Barcode
+\BarCode Reader SDK\VB.NET\Two-pass decoding
 \BarCode Reader SDK\VB.NET\WPF UI Barcode Reading Example
 \BarCode Reader SDK\VB.NET\Batch Read Barcodes To CSV\BarcodeFiles
 \BarCode Reader SDK\VBScript\Barcode Image Preprocessing Filters
@@ -5159,8 +5161,10 @@
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL Asynchronously
 \PDF.co Web API\Zapier\Generate Barcode and Save to Dropbox
+\PDF.co Web API\Zapier\Gmail PDF Attachments to CSV
 \PDF.co Web API\Zapier\Google Forms to PDF
 \PDF.co Web API\Zapier\Google Sheets to PDF export type
+\PDF.co Web API\Zapier\Pipedrive CRM to PDF
 \PDF.co Web API\Zapier\Search in PDF
 \Premium Suite\ASP Classic
 \Premium Suite\ASP.NET C#
