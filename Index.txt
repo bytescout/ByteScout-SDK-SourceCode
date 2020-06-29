@@ -5164,6 +5164,7 @@
 \PDF.co Web API\Zapier\Gmail PDF Attachments to CSV
 \PDF.co Web API\Zapier\Google Forms to PDF
 \PDF.co Web API\Zapier\Google Sheets to PDF export type
+\PDF.co Web API\Zapier\Multiple Images to PDF
 \PDF.co Web API\Zapier\PDF.co to Dropbox
 \PDF.co Web API\Zapier\PDF.co to Google Drive
 \PDF.co Web API\Zapier\Pipedrive CRM to PDF
