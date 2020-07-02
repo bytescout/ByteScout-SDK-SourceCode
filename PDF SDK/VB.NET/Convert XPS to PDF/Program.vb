@@ -29,6 +29,9 @@ Class Program
         pdfDocument.RegistrationName = "demo"
         pdfDocument.RegistrationKey = "demo"
 
+        ' If you wish to load an existing document uncomment the line below And comment the Add page section instead
+        ' pdfDocument.Load(".\existing_document.pdf")
+
         'Create instance And load file
         Dim xps2Image As New Xps2Image("Sample.xps")
 

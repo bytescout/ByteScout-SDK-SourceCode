@@ -28,6 +28,8 @@ namespace InvisibleTextOverImage
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
 
+            // If you wish to load an existing document uncomment the line below and comment the Add page section instead
+            // pdfDocument.Load(@".\existing_document.pdf");
 
             // Load image from file to System.Drawing.Image object (we need it to get the image resolution)
             System.Drawing.Image sysImage = System.Drawing.Image.FromFile(@".\scanned-invoice.png");

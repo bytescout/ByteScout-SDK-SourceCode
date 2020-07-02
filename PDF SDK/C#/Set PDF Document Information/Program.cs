@@ -29,6 +29,9 @@ namespace DocumentInformation
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
 
+            // If you wish to load an existing document uncomment the line below and comment the Add page section instead
+            // pdfDocument.Load(@".\existing_document.pdf");
+
             // Change document information.
             // Open Document Properties in PDF viewer to see the changes.
             pdfDocument.DocumentInfo.Author = "John Doe";

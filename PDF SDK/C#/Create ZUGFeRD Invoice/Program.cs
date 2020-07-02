@@ -26,7 +26,7 @@ namespace FileAttachmentAnnotationExample
             Document pdfDocument = new Document();
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
-            
+
             // Load existing document
             pdfDocument.Load(@".\Invoice.pdf");
 

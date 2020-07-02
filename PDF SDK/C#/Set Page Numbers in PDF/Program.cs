@@ -28,6 +28,9 @@ namespace PageNumbers
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
 
+            // If you wish to load an existing document uncomment the line below and comment the Add page section instead
+            // pdfDocument.Load(@".\existing_document.pdf");
+
             // Add twenty pages
             for (int i = 0; i < 20; i++)
                 pdfDocument.Pages.Add(new Page(PaperFormat.A4));

@@ -24,6 +24,8 @@ Class Program
         pdfDocument.RegistrationName = "demo"
         pdfDocument.RegistrationKey = "demo"
 
+        ' If you wish to load an existing document uncomment the line below And comment the Add page section instead
+        ' pdfDocument.Load(".\existing_document.pdf")
 
         ' Load image from file to System.Drawing.Image object (we need it to get the image resolution)
         Dim sysImage As System.Drawing.Image = System.Drawing.Image.FromFile(".\scanned-invoice.png")

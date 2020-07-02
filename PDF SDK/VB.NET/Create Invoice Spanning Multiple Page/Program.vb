@@ -53,6 +53,9 @@ Class Program
         pdfDocument.RegistrationName = "demo"
         pdfDocument.RegistrationKey = "demo"
 
+        ' If you wish to load an existing document uncomment the line below And comment the Add page section instead
+        ' pdfDocument.Load(".\existing_document.pdf")
+
 #End Region
 
         ' Add New page

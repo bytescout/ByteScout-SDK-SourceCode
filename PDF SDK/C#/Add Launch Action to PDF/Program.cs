@@ -27,6 +27,10 @@ namespace LaunchActionExample
             Document pdfDocument = new Document();
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
+
+            // If you wish to load an existing document uncomment the line below and comment the Add page section instead
+            // pdfDocument.Load(@".\existing_document.pdf");
+
             // Add page
             Page page = new Page(PaperFormat.A4);
             pdfDocument.Pages.Add(page);
@@ -34,6 +38,7 @@ namespace LaunchActionExample
             // Create button
             PushButton button = new PushButton(20, 20, 120, 25, "button1");
             button.Caption = "Launch sample.txt";
+
             // Create action that opens an external file
             LaunchAction launchAction = new LaunchAction(System.IO.Path.GetFullPath("sample.txt"));
             button.OnActivated = launchAction;

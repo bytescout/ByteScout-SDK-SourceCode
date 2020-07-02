@@ -30,6 +30,9 @@ namespace Templates
             Document pdfDocument = new Document();
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
+
+            // If you wish to load an existing document uncomment the line below and comment the Add page section instead
+            // pdfDocument.Load(@".\existing_document.pdf");
             
             // Prepare simple template (for example, a logo) and draw it on every page
 

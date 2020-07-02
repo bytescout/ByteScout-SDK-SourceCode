@@ -24,6 +24,10 @@ Class Program
         Dim pdfDocument = New Document()
         pdfDocument.RegistrationName = "demo"
 		pdfDocument.RegistrationKey = "demo"
+
+        ' If you wish to load an existing document uncomment the line below And comment the Add page section instead
+        ' pdfDocument.Load(".\existing_document.pdf")
+
         ' Add two pages
         Dim page1 = New Page(PaperFormat.A4)
         pdfDocument.Pages.Add(page1)

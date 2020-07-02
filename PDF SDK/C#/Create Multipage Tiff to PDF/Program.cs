@@ -34,6 +34,9 @@ namespace Images
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
 
+            // If you wish to load an existing document uncomment the line below and comment the Add page section instead
+            // pdfDocument.Load(@".\existing_document.pdf");
+
             // Get Tiff file in Bitmap
             Bitmap multipageTiffImage = (Bitmap)System.Drawing.Image.FromFile("MultipageTiffFile.tiff");
 

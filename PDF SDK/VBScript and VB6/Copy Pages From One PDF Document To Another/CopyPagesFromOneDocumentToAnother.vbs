@@ -16,7 +16,9 @@
 Set pdfDocument1 = CreateObject("Bytescout.PDF.Document")
 pdfDocument1.RegistrationName = "demo"
 pdfDocument1.RegistrationKey = "demo"
+
 pdfDocument1.Load("document1.pdf")
+
 ' Open second document
 Set pdfDocument2 = CreateObject("Bytescout.PDF.Document")
 pdfDocument2.RegistrationName = "demo"

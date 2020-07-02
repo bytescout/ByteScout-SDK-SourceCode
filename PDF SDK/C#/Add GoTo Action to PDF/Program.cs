@@ -28,6 +28,9 @@ namespace GoToActionExample
             pdfDocument.RegistrationName = "demo";
             pdfDocument.RegistrationKey = "demo";
 
+            // If you wish to load an existing document uncomment the line below and comment the Add page section instead
+            // pdfDocument.Load(@".\existing_document.pdf");
+
             // Add pages
             Page page1 = new Page(PaperFormat.A4);
             pdfDocument.Pages.Add(page1);

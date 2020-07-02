@@ -56,6 +56,9 @@ Module Program
                     outputDocument.RegistrationName = "demo"
                     outputDocument.RegistrationKey = "demo"
 
+                    ' If you wish to load an existing document uncomment the line below And comment the Add page section instead
+                    ' pdfDocument.Load(".\existing_document.pdf")
+
                     ' Add page
                     Dim page As Page = New Page(PaperFormat.A4)
                     outputDocument.Pages.Add(page)
