@@ -1,42 +1,36 @@
-## How to generate and check QR code barcode with image inside in C# and Multiple ByteScout SDK
-
-### The tutorial shows how to generate and check QR code barcode with image inside in C#
-
-The sample source codes on this page shows how to generate and check QR code barcode with image inside in C#. Multiple ByteScout SDK is the combination of one or more ByteScout SDK components to perform complex workflows like searching for text inside documents and highlighting found results and saving as new document or splitting pdf based on visually detected horizontal lines and you can use it to generate and check QR code barcode with image inside with C#.
-
-You will save a lot of time on writing and testing code as you may just take the C# code from Multiple ByteScout SDK for generate and check QR code barcode with image inside below and use it in your application. Just copy and paste the code into your C# application’s code and follow the instruction. Implementing C# application typically includes multiple stages of the software development so even if the functionality works please test it with your data and the production environment.
-
-Trial version of Multiple ByteScout SDK can be downloaded for free from our website. It also includes source code samples for C# and other programming languages.
+## How to generate and check QR code barcode with image inside in C# with ByteScout Robotic Process Automation ByteScout Robotic Process Automation is tools and API for rapid manual data entry automation using Robotic Process Automation based on ByteScout data extraction tools.
 
 ## REQUEST FREE TECH SUPPORT
 
-[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=Multiple%20ByteScout%20SDK%20Question)
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Robotic%20Process%20Automation%20Question)
 
-or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=Multiple%20ByteScout%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Robotic%20Process%20Automation%20Question) 
 
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
 
 <!-- code block begin -->
 
-##### ****Program.cs:**
+##### **Program.cs:**
     
 ```
 using System;
@@ -109,7 +103,7 @@ namespace QRCodeWithImage
 
 <!-- code block begin -->
 
-##### ****QRCodeWithImage.csproj:**
+##### **QRCodeWithImage.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -184,7 +178,7 @@ namespace QRCodeWithImage
 
 <!-- code block begin -->
 
-##### ****QRCodeWithImage.sln:**
+##### **QRCodeWithImage.sln:**
     
 ```
 

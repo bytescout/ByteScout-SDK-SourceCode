@@ -1,42 +1,36 @@
-## How to read PDF with scanned image and hindi text in C# with Multiple ByteScout SDK
-
-### The tutorial below will demonstrate how to read PDF with scanned image and hindi text in C#
-
-We made thousands of pre-made source code pieces for easy implementation in your own programming projects. What is Multiple ByteScout SDK? It is the set of few ByteScout SDK libraries that is used in apps performing multi-step workflows like searching for keywords or phrases inside existing documents with highlighting of results, or adding e-signature to existing document pdf based on the analysis of visual content in another document. It can help you to read PDF with scanned image and hindi text in your C# application.
-
-You will save a lot of time on writing and testing code as you may just take the C# code from Multiple ByteScout SDK for read PDF with scanned image and hindi text below and use it in your application. This C# sample code is all you need for your app. Just copy and paste the code, add references (if needs to) and you are all set! Detailed tutorials and documentation are available along with installed Multiple ByteScout SDK if you'd like to dive deeper into the topic and the details of the API.
-
-Free trial version of Multiple ByteScout SDK is available for download from our website. Get it to try other source code samples for C#.
+## How to read PDF with scanned image and hindi text in C# using ByteScout Robotic Process Automation ByteScout Robotic Process Automation is set of tools for rapid implementation of robotic process automation applications.
 
 ## REQUEST FREE TECH SUPPORT
 
-[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=Multiple%20ByteScout%20SDK%20Question)
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Robotic%20Process%20Automation%20Question)
 
-or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=Multiple%20ByteScout%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Robotic%20Process%20Automation%20Question) 
 
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
 
 <!-- code block begin -->
 
-##### ****Program.cs:**
+##### **Program.cs:**
     
 ```
 using System;
@@ -183,7 +177,7 @@ namespace ReadPDFWithImageHindiText
 
 <!-- code block begin -->
 
-##### ****ReadPDFWithImageHindiText.csproj:**
+##### **ReadPDFWithImageHindiText.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -248,7 +242,7 @@ namespace ReadPDFWithImageHindiText
 
 <!-- code block begin -->
 
-##### ****ReadPDFWithImageHindiText.sln:**
+##### **ReadPDFWithImageHindiText.sln:**
     
 ```
 

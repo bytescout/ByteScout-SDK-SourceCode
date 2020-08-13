@@ -1,42 +1,36 @@
-## How to convert scanned PDF to excel in C# with Multiple ByteScout SDK
-
-### This tutorial will show how to convert scanned PDF to excel in C#
-
-The sample shows steps and algorithm of how to convert scanned PDF to excel and how to make it work in your C# application. Multiple ByteScout SDK is the set of few ByteScout SDK libraries that is used in apps performing multi-step workflows like searching for keywords or phrases inside existing documents with highlighting of results, or adding e-signature to existing document pdf based on the analysis of visual content in another document and you can use it to convert scanned PDF to excel with C#.
-
-You will save a lot of time on writing and testing code as you may just take the C# code from Multiple ByteScout SDK for convert scanned PDF to excel below and use it in your application. This C# sample code is all you need for your app. Just copy and paste the code, add references (if needs to) and you are all set! Implementing C# application typically includes multiple stages of the software development so even if the functionality works please test it with your data and the production environment.
-
-Download free trial version of Multiple ByteScout SDK from our website with this and other source code samples for C#.
+## How to convert scanned PDF to excel in C# and ByteScout Robotic Process Automation What is ByteScout Robotic Process Automation? It is components and tools for quick RPA (Robotic Process Automation) implementation.
 
 ## REQUEST FREE TECH SUPPORT
 
-[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=Multiple%20ByteScout%20SDK%20Question)
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Robotic%20Process%20Automation%20Question)
 
-or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=Multiple%20ByteScout%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Robotic%20Process%20Automation%20Question) 
 
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
 
 <!-- code block begin -->
 
-##### ****Form1.Designer.cs:**
+##### **Form1.Designer.cs:**
     
 ```
 namespace Sample_UI_Application
@@ -177,7 +171,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****Form1.cs:**
+##### **Form1.cs:**
     
 ```
 using System;
@@ -323,7 +317,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****Program.cs:**
+##### **Program.cs:**
     
 ```
 using System;
@@ -353,7 +347,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****ScannedPdfToExcel.csproj:**
+##### **ScannedPdfToExcel.csproj:**
     
 ```
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -462,7 +456,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****ScannedPdfToExcel.sln:**
+##### **ScannedPdfToExcel.sln:**
     
 ```
 
@@ -497,7 +491,7 @@ EndGlobal
 
 <!-- code block begin -->
 
-##### ****app.config:**
+##### **app.config:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>

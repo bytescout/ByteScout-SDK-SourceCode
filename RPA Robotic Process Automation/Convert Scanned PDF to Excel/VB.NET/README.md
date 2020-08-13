@@ -1,42 +1,36 @@
-## How to convert scanned PDF to excel in VB.NET and Multiple ByteScout SDK
-
-### Tutorial on how to convert scanned PDF to excel in VB.NET
-
-This sample source code below will demonstrate you how to convert scanned PDF to excel in VB.NET. Multiple ByteScout SDK is Bundle of SDK components can be used to implement multistep workflow. For example, multiple SDKs can be used to implement 2-3 steps code like a search for keywords inside documents and highlights of results found or app that splits pdf based on visually detected lines inside documents and you can use it to convert scanned PDF to excel with VB.NET.
-
-You will save a lot of time on writing and testing code as you may just take the VB.NET code from Multiple ByteScout SDK for convert scanned PDF to excel below and use it in your application. This VB.NET sample code is all you need for your app. Just copy and paste the code, add references (if needs to) and you are all set! Implementing VB.NET application typically includes multiple stages of the software development so even if the functionality works please test it with your data and the production environment.
-
-Download free trial version of Multiple ByteScout SDK from our website with this and other source code samples for VB.NET.
+## How to convert scanned PDF to excel in VB.NET and ByteScout Robotic Process Automation ByteScout Robotic Process Automation is set of integrated APIs for quick replaccement of manual data processing with robotic process automations.
 
 ## REQUEST FREE TECH SUPPORT
 
-[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=Multiple%20ByteScout%20SDK%20Question)
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Robotic%20Process%20Automation%20Question)
 
-or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=Multiple%20ByteScout%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Robotic%20Process%20Automation%20Question) 
 
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
 
 <!-- code block begin -->
 
-##### ****Form1.Designer.vb:**
+##### **Form1.Designer.vb:**
     
 ```
 Partial Class Form1
@@ -163,7 +157,7 @@ End Class
 
 <!-- code block begin -->
 
-##### ****Form1.vb:**
+##### **Form1.vb:**
     
 ```
 Imports System.Diagnostics
@@ -303,7 +297,7 @@ End Class
 
 <!-- code block begin -->
 
-##### ****Program.vb:**
+##### **Program.vb:**
     
 ```
 Imports System.Collections.Generic
@@ -329,7 +323,7 @@ End Class
 
 <!-- code block begin -->
 
-##### ****ScannedPdfToExcel.sln:**
+##### **ScannedPdfToExcel.sln:**
     
 ```
 
@@ -364,7 +358,7 @@ EndGlobal
 
 <!-- code block begin -->
 
-##### ****ScannedPdfToExcel.vbproj:**
+##### **ScannedPdfToExcel.vbproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -475,7 +469,7 @@ EndGlobal
 
 <!-- code block begin -->
 
-##### ****app.config:**
+##### **app.config:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>

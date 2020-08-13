@@ -1,42 +1,36 @@
-## How to remove text from selected regions in C# and Multiple ByteScout SDK
-
-### The tutorial shows how to remove text from selected regions in C#
-
-We made thousands of pre-made source code pieces for easy implementation in your own programming projects. Multiple ByteScout SDK is Bundle of SDK components can be used to implement multistep workflow. For example, multiple SDKs can be used to implement 2-3 steps code like a search for keywords inside documents and highlights of results found or app that splits pdf based on visually detected lines inside documents. It can be used to remove text from selected regions using C#.
-
-You will save a lot of time on writing and testing code as you may just take the C# code from Multiple ByteScout SDK for remove text from selected regions below and use it in your application. Follow the instructions from the scratch to work and copy the C# code. This basic programming language sample code for C# will do the whole work for you to remove text from selected regions.
-
-Free trial version of Multiple ByteScout SDK is available on our website. Documentation and source code samples are included.
+## How to remove text from selected regions in C# using ByteScout Robotic Process Automation What is ByteScout Robotic Process Automation? It is tools and API for rapid manual data entry automation using Robotic Process Automation based on ByteScout data extraction tools.
 
 ## REQUEST FREE TECH SUPPORT
 
-[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=Multiple%20ByteScout%20SDK%20Question)
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Robotic%20Process%20Automation%20Question)
 
-or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=Multiple%20ByteScout%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Robotic%20Process%20Automation%20Question) 
 
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
 
 <!-- code block begin -->
 
-##### ****Form1.Designer.cs:**
+##### **Form1.Designer.cs:**
     
 ```
 namespace Sample_UI_Application
@@ -163,7 +157,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****Form1.cs:**
+##### **Form1.cs:**
     
 ```
 using System;
@@ -271,7 +265,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****Program.cs:**
+##### **Program.cs:**
     
 ```
 using System;
@@ -301,7 +295,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****RemoveTextFromSelectedRegions.VS2005.csproj:**
+##### **RemoveTextFromSelectedRegions.VS2005.csproj:**
     
 ```
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -380,7 +374,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****RemoveTextFromSelectedRegions.VS2008.csproj:**
+##### **RemoveTextFromSelectedRegions.VS2008.csproj:**
     
 ```
 <Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -460,7 +454,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****RemoveTextFromSelectedRegions.VS2010.csproj:**
+##### **RemoveTextFromSelectedRegions.VS2010.csproj:**
     
 ```
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -539,7 +533,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****RemoveTextFromSelectedRegions.VS2012.csproj:**
+##### **RemoveTextFromSelectedRegions.VS2012.csproj:**
     
 ```
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -618,7 +612,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****RemoveTextFromSelectedRegions.VS2013.csproj:**
+##### **RemoveTextFromSelectedRegions.VS2013.csproj:**
     
 ```
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -697,7 +691,7 @@ namespace Sample_UI_Application
 
 <!-- code block begin -->
 
-##### ****RemoveTextFromSelectedRegions.VS2015.csproj:**
+##### **RemoveTextFromSelectedRegions.VS2015.csproj:**
     
 ```
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

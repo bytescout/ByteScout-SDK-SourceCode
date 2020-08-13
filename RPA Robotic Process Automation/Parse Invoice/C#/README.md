@@ -1,42 +1,36 @@
-## How to parse invoice in C# with Multiple ByteScout SDK
-
-### This tutorial will show how to parse invoice in C#
-
-The code below will help you to implement an C# app to parse invoice. Multiple ByteScout SDK can parse invoice. It can be used from C#. Multiple ByteScout SDK is Bundle of SDK components can be used to implement multistep workflow. For example, multiple SDKs can be used to implement 2-3 steps code like a search for keywords inside documents and highlights of results found or app that splits pdf based on visually detected lines inside documents.
-
-This code snippet below for Multiple ByteScout SDK works best when you need to quickly parse invoice in your C# application. This C# sample code is all you need for your app. Just copy and paste the code, add references (if needs to) and you are all set! Enjoy writing a code with ready-to-use sample C# codes.
-
-Our website provides trial version of Multiple ByteScout SDK for free. It also includes documentation and source code samples.
+## How to parse invoice in C# and ByteScout Robotic Process Automation ByteScout Robotic Process Automation: set of tools for rapid implementation of robotic process automation applications.
 
 ## REQUEST FREE TECH SUPPORT
 
-[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=Multiple%20ByteScout%20SDK%20Question)
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Robotic%20Process%20Automation%20Question)
 
-or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=Multiple%20ByteScout%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Robotic%20Process%20Automation%20Question) 
 
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
 
 <!-- code block begin -->
 
-##### ****InvoiceParsing.VS2005.csproj:**
+##### **InvoiceParsing.VS2005.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -106,7 +100,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****InvoiceParsing.VS2008.csproj:**
+##### **InvoiceParsing.VS2008.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -177,7 +171,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****InvoiceParsing.VS2010.csproj:**
+##### **InvoiceParsing.VS2010.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -247,7 +241,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****InvoiceParsing.VS2012.csproj:**
+##### **InvoiceParsing.VS2012.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -317,7 +311,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****InvoiceParsing.VS2013.csproj:**
+##### **InvoiceParsing.VS2013.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -387,7 +381,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****InvoiceParsing.VS2015.csproj:**
+##### **InvoiceParsing.VS2015.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -457,7 +451,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****Program.cs:**
+##### **Program.cs:**
     
 ```
 using System;

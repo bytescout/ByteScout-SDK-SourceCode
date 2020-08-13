@@ -1,42 +1,36 @@
-## slice PDF by horizontal lines inside in C# using Multiple ByteScout SDK
-
-### How to use Multiple ByteScout SDK for slice PDF by horizontal lines inside in C#
-
-Sample source codes below will show you how to cope with a difficult task, for example, slice PDF by horizontal lines inside in C#. Multiple ByteScout SDK was made to help with slice PDF by horizontal lines inside in C#. Multiple ByteScout SDK is the combination of one or more ByteScout SDK components to perform complex workflows like searching for text inside documents and highlighting found results and saving as new document or splitting pdf based on visually detected horizontal lines.
-
-This rich sample source code in C# for Multiple ByteScout SDK includes the number of functions and options you should do calling the API to implement slice PDF by horizontal lines inside. In order to implement this functionality, you should copy and paste code below into your app using code editor. Then compile and run your application. Enjoy writing a code with ready-to-use sample C# codes to implement slice PDF by horizontal lines inside using Multiple ByteScout SDK.
-
-Visit our website provides for free trial version of Multiple ByteScout SDK. Free trial includes lots of source code samples to help you with your C# project.
+## slice PDF by horizontal lines inside in C# with ByteScout Robotic Process Automation ByteScout Robotic Process Automation is components and tools for quick RPA (Robotic Process Automation) implementation.
 
 ## REQUEST FREE TECH SUPPORT
 
-[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=Multiple%20ByteScout%20SDK%20Question)
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Robotic%20Process%20Automation%20Question)
 
-or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=Multiple%20ByteScout%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Robotic%20Process%20Automation%20Question) 
 
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
 
 <!-- code block begin -->
 
-##### ****Program.cs:**
+##### **Program.cs:**
     
 ```
 using System;
@@ -172,7 +166,7 @@ namespace SlicePdfByLinesExample
 
 <!-- code block begin -->
 
-##### ****SlicePdfByLinesExample.csproj:**
+##### **SlicePdfByLinesExample.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -247,7 +241,7 @@ namespace SlicePdfByLinesExample
 
 <!-- code block begin -->
 
-##### ****SlicePdfByLinesExample.sln:**
+##### **SlicePdfByLinesExample.sln:**
     
 ```
 

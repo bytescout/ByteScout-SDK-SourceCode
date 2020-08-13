@@ -1,42 +1,36 @@
-## How to read PDF with scanned image and hindi text in VB.NET and Multiple ByteScout SDK
-
-### How to code in VB.NET to read PDF with scanned image and hindi text with this step-by-step tutorial
-
-The sample shows steps and algorithm of how to read PDF with scanned image and hindi text and how to make it work in your VB.NET application. What is Multiple ByteScout SDK? It is the combination of one or more ByteScout SDK components to perform complex workflows like searching for text inside documents and highlighting found results and saving as new document or splitting pdf based on visually detected horizontal lines. It can help you to read PDF with scanned image and hindi text in your VB.NET application.
-
-This code snippet below for Multiple ByteScout SDK works best when you need to quickly read PDF with scanned image and hindi text in your VB.NET application. Follow the instructions from the scratch to work and copy the VB.NET code. You can use these VB.NET sample examples in one or many applications.
-
-Our website provides trial version of Multiple ByteScout SDK for free. It also includes documentation and source code samples.
+## How to read PDF with scanned image and hindi text in VB.NET with ByteScout Robotic Process Automation ByteScout Robotic Process Automation is set of integrated APIs for quick replaccement of manual data processing with robotic process automations.
 
 ## REQUEST FREE TECH SUPPORT
 
-[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=Multiple%20ByteScout%20SDK%20Question)
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Robotic%20Process%20Automation%20Question)
 
-or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=Multiple%20ByteScout%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Robotic%20Process%20Automation%20Question) 
 
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
 
 <!-- code block begin -->
 
-##### ****Program.vb:**
+##### **Program.vb:**
     
 ```
 Imports System.Drawing.Imaging
@@ -183,7 +177,7 @@ End Module
 
 <!-- code block begin -->
 
-##### ****ReadPDFWithImageHindiText.sln:**
+##### **ReadPDFWithImageHindiText.sln:**
     
 ```
 
@@ -218,7 +212,7 @@ EndGlobal
 
 <!-- code block begin -->
 
-##### ****ReadPDFWithImageHindiText.vbproj:**
+##### **ReadPDFWithImageHindiText.vbproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>

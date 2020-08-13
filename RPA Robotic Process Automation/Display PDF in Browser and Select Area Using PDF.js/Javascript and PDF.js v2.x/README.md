@@ -1,42 +1,36 @@
-## How to display PDF in browser and select area using PDF in Javascript and PDF.js v2.x using Multiple ByteScout SDK
-
-### This tutorial will show how to display PDF in browser and select area using PDF in Javascript and PDF.js v2.x
-
-The sample shows steps and algorithm of how to display PDF in browser and select area using PDF and how to make it work in your Javascript and PDF.js v2.x application. Multiple ByteScout SDK: Bundle of SDK components can be used to implement multistep workflow. For example, multiple SDKs can be used to implement 2-3 steps code like a search for keywords inside documents and highlights of results found or app that splits pdf based on visually detected lines inside documents. It can display PDF in browser and select area using PDF in Javascript and PDF.js v2.x.
-
-You will save a lot of time on writing and testing code as you may just take the Javascript and PDF.js v2.x code from Multiple ByteScout SDK for display PDF in browser and select area using PDF below and use it in your application. Follow the instructions from the scratch to work and copy the Javascript and PDF.js v2.x code. Detailed tutorials and documentation are available along with installed Multiple ByteScout SDK if you'd like to dive deeper into the topic and the details of the API.
-
-Free trial version of Multiple ByteScout SDK is available on our website. Documentation and source code samples are included.
+## How to display PDF in browser and select area using PDF in Javascript and PDF.js v2.x and ByteScout Robotic Process Automation ByteScout Robotic Process Automation is set of integrated APIs for quick replaccement of manual data processing with robotic process automations.
 
 ## REQUEST FREE TECH SUPPORT
 
-[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=Multiple%20ByteScout%20SDK%20Question)
+[Click here to get in touch](https://bytescout.zendesk.com/hc/en-us/requests/new?subject=ByteScout%20Robotic%20Process%20Automation%20Question)
 
-or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=Multiple%20ByteScout%20SDK%20Question) 
+or just send email to [support@bytescout.com](mailto:support@bytescout.com?subject=ByteScout%20Robotic%20Process%20Automation%20Question) 
 
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=NEwNs2b9YN8](https://www.youtube.com/watch?v=NEwNs2b9YN8)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
 
 <!-- code block begin -->
 
-##### ****code.js:**
+##### **code.js:**
     
 ```
 // PDF file to display:

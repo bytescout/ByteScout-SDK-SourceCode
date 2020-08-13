@@ -1,4 +1,4 @@
-## invoice fraud detection in VB.NET using ByteScout Robotic Process Automation What is ByteScout Robotic Process Automation? It is tools and API for rapid manual data entry automation using Robotic Process Automation based on ByteScout data extraction tools.
+## invoice fraud detection in VB.NET with ByteScout Robotic Process Automation ByteScout Robotic Process Automation is set of integrated APIs for quick replaccement of manual data processing with robotic process automations.
 
 ## REQUEST FREE TECH SUPPORT
 
@@ -9,19 +9,21 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
 
-[https://www.youtube.com/watch?v=nm_7I0PN1TY](https://www.youtube.com/watch?v=nm_7I0PN1TY)
+[https://www.youtube.com/watch?v=gEjuZ0zgtHo](https://www.youtube.com/watch?v=gEjuZ0zgtHo)
 
 
 
@@ -733,6 +735,57 @@ Module Module1
 
 End Module
 
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **settings.json:**
+    
+```
+[
+  {
+    "RegionType": "Account Number",
+    "CorrectValue": "123-456-7892",
+    "RegionLocation": {
+      "X": 129.0,
+      "Y": 185.3,
+      "Width": 98.3,
+      "Height":  12.8
+    }
+  },
+  {
+    "RegionType": "Swift Number",
+    "CorrectValue": "SF123456",
+    "RegionLocation": {
+      "X": 114.4,
+      "Y": 200.3,
+      "Width": 114.0,
+      "Height": 10.5
+    }
+  },
+  {
+    "RegionType": "Bank Name",
+    "CorrectValue": "Bank of XYZ",
+    "RegionLocation": {
+      "X": 114.0,
+      "Y": 213.8,
+      "Width": 115.5,
+      "Height": 11.3
+    }
+  },
+  {
+    "RegionType": "Branch",
+    "CorrectValue": "City of XYX",
+    "RegionLocation": {
+      "X": 107.3,
+      "Y": 226.3,
+      "Width": 122.3,
+      "Height": 15.0
+    }
+  }
+]
 ```
 
 <!-- code block end -->
