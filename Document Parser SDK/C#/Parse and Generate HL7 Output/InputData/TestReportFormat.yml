@@ -5,6 +5,7 @@ detectionRules:
   keywords: []
 objects:
 - name: LabName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -14,6 +15,7 @@ objects:
     - 8.24175835
     pageIndex: 0
 - name: LabAddress
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -23,6 +25,7 @@ objects:
     - 9.23077011
     pageIndex: 0
 - name: LabCity
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -32,6 +35,7 @@ objects:
     - 8.90109921
     pageIndex: 0
 - name: LabState
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -41,6 +45,7 @@ objects:
     - 8.24175835
     pageIndex: 0
 - name: LabZip
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -50,6 +55,7 @@ objects:
     - 8.90109921
     pageIndex: 0
 - name: LabPhone
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -59,6 +65,7 @@ objects:
     - 7.74725294
     pageIndex: 0
 - name: LabFax
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -68,6 +75,7 @@ objects:
     - 7.91208792
     pageIndex: 0
 - name: PatientLastName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -77,6 +85,7 @@ objects:
     - 9.49367046
     pageIndex: 0
 - name: PatientFirstName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -86,6 +95,7 @@ objects:
     - 8.54430389
     pageIndex: 0
 - name: PatientSSN
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -95,6 +105,7 @@ objects:
     - 9.68354416
     pageIndex: 0
 - name: PatientAge
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -104,6 +115,7 @@ objects:
     - 10.2531643
     pageIndex: 0
 - name: PatientDOB
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     dataType: date
@@ -114,6 +126,7 @@ objects:
     - 9.75
     pageIndex: 0
 - name: PatientAddress
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -123,6 +136,7 @@ objects:
     - 9.8734169
     pageIndex: 0
 - name: PatientHomePhone
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -132,6 +146,7 @@ objects:
     - 11.1290321
     pageIndex: 0
 - name: PatientWorkPhone
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -141,6 +156,7 @@ objects:
     - 11.1290321
     pageIndex: 0
 - name: PatientChartNo
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -150,6 +166,7 @@ objects:
     - 11.1290321
     pageIndex: 0
 - name: PhysicianName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -159,6 +176,7 @@ objects:
     - 10.6451607
     pageIndex: 0
 - name: PhysicianAccountName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -168,6 +186,7 @@ objects:
     - 9.1935482
     pageIndex: 0
 - name: PhysicianAccountNo
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -177,6 +196,7 @@ objects:
     - 10.1612902
     pageIndex: 0
 - name: PhysicianNPI
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -186,6 +206,7 @@ objects:
     - 11.7857141
     pageIndex: 0
 - name: PhysicianPhone
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -195,6 +216,7 @@ objects:
     - 9.64285755
     pageIndex: 0
 - name: PhysicianFax
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -204,6 +226,7 @@ objects:
     - 11.1290321
     pageIndex: 0
 - name: InsuranceName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -213,6 +236,7 @@ objects:
     - 8.70967674
     pageIndex: 0
 - name: InsurancePolicy
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -222,6 +246,7 @@ objects:
     - 9.67741871
     pageIndex: 0
 - name: InsuranceGroup
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -231,6 +256,7 @@ objects:
     - 9.67741871
     pageIndex: 0
 - name: InsuredName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -240,6 +266,7 @@ objects:
     - 12.0967741
     pageIndex: 0
 - name: InsuredSSN
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -249,6 +276,7 @@ objects:
     - 10.1612902
     pageIndex: 0
 - name: InsuredDOB
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     dataType: date
@@ -259,6 +287,7 @@ objects:
     - 10.5
     pageIndex: 0
 - name: CollectionDate
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -268,6 +297,7 @@ objects:
     - 9.32432365
     pageIndex: 0
 - name: CollectionTime
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -277,6 +307,7 @@ objects:
     - 8.57142925
     pageIndex: 0
 - name: PatientGenderMale
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -286,6 +317,7 @@ objects:
     - 6.96428585
     pageIndex: 0
 - name: PatientGenderFemale
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -295,6 +327,7 @@ objects:
     - 8.0357151
     pageIndex: 0
 - name: PhysicianAddress
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -304,6 +337,7 @@ objects:
     - 8.0357151
     pageIndex: 0
 - name: BillToIsPhysician
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -313,6 +347,7 @@ objects:
     - 6.96428585
     pageIndex: 0
 - name: BillToIsMedicare
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -322,6 +357,7 @@ objects:
     - 7.50000048
     pageIndex: 0
 - name: BillToIsMedicaid
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -331,6 +367,7 @@ objects:
     - 8.0357151
     pageIndex: 0
 - name: BillToIsInsurance
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -340,6 +377,7 @@ objects:
     - 7.50000048
     pageIndex: 0
 - name: BillToIsPatient
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -349,6 +387,7 @@ objects:
     - 6.4285717
     pageIndex: 0
 - name: RelationToPatientIsSelf
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -358,6 +397,7 @@ objects:
     - 8.0357151
     pageIndex: 0
 - name: RelationToPatientIsSpouse
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -367,6 +407,7 @@ objects:
     - 8.57142925
     pageIndex: 0
 - name: RelationToPatientIsDependent
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -376,6 +417,7 @@ objects:
     - 7.50000048
     pageIndex: 0
 - name: CollectionTimeIsAM
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -385,6 +427,7 @@ objects:
     - 6.4285717
     pageIndex: 0
 - name: CollectionTimeIsPM
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -394,6 +437,7 @@ objects:
     - 7.50000048
     pageIndex: 0
 - name: ICD10DxCodes
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -403,6 +447,7 @@ objects:
     - 10.7142868
     pageIndex: 0
 - name: ClinicalHistoryIsRoutinePap
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -412,6 +457,7 @@ objects:
     - 8.0357151
     pageIndex: 0
 - name: ClinicalHistoryIsAbnormalBleeding
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:

@@ -8,18 +8,21 @@ detectionRules:
   - Invoice
 objects:
 - name: total
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: TOTAL AMOUNT DUE ON{{Anything}}{{Dollar}}({{Number}})
     regex: true
     dataType: decimal
 - name: subTotal
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: '{{LineStart}}{{Spaces}}Charges{{Spaces}}{{Dollar}}({{Number}})'
     regex: true
     dataType: decimal
 - name: dateIssued
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: Invoice Date:{{Spaces}}({{Anything}}){{LineEnd}}
@@ -27,21 +30,25 @@ objects:
     dataType: date
     dateFormat: MMMM d , yyyy
 - name: invoiceId
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: Invoice Number:{{Spaces}}({{Digits}})
     regex: true
 - name: companyName
+  objectType: field
   fieldProperties:
     fieldType: static
     expression: Amazon Web Services, Inc.
     regex: true
 - name: companyWebsite
+  objectType: field
   fieldProperties:
     fieldType: static
     expression: aws.amazon.com
     regex: true
 - name: billTo
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     expression: Bill to Address:{{ToggleSingleLineMode}}({{AnythingGreedy}})
@@ -53,12 +60,13 @@ objects:
     - 72.75
     pageIndex: 0
 - name: currency
+  objectType: field
   fieldProperties:
     fieldType: static
     expression: USD
     regex: true
-- objectType: table
-  name: table1
+- name: table1
+  objectType: table
   tableProperties:
     start:
       expression: '{{LineStart}}{{Spaces}}Detail{{LineEnd}}'

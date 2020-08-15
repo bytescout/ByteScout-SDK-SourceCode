@@ -5,6 +5,7 @@ detectionRules:
   keywords: []
 objects:
 - name: PatientName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -14,6 +15,7 @@ objects:
     - 12.75
     pageIndex: 0
 - name: ReportName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     expression: ''
@@ -25,8 +27,8 @@ objects:
     - 133.5
     - 12
     pageIndex: 0
-- objectType: table
-  name: TestResults
+- name: TestResults
+  objectType: table
   tableProperties:
     start:
       y: 261.75
@@ -36,5 +38,4 @@ objects:
       pageIndex: 0
     left: 41.25
     right: 573.75
-
 

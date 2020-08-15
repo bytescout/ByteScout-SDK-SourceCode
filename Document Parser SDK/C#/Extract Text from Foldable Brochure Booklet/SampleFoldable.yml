@@ -1,27 +1,36 @@
-﻿templateVersion: 3
+﻿templateName: Untitled document kind
+templateVersion: 4
 templatePriority: 0
-sourceId: Untitled document kind
 detectionRules:
   keywords: []
-fields:
-  Part1:
-    type: rectangle
+objects:
+- name: Part1
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    regex: true
     rectangle:
     - 7.5
     - 33.75
     - 244.5
     - 353.25
     pageIndex: 0
-  Part2:
-    type: rectangle
+- name: Part2
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    regex: true
     rectangle:
     - 273.75
     - 201.75
     - 247.5
     - 198
     pageIndex: 0
-  Part3:
-    type: rectangle
+- name: Part3
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    regex: true
     rectangle:
     - 537.75
     - 27

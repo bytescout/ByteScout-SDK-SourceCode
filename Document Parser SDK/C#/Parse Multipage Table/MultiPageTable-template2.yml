@@ -6,13 +6,14 @@ detectionRules:
   - Sample document with multi-page table
 objects:
 - name: total
+  objectType: field
   fieldProperties:
     fieldType: regex
     expression: TOTAL{{Spaces}}({{Number}})
     regex: true
     dataType: decimal
-- objectType: table
-  name: table1
+- name: table1
+  objectType: table
   tableProperties:
     start:
       expression: Item{{Spaces}}Description{{Spaces}}Price

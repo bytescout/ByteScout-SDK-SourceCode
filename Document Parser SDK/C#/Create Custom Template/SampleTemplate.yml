@@ -8,12 +8,14 @@ detectionRules:
   - TOTAL
 objects:
 - name: total
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: TOTAL{{Spaces}}{{Number}}
     dataType: decimal
     pageIndex: 0
 - name: dateIssued
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: Invoice Date {{SmartDate}}
@@ -21,18 +23,21 @@ objects:
     dateFormat: auto-mdy
     pageIndex: 0
 - name: invoiceId
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: '{{Number}}'
     dataType: string
     pageIndex: 0
 - name: companyName
+  objectType: field
   fieldProperties:
     fieldType: static
     expression: Vendor Company
     regex: true
     pageIndex: 0
 - name: billTo
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -42,6 +47,7 @@ objects:
     - 70.5
     pageIndex: 0
 - name: notes
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -50,8 +56,8 @@ objects:
     - 531
     - 47.25
     pageIndex: 0
-- objectType: table
-  name: table1
+- name: table1
+  objectType: table
   tableProperties:
     start:
       expression: Item\s+Quantity\s+Price\s+Total

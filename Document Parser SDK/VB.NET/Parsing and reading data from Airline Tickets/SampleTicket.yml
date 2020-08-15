@@ -7,6 +7,7 @@ detectionRules:
   - Eticket-Dom-Flight
 objects:
 - name: BookingNo
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -16,6 +17,7 @@ objects:
     - 12.500001
     pageIndex: 0
 - name: BookingDate
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     dataType: date
@@ -26,6 +28,7 @@ objects:
     - 12.500001
     pageIndex: 0
 - name: DepartureFrom
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -35,6 +38,7 @@ objects:
     - 8.5
     pageIndex: 0
 - name: ArrivalTo
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -44,6 +48,7 @@ objects:
     - 8.5
     pageIndex: 0
 - name: DepartureAt
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     dataType: date
@@ -54,6 +59,7 @@ objects:
     - 10.625
     pageIndex: 0
 - name: ArrivalAt
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     dataType: date
@@ -64,6 +70,7 @@ objects:
     - 11.25
     pageIndex: 0
 - name: FlightType
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -73,6 +80,7 @@ objects:
     - 10.5
     pageIndex: 0
 - name: FlightDuration
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -82,6 +90,7 @@ objects:
     - 10
     pageIndex: 0
 - name: CabinType
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -91,6 +100,7 @@ objects:
     - 10
     pageIndex: 0
 - name: PassengerName
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -100,6 +110,7 @@ objects:
     - 14.375
     pageIndex: 0
 - name: PassengerType
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:
@@ -109,6 +120,7 @@ objects:
     - 13.75
     pageIndex: 0
 - name: AirlinePNR
+  objectType: field
   fieldProperties:
     fieldType: rectangle
     rectangle:

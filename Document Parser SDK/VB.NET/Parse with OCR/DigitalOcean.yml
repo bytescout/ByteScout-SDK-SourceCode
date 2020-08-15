@@ -8,16 +8,19 @@ detectionRules:
   - Invoice Number
 objects:
 - name: companyName
+  objectType: field
   fieldProperties:
     fieldType: static
     expression: DigitalOcean
     regex: true
 - name: invoiceId
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: 'Invoice Number: ({{Digits}})'
     regex: true
 - name: dateIssued
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: 'Date Issued: ({{SmartDate}})'
@@ -25,18 +28,20 @@ objects:
     dataType: date
     dateFormat: auto-mdy
 - name: total
+  objectType: field
   fieldProperties:
     fieldType: macros
     expression: 'Total: {{Dollar}}({{Number}})'
     regex: true
     dataType: decimal
 - name: currency
+  objectType: field
   fieldProperties:
     fieldType: static
     expression: USD
     regex: true
-- objectType: table
-  name: table1
+- name: table1
+  objectType: table
   tableProperties:
     start:
       expression: Description{{Spaces}}Hours
