@@ -38,7 +38,7 @@ namespace GeneralExample
                     documentParser.AddTemplate(template);
                 }
 
-                Console.WriteLine($"templates loaded.");
+                Console.WriteLine($"Templates loaded.");
                 Console.WriteLine();
 
                 Console.WriteLine($"Parsing \"{inputDocument1}\"...");

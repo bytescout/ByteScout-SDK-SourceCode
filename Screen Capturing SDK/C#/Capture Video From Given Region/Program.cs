@@ -86,7 +86,7 @@ namespace SimpleCaptureCSharp
 	// }
 	// While(StopButtonNotClicked);
 
-	    Console.WriteLine("Capturing entire screen for 15 seconds...");
+	    Console.WriteLine("Capturing region for 15 seconds...");
 
             Thread.Sleep(15000); // wait for 15 seconds
 

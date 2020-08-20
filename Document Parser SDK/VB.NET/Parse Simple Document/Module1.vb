@@ -33,7 +33,7 @@ Module Module1
                 documentParser.AddTemplate(template)
             Next
 
-            Console.WriteLine("templates loaded...")
+            Console.WriteLine("Templates loaded.")
             Console.WriteLine()
 
 

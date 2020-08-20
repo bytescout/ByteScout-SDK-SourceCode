@@ -75,7 +75,7 @@ Module Module1
 
 
       
-	Console.WriteLine("Capturing entire screen for 15 seconds...")
+	Console.WriteLine("Capturing region for 15 seconds...")
 
 	' wait for 15 seconds
         Thread.Sleep(15000)
