@@ -12,6 +12,7 @@
 
 
 using System;
+using System.Text;
 using ByteScout.DocumentParser;
 
 // This example demonstrates document data parsing to JSON, YAML and XML formats.
@@ -66,8 +67,15 @@ namespace GeneralExample
                 Console.WriteLine($"Parsing \"{inputDocument3}\"...");
                 Console.WriteLine();
 
-                // Parse document data in XML format
-                string xmlString = documentParser.ParseDocument(inputDocument3, OutputFormat.XML);
+                // Parse document data in CSV format
+                string xmlString = documentParser.ParseDocument(inputDocument3, OutputFormat.CSV, new CSVOptions
+                {
+                    GenerateColumnHeaders = true,
+                    SeparatorCharacter = ",",
+                    QuotationCharacter = "\"",
+                    Encoding = Encoding.UTF8
+                });
+
                 // Display parsed data in console
                 Console.WriteLine("Parsing results in XML format:");
                 Console.WriteLine();

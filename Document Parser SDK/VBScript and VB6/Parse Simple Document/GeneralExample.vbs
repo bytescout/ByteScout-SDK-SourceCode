@@ -23,18 +23,29 @@ inputDocument2 = ".\AmazonAWS.pdf"
 Set documentParser = CreateObject("Bytescout.DocumentParser.DocumentParser")
 documentParser.RegistrationName = "demo"
 documentParser.RegistrationKey = "demo"
+' Create ComHelpers object
+Set comHelpers = CreateObject("Bytescout.DocumentParser.ComHelpers")
 
 ' Loading templates...
 documentParser.AddTemplate(template1)
 documentParser.AddTemplate(template2)
 
 ' Parse document data in JSON format
-documentParser.ParseDocument inputDocument1, "output1.json", 0 ' 0 = OutputFormat.JSON
+documentParser.ParseDocument inputDocument1, "output1.json", comHelpers.OUTPUTFORMAT_JSON
 
 ' Parse document data in YAML format
-documentParser.ParseDocument inputDocument2, "output2.yaml", 1 ' 1 = OutputFormat.YAML
+documentParser.ParseDocument inputDocument2, "output2.yaml", comHelpers.OUTPUTFORMAT_YAML
 
-WScript.Echo "Parsed data saved as 'output1.json' and 'output2.yaml'."
+' Parse document data in CSV format
+Set csvOptions = CreateObject("Bytescout.DocumentParser.CSVOptions")
+csvOptions.GenerateColumnHeaders = True
+csvOptions.SeparatorCharacter = ","
+csvOptions.QuotationCharacter = """"
+csvOptions.EncodingName = "utf-8"
+documentParser.ParseDocument inputDocument1, "output3.csv", comHelpers.OUTPUTFORMAT_CSV, (csvOptions)
+
+
+WScript.Echo "Parsed data saved as 'output1.json', 'output2.yaml', and 'output3.csv'."
 
 Set documentParser = Nothing
 

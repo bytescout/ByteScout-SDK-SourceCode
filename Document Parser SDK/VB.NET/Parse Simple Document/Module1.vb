@@ -63,8 +63,14 @@ Module Module1
             Console.WriteLine($"Parsing ""{inputDocument3}""...")
             Console.WriteLine()
 
-            ' Parse document data in YAML format
-            Dim xmlString As String = documentParser.ParseDocument(inputDocument3, OutputFormat.XML)
+            ' Parse document data in CSV format
+            Dim csvOptions = New CSVOptions()
+            csvOptions.GenerateColumnHeaders = True
+            csvOptions.SeparatorCharacter = ","
+            csvOptions.QuotationCharacter = """"
+            csvOptions.EncodingName = "utf-8"
+            Dim xmlString As String = documentParser.ParseDocument(inputDocument3, OutputFormat.CSV, csvOptions)
+            
             ' Display parsed data in console
             Console.WriteLine("Parsing results in XML format:")
             Console.WriteLine()
