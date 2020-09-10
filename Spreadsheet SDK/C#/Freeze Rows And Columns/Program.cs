@@ -29,16 +29,13 @@ namespace Freeze_rows_and_columns
             Worksheet worksheet = spreadsheet.Worksheets[0];
 
             Console.WriteLine("Freeze rows...");
-            worksheet.ViewOptions.SplitVertical = worksheet.Rows[0].Height;
             worksheet.ViewOptions.SplitRow = 1;
             worksheet.ViewOptions.PanesFrozen = true;
 			
             Console.WriteLine("Freeze columns...");
             worksheet = spreadsheet.Worksheets[1];
-            worksheet.ViewOptions.SplitHorizontal = worksheet.Columns[0].Width;
             worksheet.ViewOptions.SplitColumn = 1;
             worksheet.ViewOptions.PanesFrozen = true;
-
             
             Console.WriteLine("Save excel file...");
             spreadsheet.SaveAs("Output.xls");

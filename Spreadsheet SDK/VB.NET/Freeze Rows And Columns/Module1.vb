@@ -26,13 +26,11 @@ Module Module1
         Dim worksheet As Worksheet = spreadsheet.Worksheets(0)
 
         Console.WriteLine("Freeze rows...")
-        worksheet.ViewOptions.SplitVertical = worksheet.Rows(0).Height
         worksheet.ViewOptions.SplitRow = 1
         worksheet.ViewOptions.PanesFrozen = True
 
         Console.WriteLine("Freeze columns...")
         worksheet = spreadsheet.Worksheets(1)
-        worksheet.ViewOptions.SplitHorizontal = worksheet.Columns(0).Width
         worksheet.ViewOptions.SplitColumn = 1
         worksheet.ViewOptions.PanesFrozen = True
 
