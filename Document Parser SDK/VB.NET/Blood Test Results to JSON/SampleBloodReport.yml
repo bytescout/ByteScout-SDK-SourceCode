@@ -9,22 +9,21 @@ objects:
   fieldProperties:
     fieldType: rectangle
     rectangle:
-    - 176.25
+    - 177.75
     - 123.75
-    - 156.75
+    - 62.25
     - 12.75
     pageIndex: 0
 - name: ReportName
   objectType: field
   fieldProperties:
     fieldType: rectangle
-    expression: ''
+    expression: '{{SmartDate}}'
     dataType: date
-    dateFormat: auto-mdy
     rectangle:
-    - 333
+    - 335.25
     - 94.5
-    - 133.5
+    - 65.25
     - 12
     pageIndex: 0
 - name: TestResults
@@ -38,4 +37,5 @@ objects:
       pageIndex: 0
     left: 41.25
     right: 573.75
+    rowMergingRule: byBorders
 

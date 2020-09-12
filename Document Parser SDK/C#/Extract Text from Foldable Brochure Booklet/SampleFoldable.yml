@@ -8,7 +8,6 @@ objects:
   objectType: field
   fieldProperties:
     fieldType: rectangle
-    regex: true
     rectangle:
     - 7.5
     - 33.75
@@ -19,7 +18,6 @@ objects:
   objectType: field
   fieldProperties:
     fieldType: rectangle
-    regex: true
     rectangle:
     - 273.75
     - 201.75
@@ -30,7 +28,6 @@ objects:
   objectType: field
   fieldProperties:
     fieldType: rectangle
-    regex: true
     rectangle:
     - 537.75
     - 27

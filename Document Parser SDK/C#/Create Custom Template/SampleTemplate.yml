@@ -26,15 +26,13 @@ objects:
   objectType: field
   fieldProperties:
     fieldType: macros
-    expression: '{{Number}}'
-    dataType: string
+    expression: Invoice No. {{Digits}}
     pageIndex: 0
 - name: companyName
   objectType: field
   fieldProperties:
     fieldType: static
     expression: Vendor Company
-    regex: true
     pageIndex: 0
 - name: billTo
   objectType: field
@@ -64,10 +62,6 @@ objects:
       regex: true
     end:
       expression: TOTAL
-      regex: true
-    subItemStart:
-      regex: true
-    subItemEnd:
       regex: true
     row:
       expression: ^\s*(?<description>\w+.*)(?<quantity>\d+)\s+(?<unitPrice>\d+\.\d{2})\s+(?<itemTotal>\d+\.\d{2})\s*$
