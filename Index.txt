@@ -158,7 +158,13 @@
 \BarCode Reader SDK\C++ (Unmanaged)\Read barcode From Memory
 \BarCode Reader SDK\C++ (Unmanaged)\Set Image Preprocessing Filters
 \BarCode Reader SDK\Delphi\Barcode Reading In Console
+\BarCode Reader SDK\Delphi\Decode Australian Post Code
+\BarCode Reader SDK\Delphi\Filters to downscale Image
+\BarCode Reader SDK\Delphi\Image Preprocessing Filters
 \BarCode Reader SDK\Delphi\Read Barcodes From Subfolder
+\BarCode Reader SDK\Delphi\Set Barcode Decoding Profiles
+\BarCode Reader SDK\Delphi\Set Orientation and Read Rotated Barcodes
+\BarCode Reader SDK\Delphi\Split PDF Document By Found Barcode
 \BarCode Reader SDK\M-Files\Read Barcodes
 \BarCode Reader SDK\Microsoft Access\Read Barcode From PDF File
 \BarCode Reader SDK\Microsoft Excel\Read barcodes from folder
@@ -256,15 +262,70 @@
 \BarCode Reader SDK\VBScript\Barcode Reading Profiles
 \BarCode Reader SDK\VBScript\Barcodes to Excel
 \BarCode Reader SDK\VBScript\Batch Read Barcodes From Files
+\BarCode Reader SDK\VBScript\Decode Australian Post Code
+\BarCode Reader SDK\VBScript\Decode Aztec
+\BarCode Reader SDK\VBScript\Decode Bookland
+\BarCode Reader SDK\VBScript\Decode Codabar
+\BarCode Reader SDK\VBScript\Decode Codablock F
+\BarCode Reader SDK\VBScript\Decode Code 128
+\BarCode Reader SDK\VBScript\Decode Code 16K
+\BarCode Reader SDK\VBScript\Decode Code 39
+\BarCode Reader SDK\VBScript\Decode Code 93
+\BarCode Reader SDK\VBScript\Decode Damaged Code 128
+\BarCode Reader SDK\VBScript\Decode Damaged Code 39
+\BarCode Reader SDK\VBScript\Decode Damaged Datamatrix
+\BarCode Reader SDK\VBScript\Decode Damaged QR Code
+\BarCode Reader SDK\VBScript\Decode Datamatrix
+\BarCode Reader SDK\VBScript\Decode Deutsche Post Identcode
+\BarCode Reader SDK\VBScript\Decode Deutsche Post Leitcode
+\BarCode Reader SDK\VBScript\Decode EAN-128
+\BarCode Reader SDK\VBScript\Decode EAN-13
+\BarCode Reader SDK\VBScript\Decode EAN-14
+\BarCode Reader SDK\VBScript\Decode EAN-2
+\BarCode Reader SDK\VBScript\Decode EAN-5
+\BarCode Reader SDK\VBScript\Decode EAN-8
+\BarCode Reader SDK\VBScript\Decode GS1 DataBar Expanded
+\BarCode Reader SDK\VBScript\Decode GS1 DataBar Expanded Stacked
+\BarCode Reader SDK\VBScript\Decode GS1 DataBar Limited
+\BarCode Reader SDK\VBScript\Decode GS1 DataBar Omnidirectional
+\BarCode Reader SDK\VBScript\Decode GS1 DataBar Stacked
+\BarCode Reader SDK\VBScript\Decode GS1 DataMatrix
+\BarCode Reader SDK\VBScript\Decode GS1-128
+\BarCode Reader SDK\VBScript\Decode Intelligent Mail
+\BarCode Reader SDK\VBScript\Decode Interleaved 2 of 5
+\BarCode Reader SDK\VBScript\Decode ISBN
+\BarCode Reader SDK\VBScript\Decode ITF-14
+\BarCode Reader SDK\VBScript\Decode JAN-13
+\BarCode Reader SDK\VBScript\Decode Macro PDF 417
+\BarCode Reader SDK\VBScript\Decode Macro PDF417
+\BarCode Reader SDK\VBScript\Decode MaxiCode
+\BarCode Reader SDK\VBScript\Decode MICR from Bank Check
+\BarCode Reader SDK\VBScript\Decode Numly
+\BarCode Reader SDK\VBScript\Decode page by page from TIFF
+\BarCode Reader SDK\VBScript\Decode Patch Code
+\BarCode Reader SDK\VBScript\Decode PDF417
+\BarCode Reader SDK\VBScript\Decode PZN
+\BarCode Reader SDK\VBScript\Decode QR Code
+\BarCode Reader SDK\VBScript\Decode QR Code With JSON
+\BarCode Reader SDK\VBScript\Decode Royal Mail
+\BarCode Reader SDK\VBScript\Decode Royal Mail KIX
+\BarCode Reader SDK\VBScript\Decode Swiss Post Parcel
+\BarCode Reader SDK\VBScript\Decode Truncated PDF417
+\BarCode Reader SDK\VBScript\Decode UPC-A
+\BarCode Reader SDK\VBScript\Decode UPC-E
+\BarCode Reader SDK\VBScript\Decode USPS Sack Label
+\BarCode Reader SDK\VBScript\Decode USPS Tray Label
 \BarCode Reader SDK\VBScript\Display License Info
 \BarCode Reader SDK\VBScript\Read Barcode From PDF
 \BarCode Reader SDK\VBScript\Read barcode From PDF With OrientationType
 \BarCode Reader SDK\VBScript\Read Barcode From Webcam or Scanner
+\BarCode Reader SDK\VBScript\Read Checkboxes
 \BarCode Reader SDK\VBScript\Read Code 39 To Excel
 \BarCode Reader SDK\VBScript\Read QR Code To Excel
 \BarCode Reader SDK\VBScript\Rename Files To Barcode Values
 \BarCode Reader SDK\VBScript\Search Barcodes In Documents And Write Results To File
 \BarCode Reader SDK\VBScript\Simple barcode reading
+\BarCode Reader SDK\VBScript\Split PDF Document By Found Barcode
 \BarCode Reader SDK\VBScript\Barcodes to Excel\InputFiles
 \BarCode Reader SDK\VBScript\Read Code 39 To Excel\InputFiles
 \BarCode Reader SDK\VBScript\Read QR Code To Excel\InputFiles
@@ -406,9 +467,13 @@
 \BarCode SDK\Crystal Reports\Generate Report from SQL Server VB.NET 2005
 \BarCode SDK\Crystal Reports\Generate Report from SQL Server VB.NET 2015
 \BarCode SDK\Crystal Reports\Generate Report rom SQL Server C# 2015
+\BarCode SDK\Delphi\Add Barcode Checksum To Caption
+\BarCode SDK\Delphi\Composed Barcode
 \BarCode SDK\Delphi\Generate Barcode From Console
 \BarCode SDK\Delphi\Generate Barcode on Forms
 \BarCode SDK\Delphi\Print Barcode
+\BarCode SDK\Delphi\QR Code Barcode With Calender Entry
+\BarCode SDK\Delphi\QR Code with Website Url
 \BarCode SDK\Delphi\Set Barcode Options and Code128 Alphabet
 \BarCode SDK\JavaScript\Generate Barcode
 \BarCode SDK\M-Files\Generate Barcode
@@ -2682,6 +2747,7 @@
 \Data Extraction Suite\Visual Basic 6\Simple barcode reading with BarCode Reader SDK
 \Data Extraction Suite\Visual Basic 6\Split pdf with pdf extractor sdk
 \Document Parser SDK\C#
+\Document Parser SDK\Delphi
 \Document Parser SDK\VB.NET
 \Document Parser SDK\VBScript and VB6
 \Document Parser SDK\C#\Blood Test Results to JSON
@@ -2697,6 +2763,9 @@
 \Document Parser SDK\C#\Parsing and reading data from Airline Tickets
 \Document Parser SDK\C#\Parse and Generate HL7 Output\InputData
 \Document Parser SDK\C#\Parse and Generate HL7 Output\Src
+\Document Parser SDK\Delphi\Create Custom Template
+\Document Parser SDK\Delphi\Parse Multipage Table
+\Document Parser SDK\Delphi\Parsing and reading data from Airline Tickets
 \Document Parser SDK\VB.NET\Blood Test Results to JSON
 \Document Parser SDK\VB.NET\Census table from life and annuity quote request pdf
 \Document Parser SDK\VB.NET\Create Custom Template
@@ -2940,11 +3009,38 @@
 \PDF Extractor SDK\C++\PDF and OCR (Optical Character Recognition)
 \PDF Extractor SDK\C++\Split PDF Document
 \PDF Extractor SDK\C++\Split Protected PDF Document (C++ CLR)
+\PDF Extractor SDK\Delphi\Arabic Text Extraction
 \PDF Extractor SDK\Delphi\Convert PDF To CSV
+\PDF Extractor SDK\Delphi\Detect Lines in PDF
+\PDF Extractor SDK\Delphi\OCR Analyser
 \PDF Extractor SDK\Delphi\PDF Batch Processing
+\PDF Extractor SDK\Delphi\Read Text From Noisy Image
 \PDF Extractor SDK\Microsoft Excel\Extract Text From Coordinates from PDF
 \PDF Extractor SDK\Microsoft Excel\Merge PDF Documents
+\PDF Extractor SDK\Powershell\Arabic Text Extraction
+\PDF Extractor SDK\Powershell\Extract Images from PDF
+\PDF Extractor SDK\Powershell\Extract PDF Text From Page Area
+\PDF Extractor SDK\Powershell\Extract Text By Columns from PDF
+\PDF Extractor SDK\Powershell\Extract Text from PDF
+\PDF Extractor SDK\Powershell\Find Email Addresses in PDF with Regex
+\PDF Extractor SDK\Powershell\Find Invoice Total Amount in PDF with Regex
+\PDF Extractor SDK\Powershell\Find Keyword And Extract Page in PDF
+\PDF Extractor SDK\Powershell\Find PDF Table And Extract As CSV
+\PDF Extractor SDK\Powershell\Find PDF Table And Extract As XML
+\PDF Extractor SDK\Powershell\Find Text in PDF
+\PDF Extractor SDK\Powershell\Find Text in PDF using Regex
+\PDF Extractor SDK\Powershell\Make Searchable PDF
+\PDF Extractor SDK\Powershell\Merge All Documents Within Folder
+\PDF Extractor SDK\Powershell\Merge PDF Documents
+\PDF Extractor SDK\Powershell\PDF To CSV
+\PDF Extractor SDK\Powershell\PDF To CSV By Pages
 \PDF Extractor SDK\Powershell\PDF To JSON
+\PDF Extractor SDK\Powershell\PDF To JSON With Images
+\PDF Extractor SDK\Powershell\PDF To XLS
+\PDF Extractor SDK\Powershell\PDF To XLSX
+\PDF Extractor SDK\Powershell\PDF To XML
+\PDF Extractor SDK\Powershell\Split PDF Document
+\PDF Extractor SDK\Powershell\Merge All Documents Within Folder\PDFDocs
 \PDF Extractor SDK\VB.NET\Add Image Stamp in PDF
 \PDF Extractor SDK\VB.NET\Arabic Text Extraction
 \PDF Extractor SDK\VB.NET\Batch check folder agianst JSON settings
@@ -3174,6 +3270,12 @@
 \PDF Renderer SDK\C#\Rendering PDF to image In Background Thread
 \PDF Renderer SDK\C#\Silent PDF Printing
 \PDF Renderer SDK\Delphi\Convert PDF To JPEG
+\PDF Renderer SDK\Delphi\Display License Info
+\PDF Renderer SDK\Delphi\Download and Process file
+\PDF Renderer SDK\Delphi\Make Thumbnail from PDF
+\PDF Renderer SDK\Delphi\PDF to Image With Custom Size
+\PDF Renderer SDK\Delphi\Render Text-Vector-Image Layers in PDF
+\PDF Renderer SDK\Delphi\Silent PDF Printing
 \PDF Renderer SDK\VB.NET\Convert PDF To 1-bit BMP
 \PDF Renderer SDK\VB.NET\Convert PDF To BMP
 \PDF Renderer SDK\VB.NET\Convert PDF To BMP (using Streams)
@@ -3211,6 +3313,7 @@
 \PDF SDK\ASP.NET C#
 \PDF SDK\ASP.NET MVC C#
 \PDF SDK\C#
+\PDF SDK\Delphi
 \PDF SDK\VB.NET
 \PDF SDK\VBScript and VB6
 \PDF SDK\ASP.NET\PDF SDK Samples
@@ -3310,6 +3413,10 @@
 \PDF SDK\C#\Sign PDF and Set Security
 \PDF SDK\C#\Split PDF Document
 \PDF SDK\C#\Use PDF Layers
+\PDF SDK\Delphi\Add Header And Footer
+\PDF SDK\Delphi\Add Page Numbers
+\PDF SDK\Delphi\Add Submit Form Action to PDF
+\PDF SDK\Delphi\Use PDF Layers
 \PDF SDK\VB.NET\Add 3D Annotations to PDF
 \PDF SDK\VB.NET\Add File Attachment to PDF
 \PDF SDK\VB.NET\Add GoTo Action in PDF
@@ -4074,6 +4181,7 @@
 \PDF Suite\VBScript\Zugferd invoice extraction with pdf extractor sdk
 \PDF To HTML SDK\ASP.NET
 \PDF To HTML SDK\C#
+\PDF To HTML SDK\Delphi
 \PDF To HTML SDK\VB.NET
 \PDF To HTML SDK\VB6
 \PDF To HTML SDK\VBScript
@@ -4086,6 +4194,10 @@
 \PDF To HTML SDK\C#\Convert PDF To HTML (With Complex Layout) From Page
 \PDF To HTML SDK\C#\Download and Process file
 \PDF To HTML SDK\C#\Reduce Memory Usage During PDF to HTML Conversion
+\PDF To HTML SDK\Delphi\Convert PDF To HTML (Simple Layout) From All Pages
+\PDF To HTML SDK\Delphi\Convert PDF To HTML (With Complex Layout) From All Pages
+\PDF To HTML SDK\Delphi\Download and Process file
+\PDF To HTML SDK\Delphi\Reduce Memory Usage During PDF to HTML Conversion
 \PDF To HTML SDK\VB.NET\Convert PDF To HTML (Complex Layout) From All Pages
 \PDF To HTML SDK\VB.NET\Convert PDF To HTML (Complex Layout) From Page
 \PDF To HTML SDK\VB.NET\Convert PDF To HTML (Simple Layout) From All Pages
@@ -4146,6 +4258,7 @@
 \PDF.co Web API\Zapier
 \PDF.co Web API\Add Text And Images To PDF\C#
 \PDF.co Web API\Add Text And Images To PDF\cURL
+\PDF.co Web API\Add Text And Images To PDF\Delphi
 \PDF.co Web API\Add Text And Images To PDF\Java
 \PDF.co Web API\Add Text And Images To PDF\JavaScript
 \PDF.co Web API\Add Text And Images To PDF\PowerShell
@@ -4157,6 +4270,7 @@
 \PDF.co Web API\Add Text And Images To PDF\C#\Add Text to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\cURL\Add Images to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\cURL\Add Text to Existing PDF
+\PDF.co Web API\Add Text And Images To PDF\Delphi\Add Text And Images To PDF
 \PDF.co Web API\Add Text And Images To PDF\Java\Add Image by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\Java\Add Images to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\Java\Add Text by finding target coordinates
@@ -4181,6 +4295,7 @@
 \PDF.co Web API\Add Text And Images To PDF\VB.NET\Add Text to Existing PDF
 \PDF.co Web API\Barcode Generator API\C#
 \PDF.co Web API\Barcode Generator API\cURL
+\PDF.co Web API\Barcode Generator API\Delphi
 \PDF.co Web API\Barcode Generator API\Java
 \PDF.co Web API\Barcode Generator API\JavaScript
 \PDF.co Web API\Barcode Generator API\PHP
@@ -4189,6 +4304,7 @@
 \PDF.co Web API\Barcode Generator API\VB.NET
 \PDF.co Web API\Barcode Generator API\C#\Generate Barcode
 \PDF.co Web API\Barcode Generator API\cURL\Generate Barcode
+\PDF.co Web API\Barcode Generator API\Delphi\Generate Barcode
 \PDF.co Web API\Barcode Generator API\Java\Generate Barcode
 \PDF.co Web API\Barcode Generator API\JavaScript\Generate Barcode
 \PDF.co Web API\Barcode Generator API\JavaScript\Generate Barcode (JQuery)
@@ -4282,6 +4398,7 @@
 \PDF.co Web API\CSV To PDF API\VB.NET\Convert CSV To PDF From URL Asynchronously
 \PDF.co Web API\Delete Text From PDF\C#
 \PDF.co Web API\Delete Text From PDF\cURL
+\PDF.co Web API\Delete Text From PDF\Delphi
 \PDF.co Web API\Delete Text From PDF\Java
 \PDF.co Web API\Delete Text From PDF\JavaScript
 \PDF.co Web API\Delete Text From PDF\PHP
@@ -4293,6 +4410,7 @@
 \PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From URL Asynchronously
 \PDF.co Web API\Delete Text From PDF\cURL\Delete PDF Text From File
 \PDF.co Web API\Delete Text From PDF\cURL\Delete PDF Text From URL
+\PDF.co Web API\Delete Text From PDF\Delphi\Delete PDF Text From URL
 \PDF.co Web API\Delete Text From PDF\Java\Delete PDF Text From Uploaded File
 \PDF.co Web API\Delete Text From PDF\Java\Delete PDF Text From URL
 \PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From File (Node.js)
@@ -4314,6 +4432,7 @@
 \PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From URL Asynchronously
 \PDF.co Web API\DOC To PDF API\C#
 \PDF.co Web API\DOC To PDF API\cURL
+\PDF.co Web API\DOC To PDF API\Delphi
 \PDF.co Web API\DOC To PDF API\Java
 \PDF.co Web API\DOC To PDF API\JavaScript
 \PDF.co Web API\DOC To PDF API\PHP
@@ -4325,6 +4444,7 @@
 \PDF.co Web API\DOC To PDF API\C#\Convert DOC To PDF From URL Asynchronously
 \PDF.co Web API\DOC To PDF API\cURL\Convert DOC to PDF from File
 \PDF.co Web API\DOC To PDF API\cURL\Convert DOC To PDF From URL
+\PDF.co Web API\DOC To PDF API\Delphi\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\Java\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\Java\Convert DOC To PDF From URL
 \PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From File (Node.js)
@@ -4560,6 +4680,7 @@
 \PDF.co Web API\PDF Make Searchable API\VB.NET\Make Searchable PDF From URL Asynchronously
 \PDF.co Web API\PDF Merging API\C#
 \PDF.co Web API\PDF Merging API\cURL
+\PDF.co Web API\PDF Merging API\Delphi
 \PDF.co Web API\PDF Merging API\Java
 \PDF.co Web API\PDF Merging API\JavaScript
 \PDF.co Web API\PDF Merging API\PHP
@@ -4571,6 +4692,7 @@
 \PDF.co Web API\PDF Merging API\C#\Merge PDF Documents From URLs
 \PDF.co Web API\PDF Merging API\C#\Merge PDF Documents From URLs Asynchronously
 \PDF.co Web API\PDF Merging API\cURL\Merge PDF Documents From URLs
+\PDF.co Web API\PDF Merging API\Delphi\Merge PDF Documents From URLs
 \PDF.co Web API\PDF Merging API\Java\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\Java\Merge PDF Documents From URLs
 \PDF.co Web API\PDF Merging API\JavaScript\Merge PDF Documents (jQuery)
@@ -6235,6 +6357,7 @@
 \Premium Suite\Visual Basic 6\Create side by side manifest\Create side by side manifest
 \Premium Suite\Visual Basic 6\Create side by side manifest\Create side by side manifest\Src
 \QR Code SDK\C#
+\QR Code SDK\Delphi
 \QR Code SDK\Microsoft Access
 \QR Code SDK\Microsoft Excel
 \QR Code SDK\VB.NET
@@ -6246,6 +6369,9 @@
 \QR Code SDK\C#\Create QR Code with Unicode Value
 \QR Code SDK\C#\Create Simple QR Code
 \QR Code SDK\C#\Make QR Code With Image
+\QR Code SDK\Delphi\Create Colored QR Code
+\QR Code SDK\Delphi\Create QR Code with Binary Data
+\QR Code SDK\Delphi\Make QR Code With Image
 \QR Code SDK\Microsoft Access\Add Barcode to Report
 \QR Code SDK\Microsoft Excel\Create QR Code in Excel
 \QR Code SDK\VB.NET\Convert vCard to QR Code Barcode
@@ -6499,6 +6625,7 @@
 \Spreadsheet SDK\C++ (managed)
 \Spreadsheet SDK\C++ (unmanaged)
 \Spreadsheet SDK\Console
+\Spreadsheet SDK\Delphi
 \Spreadsheet SDK\JavaScript
 \Spreadsheet SDK\PHP
 \Spreadsheet SDK\VB.NET
@@ -6627,6 +6754,9 @@
 \Spreadsheet SDK\Console\Convert in Batch to XLS
 \Spreadsheet SDK\Console\Convert in Batch from XLS to CSV\Input Files
 \Spreadsheet SDK\Console\Convert in Batch to XLS\Input Files
+\Spreadsheet SDK\Delphi\Add Image to Spreadsheet
+\Spreadsheet SDK\Delphi\CopyPaste Rows
+\Spreadsheet SDK\Delphi\Validate Cells with Dates
 \Spreadsheet SDK\JavaScript\Create Spreadsheet
 \Spreadsheet SDK\PHP\Create Spreadsheet
 \Spreadsheet SDK\VB.NET\Add Area Chart
@@ -6821,6 +6951,7 @@
 \SWF To Video SDK\VBScript\SWF To WMV
 \SWF To Video SDK\VBScript\SWF with Dynamic Scene to PNG Frames
 \Text Recognition SDK\C#
+\Text Recognition SDK\Delphi
 \Text Recognition SDK\PowerShell
 \Text Recognition SDK\VB.NET
 \Text Recognition SDK\VBScript and VB6
@@ -6832,6 +6963,10 @@
 \Text Recognition SDK\C#\Screen Text Reader
 \Text Recognition SDK\C#\Use Image Preprocessing Filters
 \Text Recognition SDK\C#\Use Text Auto Corrections
+\Text Recognition SDK\Delphi\Extract Text From Areas
+\Text Recognition SDK\Delphi\Recognize Text From Document
+\Text Recognition SDK\Delphi\Save OCR Objects As JSON
+\Text Recognition SDK\Delphi\Use Text Auto Corrections
 \Text Recognition SDK\PowerShell\Extract Text From Areas
 \Text Recognition SDK\PowerShell\Recognize Text From Document
 \Text Recognition SDK\PowerShell\Screen Text Reader
