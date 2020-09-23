@@ -4545,25 +4545,39 @@
 \PDF.co Web API\HTML To PDF API\VB.NET
 \PDF.co Web API\HTML To PDF API\C#\Convert Web Page To PDF From Link
 \PDF.co Web API\HTML To PDF API\C#\Convert Web Page To PDF From Link Asynchronously
+\PDF.co Web API\HTML To PDF API\C#\Generate PDF From HTML File
+\PDF.co Web API\HTML To PDF API\C#\Generate PDF From Large HTML File
 \PDF.co Web API\HTML To PDF API\C#\Generate PDF Invoice From HTML Template
 \PDF.co Web API\HTML To PDF API\cURL\Convert Web Page To PDF From Link
 \PDF.co Web API\HTML To PDF API\Java\Convert Web Page To PDF From Link
+\PDF.co Web API\HTML To PDF API\Java\Generate PDF From HTML File
+\PDF.co Web API\HTML To PDF API\Java\Generate PDF From Large HTML File
 \PDF.co Web API\HTML To PDF API\Java\Generate PDF Invoice From HTML Template
 \PDF.co Web API\HTML To PDF API\JavaScript\Convert Web Page To PDF From Link (Node.js)
 \PDF.co Web API\HTML To PDF API\JavaScript\Convert Web Page To PDF From Link (Node.js) - Async API
+\PDF.co Web API\HTML To PDF API\JavaScript\Generate PDF From HTML File
+\PDF.co Web API\HTML To PDF API\JavaScript\Generate PDF From Large HTML File
 \PDF.co Web API\HTML To PDF API\JavaScript\Generate PDF Invoice From HTML Template (Node.js)
 \PDF.co Web API\HTML To PDF API\JavaScript\Generate PDF Invoice From HTML Template (Node.js) - Async API
 \PDF.co Web API\HTML To PDF API\PHP\Convert Web Page To PDF From Link
 \PDF.co Web API\HTML To PDF API\PHP\Convert Web Page To PDF From Link Asynchronously
+\PDF.co Web API\HTML To PDF API\PHP\Generate PDF From HTML File
+\PDF.co Web API\HTML To PDF API\PHP\Generate PDF From Large HTML File
 \PDF.co Web API\HTML To PDF API\PHP\Generate PDF Invoice From HTML Template
 \PDF.co Web API\HTML To PDF API\PowerShell\Convert Web Page To PDF From Link
 \PDF.co Web API\HTML To PDF API\PowerShell\Convert Web Page To PDF From Link Asynchronously
+\PDF.co Web API\HTML To PDF API\PowerShell\Generate PDF From HTML File
+\PDF.co Web API\HTML To PDF API\PowerShell\Generate PDF From Large HTML File
 \PDF.co Web API\HTML To PDF API\PowerShell\Generate PDF Invoice From HTML Template
 \PDF.co Web API\HTML To PDF API\Python\Convert Web Page To PDF From Link
 \PDF.co Web API\HTML To PDF API\Python\Convert Web Page To PDF From Link Asynchronously
+\PDF.co Web API\HTML To PDF API\Python\Generate PDF From HTML File
+\PDF.co Web API\HTML To PDF API\Python\Generate PDF From Large HTML File
 \PDF.co Web API\HTML To PDF API\Python\Generate PDF Invoice From HTML Template
 \PDF.co Web API\HTML To PDF API\VB.NET\Convert Web Page To PDF From URL
 \PDF.co Web API\HTML To PDF API\VB.NET\Convert Web Page To PDF From URL Asynchronously
+\PDF.co Web API\HTML To PDF API\VB.NET\Generate PDF From HTML File
+\PDF.co Web API\HTML To PDF API\VB.NET\Generate PDF From Large HTML File
 \PDF.co Web API\HTML To PDF API\VB.NET\Generate PDF Invoice From HTML Template
 \PDF.co Web API\Image To PDF API\C#
 \PDF.co Web API\Image To PDF API\cURL
