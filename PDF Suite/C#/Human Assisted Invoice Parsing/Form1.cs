@@ -160,7 +160,7 @@ namespace SampleApplication
 
 				extractor.LoadDocumentFromFile(pdfViewerControl1.InputFile);
 				extractor.OCRMode = OCRMode.Auto;
-				extractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata\";
+				extractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\";
 				extractor.OCRResolution = 300;
 
 				for (int i = 0; i < selection.Length; i++)

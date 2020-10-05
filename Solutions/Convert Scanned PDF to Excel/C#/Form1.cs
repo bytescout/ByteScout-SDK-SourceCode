@@ -82,7 +82,7 @@ namespace Sample_UI_Application
                 csvExtractor.OCRMode = OCRMode.Auto;
                 csvExtractor.OCRResolution = 300;
                 csvExtractor.OCRLanguage = "eng";
-                csvExtractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata\";
+                csvExtractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\";
 
                 // There are double spaces between some words in your document.
                 // To avoid such words break column structure increase the space ratio to 2.
@@ -120,7 +120,7 @@ namespace Sample_UI_Application
                 xlsExtractor.OCRMode = OCRMode.Auto;
                 xlsExtractor.OCRResolution = 300;
                 xlsExtractor.OCRLanguage = "eng";
-                xlsExtractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata\";
+                xlsExtractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\";
 
                 xlsExtractor.OutputFormat = SpreadseetOutputFormat.XLSX;
                 xlsExtractor.RichTextFormatting = false;

@@ -122,7 +122,7 @@ namespace ReadPDFWithImageHindiText
                      hin.cube.word-freq
                      hin.tesseract_cube.nn
                      */
-                    searchablePDFMaker.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\Redistributable\net2.00\tessdata\";
+                    searchablePDFMaker.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\";
 
                     // Set OCR language
                     searchablePDFMaker.OCRLanguage = "hin";

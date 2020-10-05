@@ -230,7 +230,7 @@ namespace MultithreadProcessing
 		        using (SearchablePDFMaker searchablePdfMaker = new SearchablePDFMaker("demo", "demo"))
 		        {
 		            searchablePdfMaker.OCRDetectPageRotation = true;
-		            searchablePdfMaker.OCRLanguageDataFolder = @"C:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata";
+		            searchablePdfMaker.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\";
 		            searchablePdfMaker.LoadDocumentFromFile(chunk);
 
 		            // 300 DPI resolution is recommended. 

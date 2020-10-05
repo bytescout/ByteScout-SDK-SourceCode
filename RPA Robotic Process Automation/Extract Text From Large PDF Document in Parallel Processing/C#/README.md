@@ -240,7 +240,7 @@ namespace MultithreadProcessing
                     textExtractor.PageDataCaching = PageDataCaching.None;
 
                     textExtractor.OCRMode = OCRMode.Auto;
-                    textExtractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata\";
+                    textExtractor.OCRLanguageDataFolder = @"c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\";
                     textExtractor.OCRLanguage = "eng";
                     // 300 DPI resolution is recommended. 
                     // Using of higher values will slow down the processing but does not guarantee the higher quality.

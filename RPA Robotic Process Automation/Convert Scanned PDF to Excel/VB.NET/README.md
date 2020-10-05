@@ -226,7 +226,7 @@ Public Partial Class Form1
             csvExtractor.OCRMode = OCRMode.Auto
             csvExtractor.OCRResolution = 300
             csvExtractor.OCRLanguage = "eng"
-            csvExtractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata\"
+            csvExtractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\"
 
             
             ' FYI, removing horizontal lines may increase the text recognition quality in some cases
@@ -265,7 +265,7 @@ Public Partial Class Form1
             xlsExtractor.OCRMode = OCRMode.Auto
             xlsExtractor.OCRResolution = 300
             xlsExtractor.OCRLanguage = "eng"
-            xlsExtractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\net4.00\tessdata\"
+            xlsExtractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best\"
 
             xlsExtractor.OutputFormat = SpreadseetOutputFormat.XLSX
             xlsExtractor.RichTextFormatting = false
