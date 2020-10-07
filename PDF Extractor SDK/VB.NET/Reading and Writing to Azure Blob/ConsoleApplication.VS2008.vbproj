@@ -41,8 +41,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -55,8 +54,7 @@
     <Compile Include="Module1.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\sample3.pdf">
-      <Link>sample3.pdf</Link>
+    <Content Include="sample3.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

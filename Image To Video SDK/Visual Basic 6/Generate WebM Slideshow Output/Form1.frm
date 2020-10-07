@@ -46,13 +46,13 @@ Slides.DefaultSlideInEffectDuration = 500 ' 500 msec for in effect
 ' Add images and set the duration for every slide
 Dim Slide As BytescoutImageToVideo.Slide
 
-Set Slide = converter.AddImageFromFileName("..\..\slide1.jpg")
+Set Slide = converter.AddImageFromFileName("slide1.jpg")
 Slide.Duration = 3000 ' 3000ms = 3s
 
-Set Slide = converter.AddImageFromFileName("..\..\slide2.jpg")
+Set Slide = converter.AddImageFromFileName("slide2.jpg")
 Slide.Duration = 3000
 
-Set Slide = converter.AddImageFromFileName("..\..\slide3.jpg")
+Set Slide = converter.AddImageFromFileName("slide3.jpg")
 Slide.Duration = 3000
 
 ' Set output video size

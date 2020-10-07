@@ -46,8 +46,7 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\sample_ocr_with_rotatedPage.pdf">
-      <Link>sample_ocr_with_rotatedPage.pdf</Link>
+    <Content Include="sample_ocr_with_rotatedPage.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

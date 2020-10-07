@@ -15,7 +15,7 @@ Set merger = CreateObject("Bytescout.PDFExtractor.DocumentMerger")
 merger.RegistrationName = "demo"
 merger.RegistrationKey = "demo"
 
-merger.Merge2 "..\..\sample1.pdf", "..\..\sample2.pdf", "result.pdf"
+merger.Merge2 "sample1.pdf", "sample2.pdf", "result.pdf"
                 
 Set merger = Nothing
 

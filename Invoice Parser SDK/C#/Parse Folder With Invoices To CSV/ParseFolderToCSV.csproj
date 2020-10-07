@@ -52,16 +52,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="..\..\AmazonAWS.pdf">
-      <Link>invoices\AmazonAWS.pdf</Link>
+    <Content Include="AmazonAWS.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\DigitalOcean.pdf">
-      <Link>invoices\DigitalOcean.pdf</Link>
+    <Content Include="DigitalOcean.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\Google.pdf">
-      <Link>invoices\Google.pdf</Link>
+    <Content Include="Google.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

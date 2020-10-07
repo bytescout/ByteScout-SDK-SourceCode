@@ -16,7 +16,7 @@
 
 
 ' Input document
-inputDocument = "..\..\sample_ocr.pdf"
+inputDocument = "sample_ocr.pdf"
 
 ' Document page index
 pageIndex = 0

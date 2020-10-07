@@ -26,7 +26,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample2.pdf")
+extractor.LoadDocumentFromFile("sample2.pdf")
 
 ' Save extracted text to file
 outputText = extractor.GetText()

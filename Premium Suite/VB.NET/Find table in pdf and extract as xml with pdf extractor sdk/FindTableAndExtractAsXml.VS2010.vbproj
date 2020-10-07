@@ -47,8 +47,7 @@
     <Compile Include="Properties\AssemblyInfo.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\sample3.pdf">
-      <Link>sample3.pdf</Link>
+    <Content Include="sample3.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

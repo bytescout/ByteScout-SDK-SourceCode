@@ -44,9 +44,8 @@
     <Reference Include="System.Xml" />
     <Compile Include="Program.vb" />
     <Compile Include="Properties\AssemblyInfo.vb" />
-    <Content Include="..\..\sample_ocr.pdf">
+    <Content Include="sample_ocr.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Link>sample_ocr.pdf</Link>
     </Content>
   </ItemGroup>
 </Project>

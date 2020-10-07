@@ -19,7 +19,7 @@ extractor.RegistrationKey = "demo"
 extractor.ExtractionMode = 0
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample2.pdf")
+extractor.LoadDocumentFromFile("sample2.pdf")
 
 ' Convert 2-nd page to HTML and save it to file
 extractor.SaveHtmlPageToFile 1, "output.html"

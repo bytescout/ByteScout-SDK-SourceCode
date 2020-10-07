@@ -12,8 +12,8 @@
 
 ' This example demonstrates invoice data parsing to JSON and YAML formats.
 
-inputDocument1 = "..\..\DigitalOcean.pdf"
-inputDocument2 = "..\..\AmazonAWS.pdf"
+inputDocument1 = "DigitalOcean.pdf"
+inputDocument2 = "AmazonAWS.pdf"
 
 ' Create InvoiceParser object
 Set invoiceParser = CreateObject("Bytescout.InvoiceParser.InvoiceParser")

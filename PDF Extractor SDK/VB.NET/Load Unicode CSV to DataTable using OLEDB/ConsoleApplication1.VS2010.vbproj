@@ -3,8 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{ECE4C758-259D-4A66-BBE5-C8922179A44C}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -63,8 +62,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -111,8 +109,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\UnicodeSample.pdf">
-      <Link>UnicodeSample.pdf</Link>
+    <Content Include="UnicodeSample.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

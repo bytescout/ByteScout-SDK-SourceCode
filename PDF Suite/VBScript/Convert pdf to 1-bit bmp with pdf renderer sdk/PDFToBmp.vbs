@@ -17,7 +17,7 @@ renderer.RegistrationName = "demo"
 renderer.RegistrationKey = "demo"
 
 ' Load sample PDF document
-renderer.LoadDocumentFromFile "../../multipage.pdf"
+renderer.LoadDocumentFromFile "multipage.pdf"
 
 ' Image format: 0 - BMP; 1 - JPEG; 2 - PNG; 3 - TIFF; 4 - GIF
 Dim outputImageFormat

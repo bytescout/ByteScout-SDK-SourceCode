@@ -34,8 +34,7 @@
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
   </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <ItemGroup>
     <Reference Include="Bytescout.PDFExtractor, Version=1.0.0.12, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -49,9 +48,8 @@
     <Compile Include="Program.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\samplePDF_EmailSSN.pdf">
+    <Content Include="samplePDF_EmailSSN.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Link>samplePDF_EmailSSN.pdf</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />

@@ -15,7 +15,7 @@ Set textRecognizer = CreateObject("ByteScout.TextRecognition.TextRecognizer")
 textRecognizer.RegistrationName = "demo"
 textRecognizer.RegistrationKey = "demo"
 
-inputDocument = "..\..\skewed.png"
+inputDocument = "skewed.png"
 outputDocument = "result.txt"
 
 ' Load document (image or PDF)

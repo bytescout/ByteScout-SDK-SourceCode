@@ -1,7 +1,7 @@
 # Add reference to ByteScout.TextRecognition.dll assembly
 Add-Type -Path "c:\Program Files\ByteScout Text Recognition SDK\net40\ByteScout.TextRecognition.dll"
 
-$InputDocument = "..\..\areas-sample.pdf"
+$InputDocument = "areas-sample.pdf"
 $PageIndex = 0
 $OutputDocument = ".\result.txt"
 

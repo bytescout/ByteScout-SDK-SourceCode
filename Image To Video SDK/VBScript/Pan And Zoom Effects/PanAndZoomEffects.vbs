@@ -25,7 +25,7 @@ converter.Slides.DefaultSlideDuration = 2000 ' total duration is 2000 = slide tr
 
 
 ' uncomment to use background picture
-' converter.SetBackgroundPictureFileName "..\..\background.jpg"
+' converter.SetBackgroundPictureFileName "background.jpg"
 
 ' apply transition effect to the very first slide
 converter.UseInEffectForFirstSlide = false

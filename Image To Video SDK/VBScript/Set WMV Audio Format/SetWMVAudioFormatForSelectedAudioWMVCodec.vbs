@@ -18,7 +18,7 @@ converter.RegistrationName = "demo"
 converter.RegistrationKey = "demo"
 
 ' Add images and set the duration for every slide
-Set slide = converter.AddImageFromFileName("..\..\slide1.jpg")
+Set slide = converter.AddImageFromFileName("slide1.jpg")
 slide.Duration = 1000 ' 3000ms = 3s
 
 ' Set output video size
@@ -28,7 +28,7 @@ converter.OutputHeight = 240
 ' converter.SetLogFile "log.txt"
 
 ' Set background music
-converter.ExternalAudioTrackFromFileName = "..\..\bgmusic.mp3"
+converter.ExternalAudioTrackFromFileName = "bgmusic.mp3"
 
 ' set current WMV audio codec - we set it to "Windows Media Audio 9"
 ' to view all available wmv audio codecs use .WMVAudioCodecsCount and GetWMVAudioCodecName(index) 

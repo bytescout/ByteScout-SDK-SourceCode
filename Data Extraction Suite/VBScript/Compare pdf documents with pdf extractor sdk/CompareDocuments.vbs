@@ -16,7 +16,7 @@ comparer.RegistrationName = "demo"
 comparer.RegistrationKey = "demo"
 
 'Compare documents
-comparer.Compare "..\..\comparison1.pdf", "..\..\comparison2.pdf"
+comparer.Compare "comparison1.pdf", "comparison2.pdf"
 
 ' Generate report
 comparer.GenerateHtmlReport "report.html"

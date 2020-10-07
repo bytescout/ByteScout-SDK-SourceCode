@@ -21,7 +21,7 @@ extractor.RegistrationKey = "demo"
 extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample_ocr.pdf")
+extractor.LoadDocumentFromFile("sample_ocr.pdf")
 
 ' Apply predefined profiles
 extractor.Profiles = "scanned, no-layout"
@@ -33,7 +33,7 @@ extractor.Reset
 
 
 ' Load another document
-extractor.LoadDocumentFromFile("..\..\sample_ocr.pdf")
+extractor.LoadDocumentFromFile("sample_ocr.pdf")
 
 ' Load and apply custom profiles
 extractor.LoadProfiles("profiles.json")

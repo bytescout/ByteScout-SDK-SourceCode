@@ -20,18 +20,18 @@ converter.RegistrationKey = "demo"
 MsgBox "The script will now convert 3 slides into Result.wmv video file"
 
 ' Add images and set the duration for every slide
-Set slide = converter.AddImageFromFileName("..\..\slide1.jpg")
+Set slide = converter.AddImageFromFileName("slide1.jpg")
 slide.Duration = 3000 ' 3000ms = 3s
 Slide.Effect = 1 ' 1 = EaseIn
 slide.EffectDuration = 3000 ' 3000ms = 3s
 
 
-Set slide = converter.AddImageFromFileName("..\..\slide2.jpg")
+Set slide = converter.AddImageFromFileName("slide2.jpg")
 slide.Duration = 3000
 Slide.Effect = 2 ' 2 = EaseOut
 slide.EFfectDuration = 3000
 
-Set slide = converter.AddImageFromFileName("..\..\slide3.jpg")
+Set slide = converter.AddImageFromFileName("slide3.jpg")
 slide.Duration = 3000
 Slide.Effect = 1 ' 1 = EaseIn
 Slide.EffectDuration = 3000

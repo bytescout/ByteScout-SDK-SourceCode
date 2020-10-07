@@ -46,8 +46,7 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\sample_ocr.jpg">
-      <Link>sample_ocr.jpg</Link>
+    <Content Include="sample_ocr.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

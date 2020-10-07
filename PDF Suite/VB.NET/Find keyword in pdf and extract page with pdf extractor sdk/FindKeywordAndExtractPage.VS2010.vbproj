@@ -3,8 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4ADF87C7-D5B1-44F3-B7EE-D60F18C12FE8}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -42,8 +41,7 @@
     <Compile Include="Program.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\sample2.pdf">
-      <Link>sample2.pdf</Link>
+    <Content Include="sample2.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

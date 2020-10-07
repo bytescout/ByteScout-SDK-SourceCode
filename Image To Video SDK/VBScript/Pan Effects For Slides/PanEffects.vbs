@@ -25,7 +25,7 @@ converter.Slides.DefaultSlideDuration = 2000 ' total duration is 2000 = slide tr
 
 
 ' uncomment to use background picture
-' converter.SetBackgroundPictureFileName "..\..\background.jpg"
+' converter.SetBackgroundPictureFileName "background.jpg"
 
 ' apply transition effect to the very first slide
 converter.UseInEffectForFirstSlide = false
@@ -62,9 +62,9 @@ for i=1 to 11
 ' Add slide image, set the duration
 
 if not bChangeSlide then
-	Set slide = converter.AddImageFromFileName("..\..\koala.jpg")
+	Set slide = converter.AddImageFromFileName("koala.jpg")
 Else 
-	Set slide = converter.AddImageFromFileName("..\..\penguins.jpg")
+	Set slide = converter.AddImageFromFileName("penguins.jpg")
 End If
 
 bChangeSlide = not bChangeSlide ' switch to use another slide next tim

@@ -17,7 +17,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile "../../sample3.pdf"
+extractor.LoadDocumentFromFile "sample3.pdf"
 
 ' You can change CSV separator and quotation symbols if needed
 'extractor.CSVSeparatorSymbol = "," 

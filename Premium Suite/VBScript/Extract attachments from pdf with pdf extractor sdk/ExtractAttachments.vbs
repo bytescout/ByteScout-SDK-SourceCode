@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document with embedded attachments
-extractor.LoadDocumentFromFile("..\..\attachments.pdf")
+extractor.LoadDocumentFromFile("attachments.pdf")
 
 ' Iterate through attachments and save them
 For i = 0 To extractor.Count - 1

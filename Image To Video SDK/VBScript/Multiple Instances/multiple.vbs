@@ -20,9 +20,9 @@ converter1.AddImageFromFileName("Desert.jpg")
 converter1.AddImageFromFileName("Koala.jpg")
 converter1.AddImageFromFileName("Penguins.jpg")
 
-converter2.AddImageFromFileName("..\..\slide1.jpg")
-converter2.AddImageFromFileName("..\..\slide2.jpg")
-converter2.AddImageFromFileName("..\..\slide3.jpg")
+converter2.AddImageFromFileName("slide1.jpg")
+converter2.AddImageFromFileName("slide2.jpg")
+converter2.AddImageFromFileName("slide3.jpg")
     
 Set slides1 = converter1.Slides
 Set slides2 = converter2.Slides

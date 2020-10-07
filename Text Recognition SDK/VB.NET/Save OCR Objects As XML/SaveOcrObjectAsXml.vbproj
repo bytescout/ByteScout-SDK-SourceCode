@@ -3,10 +3,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
-    <SchemaVersion>
-    </SchemaVersion>
+    <ProductVersion></ProductVersion>
+    <SchemaVersion></SchemaVersion>
     <ProjectGuid>{E5339352-1EBE-4547-B281-88D9FEEF92D7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <StartupObject>SaveOcrObjectAsXml.Module1</StartupObject>
@@ -63,8 +61,7 @@
     <Compile Include="Module1.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\ocr-sample.pdf">
-      <Link>ocr-sample.pdf</Link>
+    <Content Include="ocr-sample.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

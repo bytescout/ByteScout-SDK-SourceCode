@@ -50,10 +50,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\DigitalOcean-scanned.jpg">
-      <Link>DigitalOcean-scanned.jpg</Link>
+    <Content Include="DigitalOcean-scanned.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>    
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

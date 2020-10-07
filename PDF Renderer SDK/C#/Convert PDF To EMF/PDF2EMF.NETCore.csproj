@@ -19,7 +19,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="..\..\vector_drawing.pdf" Link="vector_drawing.pdf">
+    <None Include="vector_drawing.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

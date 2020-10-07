@@ -27,8 +27,8 @@ tableDetector.DetectionMinNumberOfColumns = 3
 tableDetector.DetectionMinNumberOfRows = 3
 
 ' Load sample PDF document
-tableDetector.LoadDocumentFromFile("..\..\sample3.pdf")
-xmlExtractor.LoadDocumentFromFile "..\..\sample3.pdf"
+tableDetector.LoadDocumentFromFile("sample3.pdf")
+xmlExtractor.LoadDocumentFromFile "sample3.pdf"
 
 ' Get page count
 pageCount = tableDetector.GetPageCount()

@@ -3,10 +3,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>
-    </ProductVersion>
-    <SchemaVersion>
-    </SchemaVersion>
+    <ProductVersion></ProductVersion>
+    <SchemaVersion></SchemaVersion>
     <ProjectGuid>{B7896F2A-70C5-4EE1-890C-03A742334B58}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <StartupObject>MakeSearchablePDFAndFixRotatingPages.Module1</StartupObject>
@@ -72,8 +70,7 @@
     <Compile Include="Module1.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\sample_ocr_with_rotatedPage.pdf">
-      <Link>sample_ocr_with_rotatedPage.pdf</Link>
+    <Content Include="sample_ocr_with_rotatedPage.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

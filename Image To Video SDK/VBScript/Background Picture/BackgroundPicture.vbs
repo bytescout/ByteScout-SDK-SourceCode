@@ -22,15 +22,15 @@ converter.Slides.DefaultSlideInEffect = 1 ' teFadeIn (1) - fades in effect for s
 converter.Slides.DefaultSlideInEffectDuration = 500 ' 500 msec for in effect
 
 ' Set movie background picture
-converter.SetBackgroundPictureFileName "..\..\background.jpg"
+converter.SetBackgroundPictureFileName "background.jpg"
 
 
 ' Add images and set the duration for every slide
-Set slide = converter.AddImageFromFileName("..\..\slide1.jpg")
+Set slide = converter.AddImageFromFileName("slide1.jpg")
 slide.Duration = 3000 ' 3000ms = 3s
-Set slide = converter.AddImageFromFileName("..\..\slide2.jpg")
+Set slide = converter.AddImageFromFileName("slide2.jpg")
 slide.Duration = 3000
-Set slide = converter.AddImageFromFileName("..\..\slide3.jpg")
+Set slide = converter.AddImageFromFileName("slide3.jpg")
 slide.Duration = 3000
 
 ' Set output video size

@@ -17,7 +17,7 @@ renderer.RegistrationName = "demo"
 renderer.RegistrationKey = "demo"
 
 ' Load sample PDF document
-renderer.LoadDocumentFromFile "../../multipage.pdf"
+renderer.LoadDocumentFromFile "multipage.pdf"
 
 ' Render PDF document at 96 DPI - default PC display resolution
 ' To get higher quality output, set 200, 300 or more

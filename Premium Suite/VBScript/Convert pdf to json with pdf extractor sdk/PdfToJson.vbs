@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile "../../sample3.pdf"
+extractor.LoadDocumentFromFile "sample3.pdf"
 
 extractor.SaveJSONToFile "output.json"
 

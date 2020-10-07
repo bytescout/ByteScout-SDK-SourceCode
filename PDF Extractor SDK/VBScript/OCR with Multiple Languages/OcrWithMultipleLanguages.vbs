@@ -20,7 +20,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\multi_language_ocr.pdf")
+extractor.LoadDocumentFromFile("multi_language_ocr.pdf")
 
 
 ' Enable Optical Character Recognition (OCR)

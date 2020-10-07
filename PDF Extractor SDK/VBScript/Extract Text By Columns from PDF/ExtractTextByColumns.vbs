@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\columns.pdf")
+extractor.LoadDocumentFromFile("columns.pdf")
 
 ' Set the column layout mode
 extractor.ExtractColumnByColumn = true

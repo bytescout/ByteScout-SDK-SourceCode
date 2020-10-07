@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample2.pdf")
+extractor.LoadDocumentFromFile("sample2.pdf")
 
 ' Get page count
 pageCount = extractor.GetPageCount()

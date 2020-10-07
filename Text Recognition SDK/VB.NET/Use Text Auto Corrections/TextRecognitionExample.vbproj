@@ -3,10 +3,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
-    <SchemaVersion>
-    </SchemaVersion>
+    <ProductVersion></ProductVersion>
+    <SchemaVersion></SchemaVersion>
     <ProjectGuid>{E5339352-1EBE-4547-B281-88D9FEEF92D7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <StartupObject>TextRecognitionExample.Module1</StartupObject>
@@ -106,8 +104,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\bad-quality.png">
-      <Link>bad-quality.png</Link>
+    <Content Include="bad-quality.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

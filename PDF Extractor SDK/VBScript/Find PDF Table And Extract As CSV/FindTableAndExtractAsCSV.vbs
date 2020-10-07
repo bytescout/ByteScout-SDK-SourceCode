@@ -30,8 +30,8 @@ tableDetector.DetectionMinNumberOfRows = 3
 tableDetector.ColumnDetectionMode = 3 ' 3 = ColumnDetectionMode.BorderedTables
 
 ' Load sample PDF document
-tableDetector.LoadDocumentFromFile("..\..\sample3.pdf")
-csvExtractor.LoadDocumentFromFile "..\..\sample3.pdf"
+tableDetector.LoadDocumentFromFile("sample3.pdf")
+csvExtractor.LoadDocumentFromFile "sample3.pdf"
 
 ' Get page count
 pageCount = tableDetector.GetPageCount()

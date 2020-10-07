@@ -19,7 +19,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="..\..\SampleWith_Vector_Image_Font.pdf" Link="SampleWith_Vector_Image_Font.pdf">
+    <None Include="SampleWith_Vector_Image_Font.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

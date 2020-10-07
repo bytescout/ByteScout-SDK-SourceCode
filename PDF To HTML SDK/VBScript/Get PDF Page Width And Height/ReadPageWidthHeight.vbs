@@ -19,7 +19,7 @@ extractor.RegistrationKey = "demo"
 extractor.ExtractionMode = 1
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample2.pdf")
+extractor.LoadDocumentFromFile("sample2.pdf")
 
 ' read width and height of page #0 from PDF 
 ' and show default output width and calculated page height

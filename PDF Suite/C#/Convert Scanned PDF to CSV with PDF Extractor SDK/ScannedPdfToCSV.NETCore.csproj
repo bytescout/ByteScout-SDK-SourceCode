@@ -18,7 +18,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <None Include="..\..\sample_ocr.pdf" Link="sample_ocr.pdf">
+    <None Include="sample_ocr.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -17,7 +17,7 @@ renderer.RegistrationName = "demo"
 renderer.RegistrationKey = "demo"
 
 ' Load sample PDF document
-renderer.LoadDocumentFromFile "../../multipage.pdf"
+renderer.LoadDocumentFromFile "multipage.pdf"
 
 ' iterate through pages
 For i = 0 To renderer.GetPageCount() - 1

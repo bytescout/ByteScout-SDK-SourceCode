@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\words-with-hyphens.pdf")
+extractor.LoadDocumentFromFile("words-with-hyphens.pdf")
 
 ' Set the matching mode:
 ' 0 = WordMatchingMode.None - treats the search string as substring;

@@ -17,7 +17,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile "../../sample1.pdf"
+extractor.LoadDocumentFromFile "sample1.pdf"
 
 ' Uncomment this line to get rid of empty nodes in XML
 'extractor.PreserveFormattingOnTextExtraction = False

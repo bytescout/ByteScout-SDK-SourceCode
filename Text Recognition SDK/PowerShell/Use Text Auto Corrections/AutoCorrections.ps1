@@ -1,7 +1,7 @@
 # Add reference to ByteScout.TextRecognition.dll assembly
 Add-Type -Path "c:\Program Files\ByteScout Text Recognition SDK\net40\ByteScout.TextRecognition.dll"
 
-$InputDocument = "..\..\bad-quality.png"
+$InputDocument = "bad-quality.png"
 $OutputDocument = ".\result.txt"
 
 # Create and activate TextRecognizer instance

@@ -45,8 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\wikipedia.png">
-      <Link>wikipedia.png</Link>
+    <Content Include="wikipedia.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -29,7 +29,7 @@ searchablePDFMaker.RegistrationName = "demo"
 searchablePDFMaker.RegistrationKey = "demo"
 
 ' Load sample PDF document
-searchablePDFMaker.LoadDocumentFromFile("..\..\sample_ocr_with_rotatedPage.pdf")
+searchablePDFMaker.LoadDocumentFromFile("sample_ocr_with_rotatedPage.pdf")
 
 ' Set the location of OCR language data files
 searchablePDFMaker.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\ocrdata_best"

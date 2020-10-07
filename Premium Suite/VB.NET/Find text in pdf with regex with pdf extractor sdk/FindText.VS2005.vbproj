@@ -33,8 +33,7 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\Invoice.pdf">
-      <Link>Invoice.pdf</Link>
+    <Content Include="Invoice.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

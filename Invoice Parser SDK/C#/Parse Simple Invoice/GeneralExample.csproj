@@ -50,12 +50,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\DigitalOcean.pdf">
-      <Link>DigitalOcean.pdf</Link>
+    <Content Include="DigitalOcean.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\AmazonAWS.pdf">
-      <Link>AmazonAWS.pdf</Link>
+    <Content Include="AmazonAWS.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

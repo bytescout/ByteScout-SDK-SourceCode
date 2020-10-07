@@ -3,8 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{EA267CB0-792B-4CBF-ACCC-7560A1451771}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -36,8 +35,7 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\Invoice.pdf">
-      <Link>Invoice.pdf</Link>
+    <Content Include="Invoice.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

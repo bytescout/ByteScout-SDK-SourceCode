@@ -15,7 +15,7 @@ Set textRecognizer = CreateObject("ByteScout.TextRecognition.TextRecognizer")
 textRecognizer.RegistrationName = "demo"
 textRecognizer.RegistrationKey = "demo"
 
-inputDocument = "..\..\invoice-sample.png"
+inputDocument = "invoice-sample.png"
 outputDocument = "result.txt"
 
 ' Load document (image or PDF)

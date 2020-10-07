@@ -15,7 +15,7 @@ Set textRecognizer = CreateObject("ByteScout.TextRecognition.TextRecognizer")
 textRecognizer.RegistrationName = "demo"
 textRecognizer.RegistrationKey = "demo"
 
-inputDocument = "..\..\bad-quality.png"
+inputDocument = "bad-quality.png"
 outputDocument = "result.txt"
 
 ' Load document (image or PDF)

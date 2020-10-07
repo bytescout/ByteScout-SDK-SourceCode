@@ -45,8 +45,7 @@
     <Compile Include="Program.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\SampleGroupDisabilityForm.pdf">
-      <Link>SampleGroupDisabilityForm.pdf</Link>
+    <Content Include="SampleGroupDisabilityForm.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

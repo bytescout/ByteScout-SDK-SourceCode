@@ -33,8 +33,7 @@
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
   </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <ItemGroup>
     <Reference Include="Bytescout.PDFExtractor, Version=2.0.0.186, Culture=neutral, PublicKeyToken=f7dd1bd9d40a50eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -47,8 +46,7 @@
     <Compile Include="Program.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\ProductsMonthWise.pdf">
-      <Link>ProductsMonthWise.pdf</Link>
+    <Content Include="ProductsMonthWise.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

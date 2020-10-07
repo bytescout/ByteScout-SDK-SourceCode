@@ -108,8 +108,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\DigitalOcean-scanned.jpg">
-      <Link>DigitalOcean-scanned.jpg</Link>
+    <Content Include="DigitalOcean-scanned.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

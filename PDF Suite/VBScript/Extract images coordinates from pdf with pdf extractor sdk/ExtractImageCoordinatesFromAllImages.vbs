@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample1.pdf")
+extractor.LoadDocumentFromFile("sample1.pdf")
 
 i = 0
 

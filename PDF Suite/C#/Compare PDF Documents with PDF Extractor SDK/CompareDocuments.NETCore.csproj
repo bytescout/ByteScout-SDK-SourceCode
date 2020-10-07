@@ -17,10 +17,10 @@
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="..\..\Comparison1.pdf" Link="Comparison1.pdf">
+    <None Include="Comparison1.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\Comparison2.pdf" Link="Comparison2.pdf">
+    <None Include="Comparison2.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <Compile Include="Program.cs" />

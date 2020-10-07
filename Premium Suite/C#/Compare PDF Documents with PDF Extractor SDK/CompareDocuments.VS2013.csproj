@@ -39,12 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\Comparison1.pdf">
-      <Link>Comparison1.pdf</Link>
+    <Content Include="Comparison1.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\Comparison2.pdf">
-      <Link>Comparison2.pdf</Link>
+    <Content Include="Comparison2.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -45,8 +45,7 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\sample_ocr_withText.pdf">
-      <Link>sample_ocr_withText.pdf</Link>
+    <Content Include="sample_ocr_withText.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

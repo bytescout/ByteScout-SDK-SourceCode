@@ -48,8 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\invoice-sample.png">
-      <Link>invoice-sample.png</Link>
+    <Content Include="invoice-sample.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

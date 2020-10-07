@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample1.pdf")
+extractor.LoadDocumentFromFile("sample1.pdf")
 
 ' Set the matching mode:
 ' 0 = WordMatchingMode.None - treats the search string as substring;

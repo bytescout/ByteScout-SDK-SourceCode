@@ -17,7 +17,7 @@ textRecognizer.RegistrationKey = "demo"
 
 Set comHelpers = textRecognizer.ComHelpers
 
-inputDocument = "..\..\areas-sample.pdf"
+inputDocument = "areas-sample.pdf"
 pageIndex = 0
 outputDocument = "result.txt"
 

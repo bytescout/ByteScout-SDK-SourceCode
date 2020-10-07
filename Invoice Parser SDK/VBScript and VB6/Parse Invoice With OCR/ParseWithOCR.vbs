@@ -13,7 +13,7 @@
 ' This example demonstrates the use of Optical Character Recognition (OCR) to parse invoice data 
 ' from scanned PDF documents and raster images.
 
-inputDocument = "..\..\DigitalOcean-scanned.jpg"
+inputDocument = "DigitalOcean-scanned.jpg"
 
 ' Create InvoiceParser object
 Set invoiceParser = CreateObject("Bytescout.InvoiceParser.InvoiceParser")

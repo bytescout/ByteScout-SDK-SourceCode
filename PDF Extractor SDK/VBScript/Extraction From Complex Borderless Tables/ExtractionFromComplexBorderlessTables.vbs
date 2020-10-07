@@ -17,7 +17,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile "../../borderless_table.pdf"
+extractor.LoadDocumentFromFile "borderless_table.pdf"
 
 ' Set extraction columns explicitly.
 ' Coordinates in CustomExtractionColumns must match the left edges of the columns.

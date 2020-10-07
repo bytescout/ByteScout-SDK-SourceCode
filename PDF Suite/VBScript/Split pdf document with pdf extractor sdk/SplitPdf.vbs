@@ -15,7 +15,7 @@ Set splitter = CreateObject("Bytescout.PDFExtractor.DocumentSplitter")
 splitter.RegistrationName = "demo"
 splitter.RegistrationKey = "demo"
 
-inputFile = "..\..\sample2.pdf"
+inputFile = "sample2.pdf"
 
 ' Enable splitted parts optimization (remove unused resources)
 splitter.OptimizeSplittedDocuments = true

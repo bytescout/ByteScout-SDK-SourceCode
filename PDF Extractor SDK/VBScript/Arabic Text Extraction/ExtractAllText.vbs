@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample_english_arabic.pdf")
+extractor.LoadDocumentFromFile("sample_english_arabic.pdf")
 
 ' Enable Arabic (and other RTL languages) text detection
 extractor.RTLTextAutoDetectionEnabled = true

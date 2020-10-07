@@ -18,7 +18,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Module1.vb" />
-    <None Include="..\..\sample1.pdf" Link="sample1.pdf">
+    <None Include="sample1.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

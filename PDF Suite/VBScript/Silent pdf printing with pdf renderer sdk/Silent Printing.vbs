@@ -16,7 +16,7 @@ documentPrinter.RegistrationName = "demo"
 documentPrinter.RegistrationKey = "demo"
 
 ' Load sample PDF document
-documentPrinter.LoadDocumentFromFile "../../multipage.pdf"
+documentPrinter.LoadDocumentFromFile "multipage.pdf"
 
 ' Change some printing options for demo purposes 
 ' (note, some options might be not supported by the printer):

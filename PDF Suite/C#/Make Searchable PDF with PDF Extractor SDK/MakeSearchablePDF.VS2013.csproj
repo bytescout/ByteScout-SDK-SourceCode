@@ -47,8 +47,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\sample_ocr.pdf">
-      <Link>sample_ocr.pdf</Link>
+    <Content Include="sample_ocr.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

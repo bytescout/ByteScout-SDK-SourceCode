@@ -44,9 +44,8 @@
     <Reference Include="System.Xml" />
     <Compile Include="Program.vb" />
     <Compile Include="Properties\AssemblyInfo.vb" />
-    <Content Include="..\..\SampleWith_Vector_Image_Font.pdf">
+    <Content Include="SampleWith_Vector_Image_Font.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Link>SampleWith_Vector_Image_Font.pdf</Link>
     </Content>
   </ItemGroup>
 </Project>

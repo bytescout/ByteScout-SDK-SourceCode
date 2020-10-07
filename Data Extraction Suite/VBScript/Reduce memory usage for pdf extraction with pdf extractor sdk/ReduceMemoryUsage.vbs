@@ -19,7 +19,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample2.pdf")
+extractor.LoadDocumentFromFile("sample2.pdf")
 
 ' Disable page data caching, so processed pages wiil be disposed automatically
 extractor.PageDataCaching = 0 ' 0 - no caching; 1 - cache all pages.

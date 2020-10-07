@@ -23,7 +23,7 @@ extractor.OutputPageWidth = 200
 
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\sample2.pdf")
+extractor.LoadDocumentFromFile("sample2.pdf")
 
 ' Save extracted HTML to file
 extractor.SaveHtmlToFile_2 "output.html"

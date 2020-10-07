@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile("..\..\Invoice.pdf")
+extractor.LoadDocumentFromFile("Invoice.pdf")
 
 extractor.RegexSearch = True ' Turn on the regex search
 pattern = "[0-9]{2}/[0-9]{2}/[0-9]{4}" ' Search dates in format 'mm/dd/yyyy'

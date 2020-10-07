@@ -16,7 +16,7 @@ extractor.RegistrationName = "demo"
 extractor.RegistrationKey = "demo"
 
 ' Load sample PDF document
-extractor.LoadDocumentFromFile "../../sample3.pdf"
+extractor.LoadDocumentFromFile "sample3.pdf"
 
 ' Add the following params to get clean data with word nodes only:
 extractor.DetectNewColumnBySpacesRatio = 0.1 ' This splits all text into words

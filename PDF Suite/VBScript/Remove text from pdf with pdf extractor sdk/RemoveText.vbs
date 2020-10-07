@@ -16,7 +16,7 @@ remover.RegistrationName = "demo"
 remover.RegistrationKey = "demo"
 
 ' Load sample PDF document
-remover.LoadDocumentFromFile "../../sample1.pdf"
+remover.LoadDocumentFromFile "sample1.pdf"
 
 ' Remove text "LOREM IPSUM" and save edited document as "result1.pdf".
 ' NOTE: The removed text might be larger than the search string. Currently the Remover deletes 

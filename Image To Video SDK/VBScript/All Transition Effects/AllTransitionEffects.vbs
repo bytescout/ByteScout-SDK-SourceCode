@@ -24,7 +24,7 @@ converter.Slides.DefaultSlideInEffectDuration = 1000 ' 1000 msec for slide trans
 converter.Slides.DefaultSlideDuration = 1000
 
 ' uncomment to use background picture
-' converter.SetBackgroundPictureFileName "..\..\background.jpg"
+' converter.SetBackgroundPictureFileName "background.jpg"
 
 ' set auto fit images mode
 converter.AutoFitImages = True

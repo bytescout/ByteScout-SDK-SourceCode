@@ -24,7 +24,7 @@ converter.Slides.DefaultSlideInEffect = 1 ' teFadeIn (1) - fades in effect for s
 converter.Slides.DefaultSlideInEffectDuration = 500 ' 500 msec for in effect
 
 ' Add images and set the duration for every slide
-Set slide = converter.AddImageFromFileName("..\..\slide1.jpg")
+Set slide = converter.AddImageFromFileName("slide1.jpg")
 slide.Duration = 10000 ' 10 seconds
 
 ' Set output video size

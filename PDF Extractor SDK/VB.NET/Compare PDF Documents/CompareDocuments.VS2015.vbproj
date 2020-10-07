@@ -44,12 +44,10 @@
     <Compile Include="Properties\AssemblyInfo.vb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\comparison1.pdf">
-      <Link>comparison1.pdf</Link>
+    <Content Include="comparison1.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\comparison2.pdf">
-      <Link>comparison2.pdf</Link>
+    <Content Include="comparison2.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
