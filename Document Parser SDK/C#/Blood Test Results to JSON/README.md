@@ -9,14 +9,16 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
@@ -81,12 +83,10 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\SampleBloodReport.pdf">
-      <Link>SampleBloodReport.pdf</Link>
+    <None Include="SampleBloodReport.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\SampleBloodReport.yml">
-      <Link>Templates\SampleBloodReport.yml</Link>
+    <None Include="SampleBloodReport.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
@@ -159,7 +159,7 @@ namespace BloodTestResultsToJson
             string sampleDocument = @".\SampleBloodReport.pdf";
 
             // Sample template which primarily extracts patient name, report date and test result table.
-            string sampleTemplate = @".\Templates\SampleBloodReport.yml";
+            string sampleTemplate = @".\SampleBloodReport.yml";
 
             // Perform parsing with SDK
             ParseWithSDK(sampleDocument, sampleTemplate);
@@ -341,6 +341,57 @@ namespace BloodTestResultsToJson
 
     }
 }
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **SampleBloodReport.yml:**
+    
+```
+templateName: BloodTestTemplate
+templateVersion: 4
+templatePriority: 0
+detectionRules:
+  keywords: []
+objects:
+- name: PatientName
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 176.25
+    - 123.75
+    - 156.75
+    - 12.75
+    pageIndex: 0
+- name: ReportName
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    expression: ''
+    dataType: date
+    dateFormat: auto-mdy
+    rectangle:
+    - 333
+    - 94.5
+    - 133.5
+    - 12
+    pageIndex: 0
+- name: TestResults
+  objectType: table
+  tableProperties:
+    start:
+      y: 261.75
+      pageIndex: 0
+    end:
+      y: 712.5
+      pageIndex: 0
+    left: 41.25
+    right: 573.75
+
 
 ```
 

@@ -17,14 +17,16 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
@@ -36,7 +38,77 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****Module1.vb:**
+##### **DigitalOcean.yml:**
+    
+```
+templateName: DigitalOcean Invoice
+templateVersion: 4
+templatePriority: 0
+detectionRules:
+  keywords:
+  - DigitalOcean
+  - 101 Avenue of the Americas
+  - Invoice Number
+objects:
+- name: companyName
+  objectType: field
+  fieldProperties:
+    fieldType: static
+    expression: DigitalOcean
+    regex: true
+- name: invoiceId
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: 'Invoice Number: ({{Digits}})'
+    regex: true
+- name: dateIssued
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: 'Date Issued: ({{SmartDate}})'
+    regex: true
+    dataType: date
+    dateFormat: auto-mdy
+- name: total
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: 'Total: {{Dollar}}({{Number}})'
+    regex: true
+    dataType: decimal
+- name: currency
+  objectType: field
+  fieldProperties:
+    fieldType: static
+    expression: USD
+    regex: true
+- name: table1
+  objectType: table
+  tableProperties:
+    start:
+      expression: Description{{Spaces}}Hours
+      regex: true
+    end:
+      expression: 'Total:'
+      regex: true
+    row:
+      expression: '{{LineStart}}{{Spaces}}(?<description>{{SentenceWithSingleSpaces}}){{Spaces}}(?<hours>{{Digits}}){{Spaces}}(?<start>{{2Digits}}{{Minus}}{{2Digits}}{{Space}}{{2Digits}}{{Colon}}{{2Digits}}){{Spaces}}(?<end>{{2Digits}}{{Minus}}{{2Digits}}{{Space}}{{2Digits}}{{Colon}}{{2Digits}}){{Spaces}}{{Dollar}}(?<unitPrice>{{Number}})'
+      regex: true
+    columns:
+    - name: hours
+      dataType: integer
+    - name: unitPrice
+      dataType: decimal
+
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **Module1.vb:**
     
 ```
 Imports ByteScout.DocumentParser
@@ -129,7 +201,7 @@ End Module
 
 <!-- code block begin -->
 
-##### ****ParseWithOCR.sln:**
+##### **ParseWithOCR.sln:**
     
 ```
 
@@ -164,7 +236,7 @@ EndGlobal
 
 <!-- code block begin -->
 
-##### ****ParseWithOCR.vbproj:**
+##### **ParseWithOCR.vbproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -239,14 +311,12 @@ EndGlobal
     <Compile Include="Module1.vb" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\_Sample Templates\DigitalOcean.yml">
-      <Link>DigitalOcean.yml</Link>
+    <None Include="DigitalOcean.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\DigitalOcean-scanned.jpg">
-      <Link>DigitalOcean-scanned.jpg</Link>
+    <Content Include="DigitalOcean-scanned.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

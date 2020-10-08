@@ -9,14 +9,16 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
@@ -81,8 +83,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\SampleFoldable.pdf">
-      <Link>SampleFoldable.pdf</Link>
+    <None Include="SampleFoldable.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="SampleFoldable.yml">
@@ -224,30 +225,39 @@ namespace ExtractTextFromFoldableBrochure
 ##### **SampleFoldable.yml:**
     
 ```
-templateVersion: 3
+templateName: Untitled document kind
+templateVersion: 4
 templatePriority: 0
-sourceId: Untitled document kind
 detectionRules:
   keywords: []
-fields:
-  Part1:
-    type: rectangle
+objects:
+- name: Part1
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    regex: true
     rectangle:
     - 7.5
     - 33.75
     - 244.5
     - 353.25
     pageIndex: 0
-  Part2:
-    type: rectangle
+- name: Part2
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    regex: true
     rectangle:
     - 273.75
     - 201.75
     - 247.5
     - 198
     pageIndex: 0
-  Part3:
-    type: rectangle
+- name: Part3
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    regex: true
     rectangle:
     - 537.75
     - 27

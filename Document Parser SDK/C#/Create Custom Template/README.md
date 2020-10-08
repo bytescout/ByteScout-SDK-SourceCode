@@ -17,14 +17,16 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
@@ -36,7 +38,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****CustomTemplate.csproj:**
+##### **CustomTemplate.csproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -101,7 +103,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****CustomTemplate.sln:**
+##### **CustomTemplate.sln:**
     
 ```
 
@@ -136,7 +138,7 @@ EndGlobal
 
 <!-- code block begin -->
 
-##### ****Program.cs:**
+##### **Program.cs:**
     
 ```
 using System;
@@ -185,56 +187,83 @@ namespace CustomTemplate
 
 <!-- code block begin -->
 
-##### ****SampleTemplate.yml:**
+##### **SampleTemplate.yml:**
     
 ```
-sourceId: My Custom Template
+templateName: My Custom Template
+templateVersion: 4
+templatePriority: 0
 detectionRules:
   keywords:
   - Your Company Name
   - Invoice No\.
   - TOTAL
-fields:
-  total:
-    expression: TOTAL {{DECIMAL}}
-    type: decimal
+objects:
+- name: total
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: TOTAL{{Spaces}}{{Number}}
+    dataType: decimal
     pageIndex: 0
-  dateIssued:
-    expression: Invoice Date {{DATE}}
-    type: date
+- name: dateIssued
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: Invoice Date {{SmartDate}}
+    dataType: date
     dateFormat: auto-mdy
     pageIndex: 0
-  invoiceId:
-    expression: Invoice No. {{123}}
+- name: invoiceId
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: '{{Number}}'
+    dataType: string
     pageIndex: 0
-  companyName:
+- name: companyName
+  objectType: field
+  fieldProperties:
+    fieldType: static
     expression: Vendor Company
-    static: true
+    regex: true
     pageIndex: 0
-  billTo:
-    rect:
+- name: billTo
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
     - 32.25
     - 150
     - 348
     - 70.5
     pageIndex: 0
-  notes:
-    rect:
+- name: notes
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
     - 32.25
     - 227.25
     - 531
     - 47.25
     pageIndex: 0
-tables:
 - name: table1
-  start:
-    expression: Item\s+Quantity\s+Price\s+Total
-  end:
-    expression: TOTAL
-  subItemStart: {}
-  subItemEnd: {}
-  row:
-    expression: ^\s*(?<description>\w+.*)(?<quantity>\d+)\s+(?<unitPrice>\d+\.\d{2})\s+(?<itemTotal>\d+\.\d{2})\s*$
+  objectType: table
+  tableProperties:
+    start:
+      expression: Item\s+Quantity\s+Price\s+Total
+      regex: true
+    end:
+      expression: TOTAL
+      regex: true
+    subItemStart:
+      regex: true
+    subItemEnd:
+      regex: true
+    row:
+      expression: ^\s*(?<description>\w+.*)(?<quantity>\d+)\s+(?<unitPrice>\d+\.\d{2})\s+(?<itemTotal>\d+\.\d{2})\s*$
+      regex: true
 
 
 ```

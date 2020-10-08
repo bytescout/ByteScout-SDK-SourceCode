@@ -17,14 +17,16 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
@@ -86,12 +88,10 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\SampleTicket.pdf">
-      <Link>SampleTicket.pdf</Link>
+    <None Include="SampleTicket.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\SampleTicket.yml">
-      <Link>Templates\SampleTicket.yml</Link>
+    <None Include="SampleTicket.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -152,7 +152,7 @@ namespace GeneralExample
     {
         static void Main(string[] args)
         {
-            string templateDocument = @".\Templates\SampleTicket.yml";
+            string templateDocument = @".\SampleTicket.yml";
             string inputDocument = @".\SampleTicket.pdf";
 
             // Create DocumentParser instance
@@ -196,6 +196,148 @@ namespace GeneralExample
         }
     }
 }
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **SampleTicket.yml:**
+    
+```
+templateName: MakeMyTrip Booking
+templateVersion: 4
+templatePriority: 0
+detectionRules:
+  keywords:
+  - MakeMyTrip
+  - Eticket-Dom-Flight
+objects:
+- name: BookingNo
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 198.75
+    - 85.625
+    - 96.875
+    - 12.500001
+    pageIndex: 0
+- name: BookingDate
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    dataType: date
+    rectangle:
+    - 133.125
+    - 97.5000076
+    - 78.75
+    - 12.500001
+    pageIndex: 0
+- name: DepartureFrom
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 153
+    - 176
+    - 77
+    - 8.5
+    pageIndex: 0
+- name: ArrivalTo
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 285
+    - 176
+    - 84
+    - 8.5
+    pageIndex: 0
+- name: DepartureAt
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    dataType: date
+    rectangle:
+    - 153.75
+    - 187.5
+    - 123.75
+    - 10.625
+    pageIndex: 0
+- name: ArrivalAt
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    dataType: date
+    rectangle:
+    - 288.125
+    - 186.875
+    - 125.625008
+    - 11.25
+    pageIndex: 0
+- name: FlightType
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 433.5
+    - 159.5
+    - 68
+    - 10.5
+    pageIndex: 0
+- name: FlightDuration
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 474.375031
+    - 170.625
+    - 30.0000019
+    - 10
+    pageIndex: 0
+- name: CabinType
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 463.125031
+    - 194.375015
+    - 51.25
+    - 10
+    pageIndex: 0
+- name: PassengerName
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 85
+    - 238.125
+    - 93.125
+    - 14.375
+    pageIndex: 0
+- name: PassengerType
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 229.375015
+    - 238.125
+    - 31.25
+    - 13.75
+    pageIndex: 0
+- name: AirlinePNR
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
+    - 375
+    - 240.000015
+    - 46.25
+    - 13.75
+    pageIndex: 0
+
 
 ```
 

@@ -9,14 +9,16 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
@@ -75,16 +77,13 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\MultiPageTable.pdf">
-      <Link>MultiPageTable.pdf</Link>
+    <None Include="MultiPageTable.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\MultiPageTable-template1.yml">
-      <Link>MultiPageTable-template1.yml</Link>
+    <None Include="MultiPageTable-template1.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\_Sample Templates\MultiPageTable-template2.yml">
-      <Link>MultiPageTable-template2.yml</Link>
+    <None Include="MultiPageTable-template2.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -124,6 +123,108 @@ Global
 		SolutionGuid = {7E6DAA79-020B-421A-844A-5FE05EFC9B15}
 	EndGlobalSection
 EndGlobal
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **MultiPageTable-template1.yml:**
+    
+```
+templateName: Multipage Table Test
+templateVersion: 4
+templatePriority: 0
+detectionRules:
+  keywords:
+  - Sample document with multi-page table
+objects:
+- name: total
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: TOTAL{{Spaces}}({{Number}})
+    regex: true
+    dataType: decimal
+- name: table1
+  objectType: table
+  tableProperties:
+    start:
+      expression: Item{{Spaces}}Description{{Spaces}}Price
+      regex: true
+    end:
+      expression: TOTAL{{Spaces}}{{Number}}
+      regex: true
+    row:
+      expression: '{{LineStart}}{{Spaces}}(?<itemNo>{{Digits}}){{Spaces}}(?<description>{{SentenceWithSingleSpaces}}){{Spaces}}(?<price>{{Number}}){{Spaces}}(?<qty>{{Digits}}){{Spaces}}(?<extPrice>{{Number}})'
+      regex: true
+    columns:
+    - name: itemNo
+      dataType: integer
+    - name: description
+      dataType: string
+    - name: price
+      dataType: decimal
+    - name: qty
+      dataType: integer
+    - name: extPrice
+      dataType: decimal
+    multipage: true
+
+
+```
+
+<!-- code block end -->    
+
+<!-- code block begin -->
+
+##### **MultiPageTable-template2.yml:**
+    
+```
+templateName: Multipage Table Test
+templateVersion: 4
+templatePriority: 0
+detectionRules:
+  keywords:
+  - Sample document with multi-page table
+objects:
+- name: total
+  objectType: field
+  fieldProperties:
+    fieldType: regex
+    expression: TOTAL{{Spaces}}({{Number}})
+    regex: true
+    dataType: decimal
+- name: table1
+  objectType: table
+  tableProperties:
+    start:
+      expression: Item{{Spaces}}Description{{Spaces}}Price
+      regex: true
+    end:
+      expression: (Page {{Digits}} of {{Digits}})|(TOTAL{{Spaces}}{{Number}})
+      regex: true
+    left: 51
+    right: 528
+    columns:
+    - x: 51
+      name: itemNo
+      dataType: integer
+    - x: 102
+      name: description
+      dataType: string
+    - x: 324
+      name: price
+      dataType: decimal
+    - x: 396
+      name: qty
+      dataType: integer
+    - x: 441
+      name: extPrice
+      dataType: decimal
+    multipage: true
+
 
 ```
 

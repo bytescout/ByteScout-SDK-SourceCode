@@ -17,14 +17,16 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
@@ -36,7 +38,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 
 <!-- code block begin -->
 
-##### ****CustomTemplate.sln:**
+##### **CustomTemplate.sln:**
     
 ```
 
@@ -71,7 +73,7 @@ EndGlobal
 
 <!-- code block begin -->
 
-##### ****CustomTemplate.vbproj:**
+##### **CustomTemplate.vbproj:**
     
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -161,7 +163,7 @@ EndGlobal
 
 <!-- code block begin -->
 
-##### ****Module1.vb:**
+##### **Module1.vb:**
     
 ```
 Imports ByteScout.DocumentParser
@@ -209,77 +211,85 @@ End Module
 
 <!-- code block begin -->
 
-##### ****SampleTemplate.yml:**
+##### **SampleTemplate.yml:**
     
 ```
----
-templateVersion: 1
-sourceId: My Custom Template
-
+templateName: My Custom Template
+templateVersion: 4
+templatePriority: 0
 detectionRules:
-  # Few regex expressions uniquely identifying the document design.
-  # Don't forget to escape special characters.
   keywords:
   - Your Company Name
   - Invoice No\.
   - TOTAL
-
-# Expressions to extract distinct fields.
-# Last matching group or "<value>" group will be passed to result.
-fields:
-  total:
-    expression: TOTAL\s+(\d+\.\d+)
-    type: decimal
-  dateIssued:
-    expression: Invoice Date (\d{2}/\d{2}/\d{4})
-    # If type is dateTime and dateFormat property is specified
-    # the date will be converted to universal time by the specified format.
-    type: dateTime
-    dateFormat: MM/dd/yyyy
-  invoiceId:
-    expression: Invoice No. (\d+)
-  # Static field that will be passed to result unchanged.
-  sourceName:
+objects:
+- name: total
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: TOTAL{{Spaces}}{{Number}}
+    dataType: decimal
+    pageIndex: 0
+- name: dateIssued
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: Invoice Date {{SmartDate}}
+    dataType: date
+    dateFormat: auto-mdy
+    pageIndex: 0
+- name: invoiceId
+  objectType: field
+  fieldProperties:
+    fieldType: macros
+    expression: '{{Number}}'
+    dataType: string
+    pageIndex: 0
+- name: companyName
+  objectType: field
+  fieldProperties:
+    fieldType: static
     expression: Vendor Company
-    static: true
-  # Couple of fixed rectangular fields. 
-  # You can use "Template Editor" application to add them with ease.
-  billTo:
-    # Rectangle coordinates sequence: x, y, width, height.
-    rect:
+    regex: true
+    pageIndex: 0
+- name: billTo
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
     - 32.25
     - 150
     - 348
     - 70.5
-  notes:
-    rect:
+    pageIndex: 0
+- name: notes
+  objectType: field
+  fieldProperties:
+    fieldType: rectangle
+    rectangle:
     - 32.25
     - 227.25
     - 531
     - 47.25
-    # Optional page index parameter (zero-based) if you need to extract from specific page.
     pageIndex: 0
-
-# Table data extraction.
-tables:
 - name: table1
-  start:
-    # Table start after header row "Item  Quantity  Price  Total".
-    expression: Item\s+Quantity\s+Price\s+Total
-  end:
-    # Table rows last until "TOTAL" keyword.
-    expression: TOTAL
-  row:
-    # Regex for table rows extraction.
-    expression: ^\s*(?<description>\w+.*)(?<quantity>\d+)\s+(?<unitPrice>\d+\.\d{2})\s+(?<itemTotal>\d+\.\d{2})\s*$
-  types:
-    # Column datatypes. Names correspond to regex matching groups.
-    unitPrice: decimal
-    itemTotal: decimal
+  objectType: table
+  tableProperties:
+    start:
+      expression: Item\s+Quantity\s+Price\s+Total
+      regex: true
+    end:
+      expression: TOTAL
+      regex: true
+    subItemStart:
+      regex: true
+    subItemEnd:
+      regex: true
+    row:
+      expression: ^\s*(?<description>\w+.*)(?<quantity>\d+)\s+(?<unitPrice>\d+\.\d{2})\s+(?<itemTotal>\d+\.\d{2})\s*$
+      regex: true
 
-options:
-  # multipage - set 'true' if table data can continue on following pages.
-  multipage: false
+
 ```
 
 <!-- code block end -->
