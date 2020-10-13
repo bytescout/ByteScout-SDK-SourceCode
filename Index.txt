@@ -4238,6 +4238,7 @@
 \PDF.co Web API\HTML To PDF API
 \PDF.co Web API\Image To PDF API
 \PDF.co Web API\Invoice Parser API
+\PDF.co Web API\PDF Create Fillable PDF Forms
 \PDF.co Web API\PDF Fill PDF Forms
 \PDF.co Web API\PDF Information API
 \PDF.co Web API\PDF Make Searchable API
@@ -4653,6 +4654,22 @@
 \PDF.co Web API\Invoice Parser API\Python\Get Invoice Info From URL
 \PDF.co Web API\Invoice Parser API\VB.NET\Get Invoice Info From Uploaded File
 \PDF.co Web API\Invoice Parser API\VB.NET\Get Invoice Info From URL
+\PDF.co Web API\PDF Create Fillable PDF Forms\C#
+\PDF.co Web API\PDF Create Fillable PDF Forms\cURL
+\PDF.co Web API\PDF Create Fillable PDF Forms\Java
+\PDF.co Web API\PDF Create Fillable PDF Forms\JavaScript
+\PDF.co Web API\PDF Create Fillable PDF Forms\PHP
+\PDF.co Web API\PDF Create Fillable PDF Forms\PowerShell
+\PDF.co Web API\PDF Create Fillable PDF Forms\Python
+\PDF.co Web API\PDF Create Fillable PDF Forms\VB.NET
+\PDF.co Web API\PDF Create Fillable PDF Forms\C#\Fillable PDF Forms
+\PDF.co Web API\PDF Create Fillable PDF Forms\cURL\Fillable PDF Forms
+\PDF.co Web API\PDF Create Fillable PDF Forms\Java\Fillable PDF Forms
+\PDF.co Web API\PDF Create Fillable PDF Forms\JavaScript\Fillable PDF Forms
+\PDF.co Web API\PDF Create Fillable PDF Forms\PHP\Fillable PDF Forms
+\PDF.co Web API\PDF Create Fillable PDF Forms\PowerShell\Fillable PDF Forms
+\PDF.co Web API\PDF Create Fillable PDF Forms\Python\Fillable PDF Forms
+\PDF.co Web API\PDF Create Fillable PDF Forms\VB.NET\Fillable PDF Forms
 \PDF.co Web API\PDF Fill PDF Forms\C#
 \PDF.co Web API\PDF Fill PDF Forms\cURL
 \PDF.co Web API\PDF Fill PDF Forms\Java
