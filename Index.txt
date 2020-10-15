@@ -4231,6 +4231,7 @@
 \PDF.co Web API\Delete Text From PDF
 \PDF.co Web API\DOC To PDF API
 \PDF.co Web API\Document Parser API
+\PDF.co Web API\Email Extractor
 \PDF.co Web API\Excel To CSV API
 \PDF.co Web API\Excel To HTML API
 \PDF.co Web API\Excel To JSON API
@@ -4537,6 +4538,22 @@
 \PDF.co Web API\Document Parser API\VB.NET\Parse Uploaded File Asynchronously
 \PDF.co Web API\Document Parser API\VB.NET\Parse with OCR
 \PDF.co Web API\Document Parser API\VB.NET\Parsing and reading data from Airline Tickets
+\PDF.co Web API\Email Extractor\Extract Email Attachments
+\PDF.co Web API\Email Extractor\Get Email Information
+\PDF.co Web API\Email Extractor\Extract Email Attachments\C#
+\PDF.co Web API\Email Extractor\Extract Email Attachments\cURL
+\PDF.co Web API\Email Extractor\Extract Email Attachments\Java
+\PDF.co Web API\Email Extractor\Extract Email Attachments\JavaScript
+\PDF.co Web API\Email Extractor\Extract Email Attachments\PHP
+\PDF.co Web API\Email Extractor\Extract Email Attachments\PowerShell
+\PDF.co Web API\Email Extractor\Extract Email Attachments\Python
+\PDF.co Web API\Email Extractor\Get Email Information\C#
+\PDF.co Web API\Email Extractor\Get Email Information\cURL
+\PDF.co Web API\Email Extractor\Get Email Information\Java
+\PDF.co Web API\Email Extractor\Get Email Information\JavaScript
+\PDF.co Web API\Email Extractor\Get Email Information\PHP
+\PDF.co Web API\Email Extractor\Get Email Information\PowerShell
+\PDF.co Web API\Email Extractor\Get Email Information\Python
 \PDF.co Web API\Excel To CSV API\cURL
 \PDF.co Web API\Excel To CSV API\JavaScript
 \PDF.co Web API\Excel To CSV API\cURL\Excel To CSV
