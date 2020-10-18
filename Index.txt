@@ -4236,11 +4236,18 @@
 \PDF.co Web API\Excel To HTML API
 \PDF.co Web API\Excel To JSON API
 \PDF.co Web API\Excel To PDF API
+\PDF.co Web API\File Calculate Hash
+\PDF.co Web API\File Delete
+\PDF.co Web API\File Upload
+\PDF.co Web API\File Upload for Small Files (up to 50KB)
 \PDF.co Web API\HTML To PDF API
 \PDF.co Web API\Image To PDF API
 \PDF.co Web API\Invoice Parser API
+\PDF.co Web API\Manage Background Jobs
 \PDF.co Web API\PDF Create Fillable PDF Forms
+\PDF.co Web API\PDF Delete Pages
 \PDF.co Web API\PDF Fill PDF Forms
+\PDF.co Web API\PDF Forms Info Reader
 \PDF.co Web API\PDF Information API
 \PDF.co Web API\PDF Make Searchable API
 \PDF.co Web API\PDF Merging API
@@ -4574,6 +4581,60 @@
 \PDF.co Web API\Excel To PDF API\cURL\Excel To PDF
 \PDF.co Web API\Excel To PDF API\JavaScript\Convert Excel to PDF in JQuery
 \PDF.co Web API\Excel To PDF API\JavaScript\Convert Excel to PDF in JQuery - Async API
+\PDF.co Web API\File Calculate Hash\C#
+\PDF.co Web API\File Calculate Hash\cURL
+\PDF.co Web API\File Calculate Hash\Java
+\PDF.co Web API\File Calculate Hash\JavaScript
+\PDF.co Web API\File Calculate Hash\PHP
+\PDF.co Web API\File Calculate Hash\PowerShell
+\PDF.co Web API\File Calculate Hash\Python
+\PDF.co Web API\File Delete\C#
+\PDF.co Web API\File Delete\cURL
+\PDF.co Web API\File Delete\Java
+\PDF.co Web API\File Delete\JavaScript
+\PDF.co Web API\File Delete\PHP
+\PDF.co Web API\File Delete\PowerShell
+\PDF.co Web API\File Delete\Python
+\PDF.co Web API\File Upload\Generate Secure URL for Upload
+\PDF.co Web API\File Upload\Put Upload File
+\PDF.co Web API\File Upload\Generate Secure URL for Upload\C#
+\PDF.co Web API\File Upload\Generate Secure URL for Upload\cURL
+\PDF.co Web API\File Upload\Generate Secure URL for Upload\Java
+\PDF.co Web API\File Upload\Generate Secure URL for Upload\JavaScript
+\PDF.co Web API\File Upload\Generate Secure URL for Upload\PHP
+\PDF.co Web API\File Upload\Generate Secure URL for Upload\PowerShell
+\PDF.co Web API\File Upload\Generate Secure URL for Upload\Python
+\PDF.co Web API\File Upload\Put Upload File\C#
+\PDF.co Web API\File Upload\Put Upload File\cURL
+\PDF.co Web API\File Upload\Put Upload File\Java
+\PDF.co Web API\File Upload\Put Upload File\JavaScript
+\PDF.co Web API\File Upload\Put Upload File\PHP
+\PDF.co Web API\File Upload\Put Upload File\PowerShell
+\PDF.co Web API\File Upload\Put Upload File\Python
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Base64
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File\C#
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File\cURL
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File\Java
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File\JavaScript
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File\PHP
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File\PowerShell
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File\Python
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Base64\C#
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Base64\cURL
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Base64\Java
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Base64\JavaScript
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Base64\PHP
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Base64\PowerShell
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Base64\Python
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\C#
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\cURL
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\Java
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\JavaScript
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\PHP
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\PowerShell
+\PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\Python
 \PDF.co Web API\HTML To PDF API\C#
 \PDF.co Web API\HTML To PDF API\cURL
 \PDF.co Web API\HTML To PDF API\Java
@@ -4671,6 +4732,13 @@
 \PDF.co Web API\Invoice Parser API\Python\Get Invoice Info From URL
 \PDF.co Web API\Invoice Parser API\VB.NET\Get Invoice Info From Uploaded File
 \PDF.co Web API\Invoice Parser API\VB.NET\Get Invoice Info From URL
+\PDF.co Web API\Manage Background Jobs\C#
+\PDF.co Web API\Manage Background Jobs\cURL
+\PDF.co Web API\Manage Background Jobs\Java
+\PDF.co Web API\Manage Background Jobs\JavaScript
+\PDF.co Web API\Manage Background Jobs\PHP
+\PDF.co Web API\Manage Background Jobs\PowerShell
+\PDF.co Web API\Manage Background Jobs\Python
 \PDF.co Web API\PDF Create Fillable PDF Forms\C#
 \PDF.co Web API\PDF Create Fillable PDF Forms\cURL
 \PDF.co Web API\PDF Create Fillable PDF Forms\Java
@@ -4687,6 +4755,13 @@
 \PDF.co Web API\PDF Create Fillable PDF Forms\PowerShell\Fillable PDF Forms
 \PDF.co Web API\PDF Create Fillable PDF Forms\Python\Fillable PDF Forms
 \PDF.co Web API\PDF Create Fillable PDF Forms\VB.NET\Fillable PDF Forms
+\PDF.co Web API\PDF Delete Pages\C#
+\PDF.co Web API\PDF Delete Pages\cURL
+\PDF.co Web API\PDF Delete Pages\Java
+\PDF.co Web API\PDF Delete Pages\JavaScript
+\PDF.co Web API\PDF Delete Pages\PHP
+\PDF.co Web API\PDF Delete Pages\PowerShell
+\PDF.co Web API\PDF Delete Pages\Python
 \PDF.co Web API\PDF Fill PDF Forms\C#
 \PDF.co Web API\PDF Fill PDF Forms\cURL
 \PDF.co Web API\PDF Fill PDF Forms\Java
@@ -4713,6 +4788,13 @@
 \PDF.co Web API\PDF Fill PDF Forms\Python\Fill PDF Forms Simplified
 \PDF.co Web API\PDF Fill PDF Forms\VB.NET\Fill PDF Forms
 \PDF.co Web API\PDF Fill PDF Forms\VB.NET\Fill PDF Forms Simplified
+\PDF.co Web API\PDF Forms Info Reader\C#
+\PDF.co Web API\PDF Forms Info Reader\cURL
+\PDF.co Web API\PDF Forms Info Reader\Java
+\PDF.co Web API\PDF Forms Info Reader\JavaScript
+\PDF.co Web API\PDF Forms Info Reader\PHP
+\PDF.co Web API\PDF Forms Info Reader\PowerShell
+\PDF.co Web API\PDF Forms Info Reader\Python
 \PDF.co Web API\PDF Information API\C#
 \PDF.co Web API\PDF Information API\cURL
 \PDF.co Web API\PDF Information API\Java
