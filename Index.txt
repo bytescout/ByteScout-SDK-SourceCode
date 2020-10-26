@@ -421,6 +421,7 @@
 \BarCode SDK\C#\Postnet Barcode
 \BarCode SDK\C#\Print Barcode
 \BarCode SDK\C#\Print Labels
+\BarCode SDK\C#\Print Multiple Barcodes
 \BarCode SDK\C#\PZN Barcode
 \BarCode SDK\C#\QR Code Barcode
 \BarCode SDK\C#\QR Code Barcode With Binary Data
@@ -550,6 +551,7 @@
 \BarCode SDK\VB.NET\Postnet
 \BarCode SDK\VB.NET\Print Barcode
 \BarCode SDK\VB.NET\Print Labels
+\BarCode SDK\VB.NET\Print Multiple Barcodes
 \BarCode SDK\VB.NET\PZN
 \BarCode SDK\VB.NET\QR Code (2D)
 \BarCode SDK\VB.NET\QR Code With CalenderEntry
@@ -593,6 +595,7 @@
 \BarCode SDK\VBScript\Generate Barcodes From Text File
 \BarCode SDK\VBScript\Monochrome Bitmap
 \BarCode SDK\VBScript\PDF417 Barcode
+\BarCode SDK\VBScript\Print Barcodes
 \BarCode SDK\VBScript\QR Code Barcode With Image Inside
 \BarCode SDK\VBScript\Set 2 Captions for Barcode
 \BarCode SDK\VBScript\Set Bar Code Size In Inches
