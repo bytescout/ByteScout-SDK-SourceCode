@@ -41,7 +41,7 @@
   <ItemGroup>
     <Reference Include="Bytescout.BarCode, Version=1.4.1.61, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\BarCode SDK\Output\Full\Bytescout.BarCode.dll</HintPath>
+      <HintPath>c:\Program Files\Bytescout BarCode Generator SDK\net4.00\Bytescout.BarCode.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

@@ -43,7 +43,7 @@
   <ItemGroup>
     <Reference Include="Bytescout.BarCode, Version=2.2.0.413, Culture=neutral, PublicKeyToken=f7dd1bd9d40a50eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Program Files\Bytescout BarCode SDK\net2.00\Bytescout.BarCode.dll</HintPath>
+      <HintPath>c:\Program Files\Bytescout BarCode Generator SDK\net4.00\Bytescout.BarCode.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
