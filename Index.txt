@@ -4319,19 +4319,26 @@
 \PDF.co Web API\Barcode Generator API\Python
 \PDF.co Web API\Barcode Generator API\VB.NET
 \PDF.co Web API\Barcode Generator API\C#\Generate Barcode
+\PDF.co Web API\Barcode Generator API\C#\QR Code With Redundancy Setting
 \PDF.co Web API\Barcode Generator API\cURL\Generate Barcode
 \PDF.co Web API\Barcode Generator API\Delphi\Generate Barcode
 \PDF.co Web API\Barcode Generator API\Java\Generate Barcode
+\PDF.co Web API\Barcode Generator API\Java\QR Code With Redundancy Setting
 \PDF.co Web API\Barcode Generator API\JavaScript\Generate Barcode
 \PDF.co Web API\Barcode Generator API\JavaScript\Generate Barcode (JQuery)
 \PDF.co Web API\Barcode Generator API\JavaScript\Generate Barcode (JQuery) - Async API
 \PDF.co Web API\Barcode Generator API\JavaScript\Generate Barcode (Node.js)
 \PDF.co Web API\Barcode Generator API\JavaScript\Generate Barcode (Node.js) - Async API
 \PDF.co Web API\Barcode Generator API\JavaScript\Generate Barcode - Async API
+\PDF.co Web API\Barcode Generator API\JavaScript\QR Code With Redundancy Setting
 \PDF.co Web API\Barcode Generator API\PHP\Generate Barcode
+\PDF.co Web API\Barcode Generator API\PHP\QR Code With Redundancy Setting
 \PDF.co Web API\Barcode Generator API\PowerShell\Generate Barcode
+\PDF.co Web API\Barcode Generator API\PowerShell\QR Code With Redundancy Setting
 \PDF.co Web API\Barcode Generator API\Python\Generate Barcode
+\PDF.co Web API\Barcode Generator API\Python\QR Code With Redundancy Setting
 \PDF.co Web API\Barcode Generator API\VB.NET\Generate Barcode
+\PDF.co Web API\Barcode Generator API\VB.NET\QR Code With Redundancy Setting
 \PDF.co Web API\Barcode Reader API\C#
 \PDF.co Web API\Barcode Reader API\cURL
 \PDF.co Web API\Barcode Reader API\Java
