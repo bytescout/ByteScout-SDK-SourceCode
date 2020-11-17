@@ -25,15 +25,19 @@ Class Program
         ' Load PDF document.
         renderer.LoadDocumentFromFile("multipage.pdf")
 
+        Dim renderingOptions As RenderingOptions = New RenderingOptions()
+        ' Select TIFF compression
+        renderingOptions.TIFFCompression = TIFFCompression.LZW
+
         For i As Integer = 0 To renderer.GetPageCount() - 1
-            ' Render document page to JPEG image file.
-            renderer.Save("image" & i & ".jpg", RasterImageFormat.JPEG, i, 96)
+            ' Render document page to TIFF image file.
+            renderer.Save("image" & i & ".tif", RasterImageFormat.TIFF, i, 96, renderingOptions)
         Next
 
         ' Cleanup
         renderer.Dispose()
 
         ' Open the first output file in default image viewer.
-        System.Diagnostics.Process.Start("image0.jpg")
+        System.Diagnostics.Process.Start("image0.tif")
     End Sub
 End Class

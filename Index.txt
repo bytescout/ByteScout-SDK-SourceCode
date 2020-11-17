@@ -3261,6 +3261,7 @@
 \PDF Renderer SDK\C#\Convert PDF To Memory Stream Image
 \PDF Renderer SDK\C#\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\C#\Convert PDF To PNG
+\PDF Renderer SDK\C#\Convert PDF To TIFF
 \PDF Renderer SDK\C#\Display License Info
 \PDF Renderer SDK\C#\Download and Process file
 \PDF Renderer SDK\C#\Make Thumbnail from PDF
@@ -3287,6 +3288,7 @@
 \PDF Renderer SDK\VB.NET\Convert PDF To JPEG
 \PDF Renderer SDK\VB.NET\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VB.NET\Convert PDF To PNG
+\PDF Renderer SDK\VB.NET\Convert PDF To TIFF
 \PDF Renderer SDK\VB.NET\Display License Info
 \PDF Renderer SDK\VB.NET\Download and Process file
 \PDF Renderer SDK\VB.NET\Make Thumbnail Image From PDF
@@ -3306,6 +3308,7 @@
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To JPEG
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To Multipage TIFF
 \PDF Renderer SDK\VBScript and VB6\Convert PDF To PNG
+\PDF Renderer SDK\VBScript and VB6\Convert PDF To TIFF
 \PDF Renderer SDK\VBScript and VB6\Display License Info
 \PDF Renderer SDK\VBScript and VB6\Hide Text or Vector or Image Layer In PDF
 \PDF Renderer SDK\VBScript and VB6\Override Resolution in Multipage TIFF

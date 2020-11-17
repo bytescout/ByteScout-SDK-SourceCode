@@ -16,7 +16,7 @@ using System.Diagnostics;
 using Bytescout.PDFRenderer;
 
 
-namespace PDF2JPEG
+namespace PDF2TIFF
 {
     class Program
     {
@@ -32,15 +32,19 @@ namespace PDF2JPEG
 
             for (int i = 0; i < renderer.GetPageCount(); i++)
             {
-                // Render document page to JPEG image file.
-                renderer.Save("image" + i + ".jpg", RasterImageFormat.JPEG, i, 96);
+                // Render document page to TIFF images
+                renderer.Save("image" + i + ".tif", RasterImageFormat.TIFF, i, 96, new RenderingOptions()
+                {
+                    // select TIFF compression
+                    TIFFCompression = TIFFCompression.LZW
+                });
             }
 
             // Cleanup
             renderer.Dispose();
 
             // Open result document in default associated application (for demo purpose)
-            ProcessStartInfo processStartInfo = new ProcessStartInfo("image0.jpg");
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("image0.tif");
             processStartInfo.UseShellExecute = true;
             Process.Start(processStartInfo);
         }
