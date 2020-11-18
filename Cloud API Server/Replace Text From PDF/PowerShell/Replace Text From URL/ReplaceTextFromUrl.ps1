@@ -1,0 +1,52 @@
+# Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
+# If it's not then please replace this with with your hosting url.
+
+# The authentication key (API Key).
+# Get your own by registering at https://app.pdf.co/documentation/api
+$API_KEY = "***********************************"
+
+# Direct URL of source PDF file.
+$SourceFileURL = "https://bytescout-com.s3.amazonaws.com/files/demo-files/cloud-api/pdf-split/sample.pdf"
+# PDF document password. Leave empty for unprotected documents.
+$Password = ""
+# Destination PDF file name
+$DestinationFile = ".\result.pdf"
+
+
+# Prepare URL for `Replace Text from PDF` API call
+$query = "https://localhost/pdf/edit/replace-text"
+
+# Prepare request body (will be auto-converted to JSON by Invoke-RestMethod)
+# See documentation: https://apidocs.pdf.co
+$body = @{
+    "name" = $(Split-Path $DestinationFile -Leaf)
+    "password" = $Password
+    "url" = $SourceFileURL
+    "searchString" = "The most conspicuous feature of"
+    "replaceString" = "replaced text"
+} | ConvertTo-Json
+
+try {
+    # Execute request
+    $response = Invoke-WebRequest -Method Post -Headers @{ "x-api-key" = $API_KEY; "Content-Type" = "application/json" } -Body $body -Uri $query
+
+    $jsonResponse = $response.Content | ConvertFrom-Json
+
+    if ($jsonResponse.error -eq $false) {
+        # Get URL of generated PDF file
+        $resultFileUrl = $jsonResponse.url;
+        
+        # Download PDF file
+        Invoke-WebRequest -Headers @{ "x-api-key" = $API_KEY } -OutFile $DestinationFile -Uri $resultFileUrl
+
+        Write-Host "Generated PDF file saved as `"$($DestinationFile)`" file."
+    }
+    else {
+        # Display service reported error
+        Write-Host $jsonResponse.message
+    }
+}
+catch {
+    # Display request error
+    Write-Host $_.Exception
+}

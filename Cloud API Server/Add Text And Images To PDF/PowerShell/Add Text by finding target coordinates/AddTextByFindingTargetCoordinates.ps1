@@ -1,3 +1,6 @@
+# Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
+# If it's not then please replace this with with your hosting url.
+
 # Direct URL of source PDF file.
 $SourceFileUrl = "https://bytescout-com.s3.amazonaws.com/files/demo-files/cloud-api/pdf-edit/sample.pdf"
 

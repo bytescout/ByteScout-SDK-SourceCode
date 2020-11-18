@@ -1,3 +1,6 @@
+# Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
+# If it's not then please replace this with with your hosting url.
+
 # Result file name
 $ResultFile = ".\barcode.png"
 # Barcode type.

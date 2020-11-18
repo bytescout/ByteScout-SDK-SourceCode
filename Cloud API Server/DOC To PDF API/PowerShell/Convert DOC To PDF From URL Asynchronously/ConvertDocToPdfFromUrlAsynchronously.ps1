@@ -4,6 +4,9 @@
 # Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
 # If it's not then please replace this with with your hosting url.
 
+# Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
+# If it's not then please replace this with with your hosting url.
+
 # Direct URL of source DOC or DOCX file.
 $SourceFileURL = "https://bytescout-com.s3.amazonaws.com/files/demo-files/cloud-api/doc-to-pdf/sample.docx"
 # Destination PDF file name

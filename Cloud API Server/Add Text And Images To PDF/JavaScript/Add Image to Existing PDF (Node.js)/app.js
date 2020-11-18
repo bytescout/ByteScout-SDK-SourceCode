@@ -11,6 +11,9 @@
 //*******************************************************************************************//
 
 
+// Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
+// If it's not then please replace this with with your hosting url.
+
 var https = require("https");
 var path = require("path");
 var fs = require("fs");
