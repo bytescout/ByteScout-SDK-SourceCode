@@ -146,7 +146,7 @@ Partial Class Form1
 		Me.groupBox3.Size = New System.Drawing.Size(541, 101)
 		Me.groupBox3.TabIndex = 0
 		Me.groupBox3.TabStop = False
-		Me.groupBox3.Text = "Auidio Input"
+		Me.groupBox3.Text = "Audio Input"
 		' 
 		' cmbAudioDevices
 		' 

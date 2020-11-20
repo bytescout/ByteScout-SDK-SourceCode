@@ -2919,7 +2919,7 @@ namespace ScreenCapturing
 			this.groupBox3.Size = new System.Drawing.Size(413, 101);
 			this.groupBox3.TabIndex = 0;
 			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Auidio Input";
+			this.groupBox3.Text = "Audio Input";
 			// 
 			// cmbAudioDevices
 			// 
