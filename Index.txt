@@ -2669,6 +2669,8 @@
 \Data Extraction Suite\C#\Convert csv to sql server with spreadsheet sdk
 \Data Extraction Suite\C#\Convert csv to xls with spreadsheet sdk
 \Data Extraction Suite\C#\Convert ods to sql server with spreadsheet sdk
+\Data Extraction Suite\C#\Convert PDF to Black and White
+\Data Extraction Suite\C#\Convert PDF to Black and White Excluding some page
 \Data Extraction Suite\C#\Convert PDF To CSV (Merge multiline text to table cell) with PDF Extractor SDK
 \Data Extraction Suite\C#\Convert PDF To CSV By Pages with PDF Extractor SDK
 \Data Extraction Suite\C#\Convert PDF To CSV with PDF Extractor SDK
@@ -2967,6 +2969,8 @@
 \Data Extraction Suite\VB.NET\Check if ocr is required for pdf with pdf extractor sdk
 \Data Extraction Suite\VB.NET\Compare pdf documents with pdf extractor sdk
 \Data Extraction Suite\VB.NET\Convert ods to sql server with spreadsheet sdk
+\Data Extraction Suite\VB.NET\Convert PDF to Black and White
+\Data Extraction Suite\VB.NET\Convert PDF to Black and White Excluding some page
 \Data Extraction Suite\VB.NET\Convert pdf to csv  (merge multiline text to table cell) with pdf extractor sdk
 \Data Extraction Suite\VB.NET\Convert pdf to csv by pages with pdf extractor sdk
 \Data Extraction Suite\VB.NET\Convert pdf to csv with pdf extractor sdk
@@ -3206,6 +3210,8 @@
 \Data Extraction Suite\VBScript\Change row height with spreadsheet sdk
 \Data Extraction Suite\VBScript\Compare pdf documents with pdf extractor sdk
 \Data Extraction Suite\VBScript\Convert csv to xls with spreadsheet sdk
+\Data Extraction Suite\VBScript\Convert PDF to Black and White
+\Data Extraction Suite\VBScript\Convert PDF to Black and White Excluding some page
 \Data Extraction Suite\VBScript\Convert pdf to csv (merge multiline text to table cell) with pdf extractor sdk
 \Data Extraction Suite\VBScript\Convert pdf to csv by pages with pdf extractor sdk
 \Data Extraction Suite\VBScript\Convert pdf to csv with pdf extractor sdk
@@ -3425,6 +3431,8 @@
 \PDF Extractor SDK\C#\Census Table from Life and Annuity quote request PDF
 \PDF Extractor SDK\C#\Check If OCR Is Required for PDF
 \PDF Extractor SDK\C#\Compare PDF Documents
+\PDF Extractor SDK\C#\Convert PDF to Black and White
+\PDF Extractor SDK\C#\Convert PDF to Black and White Excluding some page
 \PDF Extractor SDK\C#\Convert Protected PDF Document to XLS
 \PDF Extractor SDK\C#\Correction to Deal with Date Issue after OCR
 \PDF Extractor SDK\C#\Data Masking in PDF
@@ -3579,6 +3587,8 @@
 \PDF Extractor SDK\VB.NET\Census Table from Life and Annuity quote request PDF
 \PDF Extractor SDK\VB.NET\Check If OCR Is Required for PDF
 \PDF Extractor SDK\VB.NET\Compare PDF Documents
+\PDF Extractor SDK\VB.NET\Convert PDF to Black and White
+\PDF Extractor SDK\VB.NET\Convert PDF to Black and White Excluding some page
 \PDF Extractor SDK\VB.NET\Convert PDF To CSV
 \PDF Extractor SDK\VB.NET\Convert PDF To CSV  (Merge multiline text to table cell)
 \PDF Extractor SDK\VB.NET\Convert PDF To CSV By Pages
@@ -3695,6 +3705,8 @@
 \PDF Extractor SDK\VB6\Split PDF
 \PDF Extractor SDK\VBScript\Arabic Text Extraction
 \PDF Extractor SDK\VBScript\Compare PDF Documents
+\PDF Extractor SDK\VBScript\Convert PDF to Black and White
+\PDF Extractor SDK\VBScript\Convert PDF to Black and White Excluding some page
 \PDF Extractor SDK\VBScript\Convert PDF To CSV
 \PDF Extractor SDK\VBScript\Convert PDF To CSV (Merge multiline text to table cell)
 \PDF Extractor SDK\VBScript\Convert PDF To CSV By Pages
@@ -6188,6 +6200,8 @@
 \Premium Suite\C#\Convert html to docx with pdf sdk
 \Premium Suite\C#\Convert html to pdf with pdf sdk
 \Premium Suite\C#\Convert pdf to 1-bit bmp with pdf renderer sdk
+\Premium Suite\C#\Convert PDF to Black and White
+\Premium Suite\C#\Convert PDF to Black and White Excluding some page
 \Premium Suite\C#\Convert pdf to bmp with pdf renderer sdk
 \Premium Suite\C#\Convert PDF To CSV (Merge multiline text to table cell) with PDF Extractor SDK
 \Premium Suite\C#\Convert PDF To CSV By Pages with PDF Extractor SDK
@@ -6637,6 +6651,8 @@
 \Premium Suite\VB.NET\Convert html to docx with pdf sdk
 \Premium Suite\VB.NET\Convert html to pdf with pdf sdk
 \Premium Suite\VB.NET\Convert pdf to 1-bit bmp with pdf renderer sdk
+\Premium Suite\VB.NET\Convert PDF to Black and White
+\Premium Suite\VB.NET\Convert PDF to Black and White Excluding some page
 \Premium Suite\VB.NET\Convert pdf to bmp (using streams) with pdf renderer sdk
 \Premium Suite\VB.NET\Convert pdf to bmp with pdf renderer sdk
 \Premium Suite\VB.NET\Convert pdf to csv  (merge multiline text to table cell) with pdf extractor sdk
@@ -6978,6 +6994,8 @@
 \Premium Suite\VBScript\Command line use with barcode sdk
 \Premium Suite\VBScript\Compare pdf documents with pdf extractor sdk
 \Premium Suite\VBScript\Convert pdf to 1-bit bmp with pdf renderer sdk
+\Premium Suite\VBScript\Convert PDF to Black and White
+\Premium Suite\VBScript\Convert PDF to Black and White Excluding some page
 \Premium Suite\VBScript\Convert pdf to bmp with pdf renderer sdk
 \Premium Suite\VBScript\Convert pdf to csv (merge multiline text to table cell) with pdf extractor sdk
 \Premium Suite\VBScript\Convert pdf to csv by pages with pdf extractor sdk
