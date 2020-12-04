@@ -3929,6 +3929,7 @@
 \PDF SDK\C#\Fill Form W-9
 \PDF SDK\C#\Fill PDF Form
 \PDF SDK\C#\Flatten PDF Form
+\PDF SDK\C#\Get All PDF Form Fields
 \PDF SDK\C#\Insert Page to PDF
 \PDF SDK\C#\Load Existing PDF Document
 \PDF SDK\C#\Merge Two PDF Documents
@@ -4026,6 +4027,7 @@
 \PDF SDK\VB.NET\Fill Form W-9
 \PDF SDK\VB.NET\Fill PDF Form
 \PDF SDK\VB.NET\Flatten PDF Form
+\PDF SDK\VB.NET\Get All PDF Form Fields
 \PDF SDK\VB.NET\Insert Images in PDF
 \PDF SDK\VB.NET\Insert Pages to PDF
 \PDF SDK\VB.NET\Load Existing PDF Document
