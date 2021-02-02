@@ -95,11 +95,11 @@ namespace Example
 			// Paint labels
 			for (int i = 0; i < pdfViewerControl1.Selection.Length; i++)
 			{
-				Rectangle r = Rectangle.Round(pdfViewerControl1.Selection[i]);
-				r = pdfViewerControl1.TranslateRectangleToViewport(r);
+				RectangleF pdfRect = Rectangle.Round(pdfViewerControl1.SelectionInPoints[i]);
+				Rectangle pixelRect = pdfViewerControl1.TranslateRectangleFromPointsToPixels(pdfRect);
 				
 				Size textSize = TextRenderer.MeasureText(_labels[i], Font);
-				Rectangle textRectangle = new Rectangle(r.Left, r.Top - textSize.Height - 6, textSize.Width + 2, textSize.Height + 2);
+				Rectangle textRectangle = new Rectangle(pixelRect.Left, pixelRect.Top - textSize.Height - 6, textSize.Width + 2, textSize.Height + 2);
 
 				e.Graphics.FillRectangle(Brushes.DarkBlue, textRectangle);
 				TextRenderer.DrawText(e.Graphics, _labels[i], Font, textRectangle, Color.White, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);

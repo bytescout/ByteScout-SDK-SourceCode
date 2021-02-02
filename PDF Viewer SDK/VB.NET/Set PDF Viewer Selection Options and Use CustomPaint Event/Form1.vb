@@ -73,11 +73,11 @@ Public Partial Class Form1
     Private Sub pdfViewerControl1_CustomPaint(sender As Object, e As PaintEventArgs) Handles pdfViewerControl1.CustomPaint
         ' Paint labels
         For i As Integer = 0 To pdfViewerControl1.Selection.Length - 1
-            Dim r As Rectangle = Rectangle.Round(pdfViewerControl1.Selection(i))
-            r = pdfViewerControl1.TranslateRectangleToViewport(r)
+            Dim pdfRect As RectangleF = Rectangle.Round(pdfViewerControl1.SelectionInPoints(i))
+            Dim pixelRect As Rectangle = pdfViewerControl1.TranslateRectangleFromPointsToPixels(pdfRect)
 
             Dim textSize As Size = TextRenderer.MeasureText(_labels(i), Font)
-            Dim textRectangle As New Rectangle(r.Left, r.Top - textSize.Height - 6, textSize.Width + 2, textSize.Height + 2)
+            Dim textRectangle As New Rectangle(pixelRect.Left, pixelRect.Top - textSize.Height - 6, textSize.Width + 2, textSize.Height + 2)
 
             e.Graphics.FillRectangle(Brushes.DarkBlue, textRectangle)
             TextRenderer.DrawText(e.Graphics, _labels(i), Font, textRectangle, Color.White, TextFormatFlags.HorizontalCenter Or TextFormatFlags.VerticalCenter)
