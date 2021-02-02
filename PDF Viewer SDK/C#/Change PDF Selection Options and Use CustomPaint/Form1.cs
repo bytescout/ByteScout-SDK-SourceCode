@@ -95,7 +95,7 @@ namespace Example
 			// Paint labels
 			for (int i = 0; i < pdfViewerControl1.Selection.Length; i++)
 			{
-				RectangleF pdfRect = Rectangle.Round(pdfViewerControl1.SelectionInPoints[i]);
+				RectangleF pdfRect = pdfViewerControl1.SelectionInPoints[i];
 				Rectangle pixelRect = pdfViewerControl1.TranslateRectangleFromPointsToPixels(pdfRect);
 				
 				Size textSize = TextRenderer.MeasureText(_labels[i], Font);
