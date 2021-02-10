@@ -5475,6 +5475,7 @@
 \PDF.co Web API\PDF Merging API\JavaScript\Merge PDF Documents From URLs (Node.js) - Async API
 \PDF.co Web API\PDF Merging API\PHP\Merge Any Documents Asynchronously
 \PDF.co Web API\PDF Merging API\PHP\Merge Any Documents From Uploaded Files
+\PDF.co Web API\PDF Merging API\PHP\Merge Any Documents From Uploaded Files Asynchronously
 \PDF.co Web API\PDF Merging API\PHP\Merge PDF Documents Asynchronously
 \PDF.co Web API\PDF Merging API\PHP\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\PowerShell\Merge Any Documents From URLs
