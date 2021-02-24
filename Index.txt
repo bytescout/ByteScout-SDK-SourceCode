@@ -1415,6 +1415,7 @@
 \Cloud API Server\Barcode Reader API\PowerShell
 \Cloud API Server\Barcode Reader API\Python
 \Cloud API Server\Barcode Reader API\VB.NET
+\Cloud API Server\Barcode Reader API\zzz_Not Recommended
 \Cloud API Server\Barcode Reader API\C#\Advanced Conversion Options
 \Cloud API Server\Barcode Reader API\C#\Async file upload and async barcode reading
 \Cloud API Server\Barcode Reader API\C#\Async File Uploading
@@ -1426,14 +1427,11 @@
 \Cloud API Server\Barcode Reader API\C#\Read QR Code
 \Cloud API Server\Barcode Reader API\cURL\Advanced Conversation Options
 \Cloud API Server\Barcode Reader API\cURL\Barcode Reader
-\Cloud API Server\Barcode Reader API\cURL\Read Barcode from File
 \Cloud API Server\Barcode Reader API\cURL\Read Barcode From URL
 \Cloud API Server\Barcode Reader API\Java\Advanced Conversation Options
 \Cloud API Server\Barcode Reader API\Java\Read Barcode From Uploaded File
 \Cloud API Server\Barcode Reader API\Java\Read Barcode From URL
 \Cloud API Server\Barcode Reader API\JavaScript\Advanced Conversion Options
-\Cloud API Server\Barcode Reader API\JavaScript\Read Barcode From File (Node.js)
-\Cloud API Server\Barcode Reader API\JavaScript\Read Barcode From File (Node.js) - Async Api
 \Cloud API Server\Barcode Reader API\JavaScript\Read Barcode From Uploaded File (Node.js)
 \Cloud API Server\Barcode Reader API\JavaScript\Read Barcode From Uploaded File (Node.js) - Async Api
 \Cloud API Server\Barcode Reader API\JavaScript\Read Barcode From URL (Node.js)
@@ -1456,6 +1454,11 @@
 \Cloud API Server\Barcode Reader API\VB.NET\Read Code 128
 \Cloud API Server\Barcode Reader API\VB.NET\Read EAN 13
 \Cloud API Server\Barcode Reader API\VB.NET\Read QR Code
+\Cloud API Server\Barcode Reader API\zzz_Not Recommended\cURL
+\Cloud API Server\Barcode Reader API\zzz_Not Recommended\JavaScript
+\Cloud API Server\Barcode Reader API\zzz_Not Recommended\cURL\Read Barcode from File
+\Cloud API Server\Barcode Reader API\zzz_Not Recommended\JavaScript\Read Barcode From File (Node.js)
+\Cloud API Server\Barcode Reader API\zzz_Not Recommended\JavaScript\Read Barcode From File (Node.js) - Async Api
 \Cloud API Server\CSV To PDF API\C#
 \Cloud API Server\CSV To PDF API\cURL
 \Cloud API Server\CSV To PDF API\Java
@@ -1464,6 +1467,7 @@
 \Cloud API Server\CSV To PDF API\PowerShell
 \Cloud API Server\CSV To PDF API\Python
 \Cloud API Server\CSV To PDF API\VB.NET
+\Cloud API Server\CSV To PDF API\zzz_Not Recommended
 \Cloud API Server\CSV To PDF API\C#\Convert CSV To PDF From Uploaded File
 \Cloud API Server\CSV To PDF API\C#\Convert CSV To PDF From URL
 \Cloud API Server\CSV To PDF API\C#\Convert CSV To PDF From URL Asynchronously
@@ -1471,8 +1475,6 @@
 \Cloud API Server\CSV To PDF API\cURL\PDF from CSV (CSV to PDF)
 \Cloud API Server\CSV To PDF API\Java\Convert CSV To PDF From Uploaded File
 \Cloud API Server\CSV To PDF API\Java\Convert CSV To PDF From URL
-\Cloud API Server\CSV To PDF API\JavaScript\Convert CSV To PDF From File (Node.js)
-\Cloud API Server\CSV To PDF API\JavaScript\Convert CSV To PDF From File (Node.js) - Async API
 \Cloud API Server\CSV To PDF API\JavaScript\Convert CSV To PDF From Uploaded File (Node.js)
 \Cloud API Server\CSV To PDF API\JavaScript\Convert CSV To PDF From Uploaded File (Node.js) - Async API
 \Cloud API Server\CSV To PDF API\JavaScript\Convert CSV To PDF From URL (Node.js)
@@ -1488,6 +1490,9 @@
 \Cloud API Server\CSV To PDF API\VB.NET\Convert CSV To PDF From Uploaded File
 \Cloud API Server\CSV To PDF API\VB.NET\Convert CSV To PDF From URL
 \Cloud API Server\CSV To PDF API\VB.NET\Convert CSV To PDF From URL Asynchronously
+\Cloud API Server\CSV To PDF API\zzz_Not Recommended\JavaScript
+\Cloud API Server\CSV To PDF API\zzz_Not Recommended\JavaScript\Convert CSV To PDF From File (Node.js)
+\Cloud API Server\CSV To PDF API\zzz_Not Recommended\JavaScript\Convert CSV To PDF From File (Node.js) - Async API
 \Cloud API Server\Delete Text From PDF\C#
 \Cloud API Server\Delete Text From PDF\cURL
 \Cloud API Server\Delete Text From PDF\Delphi
@@ -1497,6 +1502,7 @@
 \Cloud API Server\Delete Text From PDF\PowerShell
 \Cloud API Server\Delete Text From PDF\Python
 \Cloud API Server\Delete Text From PDF\VB.NET
+\Cloud API Server\Delete Text From PDF\zzz_Not Recommended
 \Cloud API Server\Delete Text From PDF\C#\Delete PDF Text From Uploaded File
 \Cloud API Server\Delete Text From PDF\C#\Delete PDF Text From URL
 \Cloud API Server\Delete Text From PDF\C#\Delete PDF Text From URL Asynchronously
@@ -1505,8 +1511,6 @@
 \Cloud API Server\Delete Text From PDF\Delphi\Delete PDF Text From URL
 \Cloud API Server\Delete Text From PDF\Java\Delete PDF Text From Uploaded File
 \Cloud API Server\Delete Text From PDF\Java\Delete PDF Text From URL
-\Cloud API Server\Delete Text From PDF\JavaScript\Delete PDF Text From File (Node.js)
-\Cloud API Server\Delete Text From PDF\JavaScript\Delete PDF Text From File (Node.js) - Async API
 \Cloud API Server\Delete Text From PDF\JavaScript\Delete PDF Text From Uploaded File (Node.js)
 \Cloud API Server\Delete Text From PDF\JavaScript\Delete PDF Text From Uploaded File (Node.js) - Async API
 \Cloud API Server\Delete Text From PDF\JavaScript\Delete PDF Text From URL (Node.js)
@@ -1522,6 +1526,9 @@
 \Cloud API Server\Delete Text From PDF\VB.NET\Delete PDF Text From Uploaded File
 \Cloud API Server\Delete Text From PDF\VB.NET\Delete PDF Text From URL
 \Cloud API Server\Delete Text From PDF\VB.NET\Delete PDF Text From URL Asynchronously
+\Cloud API Server\Delete Text From PDF\zzz_Not Recommended\JavaScript
+\Cloud API Server\Delete Text From PDF\zzz_Not Recommended\JavaScript\Delete PDF Text From File (Node.js)
+\Cloud API Server\Delete Text From PDF\zzz_Not Recommended\JavaScript\Delete PDF Text From File (Node.js) - Async API
 \Cloud API Server\DOC To PDF API\C#
 \Cloud API Server\DOC To PDF API\cURL
 \Cloud API Server\DOC To PDF API\Delphi
@@ -1531,6 +1538,7 @@
 \Cloud API Server\DOC To PDF API\PowerShell
 \Cloud API Server\DOC To PDF API\Python
 \Cloud API Server\DOC To PDF API\VB.NET
+\Cloud API Server\DOC To PDF API\zzz_Not Recommended
 \Cloud API Server\DOC To PDF API\C#\Convert DOC To PDF From Uploaded File
 \Cloud API Server\DOC To PDF API\C#\Convert DOC To PDF From URL
 \Cloud API Server\DOC To PDF API\C#\Convert DOC To PDF From URL Asynchronously
@@ -1539,8 +1547,6 @@
 \Cloud API Server\DOC To PDF API\Delphi\Convert DOC To PDF From Uploaded File
 \Cloud API Server\DOC To PDF API\Java\Convert DOC To PDF From Uploaded File
 \Cloud API Server\DOC To PDF API\Java\Convert DOC To PDF From URL
-\Cloud API Server\DOC To PDF API\JavaScript\Convert DOC To PDF From File (Node.js)
-\Cloud API Server\DOC To PDF API\JavaScript\Convert DOC To PDF From File (Node.js) - Async API
 \Cloud API Server\DOC To PDF API\JavaScript\Convert DOC To PDF From Uploaded File (Node.js)
 \Cloud API Server\DOC To PDF API\JavaScript\Convert DOC To PDF From Uploaded File (Node.js) - Async API
 \Cloud API Server\DOC To PDF API\JavaScript\Convert DOC To PDF From URL (Node.js)
@@ -1556,6 +1562,9 @@
 \Cloud API Server\DOC To PDF API\VB.NET\Convert DOC To PDF From Uploaded File
 \Cloud API Server\DOC To PDF API\VB.NET\Convert DOC To PDF From URL
 \Cloud API Server\DOC To PDF API\VB.NET\Convert DOC To PDF From URL Asynchronously
+\Cloud API Server\DOC To PDF API\zzz_Not Recommended\JavaScript
+\Cloud API Server\DOC To PDF API\zzz_Not Recommended\JavaScript\Convert DOC To PDF From File (Node.js)
+\Cloud API Server\DOC To PDF API\zzz_Not Recommended\JavaScript\Convert DOC To PDF From File (Node.js) - Async API
 \Cloud API Server\Document Parser API\C#
 \Cloud API Server\Document Parser API\cURL
 \Cloud API Server\Document Parser API\Java
@@ -1790,13 +1799,12 @@
 \Cloud API Server\Invoice Parser API\PowerShell
 \Cloud API Server\Invoice Parser API\Python
 \Cloud API Server\Invoice Parser API\VB.NET
+\Cloud API Server\Invoice Parser API\zzz_Not Recommended
 \Cloud API Server\Invoice Parser API\C#\Get Invoice Info From Uploaded File
 \Cloud API Server\Invoice Parser API\C#\Get Invoice Info From URL
-\Cloud API Server\Invoice Parser API\cURL\Get Invoice Info from File
 \Cloud API Server\Invoice Parser API\cURL\Get Invoice Info From URL
 \Cloud API Server\Invoice Parser API\Java\Get Invoice Info From Uploaded File
 \Cloud API Server\Invoice Parser API\Java\Get Invoice Info From URL
-\Cloud API Server\Invoice Parser API\JavaScript\Get Invoice Info From File (Node.js)
 \Cloud API Server\Invoice Parser API\JavaScript\Get Invoice Info From Uploaded File (Node.js)
 \Cloud API Server\Invoice Parser API\JavaScript\Get Invoice Info From URL (Node.js)
 \Cloud API Server\Invoice Parser API\PHP\Get Invoice Info From Uploaded File
@@ -1806,6 +1814,10 @@
 \Cloud API Server\Invoice Parser API\Python\Get Invoice Info From URL
 \Cloud API Server\Invoice Parser API\VB.NET\Get Invoice Info From Uploaded File
 \Cloud API Server\Invoice Parser API\VB.NET\Get Invoice Info From URL
+\Cloud API Server\Invoice Parser API\zzz_Not Recommended\cURL
+\Cloud API Server\Invoice Parser API\zzz_Not Recommended\JavaScript
+\Cloud API Server\Invoice Parser API\zzz_Not Recommended\cURL\Get Invoice Info from File
+\Cloud API Server\Invoice Parser API\zzz_Not Recommended\JavaScript\Get Invoice Info From File (Node.js)
 \Cloud API Server\Manage Background Jobs\C#
 \Cloud API Server\Manage Background Jobs\cURL
 \Cloud API Server\Manage Background Jobs\Java
@@ -1879,13 +1891,13 @@
 \Cloud API Server\PDF Information API\PowerShell
 \Cloud API Server\PDF Information API\Python
 \Cloud API Server\PDF Information API\VB.NET
+\Cloud API Server\PDF Information API\zzz_Not Recommended
 \Cloud API Server\PDF Information API\C#\Get PDF Info From Uploaded File
 \Cloud API Server\PDF Information API\C#\Get PDF Info From URL
 \Cloud API Server\PDF Information API\cURL\Get PDF Info From URL
 \Cloud API Server\PDF Information API\cURL\PDF Info Reader
 \Cloud API Server\PDF Information API\Java\Get PDF Info From Uploaded File
 \Cloud API Server\PDF Information API\Java\Get PDF Info From URL
-\Cloud API Server\PDF Information API\JavaScript\Get PDF Info From File (Node.js)
 \Cloud API Server\PDF Information API\JavaScript\Get PDF Info From Uploaded File (Node.js)
 \Cloud API Server\PDF Information API\JavaScript\Get PDF Info From URL (Node.js)
 \Cloud API Server\PDF Information API\PHP\Get PDF Info From Uploaded File
@@ -1895,6 +1907,8 @@
 \Cloud API Server\PDF Information API\Python\Get PDF Info From URL
 \Cloud API Server\PDF Information API\VB.NET\Get PDF Info From Uploaded File
 \Cloud API Server\PDF Information API\VB.NET\Get PDF Info From URL
+\Cloud API Server\PDF Information API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF Information API\zzz_Not Recommended\JavaScript\Get PDF Info From File (Node.js)
 \Cloud API Server\PDF Make Searchable API\C#
 \Cloud API Server\PDF Make Searchable API\cURL
 \Cloud API Server\PDF Make Searchable API\Java
@@ -1903,6 +1917,7 @@
 \Cloud API Server\PDF Make Searchable API\PowerShell
 \Cloud API Server\PDF Make Searchable API\Python
 \Cloud API Server\PDF Make Searchable API\VB.NET
+\Cloud API Server\PDF Make Searchable API\zzz_Not Recommended
 \Cloud API Server\PDF Make Searchable API\C#\Advanced Conversion Options
 \Cloud API Server\PDF Make Searchable API\C#\Make Searchable PDF From Uploaded File
 \Cloud API Server\PDF Make Searchable API\C#\Make Searchable PDF From URL
@@ -1913,8 +1928,6 @@
 \Cloud API Server\PDF Make Searchable API\Java\Make Searchable PDF From Uploaded File
 \Cloud API Server\PDF Make Searchable API\Java\Make Searchable PDF From URL
 \Cloud API Server\PDF Make Searchable API\JavaScript\Advanced Conversion Options
-\Cloud API Server\PDF Make Searchable API\JavaScript\Make Searchable PDF From File (Node.js)
-\Cloud API Server\PDF Make Searchable API\JavaScript\Make Searchable PDF From File (Node.js) - Async API
 \Cloud API Server\PDF Make Searchable API\JavaScript\Make Searchable PDF From Uploaded File (Node.js)
 \Cloud API Server\PDF Make Searchable API\JavaScript\Make Searchable PDF From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF Make Searchable API\JavaScript\Make Searchable PDF From URL (Node.js)
@@ -1933,6 +1946,9 @@
 \Cloud API Server\PDF Make Searchable API\VB.NET\Make Searchable PDF From Uploaded File
 \Cloud API Server\PDF Make Searchable API\VB.NET\Make Searchable PDF From URL
 \Cloud API Server\PDF Make Searchable API\VB.NET\Make Searchable PDF From URL Asynchronously
+\Cloud API Server\PDF Make Searchable API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF Make Searchable API\zzz_Not Recommended\JavaScript\Make Searchable PDF From File (Node.js)
+\Cloud API Server\PDF Make Searchable API\zzz_Not Recommended\JavaScript\Make Searchable PDF From File (Node.js) - Async API
 \Cloud API Server\PDF Merging API\C#
 \Cloud API Server\PDF Merging API\cURL
 \Cloud API Server\PDF Merging API\Delphi
@@ -1975,6 +1991,7 @@
 \Cloud API Server\PDF Optimization API\PowerShell
 \Cloud API Server\PDF Optimization API\Python
 \Cloud API Server\PDF Optimization API\VB.NET
+\Cloud API Server\PDF Optimization API\zzz_Not Recommended
 \Cloud API Server\PDF Optimization API\C#\Optimize PDF From Uploaded File
 \Cloud API Server\PDF Optimization API\C#\Optimize PDF From URL
 \Cloud API Server\PDF Optimization API\C#\Optimize PDF From URL Asynchronously
@@ -1982,8 +1999,6 @@
 \Cloud API Server\PDF Optimization API\cURL\PDF Optimize
 \Cloud API Server\PDF Optimization API\Java\Optimize PDF From Uploaded File
 \Cloud API Server\PDF Optimization API\Java\Optimize PDF From URL
-\Cloud API Server\PDF Optimization API\JavaScript\Optimize PDF From File (Node.js)
-\Cloud API Server\PDF Optimization API\JavaScript\Optimize PDF From File (Node.js) - Async API
 \Cloud API Server\PDF Optimization API\JavaScript\Optimize PDF From Uploaded File (Node.js)
 \Cloud API Server\PDF Optimization API\JavaScript\Optimize PDF From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF Optimization API\JavaScript\Optimize PDF From URL (Node.js)
@@ -1999,6 +2014,9 @@
 \Cloud API Server\PDF Optimization API\VB.NET\Optimize PDF From Uploaded File
 \Cloud API Server\PDF Optimization API\VB.NET\Optimize PDF From URL
 \Cloud API Server\PDF Optimization API\VB.NET\Optimize PDF From URL Asynchronously
+\Cloud API Server\PDF Optimization API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF Optimization API\zzz_Not Recommended\JavaScript\Optimize PDF From File (Node.js)
+\Cloud API Server\PDF Optimization API\zzz_Not Recommended\JavaScript\Optimize PDF From File (Node.js) - Async API
 \Cloud API Server\PDF Password And Security\C#
 \Cloud API Server\PDF Password And Security\cURL
 \Cloud API Server\PDF Password And Security\Java
@@ -2031,17 +2049,15 @@
 \Cloud API Server\PDF Splitting API\PowerShell
 \Cloud API Server\PDF Splitting API\Python
 \Cloud API Server\PDF Splitting API\VB.NET
+\Cloud API Server\PDF Splitting API\zzz_Not Recommended
 \Cloud API Server\PDF Splitting API\C#\Async file upload and async Split PDF
 \Cloud API Server\PDF Splitting API\C#\Split PDF From Uploaded File
 \Cloud API Server\PDF Splitting API\C#\Split PDF From URL
 \Cloud API Server\PDF Splitting API\C#\Split PDF From URL Asynchronously
 \Cloud API Server\PDF Splitting API\cURL\PDF Split
-\Cloud API Server\PDF Splitting API\cURL\Split PDF from File
 \Cloud API Server\PDF Splitting API\cURL\Split PDF From URL
 \Cloud API Server\PDF Splitting API\Java\Split PDF From Uploaded File
 \Cloud API Server\PDF Splitting API\Java\Split PDF From URL
-\Cloud API Server\PDF Splitting API\JavaScript\Split PDF From File (Node.js)
-\Cloud API Server\PDF Splitting API\JavaScript\Split PDF From File (Node.js) - Async API
 \Cloud API Server\PDF Splitting API\JavaScript\Split PDF From Uploaded File (Node.js)
 \Cloud API Server\PDF Splitting API\JavaScript\Split PDF From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF Splitting API\JavaScript\Split PDF From URL (Node.js)
@@ -2057,6 +2073,11 @@
 \Cloud API Server\PDF Splitting API\VB.NET\Split PDF From Uploaded File
 \Cloud API Server\PDF Splitting API\VB.NET\Split PDF From URL
 \Cloud API Server\PDF Splitting API\VB.NET\Split PDF From URL Asynchronously
+\Cloud API Server\PDF Splitting API\zzz_Not Recommended\cURL
+\Cloud API Server\PDF Splitting API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF Splitting API\zzz_Not Recommended\cURL\Split PDF from File
+\Cloud API Server\PDF Splitting API\zzz_Not Recommended\JavaScript\Split PDF From File (Node.js)
+\Cloud API Server\PDF Splitting API\zzz_Not Recommended\JavaScript\Split PDF From File (Node.js) - Async API
 \Cloud API Server\PDF Text Search API\C#
 \Cloud API Server\PDF Text Search API\cURL
 \Cloud API Server\PDF Text Search API\Java
@@ -2064,6 +2085,7 @@
 \Cloud API Server\PDF Text Search API\PowerShell
 \Cloud API Server\PDF Text Search API\Python
 \Cloud API Server\PDF Text Search API\VB.NET
+\Cloud API Server\PDF Text Search API\zzz_Not Recommended
 \Cloud API Server\PDF Text Search API\C#\Async file upload and async Search Text
 \Cloud API Server\PDF Text Search API\C#\PDF Text Search from Uploaded File
 \Cloud API Server\PDF Text Search API\C#\PDF Text Search from Uploaded File Asynchronously
@@ -2074,8 +2096,6 @@
 \Cloud API Server\PDF Text Search API\Java\PDF Text Search from Uploaded File Asynchronously
 \Cloud API Server\PDF Text Search API\Java\PDF Text Search from URL
 \Cloud API Server\PDF Text Search API\Java\PDF Text Search from URL Asynchronously
-\Cloud API Server\PDF Text Search API\JavaScript\PDF Text Search from File (Node js)
-\Cloud API Server\PDF Text Search API\JavaScript\PDF Text Search from File (Node js) - Async API
 \Cloud API Server\PDF Text Search API\JavaScript\PDF Text Search from Uploaded File (Node js)
 \Cloud API Server\PDF Text Search API\JavaScript\PDF Text Search from Uploaded File (Node js) - Async API
 \Cloud API Server\PDF Text Search API\JavaScript\PDF Text Search from URL (Node js)
@@ -2091,6 +2111,9 @@
 \Cloud API Server\PDF Text Search API\VB.NET\PDF Text Search from Uploaded File Asynchronously
 \Cloud API Server\PDF Text Search API\VB.NET\PDF Text Search from URL
 \Cloud API Server\PDF Text Search API\VB.NET\PDF Text Search from URL Asynchronously
+\Cloud API Server\PDF Text Search API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF Text Search API\zzz_Not Recommended\JavaScript\PDF Text Search from File (Node js)
+\Cloud API Server\PDF Text Search API\zzz_Not Recommended\JavaScript\PDF Text Search from File (Node js) - Async API
 \Cloud API Server\PDF To CSV API\C#
 \Cloud API Server\PDF To CSV API\cURL
 \Cloud API Server\PDF To CSV API\Java
@@ -2099,6 +2122,7 @@
 \Cloud API Server\PDF To CSV API\PowerShell
 \Cloud API Server\PDF To CSV API\Python
 \Cloud API Server\PDF To CSV API\VB.NET
+\Cloud API Server\PDF To CSV API\zzz_Not Recommended
 \Cloud API Server\PDF To CSV API\C#\Advanced Conversion Options
 \Cloud API Server\PDF To CSV API\C#\Advanced Conversion Options With Rotated Input
 \Cloud API Server\PDF To CSV API\C#\Async file upload and async PDF to CSV
@@ -2107,7 +2131,6 @@
 \Cloud API Server\PDF To CSV API\C#\Convert PDF To CSV From URL Asynchronously
 \Cloud API Server\PDF To CSV API\cURL\Advanced Conversion Options
 \Cloud API Server\PDF To CSV API\cURL\Advanced Conversion Options With Rotated Input
-\Cloud API Server\PDF To CSV API\cURL\Convert PDF to CSV from File
 \Cloud API Server\PDF To CSV API\cURL\Convert PDF To CSV From URL
 \Cloud API Server\PDF To CSV API\cURL\PDF to CSV
 \Cloud API Server\PDF To CSV API\cURL\PDF to CSV - Custom Seperator
@@ -2118,8 +2141,6 @@
 \Cloud API Server\PDF To CSV API\Java\Convert PDF To CSV From URL
 \Cloud API Server\PDF To CSV API\JavaScript\Advanced Conversion Options
 \Cloud API Server\PDF To CSV API\JavaScript\Advanced Conversion Options With Rotated Input
-\Cloud API Server\PDF To CSV API\JavaScript\Convert PDF To CSV From File (Node.js)
-\Cloud API Server\PDF To CSV API\JavaScript\Convert PDF To CSV From File (Node.js) - Async API
 \Cloud API Server\PDF To CSV API\JavaScript\Convert PDF To CSV From Uploaded File (Node.js)
 \Cloud API Server\PDF To CSV API\JavaScript\Convert PDF To CSV From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To CSV API\JavaScript\Convert PDF To CSV From URL (Node.js)
@@ -2143,6 +2164,11 @@
 \Cloud API Server\PDF To CSV API\VB.NET\Convert PDF To CSV From Uploaded File
 \Cloud API Server\PDF To CSV API\VB.NET\Convert PDF To CSV From URL
 \Cloud API Server\PDF To CSV API\VB.NET\Convert PDF To CSV From URL Asynchronously
+\Cloud API Server\PDF To CSV API\zzz_Not Recommended\cURL
+\Cloud API Server\PDF To CSV API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF To CSV API\zzz_Not Recommended\cURL\Convert PDF to CSV from File
+\Cloud API Server\PDF To CSV API\zzz_Not Recommended\JavaScript\Convert PDF To CSV From File (Node.js)
+\Cloud API Server\PDF To CSV API\zzz_Not Recommended\JavaScript\Convert PDF To CSV From File (Node.js) - Async API
 \Cloud API Server\PDF To Excel API\C#
 \Cloud API Server\PDF To Excel API\cURL
 \Cloud API Server\PDF To Excel API\Java
@@ -2151,6 +2177,7 @@
 \Cloud API Server\PDF To Excel API\PowerShell
 \Cloud API Server\PDF To Excel API\Python
 \Cloud API Server\PDF To Excel API\VB.NET
+\Cloud API Server\PDF To Excel API\zzz_Not Recommended
 \Cloud API Server\PDF To Excel API\C#\Advanced Conversion Options
 \Cloud API Server\PDF To Excel API\C#\Advanced Conversion Options With Rotated Input
 \Cloud API Server\PDF To Excel API\C#\Convert PDF To XLS From Uploaded File
@@ -2172,14 +2199,10 @@
 \Cloud API Server\PDF To Excel API\Java\Convert PDF To XLSX From URL
 \Cloud API Server\PDF To Excel API\JavaScript\Advanced Conversion Options
 \Cloud API Server\PDF To Excel API\JavaScript\Advanced Conversion Options With Rotated Input
-\Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLS From File (Node.js)
-\Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLS From File (Node.js) - Async API
 \Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLS From Uploaded File (Node.js)
 \Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLS From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLS From URL (Node.js)
 \Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLS From URL (Node.js) - Async API
-\Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLSX From File (Node.js)
-\Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLSX From File (Node.js) - Async API
 \Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLSX From Uploaded File (Node.js)
 \Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLSX From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To Excel API\JavaScript\Convert PDF To XLSX From URL (Node.js)
@@ -2209,6 +2232,11 @@
 \Cloud API Server\PDF To Excel API\VB.NET\Convert PDF To XLSX From Uploaded File
 \Cloud API Server\PDF To Excel API\VB.NET\Convert PDF To XLSX From URL
 \Cloud API Server\PDF To Excel API\VB.NET\Convert PDF To XLSX From URL Asynchronously
+\Cloud API Server\PDF To Excel API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF To Excel API\zzz_Not Recommended\JavaScript\Convert PDF To XLS From File (Node.js)
+\Cloud API Server\PDF To Excel API\zzz_Not Recommended\JavaScript\Convert PDF To XLS From File (Node.js) - Async API
+\Cloud API Server\PDF To Excel API\zzz_Not Recommended\JavaScript\Convert PDF To XLSX From File (Node.js)
+\Cloud API Server\PDF To Excel API\zzz_Not Recommended\JavaScript\Convert PDF To XLSX From File (Node.js) - Async API
 \Cloud API Server\PDF To HTML API\C#
 \Cloud API Server\PDF To HTML API\cURL
 \Cloud API Server\PDF To HTML API\Java
@@ -2217,6 +2245,7 @@
 \Cloud API Server\PDF To HTML API\PowerShell
 \Cloud API Server\PDF To HTML API\Python
 \Cloud API Server\PDF To HTML API\VB.NET
+\Cloud API Server\PDF To HTML API\zzz_Not Recommended
 \Cloud API Server\PDF To HTML API\C#\Convert PDF To HTML From Uploaded File
 \Cloud API Server\PDF To HTML API\C#\Convert PDF To HTML From URL
 \Cloud API Server\PDF To HTML API\C#\Convert PDF To HTML From URL Asynchronously
@@ -2225,8 +2254,6 @@
 \Cloud API Server\PDF To HTML API\cURL\Convert PDF to HTML With OCR
 \Cloud API Server\PDF To HTML API\Java\Convert PDF To HTML From Uploaded File
 \Cloud API Server\PDF To HTML API\Java\Convert PDF To HTML From URL
-\Cloud API Server\PDF To HTML API\JavaScript\Convert PDF To HTML From File (Node.js)
-\Cloud API Server\PDF To HTML API\JavaScript\Convert PDF To HTML From File (Node.js) - Async API
 \Cloud API Server\PDF To HTML API\JavaScript\Convert PDF To HTML From Uploaded File (Node.js)
 \Cloud API Server\PDF To HTML API\JavaScript\Convert PDF To HTML From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To HTML API\JavaScript\Convert PDF To HTML From URL (Node.js)
@@ -2243,6 +2270,9 @@
 \Cloud API Server\PDF To HTML API\VB.NET\Convert PDF To HTML From Uploaded File
 \Cloud API Server\PDF To HTML API\VB.NET\Convert PDF To HTML From URL
 \Cloud API Server\PDF To HTML API\VB.NET\Convert PDF To HTML From URL Asynchronously
+\Cloud API Server\PDF To HTML API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF To HTML API\zzz_Not Recommended\JavaScript\Convert PDF To HTML From File (Node.js)
+\Cloud API Server\PDF To HTML API\zzz_Not Recommended\JavaScript\Convert PDF To HTML From File (Node.js) - Async API
 \Cloud API Server\PDF To Image API\C#
 \Cloud API Server\PDF To Image API\cURL
 \Cloud API Server\PDF To Image API\Java
@@ -2251,6 +2281,7 @@
 \Cloud API Server\PDF To Image API\PowerShell
 \Cloud API Server\PDF To Image API\Python
 \Cloud API Server\PDF To Image API\VB.NET
+\Cloud API Server\PDF To Image API\zzz_Not Recommended
 \Cloud API Server\PDF To Image API\C#\Advanced JPEG Conversion Options
 \Cloud API Server\PDF To Image API\C#\Advanced PNG Conversion Options
 \Cloud API Server\PDF To Image API\C#\Advanced TIFF Conversion Options
@@ -2266,11 +2297,8 @@
 \Cloud API Server\PDF To Image API\cURL\Advanced JPEG Conversion Options
 \Cloud API Server\PDF To Image API\cURL\Advanced PNG Conversion Options
 \Cloud API Server\PDF To Image API\cURL\Advanced TIFF Conversion Options
-\Cloud API Server\PDF To Image API\cURL\Convert PDF to JPEG from File
 \Cloud API Server\PDF To Image API\cURL\Convert PDF To JPEG From URL
-\Cloud API Server\PDF To Image API\cURL\Convert PDF to PNG from File
 \Cloud API Server\PDF To Image API\cURL\Convert PDF To PNG From URL
-\Cloud API Server\PDF To Image API\cURL\Convert PDF to TIFF from File
 \Cloud API Server\PDF To Image API\cURL\Convert PDF To TIFF From URL
 \Cloud API Server\PDF To Image API\cURL\PDF To JPEG
 \Cloud API Server\PDF To Image API\cURL\PDF to PNG
@@ -2287,20 +2315,14 @@
 \Cloud API Server\PDF To Image API\JavaScript\Advanced JPEG Conversion Options
 \Cloud API Server\PDF To Image API\JavaScript\Advanced PNG Conversion Options
 \Cloud API Server\PDF To Image API\JavaScript\Advanced TIFF Conversion Options
-\Cloud API Server\PDF To Image API\JavaScript\Convert PDF To JPEG From File (Node.js)
-\Cloud API Server\PDF To Image API\JavaScript\Convert PDF To JPEG From File (Node.js) - Async API
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To JPEG From Uploaded File (Node.js)
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To JPEG From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To JPEG From URL (Node.js)
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To JPEG From URL (Node.js) - Async API
-\Cloud API Server\PDF To Image API\JavaScript\Convert PDF To PNG From File (Node.js)
-\Cloud API Server\PDF To Image API\JavaScript\Convert PDF To PNG From File (Node.js) - Async API
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To PNG From Uploaded File (Node.js)
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To PNG From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To PNG From URL (Node.js)
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To PNG From URL (Node.js) - Async API
-\Cloud API Server\PDF To Image API\JavaScript\Convert PDF To TIFF From File (Node.js)
-\Cloud API Server\PDF To Image API\JavaScript\Convert PDF To TIFF From File (Node.js) - Async API
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To TIFF From Uploaded File (Node.js)
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To TIFF From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To Image API\JavaScript\Convert PDF To TIFF From URL (Node.js)
@@ -2334,6 +2356,17 @@
 \Cloud API Server\PDF To Image API\VB.NET\Convert PDF To TIFF From Uploaded File
 \Cloud API Server\PDF To Image API\VB.NET\Convert PDF To TIFF From URL
 \Cloud API Server\PDF To Image API\VB.NET\Convert PDF To TIFF From URL Asynchronously
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\cURL
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\cURL\Convert PDF to JPEG from File
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\cURL\Convert PDF to PNG from File
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\cURL\Convert PDF to TIFF from File
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\JavaScript\Convert PDF To JPEG From File (Node.js)
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\JavaScript\Convert PDF To JPEG From File (Node.js) - Async API
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\JavaScript\Convert PDF To PNG From File (Node.js)
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\JavaScript\Convert PDF To PNG From File (Node.js) - Async API
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\JavaScript\Convert PDF To TIFF From File (Node.js)
+\Cloud API Server\PDF To Image API\zzz_Not Recommended\JavaScript\Convert PDF To TIFF From File (Node.js) - Async API
 \Cloud API Server\PDF To JSON API\C#
 \Cloud API Server\PDF To JSON API\cURL
 \Cloud API Server\PDF To JSON API\Java
@@ -2342,6 +2375,7 @@
 \Cloud API Server\PDF To JSON API\PowerShell
 \Cloud API Server\PDF To JSON API\Python
 \Cloud API Server\PDF To JSON API\VB.NET
+\Cloud API Server\PDF To JSON API\zzz_Not Recommended
 \Cloud API Server\PDF To JSON API\C#\Advanced Conversion Options
 \Cloud API Server\PDF To JSON API\C#\Advanced Conversion Options With Rotated Input
 \Cloud API Server\PDF To JSON API\C#\Convert PDF To JSON From Uploaded File
@@ -2357,8 +2391,6 @@
 \Cloud API Server\PDF To JSON API\Java\Convert PDF To JSON From URL
 \Cloud API Server\PDF To JSON API\JavaScript\Advanced Conversion Options
 \Cloud API Server\PDF To JSON API\JavaScript\Advanced Conversion Options With Rotated Input
-\Cloud API Server\PDF To JSON API\JavaScript\Convert PDF To JSON From File (Node.js)
-\Cloud API Server\PDF To JSON API\JavaScript\Convert PDF To JSON From File (Node.js) - Async API
 \Cloud API Server\PDF To JSON API\JavaScript\Convert PDF To JSON From Uploaded File (Node.js)
 \Cloud API Server\PDF To JSON API\JavaScript\Convert PDF To JSON From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To JSON API\JavaScript\Convert PDF To JSON From URL (Node.js)
@@ -2374,13 +2406,17 @@
 \Cloud API Server\PDF To JSON API\PowerShell\Convert PDF To JSON From URL Asynchronously
 \Cloud API Server\PDF To JSON API\Python\Advanced Conversion Options
 \Cloud API Server\PDF To JSON API\Python\Advanced Conversion Options With Rotated Input
-\Cloud API Server\PDF To JSON API\Python\Convert PDF To JSON From Uploaded File
 \Cloud API Server\PDF To JSON API\Python\Convert PDF To JSON From Uploaded File Asynchronously
 \Cloud API Server\PDF To JSON API\VB.NET\Advanced Conversion Options
 \Cloud API Server\PDF To JSON API\VB.NET\Advanced Conversion Options With Rotated Input
 \Cloud API Server\PDF To JSON API\VB.NET\Convert PDF To JSON From Uploaded File
 \Cloud API Server\PDF To JSON API\VB.NET\Convert PDF To JSON From URL
 \Cloud API Server\PDF To JSON API\VB.NET\Convert PDF To JSON From URL Asynchronously
+\Cloud API Server\PDF To JSON API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF To JSON API\zzz_Not Recommended\Python
+\Cloud API Server\PDF To JSON API\zzz_Not Recommended\JavaScript\Convert PDF To JSON From File (Node.js)
+\Cloud API Server\PDF To JSON API\zzz_Not Recommended\JavaScript\Convert PDF To JSON From File (Node.js) - Async API
+\Cloud API Server\PDF To JSON API\zzz_Not Recommended\Python\Convert PDF To JSON From Uploaded File
 \Cloud API Server\PDF To Text API\C#
 \Cloud API Server\PDF To Text API\cURL
 \Cloud API Server\PDF To Text API\Java
@@ -2389,6 +2425,7 @@
 \Cloud API Server\PDF To Text API\PowerShell
 \Cloud API Server\PDF To Text API\Python
 \Cloud API Server\PDF To Text API\VB.NET
+\Cloud API Server\PDF To Text API\zzz_Not Recommended
 \Cloud API Server\PDF To Text API\C#\Advanced Conversion Options
 \Cloud API Server\PDF To Text API\C#\Advanced Conversion Options With Rotated Input
 \Cloud API Server\PDF To Text API\C#\Async file upload and async PDF to Text
@@ -2403,8 +2440,6 @@
 \Cloud API Server\PDF To Text API\Java\Convert PDF To Text From URL
 \Cloud API Server\PDF To Text API\JavaScript\Advanced Conversion Options
 \Cloud API Server\PDF To Text API\JavaScript\Advanced Conversion Options With Rotated Input
-\Cloud API Server\PDF To Text API\JavaScript\Convert PDF To Text From File (Node.js)
-\Cloud API Server\PDF To Text API\JavaScript\Convert PDF To Text From File (Node.js) - Async API
 \Cloud API Server\PDF To Text API\JavaScript\Convert PDF To Text From Uploaded File (Node.js)
 \Cloud API Server\PDF To Text API\JavaScript\Convert PDF To Text From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To Text API\JavaScript\Convert PDF To Text From URL (Node.js)
@@ -2428,6 +2463,9 @@
 \Cloud API Server\PDF To Text API\VB.NET\Convert PDF To Text From Uploaded File
 \Cloud API Server\PDF To Text API\VB.NET\Convert PDF To Text From URL
 \Cloud API Server\PDF To Text API\VB.NET\Convert PDF To Text From URL Asynchronously
+\Cloud API Server\PDF To Text API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF To Text API\zzz_Not Recommended\JavaScript\Convert PDF To Text From File (Node.js)
+\Cloud API Server\PDF To Text API\zzz_Not Recommended\JavaScript\Convert PDF To Text From File (Node.js) - Async API
 \Cloud API Server\PDF To XML API\C#
 \Cloud API Server\PDF To XML API\cURL
 \Cloud API Server\PDF To XML API\Java
@@ -2436,6 +2474,7 @@
 \Cloud API Server\PDF To XML API\PowerShell
 \Cloud API Server\PDF To XML API\Python
 \Cloud API Server\PDF To XML API\VB.NET
+\Cloud API Server\PDF To XML API\zzz_Not Recommended
 \Cloud API Server\PDF To XML API\C#\Advanced Conversion Options
 \Cloud API Server\PDF To XML API\C#\Advanced Conversion Options With Rotated Input
 \Cloud API Server\PDF To XML API\C#\Convert PDF To XML From Uploaded File
@@ -2449,8 +2488,6 @@
 \Cloud API Server\PDF To XML API\Java\Convert PDF To XML From URL
 \Cloud API Server\PDF To XML API\JavaScript\Advanced Conversion Options
 \Cloud API Server\PDF To XML API\JavaScript\Advanced Conversion Options With Rotated Input
-\Cloud API Server\PDF To XML API\JavaScript\Convert PDF To XML From File (Node.js)
-\Cloud API Server\PDF To XML API\JavaScript\Convert PDF To XML From File (Node.js) - Async API
 \Cloud API Server\PDF To XML API\JavaScript\Convert PDF To XML From Uploaded File (Node.js)
 \Cloud API Server\PDF To XML API\JavaScript\Convert PDF To XML From Uploaded File (Node.js) - Async API
 \Cloud API Server\PDF To XML API\JavaScript\Convert PDF To XML From URL (Node.js)
@@ -2473,6 +2510,9 @@
 \Cloud API Server\PDF To XML API\VB.NET\Convert PDF To XML From Uploaded File
 \Cloud API Server\PDF To XML API\VB.NET\Convert PDF To XML From URL
 \Cloud API Server\PDF To XML API\VB.NET\Convert PDF To XML From URL Asynchronously
+\Cloud API Server\PDF To XML API\zzz_Not Recommended\JavaScript
+\Cloud API Server\PDF To XML API\zzz_Not Recommended\JavaScript\Convert PDF To XML From File (Node.js)
+\Cloud API Server\PDF To XML API\zzz_Not Recommended\JavaScript\Convert PDF To XML From File (Node.js) - Async API
 \Cloud API Server\Render Url As Jpg\C#
 \Cloud API Server\Render Url As Jpg\cURL
 \Cloud API Server\Render Url As Jpg\Java
@@ -2515,6 +2555,7 @@
 \Cloud API Server\Replace Text From PDF\PowerShell
 \Cloud API Server\Replace Text From PDF\Python
 \Cloud API Server\Replace Text From PDF\VB.NET
+\Cloud API Server\Replace Text From PDF\zzz_Not Recommended
 \Cloud API Server\Replace Text From PDF\C#\Replace Text From Uploaded File
 \Cloud API Server\Replace Text From PDF\C#\Replace Text From URL
 \Cloud API Server\Replace Text From PDF\C#\Replace Text From URL Asynchronously
@@ -2522,8 +2563,6 @@
 \Cloud API Server\Replace Text From PDF\cURL\Replace Text Multiple Occurances
 \Cloud API Server\Replace Text From PDF\Java\Replace Text From Uploaded File
 \Cloud API Server\Replace Text From PDF\Java\Replace Text From URL
-\Cloud API Server\Replace Text From PDF\JavaScript\Replace Text From File (Node.js)
-\Cloud API Server\Replace Text From PDF\JavaScript\Replace Text From File (Node.js) - Async API
 \Cloud API Server\Replace Text From PDF\JavaScript\Replace Text From Uploaded File (Node.js)
 \Cloud API Server\Replace Text From PDF\JavaScript\Replace Text From Uploaded File (Node.js) - Async API
 \Cloud API Server\Replace Text From PDF\JavaScript\Replace Text From URL (Node.js)
@@ -2539,6 +2578,9 @@
 \Cloud API Server\Replace Text From PDF\VB.NET\Replace Text From Uploaded File
 \Cloud API Server\Replace Text From PDF\VB.NET\Replace Text From URL
 \Cloud API Server\Replace Text From PDF\VB.NET\Replace Text From URL Asynchronously
+\Cloud API Server\Replace Text From PDF\zzz_Not Recommended\JavaScript
+\Cloud API Server\Replace Text From PDF\zzz_Not Recommended\JavaScript\Replace Text From File (Node.js)
+\Cloud API Server\Replace Text From PDF\zzz_Not Recommended\JavaScript\Replace Text From File (Node.js) - Async API
 \Cloud API Server\Replace Text With Image From PDF\C#
 \Cloud API Server\Replace Text With Image From PDF\cURL
 \Cloud API Server\Replace Text With Image From PDF\Java
@@ -2547,14 +2589,13 @@
 \Cloud API Server\Replace Text With Image From PDF\PowerShell
 \Cloud API Server\Replace Text With Image From PDF\Python
 \Cloud API Server\Replace Text With Image From PDF\VB.NET
+\Cloud API Server\Replace Text With Image From PDF\zzz_Not Recommended
 \Cloud API Server\Replace Text With Image From PDF\C#\Replace Text With Image From Uploaded File
 \Cloud API Server\Replace Text With Image From PDF\C#\Replace Text With Image From URL
 \Cloud API Server\Replace Text With Image From PDF\C#\Replace Text With Image From URL Asynchronously
 \Cloud API Server\Replace Text With Image From PDF\cURL\Replace Text With Image
 \Cloud API Server\Replace Text With Image From PDF\Java\Replace Text With Image From Uploaded File
 \Cloud API Server\Replace Text With Image From PDF\Java\Replace Text With Image From URL
-\Cloud API Server\Replace Text With Image From PDF\JavaScript\Replace Text With Image From File (Node.js)
-\Cloud API Server\Replace Text With Image From PDF\JavaScript\Replace Text With Image From File (Node.js) - Async API
 \Cloud API Server\Replace Text With Image From PDF\JavaScript\Replace Text With Image From Uploaded File (Node.js)
 \Cloud API Server\Replace Text With Image From PDF\JavaScript\Replace Text With Image From Uploaded File (Node.js) - Async API
 \Cloud API Server\Replace Text With Image From PDF\JavaScript\Replace Text With Image From URL (Node.js)
@@ -2570,6 +2611,9 @@
 \Cloud API Server\Replace Text With Image From PDF\VB.NET\Replace Text With Image From Uploaded File
 \Cloud API Server\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL
 \Cloud API Server\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL Asynchronously
+\Cloud API Server\Replace Text With Image From PDF\zzz_Not Recommended\JavaScript
+\Cloud API Server\Replace Text With Image From PDF\zzz_Not Recommended\JavaScript\Replace Text With Image From File (Node.js)
+\Cloud API Server\Replace Text With Image From PDF\zzz_Not Recommended\JavaScript\Replace Text With Image From File (Node.js) - Async API
 \Cloud API Server\Text Recognition API\C#
 \Cloud API Server\Text Recognition API\C#\Perform OCR On Uploaded File Asynchronously
 \Data Extraction Suite\ASP Classic
