@@ -16,9 +16,19 @@
 // Please NOTE: In this sample we're assuming Cloud Api Server is hosted at "https://localhost". 
 // If it's not then please replace this with with your hosting url.
 
+// set to the host name for the local server
 const ApiServerHost = "localhost";
 
-const ApiServerHostWithProtocol = `https://${ApiServerHost}`; 
+// uncomment for http:
+const ApiServerPort = "8080";
+const ApiServerProtocol = "http";
+
+// uncomment for https:
+//const ApiServerPort = "443";
+//const ApiServerProtocol = "https";
+
+
+const ApiServerHostWithProtocol = `${ApiServerProtocol}://${ApiServerHost}:${ApiServerPort}`; 
 
 var https = require("https");
 var path = require("path");
