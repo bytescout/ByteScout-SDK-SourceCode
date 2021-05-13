@@ -4867,6 +4867,7 @@
 \PDF.co Web API\Add Text And Images To PDF\JavaScript
 \PDF.co Web API\Add Text And Images To PDF\PowerShell
 \PDF.co Web API\Add Text And Images To PDF\Python
+\PDF.co Web API\Add Text And Images To PDF\Salesforce
 \PDF.co Web API\Add Text And Images To PDF\VB.NET
 \PDF.co Web API\Add Text And Images To PDF\Zapier
 \PDF.co Web API\Add Text And Images To PDF\C#\Add Image by finding target coordinates
@@ -4898,6 +4899,8 @@
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Images to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Text by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Text to Existing PDF
+\PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Image To PDF
+\PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Text To PDF
 \PDF.co Web API\Add Text And Images To PDF\VB.NET\Add Image by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\VB.NET\Add Images to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\VB.NET\Add Text by finding target coordinates
@@ -5062,6 +5065,7 @@
 \PDF.co Web API\DOC To PDF API\PHP
 \PDF.co Web API\DOC To PDF API\PowerShell
 \PDF.co Web API\DOC To PDF API\Python
+\PDF.co Web API\DOC To PDF API\Salesforce
 \PDF.co Web API\DOC To PDF API\VB.NET
 \PDF.co Web API\DOC To PDF API\C#\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\C#\Convert DOC To PDF From URL
@@ -5087,6 +5091,7 @@
 \PDF.co Web API\DOC To PDF API\Python\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\Python\Convert DOC To PDF From URL
 \PDF.co Web API\DOC To PDF API\Python\Convert DOC To PDF From URL Asynchronously
+\PDF.co Web API\DOC To PDF API\Salesforce\Convert Document To PDF
 \PDF.co Web API\DOC To PDF API\VB.NET\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\VB.NET\Convert DOC To PDF From URL
 \PDF.co Web API\DOC To PDF API\VB.NET\Convert DOC To PDF From URL Asynchronously
@@ -5097,6 +5102,7 @@
 \PDF.co Web API\Document Parser API\PHP
 \PDF.co Web API\Document Parser API\Powershell
 \PDF.co Web API\Document Parser API\Python
+\PDF.co Web API\Document Parser API\Salesforce
 \PDF.co Web API\Document Parser API\VB.NET
 \PDF.co Web API\Document Parser API\C#\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\C#\Census table from life and annuity quote request pdf
@@ -5142,6 +5148,7 @@
 \PDF.co Web API\Document Parser API\Powershell\Parse From Url
 \PDF.co Web API\Document Parser API\Python\Parse From Uploaded File
 \PDF.co Web API\Document Parser API\Python\Parse From Url
+\PDF.co Web API\Document Parser API\Salesforce\Document Parser Demo
 \PDF.co Web API\Document Parser API\VB.NET\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\VB.NET\Census table from life and annuity quote request pdf
 \PDF.co Web API\Document Parser API\VB.NET\Create Custom Template
@@ -5279,6 +5286,7 @@
 \PDF.co Web API\HTML To PDF API\PHP
 \PDF.co Web API\HTML To PDF API\PowerShell
 \PDF.co Web API\HTML To PDF API\Python
+\PDF.co Web API\HTML To PDF API\Salesforce
 \PDF.co Web API\HTML To PDF API\VB.NET
 \PDF.co Web API\HTML To PDF API\Zapier
 \PDF.co Web API\HTML To PDF API\C#\Convert Web Page To PDF From Link
@@ -5313,6 +5321,7 @@
 \PDF.co Web API\HTML To PDF API\Python\Generate PDF From HTML File
 \PDF.co Web API\HTML To PDF API\Python\Generate PDF From Large HTML File
 \PDF.co Web API\HTML To PDF API\Python\Generate PDF Invoice From HTML Template
+\PDF.co Web API\HTML To PDF API\Salesforce\Convert HTML to PDF
 \PDF.co Web API\HTML To PDF API\VB.NET\Convert Web Page To PDF From URL
 \PDF.co Web API\HTML To PDF API\VB.NET\Convert Web Page To PDF From URL Asynchronously
 \PDF.co Web API\HTML To PDF API\VB.NET\Generate PDF From HTML File
@@ -5411,6 +5420,7 @@
 \PDF.co Web API\PDF Fill PDF Forms\PHP
 \PDF.co Web API\PDF Fill PDF Forms\PowerShell
 \PDF.co Web API\PDF Fill PDF Forms\Python
+\PDF.co Web API\PDF Fill PDF Forms\Salesforce
 \PDF.co Web API\PDF Fill PDF Forms\VB.NET
 \PDF.co Web API\PDF Fill PDF Forms\C#\Fill PDF Forms
 \PDF.co Web API\PDF Fill PDF Forms\C#\Fill PDF Forms Asynchronously
@@ -5428,6 +5438,7 @@
 \PDF.co Web API\PDF Fill PDF Forms\PowerShell\Fill PDF Forms Simplified
 \PDF.co Web API\PDF Fill PDF Forms\Python\Fill PDF Forms
 \PDF.co Web API\PDF Fill PDF Forms\Python\Fill PDF Forms Simplified
+\PDF.co Web API\PDF Fill PDF Forms\Salesforce\Fill PDF Form
 \PDF.co Web API\PDF Fill PDF Forms\VB.NET\Fill PDF Forms
 \PDF.co Web API\PDF Fill PDF Forms\VB.NET\Fill PDF Forms Simplified
 \PDF.co Web API\PDF Forms Info Reader\C#
