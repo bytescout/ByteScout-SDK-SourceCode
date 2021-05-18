@@ -5604,6 +5604,7 @@
 \PDF.co Web API\PDF Password And Security\PHP
 \PDF.co Web API\PDF Password And Security\PowerShell
 \PDF.co Web API\PDF Password And Security\Python
+\PDF.co Web API\PDF Password And Security\Salesforce
 \PDF.co Web API\PDF Password And Security\VB.NET
 \PDF.co Web API\PDF Password And Security\C#\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\C#\Remove PDF Document Protection
@@ -5619,6 +5620,10 @@
 \PDF.co Web API\PDF Password And Security\PowerShell\Remove PDF Document Protection
 \PDF.co Web API\PDF Password And Security\Python\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\Python\Remove PDF Document Protection
+\PDF.co Web API\PDF Password And Security\Salesforce\Protect PDF Document
+\PDF.co Web API\PDF Password And Security\Salesforce\Protect PDF Document From Uploaded File
+\PDF.co Web API\PDF Password And Security\Salesforce\Remove PDF Document Protection
+\PDF.co Web API\PDF Password And Security\Salesforce\Remove PDF Document Protection From Uploaded File
 \PDF.co Web API\PDF Password And Security\VB.NET\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\VB.NET\Remove PDF Document Protection
 \PDF.co Web API\PDF Splitting API\C#
