@@ -4834,6 +4834,7 @@
 \PDF.co Web API\File Delete
 \PDF.co Web API\File Upload
 \PDF.co Web API\File Upload for Small Files (up to 50KB)
+\PDF.co Web API\Generic API Call
 \PDF.co Web API\HTML To PDF API
 \PDF.co Web API\Image To PDF API
 \PDF.co Web API\Invoice Parser API
@@ -5150,6 +5151,7 @@
 \PDF.co Web API\Document Parser API\Python\Parse From Uploaded File
 \PDF.co Web API\Document Parser API\Python\Parse From Url
 \PDF.co Web API\Document Parser API\Salesforce\Document Parser Demo
+\PDF.co Web API\Document Parser API\Salesforce\Parse Document and Get CSV Output
 \PDF.co Web API\Document Parser API\Sample Templates\Order form with line items and total
 \PDF.co Web API\Document Parser API\VB.NET\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\VB.NET\Census table from life and annuity quote request pdf
@@ -5281,6 +5283,8 @@
 \PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\PHP
 \PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\PowerShell
 \PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\Python
+\PDF.co Web API\Generic API Call\Salesforce
+\PDF.co Web API\Generic API Call\Salesforce\GenericAPICall
 \PDF.co Web API\HTML To PDF API\C#
 \PDF.co Web API\HTML To PDF API\cURL
 \PDF.co Web API\HTML To PDF API\Java
