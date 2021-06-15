@@ -5157,6 +5157,7 @@
 \PDF.co Web API\Document Parser API\Sample Templates\Order form with line items and total
 \PDF.co Web API\Document Parser API\Sample Templates\Parse Hanging Rows In Invoice
 \PDF.co Web API\Document Parser API\Sample Templates\Read values in columns 2 and 3
+\PDF.co Web API\Document Parser API\Sample Templates\Total and Vat tax
 \PDF.co Web API\Document Parser API\VB.NET\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\VB.NET\Census table from life and annuity quote request pdf
 \PDF.co Web API\Document Parser API\VB.NET\Create Custom Template
