@@ -5153,6 +5153,7 @@
 \PDF.co Web API\Document Parser API\Salesforce\Document Parser Demo
 \PDF.co Web API\Document Parser API\Salesforce\Parse Document and Get CSV Output
 \PDF.co Web API\Document Parser API\Sample Templates\Invoice table with some empty columns
+\PDF.co Web API\Document Parser API\Sample Templates\ManyChat Invoice
 \PDF.co Web API\Document Parser API\Sample Templates\Multiline Items Without Borders
 \PDF.co Web API\Document Parser API\Sample Templates\Order form with line items and total
 \PDF.co Web API\Document Parser API\Sample Templates\Parse Hanging Rows In Invoice
