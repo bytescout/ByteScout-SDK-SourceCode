@@ -1,4 +1,4 @@
-$APIBaseURL='http://localhost:80'
+$APIBaseURL='https://api.pdf.co/v1'
 
 $scriptDir = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
 
@@ -39,12 +39,16 @@ function ClassifyDocument($fileUrl, $rules)
         "caseSensitive" = $false
     } | ConvertTo-Json
 
+    $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+    $headers.Add("Content-Type", "application/json")
+    $headers.Add("x-api-key", "")
+
     # Note, rules can also be passed as URL of file `rulesCsvUrl` param instead of `rulesCsv`.
     # Rules can be a spreadhset in CSV, XLS, XLSX, ODS format.
 
     try {
         # Execute request
-        $jsonResponse = Invoke-RestMethod -Method Post -Uri $query -Body $body
+        $jsonResponse = Invoke-RestMethod -Method Post -Uri $query -Body $body -Headers $headers
 
         if ($jsonResponse.error -eq $false) {
             # Asynchronous job ID
@@ -55,7 +59,7 @@ function ClassifyDocument($fileUrl, $rules)
             # Check the job status in a loop. 
             do {
                 $statusCheckUrl = "{0}/job/check?jobid={1}" -f $APIBaseURL, $jobId
-                $jsonStatus = Invoke-RestMethod -Method Get -Uri $statusCheckUrl
+                $jsonStatus = Invoke-RestMethod -Method Get -Uri $statusCheckUrl -Headers $headers
 
                 # Display timestamp and status (for demo purposes)
                 Write-Host "$(Get-date): $($jsonStatus.status)"

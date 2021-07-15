@@ -1825,8 +1825,20 @@
 \Cloud API Server\Manage Background Jobs\PHP
 \Cloud API Server\Manage Background Jobs\PowerShell
 \Cloud API Server\Manage Background Jobs\Python
+\Cloud API Server\PDF Classifier\C#
+\Cloud API Server\PDF Classifier\cURL
+\Cloud API Server\PDF Classifier\Java
+\Cloud API Server\PDF Classifier\JavaScript
+\Cloud API Server\PDF Classifier\PHP
 \Cloud API Server\PDF Classifier\PowerShell
+\Cloud API Server\PDF Classifier\C#\Classify PDF From URL
+\Cloud API Server\PDF Classifier\cURL\Classify PDF From URL
+\Cloud API Server\PDF Classifier\Java\Classify PDF From URL
+\Cloud API Server\PDF Classifier\JavaScript\Classify PDF From URL (jQuery)
+\Cloud API Server\PDF Classifier\JavaScript\Classify PDF From URL (nodeJs)
+\Cloud API Server\PDF Classifier\PHP\Classify PDF From URL
 \Cloud API Server\PDF Classifier\PowerShell\Classify Uploaded PDF Asynchronously
+\Cloud API Server\PDF Classifier\PowerShell\Classify Uploaded PDF From URL
 \Cloud API Server\PDF Create Fillable PDF Forms\C#
 \Cloud API Server\PDF Create Fillable PDF Forms\cURL
 \Cloud API Server\PDF Create Fillable PDF Forms\Java
@@ -4845,6 +4857,7 @@
 \PDF.co Web API\Image To PDF API
 \PDF.co Web API\Invoice Parser API
 \PDF.co Web API\Manage Background Jobs
+\PDF.co Web API\PDF Classifier
 \PDF.co Web API\PDF Create Fillable PDF Forms
 \PDF.co Web API\PDF Delete Pages
 \PDF.co Web API\PDF Fill PDF Forms
@@ -5411,6 +5424,20 @@
 \PDF.co Web API\Manage Background Jobs\PHP
 \PDF.co Web API\Manage Background Jobs\PowerShell
 \PDF.co Web API\Manage Background Jobs\Python
+\PDF.co Web API\PDF Classifier\C#
+\PDF.co Web API\PDF Classifier\cURL
+\PDF.co Web API\PDF Classifier\Java
+\PDF.co Web API\PDF Classifier\JavaScript
+\PDF.co Web API\PDF Classifier\PHP
+\PDF.co Web API\PDF Classifier\PowerShell
+\PDF.co Web API\PDF Classifier\C#\Classify PDF From URL
+\PDF.co Web API\PDF Classifier\cURL\Classify PDF From URL
+\PDF.co Web API\PDF Classifier\Java\Classify PDF From URL
+\PDF.co Web API\PDF Classifier\JavaScript\Classify PDF From URL (jQuery)
+\PDF.co Web API\PDF Classifier\JavaScript\Classify PDF From URL (nodeJs)
+\PDF.co Web API\PDF Classifier\PHP\Classify PDF From URL
+\PDF.co Web API\PDF Classifier\PowerShell\Classify Uploaded PDF Asynchronously
+\PDF.co Web API\PDF Classifier\PowerShell\Classify Uploaded PDF From URL
 \PDF.co Web API\PDF Create Fillable PDF Forms\C#
 \PDF.co Web API\PDF Create Fillable PDF Forms\cURL
 \PDF.co Web API\PDF Create Fillable PDF Forms\Java

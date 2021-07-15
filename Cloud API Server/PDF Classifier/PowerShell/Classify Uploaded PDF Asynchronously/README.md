@@ -1,12 +1,4 @@
-## PDF classifier in PowerShell and ByteScout Cloud API Server
-
-### Learn to code in PowerShell to make PDF classifier with this simple How-To tutorial
-
-Here you may get thousands pre-made source code samples for simple implementation in your own programming PowerShell projects. ByteScout Cloud API Server was created to assist PDF classifier in PowerShell. ByteScout Cloud API Server is the ready to deploy Web API Server that can be deployed in less than thirty minutes into your own in-house Windows server (no Internet connnection is required to process data!) or into private cloud server. Can store data on in-house local server based storage or in Amazon AWS S3 bucket. Processing data solely on the server using built-in ByteScout powered engine, no cloud services are used to process your data!.
-
- Want to speed up the application development? Then this PowerShell, code samples for PowerShell, developers help to speed up the application development and writing a code when using ByteScout Cloud API Server. If you want to know how it works, then this PowerShell sample code should be copied and pasted into your application’s code editor. Then just compile and run it. These PowerShell sample examples can be used in one or many applications.
-
-Trial version can be downloaded from our website for free. It contains this and other source code samples for PowerShell.
+## PDF classifier in PowerShell using ByteScout Cloud API Server ByteScout Cloud API Server is the ready to deploy Web API Server that can be deployed in less than thirty minutes into your own in-house Windows server (no Internet connnection is required to process data!) or into private cloud server. Can store data on in-house local server based storage or in Amazon AWS S3 bucket. Processing data solely on the server using built-in ByteScout powered engine, no cloud services are used to process your data!.
 
 ## REQUEST FREE TECH SUPPORT
 
@@ -17,14 +9,16 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ## ON-PREMISE OFFLINE SDK 
 
 [Get Your 60 Day Free Trial](https://bytescout.com/download/web-installer?utm_source=github-readme)
-[Explore SDK Docs](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Documentation](https://bytescout.com/documentation/index.html?utm_source=github-readme)
+[Explore Source Code Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/)
 [Sign Up For Online Training](https://academy.bytescout.com/)
 
 
 ## ON-DEMAND REST WEB API
 
-[Get your API key](https://pdf.co/documentation/api?utm_source=github-readme)
-[Explore Web API Documentation](https://pdf.co/documentation/api?utm_source=github-readme)
+[Get your API key](https://app.pdf.co/signup?utm_source=github-readme)
+[Security](https://pdf.co/security)
+[Explore Web API Documentation](https://apidocs.pdf.co?utm_source=github-readme)
 [Explore Web API Samples](https://github.com/bytescout/ByteScout-SDK-SourceCode/tree/master/PDF.co%20Web%20API)
 
 ## VIDEO REVIEW
@@ -76,9 +70,7 @@ function ClassifyDocument($fileUrl, $rules)
     $body = @{
         "async" = "true";
         "url" = $fileUrl;
-        "rulesCsv" = $rules;
-        "resultIdentifiersColumn" = $ResultIdentifiersColumnIndex;
-        "rulesColumn" = $RulesColumnIndex;
+        "rulescsv" = $rules;
         "caseSensitive" = $false
     } | ConvertTo-Json
 
