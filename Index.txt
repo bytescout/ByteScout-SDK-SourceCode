@@ -3510,6 +3510,8 @@
 \PDF Extractor SDK\C#\Find Keyword And Extract Text in PDF
 \PDF Extractor SDK\C#\Find PDF Borderless Table And Extract As CSV
 \PDF Extractor SDK\C#\Find PDF Table And Extract As CSV
+\PDF Extractor SDK\C#\Find PDF Table And Extract As JSON
+\PDF Extractor SDK\C#\Find PDF Table And Extract As Text
 \PDF Extractor SDK\C#\Find PDF Table And Extract As XML
 \PDF Extractor SDK\C#\Find Phone Number in PDF with Regex
 \PDF Extractor SDK\C#\Find SSN in PDF with Regex
@@ -3680,6 +3682,8 @@
 \PDF Extractor SDK\VB.NET\Find Phone Number in PDF with Regex
 \PDF Extractor SDK\VB.NET\Find SSN Number in PDF with Regex
 \PDF Extractor SDK\VB.NET\Find Table in PDF And Extract As CSV
+\PDF Extractor SDK\VB.NET\Find Table in PDF And Extract As JSON
+\PDF Extractor SDK\VB.NET\Find Table in PDF And Extract As Text
 \PDF Extractor SDK\VB.NET\Find Table in PDF And Extract As XML
 \PDF Extractor SDK\VB.NET\Find Text in PDF
 \PDF Extractor SDK\VB.NET\Find Text in PDF with Regex
