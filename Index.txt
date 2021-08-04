@@ -4883,6 +4883,7 @@
 \PDF.co Web API\Add Text And Images To PDF\C#
 \PDF.co Web API\Add Text And Images To PDF\cURL
 \PDF.co Web API\Add Text And Images To PDF\Delphi
+\PDF.co Web API\Add Text And Images To PDF\GoogleAppScript
 \PDF.co Web API\Add Text And Images To PDF\Java
 \PDF.co Web API\Add Text And Images To PDF\JavaScript
 \PDF.co Web API\Add Text And Images To PDF\PowerShell
@@ -4899,6 +4900,8 @@
 \PDF.co Web API\Add Text And Images To PDF\cURL\PDF Add Text, Images, Text Fields, Checkboxes
 \PDF.co Web API\Add Text And Images To PDF\cURL\PDF Add Text, Images, Text Fields, Checkboxes - Simplified
 \PDF.co Web API\Add Text And Images To PDF\Delphi\Add Text And Images To PDF
+\PDF.co Web API\Add Text And Images To PDF\GoogleAppScript\Add Image to PDF
+\PDF.co Web API\Add Text And Images To PDF\GoogleAppScript\Add Text to PDF
 \PDF.co Web API\Add Text And Images To PDF\Java\Add Image by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\Java\Add Images to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\Java\Add Text by finding target coordinates
@@ -5571,6 +5574,7 @@
 \PDF.co Web API\PDF Merging API\C#
 \PDF.co Web API\PDF Merging API\cURL
 \PDF.co Web API\PDF Merging API\Delphi
+\PDF.co Web API\PDF Merging API\GoogleAppScript
 \PDF.co Web API\PDF Merging API\Java
 \PDF.co Web API\PDF Merging API\JavaScript
 \PDF.co Web API\PDF Merging API\PHP
@@ -5587,6 +5591,7 @@
 \PDF.co Web API\PDF Merging API\cURL\PDF Merger
 \PDF.co Web API\PDF Merging API\Delphi\Merge Any Documents From URLs
 \PDF.co Web API\PDF Merging API\Delphi\Merge PDF Documents From URLs
+\PDF.co Web API\PDF Merging API\GoogleAppScript\Merge PDF Urls
 \PDF.co Web API\PDF Merging API\Java\Merge Any Documents From URLs
 \PDF.co Web API\PDF Merging API\Java\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\Java\Merge PDF Documents From URLs
