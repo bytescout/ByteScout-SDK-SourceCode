@@ -5592,6 +5592,7 @@
 \PDF.co Web API\PDF Merging API\cURL\PDF Merger
 \PDF.co Web API\PDF Merging API\Delphi\Merge Any Documents From URLs
 \PDF.co Web API\PDF Merging API\Delphi\Merge PDF Documents From URLs
+\PDF.co Web API\PDF Merging API\GoogleAppScript\Merge PDF from Google Drive and Save back
 \PDF.co Web API\PDF Merging API\GoogleAppScript\Merge PDF Urls
 \PDF.co Web API\PDF Merging API\Java\Merge Any Documents From URLs
 \PDF.co Web API\PDF Merging API\Java\Merge PDF Documents From Uploaded Files
