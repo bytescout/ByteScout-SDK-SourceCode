@@ -4023,6 +4023,7 @@
 \PDF SDK\C#\Shift Page Content
 \PDF SDK\C#\Sign PDF and Set Security
 \PDF SDK\C#\Split PDF Document
+\PDF SDK\C#\Use PDF as Background to Other PDF
 \PDF SDK\C#\Use PDF Layers
 \PDF SDK\Delphi\Add Header And Footer
 \PDF SDK\Delphi\Add Page Numbers
@@ -4115,6 +4116,7 @@
 \PDF SDK\VB.NET\Sign PDF
 \PDF SDK\VB.NET\Use Drawing Transformations for PDF
 \PDF SDK\VB.NET\Use Markup for Annotations in PDF
+\PDF SDK\VB.NET\Use PDF as Background to Other PDF
 \PDF SDK\VB.NET\Use PDF Layers
 \PDF SDK\VB.NET\Use Right To Left Text in PDF
 \PDF SDK\VB.NET\Use String Scaling in PDF
