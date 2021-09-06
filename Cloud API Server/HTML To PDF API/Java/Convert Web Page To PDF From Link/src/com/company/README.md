@@ -50,7 +50,7 @@ import java.nio.file.Paths;
 public class Main
 {
     // URL of web page to convert to PDF document.
-    final static String SourceUrl = "http://www.usa.gov";
+    final static String SourceUrl = "http://en.wikipedia.org/wiki/Main_Page";
     // Destination PDF file name
     final static Path DestinationFile = Paths.get(".\\result.pdf");
 

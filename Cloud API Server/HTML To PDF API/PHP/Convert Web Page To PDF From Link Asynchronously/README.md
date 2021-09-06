@@ -58,7 +58,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 // Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 // URL of web page to convert to PDF document.
-$sourceUrl = "http://www.usa.gov";
+$sourceUrl = "http://en.wikipedia.org/wiki/Main_Page";
 
 // Prepare URL for `Web Page to PDF` API call
 $url = "https://localhost/pdf/convert/from/url" . 

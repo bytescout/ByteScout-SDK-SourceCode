@@ -46,7 +46,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 # Allows to avoid timeout errors when processing huge or scanned PDF documents.
 
 # URL of web page to convert to PDF document.
-$SourceUrl = "http://www.usa.gov"
+$SourceUrl = "http://en.wikipedia.org/wiki/Main_Page"
 # Destination PDF file name
 $DestinationFile = ".\result.pdf"
 # (!) Make asynchronous job

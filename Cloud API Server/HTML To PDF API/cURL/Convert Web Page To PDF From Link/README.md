@@ -45,7 +45,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 set CURL="curl.exe"
 
 :: URL of web page to convert to PDF document.
-set SOURCE_URL=http://www.usa.gov
+set SOURCE_URL=http://en.wikipedia.org/wiki/Main_Page
 :: Result PDF file name
 set RESULT_FILE_NAME=result.pdf
 

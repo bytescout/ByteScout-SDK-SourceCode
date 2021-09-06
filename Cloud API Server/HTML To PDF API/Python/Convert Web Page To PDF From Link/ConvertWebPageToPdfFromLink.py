@@ -8,7 +8,7 @@ import requests # pip install requests
 BASE_URL = "https://localhost"
 
 # URL of web page to convert to PDF document.
-SourceUrl = "http://www.usa.gov"
+SourceUrl = "http://en.wikipedia.org/wiki/Main_Page"
 # Destination PDF file name
 DestinationFile = ".\\result.pdf"
 

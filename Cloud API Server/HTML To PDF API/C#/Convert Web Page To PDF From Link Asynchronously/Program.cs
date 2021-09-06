@@ -29,7 +29,7 @@ namespace ByteScoutWebApiExample
 	{
 
 		// URL of web page to convert to PDF document.
-		const string SourceUrl = "http://www.usa.gov";
+		const string SourceUrl = "http://en.wikipedia.org/wiki/Main_Page";
 		// Destination PDF file name
 		const string DestinationFile = @".\result.pdf";
 		// (!) Make asynchronous job
