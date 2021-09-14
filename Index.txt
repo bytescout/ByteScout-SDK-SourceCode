@@ -5129,7 +5129,7 @@
 \PDF.co Web API\Document Parser API\Powershell
 \PDF.co Web API\Document Parser API\Python
 \PDF.co Web API\Document Parser API\Salesforce
-\PDF.co Web API\Document Parser API\Sample Templates
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES
 \PDF.co Web API\Document Parser API\VB.NET
 \PDF.co Web API\Document Parser API\C#\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\C#\Census table from life and annuity quote request pdf
@@ -5177,16 +5177,17 @@
 \PDF.co Web API\Document Parser API\Python\Parse From Url
 \PDF.co Web API\Document Parser API\Salesforce\Document Parser Demo
 \PDF.co Web API\Document Parser API\Salesforce\Parse Document and Get CSV Output
-\PDF.co Web API\Document Parser API\Sample Templates\Invoice table with some empty columns
-\PDF.co Web API\Document Parser API\Sample Templates\Invoice with few line items in EUR
-\PDF.co Web API\Document Parser API\Sample Templates\Invoice with line items in bordered table
-\PDF.co Web API\Document Parser API\Sample Templates\ManyChat Invoice
-\PDF.co Web API\Document Parser API\Sample Templates\Multiline Items Without Borders
-\PDF.co Web API\Document Parser API\Sample Templates\Order form with line items and total
-\PDF.co Web API\Document Parser API\Sample Templates\Parse Hanging Rows In Invoice
-\PDF.co Web API\Document Parser API\Sample Templates\Read values in columns 2 and 3
-\PDF.co Web API\Document Parser API\Sample Templates\Tax Invoice with Line Items
-\PDF.co Web API\Document Parser API\Sample Templates\Total and Vat tax
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice table with some empty columns
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with few line items in EUR
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with line items in bordered table
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Key Value Fields From Echocardiogram Report
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\ManyChat Invoice
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Multiline Items Without Borders
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Order form with line items and total
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Hanging Rows In Invoice
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Read values in columns 2 and 3
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Tax Invoice with Line Items
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Total and Vat tax
 \PDF.co Web API\Document Parser API\VB.NET\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\VB.NET\Census table from life and annuity quote request pdf
 \PDF.co Web API\Document Parser API\VB.NET\Create Custom Template
