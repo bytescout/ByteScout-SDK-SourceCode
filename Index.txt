@@ -4892,6 +4892,7 @@
 \PDF.co Web API\Add Text And Images To PDF\PowerShell
 \PDF.co Web API\Add Text And Images To PDF\Python
 \PDF.co Web API\Add Text And Images To PDF\Salesforce
+\PDF.co Web API\Add Text And Images To PDF\SharePoint
 \PDF.co Web API\Add Text And Images To PDF\VB.NET
 \PDF.co Web API\Add Text And Images To PDF\Zapier
 \PDF.co Web API\Add Text And Images To PDF\C#\Add Image by finding target coordinates
@@ -4927,6 +4928,11 @@
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Text to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Image To PDF
 \PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Text To PDF
+\PDF.co Web API\Add Text And Images To PDF\SharePoint\Add Text and Images to PDF
+\PDF.co Web API\Add Text And Images To PDF\SharePoint\Add Text and Images to PDF\Features
+\PDF.co Web API\Add Text And Images To PDF\SharePoint\Add Text and Images to PDF\Package
+\PDF.co Web API\Add Text And Images To PDF\SharePoint\Add Text and Images to PDF\VisualWebPart1
+\PDF.co Web API\Add Text And Images To PDF\SharePoint\Add Text and Images to PDF\Features\Feature1
 \PDF.co Web API\Add Text And Images To PDF\VB.NET\Add Image by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\VB.NET\Add Images to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\VB.NET\Add Text by finding target coordinates
@@ -5129,6 +5135,7 @@
 \PDF.co Web API\Document Parser API\Powershell
 \PDF.co Web API\Document Parser API\Python
 \PDF.co Web API\Document Parser API\Salesforce
+\PDF.co Web API\Document Parser API\SharePoint
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES
 \PDF.co Web API\Document Parser API\VB.NET
 \PDF.co Web API\Document Parser API\C#\Blood Test Results to JSON
@@ -5177,6 +5184,12 @@
 \PDF.co Web API\Document Parser API\Python\Parse From Url
 \PDF.co Web API\Document Parser API\Salesforce\Document Parser Demo
 \PDF.co Web API\Document Parser API\Salesforce\Parse Document and Get CSV Output
+\PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information
+\PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Features
+\PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Package
+\PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Sample
+\PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\VisualWebPart1
+\PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Features\Feature1
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice table with some empty columns
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with few line items in EUR
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with line items in bordered table
@@ -5335,6 +5348,7 @@
 \PDF.co Web API\HTML To PDF API\PowerShell
 \PDF.co Web API\HTML To PDF API\Python
 \PDF.co Web API\HTML To PDF API\Salesforce
+\PDF.co Web API\HTML To PDF API\SharePoint
 \PDF.co Web API\HTML To PDF API\VB.NET
 \PDF.co Web API\HTML To PDF API\Zapier
 \PDF.co Web API\HTML To PDF API\C#\Convert Web Page To PDF From Link
@@ -5370,6 +5384,11 @@
 \PDF.co Web API\HTML To PDF API\Python\Generate PDF From Large HTML File
 \PDF.co Web API\HTML To PDF API\Python\Generate PDF Invoice From HTML Template
 \PDF.co Web API\HTML To PDF API\Salesforce\Convert HTML to PDF
+\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF
+\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF\Features
+\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF\Package
+\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF\VisualWebPart1
+\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF\Features\Feature1
 \PDF.co Web API\HTML To PDF API\VB.NET\Convert Web Page To PDF From URL
 \PDF.co Web API\HTML To PDF API\VB.NET\Convert Web Page To PDF From URL Asynchronously
 \PDF.co Web API\HTML To PDF API\VB.NET\Generate PDF From HTML File
@@ -5788,6 +5807,7 @@
 \PDF.co Web API\PDF To CSV API\PHP
 \PDF.co Web API\PDF To CSV API\PowerShell
 \PDF.co Web API\PDF To CSV API\Python
+\PDF.co Web API\PDF To CSV API\SharePoint
 \PDF.co Web API\PDF To CSV API\VB.NET
 \PDF.co Web API\PDF To CSV API\Zapier
 \PDF.co Web API\PDF To CSV API\C#\Advanced Conversion Options
@@ -5829,6 +5849,11 @@
 \PDF.co Web API\PDF To CSV API\Python\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\Python\Convert PDF To CSV From Uploaded File
 \PDF.co Web API\PDF To CSV API\Python\Convert PDF To CSV From Uploaded File Asynchronously
+\PDF.co Web API\PDF To CSV API\SharePoint\Convert PDF To CSV
+\PDF.co Web API\PDF To CSV API\SharePoint\Convert PDF To CSV\Features
+\PDF.co Web API\PDF To CSV API\SharePoint\Convert PDF To CSV\Package
+\PDF.co Web API\PDF To CSV API\SharePoint\Convert PDF To CSV\VisualWebPart1
+\PDF.co Web API\PDF To CSV API\SharePoint\Convert PDF To CSV\Features\Feature1
 \PDF.co Web API\PDF To CSV API\VB.NET\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\VB.NET\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\VB.NET\Async file upload and async PDF to CSV
