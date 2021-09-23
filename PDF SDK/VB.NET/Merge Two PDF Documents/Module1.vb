@@ -25,10 +25,8 @@ Module Module1
         document2.RegistrationName = "demo"
         document2.RegistrationKey = "demo"
 
-        ' Add pages from document2 to document1
-        For i As Integer = 0 To document2.Pages.Count - 1
-            document1.Pages.Add(document2.Pages(i))
-        Next
+        ' Append document2 to document1
+        document1.MergeDocuments(document2)
 
         ' Save merged document
         document1.Save("MergedDocument.pdf")

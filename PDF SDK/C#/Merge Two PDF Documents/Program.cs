@@ -29,12 +29,9 @@ namespace CopyPagesFromOneDocumentToAnother
             document2.RegistrationName = "demo";
             document2.RegistrationKey = "demo";
             
-            // Add pages from document2 to document1
-            for (int i = 0; i < document2.Pages.Count; ++i)
-            {
-                document1.Pages.Add(document2.Pages[i]);
-            }
-
+            // Append document2 to document1
+            document1.MergeDocuments(document2);
+            
             // Save merged document
             document1.Save("MergedDocument.pdf");
 
