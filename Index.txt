@@ -4841,7 +4841,6 @@
 \PDF.co Web API\Add Text And Images To PDF
 \PDF.co Web API\Barcode Generator API
 \PDF.co Web API\Barcode Reader API
-\PDF.co Web API\CSV To PDF API
 \PDF.co Web API\Delete Text From PDF
 \PDF.co Web API\DOC To PDF API
 \PDF.co Web API\Document Parser API
@@ -4849,39 +4848,50 @@
 \PDF.co Web API\Excel To CSV API
 \PDF.co Web API\Excel To HTML API
 \PDF.co Web API\Excel To JSON API
-\PDF.co Web API\Excel To PDF API
+\PDF.co Web API\Excel To TXT
+\PDF.co Web API\Excel To XML
 \PDF.co Web API\File Calculate Hash
 \PDF.co Web API\File Delete
 \PDF.co Web API\File Upload
 \PDF.co Web API\File Upload for Small Files (up to 50KB)
 \PDF.co Web API\Generic API Call
-\PDF.co Web API\HTML To PDF API
 \PDF.co Web API\Image To PDF API
 \PDF.co Web API\Invoice Parser API
 \PDF.co Web API\Manage Background Jobs
+\PDF.co Web API\MISC Account Related
 \PDF.co Web API\PDF Classifier
 \PDF.co Web API\PDF Create Fillable PDF Forms
 \PDF.co Web API\PDF Delete Pages
 \PDF.co Web API\PDF Fill PDF Forms
 \PDF.co Web API\PDF Forms Info Reader
+\PDF.co Web API\PDF From CSV
+\PDF.co Web API\PDF From Excel
+\PDF.co Web API\PDF from HTML
+\PDF.co Web API\PDF from HTML template
+\PDF.co Web API\PDF from URL
 \PDF.co Web API\PDF Information API
 \PDF.co Web API\PDF Make Searchable API
 \PDF.co Web API\PDF Merging API
 \PDF.co Web API\PDF Optimization API
 \PDF.co Web API\PDF Password And Security
+\PDF.co Web API\PDF Search Tables
 \PDF.co Web API\PDF Splitting API
 \PDF.co Web API\PDF Text Search API
 \PDF.co Web API\PDF To CSV API
-\PDF.co Web API\PDF To Excel API
 \PDF.co Web API\PDF To HTML API
-\PDF.co Web API\PDF To Image API
+\PDF.co Web API\PDF To JPG
 \PDF.co Web API\PDF To JSON API
+\PDF.co Web API\PDF To PNG
 \PDF.co Web API\PDF To Text API
+\PDF.co Web API\PDF To TIFF
+\PDF.co Web API\PDF To XLS
+\PDF.co Web API\PDF To XLSX
 \PDF.co Web API\PDF To XML API
 \PDF.co Web API\Render Url As Jpg
 \PDF.co Web API\Render Url As Png
 \PDF.co Web API\Replace Text From PDF
 \PDF.co Web API\Replace Text With Image From PDF
+\PDF.co Web API\Translate PDF
 \PDF.co Web API\Add Text And Images To PDF\C#
 \PDF.co Web API\Add Text And Images To PDF\cURL
 \PDF.co Web API\Add Text And Images To PDF\Delphi
@@ -5020,39 +5030,6 @@
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Code 128
 \PDF.co Web API\Barcode Reader API\VB.NET\Read EAN 13
 \PDF.co Web API\Barcode Reader API\VB.NET\Read QR Code
-\PDF.co Web API\CSV To PDF API\C#
-\PDF.co Web API\CSV To PDF API\cURL
-\PDF.co Web API\CSV To PDF API\Java
-\PDF.co Web API\CSV To PDF API\JavaScript
-\PDF.co Web API\CSV To PDF API\PHP
-\PDF.co Web API\CSV To PDF API\PowerShell
-\PDF.co Web API\CSV To PDF API\Python
-\PDF.co Web API\CSV To PDF API\VB.NET
-\PDF.co Web API\CSV To PDF API\C#\Convert CSV To PDF From Uploaded File
-\PDF.co Web API\CSV To PDF API\C#\Convert CSV To PDF From URL
-\PDF.co Web API\CSV To PDF API\C#\Convert CSV To PDF From URL Asynchronously
-\PDF.co Web API\CSV To PDF API\cURL\Convert CSV to PDF from File
-\PDF.co Web API\CSV To PDF API\cURL\Convert CSV To PDF From URL
-\PDF.co Web API\CSV To PDF API\cURL\PDF from CSV (CSV to PDF)
-\PDF.co Web API\CSV To PDF API\Java\Convert CSV To PDF From Uploaded File
-\PDF.co Web API\CSV To PDF API\Java\Convert CSV To PDF From URL
-\PDF.co Web API\CSV To PDF API\JavaScript\Convert CSV To PDF From File (Node.js)
-\PDF.co Web API\CSV To PDF API\JavaScript\Convert CSV To PDF From File (Node.js) - Async API
-\PDF.co Web API\CSV To PDF API\JavaScript\Convert CSV To PDF From Uploaded File (Node.js)
-\PDF.co Web API\CSV To PDF API\JavaScript\Convert CSV To PDF From Uploaded File (Node.js) - Async API
-\PDF.co Web API\CSV To PDF API\JavaScript\Convert CSV To PDF From URL (Node.js)
-\PDF.co Web API\CSV To PDF API\JavaScript\Convert CSV To PDF From URL (Node.js) - Async API
-\PDF.co Web API\CSV To PDF API\PHP\Convert CSV To PDF Asynchronously
-\PDF.co Web API\CSV To PDF API\PHP\Convert CSV To PDF From Uploaded File
-\PDF.co Web API\CSV To PDF API\PowerShell\Convert CSV To PDF From Uploaded File
-\PDF.co Web API\CSV To PDF API\PowerShell\Convert CSV To PDF From URL
-\PDF.co Web API\CSV To PDF API\PowerShell\Convert CSV To PDF From URL Asynchronously
-\PDF.co Web API\CSV To PDF API\Python\Convert CSV To PDF From Uploaded File
-\PDF.co Web API\CSV To PDF API\Python\Convert CSV To PDF From URL
-\PDF.co Web API\CSV To PDF API\Python\Convert CSV To PDF From URL Asynchronously
-\PDF.co Web API\CSV To PDF API\VB.NET\Convert CSV To PDF From Uploaded File
-\PDF.co Web API\CSV To PDF API\VB.NET\Convert CSV To PDF From URL
-\PDF.co Web API\CSV To PDF API\VB.NET\Convert CSV To PDF From URL Asynchronously
 \PDF.co Web API\Delete Text From PDF\C#
 \PDF.co Web API\Delete Text From PDF\cURL
 \PDF.co Web API\Delete Text From PDF\Delphi
@@ -5270,13 +5247,10 @@
 \PDF.co Web API\Excel To JSON API\cURL\Excel To JSON
 \PDF.co Web API\Excel To JSON API\JavaScript\Convert Excel to JSON in jQuery
 \PDF.co Web API\Excel To JSON API\JavaScript\Convert Excel to JSON in jQuery - Async API
-\PDF.co Web API\Excel To PDF API\cURL
-\PDF.co Web API\Excel To PDF API\JavaScript
-\PDF.co Web API\Excel To PDF API\Zapier
-\PDF.co Web API\Excel To PDF API\cURL\Excel To PDF
-\PDF.co Web API\Excel To PDF API\JavaScript\Convert Excel to PDF in JQuery
-\PDF.co Web API\Excel To PDF API\JavaScript\Convert Excel to PDF in JQuery - Async API
-\PDF.co Web API\Excel To PDF API\Zapier\Google Sheets to PDF export type
+\PDF.co Web API\Excel To TXT\cURL
+\PDF.co Web API\Excel To TXT\cURL\Convert Excel To TXT
+\PDF.co Web API\Excel To XML\cURL
+\PDF.co Web API\Excel To XML\cURL\Convert Excel to XML
 \PDF.co Web API\File Calculate Hash\C#
 \PDF.co Web API\File Calculate Hash\cURL
 \PDF.co Web API\File Calculate Hash\Java
@@ -5340,62 +5314,6 @@
 \PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\Python
 \PDF.co Web API\Generic API Call\Salesforce
 \PDF.co Web API\Generic API Call\Salesforce\GenericAPICall
-\PDF.co Web API\HTML To PDF API\C#
-\PDF.co Web API\HTML To PDF API\cURL
-\PDF.co Web API\HTML To PDF API\Java
-\PDF.co Web API\HTML To PDF API\JavaScript
-\PDF.co Web API\HTML To PDF API\PHP
-\PDF.co Web API\HTML To PDF API\PowerShell
-\PDF.co Web API\HTML To PDF API\Python
-\PDF.co Web API\HTML To PDF API\Salesforce
-\PDF.co Web API\HTML To PDF API\SharePoint
-\PDF.co Web API\HTML To PDF API\VB.NET
-\PDF.co Web API\HTML To PDF API\Zapier
-\PDF.co Web API\HTML To PDF API\C#\Convert Web Page To PDF From Link
-\PDF.co Web API\HTML To PDF API\C#\Convert Web Page To PDF From Link Asynchronously
-\PDF.co Web API\HTML To PDF API\C#\Generate PDF From HTML File
-\PDF.co Web API\HTML To PDF API\C#\Generate PDF From Large HTML File
-\PDF.co Web API\HTML To PDF API\C#\Generate PDF Invoice From HTML Template
-\PDF.co Web API\HTML To PDF API\cURL\Convert Web Page To PDF From Link
-\PDF.co Web API\HTML To PDF API\cURL\PDF From HTML
-\PDF.co Web API\HTML To PDF API\Java\Convert Web Page To PDF From Link
-\PDF.co Web API\HTML To PDF API\Java\Generate PDF From HTML File
-\PDF.co Web API\HTML To PDF API\Java\Generate PDF From Large HTML File
-\PDF.co Web API\HTML To PDF API\Java\Generate PDF Invoice From HTML Template
-\PDF.co Web API\HTML To PDF API\JavaScript\Convert Web Page To PDF From Link (Node.js)
-\PDF.co Web API\HTML To PDF API\JavaScript\Convert Web Page To PDF From Link (Node.js) - Async API
-\PDF.co Web API\HTML To PDF API\JavaScript\Generate PDF From HTML File
-\PDF.co Web API\HTML To PDF API\JavaScript\Generate PDF From Large HTML File
-\PDF.co Web API\HTML To PDF API\JavaScript\Generate PDF Invoice From HTML Template (Node.js)
-\PDF.co Web API\HTML To PDF API\JavaScript\Generate PDF Invoice From HTML Template (Node.js) - Async API
-\PDF.co Web API\HTML To PDF API\PHP\Convert Web Page To PDF From Link
-\PDF.co Web API\HTML To PDF API\PHP\Convert Web Page To PDF From Link Asynchronously
-\PDF.co Web API\HTML To PDF API\PHP\Generate PDF From HTML File
-\PDF.co Web API\HTML To PDF API\PHP\Generate PDF From Large HTML File
-\PDF.co Web API\HTML To PDF API\PHP\Generate PDF Invoice From HTML Template
-\PDF.co Web API\HTML To PDF API\PowerShell\Convert Web Page To PDF From Link
-\PDF.co Web API\HTML To PDF API\PowerShell\Convert Web Page To PDF From Link Asynchronously
-\PDF.co Web API\HTML To PDF API\PowerShell\Generate PDF From HTML File
-\PDF.co Web API\HTML To PDF API\PowerShell\Generate PDF From Large HTML File
-\PDF.co Web API\HTML To PDF API\PowerShell\Generate PDF Invoice From HTML Template
-\PDF.co Web API\HTML To PDF API\Python\Convert Web Page To PDF From Link
-\PDF.co Web API\HTML To PDF API\Python\Convert Web Page To PDF From Link Asynchronously
-\PDF.co Web API\HTML To PDF API\Python\Generate PDF From HTML File
-\PDF.co Web API\HTML To PDF API\Python\Generate PDF From Large HTML File
-\PDF.co Web API\HTML To PDF API\Python\Generate PDF Invoice From HTML Template
-\PDF.co Web API\HTML To PDF API\Salesforce\Convert HTML to PDF
-\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF
-\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF\Features
-\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF\Package
-\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF\VisualWebPart1
-\PDF.co Web API\HTML To PDF API\SharePoint\Convert HTML to PDF\Features\Feature1
-\PDF.co Web API\HTML To PDF API\VB.NET\Convert Web Page To PDF From URL
-\PDF.co Web API\HTML To PDF API\VB.NET\Convert Web Page To PDF From URL Asynchronously
-\PDF.co Web API\HTML To PDF API\VB.NET\Generate PDF From HTML File
-\PDF.co Web API\HTML To PDF API\VB.NET\Generate PDF From Large HTML File
-\PDF.co Web API\HTML To PDF API\VB.NET\Generate PDF Invoice From HTML Template
-\PDF.co Web API\HTML To PDF API\Zapier\Google Forms to PDF
-\PDF.co Web API\HTML To PDF API\Zapier\Pipedrive CRM to PDF
 \PDF.co Web API\Image To PDF API\C#
 \PDF.co Web API\Image To PDF API\cURL
 \PDF.co Web API\Image To PDF API\Java
@@ -5457,6 +5375,15 @@
 \PDF.co Web API\Manage Background Jobs\PHP
 \PDF.co Web API\Manage Background Jobs\PowerShell
 \PDF.co Web API\Manage Background Jobs\Python
+\PDF.co Web API\Manage Background Jobs\C#\Check Job Status
+\PDF.co Web API\Manage Background Jobs\cURL\Check Job Status
+\PDF.co Web API\Manage Background Jobs\Java\Check Job Status
+\PDF.co Web API\Manage Background Jobs\JavaScript\Check Job Status
+\PDF.co Web API\Manage Background Jobs\PHP\Check Job Status
+\PDF.co Web API\Manage Background Jobs\PowerShell\Check Job Status
+\PDF.co Web API\Manage Background Jobs\Python\Check Job Status
+\PDF.co Web API\MISC Account Related\cURL
+\PDF.co Web API\MISC Account Related\cURL\Check Credit Balance
 \PDF.co Web API\PDF Classifier\C#
 \PDF.co Web API\PDF Classifier\cURL
 \PDF.co Web API\PDF Classifier\Java
@@ -5529,6 +5456,124 @@
 \PDF.co Web API\PDF Forms Info Reader\PHP
 \PDF.co Web API\PDF Forms Info Reader\PowerShell
 \PDF.co Web API\PDF Forms Info Reader\Python
+\PDF.co Web API\PDF Forms Info Reader\C#\Read PDF Form Information
+\PDF.co Web API\PDF Forms Info Reader\cURL\Read PDF Form Information
+\PDF.co Web API\PDF Forms Info Reader\Java\Read PDF Form Information
+\PDF.co Web API\PDF Forms Info Reader\JavaScript\Read PDF Form Information
+\PDF.co Web API\PDF Forms Info Reader\PHP\Read PDF Form Information
+\PDF.co Web API\PDF Forms Info Reader\PowerShell\Read PDF Form Information
+\PDF.co Web API\PDF Forms Info Reader\Python\Read PDF Form Information
+\PDF.co Web API\PDF From CSV\C#
+\PDF.co Web API\PDF From CSV\cURL
+\PDF.co Web API\PDF From CSV\Java
+\PDF.co Web API\PDF From CSV\JavaScript
+\PDF.co Web API\PDF From CSV\PHP
+\PDF.co Web API\PDF From CSV\PowerShell
+\PDF.co Web API\PDF From CSV\Python
+\PDF.co Web API\PDF From CSV\VB.NET
+\PDF.co Web API\PDF From CSV\C#\Convert CSV To PDF From Uploaded File
+\PDF.co Web API\PDF From CSV\C#\Convert CSV To PDF From URL
+\PDF.co Web API\PDF From CSV\C#\Convert CSV To PDF From URL Asynchronously
+\PDF.co Web API\PDF From CSV\cURL\Convert CSV to PDF from File
+\PDF.co Web API\PDF From CSV\cURL\Convert CSV To PDF From URL
+\PDF.co Web API\PDF From CSV\cURL\PDF from CSV (CSV to PDF)
+\PDF.co Web API\PDF From CSV\Java\Convert CSV To PDF From Uploaded File
+\PDF.co Web API\PDF From CSV\Java\Convert CSV To PDF From URL
+\PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From File (Node.js)
+\PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From File (Node.js) - Async API
+\PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From Uploaded File (Node.js)
+\PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From Uploaded File (Node.js) - Async API
+\PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From URL (Node.js)
+\PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From URL (Node.js) - Async API
+\PDF.co Web API\PDF From CSV\PHP\Convert CSV To PDF Asynchronously
+\PDF.co Web API\PDF From CSV\PHP\Convert CSV To PDF From Uploaded File
+\PDF.co Web API\PDF From CSV\PowerShell\Convert CSV To PDF From Uploaded File
+\PDF.co Web API\PDF From CSV\PowerShell\Convert CSV To PDF From URL
+\PDF.co Web API\PDF From CSV\PowerShell\Convert CSV To PDF From URL Asynchronously
+\PDF.co Web API\PDF From CSV\Python\Convert CSV To PDF From Uploaded File
+\PDF.co Web API\PDF From CSV\Python\Convert CSV To PDF From URL
+\PDF.co Web API\PDF From CSV\Python\Convert CSV To PDF From URL Asynchronously
+\PDF.co Web API\PDF From CSV\VB.NET\Convert CSV To PDF From Uploaded File
+\PDF.co Web API\PDF From CSV\VB.NET\Convert CSV To PDF From URL
+\PDF.co Web API\PDF From CSV\VB.NET\Convert CSV To PDF From URL Asynchronously
+\PDF.co Web API\PDF From Excel\cURL
+\PDF.co Web API\PDF From Excel\JavaScript
+\PDF.co Web API\PDF From Excel\Zapier
+\PDF.co Web API\PDF From Excel\cURL\Excel To PDF
+\PDF.co Web API\PDF From Excel\JavaScript\Convert Excel to PDF in JQuery
+\PDF.co Web API\PDF From Excel\JavaScript\Convert Excel to PDF in JQuery - Async API
+\PDF.co Web API\PDF From Excel\Zapier\Google Sheets to PDF export type
+\PDF.co Web API\PDF from HTML\C#
+\PDF.co Web API\PDF from HTML\cURL
+\PDF.co Web API\PDF from HTML\Java
+\PDF.co Web API\PDF from HTML\JavaScript
+\PDF.co Web API\PDF from HTML\PHP
+\PDF.co Web API\PDF from HTML\PowerShell
+\PDF.co Web API\PDF from HTML\Python
+\PDF.co Web API\PDF from HTML\Salesforce
+\PDF.co Web API\PDF from HTML\SharePoint
+\PDF.co Web API\PDF from HTML\VB.NET
+\PDF.co Web API\PDF from HTML\Zapier
+\PDF.co Web API\PDF from HTML\C#\Generate PDF From HTML File
+\PDF.co Web API\PDF from HTML\C#\Generate PDF From Large HTML File
+\PDF.co Web API\PDF from HTML\cURL\PDF From HTML
+\PDF.co Web API\PDF from HTML\Java\Generate PDF From HTML File
+\PDF.co Web API\PDF from HTML\Java\Generate PDF From Large HTML File
+\PDF.co Web API\PDF from HTML\JavaScript\Generate PDF From HTML File
+\PDF.co Web API\PDF from HTML\JavaScript\Generate PDF From Large HTML File
+\PDF.co Web API\PDF from HTML\PHP\Generate PDF From HTML File
+\PDF.co Web API\PDF from HTML\PHP\Generate PDF From Large HTML File
+\PDF.co Web API\PDF from HTML\PowerShell\Generate PDF From HTML File
+\PDF.co Web API\PDF from HTML\PowerShell\Generate PDF From Large HTML File
+\PDF.co Web API\PDF from HTML\Python\Generate PDF From HTML File
+\PDF.co Web API\PDF from HTML\Python\Generate PDF From Large HTML File
+\PDF.co Web API\PDF from HTML\Salesforce\Convert HTML to PDF
+\PDF.co Web API\PDF from HTML\SharePoint\Convert HTML to PDF
+\PDF.co Web API\PDF from HTML\SharePoint\Convert HTML to PDF\Features
+\PDF.co Web API\PDF from HTML\SharePoint\Convert HTML to PDF\Package
+\PDF.co Web API\PDF from HTML\SharePoint\Convert HTML to PDF\VisualWebPart1
+\PDF.co Web API\PDF from HTML\SharePoint\Convert HTML to PDF\Features\Feature1
+\PDF.co Web API\PDF from HTML\VB.NET\Generate PDF From HTML File
+\PDF.co Web API\PDF from HTML\VB.NET\Generate PDF From Large HTML File
+\PDF.co Web API\PDF from HTML\Zapier\Google Forms to PDF
+\PDF.co Web API\PDF from HTML\Zapier\Pipedrive CRM to PDF
+\PDF.co Web API\PDF from HTML template\C#
+\PDF.co Web API\PDF from HTML template\Java
+\PDF.co Web API\PDF from HTML template\JavaScript
+\PDF.co Web API\PDF from HTML template\PHP
+\PDF.co Web API\PDF from HTML template\PowerShell
+\PDF.co Web API\PDF from HTML template\Python
+\PDF.co Web API\PDF from HTML template\VB.NET
+\PDF.co Web API\PDF from HTML template\C#\Generate PDF Invoice From HTML Template
+\PDF.co Web API\PDF from HTML template\Java\Generate PDF Invoice From HTML Template
+\PDF.co Web API\PDF from HTML template\JavaScript\Generate PDF Invoice From HTML Template (Node.js)
+\PDF.co Web API\PDF from HTML template\JavaScript\Generate PDF Invoice From HTML Template (Node.js) - Async API
+\PDF.co Web API\PDF from HTML template\PHP\Generate PDF Invoice From HTML Template
+\PDF.co Web API\PDF from HTML template\PowerShell\Generate PDF Invoice From HTML Template
+\PDF.co Web API\PDF from HTML template\Python\Generate PDF Invoice From HTML Template
+\PDF.co Web API\PDF from HTML template\VB.NET\Generate PDF Invoice From HTML Template
+\PDF.co Web API\PDF from URL\C#
+\PDF.co Web API\PDF from URL\cURL
+\PDF.co Web API\PDF from URL\Java
+\PDF.co Web API\PDF from URL\JavaScript
+\PDF.co Web API\PDF from URL\PHP
+\PDF.co Web API\PDF from URL\PowerShell
+\PDF.co Web API\PDF from URL\Python
+\PDF.co Web API\PDF from URL\VB.NET
+\PDF.co Web API\PDF from URL\C#\Convert Web Page To PDF From Link
+\PDF.co Web API\PDF from URL\C#\Convert Web Page To PDF From Link Asynchronously
+\PDF.co Web API\PDF from URL\cURL\Convert Web Page To PDF From Link
+\PDF.co Web API\PDF from URL\Java\Convert Web Page To PDF From Link
+\PDF.co Web API\PDF from URL\JavaScript\Convert Web Page To PDF From Link (Node.js)
+\PDF.co Web API\PDF from URL\JavaScript\Convert Web Page To PDF From Link (Node.js) - Async API
+\PDF.co Web API\PDF from URL\PHP\Convert Web Page To PDF From Link
+\PDF.co Web API\PDF from URL\PHP\Convert Web Page To PDF From Link Asynchronously
+\PDF.co Web API\PDF from URL\PowerShell\Convert Web Page To PDF From Link
+\PDF.co Web API\PDF from URL\PowerShell\Convert Web Page To PDF From Link Asynchronously
+\PDF.co Web API\PDF from URL\Python\Convert Web Page To PDF From Link
+\PDF.co Web API\PDF from URL\Python\Convert Web Page To PDF From Link Asynchronously
+\PDF.co Web API\PDF from URL\VB.NET\Convert Web Page To PDF From URL
+\PDF.co Web API\PDF from URL\VB.NET\Convert Web Page To PDF From URL Asynchronously
 \PDF.co Web API\PDF Information API\C#
 \PDF.co Web API\PDF Information API\cURL
 \PDF.co Web API\PDF Information API\Java
@@ -5708,6 +5753,8 @@
 \PDF.co Web API\PDF Password And Security\Salesforce\Remove PDF Document Protection From Uploaded File
 \PDF.co Web API\PDF Password And Security\VB.NET\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\VB.NET\Remove PDF Document Protection
+\PDF.co Web API\PDF Search Tables\cURL
+\PDF.co Web API\PDF Search Tables\cURL\Search Tables From PDF
 \PDF.co Web API\PDF Splitting API\C#
 \PDF.co Web API\PDF Splitting API\cURL
 \PDF.co Web API\PDF Splitting API\Java
@@ -5861,76 +5908,6 @@
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL Asynchronously
 \PDF.co Web API\PDF To CSV API\Zapier\Gmail PDF Attachments to CSV
-\PDF.co Web API\PDF To Excel API\C#
-\PDF.co Web API\PDF To Excel API\cURL
-\PDF.co Web API\PDF To Excel API\Java
-\PDF.co Web API\PDF To Excel API\JavaScript
-\PDF.co Web API\PDF To Excel API\PHP
-\PDF.co Web API\PDF To Excel API\PowerShell
-\PDF.co Web API\PDF To Excel API\Python
-\PDF.co Web API\PDF To Excel API\VB.NET
-\PDF.co Web API\PDF To Excel API\C#\Advanced Conversion Options
-\PDF.co Web API\PDF To Excel API\C#\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLS From Uploaded File
-\PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLS From Uploaded File (WinForms)
-\PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLS From URL
-\PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLS From URL Asynchronously
-\PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLSX From Uploaded File
-\PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLSX From URL
-\PDF.co Web API\PDF To Excel API\C#\Convert PDF To XLSX From URL Asynchronously
-\PDF.co Web API\PDF To Excel API\cURL\Advanced Conversion Options
-\PDF.co Web API\PDF To Excel API\cURL\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To Excel API\cURL\Convert PDF to XLS
-\PDF.co Web API\PDF To Excel API\cURL\Convert PDF to XLS from File
-\PDF.co Web API\PDF To Excel API\cURL\Convert PDF To XLS From URL
-\PDF.co Web API\PDF To Excel API\cURL\Convert PDF to XLSX
-\PDF.co Web API\PDF To Excel API\cURL\Convert PDF to XLSX from File
-\PDF.co Web API\PDF To Excel API\cURL\Convert PDF To XLSX From URL
-\PDF.co Web API\PDF To Excel API\Java\Advanced Conversion Options
-\PDF.co Web API\PDF To Excel API\Java\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLS From Uploaded File
-\PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLS From URL
-\PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLSX From Uploaded File
-\PDF.co Web API\PDF To Excel API\Java\Convert PDF To XLSX From URL
-\PDF.co Web API\PDF To Excel API\JavaScript\Advanced Conversion Options
-\PDF.co Web API\PDF To Excel API\JavaScript\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From File (Node.js)
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From File (Node.js) - Async API
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From Uploaded File (Node.js)
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From Uploaded File (Node.js) - Async API
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From URL (Node.js)
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLS From URL (Node.js) - Async API
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLSX From File (Node.js)
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLSX From File (Node.js) - Async API
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLSX From Uploaded File (Node.js)
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLSX From Uploaded File (Node.js) - Async API
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLSX From URL (Node.js)
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLSX From URL (Node.js) - Async API
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLSX in JQuery
-\PDF.co Web API\PDF To Excel API\JavaScript\Convert PDF To XLSX in JQuery - Async API
-\PDF.co Web API\PDF To Excel API\PHP\Convert PDF To XLSX Asynchronously
-\PDF.co Web API\PDF To Excel API\PHP\Convert PDF To XLSX From Uploaded File
-\PDF.co Web API\PDF To Excel API\PowerShell\Advanced Conversion Options
-\PDF.co Web API\PDF To Excel API\PowerShell\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLS From Uploaded File
-\PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLS From URL
-\PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLS From URL Asynchronously
-\PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLSX From Uploaded File
-\PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLSX From URL
-\PDF.co Web API\PDF To Excel API\PowerShell\Convert PDF To XLSX From URL Asynchronously
-\PDF.co Web API\PDF To Excel API\Python\Advanced Conversion Options
-\PDF.co Web API\PDF To Excel API\Python\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To Excel API\Python\Convert PDF To Excel From Uploaded File
-\PDF.co Web API\PDF To Excel API\Python\Convert PDF To Excel From Uploaded File Asynchronously
-\PDF.co Web API\PDF To Excel API\VB.NET\Advanced Conversion Options
-\PDF.co Web API\PDF To Excel API\VB.NET\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From Uploaded File
-\PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From Uploaded File (WinForms)
-\PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From URL
-\PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLS From URL Asynchronously
-\PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLSX From Uploaded File
-\PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLSX From URL
-\PDF.co Web API\PDF To Excel API\VB.NET\Convert PDF To XLSX From URL Asynchronously
 \PDF.co Web API\PDF To HTML API\C#
 \PDF.co Web API\PDF To HTML API\cURL
 \PDF.co Web API\PDF To HTML API\Java
@@ -5966,97 +5943,41 @@
 \PDF.co Web API\PDF To HTML API\VB.NET\Convert PDF To HTML From Uploaded File
 \PDF.co Web API\PDF To HTML API\VB.NET\Convert PDF To HTML From URL
 \PDF.co Web API\PDF To HTML API\VB.NET\Convert PDF To HTML From URL Asynchronously
-\PDF.co Web API\PDF To Image API\C#
-\PDF.co Web API\PDF To Image API\cURL
-\PDF.co Web API\PDF To Image API\Java
-\PDF.co Web API\PDF To Image API\JavaScript
-\PDF.co Web API\PDF To Image API\PHP
-\PDF.co Web API\PDF To Image API\PowerShell
-\PDF.co Web API\PDF To Image API\Python
-\PDF.co Web API\PDF To Image API\VB.NET
-\PDF.co Web API\PDF To Image API\C#\Advanced JPEG Conversion Options
-\PDF.co Web API\PDF To Image API\C#\Advanced PNG Conversion Options
-\PDF.co Web API\PDF To Image API\C#\Advanced TIFF Conversion Options
-\PDF.co Web API\PDF To Image API\C#\Convert PDF To JPEG From Uploaded File
-\PDF.co Web API\PDF To Image API\C#\Convert PDF To JPEG From URL
-\PDF.co Web API\PDF To Image API\C#\Convert PDF To JPEG From URL Asynchronously
-\PDF.co Web API\PDF To Image API\C#\Convert PDF To PNG From Uploaded File
-\PDF.co Web API\PDF To Image API\C#\Convert PDF To PNG From URL
-\PDF.co Web API\PDF To Image API\C#\Convert PDF To PNG From URL Asynchronously
-\PDF.co Web API\PDF To Image API\C#\Convert PDF To TIFF From Uploaded File
-\PDF.co Web API\PDF To Image API\C#\Convert PDF To TIFF From URL
-\PDF.co Web API\PDF To Image API\C#\Convert PDF To TIFF From URL Asynchronously
-\PDF.co Web API\PDF To Image API\cURL\Advanced JPEG Conversion Options
-\PDF.co Web API\PDF To Image API\cURL\Advanced PNG Conversion Options
-\PDF.co Web API\PDF To Image API\cURL\Advanced TIFF Conversion Options
-\PDF.co Web API\PDF To Image API\cURL\Convert PDF to JPEG from File
-\PDF.co Web API\PDF To Image API\cURL\Convert PDF To JPEG From URL
-\PDF.co Web API\PDF To Image API\cURL\Convert PDF to PNG from File
-\PDF.co Web API\PDF To Image API\cURL\Convert PDF To PNG From URL
-\PDF.co Web API\PDF To Image API\cURL\Convert PDF to TIFF from File
-\PDF.co Web API\PDF To Image API\cURL\Convert PDF To TIFF From URL
-\PDF.co Web API\PDF To Image API\cURL\PDF To JPEG
-\PDF.co Web API\PDF To Image API\cURL\PDF to PNG
-\PDF.co Web API\PDF To Image API\cURL\PDF to TIFF
-\PDF.co Web API\PDF To Image API\Java\Advanced JPEG Conversion Options
-\PDF.co Web API\PDF To Image API\Java\Advanced PNG Conversion Options
-\PDF.co Web API\PDF To Image API\Java\Advanced TIFF Conversion Options
-\PDF.co Web API\PDF To Image API\Java\Convert PDF To JPEG From Uploaded File
-\PDF.co Web API\PDF To Image API\Java\Convert PDF To JPEG From URL
-\PDF.co Web API\PDF To Image API\Java\Convert PDF To PNG From Uploaded File
-\PDF.co Web API\PDF To Image API\Java\Convert PDF To PNG From URL
-\PDF.co Web API\PDF To Image API\Java\Convert PDF To TIFF From Uploaded File
-\PDF.co Web API\PDF To Image API\Java\Convert PDF To TIFF From URL
-\PDF.co Web API\PDF To Image API\JavaScript\Advanced JPEG Conversion Options
-\PDF.co Web API\PDF To Image API\JavaScript\Advanced PNG Conversion Options
-\PDF.co Web API\PDF To Image API\JavaScript\Advanced TIFF Conversion Options
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To JPEG From File (Node.js)
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To JPEG From File (Node.js) - Async API
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To JPEG From Uploaded File (Node.js)
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To JPEG From Uploaded File (Node.js) - Async API
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To JPEG From URL (Node.js)
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To JPEG From URL (Node.js) - Async API
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To PNG From File (Node.js)
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To PNG From File (Node.js) - Async API
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To PNG From Uploaded File (Node.js)
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To PNG From Uploaded File (Node.js) - Async API
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To PNG From URL (Node.js)
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To PNG From URL (Node.js) - Async API
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To TIFF From File (Node.js)
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To TIFF From File (Node.js) - Async API
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To TIFF From Uploaded File (Node.js)
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To TIFF From Uploaded File (Node.js) - Async API
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To TIFF From URL (Node.js)
-\PDF.co Web API\PDF To Image API\JavaScript\Convert PDF To TIFF From URL (Node.js) - Async API
-\PDF.co Web API\PDF To Image API\PHP\Convert PDF To Image Asynchronously
-\PDF.co Web API\PDF To Image API\PHP\Convert PDF To Image From Uploaded File
-\PDF.co Web API\PDF To Image API\PowerShell\Advanced JPEG Conversion Options
-\PDF.co Web API\PDF To Image API\PowerShell\Advanced PNG Conversion Options
-\PDF.co Web API\PDF To Image API\PowerShell\Advanced TIFF Conversion Options
-\PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To JPEG From Uploaded File
-\PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To JPEG From URL
-\PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To JPEG From URL Asynchronously
-\PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To PNG From Uploaded File
-\PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To PNG From URL
-\PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To PNG From URL Asynchronously
-\PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To TIFF From Uploaded File
-\PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To TIFF From URL
-\PDF.co Web API\PDF To Image API\PowerShell\Convert PDF To TIFF From URL Asynchronously
-\PDF.co Web API\PDF To Image API\Python\Advanced Conversation Options
-\PDF.co Web API\PDF To Image API\Python\Convert PDF To Image From Uploaded File
-\PDF.co Web API\PDF To Image API\Python\Convert PDF To Image From Uploaded File Asynchronously
-\PDF.co Web API\PDF To Image API\VB.NET\Advanced JPEG Conversation Options
-\PDF.co Web API\PDF To Image API\VB.NET\Advanced PNG Conversation Options
-\PDF.co Web API\PDF To Image API\VB.NET\Advanced TIFF Conversation Options
-\PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To JPEG From Uploaded File
-\PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To JPEG From URL
-\PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To JPEG From URL Asynchronously
-\PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To PNG From Uploaded File
-\PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To PNG From URL
-\PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To PNG From URL Asynchronously
-\PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To TIFF From Uploaded File
-\PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To TIFF From URL
-\PDF.co Web API\PDF To Image API\VB.NET\Convert PDF To TIFF From URL Asynchronously
+\PDF.co Web API\PDF To JPG\C#
+\PDF.co Web API\PDF To JPG\cURL
+\PDF.co Web API\PDF To JPG\Java
+\PDF.co Web API\PDF To JPG\JavaScript
+\PDF.co Web API\PDF To JPG\PHP
+\PDF.co Web API\PDF To JPG\PowerShell
+\PDF.co Web API\PDF To JPG\VB.NET
+\PDF.co Web API\PDF To JPG\C#\Advanced JPEG Conversion Options
+\PDF.co Web API\PDF To JPG\C#\Convert PDF To JPEG From Uploaded File
+\PDF.co Web API\PDF To JPG\C#\Convert PDF To JPEG From URL
+\PDF.co Web API\PDF To JPG\C#\Convert PDF To JPEG From URL Asynchronously
+\PDF.co Web API\PDF To JPG\cURL\Advanced JPEG Conversion Options
+\PDF.co Web API\PDF To JPG\cURL\Convert PDF to JPEG from File
+\PDF.co Web API\PDF To JPG\cURL\Convert PDF To JPEG From URL
+\PDF.co Web API\PDF To JPG\cURL\PDF To JPEG
+\PDF.co Web API\PDF To JPG\Java\Advanced JPEG Conversion Options
+\PDF.co Web API\PDF To JPG\Java\Convert PDF To JPEG From Uploaded File
+\PDF.co Web API\PDF To JPG\Java\Convert PDF To JPEG From URL
+\PDF.co Web API\PDF To JPG\JavaScript\Advanced JPEG Conversion Options
+\PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From File (Node.js)
+\PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From File (Node.js) - Async API
+\PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From Uploaded File (Node.js)
+\PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From Uploaded File (Node.js) - Async API
+\PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From URL (Node.js)
+\PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From URL (Node.js) - Async API
+\PDF.co Web API\PDF To JPG\PHP\Convert PDF To Image Asynchronously
+\PDF.co Web API\PDF To JPG\PHP\Convert PDF To Image From Uploaded File
+\PDF.co Web API\PDF To JPG\PowerShell\Advanced JPEG Conversion Options
+\PDF.co Web API\PDF To JPG\PowerShell\Convert PDF To JPEG From Uploaded File
+\PDF.co Web API\PDF To JPG\PowerShell\Convert PDF To JPEG From URL
+\PDF.co Web API\PDF To JPG\PowerShell\Convert PDF To JPEG From URL Asynchronously
+\PDF.co Web API\PDF To JPG\VB.NET\Advanced JPEG Conversation Options
+\PDF.co Web API\PDF To JPG\VB.NET\Convert PDF To JPEG From Uploaded File
+\PDF.co Web API\PDF To JPG\VB.NET\Convert PDF To JPEG From URL
+\PDF.co Web API\PDF To JPG\VB.NET\Convert PDF To JPEG From URL Asynchronously
 \PDF.co Web API\PDF To JSON API\C#
 \PDF.co Web API\PDF To JSON API\cURL
 \PDF.co Web API\PDF To JSON API\Java
@@ -6104,6 +6025,45 @@
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From Uploaded File
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From URL Asynchronously
+\PDF.co Web API\PDF To PNG\C#
+\PDF.co Web API\PDF To PNG\cURL
+\PDF.co Web API\PDF To PNG\Java
+\PDF.co Web API\PDF To PNG\JavaScript
+\PDF.co Web API\PDF To PNG\PHP
+\PDF.co Web API\PDF To PNG\PowerShell
+\PDF.co Web API\PDF To PNG\Python
+\PDF.co Web API\PDF To PNG\VB.NET
+\PDF.co Web API\PDF To PNG\C#\Advanced PNG Conversion Options
+\PDF.co Web API\PDF To PNG\C#\Convert PDF To PNG From Uploaded File
+\PDF.co Web API\PDF To PNG\C#\Convert PDF To PNG From URL
+\PDF.co Web API\PDF To PNG\C#\Convert PDF To PNG From URL Asynchronously
+\PDF.co Web API\PDF To PNG\cURL\Advanced PNG Conversion Options
+\PDF.co Web API\PDF To PNG\cURL\Convert PDF to PNG from File
+\PDF.co Web API\PDF To PNG\cURL\Convert PDF To PNG From URL
+\PDF.co Web API\PDF To PNG\cURL\PDF to PNG
+\PDF.co Web API\PDF To PNG\Java\Advanced PNG Conversion Options
+\PDF.co Web API\PDF To PNG\Java\Convert PDF To PNG From Uploaded File
+\PDF.co Web API\PDF To PNG\Java\Convert PDF To PNG From URL
+\PDF.co Web API\PDF To PNG\JavaScript\Advanced PNG Conversion Options
+\PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From File (Node.js)
+\PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From File (Node.js) - Async API
+\PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From Uploaded File (Node.js)
+\PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From Uploaded File (Node.js) - Async API
+\PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From URL (Node.js)
+\PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From URL (Node.js) - Async API
+\PDF.co Web API\PDF To PNG\PHP\Convert PDF To Image Asynchronously
+\PDF.co Web API\PDF To PNG\PHP\Convert PDF To Image From Uploaded File
+\PDF.co Web API\PDF To PNG\PowerShell\Advanced PNG Conversion Options
+\PDF.co Web API\PDF To PNG\PowerShell\Convert PDF To PNG From Uploaded File
+\PDF.co Web API\PDF To PNG\PowerShell\Convert PDF To PNG From URL
+\PDF.co Web API\PDF To PNG\PowerShell\Convert PDF To PNG From URL Asynchronously
+\PDF.co Web API\PDF To PNG\Python\Advanced Conversation Options
+\PDF.co Web API\PDF To PNG\Python\Convert PDF To Image From Uploaded File
+\PDF.co Web API\PDF To PNG\Python\Convert PDF To Image From Uploaded File Asynchronously
+\PDF.co Web API\PDF To PNG\VB.NET\Advanced PNG Conversation Options
+\PDF.co Web API\PDF To PNG\VB.NET\Convert PDF To PNG From Uploaded File
+\PDF.co Web API\PDF To PNG\VB.NET\Convert PDF To PNG From URL
+\PDF.co Web API\PDF To PNG\VB.NET\Convert PDF To PNG From URL Asynchronously
 \PDF.co Web API\PDF To Text API\C#
 \PDF.co Web API\PDF To Text API\cURL
 \PDF.co Web API\PDF To Text API\Java
@@ -6154,6 +6114,114 @@
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL Asynchronously
+\PDF.co Web API\PDF To TIFF\C#
+\PDF.co Web API\PDF To TIFF\cURL
+\PDF.co Web API\PDF To TIFF\Java
+\PDF.co Web API\PDF To TIFF\JavaScript
+\PDF.co Web API\PDF To TIFF\PHP
+\PDF.co Web API\PDF To TIFF\PowerShell
+\PDF.co Web API\PDF To TIFF\VB.NET
+\PDF.co Web API\PDF To TIFF\C#\Advanced TIFF Conversion Options
+\PDF.co Web API\PDF To TIFF\C#\Convert PDF To TIFF From Uploaded File
+\PDF.co Web API\PDF To TIFF\C#\Convert PDF To TIFF From URL
+\PDF.co Web API\PDF To TIFF\C#\Convert PDF To TIFF From URL Asynchronously
+\PDF.co Web API\PDF To TIFF\cURL\Advanced TIFF Conversion Options
+\PDF.co Web API\PDF To TIFF\cURL\Convert PDF to TIFF from File
+\PDF.co Web API\PDF To TIFF\cURL\Convert PDF To TIFF From URL
+\PDF.co Web API\PDF To TIFF\cURL\PDF to TIFF
+\PDF.co Web API\PDF To TIFF\Java\Advanced TIFF Conversion Options
+\PDF.co Web API\PDF To TIFF\Java\Convert PDF To TIFF From Uploaded File
+\PDF.co Web API\PDF To TIFF\Java\Convert PDF To TIFF From URL
+\PDF.co Web API\PDF To TIFF\JavaScript\Advanced TIFF Conversion Options
+\PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From File (Node.js)
+\PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From File (Node.js) - Async API
+\PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From Uploaded File (Node.js)
+\PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From Uploaded File (Node.js) - Async API
+\PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From URL (Node.js)
+\PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From URL (Node.js) - Async API
+\PDF.co Web API\PDF To TIFF\PHP\Convert PDF To Image Asynchronously
+\PDF.co Web API\PDF To TIFF\PHP\Convert PDF To Image From Uploaded File
+\PDF.co Web API\PDF To TIFF\PowerShell\Advanced TIFF Conversion Options
+\PDF.co Web API\PDF To TIFF\PowerShell\Convert PDF To TIFF From Uploaded File
+\PDF.co Web API\PDF To TIFF\PowerShell\Convert PDF To TIFF From URL
+\PDF.co Web API\PDF To TIFF\PowerShell\Convert PDF To TIFF From URL Asynchronously
+\PDF.co Web API\PDF To TIFF\VB.NET\Advanced TIFF Conversation Options
+\PDF.co Web API\PDF To TIFF\VB.NET\Convert PDF To TIFF From Uploaded File
+\PDF.co Web API\PDF To TIFF\VB.NET\Convert PDF To TIFF From URL
+\PDF.co Web API\PDF To TIFF\VB.NET\Convert PDF To TIFF From URL Asynchronously
+\PDF.co Web API\PDF To XLS\C#
+\PDF.co Web API\PDF To XLS\cURL
+\PDF.co Web API\PDF To XLS\Java
+\PDF.co Web API\PDF To XLS\JavaScript
+\PDF.co Web API\PDF To XLS\PowerShell
+\PDF.co Web API\PDF To XLS\VB.NET
+\PDF.co Web API\PDF To XLS\C#\Advanced Conversion Options
+\PDF.co Web API\PDF To XLS\C#\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To XLS\C#\Convert PDF To XLS From Uploaded File
+\PDF.co Web API\PDF To XLS\C#\Convert PDF To XLS From Uploaded File (WinForms)
+\PDF.co Web API\PDF To XLS\C#\Convert PDF To XLS From URL
+\PDF.co Web API\PDF To XLS\C#\Convert PDF To XLS From URL Asynchronously
+\PDF.co Web API\PDF To XLS\cURL\Convert PDF to XLS
+\PDF.co Web API\PDF To XLS\cURL\Convert PDF to XLS from File
+\PDF.co Web API\PDF To XLS\cURL\Convert PDF To XLS From URL
+\PDF.co Web API\PDF To XLS\Java\Advanced Conversion Options
+\PDF.co Web API\PDF To XLS\Java\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To XLS\Java\Convert PDF To XLS From Uploaded File
+\PDF.co Web API\PDF To XLS\Java\Convert PDF To XLS From URL
+\PDF.co Web API\PDF To XLS\JavaScript\Advanced Conversion Options
+\PDF.co Web API\PDF To XLS\JavaScript\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From File (Node.js)
+\PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From File (Node.js) - Async API
+\PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From Uploaded File (Node.js)
+\PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From Uploaded File (Node.js) - Async API
+\PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From URL (Node.js)
+\PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From URL (Node.js) - Async API
+\PDF.co Web API\PDF To XLS\PowerShell\Advanced Conversion Options
+\PDF.co Web API\PDF To XLS\PowerShell\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To XLS\PowerShell\Convert PDF To XLS From Uploaded File
+\PDF.co Web API\PDF To XLS\PowerShell\Convert PDF To XLS From URL
+\PDF.co Web API\PDF To XLS\PowerShell\Convert PDF To XLS From URL Asynchronously
+\PDF.co Web API\PDF To XLS\VB.NET\Advanced Conversion Options
+\PDF.co Web API\PDF To XLS\VB.NET\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To XLS\VB.NET\Convert PDF To XLS From Uploaded File
+\PDF.co Web API\PDF To XLS\VB.NET\Convert PDF To XLS From Uploaded File (WinForms)
+\PDF.co Web API\PDF To XLS\VB.NET\Convert PDF To XLS From URL
+\PDF.co Web API\PDF To XLSX\C#
+\PDF.co Web API\PDF To XLSX\cURL
+\PDF.co Web API\PDF To XLSX\Java
+\PDF.co Web API\PDF To XLSX\JavaScript
+\PDF.co Web API\PDF To XLSX\PHP
+\PDF.co Web API\PDF To XLSX\PowerShell
+\PDF.co Web API\PDF To XLSX\Python
+\PDF.co Web API\PDF To XLSX\VB.NET
+\PDF.co Web API\PDF To XLSX\C#\Convert PDF To XLSX From Uploaded File
+\PDF.co Web API\PDF To XLSX\C#\Convert PDF To XLSX From URL
+\PDF.co Web API\PDF To XLSX\C#\Convert PDF To XLSX From URL Asynchronously
+\PDF.co Web API\PDF To XLSX\cURL\Convert PDF to XLSX
+\PDF.co Web API\PDF To XLSX\cURL\Convert PDF to XLSX from File
+\PDF.co Web API\PDF To XLSX\cURL\Convert PDF To XLSX From URL
+\PDF.co Web API\PDF To XLSX\Java\Convert PDF To XLSX From Uploaded File
+\PDF.co Web API\PDF To XLSX\Java\Convert PDF To XLSX From URL
+\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From File (Node.js)
+\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From File (Node.js) - Async API
+\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From Uploaded File (Node.js)
+\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From Uploaded File (Node.js) - Async API
+\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From URL (Node.js)
+\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From URL (Node.js) - Async API
+\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX in JQuery
+\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX in JQuery - Async API
+\PDF.co Web API\PDF To XLSX\PHP\Convert PDF To XLSX Asynchronously
+\PDF.co Web API\PDF To XLSX\PHP\Convert PDF To XLSX From Uploaded File
+\PDF.co Web API\PDF To XLSX\PowerShell\Convert PDF To XLSX From Uploaded File
+\PDF.co Web API\PDF To XLSX\PowerShell\Convert PDF To XLSX From URL
+\PDF.co Web API\PDF To XLSX\PowerShell\Convert PDF To XLSX From URL Asynchronously
+\PDF.co Web API\PDF To XLSX\Python\Advanced Conversion Options
+\PDF.co Web API\PDF To XLSX\Python\Advanced Conversion Options With Rotated Input
+\PDF.co Web API\PDF To XLSX\Python\Convert PDF To Excel From Uploaded File
+\PDF.co Web API\PDF To XLSX\Python\Convert PDF To Excel From Uploaded File Asynchronously
+\PDF.co Web API\PDF To XLSX\VB.NET\Convert PDF To XLSX From Uploaded File
+\PDF.co Web API\PDF To XLSX\VB.NET\Convert PDF To XLSX From URL
+\PDF.co Web API\PDF To XLSX\VB.NET\Convert PDF To XLSX From URL Asynchronously
 \PDF.co Web API\PDF To XML API\C#
 \PDF.co Web API\PDF To XML API\cURL
 \PDF.co Web API\PDF To XML API\Java
@@ -6303,6 +6371,8 @@
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From Uploaded File
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL Asynchronously
+\PDF.co Web API\Translate PDF\cURL
+\PDF.co Web API\Translate PDF\cURL\Translate PDF Document
 \Premium Suite\ASP Classic
 \Premium Suite\ASP.NET C#
 \Premium Suite\ASP.NET MVC C#
