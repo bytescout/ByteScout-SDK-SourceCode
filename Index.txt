@@ -5167,6 +5167,10 @@
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Sample
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\VisualWebPart1
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Features\Feature1
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Blood Test Results to JSON
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Census table from life and annuity quote request pdf
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Create Custom Template
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Extract line items from tables on multiple pages
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice table with some empty columns
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with few line items in EUR
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with line items in bordered table
@@ -5174,7 +5178,12 @@
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\ManyChat Invoice
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Multiline Items Without Borders
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Order form with line items and total
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse and Generate HL7 Output
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Hanging Rows In Invoice
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Multipage Table
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Simple Document
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse with OCR
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parsing and reading data from Airline Tickets
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Read values in columns 2 and 3
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Tax Invoice with Line Items
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Total and Vat tax
