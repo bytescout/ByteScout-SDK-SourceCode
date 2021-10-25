@@ -5000,6 +5000,14 @@
 \PDF.co Web API\Barcode Reader API\C#\Read QR Code
 \PDF.co Web API\Barcode Reader API\cURL\Advanced Conversation Options
 \PDF.co Web API\Barcode Reader API\cURL\Barcode Reader
+\PDF.co Web API\Barcode Reader API\cURL\Detect BorderedTable from PDF
+\PDF.co Web API\Barcode Reader API\cURL\Detect Checkbox from PDF
+\PDF.co Web API\Barcode Reader API\cURL\Detect Circle from PDF
+\PDF.co Web API\Barcode Reader API\cURL\Detect HorizontalLine from PDF
+\PDF.co Web API\Barcode Reader API\cURL\Detect Oval from PDF
+\PDF.co Web API\Barcode Reader API\cURL\Detect Rectangle from PDF
+\PDF.co Web API\Barcode Reader API\cURL\Detect UnderlinedField from PDF
+\PDF.co Web API\Barcode Reader API\cURL\Detect VerticalLine from PDF
 \PDF.co Web API\Barcode Reader API\cURL\Read Barcode from File
 \PDF.co Web API\Barcode Reader API\cURL\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\Java\Advanced Conversation Options
