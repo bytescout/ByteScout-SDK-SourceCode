@@ -5014,7 +5014,6 @@
 \PDF.co Web API\Barcode Reader API\Java\Read Barcode From Uploaded File
 \PDF.co Web API\Barcode Reader API\Java\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\JavaScript\Advanced Conversion Options
-\PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From File (Node.js)
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From File (Node.js) - Async Api
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From Uploaded File (Node.js)
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From Uploaded File (Node.js) - Async Api
@@ -5051,14 +5050,11 @@
 \PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From URL
 \PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From URL Asynchronously
 \PDF.co Web API\Delete Text From PDF\cURL\Delete Multiple Replacement
-\PDF.co Web API\Delete Text From PDF\cURL\Delete PDF Text From File
 \PDF.co Web API\Delete Text From PDF\cURL\Delete PDF Text From URL
 \PDF.co Web API\Delete Text From PDF\cURL\Delete Single Replacement
 \PDF.co Web API\Delete Text From PDF\Delphi\Delete PDF Text From URL
 \PDF.co Web API\Delete Text From PDF\Java\Delete PDF Text From Uploaded File
 \PDF.co Web API\Delete Text From PDF\Java\Delete PDF Text From URL
-\PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From File (Node.js)
-\PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From File (Node.js) - Async API
 \PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From Uploaded File (Node.js)
 \PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From Uploaded File (Node.js) - Async API
 \PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From URL (Node.js)
@@ -5087,15 +5083,12 @@
 \PDF.co Web API\DOC To PDF API\C#\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\C#\Convert DOC To PDF From URL
 \PDF.co Web API\DOC To PDF API\C#\Convert DOC To PDF From URL Asynchronously
-\PDF.co Web API\DOC To PDF API\cURL\Convert DOC to PDF from File
 \PDF.co Web API\DOC To PDF API\cURL\Convert DOC To PDF From URL
 \PDF.co Web API\DOC To PDF API\cURL\Document to PDF
 \PDF.co Web API\DOC To PDF API\Delphi\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\Java\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\Java\Convert DOC To PDF From URL
 \PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From Base64 (Node.js)
-\PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From File (Node.js)
-\PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From File (Node.js) - Async API
 \PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From Uploaded File (Node.js)
 \PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From Uploaded File (Node.js) - Async API
 \PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From URL (Node.js)
@@ -5372,11 +5365,9 @@
 \PDF.co Web API\Invoice Parser API\VB.NET
 \PDF.co Web API\Invoice Parser API\C#\Get Invoice Info From Uploaded File
 \PDF.co Web API\Invoice Parser API\C#\Get Invoice Info From URL
-\PDF.co Web API\Invoice Parser API\cURL\Get Invoice Info from File
 \PDF.co Web API\Invoice Parser API\cURL\Get Invoice Info From URL
 \PDF.co Web API\Invoice Parser API\Java\Get Invoice Info From Uploaded File
 \PDF.co Web API\Invoice Parser API\Java\Get Invoice Info From URL
-\PDF.co Web API\Invoice Parser API\JavaScript\Get Invoice Info From File (Node.js)
 \PDF.co Web API\Invoice Parser API\JavaScript\Get Invoice Info From Uploaded File (Node.js)
 \PDF.co Web API\Invoice Parser API\JavaScript\Get Invoice Info From URL (Node.js)
 \PDF.co Web API\Invoice Parser API\PHP\Get Invoice Info From Uploaded File
@@ -5492,13 +5483,10 @@
 \PDF.co Web API\PDF From CSV\C#\Convert CSV To PDF From Uploaded File
 \PDF.co Web API\PDF From CSV\C#\Convert CSV To PDF From URL
 \PDF.co Web API\PDF From CSV\C#\Convert CSV To PDF From URL Asynchronously
-\PDF.co Web API\PDF From CSV\cURL\Convert CSV to PDF from File
 \PDF.co Web API\PDF From CSV\cURL\Convert CSV To PDF From URL
 \PDF.co Web API\PDF From CSV\cURL\PDF from CSV (CSV to PDF)
 \PDF.co Web API\PDF From CSV\Java\Convert CSV To PDF From Uploaded File
 \PDF.co Web API\PDF From CSV\Java\Convert CSV To PDF From URL
-\PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From File (Node.js)
-\PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From File (Node.js) - Async API
 \PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From Uploaded File (Node.js)
 \PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF From CSV\JavaScript\Convert CSV To PDF From URL (Node.js)
@@ -5602,12 +5590,10 @@
 \PDF.co Web API\PDF Information API\VB.NET
 \PDF.co Web API\PDF Information API\C#\Get PDF Info From Uploaded File
 \PDF.co Web API\PDF Information API\C#\Get PDF Info From URL
-\PDF.co Web API\PDF Information API\cURL\Get PDF Info from File
 \PDF.co Web API\PDF Information API\cURL\Get PDF Info From URL
 \PDF.co Web API\PDF Information API\cURL\PDF Info Reader
 \PDF.co Web API\PDF Information API\Java\Get PDF Info From Uploaded File
 \PDF.co Web API\PDF Information API\Java\Get PDF Info From URL
-\PDF.co Web API\PDF Information API\JavaScript\Get PDF Info From File (Node.js)
 \PDF.co Web API\PDF Information API\JavaScript\Get PDF Info From Uploaded File (Node.js)
 \PDF.co Web API\PDF Information API\JavaScript\Get PDF Info From URL (Node.js)
 \PDF.co Web API\PDF Information API\PHP\Get PDF Info From Uploaded File
@@ -5630,15 +5616,12 @@
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From URL Asynchronously
 \PDF.co Web API\PDF Make Searchable API\cURL\Advanced Conversion Options
-\PDF.co Web API\PDF Make Searchable API\cURL\Make Searchable PDF from File
 \PDF.co Web API\PDF Make Searchable API\cURL\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\cURL\PDF to Text Searchable
 \PDF.co Web API\PDF Make Searchable API\Java\Advanced Conversation Options
 \PDF.co Web API\PDF Make Searchable API\Java\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\Java\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Advanced Conversion Options
-\PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From File (Node.js)
-\PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From File (Node.js) - Async API
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From Uploaded File (Node.js)
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From URL (Node.js)
@@ -5720,13 +5703,9 @@
 \PDF.co Web API\PDF Optimization API\C#\Optimize PDF From Uploaded File
 \PDF.co Web API\PDF Optimization API\C#\Optimize PDF From URL
 \PDF.co Web API\PDF Optimization API\C#\Optimize PDF From URL Asynchronously
-\PDF.co Web API\PDF Optimization API\cURL\Optimize PDF from File
-\PDF.co Web API\PDF Optimization API\cURL\Optimize PDF From URL
 \PDF.co Web API\PDF Optimization API\cURL\PDF Optimize
 \PDF.co Web API\PDF Optimization API\Java\Optimize PDF From Uploaded File
 \PDF.co Web API\PDF Optimization API\Java\Optimize PDF From URL
-\PDF.co Web API\PDF Optimization API\JavaScript\Optimize PDF From File (Node.js)
-\PDF.co Web API\PDF Optimization API\JavaScript\Optimize PDF From File (Node.js) - Async API
 \PDF.co Web API\PDF Optimization API\JavaScript\Optimize PDF From Uploaded File (Node.js)
 \PDF.co Web API\PDF Optimization API\JavaScript\Optimize PDF From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF Optimization API\JavaScript\Optimize PDF From URL (Node.js)
@@ -5795,14 +5774,10 @@
 \PDF.co Web API\PDF Splitting API\Java\Split PDF By Text From URL
 \PDF.co Web API\PDF Splitting API\Java\Split PDF From Uploaded File
 \PDF.co Web API\PDF Splitting API\Java\Split PDF From URL
-\PDF.co Web API\PDF Splitting API\JavaScript\Split PDF By Text From File (Node.js)
-\PDF.co Web API\PDF Splitting API\JavaScript\Split PDF By Text From File (Node.js) - Async API
 \PDF.co Web API\PDF Splitting API\JavaScript\Split PDF By Text From Uploaded File (Node.js)
 \PDF.co Web API\PDF Splitting API\JavaScript\Split PDF By Text From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF Splitting API\JavaScript\Split PDF By Text From URL (Node.js)
 \PDF.co Web API\PDF Splitting API\JavaScript\Split PDF By Text From URL (Node.js) - Async API
-\PDF.co Web API\PDF Splitting API\JavaScript\Split PDF From File (Node.js)
-\PDF.co Web API\PDF Splitting API\JavaScript\Split PDF From File (Node.js) - Async API
 \PDF.co Web API\PDF Splitting API\JavaScript\Split PDF From Uploaded File (Node.js)
 \PDF.co Web API\PDF Splitting API\JavaScript\Split PDF From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF Splitting API\JavaScript\Split PDF From URL (Node.js)
@@ -5847,8 +5822,6 @@
 \PDF.co Web API\PDF Text Search API\Java\PDF Text Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Text Search API\Java\PDF Text Search from URL
 \PDF.co Web API\PDF Text Search API\Java\PDF Text Search from URL Asynchronously
-\PDF.co Web API\PDF Text Search API\JavaScript\PDF Text Search from File (Node js)
-\PDF.co Web API\PDF Text Search API\JavaScript\PDF Text Search from File (Node js) - Async API
 \PDF.co Web API\PDF Text Search API\JavaScript\PDF Text Search from Uploaded File (Node js)
 \PDF.co Web API\PDF Text Search API\JavaScript\PDF Text Search from Uploaded File (Node js) - Async API
 \PDF.co Web API\PDF Text Search API\JavaScript\PDF Text Search from URL (Node js)
@@ -5883,7 +5856,6 @@
 \PDF.co Web API\PDF To CSV API\C#\Convert PDF To CSV From URL Asynchronously
 \PDF.co Web API\PDF To CSV API\cURL\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\cURL\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To CSV API\cURL\Convert PDF to CSV from File
 \PDF.co Web API\PDF To CSV API\cURL\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\cURL\PDF to CSV
 \PDF.co Web API\PDF To CSV API\cURL\PDF to CSV - Custom Seperator
@@ -5894,8 +5866,6 @@
 \PDF.co Web API\PDF To CSV API\Java\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\JavaScript\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From File (Node.js)
-\PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From File (Node.js) - Async API
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From Uploaded File (Node.js)
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To CSV API\JavaScript\Convert PDF To CSV From URL (Node.js)
@@ -5938,13 +5908,10 @@
 \PDF.co Web API\PDF To HTML API\C#\Convert PDF To HTML From URL
 \PDF.co Web API\PDF To HTML API\C#\Convert PDF To HTML From URL Asynchronously
 \PDF.co Web API\PDF To HTML API\cURL\Convert PDF to HTML
-\PDF.co Web API\PDF To HTML API\cURL\Convert PDF to HTML from File
 \PDF.co Web API\PDF To HTML API\cURL\Convert PDF To HTML From URL
 \PDF.co Web API\PDF To HTML API\cURL\Convert PDF to HTML With OCR
 \PDF.co Web API\PDF To HTML API\Java\Convert PDF To HTML From Uploaded File
 \PDF.co Web API\PDF To HTML API\Java\Convert PDF To HTML From URL
-\PDF.co Web API\PDF To HTML API\JavaScript\Convert PDF To HTML From File (Node.js)
-\PDF.co Web API\PDF To HTML API\JavaScript\Convert PDF To HTML From File (Node.js) - Async API
 \PDF.co Web API\PDF To HTML API\JavaScript\Convert PDF To HTML From Uploaded File (Node.js)
 \PDF.co Web API\PDF To HTML API\JavaScript\Convert PDF To HTML From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To HTML API\JavaScript\Convert PDF To HTML From URL (Node.js)
@@ -5973,15 +5940,12 @@
 \PDF.co Web API\PDF To JPG\C#\Convert PDF To JPEG From URL
 \PDF.co Web API\PDF To JPG\C#\Convert PDF To JPEG From URL Asynchronously
 \PDF.co Web API\PDF To JPG\cURL\Advanced JPEG Conversion Options
-\PDF.co Web API\PDF To JPG\cURL\Convert PDF to JPEG from File
 \PDF.co Web API\PDF To JPG\cURL\Convert PDF To JPEG From URL
 \PDF.co Web API\PDF To JPG\cURL\PDF To JPEG
 \PDF.co Web API\PDF To JPG\Java\Advanced JPEG Conversion Options
 \PDF.co Web API\PDF To JPG\Java\Convert PDF To JPEG From Uploaded File
 \PDF.co Web API\PDF To JPG\Java\Convert PDF To JPEG From URL
 \PDF.co Web API\PDF To JPG\JavaScript\Advanced JPEG Conversion Options
-\PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From File (Node.js)
-\PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From File (Node.js) - Async API
 \PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From Uploaded File (Node.js)
 \PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To JPG\JavaScript\Convert PDF To JPEG From URL (Node.js)
@@ -6019,8 +5983,6 @@
 \PDF.co Web API\PDF To JSON API\Java\Convert PDF To JSON From URL
 \PDF.co Web API\PDF To JSON API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To JSON API\JavaScript\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From File (Node.js)
-\PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From File (Node.js) - Async API
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From Uploaded File (Node.js)
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To JSON API\JavaScript\Convert PDF To JSON From URL (Node.js)
@@ -6056,15 +6018,12 @@
 \PDF.co Web API\PDF To PNG\C#\Convert PDF To PNG From URL
 \PDF.co Web API\PDF To PNG\C#\Convert PDF To PNG From URL Asynchronously
 \PDF.co Web API\PDF To PNG\cURL\Advanced PNG Conversion Options
-\PDF.co Web API\PDF To PNG\cURL\Convert PDF to PNG from File
 \PDF.co Web API\PDF To PNG\cURL\Convert PDF To PNG From URL
 \PDF.co Web API\PDF To PNG\cURL\PDF to PNG
 \PDF.co Web API\PDF To PNG\Java\Advanced PNG Conversion Options
 \PDF.co Web API\PDF To PNG\Java\Convert PDF To PNG From Uploaded File
 \PDF.co Web API\PDF To PNG\Java\Convert PDF To PNG From URL
 \PDF.co Web API\PDF To PNG\JavaScript\Advanced PNG Conversion Options
-\PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From File (Node.js)
-\PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From File (Node.js) - Async API
 \PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From Uploaded File (Node.js)
 \PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To PNG\JavaScript\Convert PDF To PNG From URL (Node.js)
@@ -6099,7 +6058,6 @@
 \PDF.co Web API\PDF To Text API\cURL\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\cURL\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\cURL\Convert PDF To Text
-\PDF.co Web API\PDF To Text API\cURL\Convert PDF to Text from File
 \PDF.co Web API\PDF To Text API\cURL\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\Java\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\Java\Advanced Conversion Options With Rotated Input
@@ -6107,8 +6065,6 @@
 \PDF.co Web API\PDF To Text API\Java\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\JavaScript\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From File (Node.js)
-\PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From File (Node.js) - Async API
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From Uploaded File (Node.js)
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To Text API\JavaScript\Convert PDF To Text From URL (Node.js)
@@ -6144,15 +6100,12 @@
 \PDF.co Web API\PDF To TIFF\C#\Convert PDF To TIFF From URL
 \PDF.co Web API\PDF To TIFF\C#\Convert PDF To TIFF From URL Asynchronously
 \PDF.co Web API\PDF To TIFF\cURL\Advanced TIFF Conversion Options
-\PDF.co Web API\PDF To TIFF\cURL\Convert PDF to TIFF from File
 \PDF.co Web API\PDF To TIFF\cURL\Convert PDF To TIFF From URL
 \PDF.co Web API\PDF To TIFF\cURL\PDF to TIFF
 \PDF.co Web API\PDF To TIFF\Java\Advanced TIFF Conversion Options
 \PDF.co Web API\PDF To TIFF\Java\Convert PDF To TIFF From Uploaded File
 \PDF.co Web API\PDF To TIFF\Java\Convert PDF To TIFF From URL
 \PDF.co Web API\PDF To TIFF\JavaScript\Advanced TIFF Conversion Options
-\PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From File (Node.js)
-\PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From File (Node.js) - Async API
 \PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From Uploaded File (Node.js)
 \PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To TIFF\JavaScript\Convert PDF To TIFF From URL (Node.js)
@@ -6180,7 +6133,6 @@
 \PDF.co Web API\PDF To XLS\C#\Convert PDF To XLS From URL
 \PDF.co Web API\PDF To XLS\C#\Convert PDF To XLS From URL Asynchronously
 \PDF.co Web API\PDF To XLS\cURL\Convert PDF to XLS
-\PDF.co Web API\PDF To XLS\cURL\Convert PDF to XLS from File
 \PDF.co Web API\PDF To XLS\cURL\Convert PDF To XLS From URL
 \PDF.co Web API\PDF To XLS\Java\Advanced Conversion Options
 \PDF.co Web API\PDF To XLS\Java\Advanced Conversion Options With Rotated Input
@@ -6188,8 +6140,6 @@
 \PDF.co Web API\PDF To XLS\Java\Convert PDF To XLS From URL
 \PDF.co Web API\PDF To XLS\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To XLS\JavaScript\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From File (Node.js)
-\PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From File (Node.js) - Async API
 \PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From Uploaded File (Node.js)
 \PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To XLS\JavaScript\Convert PDF To XLS From URL (Node.js)
@@ -6216,12 +6166,9 @@
 \PDF.co Web API\PDF To XLSX\C#\Convert PDF To XLSX From URL
 \PDF.co Web API\PDF To XLSX\C#\Convert PDF To XLSX From URL Asynchronously
 \PDF.co Web API\PDF To XLSX\cURL\Convert PDF to XLSX
-\PDF.co Web API\PDF To XLSX\cURL\Convert PDF to XLSX from File
 \PDF.co Web API\PDF To XLSX\cURL\Convert PDF To XLSX From URL
 \PDF.co Web API\PDF To XLSX\Java\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To XLSX\Java\Convert PDF To XLSX From URL
-\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From File (Node.js)
-\PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From File (Node.js) - Async API
 \PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From Uploaded File (Node.js)
 \PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To XLSX\JavaScript\Convert PDF To XLSX From URL (Node.js)
@@ -6256,7 +6203,6 @@
 \PDF.co Web API\PDF To XML API\cURL\Advanced Conversion Options
 \PDF.co Web API\PDF To XML API\cURL\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\cURL\Convert PDF To XML
-\PDF.co Web API\PDF To XML API\cURL\Convert PDF to XML from File
 \PDF.co Web API\PDF To XML API\cURL\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\Java\Advanced Conversion Options
 \PDF.co Web API\PDF To XML API\Java\Advanced Conversion Options With Rotated Input
@@ -6264,8 +6210,6 @@
 \PDF.co Web API\PDF To XML API\Java\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\PDF To XML API\JavaScript\Advanced Conversion Options With Rotated Input
-\PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From File (Node.js)
-\PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From File (Node.js) - Async API
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From Uploaded File (Node.js)
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From URL (Node.js)
@@ -6334,13 +6278,10 @@
 \PDF.co Web API\Replace Text From PDF\C#\Replace Text From URL
 \PDF.co Web API\Replace Text From PDF\C#\Replace Text From URL Asynchronously
 \PDF.co Web API\Replace Text From PDF\cURL\Replace Text
-\PDF.co Web API\Replace Text From PDF\cURL\Replace Text From File
 \PDF.co Web API\Replace Text From PDF\cURL\Replace Text From URL
 \PDF.co Web API\Replace Text From PDF\cURL\Replace Text Multiple Occurances
 \PDF.co Web API\Replace Text From PDF\Java\Replace Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\Java\Replace Text From URL
-\PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From File (Node.js)
-\PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From File (Node.js) - Async API
 \PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From Uploaded File (Node.js)
 \PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From Uploaded File (Node.js) - Async API
 \PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From URL (Node.js)
@@ -6368,12 +6309,9 @@
 \PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From URL Asynchronously
 \PDF.co Web API\Replace Text With Image From PDF\cURL\Replace Text With Image
-\PDF.co Web API\Replace Text With Image From PDF\cURL\Replace Text With Image From File
 \PDF.co Web API\Replace Text With Image From PDF\cURL\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\Java\Replace Text With Image From Uploaded File
 \PDF.co Web API\Replace Text With Image From PDF\Java\Replace Text With Image From URL
-\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From File (Node.js)
-\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From File (Node.js) - Async API
 \PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From Uploaded File (Node.js)
 \PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From Uploaded File (Node.js) - Async API
 \PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From URL (Node.js)
