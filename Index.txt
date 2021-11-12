@@ -5107,6 +5107,7 @@
 \PDF.co Web API\DOC To PDF API\VB.NET\Convert DOC To PDF From URL Asynchronously
 \PDF.co Web API\Document Parser API\C#
 \PDF.co Web API\Document Parser API\cURL
+\PDF.co Web API\Document Parser API\GoogleAppScript
 \PDF.co Web API\Document Parser API\Java
 \PDF.co Web API\Document Parser API\JavaScript
 \PDF.co Web API\Document Parser API\PHP
@@ -5134,6 +5135,7 @@
 \PDF.co Web API\Document Parser API\cURL\Document Parser Output as CSV
 \PDF.co Web API\Document Parser API\cURL\Document Parser Output as JSON
 \PDF.co Web API\Document Parser API\cURL\Document Parser Results
+\PDF.co Web API\Document Parser API\GoogleAppScript\Convert PDF Invoice to Google Sheet
 \PDF.co Web API\Document Parser API\Java\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\Java\Create Custom Template
 \PDF.co Web API\Document Parser API\Java\Extract line items from tables on multiple pages
