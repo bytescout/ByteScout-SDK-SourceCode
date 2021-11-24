@@ -4934,6 +4934,7 @@
 \PDF.co Web API\Add Text And Images To PDF\PowerShell\Add Text to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Image by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Images to Existing PDF
+\PDF.co Web API\Add Text And Images To PDF\Python\Add Text And Image To PDF
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Text by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Text to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Image To PDF
