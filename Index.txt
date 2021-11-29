@@ -6098,6 +6098,7 @@
 \PDF.co Web API\PDF To TIFF\JavaScript
 \PDF.co Web API\PDF To TIFF\PHP
 \PDF.co Web API\PDF To TIFF\PowerShell
+\PDF.co Web API\PDF To TIFF\Python
 \PDF.co Web API\PDF To TIFF\VB.NET
 \PDF.co Web API\PDF To TIFF\C#\Advanced TIFF Conversion Options
 \PDF.co Web API\PDF To TIFF\C#\Convert PDF To TIFF From Uploaded File
@@ -6120,6 +6121,9 @@
 \PDF.co Web API\PDF To TIFF\PowerShell\Convert PDF To TIFF From Uploaded File
 \PDF.co Web API\PDF To TIFF\PowerShell\Convert PDF To TIFF From URL
 \PDF.co Web API\PDF To TIFF\PowerShell\Convert PDF To TIFF From URL Asynchronously
+\PDF.co Web API\PDF To TIFF\Python\Convert PDF To Image From Uploaded File
+\PDF.co Web API\PDF To TIFF\Python\Convert PDF To Image From Uploaded File Asynchronously
+\PDF.co Web API\PDF To TIFF\Python\Convert PDF to Image From URL
 \PDF.co Web API\PDF To TIFF\VB.NET\Advanced TIFF Conversation Options
 \PDF.co Web API\PDF To TIFF\VB.NET\Convert PDF To TIFF From Uploaded File
 \PDF.co Web API\PDF To TIFF\VB.NET\Convert PDF To TIFF From URL
