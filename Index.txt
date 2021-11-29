@@ -5186,7 +5186,7 @@
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse and Generate HL7 Output
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Hanging Rows In Invoice
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1040
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1099-Div
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1099-DIV
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1099-K
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form W2
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Multipage Table
