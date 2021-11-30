@@ -5942,6 +5942,7 @@
 \PDF.co Web API\PDF To JPG\JavaScript
 \PDF.co Web API\PDF To JPG\PHP
 \PDF.co Web API\PDF To JPG\PowerShell
+\PDF.co Web API\PDF To JPG\Python
 \PDF.co Web API\PDF To JPG\VB.NET
 \PDF.co Web API\PDF To JPG\C#\Advanced JPEG Conversion Options
 \PDF.co Web API\PDF To JPG\C#\Convert PDF To JPEG From Uploaded File
@@ -5964,6 +5965,10 @@
 \PDF.co Web API\PDF To JPG\PowerShell\Convert PDF To JPEG From Uploaded File
 \PDF.co Web API\PDF To JPG\PowerShell\Convert PDF To JPEG From URL
 \PDF.co Web API\PDF To JPG\PowerShell\Convert PDF To JPEG From URL Asynchronously
+\PDF.co Web API\PDF To JPG\Python\Advanced Conversation Options
+\PDF.co Web API\PDF To JPG\Python\Convert PDF To Image From Uploaded File
+\PDF.co Web API\PDF To JPG\Python\Convert PDF To Image From Uploaded File Asynchronously
+\PDF.co Web API\PDF To JPG\Python\Convert PDF to Image From URL
 \PDF.co Web API\PDF To JPG\VB.NET\Advanced JPEG Conversation Options
 \PDF.co Web API\PDF To JPG\VB.NET\Convert PDF To JPEG From Uploaded File
 \PDF.co Web API\PDF To JPG\VB.NET\Convert PDF To JPEG From URL
@@ -6045,6 +6050,7 @@
 \PDF.co Web API\PDF To PNG\Python\Advanced Conversation Options
 \PDF.co Web API\PDF To PNG\Python\Convert PDF To Image From Uploaded File
 \PDF.co Web API\PDF To PNG\Python\Convert PDF To Image From Uploaded File Asynchronously
+\PDF.co Web API\PDF To PNG\Python\Convert PDF to Image From URL
 \PDF.co Web API\PDF To PNG\VB.NET\Advanced PNG Conversation Options
 \PDF.co Web API\PDF To PNG\VB.NET\Convert PDF To PNG From Uploaded File
 \PDF.co Web API\PDF To PNG\VB.NET\Convert PDF To PNG From URL
