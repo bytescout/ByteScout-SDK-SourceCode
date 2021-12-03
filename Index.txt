@@ -5190,6 +5190,7 @@
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1099-K
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form W2
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Multipage Table
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse PandaDoc Sample Invoice
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Simple Document
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse with OCR
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parsing and reading data from Airline Tickets
