@@ -39,7 +39,7 @@ or just send email to [support@bytescout.com](mailto:support@bytescout.com?subje
 ##### ****Barcode in Report.txt:**
     
 ```
-1. Add reference to "Bytescout Barcode SDK" ActiveX object to your database project (in menu Tools->References).
+1. Add reference to "ByteScout QRCode SDK" ActiveX object to your database project (in menu Tools->References).
 2. Put Picture object on the Details section of the report.
 3. Handle the Format event of the Details section and set barcode image to the Picture control.
 
