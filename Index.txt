@@ -5164,6 +5164,7 @@
 \PDF.co Web API\Document Parser API\Powershell\Parse From Url
 \PDF.co Web API\Document Parser API\Python\Parse From Uploaded File
 \PDF.co Web API\Document Parser API\Python\Parse From Url
+\PDF.co Web API\Document Parser API\Python\Parse PDF Invoice
 \PDF.co Web API\Document Parser API\Salesforce\Document Parser Demo
 \PDF.co Web API\Document Parser API\Salesforce\Parse Document and Get CSV Output
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information
