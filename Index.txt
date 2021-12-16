@@ -5760,8 +5760,37 @@
 \PDF.co Web API\PDF Password And Security\Salesforce\Remove PDF Document Protection From Uploaded File
 \PDF.co Web API\PDF Password And Security\VB.NET\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\VB.NET\Remove PDF Document Protection
+\PDF.co Web API\PDF Search Tables\C#
 \PDF.co Web API\PDF Search Tables\cURL
+\PDF.co Web API\PDF Search Tables\Java
+\PDF.co Web API\PDF Search Tables\JavaScript
+\PDF.co Web API\PDF Search Tables\PowerShell
+\PDF.co Web API\PDF Search Tables\Python
+\PDF.co Web API\PDF Search Tables\VB.NET
+\PDF.co Web API\PDF Search Tables\C#\PDF Table Search from Uploaded File
+\PDF.co Web API\PDF Search Tables\C#\PDF Table Search from Uploaded File Asynchronously
+\PDF.co Web API\PDF Search Tables\C#\PDF Table Search from URL
+\PDF.co Web API\PDF Search Tables\C#\PDF Table Search from URL Asynchronously
 \PDF.co Web API\PDF Search Tables\cURL\Search Tables From PDF
+\PDF.co Web API\PDF Search Tables\Java\PDF Table Search from Uploaded File
+\PDF.co Web API\PDF Search Tables\Java\PDF Table Search from Uploaded File Asynchronously
+\PDF.co Web API\PDF Search Tables\Java\PDF Table Search from URL
+\PDF.co Web API\PDF Search Tables\Java\PDF Table Search from URL Asynchronously
+\PDF.co Web API\PDF Search Tables\JavaScript\PDF Get Search Table JSON (Node js)
+\PDF.co Web API\PDF Search Tables\JavaScript\PDF Table Search from Uploaded File (Node js)
+\PDF.co Web API\PDF Search Tables\JavaScript\PDF Table Search from Uploaded File (Node js) - Async API
+\PDF.co Web API\PDF Search Tables\JavaScript\PDF Table Search from URL (Node js)
+\PDF.co Web API\PDF Search Tables\JavaScript\PDF Table Search from URL (Node js) - Async API
+\PDF.co Web API\PDF Search Tables\PowerShell\PDF Table Search from Uploaded File
+\PDF.co Web API\PDF Search Tables\PowerShell\PDF Table Search from Uploaded File Asynchronously
+\PDF.co Web API\PDF Search Tables\PowerShell\PDF Table Search from URL
+\PDF.co Web API\PDF Search Tables\PowerShell\PDF Table Search from URL Asynchronously
+\PDF.co Web API\PDF Search Tables\Python\PDF Table Search from Uploaded File
+\PDF.co Web API\PDF Search Tables\Python\PDF Table Search from Uploaded File Asynchronously
+\PDF.co Web API\PDF Search Tables\VB.NET\PDF Table Search from Uploaded File
+\PDF.co Web API\PDF Search Tables\VB.NET\PDF Table Search from Uploaded File Asynchronously
+\PDF.co Web API\PDF Search Tables\VB.NET\PDF Table Search from URL
+\PDF.co Web API\PDF Search Tables\VB.NET\PDF Table Search from URL Asynchronously
 \PDF.co Web API\PDF Splitting API\C#
 \PDF.co Web API\PDF Splitting API\cURL
 \PDF.co Web API\PDF Splitting API\Java
