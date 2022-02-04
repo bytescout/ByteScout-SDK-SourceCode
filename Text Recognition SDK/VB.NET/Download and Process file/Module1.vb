@@ -34,7 +34,7 @@ Module Module1
                 textRecognizer.LoadDocument(inputStream)
 
                 ' Set the location of OCR language data files
-                textRecognizer.OCRLanguageDataFolder = "C:\Program Files\ByteScout Text Recognition SDK\tessdata\"
+                textRecognizer.OCRLanguageDataFolder = "C:\Program Files\ByteScout Text Recognition SDK\ocrdata_best\"
 
                 ' Set OCR language.
                 ' "eng" for english, "deu" for German, "fra" for French, "spa" for Spanish, etc. - according to files in "ocrdata" folder
