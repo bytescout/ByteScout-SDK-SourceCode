@@ -5579,9 +5579,9 @@
 \PDF.co Web API\PDF from HTML template\PowerShell\Invoice With Multiple Pages
 \PDF.co Web API\PDF from HTML template\Python\Generate PDF Invoice From HTML Template
 \PDF.co Web API\PDF from HTML template\Python\Invoice With Multiple Pages
+\PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Advanced Invoice With Multiple Pages
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Array Iteration
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Invoice With Auto Calculations and QR Code
-\PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Invoice With Multiple Pages
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Simple Invoice using Mustache Template and QR Code Barcode
 \PDF.co Web API\PDF from HTML template\VB.NET\Generate PDF Invoice From HTML Template
 \PDF.co Web API\PDF from HTML template\VB.NET\Invoice With Multiple Pages
