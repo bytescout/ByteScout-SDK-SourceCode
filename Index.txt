@@ -5653,6 +5653,10 @@
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From Uploaded File (Node.js) - Async API
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From URL (Node.js)
 \PDF.co Web API\PDF Make Searchable API\JavaScript\Make Searchable PDF From URL (Node.js) - Async API
+\PDF.co Web API\PDF Make Searchable API\JavaScript\Make UnSearchable PDF From Uploaded File (Node.js)
+\PDF.co Web API\PDF Make Searchable API\JavaScript\Make UnSearchable PDF From Uploaded File (Node.js) - Async API
+\PDF.co Web API\PDF Make Searchable API\JavaScript\Make UnSearchable PDF From URL (Node.js)
+\PDF.co Web API\PDF Make Searchable API\JavaScript\Make UnSearchable PDF From URL (Node.js) - Async API
 \PDF.co Web API\PDF Make Searchable API\PHP\Make Searchable PDF Asynchronously
 \PDF.co Web API\PDF Make Searchable API\PHP\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\PowerShell\Advanced Conversion Options
