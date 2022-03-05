@@ -5814,6 +5814,7 @@
 \PDF.co Web API\PDF Search Tables\VB.NET\PDF Table Search from URL Asynchronously
 \PDF.co Web API\PDF Splitting API\C#
 \PDF.co Web API\PDF Splitting API\cURL
+\PDF.co Web API\PDF Splitting API\GoogleAppScript
 \PDF.co Web API\PDF Splitting API\Java
 \PDF.co Web API\PDF Splitting API\JavaScript
 \PDF.co Web API\PDF Splitting API\PHP
@@ -5830,6 +5831,7 @@
 \PDF.co Web API\PDF Splitting API\C#\Split PDF From URL Asynchronously
 \PDF.co Web API\PDF Splitting API\cURL\PDF Split
 \PDF.co Web API\PDF Splitting API\cURL\PDF Split By Text
+\PDF.co Web API\PDF Splitting API\GoogleAppScript\Split All PDF in Google Drive Folder
 \PDF.co Web API\PDF Splitting API\Java\Split PDF By Text From Uploaded File
 \PDF.co Web API\PDF Splitting API\Java\Split PDF By Text From URL
 \PDF.co Web API\PDF Splitting API\Java\Split PDF From Uploaded File
