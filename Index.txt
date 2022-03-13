@@ -5185,6 +5185,7 @@
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Multiline Items Without Borders
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Order form with line items and total
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse and Generate HL7 Output
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Email Address
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Hanging Rows In Invoice
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1040
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1099-DIV
