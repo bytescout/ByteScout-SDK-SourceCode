@@ -5460,6 +5460,10 @@
 \PDF.co Web API\PDF Fill PDF Forms\JavaScript\Fill PDF Forms
 \PDF.co Web API\PDF Fill PDF Forms\JavaScript\Fill PDF Forms Simplified
 \PDF.co Web API\PDF Fill PDF Forms\PHP\Fill PDF Forms
+\PDF.co Web API\PDF Fill PDF Forms\PHP\Fill PDF Forms from Local File
+\PDF.co Web API\PDF Fill PDF Forms\PHP\Fill PDF Forms from Local File Asynchronously
+\PDF.co Web API\PDF Fill PDF Forms\PHP\Fill PDF Forms from Uploaded File
+\PDF.co Web API\PDF Fill PDF Forms\PHP\Fill PDF Forms from Uploaded File Asynchronously
 \PDF.co Web API\PDF Fill PDF Forms\PHP\Fill PDF Forms Simplified
 \PDF.co Web API\PDF Fill PDF Forms\PowerShell\Fill PDF Forms
 \PDF.co Web API\PDF Fill PDF Forms\PowerShell\Fill PDF Forms Simplified
