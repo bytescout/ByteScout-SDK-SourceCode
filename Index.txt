@@ -3343,6 +3343,7 @@
 \Data Extraction Suite\Visual Basic 6\Split pdf with pdf extractor sdk
 \Document Parser SDK\C#
 \Document Parser SDK\Delphi
+\Document Parser SDK\SharePoint
 \Document Parser SDK\VB.NET
 \Document Parser SDK\VBScript and VB6
 \Document Parser SDK\C#\Blood Test Results to JSON
@@ -3361,6 +3362,11 @@
 \Document Parser SDK\Delphi\Create Custom Template
 \Document Parser SDK\Delphi\Parse Multipage Table
 \Document Parser SDK\Delphi\Parsing and reading data from Airline Tickets
+\Document Parser SDK\SharePoint\Parse Invoice to CSV
+\Document Parser SDK\SharePoint\Parse Invoice to CSV\Features
+\Document Parser SDK\SharePoint\Parse Invoice to CSV\ocrdata
+\Document Parser SDK\SharePoint\Parse Invoice to CSV\VisualWebPart1
+\Document Parser SDK\SharePoint\Parse Invoice to CSV\Features\Feature1
 \Document Parser SDK\VB.NET\Blood Test Results to JSON
 \Document Parser SDK\VB.NET\Census table from life and annuity quote request pdf
 \Document Parser SDK\VB.NET\Create Custom Template
