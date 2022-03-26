@@ -5094,6 +5094,8 @@
 \PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From Uploaded File (Node.js) - Async API
 \PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From URL (Node.js)
 \PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To PDF From URL (Node.js) - Async API
+\PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To Protected PDF From URL (Node.js)
+\PDF.co Web API\DOC To PDF API\JavaScript\Convert DOC To Protected PDF From URL (Node.js) - Async API
 \PDF.co Web API\DOC To PDF API\PHP\Convert DOC To PDF Asynchronously
 \PDF.co Web API\DOC To PDF API\PHP\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\PHP\Convert DOC to Protected PDF from Uploaded File
