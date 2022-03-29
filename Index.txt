@@ -5022,6 +5022,7 @@
 \PDF.co Web API\Barcode Reader API\Java\Read Barcode From URL
 \PDF.co Web API\Barcode Reader API\JavaScript\Advanced Conversion Options
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From File (Node.js) - Async Api
+\PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From Live Camera
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From Uploaded File (Node.js)
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From Uploaded File (Node.js) - Async Api
 \PDF.co Web API\Barcode Reader API\JavaScript\Read Barcode From URL (Node.js)
