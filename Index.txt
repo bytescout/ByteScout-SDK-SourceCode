@@ -5769,6 +5769,7 @@
 \PDF.co Web API\PDF Optimization API\VB.NET\Optimize PDF From URL Asynchronously
 \PDF.co Web API\PDF Password And Security\C#
 \PDF.co Web API\PDF Password And Security\cURL
+\PDF.co Web API\PDF Password And Security\GoogleAppsScript
 \PDF.co Web API\PDF Password And Security\Java
 \PDF.co Web API\PDF Password And Security\JavaScript
 \PDF.co Web API\PDF Password And Security\PHP
@@ -5780,6 +5781,7 @@
 \PDF.co Web API\PDF Password And Security\C#\Remove PDF Document Protection
 \PDF.co Web API\PDF Password And Security\cURL\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\cURL\Remove PDF Document Protection
+\PDF.co Web API\PDF Password And Security\GoogleAppsScript\Add Password to PDF files
 \PDF.co Web API\PDF Password And Security\Java\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\Java\Remove PDF Document Protection
 \PDF.co Web API\PDF Password And Security\JavaScript\Protect PDF Document
