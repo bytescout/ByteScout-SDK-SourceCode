@@ -5745,6 +5745,7 @@
 \PDF.co Web API\PDF Optimization API\PHP
 \PDF.co Web API\PDF Optimization API\PowerShell
 \PDF.co Web API\PDF Optimization API\Python
+\PDF.co Web API\PDF Optimization API\Salesforce
 \PDF.co Web API\PDF Optimization API\VB.NET
 \PDF.co Web API\PDF Optimization API\C#\Optimize PDF From Uploaded File
 \PDF.co Web API\PDF Optimization API\C#\Optimize PDF From URL
@@ -5764,6 +5765,8 @@
 \PDF.co Web API\PDF Optimization API\Python\Optimize PDF From Uploaded File
 \PDF.co Web API\PDF Optimization API\Python\Optimize PDF From URL
 \PDF.co Web API\PDF Optimization API\Python\Optimize PDF From URL Asynchronously
+\PDF.co Web API\PDF Optimization API\Salesforce\Compress PDF Document
+\PDF.co Web API\PDF Optimization API\Salesforce\Compress PDF Document From Uploaded File
 \PDF.co Web API\PDF Optimization API\VB.NET\Optimize PDF From Uploaded File
 \PDF.co Web API\PDF Optimization API\VB.NET\Optimize PDF From URL
 \PDF.co Web API\PDF Optimization API\VB.NET\Optimize PDF From URL Asynchronously
