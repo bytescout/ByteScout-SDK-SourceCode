@@ -6246,6 +6246,7 @@
 \PDF.co Web API\PDF To XLS\VB.NET\Convert PDF To XLS From Uploaded File
 \PDF.co Web API\PDF To XLS\VB.NET\Convert PDF To XLS From Uploaded File (WinForms)
 \PDF.co Web API\PDF To XLS\VB.NET\Convert PDF To XLS From URL
+\PDF.co Web API\PDF To XLSX\Blazor
 \PDF.co Web API\PDF To XLSX\C#
 \PDF.co Web API\PDF To XLSX\cURL
 \PDF.co Web API\PDF To XLSX\Java
@@ -6254,6 +6255,15 @@
 \PDF.co Web API\PDF To XLSX\PowerShell
 \PDF.co Web API\PDF To XLSX\Python
 \PDF.co Web API\PDF To XLSX\VB.NET
+\PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File
+\PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\Pages
+\PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\Shared
+\PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\wwwroot
+\PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\wwwroot\css
+\PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\wwwroot\css\bootstrap
+\PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\wwwroot\css\open-iconic
+\PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\wwwroot\css\open-iconic\font
+\PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\wwwroot\css\open-iconic\font\css
 \PDF.co Web API\PDF To XLSX\C#\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To XLSX\C#\Convert PDF To XLSX From URL
 \PDF.co Web API\PDF To XLSX\C#\Convert PDF To XLSX From URL Asynchronously
