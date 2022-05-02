@@ -6420,6 +6420,9 @@
 \PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From Uploaded File (Node.js) - Async API
 \PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From URL (Node.js)
 \PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Image From URL (Node.js) - Async API
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Signature (jQuery)
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Signature (jQuery)\assets
+\PDF.co Web API\Replace Text With Image From PDF\JavaScript\Replace Text With Signature (jQuery)\js
 \PDF.co Web API\Replace Text With Image From PDF\PHP\Replace Text With Image Asynchronously
 \PDF.co Web API\Replace Text With Image From PDF\PHP\Replace Text With Image From Uploaded File
 \PDF.co Web API\Replace Text With Image From PDF\PowerShell\Replace Text With Image From Uploaded File
