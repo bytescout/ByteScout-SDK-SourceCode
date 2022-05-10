@@ -13,6 +13,7 @@
 Imports System.Drawing.Printing
 Imports Bytescout.PDF.Converters
 
+' IMPORTANT: This functionality is outdated! Please try Web API version for better results. Free signup: https://pdf.co/
 Module Module1
 
     Sub Main()

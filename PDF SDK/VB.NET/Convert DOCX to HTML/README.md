@@ -1,3 +1,6 @@
+```
+IMPORTANT: This functionality is outdated! Please try Web API version for better results. Free signup: https://pdf.co/
+```
 ## How to convert DOCX to HTML in VB.NET and ByteScout PDF SDK
 
 ### This code in VB.NET shows how to convert DOCX to HTML with this how to tutorial

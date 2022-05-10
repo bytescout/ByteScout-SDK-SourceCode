@@ -1,3 +1,6 @@
+```
+IMPORTANT: This functionality is outdated! Please try Web API version for better results. Free signup: https://pdf.co/
+```
 ## How to convert docx to pdf with pdf sdk in C# using ByteScout Premium Suite
 
 ### Learning is essential in computer world and the tutorial below will demonstrate how to convert docx to pdf with pdf sdk in C#

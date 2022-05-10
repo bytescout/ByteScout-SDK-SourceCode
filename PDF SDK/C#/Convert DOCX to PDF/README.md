@@ -1,3 +1,7 @@
+```
+// IMPORTANT: This functionality is outdated! Please try Web API version for better results. Free signup: https://pdf.co/
+```
+
 ## How to convert DOCX to PDF in C# using ByteScout PDF SDK
 
 ### This tutorial will show how to convert DOCX to PDF in C#

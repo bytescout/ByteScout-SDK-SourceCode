@@ -1,3 +1,6 @@
+```
+IMPORTANT: This functionality is outdated! Please try Web API version for better results. Free signup: https://pdf.co/
+```
 ## How to convert DOCX to PDF in VB.NET using ByteScout PDF SDK
 
 ### How to convert DOCX to PDF in VB.NET

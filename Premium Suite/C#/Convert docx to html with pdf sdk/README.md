@@ -1,3 +1,6 @@
+```
+IMPORTANT: This functionality is outdated! Please try Web API version for better results. Free signup: https://pdf.co/`
+```
 ## How to convert docx to html with pdf sdk in C# using ByteScout Premium Suite
 
 ### Continuous learning is a crucial part of computer science and this tutorial shows how to convert docx to html with pdf sdk in C#

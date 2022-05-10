@@ -15,6 +15,7 @@ using System.Diagnostics;
 using System.Drawing.Printing;
 using Bytescout.PDF.Converters;
 
+// IMPORTANT: This functionality is outdated! Please try Web API version for better results. Free signup: https://pdf.co/
 namespace ConvertDocxToPdf
 {
     class Program
