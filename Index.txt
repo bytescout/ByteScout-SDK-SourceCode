@@ -5697,6 +5697,7 @@
 \PDF.co Web API\PDF Merging API\PHP
 \PDF.co Web API\PDF Merging API\PowerShell
 \PDF.co Web API\PDF Merging API\Python
+\PDF.co Web API\PDF Merging API\Salesforce
 \PDF.co Web API\PDF Merging API\VB.NET
 \PDF.co Web API\PDF Merging API\C#\Async file upload and async Merge PDF
 \PDF.co Web API\PDF Merging API\C#\Merge Any Documents From URLs
@@ -5734,6 +5735,8 @@
 \PDF.co Web API\PDF Merging API\Python\Merge Any Documents From Uploaded Files Asynchronously
 \PDF.co Web API\PDF Merging API\Python\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\Python\Merge PDF Documents From Uploaded Files Asynchronously
+\PDF.co Web API\PDF Merging API\Salesforce\Merge Documents From SFDC record
+\PDF.co Web API\PDF Merging API\Salesforce\Merge Documents From URL
 \PDF.co Web API\PDF Merging API\VB.NET\Async file upload and async Merge PDF
 \PDF.co Web API\PDF Merging API\VB.NET\Merge Any Documents From URLs
 \PDF.co Web API\PDF Merging API\VB.NET\Merge Any Documents From URLs Asynchronously
