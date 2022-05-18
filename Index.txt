@@ -5711,6 +5711,7 @@
 \PDF.co Web API\PDF Merging API\Delphi\Merge PDF Documents From URLs
 \PDF.co Web API\PDF Merging API\GoogleAppScript\Merge PDF from Google Drive and Save back
 \PDF.co Web API\PDF Merging API\GoogleAppScript\Merge PDF Urls
+\PDF.co Web API\PDF Merging API\GoogleAppScript\Merge PDF Urls into Individual Row
 \PDF.co Web API\PDF Merging API\Java\Merge Any Documents From URLs
 \PDF.co Web API\PDF Merging API\Java\Merge PDF Documents From Uploaded Files
 \PDF.co Web API\PDF Merging API\Java\Merge PDF Documents From URLs
