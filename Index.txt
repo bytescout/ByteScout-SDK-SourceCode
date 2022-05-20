@@ -5427,6 +5427,7 @@
 \PDF.co Web API\PDF Delete Pages\PHP
 \PDF.co Web API\PDF Delete Pages\PowerShell
 \PDF.co Web API\PDF Delete Pages\Python
+\PDF.co Web API\PDF Delete Pages\Salesforce
 \PDF.co Web API\PDF Fill PDF Forms\C#
 \PDF.co Web API\PDF Fill PDF Forms\cURL
 \PDF.co Web API\PDF Fill PDF Forms\Java
@@ -6358,6 +6359,7 @@
 \PDF.co Web API\Replace Text From PDF\PHP
 \PDF.co Web API\Replace Text From PDF\PowerShell
 \PDF.co Web API\Replace Text From PDF\Python
+\PDF.co Web API\Replace Text From PDF\Salesforce
 \PDF.co Web API\Replace Text From PDF\VB.NET
 \PDF.co Web API\Replace Text From PDF\C#\Replace Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\C#\Replace Text From URL
@@ -6379,6 +6381,7 @@
 \PDF.co Web API\Replace Text From PDF\Python\Replace Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\Python\Replace Text From URL
 \PDF.co Web API\Replace Text From PDF\Python\Replace Text From URL Asynchronously
+\PDF.co Web API\Replace Text From PDF\Salesforce\Search and Replace Text
 \PDF.co Web API\Replace Text From PDF\VB.NET\Replace Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\VB.NET\Replace Text From URL
 \PDF.co Web API\Replace Text From PDF\VB.NET\Replace Text From URL Asynchronously
@@ -6389,6 +6392,7 @@
 \PDF.co Web API\Replace Text With Image From PDF\PHP
 \PDF.co Web API\Replace Text With Image From PDF\PowerShell
 \PDF.co Web API\Replace Text With Image From PDF\Python
+\PDF.co Web API\Replace Text With Image From PDF\Salesforce
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET
 \PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From Uploaded File
 \PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From URL
@@ -6413,6 +6417,7 @@
 \PDF.co Web API\Replace Text With Image From PDF\Python\Replace Text With Image From Uploaded File
 \PDF.co Web API\Replace Text With Image From PDF\Python\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\Python\Replace Text With Image From URL Asynchronously
+\PDF.co Web API\Replace Text With Image From PDF\Salesforce\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From Uploaded File
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL Asynchronously
