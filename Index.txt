@@ -4862,7 +4862,6 @@
 \PDF.co Web API\File Upload for Small Files (up to 50KB)
 \PDF.co Web API\Generic API Call
 \PDF.co Web API\Image To PDF API
-\PDF.co Web API\Invoice Parser API
 \PDF.co Web API\Manage Background Jobs
 \PDF.co Web API\MISC Account Related
 \PDF.co Web API\PDF Classifier
@@ -5375,28 +5374,6 @@
 \PDF.co Web API\Image To PDF API\VB.NET\Convert Images To PDF From URLs
 \PDF.co Web API\Image To PDF API\VB.NET\Convert Images To PDF From URLs Asynchronously
 \PDF.co Web API\Image To PDF API\Zapier\Multiple Images to PDF
-\PDF.co Web API\Invoice Parser API\C#
-\PDF.co Web API\Invoice Parser API\cURL
-\PDF.co Web API\Invoice Parser API\Java
-\PDF.co Web API\Invoice Parser API\JavaScript
-\PDF.co Web API\Invoice Parser API\PHP
-\PDF.co Web API\Invoice Parser API\PowerShell
-\PDF.co Web API\Invoice Parser API\Python
-\PDF.co Web API\Invoice Parser API\VB.NET
-\PDF.co Web API\Invoice Parser API\C#\Get Invoice Info From Uploaded File
-\PDF.co Web API\Invoice Parser API\C#\Get Invoice Info From URL
-\PDF.co Web API\Invoice Parser API\cURL\Get Invoice Info From URL
-\PDF.co Web API\Invoice Parser API\Java\Get Invoice Info From Uploaded File
-\PDF.co Web API\Invoice Parser API\Java\Get Invoice Info From URL
-\PDF.co Web API\Invoice Parser API\JavaScript\Get Invoice Info From Uploaded File (Node.js)
-\PDF.co Web API\Invoice Parser API\JavaScript\Get Invoice Info From URL (Node.js)
-\PDF.co Web API\Invoice Parser API\PHP\Get Invoice Info From Uploaded File
-\PDF.co Web API\Invoice Parser API\PowerShell\Get Invoice Info From Uploaded File
-\PDF.co Web API\Invoice Parser API\PowerShell\Get Invoice Info From URL
-\PDF.co Web API\Invoice Parser API\Python\Get Invoice Info From Uploaded File
-\PDF.co Web API\Invoice Parser API\Python\Get Invoice Info From URL
-\PDF.co Web API\Invoice Parser API\VB.NET\Get Invoice Info From Uploaded File
-\PDF.co Web API\Invoice Parser API\VB.NET\Get Invoice Info From URL
 \PDF.co Web API\Manage Background Jobs\C#
 \PDF.co Web API\Manage Background Jobs\cURL
 \PDF.co Web API\Manage Background Jobs\Java
