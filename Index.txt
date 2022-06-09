@@ -5167,6 +5167,7 @@
 \PDF.co Web API\Document Parser API\PHP\Extract line items from tables on multiple pages
 \PDF.co Web API\Document Parser API\PHP\Parse From URL Asynchronously
 \PDF.co Web API\Document Parser API\PHP\Parse Invoice and Fill Database (SQL Server)
+\PDF.co Web API\Document Parser API\PHP\Parse Invoice and Save Table Data to mySql Database
 \PDF.co Web API\Document Parser API\PHP\Parse Multipage Table
 \PDF.co Web API\Document Parser API\PHP\Parse Simple Document
 \PDF.co Web API\Document Parser API\PHP\Parse Uploaded File Asynchronously
