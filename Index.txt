@@ -4864,6 +4864,7 @@
 \PDF.co Web API\Image To PDF API
 \PDF.co Web API\Manage Background Jobs
 \PDF.co Web API\MISC Account Related
+\PDF.co Web API\PDF Attachments
 \PDF.co Web API\PDF Classifier
 \PDF.co Web API\PDF Create Fillable PDF Forms
 \PDF.co Web API\PDF Delete Pages
@@ -5394,6 +5395,22 @@
 \PDF.co Web API\Manage Background Jobs\Python\Check Job Status
 \PDF.co Web API\MISC Account Related\cURL
 \PDF.co Web API\MISC Account Related\cURL\Check Credit Balance
+\PDF.co Web API\PDF Attachments\C#
+\PDF.co Web API\PDF Attachments\cURL
+\PDF.co Web API\PDF Attachments\Java
+\PDF.co Web API\PDF Attachments\JavaScript
+\PDF.co Web API\PDF Attachments\PHP
+\PDF.co Web API\PDF Attachments\PowerShell
+\PDF.co Web API\PDF Attachments\Python
+\PDF.co Web API\PDF Attachments\C#\Extract PDF Attachments From URL
+\PDF.co Web API\PDF Attachments\cURL\Extract PDF Attachments From URL
+\PDF.co Web API\PDF Attachments\Java\Extract PDF Attachments From URL
+\PDF.co Web API\PDF Attachments\JavaScript\Extract PDF Attachments From Uploaded File (Node.js) - Async API
+\PDF.co Web API\PDF Attachments\JavaScript\Extract PDF Attachments From URL (Node.js)
+\PDF.co Web API\PDF Attachments\PHP\Extract PDF Attachments Asynchronously
+\PDF.co Web API\PDF Attachments\PHP\Extract PDF Attachments From Uploaded File
+\PDF.co Web API\PDF Attachments\PowerShell\Extract PDF Attachments From URL
+\PDF.co Web API\PDF Attachments\Python\Extract PDF Attachments From URL
 \PDF.co Web API\PDF Classifier\C#
 \PDF.co Web API\PDF Classifier\cURL
 \PDF.co Web API\PDF Classifier\Java
