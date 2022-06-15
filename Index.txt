@@ -5362,6 +5362,7 @@
 \PDF.co Web API\Image To PDF API\PHP
 \PDF.co Web API\Image To PDF API\PowerShell
 \PDF.co Web API\Image To PDF API\Python
+\PDF.co Web API\Image To PDF API\Salesforce
 \PDF.co Web API\Image To PDF API\VB.NET
 \PDF.co Web API\Image To PDF API\Zapier
 \PDF.co Web API\Image To PDF API\C#\Convert Images To PDF From Uploaded Files
@@ -5381,6 +5382,8 @@
 \PDF.co Web API\Image To PDF API\Python\Convert Images To PDF From Uploaded Files
 \PDF.co Web API\Image To PDF API\Python\Convert Images To PDF From URLs
 \PDF.co Web API\Image To PDF API\Python\Convert Images To PDF From URLs Asynchronously
+\PDF.co Web API\Image To PDF API\Salesforce\Convert Images To PDF From Uploaded Files
+\PDF.co Web API\Image To PDF API\Salesforce\Convert Images To PDF From Url
 \PDF.co Web API\Image To PDF API\VB.NET\Convert Images To PDF From Uploaded Files
 \PDF.co Web API\Image To PDF API\VB.NET\Convert Images To PDF From URLs
 \PDF.co Web API\Image To PDF API\VB.NET\Convert Images To PDF From URLs Asynchronously
