@@ -3990,6 +3990,7 @@
 \PDF SDK\C#\Draw Rectangles in PDF
 \PDF SDK\C#\Draw Text On Rotated Page
 \PDF SDK\C#\Draw Text String in PDF
+\PDF SDK\C#\Draw Transparent Text
 \PDF SDK\C#\Draw with Transparency in PDF
 \PDF SDK\C#\External JS for form data validation
 \PDF SDK\C#\Fill Form 1099-INT
@@ -4085,6 +4086,7 @@
 \PDF SDK\VB.NET\Draw Text On Rotated Page
 \PDF SDK\VB.NET\Draw Text String in PDF
 \PDF SDK\VB.NET\Draw Tiling Patterns in PDF
+\PDF SDK\VB.NET\Draw Trasparent Text
 \PDF SDK\VB.NET\Draw with Blend Mode in PDF
 \PDF SDK\VB.NET\Draw with Clipping in PDF
 \PDF SDK\VB.NET\Draw with Color Profiles in PDF
