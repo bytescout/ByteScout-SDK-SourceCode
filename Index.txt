@@ -5195,6 +5195,7 @@
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Sample
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\VisualWebPart1
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Features\Feature1
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Amazon Shipment Label
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Census table from life and annuity quote request pdf
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Create Custom Template
