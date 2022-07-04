@@ -5461,6 +5461,14 @@
 \PDF.co Web API\PDF Delete Pages\PowerShell
 \PDF.co Web API\PDF Delete Pages\Python
 \PDF.co Web API\PDF Delete Pages\Salesforce
+\PDF.co Web API\PDF Delete Pages\C#\Delete Pages From PDF
+\PDF.co Web API\PDF Delete Pages\cURL\Delete Pages From PDF
+\PDF.co Web API\PDF Delete Pages\Java\Delete Pages From PDF
+\PDF.co Web API\PDF Delete Pages\JavaScript\Delete Pages From PDF
+\PDF.co Web API\PDF Delete Pages\PHP\Delete Pages From PDF
+\PDF.co Web API\PDF Delete Pages\PowerShell\Delete Pages From PDF
+\PDF.co Web API\PDF Delete Pages\Python\Delete Pages From PDF
+\PDF.co Web API\PDF Delete Pages\Salesforce\Delete Pages From PDF
 \PDF.co Web API\PDF Fill PDF Forms\C#
 \PDF.co Web API\PDF Fill PDF Forms\cURL
 \PDF.co Web API\PDF Fill PDF Forms\Java
