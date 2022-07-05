@@ -5220,6 +5220,7 @@
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse with OCR
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parsing and reading data from Airline Tickets
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Read values in columns 2 and 3
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Statement of Assets
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Tax Invoice with Line Items
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Total and Vat tax
 \PDF.co Web API\Document Parser API\VB.NET\Blood Test Results to JSON
