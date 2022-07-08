@@ -5204,6 +5204,7 @@
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice table with some empty columns
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with few line items in EUR
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with line items in bordered table
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\JPMorgan Chase Statement
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Key Value Fields From Echocardiogram Report
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\ManyChat Invoice
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Multiline Items Without Borders
