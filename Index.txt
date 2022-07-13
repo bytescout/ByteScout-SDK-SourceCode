@@ -5197,6 +5197,7 @@
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Features\Feature1
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Amazon Shipment Label
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Auto Detect Table
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Auto Find Table and Extract Borderless Table
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Bank of America Statement
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Census table from life and annuity quote request pdf
