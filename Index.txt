@@ -5227,6 +5227,7 @@
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Statement of Assets
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Tax Invoice with Line Items
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Total and Vat tax
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\US Postal Shipping Label
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Wells Fargo Statement
 \PDF.co Web API\Document Parser API\VB.NET\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\VB.NET\Census table from life and annuity quote request pdf
