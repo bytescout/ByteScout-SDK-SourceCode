@@ -4023,6 +4023,7 @@
 \PDF SDK\C#\Set PDF Document Information
 \PDF SDK\C#\Set String Scaling in PDF
 \PDF SDK\C#\Set Superscript and Subscript
+\PDF SDK\C#\Set Text Line Spacing in PDF
 \PDF SDK\C#\Set Text Rotation in PDF
 \PDF SDK\C#\Set Tiling Patterns for Drawings in PDF
 \PDF SDK\C#\Set Transformations for Drawings in PDF
