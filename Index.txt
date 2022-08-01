@@ -5439,13 +5439,21 @@
 \PDF.co Web API\PDF Classifier\PHP
 \PDF.co Web API\PDF Classifier\PowerShell
 \PDF.co Web API\PDF Classifier\C#\Classify PDF From URL
+\PDF.co Web API\PDF Classifier\C#\Classify PDF from URL with Custom Rules
 \PDF.co Web API\PDF Classifier\cURL\Classify PDF From URL
+\PDF.co Web API\PDF Classifier\cURL\Classify PDF from URL with Custom Rules
 \PDF.co Web API\PDF Classifier\Java\Classify PDF From URL
+\PDF.co Web API\PDF Classifier\Java\Classify PDF from URL with Custom Rules
 \PDF.co Web API\PDF Classifier\JavaScript\Classify PDF From URL (jQuery)
 \PDF.co Web API\PDF Classifier\JavaScript\Classify PDF From URL (nodeJs)
+\PDF.co Web API\PDF Classifier\JavaScript\Classify PDF from URL with Custom Rules (jQuery)
+\PDF.co Web API\PDF Classifier\JavaScript\Classify PDF from URL with Custom Rules (nodeJs)
 \PDF.co Web API\PDF Classifier\PHP\Classify PDF From URL
+\PDF.co Web API\PDF Classifier\PHP\Classify PDF from URL with Custom Rules
+\PDF.co Web API\PDF Classifier\PowerShell\Classify PDF From URL
+\PDF.co Web API\PDF Classifier\PowerShell\Classify PDF From URL with Custom Rules
 \PDF.co Web API\PDF Classifier\PowerShell\Classify Uploaded PDF Asynchronously
-\PDF.co Web API\PDF Classifier\PowerShell\Classify Uploaded PDF From URL
+\PDF.co Web API\PDF Classifier\PowerShell\Classify Uploaded PDF Asynchronously with Custom Rules
 \PDF.co Web API\PDF Create Fillable PDF Forms\C#
 \PDF.co Web API\PDF Create Fillable PDF Forms\cURL
 \PDF.co Web API\PDF Create Fillable PDF Forms\Java
