@@ -6480,7 +6480,11 @@
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From Uploaded File
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET\Replace Text With Image From URL Asynchronously
+\PDF.co Web API\Translate PDF\C#
 \PDF.co Web API\Translate PDF\cURL
+\PDF.co Web API\Translate PDF\C#\Translate PDF From Uploaded File
+\PDF.co Web API\Translate PDF\C#\Translate PDF From URL
+\PDF.co Web API\Translate PDF\C#\Translate PDF From URL Asynchronously
 \PDF.co Web API\Translate PDF\cURL\Translate PDF Document
 \Premium Suite\ASP Classic
 \Premium Suite\ASP.NET C#
