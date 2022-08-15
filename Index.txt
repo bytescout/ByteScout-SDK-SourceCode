@@ -5328,6 +5328,7 @@
 \PDF.co Web API\File Upload\Generate Secure URL for Upload\PHP
 \PDF.co Web API\File Upload\Generate Secure URL for Upload\PowerShell
 \PDF.co Web API\File Upload\Generate Secure URL for Upload\Python
+\PDF.co Web API\File Upload\Generate Secure URL for Upload\Salesforce
 \PDF.co Web API\File Upload\Put Upload File\C#
 \PDF.co Web API\File Upload\Put Upload File\Java
 \PDF.co Web API\File Upload\Put Upload File\JavaScript
