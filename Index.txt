@@ -7946,6 +7946,7 @@
 \Spreadsheet SDK\C#\Remove Columns from Existing Spreadsheet
 \Spreadsheet SDK\C#\Remove Rows from Existing Spreadsheet
 \Spreadsheet SDK\C#\Rename Worksheet
+\Spreadsheet SDK\C#\Search and Replace Text
 \Spreadsheet SDK\C#\Search Text
 \Spreadsheet SDK\C#\Select Active Worksheet
 \Spreadsheet SDK\C#\Set Cell Alignment
