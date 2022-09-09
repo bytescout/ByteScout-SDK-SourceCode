@@ -4855,6 +4855,7 @@
 \PDF.co Web API\DOC To PDF API
 \PDF.co Web API\Document Parser API
 \PDF.co Web API\Email Extractor
+\PDF.co Web API\Email Send
 \PDF.co Web API\Excel To CSV API
 \PDF.co Web API\Excel To HTML API
 \PDF.co Web API\Excel To JSON API
@@ -5287,6 +5288,18 @@
 \PDF.co Web API\Email Extractor\Get Email Information\PHP
 \PDF.co Web API\Email Extractor\Get Email Information\PowerShell
 \PDF.co Web API\Email Extractor\Get Email Information\Python
+\PDF.co Web API\Email Send\C#
+\PDF.co Web API\Email Send\cURL
+\PDF.co Web API\Email Send\JavaScript
+\PDF.co Web API\Email Send\PHP
+\PDF.co Web API\Email Send\PowerShell
+\PDF.co Web API\Email Send\Python
+\PDF.co Web API\Email Send\C#\Send Email
+\PDF.co Web API\Email Send\cURL\Send Email
+\PDF.co Web API\Email Send\JavaScript\Send Email
+\PDF.co Web API\Email Send\PHP\Send Email
+\PDF.co Web API\Email Send\PowerShell\Send Email
+\PDF.co Web API\Email Send\Python\Send Email
 \PDF.co Web API\Excel To CSV API\cURL
 \PDF.co Web API\Excel To CSV API\JavaScript
 \PDF.co Web API\Excel To CSV API\cURL\Excel To CSV
