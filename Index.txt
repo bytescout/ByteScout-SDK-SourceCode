@@ -4855,7 +4855,7 @@
 \PDF.co Web API\DOC To PDF API
 \PDF.co Web API\Document Parser API
 \PDF.co Web API\Email Extractor
-\PDF.co Web API\Email Send
+\PDF.co Web API\Email Send and Decode
 \PDF.co Web API\Excel To CSV API
 \PDF.co Web API\Excel To HTML API
 \PDF.co Web API\Excel To JSON API
@@ -5246,8 +5246,6 @@
 \PDF.co Web API\Document Parser API\VB.NET\Parse with OCR
 \PDF.co Web API\Document Parser API\VB.NET\Parsing and reading data from Airline Tickets
 \PDF.co Web API\Email Extractor\Email to PDF
-\PDF.co Web API\Email Extractor\Extract Email Attachments
-\PDF.co Web API\Email Extractor\Get Email Information
 \PDF.co Web API\Email Extractor\Email to PDF\C#
 \PDF.co Web API\Email Extractor\Email to PDF\cURL
 \PDF.co Web API\Email Extractor\Email to PDF\Java
@@ -5274,32 +5272,33 @@
 \PDF.co Web API\Email Extractor\Email to PDF\VB.NET\Email to PDF From Uploaded File
 \PDF.co Web API\Email Extractor\Email to PDF\VB.NET\Email to PDF From URL
 \PDF.co Web API\Email Extractor\Email to PDF\VB.NET\Email to PDF With Custom Orientation and Paper Size
-\PDF.co Web API\Email Extractor\Extract Email Attachments\C#
-\PDF.co Web API\Email Extractor\Extract Email Attachments\cURL
-\PDF.co Web API\Email Extractor\Extract Email Attachments\Java
-\PDF.co Web API\Email Extractor\Extract Email Attachments\JavaScript
-\PDF.co Web API\Email Extractor\Extract Email Attachments\PHP
-\PDF.co Web API\Email Extractor\Extract Email Attachments\PowerShell
-\PDF.co Web API\Email Extractor\Extract Email Attachments\Python
-\PDF.co Web API\Email Extractor\Get Email Information\C#
-\PDF.co Web API\Email Extractor\Get Email Information\cURL
-\PDF.co Web API\Email Extractor\Get Email Information\Java
-\PDF.co Web API\Email Extractor\Get Email Information\JavaScript
-\PDF.co Web API\Email Extractor\Get Email Information\PHP
-\PDF.co Web API\Email Extractor\Get Email Information\PowerShell
-\PDF.co Web API\Email Extractor\Get Email Information\Python
-\PDF.co Web API\Email Send\C#
-\PDF.co Web API\Email Send\cURL
-\PDF.co Web API\Email Send\JavaScript
-\PDF.co Web API\Email Send\PHP
-\PDF.co Web API\Email Send\PowerShell
-\PDF.co Web API\Email Send\Python
-\PDF.co Web API\Email Send\C#\Send Email
-\PDF.co Web API\Email Send\cURL\Send Email
-\PDF.co Web API\Email Send\JavaScript\Send Email
-\PDF.co Web API\Email Send\PHP\Send Email
-\PDF.co Web API\Email Send\PowerShell\Send Email
-\PDF.co Web API\Email Send\Python\Send Email
+\PDF.co Web API\Email Send and Decode\C#
+\PDF.co Web API\Email Send and Decode\cURL
+\PDF.co Web API\Email Send and Decode\Java
+\PDF.co Web API\Email Send and Decode\JavaScript
+\PDF.co Web API\Email Send and Decode\PHP
+\PDF.co Web API\Email Send and Decode\PowerShell
+\PDF.co Web API\Email Send and Decode\Python
+\PDF.co Web API\Email Send and Decode\C#\Extract Email Attachments
+\PDF.co Web API\Email Send and Decode\C#\Get Email Information
+\PDF.co Web API\Email Send and Decode\C#\Send Email
+\PDF.co Web API\Email Send and Decode\cURL\Extract Email Attachments
+\PDF.co Web API\Email Send and Decode\cURL\Get Email Information
+\PDF.co Web API\Email Send and Decode\cURL\Send Email
+\PDF.co Web API\Email Send and Decode\Java\Extract Email Attachments
+\PDF.co Web API\Email Send and Decode\Java\Get Email Information
+\PDF.co Web API\Email Send and Decode\JavaScript\Extract Email Attachments
+\PDF.co Web API\Email Send and Decode\JavaScript\Get Email Information
+\PDF.co Web API\Email Send and Decode\JavaScript\Send Email
+\PDF.co Web API\Email Send and Decode\PHP\Extract Email Attchments
+\PDF.co Web API\Email Send and Decode\PHP\Get Email Information
+\PDF.co Web API\Email Send and Decode\PHP\Send Email
+\PDF.co Web API\Email Send and Decode\PowerShell\Extract Email Attachments
+\PDF.co Web API\Email Send and Decode\PowerShell\Get Email Information
+\PDF.co Web API\Email Send and Decode\PowerShell\Send Email
+\PDF.co Web API\Email Send and Decode\Python\Extract Email Attchments
+\PDF.co Web API\Email Send and Decode\Python\Get Email Information
+\PDF.co Web API\Email Send and Decode\Python\Send Email
 \PDF.co Web API\Excel To CSV API\cURL
 \PDF.co Web API\Excel To CSV API\JavaScript
 \PDF.co Web API\Excel To CSV API\cURL\Excel To CSV
