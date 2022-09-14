@@ -4903,6 +4903,7 @@
 \PDF.co Web API\Replace Text From PDF
 \PDF.co Web API\Replace Text With Image From PDF
 \PDF.co Web API\Translate PDF
+\PDF.co Web API\Add Text And Images To PDF\AWS Lambda
 \PDF.co Web API\Add Text And Images To PDF\C#
 \PDF.co Web API\Add Text And Images To PDF\cURL
 \PDF.co Web API\Add Text And Images To PDF\Delphi
@@ -4916,6 +4917,8 @@
 \PDF.co Web API\Add Text And Images To PDF\SharePoint
 \PDF.co Web API\Add Text And Images To PDF\VB.NET
 \PDF.co Web API\Add Text And Images To PDF\Zapier
+\PDF.co Web API\Add Text And Images To PDF\AWS Lambda\Add Image to Existing PDF (Node.js)
+\PDF.co Web API\Add Text And Images To PDF\AWS Lambda\Add Text to Existing PDF (Node.js)
 \PDF.co Web API\Add Text And Images To PDF\C#\Add Image by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\C#\Add Images to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\C#\Add Text by finding target coordinates
@@ -4970,6 +4973,7 @@
 \PDF.co Web API\Add Text And Images To PDF\VB.NET\Add Text to Existing PDF
 \PDF.co Web API\Add Text And Images To PDF\Zapier\PDF.co to Dropbox
 \PDF.co Web API\Add Text And Images To PDF\Zapier\PDF.co to Google Drive
+\PDF.co Web API\Barcode Generator API\AWS Lambda
 \PDF.co Web API\Barcode Generator API\C#
 \PDF.co Web API\Barcode Generator API\cURL
 \PDF.co Web API\Barcode Generator API\Delphi
@@ -4980,6 +4984,7 @@
 \PDF.co Web API\Barcode Generator API\Python
 \PDF.co Web API\Barcode Generator API\VB.NET
 \PDF.co Web API\Barcode Generator API\Zapier
+\PDF.co Web API\Barcode Generator API\AWS Lambda\Generate Barcode (Node.js)
 \PDF.co Web API\Barcode Generator API\C#\Generate Barcode
 \PDF.co Web API\Barcode Generator API\C#\QR Code With Redundancy Setting
 \PDF.co Web API\Barcode Generator API\cURL\Generate Barcode
@@ -5002,6 +5007,7 @@
 \PDF.co Web API\Barcode Generator API\VB.NET\Generate Barcode
 \PDF.co Web API\Barcode Generator API\VB.NET\QR Code With Redundancy Setting
 \PDF.co Web API\Barcode Generator API\Zapier\Generate Barcode and Save to Dropbox
+\PDF.co Web API\Barcode Reader API\AWS Lambda
 \PDF.co Web API\Barcode Reader API\C#
 \PDF.co Web API\Barcode Reader API\cURL
 \PDF.co Web API\Barcode Reader API\Java
@@ -5010,6 +5016,7 @@
 \PDF.co Web API\Barcode Reader API\PowerShell
 \PDF.co Web API\Barcode Reader API\Python
 \PDF.co Web API\Barcode Reader API\VB.NET
+\PDF.co Web API\Barcode Reader API\AWS Lambda\Read Barcode From URL (Node.js)
 \PDF.co Web API\Barcode Reader API\C#\Advanced Conversion Options
 \PDF.co Web API\Barcode Reader API\C#\Async file upload and async barcode reading
 \PDF.co Web API\Barcode Reader API\C#\Async File Uploading
@@ -5059,6 +5066,7 @@
 \PDF.co Web API\Barcode Reader API\VB.NET\Read Code 128
 \PDF.co Web API\Barcode Reader API\VB.NET\Read EAN 13
 \PDF.co Web API\Barcode Reader API\VB.NET\Read QR Code
+\PDF.co Web API\Delete Text From PDF\AWS Lambda
 \PDF.co Web API\Delete Text From PDF\C#
 \PDF.co Web API\Delete Text From PDF\cURL
 \PDF.co Web API\Delete Text From PDF\Delphi
@@ -5068,6 +5076,7 @@
 \PDF.co Web API\Delete Text From PDF\PowerShell
 \PDF.co Web API\Delete Text From PDF\Python
 \PDF.co Web API\Delete Text From PDF\VB.NET
+\PDF.co Web API\Delete Text From PDF\AWS Lambda\Delete PDF Text From URL (Node.js)
 \PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From Uploaded File
 \PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From URL
 \PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From URL Asynchronously
@@ -5092,6 +5101,7 @@
 \PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From Uploaded File
 \PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From URL
 \PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From URL Asynchronously
+\PDF.co Web API\DOC To PDF API\AWS Lambda
 \PDF.co Web API\DOC To PDF API\C#
 \PDF.co Web API\DOC To PDF API\cURL
 \PDF.co Web API\DOC To PDF API\Delphi
@@ -5102,6 +5112,7 @@
 \PDF.co Web API\DOC To PDF API\Python
 \PDF.co Web API\DOC To PDF API\Salesforce
 \PDF.co Web API\DOC To PDF API\VB.NET
+\PDF.co Web API\DOC To PDF API\AWS Lambda\Convert DOC To PDF From URL (Node.js)
 \PDF.co Web API\DOC To PDF API\C#\Convert DOC To PDF From Uploaded File
 \PDF.co Web API\DOC To PDF API\C#\Convert DOC To PDF From URL
 \PDF.co Web API\DOC To PDF API\C#\Convert DOC To PDF From URL Asynchronously
@@ -5384,6 +5395,7 @@
 \PDF.co Web API\File Upload for Small Files (up to 50KB)\Upload Small File from Url\Python
 \PDF.co Web API\Generic API Call\Salesforce
 \PDF.co Web API\Generic API Call\Salesforce\GenericAPICall
+\PDF.co Web API\Image To PDF API\AWS Lambda
 \PDF.co Web API\Image To PDF API\C#
 \PDF.co Web API\Image To PDF API\cURL
 \PDF.co Web API\Image To PDF API\Java
@@ -5394,6 +5406,7 @@
 \PDF.co Web API\Image To PDF API\Salesforce
 \PDF.co Web API\Image To PDF API\VB.NET
 \PDF.co Web API\Image To PDF API\Zapier
+\PDF.co Web API\Image To PDF API\AWS Lambda\Convert Images To PDF From URLs (Node.js)
 \PDF.co Web API\Image To PDF API\C#\Convert Images To PDF From Uploaded Files
 \PDF.co Web API\Image To PDF API\C#\Convert Images To PDF From URLs
 \PDF.co Web API\Image To PDF API\C#\Convert Images To PDF From URLs Asynchronously
@@ -5433,6 +5446,7 @@
 \PDF.co Web API\Manage Background Jobs\Python\Check Job Status
 \PDF.co Web API\MISC Account Related\cURL
 \PDF.co Web API\MISC Account Related\cURL\Check Credit Balance
+\PDF.co Web API\PDF Attachments\AWS Lambda
 \PDF.co Web API\PDF Attachments\C#
 \PDF.co Web API\PDF Attachments\cURL
 \PDF.co Web API\PDF Attachments\Java
@@ -5440,6 +5454,7 @@
 \PDF.co Web API\PDF Attachments\PHP
 \PDF.co Web API\PDF Attachments\PowerShell
 \PDF.co Web API\PDF Attachments\Python
+\PDF.co Web API\PDF Attachments\AWS Lambda\Extract PDF Attachments From URL (Node.js)
 \PDF.co Web API\PDF Attachments\C#\Extract PDF Attachments From URL
 \PDF.co Web API\PDF Attachments\cURL\Extract PDF Attachments From URL
 \PDF.co Web API\PDF Attachments\Java\Extract PDF Attachments From URL
@@ -5471,6 +5486,7 @@
 \PDF.co Web API\PDF Classifier\PowerShell\Classify PDF From URL with Custom Rules
 \PDF.co Web API\PDF Classifier\PowerShell\Classify Uploaded PDF Asynchronously
 \PDF.co Web API\PDF Classifier\PowerShell\Classify Uploaded PDF Asynchronously with Custom Rules
+\PDF.co Web API\PDF Create Fillable PDF Forms\AWS Lambda
 \PDF.co Web API\PDF Create Fillable PDF Forms\C#
 \PDF.co Web API\PDF Create Fillable PDF Forms\cURL
 \PDF.co Web API\PDF Create Fillable PDF Forms\Java
@@ -5479,6 +5495,7 @@
 \PDF.co Web API\PDF Create Fillable PDF Forms\PowerShell
 \PDF.co Web API\PDF Create Fillable PDF Forms\Python
 \PDF.co Web API\PDF Create Fillable PDF Forms\VB.NET
+\PDF.co Web API\PDF Create Fillable PDF Forms\AWS Lambda\Fillable PDF Forms - Node Js
 \PDF.co Web API\PDF Create Fillable PDF Forms\C#\Fillable PDF Forms
 \PDF.co Web API\PDF Create Fillable PDF Forms\cURL\Fillable PDF Forms
 \PDF.co Web API\PDF Create Fillable PDF Forms\Java\Fillable PDF Forms
@@ -5503,6 +5520,7 @@
 \PDF.co Web API\PDF Delete Pages\PowerShell\Delete Pages From PDF
 \PDF.co Web API\PDF Delete Pages\Python\Delete Pages From PDF
 \PDF.co Web API\PDF Delete Pages\Salesforce\Delete Pages From PDF
+\PDF.co Web API\PDF Fill PDF Forms\AWS Lambda
 \PDF.co Web API\PDF Fill PDF Forms\C#
 \PDF.co Web API\PDF Fill PDF Forms\cURL
 \PDF.co Web API\PDF Fill PDF Forms\Java
@@ -5512,6 +5530,8 @@
 \PDF.co Web API\PDF Fill PDF Forms\Python
 \PDF.co Web API\PDF Fill PDF Forms\Salesforce
 \PDF.co Web API\PDF Fill PDF Forms\VB.NET
+\PDF.co Web API\PDF Fill PDF Forms\AWS Lambda\Fill PDF Forms NodeJs
+\PDF.co Web API\PDF Fill PDF Forms\AWS Lambda\Fill PDF Forms Simplified NodeJs
 \PDF.co Web API\PDF Fill PDF Forms\C#\Fill PDF Forms
 \PDF.co Web API\PDF Fill PDF Forms\C#\Fill PDF Forms Asynchronously
 \PDF.co Web API\PDF Fill PDF Forms\C#\Fill PDF Forms Simplified
@@ -5549,6 +5569,7 @@
 \PDF.co Web API\PDF Forms Info Reader\PHP\Read PDF Form Information
 \PDF.co Web API\PDF Forms Info Reader\PowerShell\Read PDF Form Information
 \PDF.co Web API\PDF Forms Info Reader\Python\Read PDF Form Information
+\PDF.co Web API\PDF From CSV\AWS Lambda
 \PDF.co Web API\PDF From CSV\C#
 \PDF.co Web API\PDF From CSV\cURL
 \PDF.co Web API\PDF From CSV\Java
@@ -5557,6 +5578,7 @@
 \PDF.co Web API\PDF From CSV\PowerShell
 \PDF.co Web API\PDF From CSV\Python
 \PDF.co Web API\PDF From CSV\VB.NET
+\PDF.co Web API\PDF From CSV\AWS Lambda\Convert CSV To PDF From URL (Node.js)
 \PDF.co Web API\PDF From CSV\C#\Convert CSV To PDF From Uploaded File
 \PDF.co Web API\PDF From CSV\C#\Convert CSV To PDF From URL
 \PDF.co Web API\PDF From CSV\C#\Convert CSV To PDF From URL Asynchronously
@@ -5658,6 +5680,7 @@
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Simple Invoice using Mustache Template and QR Code Barcode
 \PDF.co Web API\PDF from HTML template\VB.NET\Generate PDF Invoice From HTML Template
 \PDF.co Web API\PDF from HTML template\VB.NET\Invoice With Multiple Pages
+\PDF.co Web API\PDF from URL\AWS Lambda
 \PDF.co Web API\PDF from URL\C#
 \PDF.co Web API\PDF from URL\cURL
 \PDF.co Web API\PDF from URL\Java
@@ -5666,6 +5689,7 @@
 \PDF.co Web API\PDF from URL\PowerShell
 \PDF.co Web API\PDF from URL\Python
 \PDF.co Web API\PDF from URL\VB.NET
+\PDF.co Web API\PDF from URL\AWS Lambda\Convert Web Page To PDF From Link (Node.js)
 \PDF.co Web API\PDF from URL\C#\Convert Web Page To PDF From Link
 \PDF.co Web API\PDF from URL\C#\Convert Web Page To PDF From Link Asynchronously
 \PDF.co Web API\PDF from URL\cURL\Convert Web Page To PDF From Link
@@ -5680,6 +5704,7 @@
 \PDF.co Web API\PDF from URL\Python\Convert Web Page To PDF From Link Asynchronously
 \PDF.co Web API\PDF from URL\VB.NET\Convert Web Page To PDF From URL
 \PDF.co Web API\PDF from URL\VB.NET\Convert Web Page To PDF From URL Asynchronously
+\PDF.co Web API\PDF Information API\AWS Lambda
 \PDF.co Web API\PDF Information API\C#
 \PDF.co Web API\PDF Information API\cURL
 \PDF.co Web API\PDF Information API\Java
@@ -5688,6 +5713,7 @@
 \PDF.co Web API\PDF Information API\PowerShell
 \PDF.co Web API\PDF Information API\Python
 \PDF.co Web API\PDF Information API\VB.NET
+\PDF.co Web API\PDF Information API\AWS Lambda\Get PDF Info From URL (Node.js)
 \PDF.co Web API\PDF Information API\C#\Get PDF Info From Uploaded File
 \PDF.co Web API\PDF Information API\C#\Get PDF Info From URL
 \PDF.co Web API\PDF Information API\cURL\Get PDF Info From URL
@@ -5703,6 +5729,7 @@
 \PDF.co Web API\PDF Information API\Python\Get PDF Info From URL
 \PDF.co Web API\PDF Information API\VB.NET\Get PDF Info From Uploaded File
 \PDF.co Web API\PDF Information API\VB.NET\Get PDF Info From URL
+\PDF.co Web API\PDF Make Searchable API\AWS Lambda
 \PDF.co Web API\PDF Make Searchable API\C#
 \PDF.co Web API\PDF Make Searchable API\cURL
 \PDF.co Web API\PDF Make Searchable API\Java
@@ -5712,6 +5739,8 @@
 \PDF.co Web API\PDF Make Searchable API\Python
 \PDF.co Web API\PDF Make Searchable API\Salesforce
 \PDF.co Web API\PDF Make Searchable API\VB.NET
+\PDF.co Web API\PDF Make Searchable API\AWS Lambda\Make Searchable PDF From URL (Node.js)
+\PDF.co Web API\PDF Make Searchable API\AWS Lambda\Make UnSearchable PDF From URL (Node.js)
 \PDF.co Web API\PDF Make Searchable API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\C#\Make Searchable PDF From URL
@@ -5747,6 +5776,7 @@
 \PDF.co Web API\PDF Make Searchable API\VB.NET\Make Searchable PDF From Uploaded File
 \PDF.co Web API\PDF Make Searchable API\VB.NET\Make Searchable PDF From URL
 \PDF.co Web API\PDF Make Searchable API\VB.NET\Make Searchable PDF From URL Asynchronously
+\PDF.co Web API\PDF Merging API\AWS Lambda
 \PDF.co Web API\PDF Merging API\C#
 \PDF.co Web API\PDF Merging API\cURL
 \PDF.co Web API\PDF Merging API\Delphi
@@ -5758,6 +5788,8 @@
 \PDF.co Web API\PDF Merging API\Python
 \PDF.co Web API\PDF Merging API\Salesforce
 \PDF.co Web API\PDF Merging API\VB.NET
+\PDF.co Web API\PDF Merging API\AWS Lambda\Merge Any Documents From URLs (Node.js)
+\PDF.co Web API\PDF Merging API\AWS Lambda\Merge PDF Documents From URLs (Node.js)
 \PDF.co Web API\PDF Merging API\C#\Async file upload and async Merge PDF
 \PDF.co Web API\PDF Merging API\C#\Merge Any Documents From URLs
 \PDF.co Web API\PDF Merging API\C#\Merge Any Documents From URLs Asynchronously
@@ -5836,6 +5868,7 @@
 \PDF.co Web API\PDF Optimization API\VB.NET\Optimize PDF From Uploaded File
 \PDF.co Web API\PDF Optimization API\VB.NET\Optimize PDF From URL
 \PDF.co Web API\PDF Optimization API\VB.NET\Optimize PDF From URL Asynchronously
+\PDF.co Web API\PDF Password And Security\AWS Lambda
 \PDF.co Web API\PDF Password And Security\C#
 \PDF.co Web API\PDF Password And Security\cURL
 \PDF.co Web API\PDF Password And Security\GoogleAppsScript
@@ -5846,6 +5879,8 @@
 \PDF.co Web API\PDF Password And Security\Python
 \PDF.co Web API\PDF Password And Security\Salesforce
 \PDF.co Web API\PDF Password And Security\VB.NET
+\PDF.co Web API\PDF Password And Security\AWS Lambda\Protect PDF Document
+\PDF.co Web API\PDF Password And Security\AWS Lambda\Remove PDF Document Protection
 \PDF.co Web API\PDF Password And Security\C#\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\C#\Remove PDF Document Protection
 \PDF.co Web API\PDF Password And Security\cURL\Protect PDF Document
@@ -5898,6 +5933,7 @@
 \PDF.co Web API\PDF Search Tables\VB.NET\PDF Table Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Search Tables\VB.NET\PDF Table Search from URL
 \PDF.co Web API\PDF Search Tables\VB.NET\PDF Table Search from URL Asynchronously
+\PDF.co Web API\PDF Splitting API\AWS Lambda
 \PDF.co Web API\PDF Splitting API\C#
 \PDF.co Web API\PDF Splitting API\cURL
 \PDF.co Web API\PDF Splitting API\GoogleAppScript
@@ -5907,6 +5943,8 @@
 \PDF.co Web API\PDF Splitting API\PowerShell
 \PDF.co Web API\PDF Splitting API\Python
 \PDF.co Web API\PDF Splitting API\VB.NET
+\PDF.co Web API\PDF Splitting API\AWS Lambda\Split PDF By Text From URL (Node.js)
+\PDF.co Web API\PDF Splitting API\AWS Lambda\Split PDF From URL (Node.js)
 \PDF.co Web API\PDF Splitting API\C#\Async file upload and async Split PDF
 \PDF.co Web API\PDF Splitting API\C#\Async file upload and async Split PDF By Text
 \PDF.co Web API\PDF Splitting API\C#\Split PDF By Text From Uploaded File
@@ -5986,6 +6024,7 @@
 \PDF.co Web API\PDF Text Search API\VB.NET\PDF Text Search from URL
 \PDF.co Web API\PDF Text Search API\VB.NET\PDF Text Search from URL Asynchronously
 \PDF.co Web API\PDF Text Search API\Zapier\Search in PDF
+\PDF.co Web API\PDF To CSV API\AWS Lambda
 \PDF.co Web API\PDF To CSV API\C#
 \PDF.co Web API\PDF To CSV API\cURL
 \PDF.co Web API\PDF To CSV API\Java
@@ -5996,6 +6035,7 @@
 \PDF.co Web API\PDF To CSV API\SharePoint
 \PDF.co Web API\PDF To CSV API\VB.NET
 \PDF.co Web API\PDF To CSV API\Zapier
+\PDF.co Web API\PDF To CSV API\AWS Lambda\Convert PDF To CSV From URL (Node.js)
 \PDF.co Web API\PDF To CSV API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To CSV API\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To CSV API\C#\Async file upload and async PDF to CSV
@@ -6044,6 +6084,7 @@
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL
 \PDF.co Web API\PDF To CSV API\VB.NET\Convert PDF To CSV From URL Asynchronously
 \PDF.co Web API\PDF To CSV API\Zapier\Gmail PDF Attachments to CSV
+\PDF.co Web API\PDF To HTML API\AWS Lambda
 \PDF.co Web API\PDF To HTML API\C#
 \PDF.co Web API\PDF To HTML API\cURL
 \PDF.co Web API\PDF To HTML API\Java
@@ -6052,6 +6093,7 @@
 \PDF.co Web API\PDF To HTML API\PowerShell
 \PDF.co Web API\PDF To HTML API\Python
 \PDF.co Web API\PDF To HTML API\VB.NET
+\PDF.co Web API\PDF To HTML API\AWS Lambda\Convert PDF To HTML From URL (Node.js)
 \PDF.co Web API\PDF To HTML API\C#\Convert PDF To HTML From Uploaded File
 \PDF.co Web API\PDF To HTML API\C#\Convert PDF To HTML From URL
 \PDF.co Web API\PDF To HTML API\C#\Convert PDF To HTML From URL Asynchronously
@@ -6076,6 +6118,7 @@
 \PDF.co Web API\PDF To HTML API\VB.NET\Convert PDF To HTML From Uploaded File
 \PDF.co Web API\PDF To HTML API\VB.NET\Convert PDF To HTML From URL
 \PDF.co Web API\PDF To HTML API\VB.NET\Convert PDF To HTML From URL Asynchronously
+\PDF.co Web API\PDF To JPG\AWS Lambda
 \PDF.co Web API\PDF To JPG\C#
 \PDF.co Web API\PDF To JPG\cURL
 \PDF.co Web API\PDF To JPG\Java
@@ -6084,6 +6127,7 @@
 \PDF.co Web API\PDF To JPG\PowerShell
 \PDF.co Web API\PDF To JPG\Python
 \PDF.co Web API\PDF To JPG\VB.NET
+\PDF.co Web API\PDF To JPG\AWS Lambda\Convert PDF To JPEG From URL (Node.js)
 \PDF.co Web API\PDF To JPG\C#\Advanced JPEG Conversion Options
 \PDF.co Web API\PDF To JPG\C#\Convert PDF To JPEG From Uploaded File
 \PDF.co Web API\PDF To JPG\C#\Convert PDF To JPEG From URL
@@ -6113,6 +6157,7 @@
 \PDF.co Web API\PDF To JPG\VB.NET\Convert PDF To JPEG From Uploaded File
 \PDF.co Web API\PDF To JPG\VB.NET\Convert PDF To JPEG From URL
 \PDF.co Web API\PDF To JPG\VB.NET\Convert PDF To JPEG From URL Asynchronously
+\PDF.co Web API\PDF To JSON API\AWS Lambda
 \PDF.co Web API\PDF To JSON API\C#
 \PDF.co Web API\PDF To JSON API\cURL
 \PDF.co Web API\PDF To JSON API\Java
@@ -6121,6 +6166,8 @@
 \PDF.co Web API\PDF To JSON API\PowerShell
 \PDF.co Web API\PDF To JSON API\Python
 \PDF.co Web API\PDF To JSON API\VB.NET
+\PDF.co Web API\PDF To JSON API\AWS Lambda\Convert PDF To JSON From URL (Node.js)
+\PDF.co Web API\PDF To JSON API\AWS Lambda\Convert PDF To JSON From URL (Node.js) (AI Powered)
 \PDF.co Web API\PDF To JSON API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To JSON API\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To JSON API\C#\Convert PDF To JSON From Uploaded File
@@ -6176,6 +6223,7 @@
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From URL (AI Powered)
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From URL Asynchronously
 \PDF.co Web API\PDF To JSON API\VB.NET\Convert PDF To JSON From URL Asynchronously (AI Powered)
+\PDF.co Web API\PDF To PNG\AWS Lambda
 \PDF.co Web API\PDF To PNG\C#
 \PDF.co Web API\PDF To PNG\cURL
 \PDF.co Web API\PDF To PNG\Java
@@ -6184,6 +6232,7 @@
 \PDF.co Web API\PDF To PNG\PowerShell
 \PDF.co Web API\PDF To PNG\Python
 \PDF.co Web API\PDF To PNG\VB.NET
+\PDF.co Web API\PDF To PNG\AWS Lambda\Convert PDF To PNG From URL (Node.js)
 \PDF.co Web API\PDF To PNG\C#\Advanced PNG Conversion Options
 \PDF.co Web API\PDF To PNG\C#\Convert PDF To PNG From Uploaded File
 \PDF.co Web API\PDF To PNG\C#\Convert PDF To PNG From URL
@@ -6213,6 +6262,7 @@
 \PDF.co Web API\PDF To PNG\VB.NET\Convert PDF To PNG From Uploaded File
 \PDF.co Web API\PDF To PNG\VB.NET\Convert PDF To PNG From URL
 \PDF.co Web API\PDF To PNG\VB.NET\Convert PDF To PNG From URL Asynchronously
+\PDF.co Web API\PDF To Text API\AWS Lambda
 \PDF.co Web API\PDF To Text API\C#
 \PDF.co Web API\PDF To Text API\cURL
 \PDF.co Web API\PDF To Text API\Java
@@ -6221,6 +6271,7 @@
 \PDF.co Web API\PDF To Text API\PowerShell
 \PDF.co Web API\PDF To Text API\Python
 \PDF.co Web API\PDF To Text API\VB.NET
+\PDF.co Web API\PDF To Text API\AWS Lambda\Convert PDF To Text From URL (Node.js)
 \PDF.co Web API\PDF To Text API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\C#\Async file upload and async PDF to Text
@@ -6260,6 +6311,7 @@
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From Uploaded File
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\VB.NET\Convert PDF To Text From URL Asynchronously
+\PDF.co Web API\PDF To TIFF\AWS Lambda
 \PDF.co Web API\PDF To TIFF\C#
 \PDF.co Web API\PDF To TIFF\cURL
 \PDF.co Web API\PDF To TIFF\Java
@@ -6268,6 +6320,7 @@
 \PDF.co Web API\PDF To TIFF\PowerShell
 \PDF.co Web API\PDF To TIFF\Python
 \PDF.co Web API\PDF To TIFF\VB.NET
+\PDF.co Web API\PDF To TIFF\AWS Lambda\Convert PDF To TIFF From URL (Node.js)
 \PDF.co Web API\PDF To TIFF\C#\Advanced TIFF Conversion Options
 \PDF.co Web API\PDF To TIFF\C#\Convert PDF To TIFF From Uploaded File
 \PDF.co Web API\PDF To TIFF\C#\Convert PDF To TIFF From URL
@@ -6296,12 +6349,14 @@
 \PDF.co Web API\PDF To TIFF\VB.NET\Convert PDF To TIFF From Uploaded File
 \PDF.co Web API\PDF To TIFF\VB.NET\Convert PDF To TIFF From URL
 \PDF.co Web API\PDF To TIFF\VB.NET\Convert PDF To TIFF From URL Asynchronously
+\PDF.co Web API\PDF To XLS\AWS Lambda
 \PDF.co Web API\PDF To XLS\C#
 \PDF.co Web API\PDF To XLS\cURL
 \PDF.co Web API\PDF To XLS\Java
 \PDF.co Web API\PDF To XLS\JavaScript
 \PDF.co Web API\PDF To XLS\PowerShell
 \PDF.co Web API\PDF To XLS\VB.NET
+\PDF.co Web API\PDF To XLS\AWS Lambda\Convert PDF To XLS From URL (Node.js)
 \PDF.co Web API\PDF To XLS\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To XLS\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XLS\C#\Convert PDF To XLS From Uploaded File
@@ -6330,6 +6385,7 @@
 \PDF.co Web API\PDF To XLS\VB.NET\Convert PDF To XLS From Uploaded File
 \PDF.co Web API\PDF To XLS\VB.NET\Convert PDF To XLS From Uploaded File (WinForms)
 \PDF.co Web API\PDF To XLS\VB.NET\Convert PDF To XLS From URL
+\PDF.co Web API\PDF To XLSX\AWS Lambda
 \PDF.co Web API\PDF To XLSX\Blazor
 \PDF.co Web API\PDF To XLSX\C#
 \PDF.co Web API\PDF To XLSX\cURL
@@ -6339,6 +6395,7 @@
 \PDF.co Web API\PDF To XLSX\PowerShell
 \PDF.co Web API\PDF To XLSX\Python
 \PDF.co Web API\PDF To XLSX\VB.NET
+\PDF.co Web API\PDF To XLSX\AWS Lambda\Convert PDF To XLSX From URL (Node.js)
 \PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\Pages
 \PDF.co Web API\PDF To XLSX\Blazor\Convert PDF To XLSX From Uploaded File\Shared
@@ -6373,6 +6430,7 @@
 \PDF.co Web API\PDF To XLSX\VB.NET\Convert PDF To XLSX From Uploaded File
 \PDF.co Web API\PDF To XLSX\VB.NET\Convert PDF To XLSX From URL
 \PDF.co Web API\PDF To XLSX\VB.NET\Convert PDF To XLSX From URL Asynchronously
+\PDF.co Web API\PDF To XML API\AWS Lambda
 \PDF.co Web API\PDF To XML API\C#
 \PDF.co Web API\PDF To XML API\cURL
 \PDF.co Web API\PDF To XML API\Java
@@ -6381,6 +6439,7 @@
 \PDF.co Web API\PDF To XML API\PowerShell
 \PDF.co Web API\PDF To XML API\Python
 \PDF.co Web API\PDF To XML API\VB.NET
+\PDF.co Web API\PDF To XML API\AWS Lambda\Convert PDF To XML From URL (Node.js)
 \PDF.co Web API\PDF To XML API\C#\Advanced Conversion Options
 \PDF.co Web API\PDF To XML API\C#\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\C#\Convert PDF To XML From Uploaded File
@@ -6418,6 +6477,7 @@
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From Uploaded File
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL
 \PDF.co Web API\PDF To XML API\VB.NET\Convert PDF To XML From URL Asynchronously
+\PDF.co Web API\Render Url As Jpg\AWS Lambda
 \PDF.co Web API\Render Url As Jpg\C#
 \PDF.co Web API\Render Url As Jpg\cURL
 \PDF.co Web API\Render Url As Jpg\Java
@@ -6426,6 +6486,7 @@
 \PDF.co Web API\Render Url As Jpg\PowerShell
 \PDF.co Web API\Render Url As Jpg\Python
 \PDF.co Web API\Render Url As Jpg\VB.NET
+\PDF.co Web API\Render Url As Jpg\AWS Lambda\Render Url To Jpg (Node.js)
 \PDF.co Web API\Render Url As Jpg\C#\Render Url To Jpg
 \PDF.co Web API\Render Url As Jpg\cURL\Render Url To Jpg
 \PDF.co Web API\Render Url As Jpg\Java\Render Url To Jpg
@@ -6435,6 +6496,7 @@
 \PDF.co Web API\Render Url As Jpg\PowerShell\Render Url To Jpg
 \PDF.co Web API\Render Url As Jpg\Python\Render Url As Jpg
 \PDF.co Web API\Render Url As Jpg\VB.NET\Render Url To Jpg
+\PDF.co Web API\Render Url As Png\AWS Lambda
 \PDF.co Web API\Render Url As Png\C#
 \PDF.co Web API\Render Url As Png\cURL
 \PDF.co Web API\Render Url As Png\Java
@@ -6443,6 +6505,7 @@
 \PDF.co Web API\Render Url As Png\PowerShell
 \PDF.co Web API\Render Url As Png\Python
 \PDF.co Web API\Render Url As Png\VB.NET
+\PDF.co Web API\Render Url As Png\AWS Lambda\Render Url To Png (Node.js)
 \PDF.co Web API\Render Url As Png\C#\Render Url To Png
 \PDF.co Web API\Render Url As Png\cURL\Render Url To Png
 \PDF.co Web API\Render Url As Png\Java\Render Url To Png
@@ -6452,6 +6515,7 @@
 \PDF.co Web API\Render Url As Png\PowerShell\Render Url To Png
 \PDF.co Web API\Render Url As Png\Python\Render Url As Png
 \PDF.co Web API\Render Url As Png\VB.NET\Render Url To Png
+\PDF.co Web API\Replace Text From PDF\AWS Lambda
 \PDF.co Web API\Replace Text From PDF\C#
 \PDF.co Web API\Replace Text From PDF\cURL
 \PDF.co Web API\Replace Text From PDF\Java
@@ -6461,6 +6525,7 @@
 \PDF.co Web API\Replace Text From PDF\Python
 \PDF.co Web API\Replace Text From PDF\Salesforce
 \PDF.co Web API\Replace Text From PDF\VB.NET
+\PDF.co Web API\Replace Text From PDF\AWS Lambda\Replace Text From URL (Node.js)
 \PDF.co Web API\Replace Text From PDF\C#\Replace Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\C#\Replace Text From URL
 \PDF.co Web API\Replace Text From PDF\C#\Replace Text From URL Asynchronously
@@ -6485,6 +6550,7 @@
 \PDF.co Web API\Replace Text From PDF\VB.NET\Replace Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\VB.NET\Replace Text From URL
 \PDF.co Web API\Replace Text From PDF\VB.NET\Replace Text From URL Asynchronously
+\PDF.co Web API\Replace Text With Image From PDF\AWS Lambda
 \PDF.co Web API\Replace Text With Image From PDF\C#
 \PDF.co Web API\Replace Text With Image From PDF\cURL
 \PDF.co Web API\Replace Text With Image From PDF\Java
@@ -6494,6 +6560,7 @@
 \PDF.co Web API\Replace Text With Image From PDF\Python
 \PDF.co Web API\Replace Text With Image From PDF\Salesforce
 \PDF.co Web API\Replace Text With Image From PDF\VB.NET
+\PDF.co Web API\Replace Text With Image From PDF\AWS Lambda\Replace Text With Image From URL (Node.js)
 \PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From Uploaded File
 \PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From URL
 \PDF.co Web API\Replace Text With Image From PDF\C#\Replace Text With Image From URL Asynchronously
