@@ -4885,6 +4885,7 @@
 \PDF.co Web API\PDF Merging API
 \PDF.co Web API\PDF Optimization API
 \PDF.co Web API\PDF Password And Security
+\PDF.co Web API\PDF Rotate Pages
 \PDF.co Web API\PDF Search Tables
 \PDF.co Web API\PDF Splitting API
 \PDF.co Web API\PDF Text Search API
@@ -5950,6 +5951,34 @@
 \PDF.co Web API\PDF Password And Security\Salesforce\Remove PDF Document Protection From Uploaded File
 \PDF.co Web API\PDF Password And Security\VB.NET\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\VB.NET\Remove PDF Document Protection
+\PDF.co Web API\PDF Rotate Pages\C#
+\PDF.co Web API\PDF Rotate Pages\cURL
+\PDF.co Web API\PDF Rotate Pages\Java
+\PDF.co Web API\PDF Rotate Pages\JavaScript
+\PDF.co Web API\PDF Rotate Pages\PHP
+\PDF.co Web API\PDF Rotate Pages\PowerShell
+\PDF.co Web API\PDF Rotate Pages\Python
+\PDF.co Web API\PDF Rotate Pages\VB.NET
+\PDF.co Web API\PDF Rotate Pages\C#\Auto Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\C#\Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\C#\Rotate PDF From URL Asynchronously
+\PDF.co Web API\PDF Rotate Pages\cURL\PDF Auto Rotate Pages
+\PDF.co Web API\PDF Rotate Pages\cURL\PDF Rotate Pages
+\PDF.co Web API\PDF Rotate Pages\Java\Auto Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\Java\Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\JavaScript\Auto Rotate PDF From URL (Node.js)
+\PDF.co Web API\PDF Rotate Pages\JavaScript\Rotate PDF From URL (Node.js)
+\PDF.co Web API\PDF Rotate Pages\JavaScript\Rotate PDF From URL (Node.js) - Async API
+\PDF.co Web API\PDF Rotate Pages\PHP\Auto Rotate PDF
+\PDF.co Web API\PDF Rotate Pages\PHP\Rotate PDF Asynchronously
+\PDF.co Web API\PDF Rotate Pages\PowerShell\Auto Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\PowerShell\Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\Python\Auto Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\Python\Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\Python\Rotate PDF From URL Asynchronously
+\PDF.co Web API\PDF Rotate Pages\VB.NET\Auto Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\VB.NET\Rotate PDF From URL
+\PDF.co Web API\PDF Rotate Pages\VB.NET\Rotate PDF From URL Asynchronously
 \PDF.co Web API\PDF Search Tables\C#
 \PDF.co Web API\PDF Search Tables\cURL
 \PDF.co Web API\PDF Search Tables\Java
