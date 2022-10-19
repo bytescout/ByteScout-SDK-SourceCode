@@ -5235,6 +5235,8 @@
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Census table from life and annuity quote request pdf
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Create Custom Template
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Extract line items from tables on multiple pages
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Extract Text from Foldable Brochure Booklet
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Group Life Insurance Quote Form
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice table with some empty columns
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with few line items in EUR
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with line items in bordered table
@@ -5256,6 +5258,7 @@
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse with OCR
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parsing and reading data from Airline Tickets
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Read values in columns 2 and 3
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Sample Invoice
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Statement of Assets
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Table with Multiple Subitems
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Tax Invoice with Line Items
