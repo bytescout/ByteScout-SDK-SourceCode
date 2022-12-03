@@ -5227,42 +5227,44 @@
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Sample
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\VisualWebPart1
 \PDF.co Web API\Document Parser API\SharePoint\Parse Invoice Information\Features\Feature1
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Airline Ticket
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Amazon Shipment Label
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Auto Detect Table
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Auto Find Table From Borderless Table
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Bank of America Statement
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Blood Test Results to JSON
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Census table from life and annuity quote request pdf
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Extract line items from tables on multiple pages
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Foldable Brochure Booklet
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice table with some empty columns
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with few line items in EUR
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Form IRS Form 1040
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Form IRS Form 1099-DIV
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Form IRS Form 1099-K
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Form IRS Form W2
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice from Amazon AWS
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice from Digial Ocean Scanned
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice from Digital Ocean
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice from Google
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice from ManyChat
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice from PandaDoc
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice Get Email Address
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice Get Total And Tax
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice Simple Invoice
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice table with empty columns
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with Hanging Rows
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with line items in bordered table
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\JPMorgan Chase Statement
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Key Value Fields From Echocardiogram Report
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\ManyChat Invoice
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Multiline Items Without Borders
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with line items in EUR
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Invoice with Tax and Line Items
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Order form with line items and total
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse and Generate HL7 Output
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Email Address
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Hanging Rows In Invoice
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1040
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1099-DIV
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form 1099-K
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse IRS Form W2
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Multipage Table
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse PandaDoc Sample Invoice
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse Simple Document
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Parse with OCR
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Read values in columns 2 and 3
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Sample Invoice
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Report - Blood Test Results
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Report Echocardiogram - Key Value Fields
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Report HL7
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Shipment Label from Amazon
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Shipping Label from USPS
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Statement from Bank of America
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Statement from JPMorgan Chase
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Statement from Wells Fargo
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Statement of Assets
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Table Auto Detection
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Table from census table life and annuity quote request pdf
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Table Multiline Items Without Borders
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Table Multiple pages - Approach 1 - Detect Columns Automatically
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Table Multiple Pages - Approach 2 - Define Column Coordinates
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Table Read From columns 2 and 3
 \PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Table with Multiple Subitems
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Tax Invoice with Line Items
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Total and Vat tax
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\US Postal Shipping Label
-\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Wells Fargo Statement
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Table Without Borders Auto Detection
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Text Extraction from Foldable Brochure Booklet
+\PDF.co Web API\Document Parser API\TEMPLATES-SAMPLES\Ticket Airline
 \PDF.co Web API\Document Parser API\VB.NET\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\VB.NET\Census table from life and annuity quote request pdf
 \PDF.co Web API\Document Parser API\VB.NET\Create Custom Template
