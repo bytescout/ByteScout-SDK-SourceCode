@@ -8098,6 +8098,7 @@
 \Spreadsheet SDK\C#\Copy Range
 \Spreadsheet SDK\C#\Copy Worksheet
 \Spreadsheet SDK\C#\Copy Worksheet Data To Clipboard
+\Spreadsheet SDK\C#\Copy Worksheet to Another Workbook
 \Spreadsheet SDK\C#\CopyPaste Columns
 \Spreadsheet SDK\C#\CopyPaste Rows
 \Spreadsheet SDK\C#\Create Hello World Spreadsheet
