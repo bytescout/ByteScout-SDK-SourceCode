@@ -4958,11 +4958,11 @@
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Text And Image To PDF
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Text by finding target coordinates
 \PDF.co Web API\Add Text And Images To PDF\Python\Add Text to Existing PDF
-\PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Image To PDF
-\PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Image To PDF From Uploaded File
 \PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Text Image Signature to PDF
 \PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Text Image Signature to PDF With Simplified Parameter
-\PDF.co Web API\Add Text And Images To PDF\Salesforce\Add Text To PDF
+\PDF.co Web API\Add Text And Images To PDF\Salesforce\Legacy - Add Image To PDF
+\PDF.co Web API\Add Text And Images To PDF\Salesforce\Legacy - Add Image To PDF From Uploaded File
+\PDF.co Web API\Add Text And Images To PDF\Salesforce\Legacy - Add Text To PDF
 \PDF.co Web API\Add Text And Images To PDF\SharePoint\Add Text and Images to PDF
 \PDF.co Web API\Add Text And Images To PDF\SharePoint\Add Text and Images to PDF\Features
 \PDF.co Web API\Add Text And Images To PDF\SharePoint\Add Text and Images to PDF\Package
