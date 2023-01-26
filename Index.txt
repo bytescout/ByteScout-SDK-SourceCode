@@ -5102,6 +5102,9 @@
 \PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From Uploaded File (Node.js) - Async API
 \PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From URL (Node.js)
 \PDF.co Web API\Delete Text From PDF\JavaScript\Delete PDF Text From URL (Node.js) - Async API
+\PDF.co Web API\Delete Text From PDF\JavaScript\Remove Credit Card Data From PDF
+\PDF.co Web API\Delete Text From PDF\JavaScript\Remove Email and SSN Data From PDF
+\PDF.co Web API\Delete Text From PDF\JavaScript\Remove PII Data From PDF
 \PDF.co Web API\Delete Text From PDF\PHP\Delete PDF Text Asynchronously
 \PDF.co Web API\Delete Text From PDF\PHP\Delete PDF Text From Uploaded File
 \PDF.co Web API\Delete Text From PDF\PowerShell\Delete PDF Text From Uploaded File
