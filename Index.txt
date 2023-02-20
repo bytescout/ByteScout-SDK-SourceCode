@@ -6033,6 +6033,7 @@
 \PDF.co Web API\PDF Splitting API\PHP
 \PDF.co Web API\PDF Splitting API\PowerShell
 \PDF.co Web API\PDF Splitting API\Python
+\PDF.co Web API\PDF Splitting API\Salesforce
 \PDF.co Web API\PDF Splitting API\VB.NET
 \PDF.co Web API\PDF Splitting API\AWS Lambda\Split PDF By Barcode From URL (Node.js)
 \PDF.co Web API\PDF Splitting API\AWS Lambda\Split PDF By Text From URL (Node.js)
@@ -6091,6 +6092,9 @@
 \PDF.co Web API\PDF Splitting API\Python\Split PDF By Text From Uploaded File Asynchronously
 \PDF.co Web API\PDF Splitting API\Python\Split PDF From Uploaded File
 \PDF.co Web API\PDF Splitting API\Python\Split PDF From Uploaded File Asynchronously
+\PDF.co Web API\PDF Splitting API\Salesforce\Split PDF By Barcode
+\PDF.co Web API\PDF Splitting API\Salesforce\Split PDF By Page Number
+\PDF.co Web API\PDF Splitting API\Salesforce\Split PDF By Text Search
 \PDF.co Web API\PDF Splitting API\VB.NET\Async file upload and async Split PDF
 \PDF.co Web API\PDF Splitting API\VB.NET\Async file upload and async Split PDF By Barcode
 \PDF.co Web API\PDF Splitting API\VB.NET\Async file upload and async Split PDF By Text
