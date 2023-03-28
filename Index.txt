@@ -5087,6 +5087,7 @@
 \PDF.co Web API\Delete Text From PDF\PHP
 \PDF.co Web API\Delete Text From PDF\PowerShell
 \PDF.co Web API\Delete Text From PDF\Python
+\PDF.co Web API\Delete Text From PDF\Salesforce
 \PDF.co Web API\Delete Text From PDF\VB.NET
 \PDF.co Web API\Delete Text From PDF\AWS Lambda\Delete PDF Text From URL (Node.js)
 \PDF.co Web API\Delete Text From PDF\C#\Delete PDF Text From Uploaded File
@@ -5117,6 +5118,7 @@
 \PDF.co Web API\Delete Text From PDF\Python\Delete PDF Text From Uploaded File
 \PDF.co Web API\Delete Text From PDF\Python\Delete PDF Text From URL
 \PDF.co Web API\Delete Text From PDF\Python\Delete PDF Text From URL Asynchronously
+\PDF.co Web API\Delete Text From PDF\Salesforce\Delete Text From PDF
 \PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From Uploaded File
 \PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From URL
 \PDF.co Web API\Delete Text From PDF\VB.NET\Delete PDF Text From URL Asynchronously
@@ -5682,6 +5684,7 @@
 \PDF.co Web API\PDF from HTML template\PHP
 \PDF.co Web API\PDF from HTML template\PowerShell
 \PDF.co Web API\PDF from HTML template\Python
+\PDF.co Web API\PDF from HTML template\Salesforce
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES
 \PDF.co Web API\PDF from HTML template\VB.NET
 \PDF.co Web API\PDF from HTML template\C#\CCDA record to PDF
@@ -5704,6 +5707,7 @@
 \PDF.co Web API\PDF from HTML template\PowerShell\Invoice With Multiple Pages
 \PDF.co Web API\PDF from HTML template\Python\Generate PDF Invoice From HTML Template
 \PDF.co Web API\PDF from HTML template\Python\Invoice With Multiple Pages
+\PDF.co Web API\PDF from HTML template\Salesforce\PDF From Html Template
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Advanced Invoice With Multiple Pages
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Array Iteration
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Invoice With Auto Calculations and QR Code
@@ -5718,6 +5722,7 @@
 \PDF.co Web API\PDF from URL\PHP
 \PDF.co Web API\PDF from URL\PowerShell
 \PDF.co Web API\PDF from URL\Python
+\PDF.co Web API\PDF from URL\Salesforce
 \PDF.co Web API\PDF from URL\VB.NET
 \PDF.co Web API\PDF from URL\AWS Lambda\Convert Web Page To PDF From Link (Node.js)
 \PDF.co Web API\PDF from URL\C#\Convert Web Page To PDF From Link
@@ -5732,6 +5737,7 @@
 \PDF.co Web API\PDF from URL\PowerShell\Convert Web Page To PDF From Link Asynchronously
 \PDF.co Web API\PDF from URL\Python\Convert Web Page To PDF From Link
 \PDF.co Web API\PDF from URL\Python\Convert Web Page To PDF From Link Asynchronously
+\PDF.co Web API\PDF from URL\Salesforce\PDF From URL
 \PDF.co Web API\PDF from URL\VB.NET\Convert Web Page To PDF From URL
 \PDF.co Web API\PDF from URL\VB.NET\Convert Web Page To PDF From URL Asynchronously
 \PDF.co Web API\PDF Information API\AWS Lambda
@@ -5997,6 +6003,7 @@
 \PDF.co Web API\PDF Rotate Pages\VB.NET\Rotate PDF From URL Asynchronously
 \PDF.co Web API\PDF Search Tables\C#
 \PDF.co Web API\PDF Search Tables\cURL
+\PDF.co Web API\PDF Search Tables\GoogleAppsScript
 \PDF.co Web API\PDF Search Tables\Java
 \PDF.co Web API\PDF Search Tables\JavaScript
 \PDF.co Web API\PDF Search Tables\PowerShell
@@ -6007,6 +6014,7 @@
 \PDF.co Web API\PDF Search Tables\C#\PDF Table Search from URL
 \PDF.co Web API\PDF Search Tables\C#\PDF Table Search from URL Asynchronously
 \PDF.co Web API\PDF Search Tables\cURL\Search Tables From PDF
+\PDF.co Web API\PDF Search Tables\GoogleAppsScript\ExtractTablesWithText
 \PDF.co Web API\PDF Search Tables\Java\PDF Table Search from Uploaded File
 \PDF.co Web API\PDF Search Tables\Java\PDF Table Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Search Tables\Java\PDF Table Search from URL
@@ -6667,6 +6675,7 @@
 \PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From Uploaded File (Node.js) - Async API
 \PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From URL (Node.js)
 \PDF.co Web API\Replace Text From PDF\JavaScript\Replace Text From URL (Node.js) - Async API
+\PDF.co Web API\Replace Text From PDF\PHP\Replace Multiple Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\PHP\Replace Text Asynchronously
 \PDF.co Web API\Replace Text From PDF\PHP\Replace Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\PowerShell\Replace Text From Uploaded File
