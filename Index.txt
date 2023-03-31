@@ -6678,6 +6678,7 @@
 \PDF.co Web API\Replace Text From PDF\PHP\Replace Multiple Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\PHP\Replace Text Asynchronously
 \PDF.co Web API\Replace Text From PDF\PHP\Replace Text From Uploaded File
+\PDF.co Web API\Replace Text From PDF\PHP\Replace Text From Uploaded File Asynchronously
 \PDF.co Web API\Replace Text From PDF\PowerShell\Replace Text From Uploaded File
 \PDF.co Web API\Replace Text From PDF\PowerShell\Replace Text From URL
 \PDF.co Web API\Replace Text From PDF\PowerShell\Replace Text From URL Asynchronously
