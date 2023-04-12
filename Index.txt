@@ -5730,8 +5730,14 @@
 \PDF.co Web API\PDF from HTML template\Salesforce\PDF From Html Template
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Advanced Invoice With Multiple Pages
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Array Iteration
+\PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\CCDA record Template
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Invoice With Auto Calculations and QR Code
+\PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Invoice With Barccode
+\PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Multipage invoice with line items
+\PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Quote Template
 \PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Simple Invoice using Mustache Template and QR Code Barcode
+\PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Simple Template
+\PDF.co Web API\PDF from HTML template\TEMPLATES-SAMPLES\Simple Template With CSV Input
 \PDF.co Web API\PDF from HTML template\VB.NET\Generate PDF Invoice From HTML Template
 \PDF.co Web API\PDF from HTML template\VB.NET\Invoice With Multiple Pages
 \PDF.co Web API\PDF from URL\AWS Lambda
