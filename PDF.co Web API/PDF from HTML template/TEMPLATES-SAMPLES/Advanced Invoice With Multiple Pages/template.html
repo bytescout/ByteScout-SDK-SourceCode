@@ -407,14 +407,14 @@
         <div class="chapter"
             style="width: 195mm; height: 148.5mm; border-left: solid 1px black; border-right: solid 1px black;">
             <table id="tblMain" class="tableStripe" cellpadding="0" cellspacing="0" style="width:100%;">
-                {{#each items}}
+                <tr repeat="{{#each items}}"></tr>
                 <tr>
                     <td>{{quantity}}</td>
                     <td>{{name}}</td>
                     <td>${{numberFormat price}}</td>
                     <td>${{numberFormat (getTotal quantity price) }}</td>
                 </tr>
-                {{/each}}
+                <tr repeat="{{/each}}"></tr>
             </table>
         </div>
     </section>
