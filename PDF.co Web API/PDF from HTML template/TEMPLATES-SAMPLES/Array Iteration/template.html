@@ -18,13 +18,13 @@
             </tr>
         </thead>
         <tbody>
-            {{#each inputArr}}
+            <tr repeat="{{#each inputArr}}"></tr>
             <tr>
                 <td>{{this.Name}}</td>
                 <td>{{this.Status}}</td>
                 <td>{{this.Description}}</td>
             </tr>
-            {{/each}}
+            <tr repeat="{{/each}}"></tr>
         </tbody>
     </table>
 </body>
