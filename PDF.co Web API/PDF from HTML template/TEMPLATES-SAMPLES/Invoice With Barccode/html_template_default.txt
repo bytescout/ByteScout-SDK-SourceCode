@@ -165,12 +165,12 @@ Handlebars.registerHelper('multiply', function(value1, value2){
                             </tr>
                         </thead>
                         <tbody>
-                            {{#each items}}
+                            <tr repeat="{{#each items}}"></tr>
                             <tr>
                                 <td class="text-left">{{name}}</td>
                                 <td class="text-right">${{numberFormat price}}</td>
                             </tr>
-                            {{/each}}
+                            <tr repeat="{{/each}}"></tr>
                         </tbody>
                     </table>                                        
                     </div>                                       
