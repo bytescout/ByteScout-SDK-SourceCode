@@ -5353,9 +5353,11 @@
 \PDF.co Web API\Email Send and Decode\Salesforce\Send Email
 \PDF.co Web API\Excel To CSV API\cURL
 \PDF.co Web API\Excel To CSV API\JavaScript
+\PDF.co Web API\Excel To CSV API\Python
 \PDF.co Web API\Excel To CSV API\cURL\Excel To CSV
 \PDF.co Web API\Excel To CSV API\JavaScript\Convert Excel to CSV in jQuery
 \PDF.co Web API\Excel To CSV API\JavaScript\Convert Excel to CSV in jQuery - Async API
+\PDF.co Web API\Excel To CSV API\Python\Convert Excel to CSV
 \PDF.co Web API\Excel To HTML API\cURL
 \PDF.co Web API\Excel To HTML API\JavaScript
 \PDF.co Web API\Excel To HTML API\cURL\Excel To HTML
