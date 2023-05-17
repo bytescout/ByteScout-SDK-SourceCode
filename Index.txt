@@ -5703,6 +5703,7 @@
 \PDF.co Web API\PDF from HTML template\Google Apps Script
 \PDF.co Web API\PDF from HTML template\Java
 \PDF.co Web API\PDF from HTML template\JavaScript
+\PDF.co Web API\PDF from HTML template\Javascript-Snippets
 \PDF.co Web API\PDF from HTML template\PHP
 \PDF.co Web API\PDF from HTML template\PowerShell
 \PDF.co Web API\PDF from HTML template\Python
@@ -5723,6 +5724,11 @@
 \PDF.co Web API\PDF from HTML template\JavaScript\Invoice With Multiple Pages (Node.js)
 \PDF.co Web API\PDF from HTML template\JavaScript\Invoice With Multiple Pages (Node.js) - Async API
 \PDF.co Web API\PDF from HTML template\JavaScript\Temple Iterating Array
+\PDF.co Web API\PDF from HTML template\Javascript-Snippets\breaklines
+\PDF.co Web API\PDF from HTML template\Javascript-Snippets\getFinalAmount
+\PDF.co Web API\PDF from HTML template\Javascript-Snippets\getTotal
+\PDF.co Web API\PDF from HTML template\Javascript-Snippets\getTotalLines
+\PDF.co Web API\PDF from HTML template\Javascript-Snippets\numberFormat
 \PDF.co Web API\PDF from HTML template\PHP\Generate PDF Invoice From HTML Template
 \PDF.co Web API\PDF from HTML template\PHP\Invoice With Multiple Pages
 \PDF.co Web API\PDF from HTML template\PowerShell\Generate PDF Invoice From HTML Template
