@@ -5371,7 +5371,9 @@
 \PDF.co Web API\Excel To TXT\cURL
 \PDF.co Web API\Excel To TXT\cURL\Convert Excel To TXT
 \PDF.co Web API\Excel To XML\cURL
+\PDF.co Web API\Excel To XML\Python
 \PDF.co Web API\Excel To XML\cURL\Convert Excel to XML
+\PDF.co Web API\Excel To XML\Python\Convert Excel file into XML
 \PDF.co Web API\File Calculate Hash\C#
 \PDF.co Web API\File Calculate Hash\cURL
 \PDF.co Web API\File Calculate Hash\Java
@@ -6068,6 +6070,7 @@
 \PDF.co Web API\PDF Search Tables\PowerShell\PDF Table Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Search Tables\PowerShell\PDF Table Search from URL
 \PDF.co Web API\PDF Search Tables\PowerShell\PDF Table Search from URL Asynchronously
+\PDF.co Web API\PDF Search Tables\Python\PDF Get Search Table Data
 \PDF.co Web API\PDF Search Tables\Python\PDF Table Search from Uploaded File
 \PDF.co Web API\PDF Search Tables\Python\PDF Table Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Search Tables\Salesforce\Search Table From URL
