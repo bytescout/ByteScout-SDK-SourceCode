@@ -6458,6 +6458,7 @@
 \PDF.co Web API\PDF To Text API\AWS Lambda
 \PDF.co Web API\PDF To Text API\C#
 \PDF.co Web API\PDF To Text API\cURL
+\PDF.co Web API\PDF To Text API\GoogleAppScript
 \PDF.co Web API\PDF To Text API\Java
 \PDF.co Web API\PDF To Text API\JavaScript
 \PDF.co Web API\PDF To Text API\PHP
