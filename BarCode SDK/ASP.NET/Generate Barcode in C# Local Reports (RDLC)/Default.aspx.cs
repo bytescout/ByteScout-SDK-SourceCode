@@ -15,6 +15,8 @@ using System;
 
 using Bytescout.BarCode;
 using Microsoft.Reporting.WebForms;
+using System.Collections;
+using System.Web.UI;
 
 public partial class _Default : System.Web.UI.Page 
 {
@@ -61,11 +63,11 @@ public partial class _Default : System.Web.UI.Page
 		}
 
 		// Create Report Data Source
-		Microsoft.Reporting.WebForms.ReportDataSource rptDataSource = 
-			new ReportDataSource("AdventureWorks_vProductAndDescription", dt);
-
-		ReportViewer1.LocalReport.DataSources.Add(rptDataSource);
-		ReportViewer1.LocalReport.ReportPath = Server.MapPath("BarcodeReport.rdlc");
-		ReportViewer1.LocalReport.Refresh();
+                if (!this.IsPostBack)
+               {
+                   ReportViewer1.LocalReport.DataSources.Add(new ReportDataSource("AdventureWorks_vProductAndDescription", (IEnumerable)dt));
+                   ReportViewer1.LocalReport.ReportPath = Server.MapPath("BarcodeReport.rdlc");
+                   ReportViewer1.LocalReport.Refresh();
+               }
     }
 }
