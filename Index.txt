@@ -5659,6 +5659,7 @@
 \PDF.co Web API\PDF From CSV\VB.NET\Convert CSV To PDF From URL
 \PDF.co Web API\PDF From CSV\VB.NET\Convert CSV To PDF From URL Asynchronously
 \PDF.co Web API\PDF From Excel\cURL
+\PDF.co Web API\PDF From Excel\GoogleAppsScript
 \PDF.co Web API\PDF From Excel\JavaScript
 \PDF.co Web API\PDF From Excel\Zapier
 \PDF.co Web API\PDF From Excel\cURL\Excel To PDF
