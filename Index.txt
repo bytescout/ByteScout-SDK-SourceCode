@@ -5234,7 +5234,9 @@
 \PDF.co Web API\Document Parser API\GoogleAppScript\Convert PDF Invoice to Google Sheet
 \PDF.co Web API\Document Parser API\Java\Blood Test Results to JSON
 \PDF.co Web API\Document Parser API\Java\Create Custom Template
+\PDF.co Web API\Document Parser API\Java\Extract Borderless Table to CSV using Template ID Asynchronously
 \PDF.co Web API\Document Parser API\Java\Extract line items from tables on multiple pages
+\PDF.co Web API\Document Parser API\Java\Extract Multipage PDF Table to CSV Asynchronously
 \PDF.co Web API\Document Parser API\Java\Parse From Url
 \PDF.co Web API\Document Parser API\Java\Parse From URL Asynchronously
 \PDF.co Web API\Document Parser API\Java\Parse Multipage Table
@@ -5243,6 +5245,10 @@
 \PDF.co Web API\Document Parser API\Java\Parse Uploaded File Asynchronously
 \PDF.co Web API\Document Parser API\Java\Parse with OCR
 \PDF.co Web API\Document Parser API\Java\Parsing and reading data from Airline Tickets
+\PDF.co Web API\Document Parser API\Java\Extract Borderless Table to CSV using Template ID Asynchronously\target
+\PDF.co Web API\Document Parser API\Java\Extract Borderless Table to CSV using Template ID Asynchronously\target\classes
+\PDF.co Web API\Document Parser API\Java\Extract Multipage PDF Table to CSV Asynchronously\target
+\PDF.co Web API\Document Parser API\Java\Extract Multipage PDF Table to CSV Asynchronously\target\classes
 \PDF.co Web API\Document Parser API\JavaScript\Parse From Url (Node.js)
 \PDF.co Web API\Document Parser API\JavaScript\Parse Uploaded File (Node.js)
 \PDF.co Web API\Document Parser API\PHP\Blood Test Results to JSON
