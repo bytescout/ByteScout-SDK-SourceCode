@@ -5496,6 +5496,7 @@
 \PDF.co Web API\Image To PDF API\cURL\Image To PDF
 \PDF.co Web API\Image To PDF API\Java\Convert Images To PDF From Uploaded Files
 \PDF.co Web API\Image To PDF API\Java\Convert Images To PDF From URLs
+\PDF.co Web API\Image To PDF API\JavaScript\Convert Image to PDF from Base64 Asynchronously
 \PDF.co Web API\Image To PDF API\JavaScript\Convert Images To PDF From URLs (Node.js)
 \PDF.co Web API\Image To PDF API\JavaScript\Convert Images To PDF From URLs (Node.js) - Async API
 \PDF.co Web API\Image To PDF API\PHP\Convert Images To PDF Asynchronously
@@ -5605,6 +5606,7 @@
 \PDF.co Web API\PDF Delete Pages\cURL\Delete Pages From PDF
 \PDF.co Web API\PDF Delete Pages\Java\Delete Pages From PDF
 \PDF.co Web API\PDF Delete Pages\JavaScript\Delete Pages From PDF
+\PDF.co Web API\PDF Delete Pages\JavaScript\Delete Pages From PDF Asynchronously
 \PDF.co Web API\PDF Delete Pages\PHP\Delete Pages From PDF
 \PDF.co Web API\PDF Delete Pages\PowerShell\Delete Pages From PDF
 \PDF.co Web API\PDF Delete Pages\Python\Delete Pages From PDF
@@ -5847,6 +5849,7 @@
 \PDF.co Web API\PDF Information API\JavaScript\Get Info From Custom Encrypted PDF URL (Node.js)
 \PDF.co Web API\PDF Information API\JavaScript\Get PDF Info From Uploaded File (Node.js)
 \PDF.co Web API\PDF Information API\JavaScript\Get PDF Info From URL (Node.js)
+\PDF.co Web API\PDF Information API\JavaScript\Get PDF Info From URL Asynchronously
 \PDF.co Web API\PDF Information API\PHP\Get PDF Info From Uploaded File
 \PDF.co Web API\PDF Information API\PowerShell\Get Info From Custom Encrypted PDF URL
 \PDF.co Web API\PDF Information API\PowerShell\Get PDF Info From Uploaded File
@@ -6047,8 +6050,10 @@
 \PDF.co Web API\PDF Password And Security\GoogleAppsScript\Add Password to PDF files
 \PDF.co Web API\PDF Password And Security\Java\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\Java\Remove PDF Document Protection
+\PDF.co Web API\PDF Password And Security\JavaScript\Protect PDF Asynchronously
 \PDF.co Web API\PDF Password And Security\JavaScript\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\JavaScript\Remove PDF Document Protection
+\PDF.co Web API\PDF Password And Security\JavaScript\Remove PDF Document Protection Asynchronously
 \PDF.co Web API\PDF Password And Security\PHP\Protect PDF Document
 \PDF.co Web API\PDF Password And Security\PHP\Remove PDF Document Protection
 \PDF.co Web API\PDF Password And Security\PowerShell\Protect PDF Document
@@ -6730,6 +6735,7 @@
 \PDF.co Web API\PDF To XML API\JavaScript\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From Uploaded File (Node.js)
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From Uploaded File (Node.js) - Async API
+\PDF.co Web API\PDF To XML API\JavaScript\Convert PDF to XML from Uploaded File Asynchronously
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From URL (Node.js)
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML From URL (Node.js) - Async API
 \PDF.co Web API\PDF To XML API\JavaScript\Convert PDF To XML in JQuery
