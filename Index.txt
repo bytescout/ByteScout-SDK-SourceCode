@@ -5737,6 +5737,7 @@
 \PDF.co Web API\PDF from HTML\PowerShell\Generate PDF From HTML File
 \PDF.co Web API\PDF from HTML\PowerShell\Generate PDF From Large HTML File
 \PDF.co Web API\PDF from HTML\Python\Generate PDF From HTML And Add Barcode
+\PDF.co Web API\PDF from HTML\Python\Generate PDF from HTML and Add Barcode Asynchronously
 \PDF.co Web API\PDF from HTML\Python\Generate PDF From HTML File
 \PDF.co Web API\PDF from HTML\Python\Generate PDF From Large HTML File
 \PDF.co Web API\PDF from HTML\Salesforce\Convert HTML to PDF
