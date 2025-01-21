@@ -6557,6 +6557,7 @@
 \PDF.co Web API\PDF To Text API\cURL\Convert PDF To Text
 \PDF.co Web API\PDF To Text API\cURL\Convert PDF To Text From URL
 \PDF.co Web API\PDF To Text API\GoogleAppScript\Convert PDF to Text
+\PDF.co Web API\PDF To Text API\GoogleAppScript\Convert PDF to Text Asynchronously
 \PDF.co Web API\PDF To Text API\Java\Advanced Conversion Options
 \PDF.co Web API\PDF To Text API\Java\Advanced Conversion Options With Rotated Input
 \PDF.co Web API\PDF To Text API\Java\Convert PDF To Text From Uploaded File
