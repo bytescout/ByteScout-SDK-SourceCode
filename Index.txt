@@ -5004,6 +5004,7 @@
 \PDF.co Web API\AI Invoice Parser\PowerShell\AI Invoice Parsing with Webhook
 \PDF.co Web API\AI Invoice Parser\Python\AI Invoice Parsing
 \PDF.co Web API\AI Invoice Parser\Python\AI Invoice Parsing with Webhook
+\PDF.co Web API\AI Invoice Parser\Python\Parse Invoice from Uploaded File Asynchronously
 \PDF.co Web API\Barcode Generator API\AWS Lambda
 \PDF.co Web API\Barcode Generator API\C#
 \PDF.co Web API\Barcode Generator API\cURL
