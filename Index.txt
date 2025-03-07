@@ -6236,6 +6236,7 @@
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from Uploaded File Asynchronously
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from URL
 \PDF.co Web API\PDF Text Search API\C#\PDF Text Search from URL Asynchronously
+\PDF.co Web API\PDF Text Search API\C#\Search Amount in PDF File from URL Asynchronously
 \PDF.co Web API\PDF Text Search API\cURL\PDF Search Text
 \PDF.co Web API\PDF Text Search API\Java\PDF Text Search from Uploaded File
 \PDF.co Web API\PDF Text Search API\Java\PDF Text Search from Uploaded File Asynchronously
